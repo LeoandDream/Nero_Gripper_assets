@@ -9,3 +9,14 @@
 所有运动必须以 `mj_step` 积分；qpos只允许合法初始reset和离线回放设置。禁止物体weld/吸附、隐藏外力、随意碰撞过滤、动态改变物体/成功条件。若需要改物理假设，先给出具体候选diff和同条件前后证据，等待用户确认再采用。
 
 开发候选和异常诊断放在 `debug/`；实际运行完整日志、状态轨迹和视频放在唯一 `runs/` 目录，程序拒绝覆盖。正式结论引用原始Run，不复制事实数据库或建立HTML平台。
+
+当前阶段结果和待确认项见 [results.md](results.md)。在本工作树根目录可复现：
+
+```bash
+# 使用已建立的资产环境；异机先安装requirements-build.txt
+/data_robot/projects/nero_gripper_assets/.venv/bin/python -m unittest discover -s experiments/dynamics -p test_controller.py -v
+/data_robot/projects/nero_gripper_assets/.venv/bin/python experiments/dynamics/run.py --stage risk --run-id new_risk_run
+/data_robot/projects/nero_gripper_assets/.venv/bin/python experiments/dynamics/run.py --stage control --run-id new_control_run
+```
+
+`risk`只做未批准单对过滤候选的前后诊断；`control`当前仅运行未过滤模型。两者都保存真实积分状态、命令与接触；源几何不改。实际执行日志路径见results，不能把CLI正常结束或控制跟踪PASS解释为已完成抓取验收。
