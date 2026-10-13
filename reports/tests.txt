@@ -1,4 +1,4 @@
-test_headless_static_export (test_assets.AssetTests.test_headless_static_export) ... /tmp/tmpsbutqrqx/preview.png
+test_headless_static_export (test_assets.AssetTests.test_headless_static_export) ... /tmp/tmp_v756xd8/preview.png
 ok
 test_independent_urdf_validation (test_assets.AssetTests.test_independent_urdf_validation) ... PASS_STATIC_EQUIVALENCE poses 11 max_errors {'body_position_m': 5.551115123125783e-16, 'body_rotation_matrix': 1.2212453270876722e-15, 'mass_kg': 0.0, 'inertia_kg_m2': 1.734723475976807e-18, 'inertial_position_m': 0.0, 'joint_axis': 0.0, 'joint_range': 0.0, 'geometry_bounds_m': 9.265381378797954e-09, 'mimic_m': 0.0}
 ok
@@ -10,6 +10,6 @@ test_static_view_does_not_change_physics (test_assets.AssetTests.test_static_vie
 test_virtual_driver_elimination_preserves_real_mass_and_mimic (test_assets.AssetTests.test_virtual_driver_elimination_preserves_real_mass_and_mimic) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 19.027s
+Ran 8 tests in 15.836s
 
 OK

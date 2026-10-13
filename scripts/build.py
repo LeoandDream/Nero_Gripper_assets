@@ -10,7 +10,6 @@ import xml.etree.ElementTree as ET
 
 import collada
 import numpy as np
-from PIL import Image
 from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
 from scipy.spatial import ConvexHull
@@ -104,19 +103,13 @@ def expand(relative):
     return result
 
 
-def write_obj(path, vertices, faces, uv=None):
+def write_obj(path, vertices, faces):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open('w') as out:
         for v in vertices:
             out.write('v ' + numbers(v) + '\n')
-        if uv is not None:
-            for t in uv:
-                out.write('vt ' + numbers(t) + '\n')
         for f in faces:
-            if uv is None:
-                out.write('f ' + ' '.join(str(int(i) + 1) for i in f) + '\n')
-            else:
-                out.write('f ' + ' '.join(f'{int(i)+1}/{int(i)+1}' for i in f) + '\n')
+            out.write('f ' + ' '.join(str(int(i) + 1) for i in f) + '\n')
 
 
 def visual_mesh(source, name, asset):
@@ -138,25 +131,26 @@ def visual_mesh(source, name, asset):
             pieces.append((np.asarray(t.vertex, dtype=float), np.asarray(t.vertex_index, dtype=int), diffuse))
     if not pieces:
         raise ValueError(f'No visual triangles: {source}')
-    vertices, faces, uv, colors = [], [], [], []
+    vertices, faces, colors = [], [], []
+    color_areas = {}
     offset = 0
-    for i, (v, f, rgba) in enumerate(pieces):
+    for v, f, rgba in pieces:
         vertices.extend(v)
         faces.extend(f + offset)
-        uv.extend([[float(i + .5) / len(pieces), .5]] * len(v))
         colors.append(rgba)
+        triangles = v[f]
+        area = (float(np.linalg.norm(np.cross(triangles[:, 1] - triangles[:, 0], triangles[:, 2] - triangles[:, 0]), axis=1).sum() / 2)
+                if f.shape[1] == 3 else 0.)  # COLLADA also contains line primitives.
+        color_areas[rgba] = color_areas.get(rgba, 0.) + area
         offset += len(v)
     target = ROOT / 'meshes/visual' / f'{name}.obj'
-    write_obj(target, vertices, faces, uv)
-    palette = np.zeros((16, 16 * len(pieces), 3), dtype=np.uint8)
-    for i, color in enumerate(colors):
-        palette[:, i * 16:(i + 1) * 16] = np.rint(np.array(color[:3]) * 255).astype(np.uint8)
-    texture = ROOT / 'meshes/visual' / f'{name}.png'
-    Image.fromarray(palette).save(texture)
+    write_obj(target, vertices, faces)
+    rgba = max(color_areas, key=color_areas.get)
+    # Remove palettes left by the earlier builder; rebuilding stays image-free.
+    (ROOT / 'meshes/visual' / f'{name}.png').unlink(missing_ok=True)
     ET.SubElement(asset, 'mesh', name=name + '_visual_mesh', file='../' + str(target.relative_to(ROOT)))
-    ET.SubElement(asset, 'texture', name=name + '_colors', type='2d', file='../' + str(texture.relative_to(ROOT)))
-    ET.SubElement(asset, 'material', name=name + '_visual_material', texture=name + '_colors', rgba='1 1 1 1', texuniform='false', specular='0.1', shininess='0.1')
-    return dict(file=str(target.relative_to(ROOT)), source=str(source.relative_to(ROOT)), triangles=len(faces), diffuse_colors=colors, unbound_material_primitives=unbound_material_primitives, unbound_material_fallback_rgba=[.5,.5,.5,1.] if unbound_material_primitives else None, bounds_m=[np.min(vertices, axis=0).tolist(), np.max(vertices, axis=0).tolist()])
+    ET.SubElement(asset, 'material', name=name + '_visual_material', rgba=numbers(rgba), specular='0.1', shininess='0.1')
+    return dict(file=str(target.relative_to(ROOT)), source=str(source.relative_to(ROOT)), triangles=len(faces), diffuse_colors=colors, rendered_rgba=list(rgba), color_mode='single dominant source diffuse color by triangle surface area; no external texture', unbound_material_primitives=unbound_material_primitives, unbound_material_fallback_rgba=[.5,.5,.5,1.] if unbound_material_primitives else None, bounds_m=[np.min(vertices, axis=0).tolist(), np.max(vertices, axis=0).tolist()])
 
 
 def collision_mesh(source, name, asset):

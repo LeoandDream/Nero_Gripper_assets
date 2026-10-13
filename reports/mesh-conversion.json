@@ -12,6 +12,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -39,6 +46,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -90,6 +104,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 1,
       "unbound_material_fallback_rgba": [
         0.5,
@@ -122,6 +143,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -215,6 +243,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -260,6 +295,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 1,
       "unbound_material_fallback_rgba": [
         0.5,
@@ -292,6 +334,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -319,6 +368,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.008004529,
+        0.008004529,
+        0.008004529,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -346,6 +402,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -391,6 +454,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.1144346,
+        0.1144355,
+        0.1144354,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -430,6 +500,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.117647,
+        0.117647,
+        0.117647,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [
@@ -469,6 +546,13 @@
           1.0
         ]
       ],
+      "rendered_rgba": [
+        0.117647,
+        0.117647,
+        0.117647,
+        1.0
+      ],
+      "color_mode": "single dominant source diffuse color by triangle surface area; no external texture",
       "unbound_material_primitives": 0,
       "unbound_material_fallback_rgba": null,
       "bounds_m": [

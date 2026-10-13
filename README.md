@@ -5,7 +5,7 @@
 ```text
 urdf/       相对路径展开URDF；source保留官方原字节
 mjcf/       保留实体机械字段的MuJoCo模型
-meshes/     原始DAE/STL、派生可视OBJ/颜色纹理与分量凸碰撞体
+meshes/     原始DAE/STL、派生可视OBJ与分量凸碰撞体
 examples/   静态查看入口
 scripts/    离线重建与独立URDF核对
 reports/    静态等价性、碰撞近似、引擎兼容性和预览
@@ -31,6 +31,8 @@ MUJOCO_GL=egl .venv/bin/python examples/view_static.py --width 0 --image closed.
 ```
 
 `--width` 是源URDF的虚拟开合命令坐标，范围0..0.1米；两指分别取其±一半。这不是经过真机标定的实际指尖净间距。查看器只设置姿态、调用 `mj_forward` 并显示，不积分物理、不执行策略。
+
+`meshes/visual`只保留OBJ网格。各部件采用源材料中面积占比最大的颜色作为直接RGBA材质，省去外部贴图；原来的局部多色和标识配色被简化，原始DAE仍保留。
 
 ![静态参考姿态](reports/preview.png)
 
