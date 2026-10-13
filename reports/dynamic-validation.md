@@ -1,6 +1,8 @@
-# 动力学与抓取验收结果
+# 历史动力学与抓取验收结果
 
-受保护资产 `8e8b805e28bd07a6799d3d838574912ab2280912`；独立工作树 `dynamics-control`。实际环境Python3.11.9/MuJoCo3.2.3。**静态复验PASS，空载动态控制PASS，物理抓取FAIL；完整抓取基线尚未成立。** 实机限位、动力学保真度UNKNOWN。
+来源：dynamics-control@ef15cd5。该报告保留迁移前事实；现已并入同一项目，运行与依赖说明统一在根README。本轮迁移复验见docs/MIGRATION.md；以下Run路径相对experiments/dynamics，原记录保持原字节。
+
+受保护资产 `8e8b805e28bd07a6799d3d838574912ab2280912`；历史工作树 `dynamics-control`。实际环境Python3.11.9/MuJoCo3.2.3。**静态复验PASS，空载动态控制PASS，物理抓取FAIL；完整抓取基线尚未成立。** 实机限位、动力学保真度UNKNOWN。
 
 ## 静态、来源和碰撞
 
@@ -14,7 +16,7 @@
 
 ## 控制
 
-8D绝对目标映射9个实体关节及9个内部Nm/N servo；夹爪只有一个用户命令。全部参数、单位和来源边界见README及 `config.json`。10项实验测试实际通过，含非法形状、NaN/Inf、复杂数、越界/不可达、力限、无状态写入、自由物体无执行器/外力、单指支撑与过大穿透拒绝，同步目标轨迹以及真实短积分后的Ctrl+C证据保留。日志 `runs/verification_20261014_001/experiment-tests.log`；独立审查发现的中断收尾缺口已修复并回归，取消前的已执行轨迹/计数以INTERRUPTED保存，然后继续传播中断。
+8D绝对目标映射9个实体关节及9个内部Nm/N servo；夹爪只有一个用户命令。全部参数、单位和来源边界见根README及experiments/dynamics/ `config.json`。10项实验测试实际通过，含非法形状、NaN/Inf、复杂数、越界/不可达、力限、无状态写入、自由物体无执行器/外力、单指支撑与过大穿透拒绝，同步目标轨迹以及真实短积分后的Ctrl+C证据保留。日志 `runs/verification_20261014_001/experiment-tests.log`；独立审查发现的中断收尾缺口已修复并回归，取消前的已执行轨迹/计数以INTERRUPTED保存，然后继续传播中断。
 
 采用单对过滤后 `runs/control_approved_20261014_002/approved-filter-control/` 完成21阶段、37000次mj_step/37s，保持、七轴逐轴小动作、多轴组合和夹爪开/半开/闭合/重开全部PASS。最大稳定机械臂误差0.0002161rad；最大空载双指耦合误差0.08235mm；实际最大机械臂/手指速度0.21781rad/s、0.01691m/s，底座异常反力0。完整逐物理步状态、目标、ctrl/actuator力、外力数组与接触在trajectory.npz/contacts.jsonl，执行源码快照在Run根 `executed-source/`。三个主要Run的全部117148行还通过原生integratePos状态连续性复核，最大残差见 `runs/verification_20261014_001/trajectory-audit.json`，包括自由立方体位置/四元数。之前未过滤及首轮过滤控制记录保留。这些结果只证明已检查的空载动作。
 
@@ -39,4 +41,4 @@ MuJoCo3.2.3官方说明指出，平面凸碰撞的单点接触可能缺少支撑
 
 ## 独立审查与交付边界
 
-独立只读Reviewer已完成，报告 `review.md`：资产、参数、映射、真实积分、无捷径、碰撞授权、记录一致及异常测试等10项PASS；抓取能力FAIL，加载耦合FAIL，实机保真度及具体接触根因UNKNOWN。10项当前代码测试独立重跑PASS，中断保存缺口修复已复核，无剩余Important代码问题。控制器与稳定运行入口可复现；失败抓取候选留在独立开发工作树，未作为正式抓取能力合并/推送。没有真机动作、训练、LIBERO/OpenPI、DH116或大型框架。本轮完整物理抓取及工程验收不能标为PASS。
+独立只读Reviewer已完成，报告 `reports/dynamic-review.md`：资产、参数、映射、真实积分、无捷径、碰撞授权、记录一致及异常测试等10项PASS；抓取能力FAIL，加载耦合FAIL，实机保真度及具体接触根因UNKNOWN。10项当前代码测试独立重跑PASS，中断保存缺口修复已复核，无剩余Important代码问题。控制器与稳定运行入口可复现；失败抓取候选现保留于同一仓库的feature/dynamic-control开发分支，未作为正式抓取能力合并/推送。没有真机动作、训练、LIBERO/OpenPI、DH116或大型框架。本轮完整物理抓取及工程验收不能标为PASS。

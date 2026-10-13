@@ -12,5 +12,6 @@
   "hardware_fidelity": "UNKNOWN",
   "further_physics_changes": "NOT_ADOPTED; require specific proposal and confirmation",
   "original_main_modified": false,
-  "reviewed_code_commit": "44f497dd90d3f89f43954310352b39d25e0619dd"
+  "reviewed_code_commit": "44f497dd90d3f89f43954310352b39d25e0619dd",
+  "record_scope": "historical dynamics acceptance before repository consolidation; see docs/MIGRATION.md for current migration"
 }
