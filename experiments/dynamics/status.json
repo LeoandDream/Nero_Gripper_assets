@@ -7,9 +7,10 @@
   "grasp": "FAIL_0_OF_2_COMPLETE_PHYSICAL_ATTEMPTS",
   "loaded_finger_coupling": "FAIL_BOTH_ATTEMPTS_AT_FROZEN_0.2MM_THRESHOLD",
   "initial_offset_repeats": "NOT_EXECUTED_PER_FROZEN_FIRST_FIXED_PASS_RULE",
-  "independent_review": "IN_PROGRESS",
+  "independent_review": "COMPLETE; 10 audit items PASS, physical grasp FAIL, loaded coupling FAIL, hardware and exact failure cause UNKNOWN",
   "complete_grasp_baseline": "NOT_ACHIEVED",
   "hardware_fidelity": "UNKNOWN",
   "further_physics_changes": "NOT_ADOPTED; require specific proposal and confirmation",
-  "original_main_modified": false
+  "original_main_modified": false,
+  "reviewed_code_commit": "44f497dd90d3f89f43954310352b39d25e0619dd"
 }
