@@ -15,10 +15,18 @@ licenses/   官方MIT许可及来源
 
 ## 查看
 
-已有本目录环境时：
+首次克隆并建立运行环境：
 
 ```bash
-cd /data_robot/projects/nero_gripper_assets
+git clone https://github.com/LeoandDream/Nero_Gripper_assets.git
+cd Nero_Gripper_assets
+python3.11 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+在仓库根目录运行：
+
+```bash
 .venv/bin/python examples/view_static.py
 .venv/bin/python examples/view_static.py --collision
 ```
