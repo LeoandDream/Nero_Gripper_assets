@@ -1,0 +1,123 @@
+{
+  "physical_state_dim": 9,
+  "physical_joint_order": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6",
+    "joint7",
+    "gripper_joint1",
+    "gripper_joint2"
+  ],
+  "units": [
+    "rad",
+    "rad",
+    "rad",
+    "rad",
+    "rad",
+    "rad",
+    "rad",
+    "m",
+    "m"
+  ],
+  "virtual_source_joint": "gripper",
+  "virtual_source_range_m": [
+    0,
+    0.1
+  ],
+  "source_mimic": {
+    "gripper_joint1": ".5 * gripper",
+    "gripper_joint2": "-.5 * gripper"
+  },
+  "mjcf_constraint": "gripper_joint2 = -gripper_joint1",
+  "virtual_joint_recovery": "gripper = 2 * gripper_joint1",
+  "actuators": 0,
+  "controller_implemented": false,
+  "policy_adapter_implemented": false,
+  "proposed_policy_state": "eef XYZ(3), axis-angle(3), finger positions(2): 8D",
+  "proposed_policy_action": "eef translation(3), rotation(3), gripper open/close(1): 7D; requires controller and unit/frame verification",
+  "limits": [
+    {
+      "name": "joint1",
+      "type": "revolute",
+      "lower": "-2.70526",
+      "upper": "2.70526",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "joint2",
+      "type": "revolute",
+      "lower": "-1.74",
+      "upper": "1.74",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "joint3",
+      "type": "revolute",
+      "lower": "-2.75",
+      "upper": "2.75",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "joint4",
+      "type": "revolute",
+      "lower": "-1.01",
+      "upper": "2.14",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "joint5",
+      "type": "revolute",
+      "lower": "-2.75",
+      "upper": "2.75",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "joint6",
+      "type": "revolute",
+      "lower": "-0.73",
+      "upper": "0.95",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "joint7",
+      "type": "revolute",
+      "lower": "-1.5707963",
+      "upper": "1.5707963",
+      "effort": "100",
+      "velocity": "5"
+    },
+    {
+      "name": "gripper",
+      "type": "prismatic",
+      "lower": "0",
+      "upper": "0.1",
+      "effort": "10",
+      "velocity": "3"
+    },
+    {
+      "name": "gripper_joint1",
+      "type": "prismatic",
+      "lower": "0",
+      "upper": "0.05",
+      "effort": "10",
+      "velocity": "3"
+    },
+    {
+      "name": "gripper_joint2",
+      "type": "prismatic",
+      "lower": "-0.05",
+      "upper": "0",
+      "effort": "10",
+      "velocity": "3"
+    }
+  ]
+}

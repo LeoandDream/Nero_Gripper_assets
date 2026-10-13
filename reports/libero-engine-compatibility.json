@@ -1,0 +1,11 @@
+{
+  "mujoco": "2.3.7",
+  "status": "PASS_COMPILE_AND_STATIC_FORWARD",
+  "nq": 9,
+  "nu": 0,
+  "neq": 1,
+  "time": 0.0,
+  "total_mass_kg": 5.128923660000002,
+  "finite_qpos": true,
+  "scope": "compile and reference pose only; full source equivalence audited separately with MuJoCo3.2.3"
+}

@@ -1,0 +1,4 @@
+-r requirements.txt
+scipy==1.15.3
+trimesh==4.8.3
+pycollada==0.9.2

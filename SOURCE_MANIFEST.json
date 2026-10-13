@@ -1,0 +1,210 @@
+{
+  "repository": "https://github.com/agilexrobotics/agx_arm_urdf",
+  "revision": "a68b8e876a2c6fcb0ecee7a7943129e4d48dd864",
+  "entrypoint": "nero/urdf/nero_with_gripper_description.xacro",
+  "files": [
+    {
+      "repo_path": "LICENSE",
+      "file": "licenses/AGX_MIT.txt",
+      "git_blob": "601f56ad41b103897cd4227a2d1ea0594b389d08",
+      "sha256": "247944c63de1573653722ba784f96123da267105b7b48577e0c8826a24b809f6",
+      "bytes": 1065
+    },
+    {
+      "repo_path": "README.md",
+      "file": "licenses/UPSTREAM_README.md",
+      "git_blob": "bfbd683ce7f87606758fa6379f593f8bcc5abcd9",
+      "sha256": "a765d62a426d4d5e2f18d9a20c112bca831d7e1bb550dad385bb3aaed383e45d",
+      "bytes": 4017
+    },
+    {
+      "repo_path": "agx_gripper/meshes/dae/gripper_base.dae",
+      "file": "meshes/source/agx_gripper/meshes/dae/gripper_base.dae",
+      "git_blob": "1255f5dda5808389ded65cc815781b3e925f3301",
+      "sha256": "aaea10ec06709d6a3343dd3378553eee3df40b43ee276df10c5b68ac7f61bae2",
+      "bytes": 2721338
+    },
+    {
+      "repo_path": "agx_gripper/meshes/dae/gripper_link1.dae",
+      "file": "meshes/source/agx_gripper/meshes/dae/gripper_link1.dae",
+      "git_blob": "82943889c3ed6b402b369ca3e766a2f62ab72726",
+      "sha256": "b4aaf0e024d09eb0454e70e0c5092638edcf7da7c253d1effdeeaec46f76427b",
+      "bytes": 176476
+    },
+    {
+      "repo_path": "agx_gripper/meshes/dae/gripper_link2.dae",
+      "file": "meshes/source/agx_gripper/meshes/dae/gripper_link2.dae",
+      "git_blob": "d6e9d6c024a4bd829341f0b31fdf70013acede85",
+      "sha256": "0da1350898b2787b76b84698253aeb1efd2ddb6360b2fa2ae03ecff389883af8",
+      "bytes": 176476
+    },
+    {
+      "repo_path": "agx_gripper/meshes/gripper_base.stl",
+      "file": "meshes/source/agx_gripper/meshes/gripper_base.stl",
+      "git_blob": "5764a3b3fbc2fa9270bad183fa295cc86b46bacd",
+      "sha256": "0b839dc0bcb7d94e3422c74f6396b54a0441ba4836448ab5586e7f372d1bdbf3",
+      "bytes": 1837884
+    },
+    {
+      "repo_path": "agx_gripper/meshes/gripper_link1.stl",
+      "file": "meshes/source/agx_gripper/meshes/gripper_link1.stl",
+      "git_blob": "a30d8f2e44a81db32a1f7a0e06eb87416b5cb60a",
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "bytes": 104384
+    },
+    {
+      "repo_path": "agx_gripper/meshes/gripper_link2.stl",
+      "file": "meshes/source/agx_gripper/meshes/gripper_link2.stl",
+      "git_blob": "be37a66e4cfce7c4254ce817f4fb2c51f44a5701",
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "bytes": 104384
+    },
+    {
+      "repo_path": "nero/meshes/base_link.stl",
+      "file": "meshes/source/nero/meshes/base_link.stl",
+      "git_blob": "8f3878e272a38899fdf65076c21e8c3845095a23",
+      "sha256": "540462fb56e52091daa3cd1ad3acc3c19a43f120b2f11bae5a69b32b08c738b6",
+      "bytes": 807284
+    },
+    {
+      "repo_path": "nero/meshes/dae/base_link.dae",
+      "file": "meshes/source/nero/meshes/dae/base_link.dae",
+      "git_blob": "68a7bbb1c2a9ce5fe7e6628c2d8e82fd654c4748",
+      "sha256": "a369d27a339834e4f59cd2b16065d62a37cb8e1bdd503e150787149e998f03f6",
+      "bytes": 1101428
+    },
+    {
+      "repo_path": "nero/meshes/dae/flange.dae",
+      "file": "meshes/source/nero/meshes/dae/flange.dae",
+      "git_blob": "a3f83a99fb58b6447f559df586484b6ec21f03a6",
+      "sha256": "93b4fd381b2edd42a3ec946567027aa3392c65be2f3f00c5711b86f4070980fa",
+      "bytes": 903164
+    },
+    {
+      "repo_path": "nero/meshes/dae/link1.dae",
+      "file": "meshes/source/nero/meshes/dae/link1.dae",
+      "git_blob": "1ad33982064db9118a08abbd25c63fe3a9cd8dc8",
+      "sha256": "8aafc23509ce76d9c6fdcf8ef49931a8def1b5bfd1f974cbe677031334da9404",
+      "bytes": 1611774
+    },
+    {
+      "repo_path": "nero/meshes/dae/link2.dae",
+      "file": "meshes/source/nero/meshes/dae/link2.dae",
+      "git_blob": "963d81fb0a9329be4cd65f480ee2907d353809ce",
+      "sha256": "00b3eb4a91c8efd95f3c161ee5318b66cb3e2fa55dac5c139077cdd67463c2ac",
+      "bytes": 24698201
+    },
+    {
+      "repo_path": "nero/meshes/dae/link3.dae",
+      "file": "meshes/source/nero/meshes/dae/link3.dae",
+      "git_blob": "bb06aca64595375f86a6a4c108551871b6d2eedc",
+      "sha256": "cd3f0f08ce02aa36bddc0c89efa7d040b927e589e1816da1fd14417511d2b7bc",
+      "bytes": 2916994
+    },
+    {
+      "repo_path": "nero/meshes/dae/link4.dae",
+      "file": "meshes/source/nero/meshes/dae/link4.dae",
+      "git_blob": "9a1e8ba79a65d789cdacc49246b9f5923f82453c",
+      "sha256": "ea607e157c173ca81d0982a24f2fdd7e98c695d94e0055b58028ce36b09b8708",
+      "bytes": 8077485
+    },
+    {
+      "repo_path": "nero/meshes/dae/link5.dae",
+      "file": "meshes/source/nero/meshes/dae/link5.dae",
+      "git_blob": "c680989f29f06e848193d60159ecd79fce3c3994",
+      "sha256": "7733ac4afd30e38360e7a7e833b0ed6192d6fd20c99062b636a236f06b8bfb97",
+      "bytes": 2775278
+    },
+    {
+      "repo_path": "nero/meshes/dae/link6.dae",
+      "file": "meshes/source/nero/meshes/dae/link6.dae",
+      "git_blob": "9ac0f3237b35b49f57e33a60b85e60415d3ea26d",
+      "sha256": "260e1808d888da15e7e4e417a3ab0340f2223a5ed4b37e330278862096ed6f85",
+      "bytes": 1202101
+    },
+    {
+      "repo_path": "nero/meshes/dae/link7.dae",
+      "file": "meshes/source/nero/meshes/dae/link7.dae",
+      "git_blob": "8349ec51e5d3d33302c301eeb06b6b27aef2c0a9",
+      "sha256": "8c2498c59bcf574386cbd7e01fd5d81ff2483e26ae2f0e919deec62a04bce77d",
+      "bytes": 230712
+    },
+    {
+      "repo_path": "nero/meshes/flange.stl",
+      "file": "meshes/source/nero/meshes/flange.stl",
+      "git_blob": "1dacd030680d4284d0364e3390bc7812cfdb9c3d",
+      "sha256": "1ae6d1c5af001582a3328564839e8eb5f2acec02e7e2b19e65fc3c43f8a9c95a",
+      "bytes": 665584
+    },
+    {
+      "repo_path": "nero/meshes/link1.stl",
+      "file": "meshes/source/nero/meshes/link1.stl",
+      "git_blob": "7d65489cef546febdb37c49a4b71b50c0bee157b",
+      "sha256": "0e38bf33ce41f04d7e70e471768c00fa144ba4016a878b9a6d8303c319736e09",
+      "bytes": 1130084
+    },
+    {
+      "repo_path": "nero/meshes/link2.stl",
+      "file": "meshes/source/nero/meshes/link2.stl",
+      "git_blob": "c638a50756f1da362fb2fb312ffc9bf2cbfb1f5c",
+      "sha256": "fc9eb85db9fbd351c9f6e119f5fed33c6f0dd3bc3b11698a0f96aaeb2d36c721",
+      "bytes": 1802534
+    },
+    {
+      "repo_path": "nero/meshes/link3.stl",
+      "file": "meshes/source/nero/meshes/link3.stl",
+      "git_blob": "01a7f4bb3e027a57ece2e64323d9f95d78f5a8c3",
+      "sha256": "44c70f731ad5067d608ebebc9e59f3c231988f992dfac6cb01ee7a6bb4b053f1",
+      "bytes": 1947484
+    },
+    {
+      "repo_path": "nero/meshes/link4.stl",
+      "file": "meshes/source/nero/meshes/link4.stl",
+      "git_blob": "9890cff29d0a3629b11466d342e601a717f8351c",
+      "sha256": "47242e9b5d8b06c912261756f24dddb1e7f54ac6e718232a25889115298b966d",
+      "bytes": 1814784
+    },
+    {
+      "repo_path": "nero/meshes/link5.stl",
+      "file": "meshes/source/nero/meshes/link5.stl",
+      "git_blob": "cabebb58a4978215907d453b46bbfac7e8576d3f",
+      "sha256": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+      "bytes": 1810084
+    },
+    {
+      "repo_path": "nero/meshes/link6.stl",
+      "file": "meshes/source/nero/meshes/link6.stl",
+      "git_blob": "628ade837ba3f5348bcbfa43ba421857a6da04a2",
+      "sha256": "66417d30596e33c890f4f141781023bd3ea15709a502e7f59b30f6676f556022",
+      "bytes": 758284
+    },
+    {
+      "repo_path": "nero/meshes/link7.stl",
+      "file": "meshes/source/nero/meshes/link7.stl",
+      "git_blob": "af89b87b30c48ae419ae9aa4254568c7996ba69b",
+      "sha256": "70a2f415358f9e46088673c92bfe78ca5b1072dd73b7ea24464ba3ebb4c3e647",
+      "bytes": 149384
+    },
+    {
+      "repo_path": "nero/urdf/nero_description.urdf",
+      "file": "urdf/source/nero/urdf/nero_description.urdf",
+      "git_blob": "cf57b6b7866b651d7f8b337632d98936cd111a8a",
+      "sha256": "44a38675b0455b927af7eb67c16071130a93aa3481d7447fab6170cd86315b54",
+      "bytes": 9061
+    },
+    {
+      "repo_path": "nero/urdf/nero_with_flange_description.xacro",
+      "file": "urdf/source/nero/urdf/nero_with_flange_description.xacro",
+      "git_blob": "efa3cf87becd718d9383a0ed5ce14a14e1e70a4c",
+      "sha256": "9029e40c95ccc29474bc16a487908313259b49df4d257eb07aab4dd020af480e",
+      "bytes": 1414
+    },
+    {
+      "repo_path": "nero/urdf/nero_with_gripper_description.xacro",
+      "file": "urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+      "git_blob": "7a9b0aa67cd1b4dd16cc4fe1a7f2187a5168c813",
+      "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4",
+      "bytes": 4296
+    }
+  ]
+}

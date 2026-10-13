@@ -1,0 +1,4 @@
+urdf/source/** -text
+meshes/source/** -text
+licenses/AGX_MIT.txt -text
+licenses/UPSTREAM_README.md -text

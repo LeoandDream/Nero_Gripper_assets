@@ -1,0 +1,1391 @@
+{
+  "visuals": {
+    "base_link": {
+      "file": "meshes/visual/base_link.obj",
+      "source": "meshes/source/nero/meshes/dae/base_link.dae",
+      "triangles": 16144,
+      "diffuse_colors": [
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.0689999982714653,
+          -0.039999961853027344,
+          0.0
+        ],
+        [
+          0.039999961853027344,
+          0.039999961853027344,
+          0.08599995821714401
+        ]
+      ]
+    },
+    "link1": {
+      "file": "meshes/visual/link1.obj",
+      "source": "meshes/source/nero/meshes/dae/link1.dae",
+      "triangles": 22600,
+      "diffuse_colors": [
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.035999950021505356,
+          -0.04074995964765549,
+          -0.05699998140335083
+        ],
+        [
+          0.035999950021505356,
+          0.0367499515414238,
+          0.02999727986752987
+        ]
+      ]
+    },
+    "link2": {
+      "file": "meshes/visual/link2.obj",
+      "source": "meshes/source/nero/meshes/dae/link2.dae",
+      "triangles": 83370,
+      "diffuse_colors": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ],
+        [
+          0.7202457,
+          0.7202457,
+          0.7202457,
+          1.0
+        ],
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.001416947,
+          1.0
+        ],
+        [
+          0.005688135,
+          0.005688135,
+          0.005688135,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 1,
+      "unbound_material_fallback_rgba": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "bounds_m": [
+        [
+          -0.0366322286427021,
+          -0.22849979996681213,
+          -0.046528689563274384
+        ],
+        [
+          0.04327975958585739,
+          0.03299998864531517,
+          0.046528689563274384
+        ]
+      ]
+    },
+    "link3": {
+      "file": "meshes/visual/link3.obj",
+      "source": "meshes/source/nero/meshes/dae/link3.dae",
+      "triangles": 38948,
+      "diffuse_colors": [
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.030542489141225815,
+          -0.038401540368795395,
+          -0.20600000023841858
+        ],
+        [
+          0.02990530990064144,
+          0.038401540368795395,
+          0.028499960899353027
+        ]
+      ]
+    },
+    "link4": {
+      "file": "meshes/visual/link4.obj",
+      "source": "meshes/source/nero/meshes/dae/link4.dae",
+      "triangles": 41086,
+      "diffuse_colors": [
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.001416947,
+          1.0
+        ],
+        [
+          0.3871154,
+          0.3871154,
+          0.3871154,
+          1.0
+        ],
+        [
+          0.005688135,
+          0.005688135,
+          0.005688135,
+          1.0
+        ],
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.001416947,
+          1.0
+        ],
+        [
+          0.3871154,
+          0.3871154,
+          0.3871154,
+          1.0
+        ],
+        [
+          0.005688135,
+          0.005688135,
+          0.005688135,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.03397040814161301,
+          -0.10400000214576721,
+          -0.04037903994321823
+        ],
+        [
+          0.03397034853696823,
+          0.031000129878520966,
+          0.040374040603637695
+        ]
+      ]
+    },
+    "link5": {
+      "file": "meshes/visual/link5.obj",
+      "source": "meshes/source/nero/meshes/dae/link5.dae",
+      "triangles": 36204,
+      "diffuse_colors": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ],
+        [
+          0.7202457,
+          0.7202457,
+          0.7202457,
+          1.0
+        ],
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ],
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 1,
+      "unbound_material_fallback_rgba": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "bounds_m": [
+        [
+          -0.03498613089323044,
+          -0.03474735841155052,
+          -0.17650899291038513
+        ],
+        [
+          0.03498613089323044,
+          0.034775249660015106,
+          0.012919720262289047
+        ]
+      ]
+    },
+    "link6": {
+      "file": "meshes/visual/link6.obj",
+      "source": "meshes/source/nero/meshes/dae/link6.dae",
+      "triangles": 15164,
+      "diffuse_colors": [
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.024578919634222984,
+          -0.02736514061689377,
+          -0.026754969730973244
+        ],
+        [
+          0.02212451957166195,
+          0.023131659254431725,
+          0.026550939306616783
+        ]
+      ]
+    },
+    "link7": {
+      "file": "meshes/visual/link7.obj",
+      "source": "meshes/source/nero/meshes/dae/link7.dae",
+      "triangles": 2986,
+      "diffuse_colors": [
+        [
+          0.008004529,
+          0.008004529,
+          0.008004529,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.013647490181028843,
+          -0.013601889833807945,
+          -0.0095633864402771
+        ],
+        [
+          0.01333617977797985,
+          0.013357809744775295,
+          8.442420221399516e-05
+        ]
+      ]
+    },
+    "flange_link": {
+      "file": "meshes/visual/flange_link.obj",
+      "source": "meshes/source/nero/meshes/dae/flange.dae",
+      "triangles": 13310,
+      "diffuse_colors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.021999714896082878,
+          -0.027499642223119736,
+          -0.047983914613723755
+        ],
+        [
+          0.021999714896082878,
+          0.027499642223119736,
+          0.011999843642115593
+        ]
+      ]
+    },
+    "gripper_base": {
+      "file": "meshes/visual/gripper_base.obj",
+      "source": "meshes/source/agx_gripper/meshes/dae/gripper_base.dae",
+      "triangles": 36756,
+      "diffuse_colors": [
+        [
+          0.1144346,
+          0.1144355,
+          0.1144354,
+          1.0
+        ],
+        [
+          0.1144346,
+          0.1144355,
+          0.1144354,
+          1.0
+        ],
+        [
+          0.784314,
+          0.784314,
+          0.784314,
+          1.0
+        ],
+        [
+          0.1144346,
+          0.1144355,
+          0.1144354,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.042013172060251236,
+          -0.08201402425765991,
+          -2.218992221969529e-06
+        ],
+        [
+          0.03298286348581314,
+          0.08206862956285477,
+          0.0649978443980217
+        ]
+      ]
+    },
+    "gripper_link1": {
+      "file": "meshes/visual/gripper_link1.obj",
+      "source": "meshes/source/agx_gripper/meshes/dae/gripper_link1.dae",
+      "triangles": 2086,
+      "diffuse_colors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.117647,
+          0.117647,
+          0.117647,
+          1.0
+        ],
+        [
+          0.980392,
+          0.980392,
+          0.980392,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.027999989688396454,
+          -0.07649999111890793,
+          0.0
+        ],
+        [
+          0.027999989688396454,
+          0.0,
+          0.026499979197978973
+        ]
+      ]
+    },
+    "gripper_link2": {
+      "file": "meshes/visual/gripper_link2.obj",
+      "source": "meshes/source/agx_gripper/meshes/dae/gripper_link2.dae",
+      "triangles": 2086,
+      "diffuse_colors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.117647,
+          0.117647,
+          0.117647,
+          1.0
+        ],
+        [
+          0.980392,
+          0.980392,
+          0.980392,
+          1.0
+        ]
+      ],
+      "unbound_material_primitives": 0,
+      "unbound_material_fallback_rgba": null,
+      "bounds_m": [
+        [
+          -0.027999989688396454,
+          -0.07649999111890793,
+          0.0
+        ],
+        [
+          0.027999989688396454,
+          0.0,
+          0.026499979197978973
+        ]
+      ]
+    }
+  },
+  "collisions": {
+    "base_link": {
+      "source": "meshes/source/nero/meshes/base_link.stl",
+      "source_faces": 16144,
+      "source_components": 8,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "base_link_collision_000",
+          "file": "meshes/collision/base_link_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 1032,
+          "vertices": 518,
+          "hull_volume_m3": 2.3823788965592755e-06,
+          "source_closed_volume_m3": 2.382268087963001e-06,
+          "volume_ratio": 1.0000465139069923
+        },
+        {
+          "mesh": "base_link_collision_001",
+          "file": "meshes/collision/base_link_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 1130,
+          "vertices": 567,
+          "hull_volume_m3": 4.8669148047537796e-06,
+          "source_closed_volume_m3": 3.309877783043497e-06,
+          "volume_ratio": 1.4704213036768254
+        },
+        {
+          "mesh": "base_link_collision_002",
+          "file": "meshes/collision/base_link_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 1246,
+          "vertices": 609,
+          "hull_volume_m3": 3.685620633412985e-05,
+          "source_closed_volume_m3": 1.3475099763338538e-05,
+          "volume_ratio": 2.735134209128742
+        },
+        {
+          "mesh": "base_link_collision_003",
+          "file": "meshes/collision/base_link_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 1224,
+          "vertices": 655,
+          "hull_volume_m3": 3.022124898580578e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "base_link_collision_004",
+          "file": "meshes/collision/base_link_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 6460,
+          "vertices": 3242,
+          "hull_volume_m3": 0.0004557914119324454,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "base_link_collision_005",
+          "file": "meshes/collision/base_link_005.obj",
+          "source_components": [
+            5
+          ],
+          "source_faces": 2786,
+          "vertices": 1382,
+          "hull_volume_m3": 1.8018648388331513e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "base_link_collision_006",
+          "file": "meshes/collision/base_link_006.obj",
+          "source_components": [
+            6
+          ],
+          "source_faces": 400,
+          "vertices": 194,
+          "hull_volume_m3": 1.908382974513098e-06,
+          "source_closed_volume_m3": 1.0065775792559885e-06,
+          "volume_ratio": 1.8959124600447375
+        },
+        {
+          "mesh": "base_link_collision_007",
+          "file": "meshes/collision/base_link_007.obj",
+          "source_components": [
+            7
+          ],
+          "source_faces": 1866,
+          "vertices": 921,
+          "hull_volume_m3": 1.8921131091654957e-05,
+          "source_closed_volume_m3": 7.999913563370305e-06,
+          "volume_ratio": 2.3651669410892513
+        }
+      ],
+      "planar_merges": []
+    },
+    "link1": {
+      "source": "meshes/source/nero/meshes/link1.stl",
+      "source_faces": 22600,
+      "source_components": 8,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link1_collision_000",
+          "file": "meshes/collision/link1_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 5412,
+          "vertices": 2682,
+          "hull_volume_m3": 0.00023455542110849704,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link1_collision_001",
+          "file": "meshes/collision/link1_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 3056,
+          "vertices": 1508,
+          "hull_volume_m3": 1.833606254679261e-05,
+          "source_closed_volume_m3": 6.0494210720978326e-06,
+          "volume_ratio": 3.0310441822880065
+        },
+        {
+          "mesh": "link1_collision_002",
+          "file": "meshes/collision/link1_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 5698,
+          "vertices": 2799,
+          "hull_volume_m3": 0.00015743603711650692,
+          "source_closed_volume_m3": 3.803024473546494e-05,
+          "volume_ratio": 4.139758716032943
+        },
+        {
+          "mesh": "link1_collision_003",
+          "file": "meshes/collision/link1_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 3772,
+          "vertices": 1876,
+          "hull_volume_m3": 3.297768945376453e-05,
+          "source_closed_volume_m3": 1.1449466857266198e-05,
+          "volume_ratio": 2.8802816641925855
+        },
+        {
+          "mesh": "link1_collision_004",
+          "file": "meshes/collision/link1_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 2138,
+          "vertices": 1045,
+          "hull_volume_m3": 2.325022213187112e-05,
+          "source_closed_volume_m3": 8.69954682539843e-06,
+          "volume_ratio": 2.67257853753851
+        },
+        {
+          "mesh": "link1_collision_005",
+          "file": "meshes/collision/link1_005.obj",
+          "source_components": [
+            5
+          ],
+          "source_faces": 272,
+          "vertices": 138,
+          "hull_volume_m3": 1.0373423213303664e-07,
+          "source_closed_volume_m3": 1.0373423099548015e-07,
+          "volume_ratio": 1.0000000109660665
+        },
+        {
+          "mesh": "link1_collision_006",
+          "file": "meshes/collision/link1_006.obj",
+          "source_components": [
+            6
+          ],
+          "source_faces": 272,
+          "vertices": 138,
+          "hull_volume_m3": 1.0373423213303666e-07,
+          "source_closed_volume_m3": 1.037342309954801e-07,
+          "volume_ratio": 1.0000000109660674
+        },
+        {
+          "mesh": "link1_collision_007",
+          "file": "meshes/collision/link1_007.obj",
+          "source_components": [
+            7
+          ],
+          "source_faces": 1980,
+          "vertices": 988,
+          "hull_volume_m3": 1.0475609049041266e-05,
+          "source_closed_volume_m3": 8.28013146690916e-06,
+          "volume_ratio": 1.2651500873997163
+        }
+      ],
+      "planar_merges": []
+    },
+    "link2": {
+      "source": "meshes/source/nero/meshes/link2.stl",
+      "source_faces": 36049,
+      "source_components": 5,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link2_collision_000",
+          "file": "meshes/collision/link2_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 12636,
+          "vertices": 6316,
+          "hull_volume_m3": 0.0006758996901368636,
+          "source_closed_volume_m3": 9.658547699331827e-05,
+          "volume_ratio": 6.997943284823473
+        },
+        {
+          "mesh": "link2_collision_001",
+          "file": "meshes/collision/link2_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 12439,
+          "vertices": 6219,
+          "hull_volume_m3": 0.000661264676137572,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link2_collision_002",
+          "file": "meshes/collision/link2_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 3698,
+          "vertices": 1833,
+          "hull_volume_m3": 4.5414626658336987e-05,
+          "source_closed_volume_m3": 1.662483829096417e-05,
+          "volume_ratio": 2.731733437853676
+        },
+        {
+          "mesh": "link2_collision_003",
+          "file": "meshes/collision/link2_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 3728,
+          "vertices": 1842,
+          "hull_volume_m3": 3.852946794423185e-05,
+          "source_closed_volume_m3": 1.6936330342799358e-05,
+          "volume_ratio": 2.274959637913122
+        },
+        {
+          "mesh": "link2_collision_004",
+          "file": "meshes/collision/link2_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 3548,
+          "vertices": 1768,
+          "hull_volume_m3": 4.4952226299735637e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        }
+      ],
+      "planar_merges": []
+    },
+    "link3": {
+      "source": "meshes/source/nero/meshes/link3.stl",
+      "source_faces": 38948,
+      "source_components": 8,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link3_collision_000",
+          "file": "meshes/collision/link3_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 7752,
+          "vertices": 3876,
+          "hull_volume_m3": 0.00010242716910313444,
+          "source_closed_volume_m3": 1.8867663838459176e-05,
+          "volume_ratio": 5.428714968641244
+        },
+        {
+          "mesh": "link3_collision_001",
+          "file": "meshes/collision/link3_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 8024,
+          "vertices": 4012,
+          "hull_volume_m3": 9.715009873606077e-05,
+          "source_closed_volume_m3": 1.8667345283100356e-05,
+          "volume_ratio": 5.204280376385991
+        },
+        {
+          "mesh": "link3_collision_002",
+          "file": "meshes/collision/link3_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 4888,
+          "vertices": 2391,
+          "hull_volume_m3": 7.171077218930342e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link3_collision_003",
+          "file": "meshes/collision/link3_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 4748,
+          "vertices": 2344,
+          "hull_volume_m3": 8.040605131864088e-05,
+          "source_closed_volume_m3": 1.4618872391967593e-05,
+          "volume_ratio": 5.5001541269913785
+        },
+        {
+          "mesh": "link3_collision_004",
+          "file": "meshes/collision/link3_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 3016,
+          "vertices": 1492,
+          "hull_volume_m3": 6.387335750468114e-05,
+          "source_closed_volume_m3": 1.9597536038468813e-05,
+          "volume_ratio": 3.259254499101391
+        },
+        {
+          "mesh": "link3_collision_005",
+          "file": "meshes/collision/link3_005.obj",
+          "source_components": [
+            5
+          ],
+          "source_faces": 4674,
+          "vertices": 2319,
+          "hull_volume_m3": 4.245312734859691e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link3_collision_006",
+          "file": "meshes/collision/link3_006.obj",
+          "source_components": [
+            6
+          ],
+          "source_faces": 3836,
+          "vertices": 1892,
+          "hull_volume_m3": 5.667280352041295e-05,
+          "source_closed_volume_m3": 3.1651627132687285e-05,
+          "volume_ratio": 1.7905178549852745
+        },
+        {
+          "mesh": "link3_collision_007",
+          "file": "meshes/collision/link3_007.obj",
+          "source_components": [
+            7
+          ],
+          "source_faces": 2010,
+          "vertices": 964,
+          "hull_volume_m3": 8.915712077135799e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        }
+      ],
+      "planar_merges": []
+    },
+    "link4": {
+      "source": "meshes/source/nero/meshes/link4.stl",
+      "source_faces": 36294,
+      "source_components": 6,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link4_collision_000",
+          "file": "meshes/collision/link4_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 11482,
+          "vertices": 5739,
+          "hull_volume_m3": 0.0002406806652782124,
+          "source_closed_volume_m3": 3.392497295070214e-05,
+          "volume_ratio": 7.094498369326809
+        },
+        {
+          "mesh": "link4_collision_001",
+          "file": "meshes/collision/link4_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 13002,
+          "vertices": 6499,
+          "hull_volume_m3": 0.00024978611314769125,
+          "source_closed_volume_m3": 3.455972763960591e-05,
+          "volume_ratio": 7.227664400382398
+        },
+        {
+          "mesh": "link4_collision_002",
+          "file": "meshes/collision/link4_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 2970,
+          "vertices": 1490,
+          "hull_volume_m3": 2.6244900833756346e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link4_collision_003",
+          "file": "meshes/collision/link4_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 1866,
+          "vertices": 905,
+          "hull_volume_m3": 6.822560728018131e-06,
+          "source_closed_volume_m3": 2.8946445751609195e-06,
+          "volume_ratio": 2.356959740951564
+        },
+        {
+          "mesh": "link4_collision_004",
+          "file": "meshes/collision/link4_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 4672,
+          "vertices": 2341,
+          "hull_volume_m3": 2.45131854572105e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link4_collision_005",
+          "file": "meshes/collision/link4_005.obj",
+          "source_components": [
+            5
+          ],
+          "source_faces": 2302,
+          "vertices": 1127,
+          "hull_volume_m3": 3.9082020861856685e-05,
+          "source_closed_volume_m3": 1.8593539060823668e-05,
+          "volume_ratio": 2.1019140430453054
+        }
+      ],
+      "planar_merges": []
+    },
+    "link5": {
+      "source": "meshes/source/nero/meshes/link5.stl",
+      "source_faces": 36200,
+      "source_components": 7,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link5_collision_000",
+          "file": "meshes/collision/link5_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 9490,
+          "vertices": 4743,
+          "hull_volume_m3": 0.00024053530452720697,
+          "source_closed_volume_m3": 4.205529000598874e-05,
+          "volume_ratio": 5.719501743846122
+        },
+        {
+          "mesh": "link5_collision_001",
+          "file": "meshes/collision/link5_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 3966,
+          "vertices": 1955,
+          "hull_volume_m3": 7.799563721809951e-05,
+          "source_closed_volume_m3": 2.0244708648221817e-05,
+          "volume_ratio": 3.8526431065704774
+        },
+        {
+          "mesh": "link5_collision_002",
+          "file": "meshes/collision/link5_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 2756,
+          "vertices": 1374,
+          "hull_volume_m3": 2.3216803562510697e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link5_collision_003",
+          "file": "meshes/collision/link5_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 3760,
+          "vertices": 1852,
+          "hull_volume_m3": 4.064682053189572e-05,
+          "source_closed_volume_m3": 6.532987180927385e-06,
+          "volume_ratio": 6.221781767850604
+        },
+        {
+          "mesh": "link5_collision_004",
+          "file": "meshes/collision/link5_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 2570,
+          "vertices": 1275,
+          "hull_volume_m3": 3.8755476467862985e-05,
+          "source_closed_volume_m3": 1.461930076210677e-05,
+          "volume_ratio": 2.650980173300572
+        },
+        {
+          "mesh": "link5_collision_005",
+          "file": "meshes/collision/link5_005.obj",
+          "source_components": [
+            5
+          ],
+          "source_faces": 3956,
+          "vertices": 1979,
+          "hull_volume_m3": 3.806517891893911e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link5_collision_006",
+          "file": "meshes/collision/link5_006.obj",
+          "source_components": [
+            6
+          ],
+          "source_faces": 9702,
+          "vertices": 4849,
+          "hull_volume_m3": 0.0002570349028131508,
+          "source_closed_volume_m3": 4.368194581645387e-05,
+          "volume_ratio": 5.8842365652203235
+        }
+      ],
+      "planar_merges": []
+    },
+    "link6": {
+      "source": "meshes/source/nero/meshes/link6.stl",
+      "source_faces": 15164,
+      "source_components": 5,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link6_collision_000",
+          "file": "meshes/collision/link6_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 2048,
+          "vertices": 1000,
+          "hull_volume_m3": 9.980053693270319e-06,
+          "source_closed_volume_m3": 3.436784847042556e-06,
+          "volume_ratio": 2.903892485983933
+        },
+        {
+          "mesh": "link6_collision_001",
+          "file": "meshes/collision/link6_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 4672,
+          "vertices": 2320,
+          "hull_volume_m3": 2.4513175971441717e-05,
+          "source_closed_volume_m3": 1.058909130852564e-05,
+          "volume_ratio": 2.314946132507642
+        },
+        {
+          "mesh": "link6_collision_002",
+          "file": "meshes/collision/link6_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 6348,
+          "vertices": 3110,
+          "hull_volume_m3": 4.7023015584698544e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "link6_collision_003",
+          "file": "meshes/collision/link6_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 1048,
+          "vertices": 520,
+          "hull_volume_m3": 3.2031914526396585e-06,
+          "source_closed_volume_m3": 9.762912711047393e-07,
+          "volume_ratio": 3.2809793014076956
+        },
+        {
+          "mesh": "link6_collision_004",
+          "file": "meshes/collision/link6_004.obj",
+          "source_components": [
+            4
+          ],
+          "source_faces": 1048,
+          "vertices": 520,
+          "hull_volume_m3": 3.203191369480324e-06,
+          "source_closed_volume_m3": 9.76291408875609e-07,
+          "volume_ratio": 3.2809787532284314
+        }
+      ],
+      "planar_merges": []
+    },
+    "link7": {
+      "source": "meshes/source/nero/meshes/link7.stl",
+      "source_faces": 2986,
+      "source_components": 4,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "link7_collision_000",
+          "file": "meshes/collision/link7_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 2266,
+          "vertices": 1129,
+          "hull_volume_m3": 2.677347972510133e-06,
+          "source_closed_volume_m3": 2.0442968985767194e-06,
+          "volume_ratio": 1.3096668954368402
+        },
+        {
+          "mesh": "link7_collision_001",
+          "file": "meshes/collision/link7_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 240,
+          "vertices": 122,
+          "hull_volume_m3": 9.307789946163984e-08,
+          "source_closed_volume_m3": 9.307789503574824e-08,
+          "volume_ratio": 1.000000047550405
+        },
+        {
+          "mesh": "link7_collision_002",
+          "file": "meshes/collision/link7_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 240,
+          "vertices": 122,
+          "hull_volume_m3": 9.307789831023723e-08,
+          "source_closed_volume_m3": 9.307789349372947e-08,
+          "volume_ratio": 1.0000000517470646
+        },
+        {
+          "mesh": "link7_collision_003",
+          "file": "meshes/collision/link7_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 240,
+          "vertices": 122,
+          "hull_volume_m3": 9.307790566536519e-08,
+          "source_closed_volume_m3": 9.307789953019781e-08,
+          "volume_ratio": 1.00000006591433
+        }
+      ],
+      "planar_merges": []
+    },
+    "flange_link": {
+      "source": "meshes/source/nero/meshes/flange.stl",
+      "source_faces": 13310,
+      "source_components": 3,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "flange_link_collision_000",
+          "file": "meshes/collision/flange_link_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 5148,
+          "vertices": 2560,
+          "hull_volume_m3": 1.9933147922091697e-05,
+          "source_closed_volume_m3": 6.766806543708663e-06,
+          "volume_ratio": 2.9457245147083806
+        },
+        {
+          "mesh": "flange_link_collision_001",
+          "file": "meshes/collision/flange_link_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 4966,
+          "vertices": 2475,
+          "hull_volume_m3": 7.725105020223617e-06,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "flange_link_collision_002",
+          "file": "meshes/collision/flange_link_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 3196,
+          "vertices": 1605,
+          "hull_volume_m3": 7.978269142353937e-06,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        }
+      ],
+      "planar_merges": []
+    },
+    "gripper_base": {
+      "source": "meshes/source/agx_gripper/meshes/gripper_base.stl",
+      "source_faces": 36756,
+      "source_components": 4,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "gripper_base_collision_000",
+          "file": "meshes/collision/gripper_base_000.obj",
+          "source_components": [
+            0
+          ],
+          "source_faces": 22320,
+          "vertices": 11144,
+          "hull_volume_m3": 0.00013238803633742395,
+          "source_closed_volume_m3": 3.645929807620585e-05,
+          "volume_ratio": 3.631118626055594
+        },
+        {
+          "mesh": "gripper_base_collision_001",
+          "file": "meshes/collision/gripper_base_001.obj",
+          "source_components": [
+            1
+          ],
+          "source_faces": 4506,
+          "vertices": 2255,
+          "hull_volume_m3": 9.976423088464201e-05,
+          "source_closed_volume_m3": 9.662757536000852e-05,
+          "volume_ratio": 1.0324612877115789
+        },
+        {
+          "mesh": "gripper_base_collision_002",
+          "file": "meshes/collision/gripper_base_002.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 6114,
+          "vertices": 3043,
+          "hull_volume_m3": 2.7128065478619727e-05,
+          "source_closed_volume_m3": 9.576173547410535e-06,
+          "volume_ratio": 2.832871119587776
+        },
+        {
+          "mesh": "gripper_base_collision_003",
+          "file": "meshes/collision/gripper_base_003.obj",
+          "source_components": [
+            3
+          ],
+          "source_faces": 3816,
+          "vertices": 1890,
+          "hull_volume_m3": 5.1956213649794766e-06,
+          "source_closed_volume_m3": 4.445722762027397e-06,
+          "volume_ratio": 1.1686786700595115
+        }
+      ],
+      "planar_merges": []
+    },
+    "gripper_link1": {
+      "source": "meshes/source/agx_gripper/meshes/gripper_link1.stl",
+      "source_faces": 2086,
+      "source_components": 3,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "gripper_link1_collision_000",
+          "file": "meshes/collision/gripper_link1_000.obj",
+          "source_components": [
+            0,
+            1
+          ],
+          "source_faces": 1582,
+          "vertices": 776,
+          "hull_volume_m3": 4.8244762960580836e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "gripper_link1_collision_001",
+          "file": "meshes/collision/gripper_link1_001.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 504,
+          "vertices": 254,
+          "hull_volume_m3": 2.4862494183797146e-06,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        }
+      ],
+      "planar_merges": [
+        {
+          "source_components": [
+            1
+          ],
+          "target_collision_part": 0,
+          "source_face_count": 4,
+          "reason": "all planar source vertices contained in this existing convex hull",
+          "containment_tolerance_m": 1e-10
+        }
+      ]
+    },
+    "gripper_link2": {
+      "source": "meshes/source/agx_gripper/meshes/gripper_link2.stl",
+      "source_faces": 2086,
+      "source_components": 3,
+      "exact_coordinate_partition": true,
+      "source_vertices_moved": false,
+      "source_topology_repaired": false,
+      "parts": [
+        {
+          "mesh": "gripper_link2_collision_000",
+          "file": "meshes/collision/gripper_link2_000.obj",
+          "source_components": [
+            0,
+            1
+          ],
+          "source_faces": 1582,
+          "vertices": 776,
+          "hull_volume_m3": 4.824476296058084e-05,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        },
+        {
+          "mesh": "gripper_link2_collision_001",
+          "file": "meshes/collision/gripper_link2_001.obj",
+          "source_components": [
+            2
+          ],
+          "source_faces": 504,
+          "vertices": 254,
+          "hull_volume_m3": 2.4862494183797146e-06,
+          "source_closed_volume_m3": null,
+          "volume_ratio": null
+        }
+      ],
+      "planar_merges": [
+        {
+          "source_components": [
+            1
+          ],
+          "target_collision_part": 0,
+          "source_face_count": 4,
+          "reason": "all planar source vertices contained in this existing convex hull",
+          "containment_tolerance_m": 1e-10
+        }
+      ]
+    }
+  },
+  "source_surface_faces_covered": true,
+  "explicit_collision_excludes": 0,
+  "collision_approximation": "convex hull per exact source component; contained planar decorations retained in containing hull"
+}

@@ -1,0 +1,371 @@
+{
+  "status": "PASS_STATIC_EQUIVALENCE",
+  "source_revision": "a68b8e876a2c6fcb0ecee7a7943129e4d48dd864",
+  "source_files": 29,
+  "expanded_urdf_matches_original_source": true,
+  "source_description_records": 27,
+  "physical_bodies": 12,
+  "nq": 9,
+  "nv": 9,
+  "nu": 0,
+  "neq": 1,
+  "explicit_collision_excludes": 0,
+  "visual_geoms": 12,
+  "collision_geoms": 62,
+  "total_mass_kg": 5.128923660000002,
+  "max_errors": {
+    "body_position_m": 5.551115123125783e-16,
+    "body_rotation_matrix": 1.2212453270876722e-15,
+    "mass_kg": 0.0,
+    "inertia_kg_m2": 1.734723475976807e-18,
+    "inertial_position_m": 0.0,
+    "joint_axis": 0.0,
+    "joint_range": 0.0,
+    "geometry_bounds_m": 9.265381378797954e-09,
+    "mimic_m": 0.0
+  },
+  "tolerances": {
+    "body_position_m": 1e-10,
+    "body_rotation_matrix": 1e-10,
+    "mass_kg": 1e-10,
+    "inertia_kg_m2": 1e-12,
+    "inertial_position_m": 1e-10,
+    "joint_axis": 1e-10,
+    "joint_range": 1e-10,
+    "geometry_bounds_m": 1e-06,
+    "mimic_m": 1e-10
+  },
+  "failures": {},
+  "body_fields": [
+    {
+      "body": "base_link",
+      "source_mass_kg": 1.06458435,
+      "compiled_mass_kg": 1.06458435
+    },
+    {
+      "body": "link1",
+      "source_mass_kg": 0.76710504,
+      "compiled_mass_kg": 0.76710504
+    },
+    {
+      "body": "link2",
+      "source_mass_kg": 0.69381908,
+      "compiled_mass_kg": 0.69381908
+    },
+    {
+      "body": "link3",
+      "source_mass_kg": 0.67246544,
+      "compiled_mass_kg": 0.67246544
+    },
+    {
+      "body": "link4",
+      "source_mass_kg": 0.48451414,
+      "compiled_mass_kg": 0.48451414
+    },
+    {
+      "body": "link5",
+      "source_mass_kg": 0.58368405,
+      "compiled_mass_kg": 0.58368405
+    },
+    {
+      "body": "link6",
+      "source_mass_kg": 0.3140406,
+      "compiled_mass_kg": 0.3140406
+    },
+    {
+      "body": "link7",
+      "source_mass_kg": 0.001,
+      "compiled_mass_kg": 0.001
+    },
+    {
+      "body": "flange_link",
+      "source_mass_kg": 0.04771096,
+      "compiled_mass_kg": 0.04771096
+    },
+    {
+      "body": "gripper_base",
+      "source_mass_kg": 0.45,
+      "compiled_mass_kg": 0.45
+    },
+    {
+      "body": "gripper_link1",
+      "source_mass_kg": 0.025,
+      "compiled_mass_kg": 0.025
+    },
+    {
+      "body": "gripper_link2",
+      "source_mass_kg": 0.025,
+      "compiled_mass_kg": 0.025
+    }
+  ],
+  "poses": [
+    {
+      "name": "zero_arm_width_0.0",
+      "arm_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_gripper_command_m": 0.0,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000001827134089
+        },
+        {
+          "bodies": [
+            "gripper_link1",
+            "gripper_link2"
+          ],
+          "minimum_distance_m": -1.3508573828625022e-10
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "zero_arm_width_0.05",
+      "arm_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_gripper_command_m": 0.05,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000001827134089
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "zero_arm_width_0.1",
+      "arm_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_gripper_command_m": 0.1,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000001827134089
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_0",
+      "arm_rad": [
+        -0.7618793652852116,
+        -0.9215709995683498,
+        1.0008987987875573,
+        -0.6648204340780747,
+        1.4972484266422939,
+        -0.08526753294615719,
+        -0.7164607384522697
+      ],
+      "source_gripper_command_m": 0.008136492897397785,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000002511757472
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_1",
+      "arm_rad": [
+        -2.214803437294822,
+        -0.11280061872067026,
+        -1.7508342505386751,
+        -0.4461882960090534,
+        1.7538864187475864,
+        -0.5656538875097556,
+        0.4116518087973815
+      ],
+      "source_gripper_command_m": 0.08727963928493845,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000002778151938
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_2",
+      "arm_rad": [
+        -0.9395936091857355,
+        -0.3340197484951606,
+        1.1086458394194727,
+        2.089942664206288,
+        -1.9992767407422267,
+        0.6220466632031385,
+        -0.6049800637748373
+      ],
+      "source_gripper_command_m": 0.049016814648273094,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000003028865408
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_3",
+      "arm_rad": [
+        -1.1547802525173496,
+        0.16318701513987488,
+        0.004019047337844306,
+        0.12255962828486666,
+        -0.2124343355699625,
+        0.11503610746711534,
+        1.4358339917642935
+      ],
+      "source_gripper_command_m": 0.06417867674557869,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.00500000314670653
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_4",
+      "arm_rad": [
+        -2.416372739000292,
+        -0.15480543017856774,
+        0.22985518750549083,
+        -0.822350824092211,
+        1.045349091487096,
+        0.8333849546034842,
+        0.25716467613824534
+      ],
+      "source_gripper_command_m": 0.05978575641190046,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000001574859605
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_5",
+      "arm_rad": [
+        -0.2125375032599548,
+        -0.7560364108969699,
+        -2.332093978706834,
+        -0.7629164422882064,
+        0.03150606640007192,
+        0.1416699704841522,
+        -0.8839549409600591
+      ],
+      "source_gripper_command_m": 0.07185853989705147,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.00500000268060055
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_6",
+      "arm_rad": [
+        -0.7274010896495964,
+        0.9450518667803374,
+        -2.6917876716041373,
+        -0.21776012387366572,
+        -2.1073828108079202,
+        -0.12378436585405461,
+        0.3224731639111085
+      ],
+      "source_gripper_command_m": 0.08090411934669028,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.00500000277012946
+        }
+      ],
+      "time": 0.0
+    },
+    {
+      "name": "random_7",
+      "arm_rad": [
+        2.3405057899262234,
+        -1.0642288501672246,
+        -0.2743993310065802,
+        -0.5537316061861836,
+        -1.2097026197749225,
+        0.6059512234966824,
+        -1.4268599791081567
+      ],
+      "source_gripper_command_m": 0.08512156379936532,
+      "self_contacts": [
+        {
+          "bodies": [
+            "base_link",
+            "link1"
+          ],
+          "minimum_distance_m": -0.005000002095765189
+        }
+      ],
+      "time": 0.0
+    }
+  ],
+  "simulation_steps": 0,
+  "policy_actions": 0,
+  "dynamic_physics_validated": false,
+  "limitations": [
+    "Convex collision approximations preserve bounds, not concave triangle surfaces.",
+    "Self-contact observations are reported; static FK equivalence does not certify contact realism.",
+    "No actuators/controller, dynamic mimic tracking, grasping, real-hardware calibration, or policy evaluation."
+  ]
+}

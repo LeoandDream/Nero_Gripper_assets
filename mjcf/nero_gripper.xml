@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="nero_official_gripper_assets">
+  <compiler angle="radian" fusestatic="false" inertiafromgeom="false" autolimits="true" />
+  <asset>
+    <mesh name="base_link_visual_mesh" file="../meshes/visual/base_link.obj" />
+    <texture name="base_link_colors" type="2d" file="../meshes/visual/base_link.png" />
+    <material name="base_link_visual_material" texture="base_link_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="base_link_collision_000" file="../meshes/collision/base_link_000.obj" />
+    <mesh name="base_link_collision_001" file="../meshes/collision/base_link_001.obj" />
+    <mesh name="base_link_collision_002" file="../meshes/collision/base_link_002.obj" />
+    <mesh name="base_link_collision_003" file="../meshes/collision/base_link_003.obj" />
+    <mesh name="base_link_collision_004" file="../meshes/collision/base_link_004.obj" />
+    <mesh name="base_link_collision_005" file="../meshes/collision/base_link_005.obj" />
+    <mesh name="base_link_collision_006" file="../meshes/collision/base_link_006.obj" />
+    <mesh name="base_link_collision_007" file="../meshes/collision/base_link_007.obj" />
+    <mesh name="link1_visual_mesh" file="../meshes/visual/link1.obj" />
+    <texture name="link1_colors" type="2d" file="../meshes/visual/link1.png" />
+    <material name="link1_visual_material" texture="link1_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link1_collision_000" file="../meshes/collision/link1_000.obj" />
+    <mesh name="link1_collision_001" file="../meshes/collision/link1_001.obj" />
+    <mesh name="link1_collision_002" file="../meshes/collision/link1_002.obj" />
+    <mesh name="link1_collision_003" file="../meshes/collision/link1_003.obj" />
+    <mesh name="link1_collision_004" file="../meshes/collision/link1_004.obj" />
+    <mesh name="link1_collision_005" file="../meshes/collision/link1_005.obj" />
+    <mesh name="link1_collision_006" file="../meshes/collision/link1_006.obj" />
+    <mesh name="link1_collision_007" file="../meshes/collision/link1_007.obj" />
+    <mesh name="link2_visual_mesh" file="../meshes/visual/link2.obj" />
+    <texture name="link2_colors" type="2d" file="../meshes/visual/link2.png" />
+    <material name="link2_visual_material" texture="link2_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link2_collision_000" file="../meshes/collision/link2_000.obj" />
+    <mesh name="link2_collision_001" file="../meshes/collision/link2_001.obj" />
+    <mesh name="link2_collision_002" file="../meshes/collision/link2_002.obj" />
+    <mesh name="link2_collision_003" file="../meshes/collision/link2_003.obj" />
+    <mesh name="link2_collision_004" file="../meshes/collision/link2_004.obj" />
+    <mesh name="link3_visual_mesh" file="../meshes/visual/link3.obj" />
+    <texture name="link3_colors" type="2d" file="../meshes/visual/link3.png" />
+    <material name="link3_visual_material" texture="link3_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link3_collision_000" file="../meshes/collision/link3_000.obj" />
+    <mesh name="link3_collision_001" file="../meshes/collision/link3_001.obj" />
+    <mesh name="link3_collision_002" file="../meshes/collision/link3_002.obj" />
+    <mesh name="link3_collision_003" file="../meshes/collision/link3_003.obj" />
+    <mesh name="link3_collision_004" file="../meshes/collision/link3_004.obj" />
+    <mesh name="link3_collision_005" file="../meshes/collision/link3_005.obj" />
+    <mesh name="link3_collision_006" file="../meshes/collision/link3_006.obj" />
+    <mesh name="link3_collision_007" file="../meshes/collision/link3_007.obj" />
+    <mesh name="link4_visual_mesh" file="../meshes/visual/link4.obj" />
+    <texture name="link4_colors" type="2d" file="../meshes/visual/link4.png" />
+    <material name="link4_visual_material" texture="link4_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link4_collision_000" file="../meshes/collision/link4_000.obj" />
+    <mesh name="link4_collision_001" file="../meshes/collision/link4_001.obj" />
+    <mesh name="link4_collision_002" file="../meshes/collision/link4_002.obj" />
+    <mesh name="link4_collision_003" file="../meshes/collision/link4_003.obj" />
+    <mesh name="link4_collision_004" file="../meshes/collision/link4_004.obj" />
+    <mesh name="link4_collision_005" file="../meshes/collision/link4_005.obj" />
+    <mesh name="link5_visual_mesh" file="../meshes/visual/link5.obj" />
+    <texture name="link5_colors" type="2d" file="../meshes/visual/link5.png" />
+    <material name="link5_visual_material" texture="link5_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link5_collision_000" file="../meshes/collision/link5_000.obj" />
+    <mesh name="link5_collision_001" file="../meshes/collision/link5_001.obj" />
+    <mesh name="link5_collision_002" file="../meshes/collision/link5_002.obj" />
+    <mesh name="link5_collision_003" file="../meshes/collision/link5_003.obj" />
+    <mesh name="link5_collision_004" file="../meshes/collision/link5_004.obj" />
+    <mesh name="link5_collision_005" file="../meshes/collision/link5_005.obj" />
+    <mesh name="link5_collision_006" file="../meshes/collision/link5_006.obj" />
+    <mesh name="link6_visual_mesh" file="../meshes/visual/link6.obj" />
+    <texture name="link6_colors" type="2d" file="../meshes/visual/link6.png" />
+    <material name="link6_visual_material" texture="link6_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link6_collision_000" file="../meshes/collision/link6_000.obj" />
+    <mesh name="link6_collision_001" file="../meshes/collision/link6_001.obj" />
+    <mesh name="link6_collision_002" file="../meshes/collision/link6_002.obj" />
+    <mesh name="link6_collision_003" file="../meshes/collision/link6_003.obj" />
+    <mesh name="link6_collision_004" file="../meshes/collision/link6_004.obj" />
+    <mesh name="link7_visual_mesh" file="../meshes/visual/link7.obj" />
+    <texture name="link7_colors" type="2d" file="../meshes/visual/link7.png" />
+    <material name="link7_visual_material" texture="link7_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="link7_collision_000" file="../meshes/collision/link7_000.obj" />
+    <mesh name="link7_collision_001" file="../meshes/collision/link7_001.obj" />
+    <mesh name="link7_collision_002" file="../meshes/collision/link7_002.obj" />
+    <mesh name="link7_collision_003" file="../meshes/collision/link7_003.obj" />
+    <mesh name="flange_link_visual_mesh" file="../meshes/visual/flange_link.obj" />
+    <texture name="flange_link_colors" type="2d" file="../meshes/visual/flange_link.png" />
+    <material name="flange_link_visual_material" texture="flange_link_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="flange_link_collision_000" file="../meshes/collision/flange_link_000.obj" />
+    <mesh name="flange_link_collision_001" file="../meshes/collision/flange_link_001.obj" />
+    <mesh name="flange_link_collision_002" file="../meshes/collision/flange_link_002.obj" />
+    <mesh name="gripper_base_visual_mesh" file="../meshes/visual/gripper_base.obj" />
+    <texture name="gripper_base_colors" type="2d" file="../meshes/visual/gripper_base.png" />
+    <material name="gripper_base_visual_material" texture="gripper_base_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="gripper_base_collision_000" file="../meshes/collision/gripper_base_000.obj" />
+    <mesh name="gripper_base_collision_001" file="../meshes/collision/gripper_base_001.obj" />
+    <mesh name="gripper_base_collision_002" file="../meshes/collision/gripper_base_002.obj" />
+    <mesh name="gripper_base_collision_003" file="../meshes/collision/gripper_base_003.obj" />
+    <mesh name="gripper_link1_visual_mesh" file="../meshes/visual/gripper_link1.obj" />
+    <texture name="gripper_link1_colors" type="2d" file="../meshes/visual/gripper_link1.png" />
+    <material name="gripper_link1_visual_material" texture="gripper_link1_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="gripper_link1_collision_000" file="../meshes/collision/gripper_link1_000.obj" />
+    <mesh name="gripper_link1_collision_001" file="../meshes/collision/gripper_link1_001.obj" />
+    <mesh name="gripper_link2_visual_mesh" file="../meshes/visual/gripper_link2.obj" />
+    <texture name="gripper_link2_colors" type="2d" file="../meshes/visual/gripper_link2.png" />
+    <material name="gripper_link2_visual_material" texture="gripper_link2_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="gripper_link2_collision_000" file="../meshes/collision/gripper_link2_000.obj" />
+    <mesh name="gripper_link2_collision_001" file="../meshes/collision/gripper_link2_001.obj" />
+  </asset>
+  <worldbody>
+    <body name="base_link" pos="0 0 0" quat="1 0 0 0">
+      <inertial pos="-0.0031946599699999999 -5.4676080000000002e-05 0.04321758463" mass="1.06458435" diaginertia="0.00090865306346825945 0.0010266423265759882 0.0011440254867757524" quat="-0.49054533985010956 -0.49686585501372149 -0.5013489579877265 0.51101743022860235" />
+      <geom name="base_link_visual" type="mesh" mesh="base_link_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="base_link_visual_material" contype="0" conaffinity="0" group="1" />
+      <geom name="base_link_collision_000" type="mesh" mesh="base_link_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_001" type="mesh" mesh="base_link_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_002" type="mesh" mesh="base_link_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_003" type="mesh" mesh="base_link_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_004" type="mesh" mesh="base_link_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_005" type="mesh" mesh="base_link_collision_005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_006" type="mesh" mesh="base_link_collision_006" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <geom name="base_link_collision_007" type="mesh" mesh="base_link_collision_007" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+      <body name="link1" pos="0 0 0.13800000000000001" quat="1 0 0 0">
+        <inertial pos="-0.00076810577999999997 -5.7180309999999999e-05 -0.00686372765" mass="0.76710504" diaginertia="0.00051361904344675985 0.00054502205798592209 0.0006683610341873176" quat="-0.02634625043623285 0.67252387822686688 -0.0080592774650027968 0.73956240869137446" />
+        <joint name="joint1" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.70526 2.70526" />
+        <geom name="link1_visual" type="mesh" mesh="link1_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link1_visual_material" contype="0" conaffinity="0" group="1" />
+        <geom name="link1_collision_000" type="mesh" mesh="link1_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_001" type="mesh" mesh="link1_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_002" type="mesh" mesh="link1_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_003" type="mesh" mesh="link1_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_004" type="mesh" mesh="link1_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_005" type="mesh" mesh="link1_collision_005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_006" type="mesh" mesh="link1_collision_006" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="link1_collision_007" type="mesh" mesh="link1_collision_007" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <body name="link2" pos="0 0 0" quat="1.8946853330305491e-08 1.8946852822626523e-08 0.70710679065997362 -0.70710677171312064">
+          <inertial pos="0.00079686657000000002 -0.0789032593 0.00111849422" mass="0.69381908" diaginertia="0.00063216198722873822 0.0018222857339309747 0.0020113730768802881" quat="0.51405540992966692 0.49439214630631523 0.51007940225607384 0.48077275774191247" />
+          <joint name="joint2" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.74 1.74" />
+          <geom name="link2_visual" type="mesh" mesh="link2_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link2_visual_material" contype="0" conaffinity="0" group="1" />
+          <geom name="link2_collision_000" type="mesh" mesh="link2_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="link2_collision_001" type="mesh" mesh="link2_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="link2_collision_002" type="mesh" mesh="link2_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="link2_collision_003" type="mesh" mesh="link2_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="link2_collision_004" type="mesh" mesh="link2_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <body name="link3" pos="0 -0.31 0" quat="-1.379219111693476e-08 1.3792190747374434e-08 -0.70710677171312086 0.70710679065997384">
+            <inertial pos="0.00014513363000000001 -0.00121378766 -0.048611367949999998" mass="0.67246544" diaginertia="0.00028812606334660453 0.0033870299981712073 0.0034323046236521887" quat="-0.70673479320315613 0.0064270772870633841 0.70744740370401349 -0.001672048470752339" />
+            <joint name="joint3" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.75 2.75" />
+            <geom name="link3_visual" type="mesh" mesh="link3_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link3_visual_material" contype="0" conaffinity="0" group="1" />
+            <geom name="link3_collision_000" type="mesh" mesh="link3_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_001" type="mesh" mesh="link3_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_002" type="mesh" mesh="link3_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_003" type="mesh" mesh="link3_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_004" type="mesh" mesh="link3_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_005" type="mesh" mesh="link3_collision_005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_006" type="mesh" mesh="link3_collision_006" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <geom name="link3_collision_007" type="mesh" mesh="link3_collision_007" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+            <body name="link4" pos="0 0 0" quat="-1.379219111693476e-08 1.3792190747374434e-08 -0.70710677171312086 0.70710679065997384">
+              <inertial pos="-0.00031334622999999999 -0.05675192422 0.00076056132999999997" mass="0.48451414" diaginertia="0.00023296022880330849 0.00040345050270899278 0.00050397211673769882" quat="0.52999304480474452 0.47836948645923277 0.52213547838970664 0.46652389980587072" />
+              <joint name="joint4" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.01 2.14" />
+              <geom name="link4_visual" type="mesh" mesh="link4_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link4_visual_material" contype="0" conaffinity="0" group="1" />
+              <geom name="link4_collision_000" type="mesh" mesh="link4_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+              <geom name="link4_collision_001" type="mesh" mesh="link4_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+              <geom name="link4_collision_002" type="mesh" mesh="link4_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+              <geom name="link4_collision_003" type="mesh" mesh="link4_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+              <geom name="link4_collision_004" type="mesh" mesh="link4_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+              <geom name="link4_collision_005" type="mesh" mesh="link4_collision_005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+              <body name="link5" pos="0 -0.27000999999999997 0" quat="0.50000001339744826 0.49999999999999978 -0.49999999999999978 0.49999998660255174">
+                <inertial pos="0.0026559135700000001 0.00201195753 -0.11620855434000001" mass="0.58368405" diaginertia="0.00021492257182884273 0.00085967721540455193 0.00089718777503660502" quat="0.71269783037340084 0.049943371349252731 -0.69357146247926793 0.092336821873439098" />
+                <joint name="joint5" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.75 2.75" />
+                <geom name="link5_visual" type="mesh" mesh="link5_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link5_visual_material" contype="0" conaffinity="0" group="1" />
+                <geom name="link5_collision_000" type="mesh" mesh="link5_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <geom name="link5_collision_001" type="mesh" mesh="link5_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <geom name="link5_collision_002" type="mesh" mesh="link5_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <geom name="link5_collision_003" type="mesh" mesh="link5_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <geom name="link5_collision_004" type="mesh" mesh="link5_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <geom name="link5_collision_005" type="mesh" mesh="link5_collision_005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <geom name="link5_collision_006" type="mesh" mesh="link5_collision_006" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                <body name="link6" pos="0 0 0" quat="0.50000001339744826 0.49999999999999978 -0.49999999999999978 0.49999998660255174">
+                  <inertial pos="9.5015050000000001e-05 0.0010783117400000001 -0.0001911099" mass="0.3140406" diaginertia="4.6990384425863778e-05 5.7558927504871314e-05 6.0285670519264891e-05" quat="0.51992013775444068 0.48886225099116837 0.48199835585028145 0.50830535593369142" />
+                  <joint name="joint6" type="hinge" pos="0 0 0" axis="0 0 1" range="-0.73 0.95" />
+                  <geom name="link6_visual" type="mesh" mesh="link6_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link6_visual_material" contype="0" conaffinity="0" group="1" />
+                  <geom name="link6_collision_000" type="mesh" mesh="link6_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                  <geom name="link6_collision_001" type="mesh" mesh="link6_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                  <geom name="link6_collision_002" type="mesh" mesh="link6_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                  <geom name="link6_collision_003" type="mesh" mesh="link6_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                  <geom name="link6_collision_004" type="mesh" mesh="link6_collision_004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                  <body name="link7" pos="0 -0.0235 0" quat="0.70710679065997406 0.70710677171312097 0 0">
+                    <inertial pos="-0.00013999999999999999 -0.0001 -0.0027499999999999998" mass="0.001" diaginertia="1.1000000000000001e-07 1.1000000000000001e-07 1.9999999999999999e-07" quat="1 0 0 0" />
+                    <joint name="joint7" type="hinge" pos="0 0 0" axis="0 0 1" range="-1.5707963 1.5707963" />
+                    <geom name="link7_visual" type="mesh" mesh="link7_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="link7_visual_material" contype="0" conaffinity="0" group="1" />
+                    <geom name="link7_collision_000" type="mesh" mesh="link7_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                    <geom name="link7_collision_001" type="mesh" mesh="link7_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                    <geom name="link7_collision_002" type="mesh" mesh="link7_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                    <geom name="link7_collision_003" type="mesh" mesh="link7_collision_003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                    <body name="flange_link" pos="0.031 0 -0.0235" quat="0.49999816339744835 -0.49999999999662681 0.50000183660255171 -0.49999999999662681">
+                      <inertial pos="0.00025320099999999999 -0.00032269599999999997 -0.010082901" mass="0.04771096" diaginertia="1.7824163999999999e-05 2.6959440000000001e-05 3.6141070000000003e-05" quat="0.5 0.5 0.5 0.5" />
+                      <geom name="flange_link_visual" type="mesh" mesh="flange_link_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="flange_link_visual_material" contype="0" conaffinity="0" group="1" />
+                      <geom name="flange_link_collision_000" type="mesh" mesh="flange_link_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                      <geom name="flange_link_collision_001" type="mesh" mesh="flange_link_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                      <geom name="flange_link_collision_002" type="mesh" mesh="flange_link_collision_002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                      <body name="gripper_base" pos="0 0 0.0060000000000000001" quat="1 0 0 0">
+                        <inertial pos="-0.00018380716223559101 8.0503315557791104e-05 0.032143668990887601" mass="0.45" diaginertia="0.000208793681739 0.000443633623295 0.00046658733644499998" quat="0.5 0.5 0.5 0.5" />
+                        <geom name="gripper_base_visual" type="mesh" mesh="gripper_base_visual_mesh" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" material="gripper_base_visual_material" contype="0" conaffinity="0" group="1" />
+                        <geom name="gripper_base_collision_000" type="mesh" mesh="gripper_base_collision_000" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                        <geom name="gripper_base_collision_001" type="mesh" mesh="gripper_base_collision_001" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                        <geom name="gripper_base_collision_002" type="mesh" mesh="gripper_base_collision_002" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                        <geom name="gripper_base_collision_003" type="mesh" mesh="gripper_base_collision_003" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                        <body name="gripper_link1" pos="0 0 0.13800000000000001" quat="1.8946853330305491e-08 1.8946852822626523e-08 0.70710677171312064 0.70710679065997362">
+                          <inertial pos="0.00065123185041968004 -0.049192986913198899 0.0097225876918402496" mass="0.025" diaginertia="5.0797617256239397e-06 1.0850910357125149e-05 1.4522914303830911e-05" quat="0.064306243673385458 0.68316456429046502 0.72399478374448345 -0.070586388441518322" />
+                          <joint name="gripper_joint1" type="slide" pos="0 0 0" axis="0 0 1" range="0 0.05" />
+                          <geom name="gripper_link1_visual" type="mesh" mesh="gripper_link1_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="gripper_link1_visual_material" contype="0" conaffinity="0" group="1" />
+                          <geom name="gripper_link1_collision_000" type="mesh" mesh="gripper_link1_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                          <geom name="gripper_link1_collision_001" type="mesh" mesh="gripper_link1_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                        </body>
+                        <body name="gripper_link2" pos="0 0 0.13800000000000001" quat="0.70710679065997406 0.70710677171312097 0 0">
+                          <inertial pos="0.00065123185041968004 -0.049192986913198899 0.0097225876918402496" mass="0.025" diaginertia="5.0797617256239397e-06 1.0850910357125149e-05 1.4522914303830911e-05" quat="0.064306243673385458 0.68316456429046502 0.72399478374448345 -0.070586388441518322" />
+                          <joint name="gripper_joint2" type="slide" pos="0 0 0" axis="0 0 -1" range="-0.05 0" />
+                          <geom name="gripper_link2_visual" type="mesh" mesh="gripper_link2_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="gripper_link2_visual_material" contype="0" conaffinity="0" group="1" />
+                          <geom name="gripper_link2_collision_000" type="mesh" mesh="gripper_link2_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                          <geom name="gripper_link2_collision_001" type="mesh" mesh="gripper_link2_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="source_gripper_mimic" joint1="gripper_joint2" joint2="gripper_joint1" polycoef="0 -1 0 0 0" />
+  </equality>
+  <keyframe>
+    <key name="static_reference" qpos="0 -0.3 0 0.5 0 0 0 0.04 -0.04" />
+  </keyframe>
+</mujoco>
