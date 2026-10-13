@@ -1,0 +1,10 @@
+{
+  "asset_recheck": "PASS",
+  "controller_contract_tests": "PASS_3_TESTS",
+  "unfiltered_tracking_checks": "PASS_21_PHASES_37000_MJ_STEPS",
+  "contact_physics_acceptance": "PENDING_USER_APPROVAL_SINGLE_ADJACENT_PAIR_EXCLUSION",
+  "grasp": "NOT_EXECUTED",
+  "independent_final_review": "NOT_YET; per task after control and grasp",
+  "protected_asset": "8e8b805e28bd07a6799d3d838574912ab2280912",
+  "candidate_adopted": false
+}

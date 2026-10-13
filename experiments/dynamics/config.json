@@ -1,0 +1,29 @@
+{
+  "baseline_commit": "8e8b805e28bd07a6799d3d838574912ab2280912",
+  "timestep_s": 0.001,
+  "command_period_s": 0.01,
+  "record_every_physics_step": true,
+  "integrator": "implicitfast",
+  "gravity_m_s2": [0, 0, -9.81],
+  "arm_kp_Nm_rad": [160, 160, 160, 80, 40, 40, 30],
+  "arm_kv_Nms_rad": [12, 12, 10, 6, 3, 3, 2],
+  "finger_kp_N_m": 800,
+  "finger_kv_Ns_m": 8,
+  "arm_force_limits_Nm": [100, 100, 100, 100, 100, 100, 100],
+  "finger_force_limit_N": 10,
+  "joint2_command_envelope_rad": [-0.2, 1.5],
+  "arm_target_slew_rad_s": 0.2,
+  "gripper_command_slew_m_s": 0.03,
+  "initial_action": [0, 0, 0, 0.5, 0, 0, 0, 0.08],
+  "parameter_status": "explicit simulation candidate; gains are not manufacturer calibration",
+  "control_design": "9 native affine general actuators: proportional and qfrc_bias feedforward in ctrl, velocity feedback in actuator bias; total actuator force clipped; 8D user target maps to 9 physical joint targets",
+  "mechanical_and_contact_parameters": "unchanged from protected asset, including original equality numerical parameters; no explicit excludes unless separately approved",
+  "acceptance": {
+    "settled_arm_error_rad": 0.005,
+    "settled_finger_error_m": 0.0005,
+    "maximum_coupling_error_m": 0.0002,
+    "maximum_arm_velocity_rad_s": 1.0,
+    "maximum_finger_velocity_m_s": 0.1,
+    "require_no_numerical_warnings_or_time_resets": true
+  }
+}
