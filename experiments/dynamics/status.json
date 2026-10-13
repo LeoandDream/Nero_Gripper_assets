@@ -1,10 +1,15 @@
 {
-  "asset_recheck": "PASS",
-  "controller_contract_tests": "PASS_3_TESTS",
-  "unfiltered_tracking_checks": "PASS_21_PHASES_37000_MJ_STEPS",
-  "contact_physics_acceptance": "PENDING_USER_APPROVAL_SINGLE_ADJACENT_PAIR_EXCLUSION",
-  "grasp": "NOT_EXECUTED",
-  "independent_final_review": "NOT_YET; per task after control and grasp",
   "protected_asset": "8e8b805e28bd07a6799d3d838574912ab2280912",
-  "candidate_adopted": false
+  "asset_recheck": "PASS_127_SHA_8_TESTS_11_POSES",
+  "controller_contract_tests": "PASS_10_TESTS_INCLUDING_INTERRUPTED_EVIDENCE_RETENTION",
+  "empty_load_control": "PASS_21_PHASES_37000_STEPS",
+  "approved_collision_change": "base_link/link1 only",
+  "grasp": "FAIL_0_OF_2_COMPLETE_PHYSICAL_ATTEMPTS",
+  "loaded_finger_coupling": "FAIL_BOTH_ATTEMPTS_AT_FROZEN_0.2MM_THRESHOLD",
+  "initial_offset_repeats": "NOT_EXECUTED_PER_FROZEN_FIRST_FIXED_PASS_RULE",
+  "independent_review": "IN_PROGRESS",
+  "complete_grasp_baseline": "NOT_ACHIEVED",
+  "hardware_fidelity": "UNKNOWN",
+  "further_physics_changes": "NOT_ADOPTED; require specific proposal and confirmation",
+  "original_main_modified": false
 }

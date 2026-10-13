@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "user_message": "继续任务",
+  "interpretation": "User instructed continuation after the concrete single-pair exclusion proposal and confirmation request; authorization is limited to that presented candidate.",
+  "scope": ["base_link", "link1"],
+  "applies_to": "independent derived dynamic model only",
+  "source_asset_changed": false,
+  "proposal": "runs/risk_20261014_001/candidate-diff.xml",
+  "before_after_evidence": "runs/risk_20261014_001/comparison.json",
+  "other_physical_changes_authorized": false
+}

@@ -32,18 +32,26 @@ def build_model(path,config,*,exclude_base_link1=False,cube=None):
     for name,limit,kv in zip(JOINTS,limits,damping):
         ET.SubElement(actuator,'general',name='servo_'+name,joint=name,gear='1',dyntype='none',gaintype='fixed',gainprm='1',biastype='affine',biasprm=f'0 0 {-kv}',ctrllimited='true',ctrlrange=f'{-limit} {limit}',forcelimited='true',forcerange=f'{-limit} {limit}')
     gripper=root.find(".//body[@name='gripper_base']")
-    ET.SubElement(gripper,'site',name='grasp_center',pos='0 0 0.1',size='.002',rgba='0 0 0 0')
+    # Nonphysical planning frame: cube center at0.12 leaves2mm fingertip/table
+    # clearance for a40mm cube (source fingertip extends to0.138m).
+    ET.SubElement(gripper,'site',name='grasp_center',pos='0 0 0.12',size='.002',rgba='0 0 0 0')
     if exclude_base_link1:
         # This explicit diagnostic/adopted candidate requires recorded user approval.
         ET.SubElement(ET.SubElement(root,'contact'),'exclude',body1='base_link',body2='link1')
     if cube is not None:
         world=root.find('worldbody')
         table=cube['table']
-        ET.SubElement(world,'geom',name='table',type='box',pos=' '.join(map(str,table['center'])),size=' '.join(map(str,table['half_size'])),rgba='.55 .55 .55 1')
-        body=ET.SubElement(world,'body',name='cube',pos=' '.join(map(str,cube['center'])))
+        ET.SubElement(world,'geom',name='table',type='box',pos=' '.join(map(str,table['center'])),size=' '.join(map(str,table['half_size'])),rgba='.55 .55 .55 1',group='2')
+        yaw=cube.get('yaw_rad',0.)
+        body=ET.SubElement(world,'body',name='cube',pos=' '.join(map(str,cube['center'])),quat=f'{np.cos(yaw/2)} 0 0 {np.sin(yaw/2)}')
+        # Protected compiler has inertiafromgeom=false. Analytic homogeneous box.
+        h=np.asarray(cube['half_size']);mass=cube['mass_kg']
+        inertia=mass/3*np.array([h[1]**2+h[2]**2,h[0]**2+h[2]**2,h[0]**2+h[1]**2])
+        ET.SubElement(body,'inertial',pos='0 0 0',mass=str(mass),diaginertia=' '.join(map(str,inertia)))
         ET.SubElement(body,'freejoint',name='cube_free')
-        ET.SubElement(body,'geom',name='cube_geom',type='box',size=' '.join(map(str,cube['half_size'])),mass=str(cube['mass_kg']),friction=' '.join(map(str,cube['friction'])),rgba='.1 .45 .9 1')
+        ET.SubElement(body,'geom',name='cube_geom',type='box',size=' '.join(map(str,cube['half_size'])),friction=' '.join(map(str,cube['friction'])),rgba='.1 .45 .9 1',group='2')
     world=root.find('worldbody')
+    ET.SubElement(root.find('asset'),'texture',name='experiment_background',type='skybox',builtin='flat',rgb1='.88 .90 .92',rgb2='.88 .90 .92',width='32',height='192')
     ET.SubElement(world,'light',name='experiment_key',pos='1 -2 3',dir='-.2 .3 -1',ambient='.3 .3 .3')
     ET.indent(root)
     ET.ElementTree(root).write(path,encoding='utf-8',xml_declaration=True)
@@ -99,6 +107,8 @@ class Controller:
         return np.r_[self.command[:7],self.command[7]/2,-self.command[7]/2]
 
     def apply(self,data):
+        if not np.isfinite(np.r_[data.qpos[self.qadr],data.qvel[self.vadr],data.qfrc_bias[self.vadr]]).all():
+            raise ValueError('Non-finite measured robot state')
         effort=self.kp*(self.physical_target-data.qpos[self.qadr])+data.qfrc_bias[self.vadr]
         data.ctrl[self.aids]=np.clip(effort,-self.force_limits,self.force_limits)
         return data.ctrl[self.aids].copy()
