@@ -1,28 +1,57 @@
-# NERO + 官方夹爪资产构建与验收
+# 冻结来源重建与维护
 
-目标：按已有DH116资产的源字段核对方法，交付独立、可迁移的官方NERO与两指夹爪模型。来源锁定 `agilexrobotics/agx_arm_urdf@a68b8e876a2c6fcb0ecee7a7943129e4d48dd864`，采用该版本安装链；旧资产、训练和LIBERO评测保持独立。
+## 输入与输出
 
-结构：原始Xacro/URDF和mesh快照 → 相对路径展开URDF → 保留物理字段的MJCF及派生可视/碰撞mesh → 独立URDF前向运动学和静态检查。工具为Python3.11、MuJoCo3.2.3、NumPy/SciPy、pycollada与trimesh；仅使用本目录的环境。
+```text
+urdf/source/ + meshes/source/ + SOURCE_MANIFEST.json
+    → urdf/nero_gripper.urdf
+    → mjcf/nero_gripper.xml + meshes/visual/ + meshes/collision/
+    → docs/robot-contract.json + reports/mesh-conversion.json
+```
 
-## 约束与实现选择
+输入来自 `agilexrobotics/agx_arm_urdf@a68b8e876a2c6fcb0ecee7a7943129e4d48dd864`。正常重建使用仓库自带快照，不需要 ROS、Xacro 服务或联网。构建器只生成静态参考资产；控制模型由现有控制器在运行时派生。
 
-- 原始源文件逐字节保存，并核对Git对象ID和SHA256；展开文件另存，不修改原件。
-- 保留所有实际部件的质量、完整惯性、安装变换、关节轴、限位。缺失的动力学项注明为引擎默认。
-- 源 `gripper` 是没有质量、几何或子部件的命令关节，两个手指mimic它。MuJoCo中消去这个虚拟自由度，保留两个实体手指，并用 `q2=-q1` 约束等价表达；命令坐标可由 `2*q1` 恢复。不给虚拟部件伪造质量。该消去不覆盖虚拟TF帧的动态显示。
-- 可视DAE的顶点和场景变换转换成OBJ，各部件以源材料中面积占比最大的颜色作为直接RGBA材质，按用户要求不生成贴图；碰撞STL按精确相同坐标分连通分量，再生成凸包。二维表面只有完全被实体凸包包含时才能并入该包，保留来源和面覆盖记录；不移动源顶点、不修补源网格、不加厚。
-- 不新建接触屏蔽；明确记录MuJoCo自身的碰撞过滤和凸近似限制。不加入驱动器增益或执行策略。
+## 环境与命令
 
-## 执行顺序
+在仓库根目录，Python 3.11 的依赖统一由 `requirements.txt` 固定，包含 MuJoCo、NumPy、SciPy、pycollada、trimesh 和 Pillow。`requirements-build.txt` 保留为同一依赖清单的兼容入口。
 
-- [x] 保存官方来源、许可、源URI映射，检查引用资源完整。
-- [x] 构建展开URDF、MJCF、机械接口说明及静态查看入口。
-- [x] 在闭合、中间、张开和8组随机合法配置中，用独立URDF计算核对实体部件FK、质量/惯性、关节轴/范围和几何包围边界；核对mimic残差、静态接触及可迁移路径。
-- [x] 导出静态预览，执行针对虚拟关节消去、源字节、迁移和查看器零步进的测试，完成一次独立只读审查。
+```bash
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
 
-主要审查点：最新与本地旧版夹爪参数不同；质量为零的虚拟关节；mimic符号；DAE与STL不同原点/材料；单凸包填充凹部。验证结果写入 `reports/static-validation.json`，静态等价与动态抓持能力分开表述。
+以下重建命令会写入派生资产；在单独的 Feature 分支或临时源码副本执行，并检查差异：
 
-## 执行记录
+```bash
+.venv/bin/python scripts/build.py
+.venv/bin/python scripts/validate.py --output debug/static-validation.json
+.venv/bin/python scripts/test.py
+git diff -- urdf mjcf meshes docs/robot-contract.json reports/mesh-conversion.json
+```
 
-首次查看器导出因Python局部import绑定失败；首次完整惯性自动分解的重建误差约3.32e-10 kg·m²，超出核对阈值。分别修正导入作用域、用NumPy明确分解原惯性（不改原张量）后，对应测试从失败变为通过。
+`scripts/validate.py` 默认写 `reports/static-validation.json`，用 `--output` 可将维护核对结果保存在开发区。构建器不自动改写文档、验收结论或 `SHA256SUMS`。原校验清单用于检查已交付文件；若有经审查的预期变更，应在验证后更新相应校验值，不能先更新校验值掩盖未知差异。
 
-独立审查期间补强来源证明：同时修改派生URDF和MJCF同一质量，旧检查会误通过；增加与29项原字节快照中27个link/joint记录的XML语义核对后拒绝该反例。独立Reviewer另指出碰撞mask缺少断言；清零collision contype/conaffinity反例先失败，再加入角色mask检查后通过。最终8/8测试，记录见 `reports/tests.txt`；开发失败日志留在本地 `debug/`，不当作资产验收成绩。
+首次导入或显式重新冻结来源时，构建器支持下面的维护命令，并拒绝不同提交：
+
+```bash
+.venv/bin/python scripts/build.py --source-repo /path/to/pinned/agx_arm_urdf
+```
+
+该操作重写来源快照，通常使用已有交付文件无需执行。来源版本变更应另行审查，不是普通构建步骤。
+
+## 转换约束与设计依据
+
+- 原始 URDF/Xacro、DAE/STL 和许可保持原字节；展开 URDF 使用可迁移的相对资源路径。独立核对器将展开描述与冻结源记录比对，防止派生 URDF 和 MJCF 同时出错却相互验证。
+- 保留实体安装关系、质量、惯性中心、完整惯性、关节轴和范围。完整惯性显式分解为主轴/主惯量，再以编译模型重建张量核对；不用碰撞凸包重估机器人惯量。
+- 消去无物理内容的夹爪命令叶子，以两个实体手指及 `q2=-q1` equality 表达源 mimic；避免虚构质量。保留源命令与实体坐标映射。
+- 可视 DAE 保留场景变换和三角面，转换为 OBJ 与直接 RGBA，减少运行资源依赖；接受局部多色简化的代价。
+- 碰撞 STL 按精确坐标连通分量生成凸包，不修补源拓扑、不移动顶点、不加厚平面。记录全部来源面归属，并明确凸包填凹的接触代价。
+- 构建输出静态模型 `nu=0`、一个 equality、无显式碰撞 exclude。受控配置的执行器、时间步和限定相邻过滤由运行时派生逻辑明确管理；重建静态资产不会把控制配置写回参考模型。
+
+详细工程取舍和物理边界见 [MODEL.md](MODEL.md)。源码中的构建逻辑与机器接口清单必须一致；更新接口元数据时同步维护构建器的描述输出。
+
+## 独立验证与兼容性
+
+`scripts/validate.py` 以独立 URDF 前向运动学核对闭合、中间、张开及八组合法关节姿态，检查质量/惯性、安装、轴/范围、mimic、几何包围边界、来源一致性和碰撞角色 mask。静态过程只调用 `mj_forward`。
+
+`scripts/test.py` 汇总静态与动态回归；动态层检查控制输入、力限、共享机械字段和可搬迁源码的真实空载控制。测试通过不等于抓取验收通过。固定环境与各验证层的范围见 [VALIDATION.md](VALIDATION.md)。开发输出和日常 Run 保存在被忽略的 `debug/`、`experiments/dynamics/runs/`；维护时保留唯一原始证据及来源索引。

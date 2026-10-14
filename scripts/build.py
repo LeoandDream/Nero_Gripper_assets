@@ -283,7 +283,20 @@ def build():
     write_xml(root, ROOT / 'mjcf/nero_gripper.xml')
     write_json(ROOT / 'reports/mesh-conversion.json', dict(visuals=visual_records, collisions=collision_records, source_surface_faces_covered=True, explicit_collision_excludes=0, collision_approximation='convex hull per exact source component; contained planar decorations retained in containing hull'))
     joint_order = [f'joint{i}' for i in range(1, 8)] + ['gripper_joint1', 'gripper_joint2']
-    write_json(ROOT / 'docs/robot-contract.json', dict(physical_state_dim=9, physical_joint_order=joint_order, units=['rad'] * 7 + ['m'] * 2, virtual_source_joint='gripper', virtual_source_range_m=[0,.1], source_mimic={'gripper_joint1':'.5 * gripper', 'gripper_joint2':'-.5 * gripper'}, mjcf_constraint='gripper_joint2 = -gripper_joint1', virtual_joint_recovery='gripper = 2 * gripper_joint1', actuators=0, controller_implemented=False, policy_adapter_implemented=False, proposed_policy_state='eef XYZ(3), axis-angle(3), finger positions(2): 8D', proposed_policy_action='eef translation(3), rotation(3), gripper open/close(1): 7D; requires controller and unit/frame verification', limits=[dict(name=j.get('name'), type=j.get('type'), **j.find('limit').attrib) for j in source.findall('joint') if j.find('limit') is not None]))
+    write_json(ROOT / 'docs/robot-contract.json', dict(
+        physical_state_dim=9, physical_joint_order=joint_order, units=['rad'] * 7 + ['m'] * 2,
+        virtual_source_joint='gripper', virtual_source_range_m=[0,.1],
+        source_mimic={'gripper_joint1':'.5 * gripper', 'gripper_joint2':'-.5 * gripper'},
+        mjcf_constraint='gripper_joint2 = -gripper_joint1', virtual_joint_recovery='gripper = 2 * gripper_joint1',
+        static_reference=dict(model='mjcf/nero_gripper.xml', actuators=0, nq=9, nv=9, neq=1, explicit_collision_excludes=0),
+        controlled_configuration=dict(controller='experiments/dynamics/controller.py', config='experiments/dynamics/config.json',
+            actuators=9, user_target_dim=8, user_target_order=[f'joint{i}' for i in range(1,8)]+['gripper_command'],
+            user_target_units=['rad']*7+['m'], target_semantics='absolute joint positions; source gripper command, not calibrated fingertip gap',
+            physical_target_mapping='[joint1..joint7, gripper_command/2, -gripper_command/2]',
+            command_envelope_override=dict(joint2=[-.2,1.5]), optional_collision_exclude=['base_link','link1'],
+            execution='native bounded-force actuators and mj_step', validated_scope='specified empty-load motions; physical grasp experimental'),
+        cartesian_controller_implemented=False, hardware_calibrated=False,
+        limits=[dict(name=j.get('name'), type=j.get('type'), **j.find('limit').attrib) for j in source.findall('joint') if j.find('limit') is not None]))
     print('Built source-preserving URDF and static MJCF')
 
 

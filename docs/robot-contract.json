@@ -33,11 +33,56 @@
   },
   "mjcf_constraint": "gripper_joint2 = -gripper_joint1",
   "virtual_joint_recovery": "gripper = 2 * gripper_joint1",
-  "actuators": 0,
-  "controller_implemented": false,
-  "policy_adapter_implemented": false,
-  "proposed_policy_state": "eef XYZ(3), axis-angle(3), finger positions(2): 8D",
-  "proposed_policy_action": "eef translation(3), rotation(3), gripper open/close(1): 7D; requires controller and unit/frame verification",
+  "static_reference": {
+    "model": "mjcf/nero_gripper.xml",
+    "actuators": 0,
+    "nq": 9,
+    "nv": 9,
+    "neq": 1,
+    "explicit_collision_excludes": 0
+  },
+  "controlled_configuration": {
+    "controller": "experiments/dynamics/controller.py",
+    "config": "experiments/dynamics/config.json",
+    "actuators": 9,
+    "user_target_dim": 8,
+    "user_target_order": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6",
+      "joint7",
+      "gripper_command"
+    ],
+    "user_target_units": [
+      "rad",
+      "rad",
+      "rad",
+      "rad",
+      "rad",
+      "rad",
+      "rad",
+      "m"
+    ],
+    "target_semantics": "absolute joint positions; source gripper command, not calibrated fingertip gap",
+    "physical_target_mapping": "[joint1..joint7, gripper_command/2, -gripper_command/2]",
+    "command_envelope_override": {
+      "joint2": [
+        -0.2,
+        1.5
+      ]
+    },
+    "optional_collision_exclude": [
+      "base_link",
+      "link1"
+    ],
+    "execution": "native bounded-force actuators and mj_step",
+    "validated_scope": "specified empty-load motions; physical grasp experimental"
+  },
+  "cartesian_controller_implemented": false,
+  "hardware_calibrated": false,
   "limits": [
     {
       "name": "joint1",

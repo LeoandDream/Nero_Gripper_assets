@@ -1,136 +1,101 @@
-# NERO + 官方两指夹爪仿真资产
+# NERO + Gripper — MuJoCo Simulation Assets
 
-本仓库统一维护静态机械资产、动力学控制和物理接触验证。唯一工程为 `LeoandDream/Nero_Gripper_assets`；当前新增功能在 `feature/dynamic-control`，完整抓取仍未验收，尚未合并main。
+松灵 NERO 七自由度机械臂及原生双指夹爪的可复用 MuJoCo 仿真资产，面向运动控制、接触动力学、操作任务、模仿学习、强化学习和具身智能实验。机械描述来自冻结的厂商 URDF/Xacro；资产以支持高保真仿真研究为目标，实机动力学一致性尚未标定。
 
-以厂商URDF/Xacro为机械依据。来源锁定 [agx_arm_urdf@a68b8e8](https://github.com/agilexrobotics/agx_arm_urdf/tree/a68b8e876a2c6fcb0ecee7a7943129e4d48dd864)，采用该版本的官方法兰、夹爪基座和两指模型。
+![NERO 与原生双指夹爪](reports/preview.png)
 
-```text
-urdf/       相对路径展开URDF；source保留官方原字节
-mjcf/       保留实体机械字段的MuJoCo模型
-meshes/     原始DAE/STL、派生可视OBJ与分量凸碰撞体
-examples/   静态查看入口
-experiments/dynamics/   最小控制器、运行入口和冻结配置（复用根目录机械资产）
-tests/      原静态测试及统一入口测试
-scripts/    统一测试入口、离线重建与独立URDF核对
-reports/    各验证层报告、审查、历史证据归档和预览
-docs/       接口、构建方法与模型边界
-licenses/   官方MIT许可及来源
-```
+## 功能与范围
 
-## 查看
+| 功能 | 当前支持范围 |
+|---|---|
+| 机械资产 | 源文件可追溯；运动学、安装关系、质量/惯性、限位及网格边界通过静态核对 |
+| 查看与加载 | 相对路径 MJCF、URDF；可视/碰撞查看与无桌面导图 |
+| 空载关节控制 | 7D 机械臂 + 1D 夹爪绝对位置目标；原生限力执行器与真实 `mj_step` 跟踪通过指定动作验收 |
+| 物理抓取 | 实验性失败候选；尚无通过抬升、保持、穿透及带载双指耦合验收的记录 |
+| 实机保真度 | 尚未验证；不将厂商描述一致性或空载控制结果等同于硬件级物理真实性 |
 
-首次克隆并建立运行环境：
+## 安装与加载
+
+以下命令对应本次交付候选 `feature/delivery-convergence`；当前 `main` 提供原有静态资产。需要能在 PATH 中调用的 Python 3.11 解释器；若安装时使用其他命令名，将 `python3.11` 替换为该解释器的命令。
 
 ```bash
-git clone --branch feature/dynamic-control https://github.com/LeoandDream/Nero_Gripper_assets.git
+git clone --depth 1 --branch feature/delivery-convergence https://github.com/LeoandDream/Nero_Gripper_assets.git
 cd Nero_Gripper_assets
 python3.11 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
-在仓库根目录运行：
+从仓库根目录加载纯静态参考模型：
+
+```bash
+.venv/bin/python - <<'PY'
+import mujoco
+model = mujoco.MjModel.from_xml_path('mjcf/nero_gripper.xml')
+data = mujoco.MjData(model)
+mujoco.mj_forward(model, data)
+print('nq, nv, nu, neq:', model.nq, model.nv, model.nu, model.neq)
+PY
+```
+
+输出为 `9 9 0 1`。此参考配置不带执行器；控制配置在运行时从它派生，共享同一套机械资产和网格。
 
 ```bash
 .venv/bin/python examples/view_static.py
 .venv/bin/python examples/view_static.py --collision
+# 无桌面服务器，需要可用的 EGL/OpenGL 环境
+mkdir -p debug
+MUJOCO_GL=egl .venv/bin/python examples/view_static.py --image debug/preview.png
+MUJOCO_GL=egl .venv/bin/python examples/view_static.py --width 0 --image debug/closed.png
 ```
 
-无桌面服务器可导出静态图片：
+查看器只设置姿态并调用 `mj_forward`。`--width` 是源 URDF 命令坐标，范围 0–0.1 m，并非标定后的指尖净间距。
 
-```bash
-MUJOCO_GL=egl .venv/bin/python examples/view_static.py --image preview.png
-MUJOCO_GL=egl .venv/bin/python examples/view_static.py --width 0 --image closed.png
-```
-
-`--width` 是源URDF的虚拟开合命令坐标，范围0..0.1米；两指分别取其±一半。这不是经过真机标定的实际指尖净间距。查看器只设置姿态、调用 `mj_forward` 并显示，不积分物理、不执行策略。
-
-`meshes/visual`只保留OBJ网格。各部件采用源材料中面积占比最大的颜色作为直接RGBA材质，省去外部贴图；原来的局部多色和标识配色被简化，原始DAE仍保留。
-
-![静态参考姿态](reports/preview.png)
-
-## 已验证范围
-
-- 官方29项源文件逐字节保存，Git blob ID与SHA256可复核。
-- 12个实体部件、9个标量关节、1个双指线性约束，纯静态参考配置执行器数量0；派生动态配置新增9个内部servo。原URDF额外的空虚拟命令关节在MJCF中消去；具体映射见 [接口契约](docs/robot-contract.json)。
-- 11组合法静态配置独立核对源URDF前向运动学、质量/惯性、安装变换、关节轴/范围和可视/碰撞包围边界；结果见 [原始报告](reports/static-validation.json)。
-- 总质量5.12892366kg；质量、惯性中心、轴和限位核对误差0，完整惯性重建最大误差约1.73e-18 kg·m²。几何边界最大误差约9.27e-9m，属于浮点转换核对值，不代表接触精度。
-- MuJoCo3.2.3完成上述静态核对；当前LIBERO环境的2.3.7另行通过编译及参考姿态 `mj_forward`，该兼容性检查范围见 [报告](reports/libero-engine-compatibility.json)。
-- 8项测试通过，涵盖源字节、虚拟关节消去、mimic、独立静态核对、迁移后编译、查看器，以及源参考被同时篡改和碰撞mask清零的拒绝反例；详细记录见 [验证记录](reports/tests.txt)。独立审查与两项补强见 [审查记录](reports/review.md)。
-
-![夹爪闭合、中间、张开三种静态姿态](reports/gripper-states.png)
-
-## 接触和控制边界
-
-碰撞体为62个源分量凸包，原STL和原DAE均保留。凸包仍会填充源凹部；所有源碰撞三角面有分量归属记录，不能据此称碰撞表面完全等同。两指各一组4面平面标识保留并入已包含它的凸包，没有给平面伪造厚度。
-
-11组静态配置都报告base_link/link1约5mm的代理重叠；纯静态参考模型没有新增显式碰撞过滤；动态派生配置仅采用已批准的base_link/link1排除，其余碰撞掩码和机械字段不改。零开合命令下两指之间还有约1.35e-10m的数值接触。它们如实保留在报告中，静态字段等价不表示动态接触已经验证。细节见 [模型边界](docs/MODEL.md)。
-
-纯静态参考 `mjcf/nero_gripper.xml` 保持nu=0。`experiments/dynamics/controller.py`直接读取该模型，运行时只派生执行器和实验场景，不维护第二份机器人机械定义；网格资源始终引用本仓库同一套meshes。机器人qpos9D，动态nu9；加入自由立方体后总qpos16D/qvel15D，夹爪仍只有1D用户命令。
-
-## 动力学控制与抓取
-
-控制输入为8D绝对目标 `[joint1..joint7(rad), source_gripper_command(m)]`；夹爪目标为±宽度一半。Joint2实验命令限定[-0.2,1.5]rad，源关节范围未改，实机限位UNKNOWN。接口拒绝非有限、异常形状与越界目标，保持最后有效目标。这里提供关节位置控制，不是OSC或实机控制。
-
-九个原生affine general actuator使用比例位置反馈、qfrc_bias前馈和原生速度反馈，真实mj_step积分。KP机械臂[160,160,160,80,40,40,30]Nm/rad，KV[12,12,10,6,3,3,2]Nms/rad；每指KP800N/m、KV8Ns/m。力限100Nm/10N来自源effort描述，增益是仿真候选，不是厂商标定。步长1ms/implicitfast，目标100Hz，反馈1kHz；目标速率0.2rad/s和源宽度0.03m/s。详细可执行参数见 [config.json](experiments/dynamics/config.json)。机械阻尼、惯性、摩擦、接触和equality数值参数保持源值。
+## 空载控制
 
 ```bash
 .venv/bin/python experiments/dynamics/run.py --stage control --filtered --run-id my_control
-# 已知未通过物理验收的抓取候选，失败返回非零；不自动放宽标准
+```
+
+输入接口为 `[joint1, …, joint7, gripper_command]` 的 8D 绝对目标：机械臂用 rad，夹爪用 m；内部映射到 9 个实体关节和 9 个限力执行器。`Controller.set_target(action)` 接收目标，`advance_command()` 限速更新，`apply(data)` 写入执行器输入；由调用方执行 `mujoco.mj_step`。接口、参数及接触过滤依据见 [模型设计](docs/MODEL.md) 和 [机器接口清单](docs/robot-contract.json)。
+
+`--filtered` 只排除受控派生模型中的 `base_link/link1` 相邻碰撞对。运行会保存配置、源码快照、状态轨迹和接触记录到 `experiments/dynamics/runs/my_control/`；run-id 必须尚未使用，已有记录不会覆盖。
+
+## 实验性抓取
+
+以下为 40 mm、100 g 自由立方体的接触实验，当前预期会报告验收失败并返回非零。失败候选用于分析接触限制。
+
+```bash
 .venv/bin/python experiments/dynamics/run.py --stage grasp --filtered --run-id my_grasp
+# 保存实际积分轨迹的离线回放；需要系统 ffmpeg
 MUJOCO_GL=egl .venv/bin/python experiments/dynamics/run.py --stage replay --run-id my_grasp --episode fixed
 ```
 
-Run写入 `experiments/dynamics/runs/`，run-id必须未占用；原记录不会覆盖。抓取使用40mm/100g自由立方体，任务与成功条件见 [grasp.json](experiments/dynamics/grasp.json)。执行中不写qpos，不使用物体weld/actuator/吸附或隐藏外力；reset、scratch IK和明确标记的离线回放单独处理。系统ffmpeg仅用于视频编码。
+执行中通过 `mj_step` 运动，不使用物体吸附、weld 或隐藏外力。回放读取保存状态，本身不积分；视频不能替代成功判定。冻结任务条件在 [grasp.json](experiments/dynamics/grasp.json)，状态与验收范围见 [验证说明](docs/VALIDATION.md)。
 
-| 验证层级 | 状态与边界 |
+## 模型规格与设计
+
+| 项目 | 规格 |
 |---|---|
-| 静态资产 | PASS：来源、11姿态运动学/惯性/范围/几何核对；纯静态nu=0 |
-| 空载动态控制 | PASS：21阶段37000真实步，七轴和夹爪受控；不包含加载抓持保真度 |
-| 物理抓取 | FAIL：完整尝试0/2，物体滑落，穿透及带载耦合超限；偏移条件未执行 |
-| 实机保真度/具体接触根因 | UNKNOWN；本轮没有实机、VLA或新物理调参 |
+| 实体部件 / 总质量 | 12 / 5.12892366 kg，含官方法兰、夹爪基座和两指 |
+| 关节状态 | 7 个旋转关节 + 2 个移动关节；双指通过一个线性 equality 耦合 |
+| 夹爪命令映射 | `q_left = w/2`，`q_right = -w/2`，`w ∈ [0, 0.1] m` |
+| 网格 | 12 个可视 OBJ，62 个分量凸碰撞体；原始 DAE/STL 保留 |
+| 控制配置 | 1 ms / `implicitfast`；目标 100 Hz、反馈 1 kHz；增益属于仿真配置 |
+| 验证环境 | Python 3.11、MuJoCo 3.2.3；其他引擎版本的检查范围见验证说明 |
 
-历史详细证据见 [动态结果](reports/dynamic-validation.md)、[历史独立审查](reports/dynamic-review.md)。本轮21/21迁移复验、干净环境及 [独立迁移审查](reports/migration-review.md) 通过；计划、审计与main合并门槛见 [迁移清单](docs/MIGRATION.md)。Feature分支可供复查，抓取未通过前不合并main。
+[MODEL.md](docs/MODEL.md) 解释机械结构、惯性转换、虚拟命令关节消去、双指软约束、凸包近似及相邻碰撞过滤的目的、依据与代价。[BUILD.md](docs/BUILD.md) 说明冻结输入、离线重建与维护约束。
 
-## 统一测试与历史证据
-
-运行环境已包含静态和动态验证依赖，统一测试入口：
+## 验证与来源
 
 ```bash
 .venv/bin/python scripts/test.py
 .venv/bin/python scripts/test.py --layer static
 .venv/bin/python scripts/test.py --layer dynamic
-# 同一入口额外保存完整21阶段控制验收记录
+# 在回归测试后另保存完整空载控制验收轨迹
 .venv/bin/python scripts/test.py --control --run-id my_acceptance
-```
-
-原8项静态测试保留原断言；新增验证区分静态nu0/动态nu9，按名称核对共享机械字段，并在无.git、无旧worktree的临时副本上真实执行37000步控制。
-
-9个原始Run及校验清单保存在本地原层级，同时随本仓库提供 [dynamics-evidence.tar.xz](reports/dynamics-evidence.tar.xz)，归档还包含本轮控制复验，共129个文件。归档不是第二套权威模型。在尚未恢复过历史Run的克隆中可恢复原始证据、使用冻结的旧IK路径复现失败候选；keep-old-files保证已有文件不被覆盖：
-
-```bash
-tar --keep-old-files -xJf reports/dynamics-evidence.tar.xz
-.venv/bin/python experiments/dynamics/run.py --stage grasp --filtered --run-id my_repeat --plan-from-run grasp_20261014_002
-```
-
-源worktree保留作历史来源，不再作为独立正式项目，未经确认不删除。原始Run内路径、源码快照、状态和失败记录保留原字节；旧绝对来源字段属于历史元数据。新运行只依赖当前仓库内资产与配置。开发debug和日常新Run不提交，历史必要证据通过这一归档保留。
-
-## 迁移与重建
-
-复制本包的交付文件即可；`.venv`、`.upstream`、`.git`与`debug`不属于运行依赖，运行环境单独建立：
-
-```bash
-python3.11 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-```
-
-重建和完整核对共用根requirements；requirements-build保留为原安装命令的兼容入口：
-
-```bash
-.venv/bin/pip install -r requirements-build.txt
-.venv/bin/python scripts/build.py
-.venv/bin/python scripts/validate.py
-.venv/bin/python scripts/test.py
 sha256sum -c SHA256SUMS
 ```
 
-`build.py`从已保存源快照离线重建；首次源导入可使用 `--source-repo /path/to/pinned/agx_arm_urdf`，脚本拒绝其它提交。源文件清单和URI来源分别在 `SOURCE_MANIFEST.json` 和展开URDF/原始Xacro中。构建方法、数值处理与首次失败记录说明见 [BUILD.md](docs/BUILD.md)。
+机械来源固定为 [agx_arm_urdf@a68b8e8](https://github.com/agilexrobotics/agx_arm_urdf/tree/a68b8e876a2c6fcb0ecee7a7943129e4d48dd864)，29 项来源路径、Git blob 与 SHA256 见 [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json)。源资产的 MIT 许可保存在 [AGX_MIT.txt](licenses/AGX_MIT.txt)，来源与对照资料的许可范围见 [SOURCES.md](licenses/SOURCES.md)。
+
+凸包会填充源凹部；几何边界一致不证明接触表面真实。Joint 2 的官方来源范围存在差异，当前实验命令采用保守区间，实机限位未确认。抓取、全工作空间控制及真实硬件性能仍需进一步验证。自动化结果、适用边界和必要的历史证据入口集中在 [VALIDATION.md](docs/VALIDATION.md)。
