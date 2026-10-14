@@ -40,7 +40,7 @@ MUJOCO_GL=egl .venv/bin/python examples/view_static.py --width 0 --image closed.
 
 `--width` 是源URDF的虚拟开合命令坐标，范围0..0.1米；两指分别取其±一半。这不是经过真机标定的实际指尖净间距。查看器只设置姿态、调用 `mj_forward` 并显示，不积分物理、不执行策略。
 
-`meshes/visual`只保留OBJ网格。各部件采用源材料中面积占比最大的颜色作为直接RGBA材质，省去外部贴图；原来的局部多色和标识配色被简化，原始DAE仍保留。
+`meshes/visual`包含带UV的OBJ网格与12张小型PNG颜色调色板（总计1213字节），保留源材料的局部多色、银白面板和NERO标识；原始DAE仍保留。这些调色板是原配色的运行资源，不需要原先的JPG集合。
 
 ![静态参考姿态](reports/preview.png)
 
