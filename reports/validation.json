@@ -12,7 +12,7 @@
     "experiments/dynamics/controller.py": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
     "experiments/dynamics/config.json": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
     "experiments/dynamics/grasp.json": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
-    "scripts/build.py": "4281d67dfd2235fd6ad1bf6407613cfd5b8807dad3931d4707e52639321eac64",
+    "scripts/build.py": "6761e7c3736acff2da81d95b412a8771ee205dcf33931fb3328f62ca62b91fd2",
     "scripts/validate.py": "1e4143520feacf51e1c1cf27c90552bf35e0128ed018482789c9eb4c3f5588f0",
     "scripts/test.py": "deeeb1cf729a7ee6105c449efcb0f77c5931316048b8e1316514545a1bf3ce2f"
   },
@@ -114,6 +114,20 @@
       "metadata_generator_matches_contract": true,
       "relative_document_links": "PASS",
       "checksum_manifest": "SHA256SUMS"
+    },
+    "appearance": {
+      "checked_at": "2026-10-14T20:05:54+08:00",
+      "source_commit": "6bc1590e3ab2c06a1a177bbe03937282e230433b",
+      "status": "PASS_ORIGINAL_SOURCE_DIFFUSE_COLORS_RESTORED",
+      "palette_png_files": 12,
+      "palette_total_bytes": 1213,
+      "visual_triangle_positions_and_indices": "unchanged; original UV assets restored",
+      "physics_arrays_unchanged": 27,
+      "protected_source_control_test_files_unchanged": 110,
+      "static_regression_passed": 9,
+      "derived_mechanical_field_test_passed": 1,
+      "new_control_or_grasp_experiment": false,
+      "note": "Prior numeric control/grasp records retained; this change only restores visual materials and UV serialization."
     }
   },
   "limits": {

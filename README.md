@@ -79,7 +79,7 @@ MUJOCO_GL=egl .venv/bin/python experiments/dynamics/run.py --stage replay --run-
 | 实体部件 / 总质量 | 12 / 5.12892366 kg，含官方法兰、夹爪基座和两指 |
 | 关节状态 | 7 个旋转关节 + 2 个移动关节；双指通过一个线性 equality 耦合 |
 | 夹爪命令映射 | `q_left = w/2`，`q_right = -w/2`，`w ∈ [0, 0.1] m` |
-| 网格 | 12 个可视 OBJ，62 个分量凸碰撞体；原始 DAE/STL 保留 |
+| 网格 | 12 个带 UV 的可视 OBJ 与 12 张 PNG 颜色调色板，62 个分量凸碰撞体；原始 DAE/STL 保留 |
 | 控制配置 | 1 ms / `implicitfast`；目标 100 Hz、反馈 1 kHz；增益属于仿真配置 |
 | 验证环境 | Python 3.11、MuJoCo 3.2.3；其他引擎版本的检查范围见验证说明 |
 
