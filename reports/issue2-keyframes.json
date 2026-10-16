@@ -1,0 +1,29 @@
+{
+  "source_run": "diag_baseline_001/fixed",
+  "source_trajectory_sha256": "a1bc4f26640e1b6575f682de0d2b1f71592865816ea794d3b29b84b9b2c8da49",
+  "mode": "offline rendering of saved integrated states",
+  "mj_step_calls": 0,
+  "frames": [
+    {
+      "row": 29127,
+      "jsonl_line": 29128,
+      "time_s": 29.128000000012616,
+      "phase": "grasp_settle",
+      "label": "Settled contact"
+    },
+    {
+      "row": 33518,
+      "jsonl_line": 33519,
+      "time_s": 33.51900000001258,
+      "phase": "lift",
+      "label": "Peak penetration / slip"
+    },
+    {
+      "row": 43228,
+      "jsonl_line": 43229,
+      "time_s": 43.22899999998995,
+      "phase": "hold",
+      "label": "Hold: cube on table"
+    }
+  ]
+}
