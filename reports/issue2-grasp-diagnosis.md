@@ -159,7 +159,7 @@ A轨迹SHA256：`2a3070eed2cb9b852d9601a4f8bb4d31aebf020a67966a809bace63e58e04b3
 
 ## 7. 既有记录的只读接触承载预算
 
-**PASS（范围/来源）**：基于PR HEAD `8d66da28a49cd351f64ccad40b0528ca9b515faf`，校验A/B的trajectory、contacts、model、protocol、observations、initial-state及initial-contacts共14份原SHA。仅读取旧Run，**新增mj_step=0**；未改资产/控制器/正式判据、未更新成功率。复用 `diagnose_ab.load_ab_episode` 做对齐验证；局部接触参数与运动学在scratch data中仅用 `mj_fwdPosition`/`mj_jac` 重建，不重新求解接触力。A的7,968、B的2,645个接触事件均与原geom/body顺序、位置、距离、完整frame精确匹配，最大差0；重建参数与原始记录的力明确分开保存。
+**PASS（范围/来源）**：基于PR HEAD `8d66da28a49cd351f64ccad40b0528ca9b515faf`，校验A/B的trajectory、contacts、model、protocol、observations、initial-state及initial-contacts共14份原SHA。仅读取旧Run，**新增mj_step=0**；未改资产/控制器/正式判据、未更新成功率。复用 `diagnose_ab.load_ab_episode` 做对齐验证；局部接触参数与运动学在scratch data中仅用 `mj_fwdPosition`/`mj_jac` 重建，不重新求解接触力。A的7,968、B的2,645条接触采样记录均与原geom/body顺序、位置、距离、完整frame精确匹配，最大差0；重建参数与原始记录的力明确分开保存。
 
 ### 7.1 四窗口逐指分解
 
@@ -178,7 +178,7 @@ B严格使用rows0–1327，排除重触桌面row1328；A取同样前1,328行作
 
 全段双指法向Fz均值=-.028876782N、切向=+.993371968N，合计=.964495186N；桌面/其他物体Fz均为0。作用于cube的投影使用body顺序符号及 `frame.T`，法向与两切向分别投影，包含倾斜法向的向下作用。重构Fz与原cube平移qfrc_constraint最大差4.44e-16N。
 
-接触分布从cube局部z约−9.4mm向上缘迁移，正Fn接触最高+19.829mm；跨帧不保证同一材料点。前三窗两指切向相对速度的世界Z均值分别约[−14.96,−15.01]、[−26.50,−26.51]、[−31.63,−33.38]mm/s；末窗有力的指2约−57.40mm/s。751–1317ms中作用cube法向Z最小为−.9307/−.8911。末窗指1只有两个零Fn几何接触，摩擦锥比值为未定义，不能算仍有摩擦支持。所有点的世界/双body局部位置、法线、相对速度XYZ及力分量在逐接触CSV中保留。
+接触分布从cube局部z约−9.4mm向上缘迁移，正Fn采样的接触位置最高+19.829mm；跨帧不保证同一材料点。前三窗两指切向相对速度的世界Z均值分别约[−14.96,−15.01]、[−26.50,−26.51]、[−31.63,−33.38]mm/s；末窗有力的指2约−57.40mm/s。751–1317ms中作用cube法向Z最小为−.9307/−.8911。末窗指1只有两条零Fn几何接触采样，摩擦锥比值为未定义，不能算仍有摩擦支持。各采样的世界/双body局部接触位置、法线、相对速度XYZ及力分量在逐接触CSV中保留。
 
 ### 7.2 动量核对 — 定量近似成立，精确闭合 UNKNOWN
 
@@ -196,18 +196,20 @@ B严格使用rows0–1327，排除重触桌面row1328；A取同样前1,328行作
 
 只读编译模型及逐接触匹配显示：`cone=pyramidal`、`condim=3`，各相关geom的priority=0、solmix=1、friction3=[1,.005,.0001]，无explicit pair（npair=0）或override（enableflags=0）。同priority时摩擦逐元素取最大值，滑动/滚动系数扩展为两轴，实际每个接触friction5=[1,1,.005,.0001,.0001]；condim3只启用法向及两个滑动切向，不能把未启用的扭转/滚动系数当承载项。[MuJoCo 3.2.3参数合成规则](https://mujoco.readthedocs.io/en/3.2.3/modeling.html#contact-parameters)
 
-对每个正Fn接触（Fn>1e-12N），本四棱锥合力占用为 `ρ=(|Ft1|/μ1+|Ft2|/μ2)/Fn`；不是圆锥L2比值，也不是按指平均后的比值。[四棱边基及摩擦锥依据](https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_constraint.c#L955-L969)
+对每条正Fn接触采样（Fn>1e-12N），本四棱锥合力占用为 `ρ=(|Ft1|/μ1+|Ft2|/μ2)/Fn`；不是圆锥L2比值，也不是按指平均后的比值。[四棱边基及摩擦锥依据](https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_constraint.c#L955-L969)
 
-B共2,643个正Fn接触中，1,106个满足几何边界 `|ρ−1|≤1e-10`；四窗分别76/136、691/1366、330/1132、9/9，另两个零Fn接触不定义ρ。首次边界为row14 / t29.143s / elapsed15ms / 指1：Fn=1.016706N，Ft=[−.468490,−.548216]N，ρ=1，L2比值仅.709277，切向相对速度11.259mm/s。B逐点ρ中位数.937082、切向速率中位数26.858mm/s；A相同区间2,656个正Fn接触无边界，ρ最大.334719，切向速率中位数.210mm/s，且桌面承重约.980994N。
+**计数口径**：一条接触采样由“物理步行号×当步接触索引”定位；同一geom对在连续物理步中重复计数，未建立跨帧持续接触ID。B共2,643条正Fn接触采样，其中1,106条满足几何边界 `|ρ−1|≤1e-10`，约41.8%；这是本段接触采样的触界比例，不能解释为独立接触点数量、时间占比或总体摩擦能力使用率。四窗采样数分别76/136、691/1366、330/1132、9/9，另两条零Fn采样不定义ρ。首次边界为row14 / t29.143s / elapsed15ms / 指1：Fn=1.016706N，Ft=[−.468490,−.548216]N，ρ=1，L2比值仅.709277，切向相对速度11.259mm/s。B接触采样的ρ中位数.937082、切向速率中位数26.858mm/s；A相同区间2,656条正Fn采样无边界，ρ最大.334719，切向速率中位数.210mm/s，且桌面承重约.980994N。
 
 因此**PASS**：B存在明显接触相对滑动，部分原始记录合力到达已核验四棱锥边界，后期法向倾斜进一步削减向上合力。**UNKNOWN**：原始efc_state/完整棱边力未记录，无法通盘验证原求解器stick/slip标签或全部约束利用状态；软接触允许非零接触速度，不能把速度非零直接等同原求解器滑移状态。首次下落1ms也早于首次边界15ms，尚不能证明摩擦锥是唯一根因。
 
-### 7.4 下一项唯一可证伪假设（未执行）
+### 7.4 下一项唯一可证伪假设（仅提议，尚未授权、未执行）
 
 探索性假设：在相同B初态、命令及所有其余参数下，**仅把cone从pyramidal改为elliptic，68ms时相对世界Z下降将小于1mm**；若仍≥1mm则反驳该预言。依据是15ms时L1已达1而L2仅.709，存在锥形式敏感度的可能。cone是全局选项，会影响所有接触；即使改善，也不能区分几何边界与软约束动力学的贡献，[两种锥的软接触动力学并不相同](https://mujoco.readthedocs.io/en/3.2.3/computation/index.html#friction-cones)。这是对未来单一诊断差异的建议，非本轮授权；需用户确认后才可实施，未生成或执行该变体，未改正式验收。
 
+候选沿用上次低桌面B及同一完整冻结初态，仅在独立派生诊断模型切换cone，与既有pyramidal B并列比较。若之后获准，应保存唯一XML差异、完整初态及forward后cache变化，记录前1.328s的下落/受力/穿透，并单独标出首次再次触桌；68ms的改善也不能作为整项抓取PASS。此处只保留审查方案。
+
 ### 7.5 只读证据与核验
 
-本机worktree下 `debug/issue2-budget/`：`issue.json`、`plan.json`；`contact-metadata.json`及`reconstruct_contact_metadata.py`；`result_002/{budget.json,contacts.csv,windows-per-finger.csv}`（10,613个逐接触行，包含A的桌接触，及32个逐窗分组行）；两份`independent-{impulse,friction}.json`及对应只读helper；`evidence-manifest.json`。初稿空集合错误记录及原脚本另存，未覆盖输入。
+本机worktree下 `debug/issue2-budget/`：`issue.json`、`plan.json`；`contact-metadata.json`及`reconstruct_contact_metadata.py`；`result_002/{budget.json,contacts.csv,windows-per-finger.csv}`（10,613条接触采样记录，包含A的桌接触，及32个逐窗分组行）；两份`independent-{impulse,friction}.json`及对应只读helper；`evidence-manifest.json`。初稿空集合错误记录及原脚本另存，未覆盖输入。
 
 复核：`.venv/bin/python debug/issue2-budget/contact_budget.py --output-dir debug/issue2-budget/recheck_001`（使用新目录，拒绝覆盖）。本轮仅正式报告有源码仓库变更，未新增生产分析模块或回归体系。现有纯记录fixture测试 `.venv/bin/python -m unittest discover -s experiments/dynamics -p 'test_diagnose*.py' -v` 为17项PASS；本轮未运行包含mj_step的全量仿真测试。根计算与独立冲量核算逐窗一致至1e-15。
