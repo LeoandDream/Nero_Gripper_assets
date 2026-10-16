@@ -1,5 +1,7 @@
 # Issue #2：冻结抓取失败诊断
 
+2026-10-17 更新：维护者已批准并完成固定姿态自由承载 A/B；结果与证据见第6节。第1–5节保留首轮诊断记录。
+
 ## 1. 固定版本与环境 — PASS
 
 Ubuntu 22.04 x86_64，Python 3.11.9，MuJoCo 3.2.3，NumPy 1.26.4，SciPy 1.15.3。
@@ -63,10 +65,10 @@ Ubuntu 22.04 x86_64，Python 3.11.9，MuJoCo 3.2.3，NumPy 1.26.4，SciPy 1.15.3
 
 **UNKNOWN（更深根因）**：凸包局部接触几何、软接触/摩擦正则化、抓取接触位姿和提升参考轨迹各自贡献尚未隔离；单组保持对照不能证明其中任一因素是唯一根因。实机真实性仍未知，不据此判整个机械资产无效或认定仿真器bug。
 
-## 5. 下一项唯一建议实验 — UNKNOWN，先审核场景差异
+## 5. 首轮唯一建议实验 — 当时 UNKNOWN，现已批准并执行
 
 建议在相同夹爪姿态/命令下做“固定姿态自由承载”对照，隔离桌面承重与提升运动。仅在诊断派生场景中将桌面 `pos z: 0.065 → 0.015m`（top从0.13降到0.08m）。A/B以基线settle末合法到达的同一robot/cube状态作为reset初态，保持相同夹爪命令、重力、质量、摩擦、equality、增益和判据；执行中不覆盖物体状态，记录去掉桌面支持后是否能提供0.981N上托。
-这会改变诊断场景几何位置，按Issue C需要维护者确认具体差异后才执行；本轮**未实施**该改动，不提出第二项参数试验，也不合并main。
+该方案会改变诊断场景几何位置。首轮未实施；维护者随后在Issue批准这一项差异，执行结果见第6节。未合并main。
 
 ## 证据位置
 
@@ -81,3 +83,76 @@ Ubuntu 22.04 x86_64，Python 3.11.9，MuJoCo 3.2.3，NumPy 1.26.4，SciPy 1.15.3
 
 基线 `fixed/trajectory.npz` SHA256：`a1bc4f26640e1b6575f682de0d2b1f71592865816ea794d3b29b84b9b2c8da49`。
 基线 `fixed/contacts.jsonl` SHA256：`7af9cf593dd94662061678dadbee678326a263652e983fbd49d59dfdbd31a56c`。
+
+## 6. 已批准的固定姿态自由承载 A/B
+
+### 6.1 版本、单变量与共同初态 — PASS
+
+沿用上述Ubuntu/Python/MuJoCo环境及冻结物理源码；运行时诊断分支HEAD为 `2c651ca0fd5e5b454dc735a7fa30a6c6b387779c`，新增脚本另存完整源码与SHA。正式资产、原控制器/配置/判据及历史Run未改。
+
+唯一原始XML差异是同一桌面中心z：A=0.065m，B=0.015m。编译后的全部公开模型数组中，仅 `geom_pos[0,2]` 及其派生静态 `bvh_aabb[0,2]` 变化；物理/求解器选项全等，显示边界统计随桌面位置自动变化。差异及初态证据先保存、审核，再执行A/B。
+
+先从基线真实重放29,128步到settle末（row29127，t=29.128s）。qpos/qvel/ctrl/actuator_force/qfrc_constraint逐步最大差均为0。随后A/B各用一次合法reset恢复相同156维 `mjSTATE_INTEGRATION`（含速度、warmstart、ctrl、时间、外力、equality等）及Controller的requested/command；不清零微动，不在执行中写状态。
+
+**状态比对边界**：A/B在初始化 `mj_forward` 前156维逐位相同。引擎随后按各自接触重算并更新15维warmstart：A最大变化1.42e-14，B为54.8843；qpos/qvel仍相同。这是撤去桌面支撑产生的求解响应，不是人工给B不同初值。前后状态均保留，不能把after-forward状态也称为完全相同。
+
+### 6.2 实际执行 — PASS；官方抓取结果未评估
+
+```bash
+.venv/bin/python experiments/dynamics/grasp_support_ab.py prepare --source-dir experiments/dynamics/runs/diag_baseline_001/fixed --output-dir experiments/dynamics/runs/diag_free_load_ab_001
+.venv/bin/python experiments/dynamics/grasp_support_ab.py seal --output-dir experiments/dynamics/runs/diag_free_load_ab_001
+.venv/bin/python experiments/dynamics/grasp_support_ab.py run --output-dir experiments/dynamics/runs/diag_free_load_ab_001
+.venv/bin/python experiments/dynamics/diagnose_ab.py --a-dir experiments/dynamics/runs/diag_free_load_ab_001/A --b-dir experiments/dynamics/runs/diag_free_load_ab_001/B --output-dir debug/issue2-ab/analysis
+.venv/bin/python scripts/test.py
+```
+
+各命令均退出0；A/B各14,100个真实mj_step，固定14.1s，采样29.129–43.228s。连同一次前缀重放，本次诊断共57,328步；没有追加第三组或调参。最终静态9+动态33=42项测试PASS（本次新增runner4项、只读分析9项）。原正式抓取成功率未更新。
+
+prepare结束后审查补齐了两组protocol/model/state的联合执行校验；未重放或改初态。旧prepare源码/原preflight及新执行源码/独立seal均保留。protocol的script SHA对应prepare版本，`reviewed-readiness.json`的run_script SHA对应实际执行版本；所有组的文件在A首步前共同校验。
+
+### 6.3 接触与下落时序 — 记录 PASS；B持续独立承载 FAIL
+
+下表行号均为各组新轨迹的0基行号，JSONL行号=行号+1；elapsed相对共同初态29.128s。vz<−1mm/s、相对下降1mm是事前固定的描述性标记，不是新验收标准。相对下降使用cube与gripper_base原点的**世界Z间距变化**；夹爪局部z朝下，物体下落反而对应local z增加。
+
+| B事件 | t / elapsed s / 行 | 原始观测 |
+|---|---|---|
+| 首次下落标记 | 29.129 / 0.001 / 0 | vz=-0.00190343m/s；双指世界Fz合计0.810429N，桌面0，重量0.981N |
+| 相对世界Z下降≥1mm | 29.196 / 0.068 / 67 | 相对下降1.020890mm，vz=-0.032478m/s |
+| 首次机器人/cube穿透>1mm | 29.879 / 0.751 / 750 | 穿透1.104415mm；下落已先发生 |
+| 最大机器人/cube穿透 | 30.106 / 0.978 / 977 | 2.830960mm |
+| 首次失去双侧≥0.05N | 30.445 / 1.317 / 1316 | Fn=0.044540/0.201110N；相对下降39.3520mm |
+| 首次重新触及低桌面 | 30.457 / 1.329 / 1328 | 首个几何接触及正向桌支撑；cube.z=0.107541m、vz=-0.219822m/s；桌Fz=2.290419N，双指0 |
+| 末帧 | 43.228 / 14.100 / 14099 | cube.z=0.099784489m，双指0，桌Fz≈0.981N |
+
+| 区间 | 双指世界Fz合计均值N | 桌面世界Fz均值N | 判读 |
+|---|---:|---:|---|
+| A全部14.1s | -0.00000792 | 0.981006 | 双指接触100%，物体由桌承重 |
+| B首次重触前1328样本（29.129–30.456s） | 0.964495 | 0 | 全部vz<0；双指确实提供上托，但未停止下滑 |
+| B首次重触起12772样本（30.457–43.228s） | 0 | 0.982721（含碰撞瞬态） | 已失指，随后由低桌面承重 |
+
+B触桌前双指Fz合计范围[-0.138666,1.522958]N，Fn均值1.04114/1.03808N，切向力模长均值0.64912/0.64834N。不能以某帧Fz大于重量、均值接近重量或末帧稳定，宣称持续承载成功。每个事件的完整接触点、法向与力均在JSONL及诊断JSON中。
+
+A/B无执行器饱和、无关节越界、无外部施力。B最大耦合残差0.0954205mm，未超原0.2mm门槛。固定的是目标命令，实际机器人仍自由积分：B重触前gripper_base最大位置漂移1.075199mm、最大下沉0.997730mm、最大旋转0.238743°，7轴最大目标误差0.00300751rad；不能将其描述为机械臂被钉死。B的数十毫米相对下滑不是整体手部位移的假象。
+
+A与旧 `diag_hold_only_002` 后14,100行逐步比对，qpos/qvel/ctrl最大差分别5.65e-15/5.55e-15/3.73e-14。独立重构接触世界总力与cube平移qfrc_constraint最大差为A=9.16e-16N、B=8.33e-16N；含切向及body顺序，采样仍为post-forward瞬时力。
+
+### 6.4 假设与下一项唯一建议
+
+**PASS（已证实）**：在该已批准初态与瞬时撤支撑条件下，恒定姿态命令下也出现持续相对下滑、穿透超限、失指及落桌。失败不需要先执行原提升轨迹；原位有接触不等于独立承载。**FAIL**：B未在14.1s内持续独立支撑0.1kg物体。该诊断结果不计正式抓取成功或失败次数。
+
+**UNKNOWN**：摩擦承载边界、局部凸包法向/软接触及载荷转移瞬态的各自贡献仍未隔离；不能据此证明所有载荷转移方式都失败、原提升轨迹正确或某项参数是唯一根因。
+
+**下一项唯一建议，尚未执行**：用现有B记录做离线接触承载预算复核，逐指分解世界Fz中的法向/切向贡献，并对照冻结模型的实际接触摩擦锥，检验下滑时是否逼近承载边界。无需改模型或追加本轮物理实验；若后续需要改物理参数，另列差异确认。本轮到此停止物理实验。
+
+### 6.5 本轮可复核证据
+
+根目录仍为上述独立worktree，所有大型Run留本地：
+
+- `experiments/dynamics/runs/diag_free_load_ab_001/`：`model.diff`、`model-diff.json`、`common-state.npz`、`preflight.json`、`reviewed-readiness.json`、prepare/run源码副本及execution；A/B各含model/protocol/initial-state/initial-contacts/trajectory/contacts/observations/result/diagnostic-result。
+- `debug/issue2-ab/{issue-updated.json,predeclared-plan.json,prepare-execution.json,run-execution.json}`：批准内容、事前假设/固定指标、真实命令与退出码。
+- `debug/issue2-ab/analysis/{diagnosis-ab.json,intervals.csv,events.csv}`：只读事件与分段指标。
+- `debug/issue2-ab/{independent-audit.json,independent-servo-audit.json,independent_audit.py,full-tests.log,full-tests-execution.json,evidence-manifest.json}`：独立复核、测试和SHA索引。旧审计版本亦保留。
+
+共同初态NPZ SHA256：`aee269e559c74a1cd3005acd627328b2679c6286ee96e696297b1430be72ccf8`。A/B数据另见本轮SHA索引；未覆盖首轮任何Run。
+
+A轨迹SHA256：`2a3070eed2cb9b852d9601a4f8bb4d31aebf020a67966a809bace63e58e04b37`；B轨迹：`7eb0976355caba3bc3d940e7026f36f93e75bb60536d6c74f1f42cf3d792942d`。
