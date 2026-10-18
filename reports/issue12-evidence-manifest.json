@@ -1,0 +1,396 @@
+{
+  "issue": 12,
+  "diagnostic_only": true,
+  "source_dirs": {
+    "A": "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+    "B": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001"
+  },
+  "preregistration": {
+    "utc": "2026-10-18T13:11:09.722674+00:00",
+    "preregistration_commit": "d00750a7e3848e5d0f94e53b7a6eb7ff7590d662",
+    "prediction_sha256": "6520cc3ddc2942588436c14ae92ccd8e14903cae4161fef04291f446bf6c82f8",
+    "prepared_sha256": "ccc26ea1ee62a995d257909633180df1d23ef5c2c3bb965b26badde787f2f212",
+    "B_has_started": false,
+    "new_mj_steps": 0
+  },
+  "commands": {
+    "prepare": {
+      "argv": [
+        "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+        "experiments/dynamics/grasp_impratio_ab.py",
+        "prepare",
+        "--source-dir",
+        "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+        "--output-dir",
+        "experiments/dynamics/runs/diag_impratio10_001"
+      ],
+      "cwd": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab",
+      "start_utc": "2026-10-18T13:09:54.700501+00:00",
+      "end_utc": "2026-10-18T13:09:57.764562+00:00",
+      "exit_code": 0,
+      "wall_s": 3.0640667758416384
+    },
+    "run": {
+      "argv": [
+        "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+        "experiments/dynamics/grasp_impratio_ab.py",
+        "run",
+        "--output-dir",
+        "experiments/dynamics/runs/diag_impratio10_001"
+      ],
+      "cwd": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab",
+      "start_utc": "2026-10-18T13:11:52.870552+00:00",
+      "end_utc": "2026-10-18T13:12:11.027404+00:00",
+      "exit_code": 0,
+      "wall_s": 18.156858686124906
+    },
+    "analysis": {
+      "argv": [
+        "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+        "experiments/dynamics/diagnose_impratio_ab.py",
+        "--a-dir",
+        "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+        "--b-dir",
+        "experiments/dynamics/runs/diag_impratio10_001",
+        "--output-dir",
+        "debug/issue12/analysis_001"
+      ],
+      "cwd": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab",
+      "start_utc": "2026-10-18T13:12:28.310851+00:00",
+      "end_utc": "2026-10-18T13:13:38.051733+00:00",
+      "exit_code": 0,
+      "wall_s": 69.74088774714619
+    },
+    "verification": {
+      "argv": [
+        "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+        "experiments/dynamics/verify_impratio_ab.py",
+        "--source",
+        "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+        "--run",
+        "experiments/dynamics/runs/diag_impratio10_001",
+        "--output",
+        "debug/issue12/verification.json"
+      ],
+      "cwd": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab",
+      "start_utc": "2026-10-18T13:12:28.310990+00:00",
+      "end_utc": "2026-10-18T13:12:50.163438+00:00",
+      "exit_code": 0,
+      "wall_s": 21.85244963900186
+    },
+    "plot": {
+      "argv": [
+        "/usr/bin/python3",
+        "experiments/dynamics/plot_impratio_ab.py",
+        "--analysis",
+        "debug/issue12/analysis_001",
+        "--output",
+        "reports/issue12-impratio-ab.png"
+      ],
+      "cwd": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab",
+      "start_utc": "2026-10-18T13:13:54.855136+00:00",
+      "end_utc": "2026-10-18T13:13:56.913876+00:00",
+      "exit_code": 0,
+      "wall_s": 2.058741644024849
+    }
+  },
+  "verification": {
+    "status": "PASS_SAVED_EVIDENCE_CHECKS",
+    "new_mj_steps": 0,
+    "force_solves": 0,
+    "B_samples": 14100,
+    "full_pre_forward_sha256": "38fed316c9733655dcf6f6db655204f69e21d0d4f84db3916808eb1a83cb5d10",
+    "only_option_difference": [
+      "impratio"
+    ],
+    "identical_model_fields": 459,
+    "saved_control_health": "PASS",
+    "source_hashes_unchanged": true,
+    "original_criteria_unchanged": true,
+    "prediction_sha256": "6520cc3ddc2942588436c14ae92ccd8e14903cae4161fef04291f446bf6c82f8",
+    "prepared_sha256": "ccc26ea1ee62a995d257909633180df1d23ef5c2c3bb965b26badde787f2f212"
+  },
+  "protected_worktrees": {
+    "/data_robot/projects/nero_gripper_assets": {
+      "head": "7f01deedc434d1d09cf98a043fcd2c53894e835e\n",
+      "status": "?? closed.png\n?? preview.png\n"
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab": {
+      "head": "c0e23102d7d2231414b712966b9c246615d14f0a\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-readonly": {
+      "head": "bbec36b0420088e937e00d1f7e589d853f95a8a0\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis": {
+      "head": "bf5dc44ab4e97650dfcb0ebdfc550047b87ec947\n",
+      "status": ""
+    },
+    "/data_robot/projects/nero_gripper_dynamics": {
+      "head": "ef15cd524d1d72ff13ad6564c7e681f6ec15f60c\n",
+      "status": ""
+    }
+  },
+  "raw_files": {
+    "A": {
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/STARTED": {
+        "sha256": "b5ded562849414a152bd7f7e13d32047bfadb1aaa60c98421b59ab1fdd4a01df",
+        "bytes": 61
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/elliptic-after-forward.npz": {
+        "sha256": "7e279abaf05d43bb3295b6e49c859f2367fd1ec1018447de986f284c7f2f7339",
+        "bytes": 3585
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/elliptic-initial-contacts.json": {
+        "sha256": "bcf6a039ea57ad80605ed16f108b4946215c36a17017471edef8694b8eadb50a",
+        "bytes": 1698
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/model.xml": {
+        "sha256": "79f5f9116e812687e9c4592f9faf42e9660276f77329297e690be4a0db28d376",
+        "bytes": 36996
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/model.diff": {
+        "sha256": "2ba915a98b179409fef715b4221c6ee86ba34dbb2f79a08e9d70b9373affb7dd",
+        "bytes": 843
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/prediction.json": {
+        "sha256": "26520c7a006eab3f043dc7e81103dc2c597ca1ea760eb6d2ea2ba8a09aa128d8",
+        "bytes": 766
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/result.json": {
+        "sha256": "5c6e563d59689f1374f8ba9e4d89f9201cfab1e3aaeab82fd75c41a7f8106039",
+        "bytes": 756
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/contacts.jsonl": {
+        "sha256": "89aeb60697d7c6badde163965439b2b2fe37bffc02845b1a41d36a33ec5d43b5",
+        "bytes": 22197733
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/pyramidal-after-forward.npz": {
+        "sha256": "493f2b9c4f87e3f635b833604a428a0a3614b156fc67d12fa379e2f3038721a7",
+        "bytes": 3642
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/observations.npz": {
+        "sha256": "88d73336a539fbdf8cc330a529d4d7fbe76d669d18e97ddd11e27486039d802d",
+        "bytes": 1189419
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/pyramidal-initial-contacts.json": {
+        "sha256": "11b124ed8ad4a9de98ea0c0ef173d1dfc21623645251d4342d59ebdbcf6cf301",
+        "bytes": 1696
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/runner.executed.py": {
+        "sha256": "b0b9e3e4c087b6c072160f78a511bc3c3184730e22fd5ce37ef752160cd4350e",
+        "bytes": 13376
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/contact-parameters.jsonl": {
+        "sha256": "2991c27ee19ff75d15624ff0af633569cd3bec8d36386fa22cb3c79e135be263",
+        "bytes": 3420054
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/execution.json": {
+        "sha256": "734efb5665392ed47ffce6d94c1dcf22f303efc0f4270bf6f45ce0bb3616700f",
+        "bytes": 597
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/protocol.json": {
+        "sha256": "12ddd136b4d24b53ed12b571b8a5cd5ad086e4ce36a54245e04af2660b26043f",
+        "bytes": 9134
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/initial-state.npz": {
+        "sha256": "79e066fb682af6e69ce44f26f06a9b2165cdc9eb0924124a3a3eb6e254bf4ddc",
+        "bytes": 5177
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/warnings.npz": {
+        "sha256": "8126d6cebb9f12b7106803f4b550aa69b1214168a5a43d1b836bdcd5efe44c37",
+        "bytes": 52801
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/trajectory.npz": {
+        "sha256": "fea51467c8001321dddea0f16eb85bf60f9184f2fdb2d507fd9a1464dfad948d",
+        "bytes": 3983464
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/prepared.json": {
+        "sha256": "8b19cf62673b51b9b76d1fc0972da7602d665850f0dea69c56671371c1048406",
+        "bytes": 28316
+      }
+    },
+    "B": {
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/STARTED": {
+        "sha256": "9dd93d7af8fc79a20c5be812174a8a9435514174d8edc61a8a5407a82f9c1eec",
+        "bytes": 67
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/model.xml": {
+        "sha256": "7a2a1c586432663038b1b77e7a48b95e3482c3a7fb3f4f7986a33543aa0d04fc",
+        "bytes": 37010
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/model.diff": {
+        "sha256": "34a7fba66064dad5ca77b5373e4c951057347908e48964d77a5f0e1be2663640",
+        "bytes": 875
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/prediction.json": {
+        "sha256": "6520cc3ddc2942588436c14ae92ccd8e14903cae4161fef04291f446bf6c82f8",
+        "bytes": 901
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio1-initial-contacts.json": {
+        "sha256": "bcf6a039ea57ad80605ed16f108b4946215c36a17017471edef8694b8eadb50a",
+        "bytes": 1698
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/result.json": {
+        "sha256": "3eb6ceb490f5d738e9d25a36ca64e479280cbe2b47db624a1e61733ce171fe25",
+        "bytes": 727
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/contacts.jsonl": {
+        "sha256": "8b58f6d209bed5ce73654801b9e8c68282450efc0ce5968143217e1805dc8fee",
+        "bytes": 18687684
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/observations.npz": {
+        "sha256": "6a9c744946ee6780473ca8a5f9f4189edc653323c9a60880f76364a570a4caa5",
+        "bytes": 2327611
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio1-after-forward.npz": {
+        "sha256": "5545333ee3bb2f346173a5795cf95c29ae42edf679400ae625dc97226499fb79",
+        "bytes": 4273
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio10-after-forward.npz": {
+        "sha256": "94dad72771407f94e03b06d1b38ca032829d45bf6490596b9380893899b18c4d",
+        "bytes": 4306
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/runner.executed.py": {
+        "sha256": "994d75bb6e9a2ed506200e5fa4666493e12b5896b83f1490c973844ec2f03c1e",
+        "bytes": 14062
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/contact-parameters.jsonl": {
+        "sha256": "1ff3b37f3c57e912a0734735117697cc2e0f1b582dd3b6f283ab07354588137b",
+        "bytes": 2288274
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/execution.json": {
+        "sha256": "55cf33fc12c6495afb9e48ad30be1af32d92f9bddbc287f148380d612691fac0",
+        "bytes": 793
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/protocol.json": {
+        "sha256": "883ab4751c7e361a71b4947881dad6d20cdff5d4f2f61eb92466fd3c8d097db4",
+        "bytes": 9149
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/initial-state.npz": {
+        "sha256": "b5dc6cdba80d29aeb9d45f18f96a5f247371ec0c713957ed458285fa9d402ddc",
+        "bytes": 5177
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/warnings.npz": {
+        "sha256": "8126d6cebb9f12b7106803f4b550aa69b1214168a5a43d1b836bdcd5efe44c37",
+        "bytes": 52801
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/trajectory.npz": {
+        "sha256": "322a9ae7b6277603d8ae11834df89dfc3f3b3ba3e5c1cf4f00c653d34b08ec72",
+        "bytes": 7493484
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/prepared.json": {
+        "sha256": "ccc26ea1ee62a995d257909633180df1d23ef5c2c3bb965b26badde787f2f212",
+        "bytes": 30809
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio10-initial-contacts.json": {
+        "sha256": "ac96ae63cc0ac916234b01d2044eaed522f4e509d870be3f6a96862b3a838ce7",
+        "bytes": 1698
+      }
+    }
+  },
+  "analysis_files": {
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/analysis_001/A-series.npz": {
+      "sha256": "f080287ab3a15d42e5110dafee0b6421ed547266686ad53adeaeca4ad4a61f31",
+      "bytes": 3558371
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/analysis_001/comparison.json": {
+      "sha256": "9972f37dbd41538fd009c9eb8325228f1ab175d0a1efa03c1c3b5d40ed0cbbac",
+      "bytes": 141191
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/analysis_001/contacts.csv": {
+      "sha256": "f84fc31243ef3e051c5c4fb2b371163c130fe5bb2b08c1ef19de9f55248d0cc8",
+      "bytes": 51372742
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/analysis_001/analysis-manifest.json": {
+      "sha256": "31f4c594b7175aae543c42a0fa2a74eb925c50675f21bdf817868d0319b061ab",
+      "bytes": 8452
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/analysis_001/B-series.npz": {
+      "sha256": "4952221d0d79c717c7d0569da0f247e544a97489a33e3e70891ccf37f101a0bd",
+      "bytes": 6521310
+    }
+  },
+  "executed_command_count_B": 1,
+  "new_A_mj_steps": 0,
+  "new_B_mj_steps": 14100,
+  "supplementary_artifacts": {
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/reports/issue12-impratio-ab.md": {
+      "sha256": "67b3b7a296a57a639e63cea90b2766117d6d78eb4e3fceaeebe52c60520ce61a",
+      "bytes": 11537
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/reports/issue12-impratio-ab.png": {
+      "sha256": "ab73c18bd08a896930a66b4e9ad337482ddc434ca68bd755569f963e890b9978",
+      "bytes": 256519
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/reports/issue12-preregistration.json": {
+      "sha256": "766c25bc09043bb3666e00a08f9b6e7aac905c880cb31ce7ea731d0c58da8573",
+      "bytes": 34632
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/reports/issue12-comparison.json": {
+      "sha256": "9972f37dbd41538fd009c9eb8325228f1ab175d0a1efa03c1c3b5d40ed0cbbac",
+      "bytes": 141191
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/verify_impratio_ab.py": {
+      "sha256": "8fb6b7abbc570d56c34b9797826d6329a587db4f596adbe3a90619131c3a83bb",
+      "bytes": 4665
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/diagnose_impratio_ab.py": {
+      "sha256": "ee29a7aa425f6639e91905452098ef2a34a9cb39218c9509e849822a010028de",
+      "bytes": 26709
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/test_grasp_impratio_ab.py": {
+      "sha256": "2f937af152fd0fd1aee592e9a48cccd294d73d82bfe4e876ea07182129efe3a8",
+      "bytes": 1604
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/grasp_impratio_ab.py": {
+      "sha256": "994d75bb6e9a2ed506200e5fa4666493e12b5896b83f1490c973844ec2f03c1e",
+      "bytes": 14062
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/plot_impratio_ab.py": {
+      "sha256": "9d57b8fd9e94142a54c970f33adfc750acd8a591d55da3168b286544a7a9d22f",
+      "bytes": 2181
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/verification.log": {
+      "sha256": "f0de2fcef6ec6f7997f0d42c0dc7b989e3ee2581be16f8ca282e50a51ab19eeb",
+      "bytes": 543
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/run.log": {
+      "sha256": "10bee1f40dbc89b0d9ca7313de78b02ddb971cb0c58a6c66c5da779dcd5ccde7",
+      "bytes": 913
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/tests-prerun.log": {
+      "sha256": "5f66b551e1be6b74f4504cf06a301618828a4ce78b1879d0d1e8664f11fa8e41",
+      "bytes": 580
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/prepare.log": {
+      "sha256": "051a4c9a26bcbc2d0b183c5f65cfe21096807ea01357e6529b100733a42a2fe0",
+      "bytes": 104
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/tests-green.log": {
+      "sha256": "9e449198342de349286e3b759542f4db8a96f62e4c8379c1eba6279e7498c250",
+      "bytes": 580
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/analysis.log": {
+      "sha256": "b2c3c0bd69338a19f27532a99cde2dcc45577570402fa5662bced59ecc3a6d93",
+      "bytes": 489
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/plot.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/tests-red.log": {
+      "sha256": "4b4fae5954045d6196a8d672e044a5bf89e4f460e460f9f5b78613c1578a5f1c",
+      "bytes": 1228
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/review.md": {
+      "sha256": "8b9cc900fb8297967da87e02412b4fe7a7dee10b8e0adc525462ae11bd264882",
+      "bytes": 1731
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/debug/issue12/final-check.json": {
+      "sha256": "93c72599f0dbff218fe9bb57fce42b376a0fa9e9796f60a671d972b6c7e11f8b",
+      "bytes": 139
+    }
+  }
+}
