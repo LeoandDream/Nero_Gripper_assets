@@ -1,0 +1,264 @@
+{
+  "registration": {
+    "label": "R1",
+    "condition": "fixed",
+    "strategy": "R1",
+    "hypothesis": {
+      "action": {
+        "key": "expert_peak_joint_target_speed_rad_s",
+        "value": 0.2
+      },
+      "rationale": "R0 first frozen failure is robot/cube penetration at lift33.319s after12.988mm relative slip; initial settle overlap0.687mm is compliant, all native control phases PASS and no force saturation. During nominal waypoint settling, cube keeps slipping while the hand barely rises. Shorter reference motion can reduce accumulated migration toward cube upper edge; simultaneous dynamic-load effects remain possible.",
+      "prediction": "H1: at the END OF THE SECOND lift waypoint, cube COM/gripper-base relative world-Z gap drop since grasp_settle end is strictly<0.010m AND maximum robot/cube penetration up to that waypoint end is <=0.001m. Compare same reference progress, not absolute time. Full original grasp/control criteria and real release are evaluated independently regardless of H1. No further speed values will be tried.",
+      "evidence": {
+        "R0_summary_path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/debug/issue14/R0-analysis/summary.json",
+        "R0_summary_sha256": "d6c8daf6f5706045ad25d4e7bb24fc745f3a4849ce0b9f00a9d517ad2ef2fb21",
+        "earliest_row": 33318,
+        "earliest_time_s": 33.31900000001305,
+        "relative_drop_before_first_pen_m": 0.012988267198894399,
+        "R0_second_waypoint_drop_m": 0.020712001773823,
+        "baseline_lift_duration_s": 14.1,
+        "nominal_R1_lift_duration_s": 6.525
+      },
+      "scope": "Independent R0-relative action scalar only; unchanged Controller slew=.2, same frozen normal scene/initial states/plans/criteria/physics. Existing prose mentioning0.05 remains legacy text; executable scalar is explicitly disclosed here.",
+      "checkpoint": {
+        "lift_waypoint_number": 2,
+        "relative_drop_strict_m": 0.01,
+        "maximum_penetration_inclusive_m": 0.001
+      }
+    },
+    "protocol": {
+      "protocol_version": 2,
+      "cube": {
+        "center": [
+          -0.32,
+          0,
+          0.15
+        ],
+        "half_size": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "mass_kg": 0.1,
+        "friction": [
+          1,
+          0.005,
+          0.0001
+        ],
+        "table": {
+          "center": [
+            -0.32,
+            0,
+            0.065
+          ],
+          "half_size": [
+            0.12,
+            0.12,
+            0.065
+          ]
+        }
+      },
+      "initial_conditions": [
+        {
+          "id": "fixed",
+          "offset_xy_m": [
+            0,
+            0
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "id": "offset_positive",
+          "offset_xy_m": [
+            0.003,
+            0.003
+          ],
+          "yaw_rad": 0.03490658503988659
+        },
+        {
+          "id": "offset_negative",
+          "offset_xy_m": [
+            -0.003,
+            -0.003
+          ],
+          "yaw_rad": -0.03490658503988659
+        }
+      ],
+      "initialization": "Legal reset at planned pregrasp pose 0.10m above cube, source width0.08m; subsequent opening, approach, closing, lift, hold and release use actual mj_step only",
+      "site_definition": "Nonphysical grasp_center=gripper_base local[0,0,0.12]m, chosen from source finger z_max0.138m and cube halfheight0.02m for nominal2mm table clearance; not calibrated hardware TCP",
+      "pregrasp_height_m": 0.1,
+      "lift_height_m": 0.1,
+      "vertical_waypoint_count": 5,
+      "open_width_m": 0.1,
+      "close_width_rate_m_s": 0.005,
+      "maximum_close_duration_s": 20,
+      "contact_trigger_force_N_each": 0.2,
+      "hold_compression_target_force_N_each": 1.5,
+      "compression_rule": "Position compression equivalent only, not calibrated force: width_target=(qfinger1-qfinger2)-2*1.5N/800NperM after bilateral contact; actual force logged",
+      "criteria": {
+        "minimum_lift_m": 0.08,
+        "hold_duration_s": 2.0,
+        "maximum_hold_drift_m": 0.01,
+        "minimum_bilateral_contact_fraction": 0.95,
+        "minimum_finger_normal_force_N": 0.05,
+        "maximum_robot_object_penetration_m": 0.001
+      },
+      "repeat_rule": "Run fixed first; only if it passes, execute both predeclared offsets. No changes to object, contact parameters or criteria after first attempt. All interrupted/failed attempts retained.",
+      "contact_parameters": "Source robot friction/solref/solimp/masks/equality unchanged; cube and table use MuJoCo default contact softness, cube friction explicitly stated; sole approved exclusion base_link/link1",
+      "expert_peak_joint_target_speed_rad_s": 0.2,
+      "expert_motion": "Synchronized cosine interpolation of7absolute joint targets at100Hz with0.05rad/s peak reference speed; existing actuator gains/limits unchanged",
+      "revision_reason": "v1 physical attempt retained as FAIL. Actual steady contact force~0.70N per finger and lateral TCP excursions~1.3mm during asymmetric target slews preceded slip. One conventional expert reference refinement; object, contact, gains, equality and acceptance thresholds unchanged. No further physics patches without confirmation."
+    },
+    "case": {
+      "id": "fixed",
+      "cube": {
+        "center": [
+          -0.32,
+          0.0,
+          0.15
+        ],
+        "half_size": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "mass_kg": 0.1,
+        "friction": [
+          1,
+          0.005,
+          0.0001
+        ],
+        "table": {
+          "center": [
+            -0.32,
+            0,
+            0.065
+          ],
+          "half_size": [
+            0.12,
+            0.12,
+            0.065
+          ]
+        },
+        "yaw_rad": 0
+      },
+      "plan": {
+        "initial_action": [
+          -0.8156872599831811,
+          0.2810983432696505,
+          1.04222135944483,
+          1.5364080306631929,
+          -0.2177098003086819,
+          0.2340591176208889,
+          1.4607995377122671,
+          0.08
+        ],
+        "approach": [
+          [
+            -0.8555639482998662,
+            0.32166654471967576,
+            1.1085437472143176,
+            1.5983036800729706,
+            -0.24280153048873543,
+            0.27757152152754205,
+            1.3962349142556891
+          ],
+          [
+            -0.8736022592401742,
+            0.3640966731723003,
+            1.1477794303033204,
+            1.6555080989183482,
+            -0.2635372302626484,
+            0.3188130932102383,
+            1.331881242365328
+          ],
+          [
+            -0.8789365289534525,
+            0.4097175927596261,
+            1.1714364016987562,
+            1.708166263009515,
+            -0.2825934675258648,
+            0.3599041930301047,
+            1.2680584789684237
+          ],
+          [
+            -0.8749929903809195,
+            0.4577005267817519,
+            1.1824301815506282,
+            1.7563465295018719,
+            -0.2997693625610165,
+            0.39997551061702596,
+            1.2044234415002506
+          ],
+          [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419
+          ]
+        ],
+        "lift": [
+          [
+            -0.8749929903809195,
+            0.4577005267817519,
+            1.1824301815506282,
+            1.7563465295018719,
+            -0.2997693625610165,
+            0.39997551061702596,
+            1.2044234415002506
+          ],
+          [
+            -0.8789365289534525,
+            0.4097175927596261,
+            1.1714364016987562,
+            1.708166263009515,
+            -0.2825934675258648,
+            0.3599041930301047,
+            1.2680584789684237
+          ],
+          [
+            -0.8736022592401742,
+            0.3640966731723003,
+            1.1477794303033204,
+            1.6555080989183482,
+            -0.2635372302626484,
+            0.3188130932102383,
+            1.331881242365328
+          ],
+          [
+            -0.8555639482998662,
+            0.32166654471967576,
+            1.1085437472143176,
+            1.5983036800729706,
+            -0.24280153048873543,
+            0.27757152152754205,
+            1.3962349142556891
+          ],
+          [
+            -0.8156872599831811,
+            0.2810983432696505,
+            1.04222135944483,
+            1.5364080306631929,
+            -0.2177098003086819,
+            0.2340591176208889,
+            1.4607995377122671
+          ]
+        ],
+        "planning_method": "bounded SciPy least_squares in scratch MjData, source ranges plus conservative Joint2 envelope",
+        "nonobject_scratch_collision_count": 0
+      }
+    },
+    "runner_sha256": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+    "prepared_sha256": "f8a51d8e7d82f810b671733f4bf852c60e3a3b191befca5bc18db88ca0026ba0",
+    "hypothesis_file_sha256": "295e55e4a6a5e7f32ad741d946330b638512a2dddb65b578a780b6762c61a878",
+    "registered_utc": "2026-10-18T15:18:14.783864+00:00",
+    "actual_mj_steps": 0
+  },
+  "registration_sha256": "efade1260109d3fe8d236963dacbabc3f18b2a372c3d7e7a980abd2e6c689f0d",
+  "hypothesis_sha256": "295e55e4a6a5e7f32ad741d946330b638512a2dddb65b578a780b6762c61a878",
+  "B_has_started": false
+}
