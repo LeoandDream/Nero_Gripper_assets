@@ -1,0 +1,12 @@
+{
+  "inputs": {
+    "experiments/dynamics/runs/issue14_full_grasp_002/R0/trajectory.npz": "ae210b35827b2e9bc12d5496c9548da5b50f0762fb37d5b90bee3f5590b430e9",
+    "experiments/dynamics/runs/issue14_full_grasp_002/R0/contacts.jsonl": "98cbdcd9aeb8ffc5f1771e7dbc19a95e85396b77720a13ed7c5390e36109fc82",
+    "experiments/dynamics/runs/issue14_full_grasp_002/R0/observations.npz": "70864acab856994d5ec144437c5783d367a6723b6ff29b979d7dfdfbdc9cb5b2",
+    "experiments/dynamics/runs/issue14_full_grasp_002/R1/trajectory.npz": "aa90f76b401d8f6ad5b24db7f0dea8c7eefaf9b397c7cc0eee50ac3dea957651",
+    "experiments/dynamics/runs/issue14_full_grasp_002/R1/contacts.jsonl": "c979ad97c0823fbc803f01de1ae2b1cc16586cf67105bc920c7fff7b0f86d2b9",
+    "experiments/dynamics/runs/issue14_full_grasp_002/R1/observations.npz": "754b236594566d6fd058f9c35c59f9ea66455b4359499be83564f7c0b2aa8c3e"
+  },
+  "new_mj_steps": 0,
+  "force_solves": 0
+}
