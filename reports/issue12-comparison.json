@@ -1,0 +1,4395 @@
+{
+  "diagnostic_only": true,
+  "status": "READONLY_REDUCTION_COMPLETE",
+  "P1": {
+    "status": "PASS",
+    "elapsed_s": 1.328,
+    "strict_drop_threshold_m": 0.005761707,
+    "A_drop_m": 0.011523413088786877,
+    "B_drop_m": 0.002934305126702952,
+    "improvement_m": 0.008589107962083925,
+    "reduction_fraction": 0.7453614563589459,
+    "no_B_table_geometry_through_prediction_time": true,
+    "requirement": "Strictly below threshold AND no cube/table geometry in saved snapshot or samples through 1.328 s"
+  },
+  "groups": {
+    "A": {
+      "source_dir": "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+      "samples": 14100,
+      "impratio": 1,
+      "key_samples": {
+        "0.068": {
+          "row": 67,
+          "elapsed_s": 0.0680000000000831,
+          "time_s": 29.1960000000127,
+          "cube_world_z_m": 0.14884714957226178,
+          "cube_world_delta_z_m": -0.000937548677989869,
+          "gripper_world_delta_z_m": -0.000490504942086023,
+          "relative_world_z_drop_m": 0.00044704373590384594,
+          "cube_world_vz_m_s": -0.014626926601333903,
+          "gripper_world_vz_m_s": -0.007701051104723055,
+          "relative_world_vz_m_s": -0.006925875496610848,
+          "cube_rotation_world": [
+            [
+              0.9999973808291032,
+              -0.00039519420873044295,
+              -0.002254363873004906
+            ],
+            [
+              0.0003948997232286818,
+              0.9999999134370723,
+              -0.00013107271900245337
+            ],
+            [
+              0.0022544154770400403,
+              0.00013018212803109593,
+              0.9999974503284852
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999998617882437,
+              7.937581358537156e-05,
+              0.0005197335619851603
+            ],
+            [
+              7.930390896197142e-05,
+              0.9999999872825727,
+              -0.00013836815617963112
+            ],
+            [
+              -0.0005197445384604573,
+              -0.00013832692015244095,
+              -0.9999998553656294
+            ]
+          ],
+          "relative_rotation_rad": 0.000566871719317716,
+          "world_rotation_rad": 0.002310917045959918,
+          "cube_angular_velocity_world_rad_s": [
+            0.01965885924987432,
+            -0.06129605627582478,
+            0.044877615691955156
+          ],
+          "relative_angular_speed_rad_s": 0.0558472694455325,
+          "finger_tangential_point_speed_max_m_s": 0.007774337441883757,
+          "cube_contact_rho_max": 0.8826794962347209,
+          "cube_contact_torque_world_Nm": [
+            -0.000139970905036973,
+            0.0007929422825332052,
+            -0.0013747997689806304
+          ],
+          "robot_penetration_m": 0.0007825550728257858,
+          "coupling_residual_m": 5.85705247708318e-07,
+          "arm_tracking_error_rad": [
+            3.4672702977078806e-05,
+            0.0006317684175347615,
+            -0.00042068913335202573,
+            0.001418679095031461,
+            -6.800494504743959e-06,
+            -6.470130452518319e-06,
+            -4.848311250049697e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.038444827562157724,
+          "actuator_force_N_or_Nm": [
+            0.0022343959478320994,
+            -4.899552529708851,
+            1.6416653740640261,
+            -3.018708894320113,
+            0.009262161573781283,
+            0.0019579280755592787,
+            -0.0012356365422400168,
+            -1.0380524660187593,
+            1.037438443359319
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9864731053481148,
+          "cube_contact_Fz_minus_mg_N": 0.005473105348114737,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.0382275878392995,
+          "finger1_Fz_normal_N": -0.00012131576819598217,
+          "finger1_Fz_tangent_N": 0.7291202812128839,
+          "finger1_Fz_N": 0.7289989654446879,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.0363331242670228,
+          "finger2_Fz_normal_N": 0.0001349120514656164,
+          "finger2_Fz_tangent_N": 0.2573392278519613,
+          "finger2_Fz_N": 0.2574741399034269,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "0.141": {
+          "row": 140,
+          "elapsed_s": 0.14100000000017232,
+          "time_s": 29.269000000012788,
+          "cube_world_z_m": 0.1479395081068418,
+          "cube_world_delta_z_m": -0.0018451901434098361,
+          "gripper_world_delta_z_m": -0.000839819520692453,
+          "relative_world_z_drop_m": 0.001005370622717383,
+          "cube_world_vz_m_s": -0.011107257745590378,
+          "gripper_world_vz_m_s": -0.0023277962355809307,
+          "relative_world_vz_m_s": -0.008779461510009447,
+          "cube_rotation_world": [
+            [
+              0.9999900226840418,
+              -0.0004898250019124156,
+              -0.004440113043333619
+            ],
+            [
+              0.0004898941736308154,
+              0.9999998798968445,
+              1.4491234422169058e-05
+            ],
+            [
+              0.004440105411893101,
+              -1.6666275348735928e-05,
+              0.9999901425444989
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999990750071525,
+              3.634226997500076e-05,
+              0.0013596558683326714
+            ],
+            [
+              3.624113147368897e-05,
+              0.9999999965748719,
+              -7.440993120287192e-05
+            ],
+            [
+              -0.0013596585679014834,
+              -7.436058690713449e-05,
+              -0.9999990728991118
+            ]
+          ],
+          "relative_rotation_rad": 0.0013841094377974495,
+          "world_rotation_rad": 0.004485319121237238,
+          "cube_angular_velocity_world_rad_s": [
+            -0.02000099942427789,
+            0.04270407409220597,
+            -0.0026200022989060264
+          ],
+          "relative_angular_speed_rad_s": 0.053706721081805804,
+          "finger_tangential_point_speed_max_m_s": 0.009698046329474495,
+          "cube_contact_rho_max": 0.7437985165370323,
+          "cube_contact_torque_world_Nm": [
+            0.00025641157535662325,
+            0.00030957918585461635,
+            -0.001137935306656436
+          ],
+          "robot_penetration_m": 0.0007833089034434904,
+          "coupling_residual_m": 1.9593311420262882e-06,
+          "arm_tracking_error_rad": [
+            -1.465107063369775e-05,
+            0.0011477580161280976,
+            -0.0006922324903941846,
+            0.002382113226549354,
+            2.3762773991298225e-06,
+            1.583284701789367e-06,
+            2.9337238438786883e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03844577417014661,
+          "actuator_force_N_or_Nm": [
+            0.006055320747340131,
+            -4.896106721224213,
+            1.6411750349110936,
+            -3.0034521057606605,
+            0.010732423024224537,
+            0.002213338533781144,
+            0.003096696711169258,
+            -1.041330181134603,
+            1.0404849840873507
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 1.003270354897609,
+          "cube_contact_Fz_minus_mg_N": 0.02227035489760887,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.0425351569421488,
+          "finger1_Fz_normal_N": 2.1407993927855357e-05,
+          "finger1_Fz_tangent_N": 0.5294397413450893,
+          "finger1_Fz_N": 0.5294611493390171,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.0390882274440427,
+          "finger2_Fz_normal_N": -1.7422064681305383e-05,
+          "finger2_Fz_tangent_N": 0.47382662762327316,
+          "finger2_Fz_N": 0.47380920555859185,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "0.751": {
+          "row": 750,
+          "elapsed_s": 0.7510000000009178,
+          "time_s": 29.879000000013534,
+          "cube_world_z_m": 0.1424459085218999,
+          "cube_world_delta_z_m": -0.007338789728351752,
+          "gripper_world_delta_z_m": -0.0009339687791399265,
+          "relative_world_z_drop_m": 0.006404820949211826,
+          "cube_world_vz_m_s": -0.007588948138138331,
+          "gripper_world_vz_m_s": 3.277482021633288e-05,
+          "relative_world_vz_m_s": -0.007621722958354664,
+          "cube_rotation_world": [
+            [
+              0.9999959538323139,
+              -0.0006129312174262867,
+              -0.002777883065112135
+            ],
+            [
+              0.0006133668799328166,
+              0.9999997997251143,
+              0.00015598333905846154
+            ],
+            [
+              0.0027777869017140138,
+              -0.0001576865693921815,
+              0.999996129509947
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999998181478419,
+              4.196435412129269e-05,
+              -0.0006016172163459821
+            ],
+            [
+              4.1929263690848993e-05,
+              0.9999999974192291,
+              5.8339332913032657e-05
+            ],
+            [
+              0.0006016196629657719,
+              5.831409693699396e-05,
+              -0.9999998173266064
+            ]
+          ],
+          "relative_rotation_rad": 0.0005839723226882512,
+          "world_rotation_rad": 0.002865843346378424,
+          "cube_angular_velocity_world_rad_s": [
+            0.02735431562207231,
+            -0.14881535344619523,
+            -0.036581811779560845
+          ],
+          "relative_angular_speed_rad_s": 0.15536196404440172,
+          "finger_tangential_point_speed_max_m_s": 0.009512944111093265,
+          "cube_contact_rho_max": 0.6502710416083112,
+          "cube_contact_torque_world_Nm": [
+            -0.00020801651280079412,
+            7.91641925409689e-05,
+            -0.000840714059861844
+          ],
+          "robot_penetration_m": 0.0007883122067099603,
+          "coupling_residual_m": 1.2766028370317373e-06,
+          "arm_tracking_error_rad": [
+            -7.185941548470964e-07,
+            0.0012737194306121635,
+            -0.0007290900711931503,
+            0.0026741896625668282,
+            -6.453899183134215e-06,
+            5.842205108019805e-07,
+            -1.4537577457174322e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03844946215145625,
+          "actuator_force_N_or_Nm": [
+            0.0013448877849795574,
+            -4.872833478530172,
+            1.6308045897121577,
+            -2.9881127706703396,
+            0.010207664395014254,
+            0.0023620063703928863,
+            0.0013332179837989306,
+            -1.0425733247789288,
+            1.0413822618956392
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9875157207529806,
+          "cube_contact_Fz_minus_mg_N": 0.006515720752980458,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.0460632723737846,
+          "finger1_Fz_normal_N": 0.0001394232550294468,
+          "finger1_Fz_tangent_N": 0.48633092347297635,
+          "finger1_Fz_N": 0.4864703467280058,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.0458202054017203,
+          "finger2_Fz_normal_N": -0.00016593218282439712,
+          "finger2_Fz_tangent_N": 0.5012113062077991,
+          "finger2_Fz_N": 0.5010453740249747,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "1.328": {
+          "row": 1327,
+          "elapsed_s": 1.328000000001623,
+          "time_s": 30.45600000001424,
+          "cube_world_z_m": 0.13732902647710862,
+          "cube_world_delta_z_m": -0.012455671773143023,
+          "gripper_world_delta_z_m": -0.0009322586843561464,
+          "relative_world_z_drop_m": 0.011523413088786877,
+          "cube_world_vz_m_s": -0.007490704779494649,
+          "gripper_world_vz_m_s": -1.4064208633581852e-06,
+          "relative_world_vz_m_s": -0.0074892983586312915,
+          "cube_rotation_world": [
+            [
+              0.999996594977849,
+              -0.0005208640324923097,
+              -0.002557094711746654
+            ],
+            [
+              0.0005174138684690459,
+              0.9999989552584142,
+              -0.0013497277378022516
+            ],
+            [
+              0.0025577950648757513,
+              0.0013484000656825616,
+              0.9999958197420958
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999996657412701,
+              -5.646279478572958e-05,
+              -0.0008156772016613377
+            ],
+            [
+              -5.528079804023282e-05,
+              0.9999989486006258,
+              -0.0014490485405642905
+            ],
+            [
+              0.0008157581613892204,
+              -0.001449002964920517,
+              -0.9999986174635573
+            ]
+          ],
+          "relative_rotation_rad": 0.0016617847030521438,
+          "world_rotation_rad": 0.0029585618253458444,
+          "cube_angular_velocity_world_rad_s": [
+            0.013914542068297522,
+            -0.056317544284156223,
+            0.045594524776795396
+          ],
+          "relative_angular_speed_rad_s": 0.07413464190656674,
+          "finger_tangential_point_speed_max_m_s": 0.0077045615682551395,
+          "cube_contact_rho_max": 0.8812749684203518,
+          "cube_contact_torque_world_Nm": [
+            0.0003340901229751461,
+            -0.0016045655261689414,
+            0.0013490278317317191
+          ],
+          "robot_penetration_m": 0.0008017260925269487,
+          "coupling_residual_m": 3.9615018952721126e-08,
+          "arm_tracking_error_rad": [
+            6.510780276025585e-07,
+            0.00127108470423265,
+            -0.0007266887343047035,
+            0.0026701568148361776,
+            -4.4293593210453786e-06,
+            1.4484547489201915e-07,
+            -1.5193735584340118e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.038452035580549083,
+          "actuator_force_N_or_Nm": [
+            -3.9015596753112384e-06,
+            -4.873233648019665,
+            1.6310761317182305,
+            -2.988116228708461,
+            0.009326073260106586,
+            0.0001822148224262096,
+            0.0027958798500511235,
+            -1.0395477503139205,
+            1.0393435574078842
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9742678516126348,
+          "cube_contact_Fz_minus_mg_N": -0.006732148387365244,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.0411518382041354,
+          "finger1_Fz_normal_N": -0.0014234521035222506,
+          "finger1_Fz_tangent_N": 0.7609369633091838,
+          "finger1_Fz_N": 0.7595135112056616,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.0396072716552158,
+          "finger2_Fz_normal_N": 0.0014018065133818564,
+          "finger2_Fz_tangent_N": 0.21335253389359135,
+          "finger2_Fz_N": 0.21475434040697322,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "2.164": {
+          "row": 2163,
+          "elapsed_s": 2.1640000000026447,
+          "time_s": 31.29200000001526,
+          "cube_world_z_m": 0.130763978749129,
+          "cube_world_delta_z_m": -0.019020719501122635,
+          "gripper_world_delta_z_m": -0.0009299649781021602,
+          "relative_world_z_drop_m": 0.018090754523020475,
+          "cube_world_vz_m_s": -0.00832869629493654,
+          "gripper_world_vz_m_s": -1.3628689992669392e-05,
+          "relative_world_vz_m_s": -0.008315067604943872,
+          "cube_rotation_world": [
+            [
+              0.999526374040632,
+              -0.0008354400573029016,
+              -0.030762471244995065
+            ],
+            [
+              0.00021557969557049191,
+              0.9997969913651029,
+              -0.020147694227517915
+            ],
+            [
+              0.030773058388521478,
+              0.02013151999232434,
+              0.9993236416598065
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9996239415113607,
+              0.00019964581447595852,
+              0.027421445965567084
+            ],
+            [
+              -0.00035527923392115806,
+              0.9997952786239366,
+              -0.02023053676877926
+            ],
+            [
+              -0.027419871151405817,
+              -0.020232671174013263,
+              -0.9994192261924952
+            ]
+          ],
+          "relative_rotation_rad": 0.03410612058284988,
+          "world_rotation_rad": 0.036807095511452996,
+          "cube_angular_velocity_world_rad_s": [
+            0.02892535915080931,
+            -0.2797821990561737,
+            0.06770087583822797
+          ],
+          "relative_angular_speed_rad_s": 0.2895603450025325,
+          "finger_tangential_point_speed_max_m_s": 0.010737811028535294,
+          "cube_contact_rho_max": 1.0000000000000002,
+          "cube_contact_torque_world_Nm": [
+            0.0047892202541828886,
+            -0.007625412460303285,
+            -0.011684108789287561
+          ],
+          "robot_penetration_m": 0.0012855459594710093,
+          "coupling_residual_m": 1.0755711454812911e-07,
+          "arm_tracking_error_rad": [
+            -7.487387551075031e-07,
+            0.0012695637981057217,
+            -0.000726403443128687,
+            0.0026612262864629255,
+            -6.238944025016568e-06,
+            3.8271934510447636e-08,
+            -2.462686444215656e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03860833471055039,
+          "actuator_force_N_or_Nm": [
+            -0.0003967220517641383,
+            -4.873310589189805,
+            1.630841104260034,
+            -2.9876693408246604,
+            0.010525538522845105,
+            0.0023590344011741003,
+            0.0033650383515769805,
+            -1.1036322382489008,
+            1.1042357716130928
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.3941512960977107,
+          "cube_contact_Fz_minus_mg_N": -0.5868487039022894,
+          "finger1_count": 1,
+          "finger1_Fn_N": 0.9996565566019482,
+          "finger1_Fz_normal_N": -0.020124605954691514,
+          "finger1_Fz_tangent_N": 0.5927168368584895,
+          "finger1_Fz_N": 0.572592230903798,
+          "finger2_count": 1,
+          "finger2_Fn_N": 0.7238967644911573,
+          "finger2_Fz_normal_N": -0.3900110144867174,
+          "finger2_Fz_tangent_N": 0.21157007968063013,
+          "finger2_Fz_N": -0.17844093480608725,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "final": {
+          "row": 14099,
+          "elapsed_s": 14.099999999977339,
+          "time_s": 43.227999999989954,
+          "cube_world_z_m": 0.09978448915956721,
+          "cube_world_delta_z_m": -0.050000209090684436,
+          "gripper_world_delta_z_m": 1.7254562573176813e-07,
+          "relative_world_z_drop_m": 0.050000381636310154,
+          "cube_world_vz_m_s": 5.305572212682305e-15,
+          "gripper_world_vz_m_s": -1.333269690111495e-15,
+          "relative_world_vz_m_s": 6.6388419027938e-15,
+          "cube_rotation_world": [
+            [
+              0.643846993052514,
+              -0.7651542651892062,
+              3.6171360490854967e-17
+            ],
+            [
+              0.7651542651892062,
+              0.643846993052514,
+              -4.36869245382599e-17
+            ],
+            [
+              1.0138414956793081e-17,
+              5.580436575694479e-17,
+              0.999999999999999
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.643846992890264,
+              0.7651542653257319,
+              6.141158330891035e-10
+            ],
+            [
+              0.7651542653257319,
+              0.643846992890264,
+              -7.594274032777247e-11
+            ],
+            [
+              -4.5350454410303907e-10,
+              4.2099784410031107e-10,
+              -0.9999999999999981
+            ]
+          ],
+          "relative_rotation_rad": 0.8712831541233922,
+          "world_rotation_rad": 0.8712763322624499,
+          "cube_angular_velocity_world_rad_s": [
+            -6.90199179401511e-16,
+            -6.513268567215065e-16,
+            6.290100064104455e-32
+          ],
+          "relative_angular_speed_rad_s": 2.1388428586641035e-13,
+          "finger_tangential_point_speed_max_m_s": 0.0,
+          "cube_contact_rho_max": 1.634549097504346e-17,
+          "cube_contact_torque_world_Nm": [
+            8.673617379884035e-19,
+            1.8431436932253575e-18,
+            7.222237291452134e-35
+          ],
+          "robot_penetration_m": 0.0,
+          "coupling_residual_m": 6.245004513516506e-17,
+          "arm_tracking_error_rad": [
+            4.107825191113079e-15,
+            -2.7755575615628914e-15,
+            6.8833827526759706e-15,
+            6.661338147750939e-15,
+            -1.9984014443252818e-15,
+            1.9984014443252818e-15,
+            7.327471962526033e-15
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03584882236975663,
+          "actuator_force_N_or_Nm": [
+            -2.928251680180396e-27,
+            -4.66654676918354,
+            1.5130816259221112,
+            -2.7816065361176205,
+            0.009127252845197775,
+            0.001384077642419379,
+            0.0006925376031508002,
+            -6.590086717209628e-09,
+            6.552809537604503e-09
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": false,
+          "bilateral_force": false,
+          "total_cube_contact_Fz_N": 0.9810000000000001,
+          "cube_contact_Fz_minus_mg_N": 0.0,
+          "finger1_count": 0,
+          "finger1_Fn_N": 0.0,
+          "finger1_Fz_normal_N": 0.0,
+          "finger1_Fz_tangent_N": 0.0,
+          "finger1_Fz_N": 0.0,
+          "finger2_count": 0,
+          "finger2_Fn_N": 0.0,
+          "finger2_Fz_normal_N": 0.0,
+          "finger2_Fz_tangent_N": 0.0,
+          "finger2_Fz_N": 0.0,
+          "table_count": 4,
+          "table_Fn_N": 0.9810000000000001,
+          "table_Fz_normal_N": 0.9810000000000001,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.9810000000000001,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0
+        }
+      },
+      "snapshot": {
+        "row": -1,
+        "elapsed_s": 0.0,
+        "time_s": 29.128000000012616,
+        "cube_world_z_m": 0.14978469825025165,
+        "cube_world_delta_z_m": 0.0,
+        "gripper_world_delta_z_m": 0.0,
+        "relative_world_z_drop_m": 0.0,
+        "cube_world_vz_m_s": 2.04285254282597e-06,
+        "gripper_world_vz_m_s": -1.0752902589523204e-05,
+        "relative_world_vz_m_s": 1.2795755132349173e-05,
+        "cube_rotation_world": [
+          [
+            0.9999999998116986,
+            -4.563577678467165e-06,
+            1.8862010210110182e-05
+          ],
+          [
+            4.5633622648266336e-06,
+            0.9999999999243729,
+            1.1420530064933136e-05
+          ],
+          [
+            -1.8862062327159797e-05,
+            -1.142044398859701e-05,
+            0.9999999997568974
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.9999999997692783,
+            -2.258042466782706e-06,
+            -2.1362200114790813e-05
+          ],
+          [
+            -2.2582479954812727e-06,
+            0.9999999999511665,
+            9.62111986129559e-06
+          ],
+          [
+            2.136217838885041e-05,
+            9.621168100221383e-06,
+            -0.9999999997255445
+          ]
+        ],
+        "relative_rotation_rad": 5.960464477539064e-08,
+        "world_rotation_rad": 5.960464477539064e-08,
+        "cube_angular_velocity_world_rad_s": [
+          1.246877223584715e-05,
+          -6.940929310755605e-05,
+          -0.013845993257509745
+        ],
+        "relative_angular_speed_rad_s": 0.019746305773773436,
+        "finger_tangential_point_speed_max_m_s": 0.0004754382953904703,
+        "cube_contact_rho_max": 0.6811101152995342,
+        "cube_contact_torque_world_Nm": [
+          -1.9142185204896328e-05,
+          9.937932450690325e-05,
+          0.0004978046906714603
+        ],
+        "robot_penetration_m": 0.0007375085307752765,
+        "coupling_residual_m": 7.60114319084404e-07,
+        "arm_tracking_error_rad": [
+          9.451285049033586e-07,
+          3.3949303424041233e-07,
+          8.91327474272785e-07,
+          9.510198253348534e-07,
+          -6.569057730554384e-07,
+          -4.863843359792508e-06,
+          2.0720382873928855e-06
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03852920952384466,
+        "actuator_force_N_or_Nm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force_available": false,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 0.8421779981325905,
+        "cube_contact_Fz_minus_mg_N": -0.13882200186740956,
+        "finger1_count": 1,
+        "finger1_Fn_N": 1.0667124276760744,
+        "finger1_Fz_normal_N": 9.386115345151214e-06,
+        "finger1_Fz_tangent_N": 0.42052405121819136,
+        "finger1_Fz_N": 0.42053343733353654,
+        "finger2_count": 1,
+        "finger2_Fn_N": 1.0666075117783782,
+        "finger2_Fz_normal_N": -1.0847649468214678e-05,
+        "finger2_Fz_tangent_N": 0.42165540844852223,
+        "finger2_Fz_N": 0.421644560799054,
+        "table_count": 0,
+        "table_Fn_N": 0.0,
+        "table_Fz_normal_N": 0.0,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.0,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_drop_at_least_1mm": {
+        "row": 140,
+        "elapsed_s": 0.14100000000017232,
+        "time_s": 29.269000000012788,
+        "cube_world_z_m": 0.1479395081068418,
+        "cube_world_delta_z_m": -0.0018451901434098361,
+        "gripper_world_delta_z_m": -0.000839819520692453,
+        "relative_world_z_drop_m": 0.001005370622717383,
+        "cube_world_vz_m_s": -0.011107257745590378,
+        "gripper_world_vz_m_s": -0.0023277962355809307,
+        "relative_world_vz_m_s": -0.008779461510009447,
+        "cube_rotation_world": [
+          [
+            0.9999900226840418,
+            -0.0004898250019124156,
+            -0.004440113043333619
+          ],
+          [
+            0.0004898941736308154,
+            0.9999998798968445,
+            1.4491234422169058e-05
+          ],
+          [
+            0.004440105411893101,
+            -1.6666275348735928e-05,
+            0.9999901425444989
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.9999990750071525,
+            3.634226997500076e-05,
+            0.0013596558683326714
+          ],
+          [
+            3.624113147368897e-05,
+            0.9999999965748719,
+            -7.440993120287192e-05
+          ],
+          [
+            -0.0013596585679014834,
+            -7.436058690713449e-05,
+            -0.9999990728991118
+          ]
+        ],
+        "relative_rotation_rad": 0.0013841094377974495,
+        "world_rotation_rad": 0.004485319121237238,
+        "cube_angular_velocity_world_rad_s": [
+          -0.02000099942427789,
+          0.04270407409220597,
+          -0.0026200022989060264
+        ],
+        "relative_angular_speed_rad_s": 0.053706721081805804,
+        "finger_tangential_point_speed_max_m_s": 0.009698046329474495,
+        "cube_contact_rho_max": 0.7437985165370323,
+        "cube_contact_torque_world_Nm": [
+          0.00025641157535662325,
+          0.00030957918585461635,
+          -0.001137935306656436
+        ],
+        "robot_penetration_m": 0.0007833089034434904,
+        "coupling_residual_m": 1.9593311420262882e-06,
+        "arm_tracking_error_rad": [
+          -1.465107063369775e-05,
+          0.0011477580161280976,
+          -0.0006922324903941846,
+          0.002382113226549354,
+          2.3762773991298225e-06,
+          1.583284701789367e-06,
+          2.9337238438786883e-05
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03844577417014661,
+        "actuator_force_N_or_Nm": [
+          0.006055320747340131,
+          -4.896106721224213,
+          1.6411750349110936,
+          -3.0034521057606605,
+          0.010732423024224537,
+          0.002213338533781144,
+          0.003096696711169258,
+          -1.041330181134603,
+          1.0404849840873507
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 1.003270354897609,
+        "cube_contact_Fz_minus_mg_N": 0.02227035489760887,
+        "finger1_count": 1,
+        "finger1_Fn_N": 1.0425351569421488,
+        "finger1_Fz_normal_N": 2.1407993927855357e-05,
+        "finger1_Fz_tangent_N": 0.5294397413450893,
+        "finger1_Fz_N": 0.5294611493390171,
+        "finger2_count": 1,
+        "finger2_Fn_N": 1.0390882274440427,
+        "finger2_Fz_normal_N": -1.7422064681305383e-05,
+        "finger2_Fz_tangent_N": 0.47382662762327316,
+        "finger2_Fz_N": 0.47380920555859185,
+        "table_count": 0,
+        "table_Fn_N": 0.0,
+        "table_Fz_normal_N": 0.0,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.0,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_table_geometry": {
+        "row": 4415,
+        "elapsed_s": 4.415999999999908,
+        "time_s": 33.544000000012524,
+        "cube_world_z_m": 0.10797178338779354,
+        "cube_world_delta_z_m": -0.04181291486245811,
+        "gripper_world_delta_z_m": -0.0008608596721100259,
+        "relative_world_z_drop_m": 0.040952055190348086,
+        "cube_world_vz_m_s": -0.08871507821397853,
+        "gripper_world_vz_m_s": 0.0048780652915412104,
+        "relative_world_vz_m_s": -0.09359314350551974,
+        "cube_rotation_world": [
+          [
+            0.8355059779026366,
+            -0.012592621586626291,
+            -0.5493370429622745
+          ],
+          [
+            -0.0008752528405424473,
+            0.9997055966758535,
+            -0.024247760874803608
+          ],
+          [
+            0.5494806591877687,
+            0.020739957968919993,
+            0.8352489804375838
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.836959437063429,
+            0.012005993221965005,
+            0.5471332167189474
+          ],
+          [
+            -0.0013487525131250645,
+            0.9997110408799708,
+            -0.02400032519246022
+          ],
+          [
+            -0.5472632653276911,
+            -0.020825245963484618,
+            -0.8367013968874641
+          ]
+        ],
+        "relative_rotation_rad": 0.5796141911191774,
+        "world_rotation_rad": 0.5822641761911379,
+        "cube_angular_velocity_world_rad_s": [
+          4.1000672048145725,
+          0.7152493077903033,
+          2.274150454061144
+        ],
+        "relative_angular_speed_rad_s": 4.745921699670859,
+        "finger_tangential_point_speed_max_m_s": 0.16899022401085334,
+        "cube_contact_rho_max": 1.0000000000000002,
+        "cube_contact_torque_world_Nm": [
+          -0.008895061973003188,
+          0.005544483149693707,
+          0.0023071887759738533
+        ],
+        "robot_penetration_m": 0.0005755343348139033,
+        "coupling_residual_m": 3.3777098207184164e-06,
+        "arm_tracking_error_rad": [
+          -1.073143167007462e-05,
+          0.0012167462182915978,
+          -0.0006727109340345372,
+          0.0024233728482974115,
+          -0.00010230889124107634,
+          2.6568003456683975e-06,
+          -0.00042799507354152055
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03793421766660049,
+        "actuator_force_N_or_Nm": [
+          0.015006610745146916,
+          -4.825111376492011,
+          1.5740417424691497,
+          -2.8712046678956504,
+          0.010199144213330258,
+          0.0006491519774296558,
+          0.012362681865634703,
+          -0.3406707852204849,
+          0.34090295728526
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 1.7664912241075563,
+        "cube_contact_Fz_minus_mg_N": 0.7854912241075562,
+        "finger1_count": 1,
+        "finger1_Fn_N": 0.5123299321204557,
+        "finger1_Fz_normal_N": -0.01062570125839338,
+        "finger1_Fz_tangent_N": 0.49386624086406405,
+        "finger1_Fz_N": 0.48324053960567065,
+        "finger2_count": 1,
+        "finger2_Fn_N": 0.44936669747226077,
+        "finger2_Fz_normal_N": -0.3753330759063085,
+        "finger2_Fz_tangent_N": -0.16554943247983195,
+        "finger2_Fz_N": -0.5408825083861404,
+        "table_count": 1,
+        "table_Fn_N": 1.824133192888026,
+        "table_Fz_normal_N": 1.824133192888026,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 1.824133192888026,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_table_upward_support": {
+        "row": 4415,
+        "elapsed_s": 4.415999999999908,
+        "time_s": 33.544000000012524,
+        "cube_world_z_m": 0.10797178338779354,
+        "cube_world_delta_z_m": -0.04181291486245811,
+        "gripper_world_delta_z_m": -0.0008608596721100259,
+        "relative_world_z_drop_m": 0.040952055190348086,
+        "cube_world_vz_m_s": -0.08871507821397853,
+        "gripper_world_vz_m_s": 0.0048780652915412104,
+        "relative_world_vz_m_s": -0.09359314350551974,
+        "cube_rotation_world": [
+          [
+            0.8355059779026366,
+            -0.012592621586626291,
+            -0.5493370429622745
+          ],
+          [
+            -0.0008752528405424473,
+            0.9997055966758535,
+            -0.024247760874803608
+          ],
+          [
+            0.5494806591877687,
+            0.020739957968919993,
+            0.8352489804375838
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.836959437063429,
+            0.012005993221965005,
+            0.5471332167189474
+          ],
+          [
+            -0.0013487525131250645,
+            0.9997110408799708,
+            -0.02400032519246022
+          ],
+          [
+            -0.5472632653276911,
+            -0.020825245963484618,
+            -0.8367013968874641
+          ]
+        ],
+        "relative_rotation_rad": 0.5796141911191774,
+        "world_rotation_rad": 0.5822641761911379,
+        "cube_angular_velocity_world_rad_s": [
+          4.1000672048145725,
+          0.7152493077903033,
+          2.274150454061144
+        ],
+        "relative_angular_speed_rad_s": 4.745921699670859,
+        "finger_tangential_point_speed_max_m_s": 0.16899022401085334,
+        "cube_contact_rho_max": 1.0000000000000002,
+        "cube_contact_torque_world_Nm": [
+          -0.008895061973003188,
+          0.005544483149693707,
+          0.0023071887759738533
+        ],
+        "robot_penetration_m": 0.0005755343348139033,
+        "coupling_residual_m": 3.3777098207184164e-06,
+        "arm_tracking_error_rad": [
+          -1.073143167007462e-05,
+          0.0012167462182915978,
+          -0.0006727109340345372,
+          0.0024233728482974115,
+          -0.00010230889124107634,
+          2.6568003456683975e-06,
+          -0.00042799507354152055
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03793421766660049,
+        "actuator_force_N_or_Nm": [
+          0.015006610745146916,
+          -4.825111376492011,
+          1.5740417424691497,
+          -2.8712046678956504,
+          0.010199144213330258,
+          0.0006491519774296558,
+          0.012362681865634703,
+          -0.3406707852204849,
+          0.34090295728526
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 1.7664912241075563,
+        "cube_contact_Fz_minus_mg_N": 0.7854912241075562,
+        "finger1_count": 1,
+        "finger1_Fn_N": 0.5123299321204557,
+        "finger1_Fz_normal_N": -0.01062570125839338,
+        "finger1_Fz_tangent_N": 0.49386624086406405,
+        "finger1_Fz_N": 0.48324053960567065,
+        "finger2_count": 1,
+        "finger2_Fn_N": 0.44936669747226077,
+        "finger2_Fz_normal_N": -0.3753330759063085,
+        "finger2_Fz_tangent_N": -0.16554943247983195,
+        "finger2_Fz_N": -0.5408825083861404,
+        "table_count": 1,
+        "table_Fn_N": 1.824133192888026,
+        "table_Fz_normal_N": 1.824133192888026,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 1.824133192888026,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_bilateral_geometry_loss": {
+        "row": 4418,
+        "elapsed_s": 4.418999999999901,
+        "time_s": 33.54700000001252,
+        "cube_world_z_m": 0.10775008575156032,
+        "cube_world_delta_z_m": -0.04203461249869132,
+        "gripper_world_delta_z_m": -0.0008443655852765075,
+        "relative_world_z_drop_m": 0.04119024691341483,
+        "cube_world_vz_m_s": -0.06706096626154578,
+        "gripper_world_vz_m_s": 0.005739327058154454,
+        "relative_world_vz_m_s": -0.07280029331970024,
+        "cube_rotation_world": [
+          [
+            0.8372783180930375,
+            -0.019767598249867124,
+            -0.5464194909689137
+          ],
+          [
+            -0.00048655043579072695,
+            0.9993189369421368,
+            -0.03689750042362555
+          ],
+          [
+            0.5467767198043167,
+            0.031159337737985803,
+            0.8366984608278915
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.8387156308355147,
+            0.019176133989749617,
+            0.5442319050527922
+          ],
+          [
+            -0.0009449903596886542,
+            0.9993270618686156,
+            -0.036667838909038894
+          ],
+          [
+            -0.5445688180436006,
+            -0.03126818354567947,
+            -0.8381331058443814
+          ]
+        ],
+        "relative_rotation_rad": 0.5770495536062465,
+        "world_rotation_rad": 0.5796814086744844,
+        "cube_angular_velocity_world_rad_s": [
+          3.1643089007003193,
+          1.2239364586791162,
+          2.490908250635391
+        ],
+        "relative_angular_speed_rad_s": 4.213545601829944,
+        "finger_tangential_point_speed_max_m_s": 0.013704855310838317,
+        "cube_contact_rho_max": 0.42839292085551484,
+        "cube_contact_torque_world_Nm": [
+          -0.006529606290818736,
+          0.003238852785802441,
+          0.0017936642769171489
+        ],
+        "robot_penetration_m": 0.0005166024027156048,
+        "coupling_residual_m": 3.7874432830507787e-06,
+        "arm_tracking_error_rad": [
+          -1.504629184012618e-05,
+          0.0012028363841094514,
+          -0.0006594905674013329,
+          0.002368147131339704,
+          -0.00010207598954004027,
+          7.402678294410325e-06,
+          -0.0003835524307642668
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03755745872768597,
+        "actuator_force_N_or_Nm": [
+          0.023302665617012115,
+          -4.799610424585399,
+          1.5783526222456332,
+          -2.8525186510497917,
+          0.015117821734242162,
+          -0.0061723322380538926,
+          -0.02385760284057395,
+          -0.26416575067711107,
+          0.2373949662460607
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": false,
+        "bilateral_force": false,
+        "total_cube_contact_Fz_N": 1.627585144264053,
+        "cube_contact_Fz_minus_mg_N": 0.6465851442640529,
+        "finger1_count": 1,
+        "finger1_Fn_N": 0.48358953017933515,
+        "finger1_Fz_normal_N": -0.015068329497409614,
+        "finger1_Fz_tangent_N": 0.06044775325714616,
+        "finger1_Fz_N": 0.04537942375973655,
+        "finger2_count": 0,
+        "finger2_Fn_N": 0.0,
+        "finger2_Fz_normal_N": 0.0,
+        "finger2_Fz_tangent_N": 0.0,
+        "finger2_Fz_N": 0.0,
+        "table_count": 1,
+        "table_Fn_N": 1.5822057205043165,
+        "table_Fz_normal_N": 1.5822057205043165,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 1.5822057205043165,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_bilateral_force_loss": {
+        "row": 4418,
+        "elapsed_s": 4.418999999999901,
+        "time_s": 33.54700000001252,
+        "cube_world_z_m": 0.10775008575156032,
+        "cube_world_delta_z_m": -0.04203461249869132,
+        "gripper_world_delta_z_m": -0.0008443655852765075,
+        "relative_world_z_drop_m": 0.04119024691341483,
+        "cube_world_vz_m_s": -0.06706096626154578,
+        "gripper_world_vz_m_s": 0.005739327058154454,
+        "relative_world_vz_m_s": -0.07280029331970024,
+        "cube_rotation_world": [
+          [
+            0.8372783180930375,
+            -0.019767598249867124,
+            -0.5464194909689137
+          ],
+          [
+            -0.00048655043579072695,
+            0.9993189369421368,
+            -0.03689750042362555
+          ],
+          [
+            0.5467767198043167,
+            0.031159337737985803,
+            0.8366984608278915
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.8387156308355147,
+            0.019176133989749617,
+            0.5442319050527922
+          ],
+          [
+            -0.0009449903596886542,
+            0.9993270618686156,
+            -0.036667838909038894
+          ],
+          [
+            -0.5445688180436006,
+            -0.03126818354567947,
+            -0.8381331058443814
+          ]
+        ],
+        "relative_rotation_rad": 0.5770495536062465,
+        "world_rotation_rad": 0.5796814086744844,
+        "cube_angular_velocity_world_rad_s": [
+          3.1643089007003193,
+          1.2239364586791162,
+          2.490908250635391
+        ],
+        "relative_angular_speed_rad_s": 4.213545601829944,
+        "finger_tangential_point_speed_max_m_s": 0.013704855310838317,
+        "cube_contact_rho_max": 0.42839292085551484,
+        "cube_contact_torque_world_Nm": [
+          -0.006529606290818736,
+          0.003238852785802441,
+          0.0017936642769171489
+        ],
+        "robot_penetration_m": 0.0005166024027156048,
+        "coupling_residual_m": 3.7874432830507787e-06,
+        "arm_tracking_error_rad": [
+          -1.504629184012618e-05,
+          0.0012028363841094514,
+          -0.0006594905674013329,
+          0.002368147131339704,
+          -0.00010207598954004027,
+          7.402678294410325e-06,
+          -0.0003835524307642668
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03755745872768597,
+        "actuator_force_N_or_Nm": [
+          0.023302665617012115,
+          -4.799610424585399,
+          1.5783526222456332,
+          -2.8525186510497917,
+          0.015117821734242162,
+          -0.0061723322380538926,
+          -0.02385760284057395,
+          -0.26416575067711107,
+          0.2373949662460607
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": false,
+        "bilateral_force": false,
+        "total_cube_contact_Fz_N": 1.627585144264053,
+        "cube_contact_Fz_minus_mg_N": 0.6465851442640529,
+        "finger1_count": 1,
+        "finger1_Fn_N": 0.48358953017933515,
+        "finger1_Fz_normal_N": -0.015068329497409614,
+        "finger1_Fz_tangent_N": 0.06044775325714616,
+        "finger1_Fz_N": 0.04537942375973655,
+        "finger2_count": 0,
+        "finger2_Fn_N": 0.0,
+        "finger2_Fz_normal_N": 0.0,
+        "finger2_Fz_tangent_N": 0.0,
+        "finger2_Fz_N": 0.0,
+        "table_count": 1,
+        "table_Fn_N": 1.5822057205043165,
+        "table_Fz_normal_N": 1.5822057205043165,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 1.5822057205043165,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_robot_penetration_exceedance": {
+        "row": 2163,
+        "elapsed_s": 2.1640000000026447,
+        "time_s": 31.29200000001526,
+        "cube_world_z_m": 0.130763978749129,
+        "cube_world_delta_z_m": -0.019020719501122635,
+        "gripper_world_delta_z_m": -0.0009299649781021602,
+        "relative_world_z_drop_m": 0.018090754523020475,
+        "cube_world_vz_m_s": -0.00832869629493654,
+        "gripper_world_vz_m_s": -1.3628689992669392e-05,
+        "relative_world_vz_m_s": -0.008315067604943872,
+        "cube_rotation_world": [
+          [
+            0.999526374040632,
+            -0.0008354400573029016,
+            -0.030762471244995065
+          ],
+          [
+            0.00021557969557049191,
+            0.9997969913651029,
+            -0.020147694227517915
+          ],
+          [
+            0.030773058388521478,
+            0.02013151999232434,
+            0.9993236416598065
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.9996239415113607,
+            0.00019964581447595852,
+            0.027421445965567084
+          ],
+          [
+            -0.00035527923392115806,
+            0.9997952786239366,
+            -0.02023053676877926
+          ],
+          [
+            -0.027419871151405817,
+            -0.020232671174013263,
+            -0.9994192261924952
+          ]
+        ],
+        "relative_rotation_rad": 0.03410612058284988,
+        "world_rotation_rad": 0.036807095511452996,
+        "cube_angular_velocity_world_rad_s": [
+          0.02892535915080931,
+          -0.2797821990561737,
+          0.06770087583822797
+        ],
+        "relative_angular_speed_rad_s": 0.2895603450025325,
+        "finger_tangential_point_speed_max_m_s": 0.010737811028535294,
+        "cube_contact_rho_max": 1.0000000000000002,
+        "cube_contact_torque_world_Nm": [
+          0.0047892202541828886,
+          -0.007625412460303285,
+          -0.011684108789287561
+        ],
+        "robot_penetration_m": 0.0012855459594710093,
+        "coupling_residual_m": 1.0755711454812911e-07,
+        "arm_tracking_error_rad": [
+          -7.487387551075031e-07,
+          0.0012695637981057217,
+          -0.000726403443128687,
+          0.0026612262864629255,
+          -6.238944025016568e-06,
+          3.8271934510447636e-08,
+          -2.462686444215656e-05
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03860833471055039,
+        "actuator_force_N_or_Nm": [
+          -0.0003967220517641383,
+          -4.873310589189805,
+          1.630841104260034,
+          -2.9876693408246604,
+          0.010525538522845105,
+          0.0023590344011741003,
+          0.0033650383515769805,
+          -1.1036322382489008,
+          1.1042357716130928
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 0.3941512960977107,
+        "cube_contact_Fz_minus_mg_N": -0.5868487039022894,
+        "finger1_count": 1,
+        "finger1_Fn_N": 0.9996565566019482,
+        "finger1_Fz_normal_N": -0.020124605954691514,
+        "finger1_Fz_tangent_N": 0.5927168368584895,
+        "finger1_Fz_N": 0.572592230903798,
+        "finger2_count": 1,
+        "finger2_Fn_N": 0.7238967644911573,
+        "finger2_Fz_normal_N": -0.3900110144867174,
+        "finger2_Fz_tangent_N": 0.21157007968063013,
+        "finger2_Fz_N": -0.17844093480608725,
+        "table_count": 0,
+        "table_Fn_N": 0.0,
+        "table_Fz_normal_N": 0.0,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.0,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_coupling_exceedance": {
+        "row": 4457,
+        "elapsed_s": 4.45799999999981,
+        "time_s": 33.586000000012426,
+        "cube_world_z_m": 0.10714875332752384,
+        "cube_world_delta_z_m": -0.042635944922727806,
+        "gripper_world_delta_z_m": -0.0005913005611379862,
+        "relative_world_z_drop_m": 0.042044644361589834,
+        "cube_world_vz_m_s": -0.001682170530832392,
+        "gripper_world_vz_m_s": 0.00653668502250927,
+        "relative_world_vz_m_s": -0.008218855553341661,
+        "cube_rotation_world": [
+          [
+            0.8786833980650711,
+            -0.15283488326297656,
+            -0.4522797634460508
+          ],
+          [
+            0.10054747723957909,
+            0.9853665034624465,
+            -0.1376337846422613
+          ],
+          [
+            0.4666965725024983,
+            0.07546093235700424,
+            0.8811923495481765
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.8796310388068816,
+            0.15271525596967622,
+            0.45047451222199625
+          ],
+          [
+            0.10075402211580668,
+            0.9853896462378317,
+            -0.13731668549295595
+          ],
+          [
+            -0.4648632730115562,
+            -0.07540089973866437,
+            -0.8821659944271182
+          ]
+        ],
+        "relative_rotation_rad": 0.5082812902387244,
+        "world_rotation_rad": 0.5102717366856465,
+        "cube_angular_velocity_world_rad_s": [
+          0.3249969500455324,
+          3.1346789617348234,
+          4.496162293759232
+        ],
+        "relative_angular_speed_rad_s": 5.489580999004484,
+        "finger_tangential_point_speed_max_m_s": 0.0035912215868614235,
+        "cube_contact_rho_max": 0.465312163530511,
+        "cube_contact_torque_world_Nm": [
+          8.74779618560001e-05,
+          0.0009034100494783605,
+          0.0012220925781200457
+        ],
+        "robot_penetration_m": 0.0004006619236294138,
+        "coupling_residual_m": 0.00020151655319768091,
+        "arm_tracking_error_rad": [
+          -0.00021223130508252197,
+          0.0007870578262506589,
+          -0.0006006121775188333,
+          0.0016352334892328901,
+          -0.0003835307585514647,
+          0.00019887935725615424,
+          6.545093643084421e-05
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03620599383249327,
+        "actuator_force_N_or_Nm": [
+          0.09689286414714862,
+          -4.664482326236188,
+          1.6014856945874494,
+          -2.795478999085187,
+          0.05001384490934474,
+          -0.02041484699011472,
+          -0.013244387118541442,
+          -0.25529062197965496,
+          0.07379581299336536
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": false,
+        "bilateral_force": false,
+        "total_cube_contact_Fz_N": 0.9797718517232077,
+        "cube_contact_Fz_minus_mg_N": -0.0012281482767924068,
+        "finger1_count": 1,
+        "finger1_Fn_N": 0.3096010796785804,
+        "finger1_Fz_normal_N": -0.023362786131280962,
+        "finger1_Fz_tangent_N": 0.05443746175871615,
+        "finger1_Fz_N": 0.03107467562743519,
+        "finger2_count": 0,
+        "finger2_Fn_N": 0.0,
+        "finger2_Fz_normal_N": 0.0,
+        "finger2_Fz_tangent_N": 0.0,
+        "finger2_Fz_N": 0.0,
+        "table_count": 1,
+        "table_Fn_N": 0.9486971760957725,
+        "table_Fz_normal_N": 0.9486971760957725,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.9486971760957725,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "original_control_health": {
+        "status": "FAIL",
+        "error": null,
+        "actual_mj_steps": 14100,
+        "recorded_physics_samples": 14100,
+        "simulation_time_s": 43.227999999989954,
+        "max_arm_velocity_rad_s": 0.025657192861623976,
+        "max_finger_velocity_m_s": 0.06869365224545394,
+        "max_coupling_error_m": 0.00025872047143288626,
+        "minimum_contact_distance_m": -0.001958533708104217,
+        "max_base_link_link1_normal_force_N": 0.0,
+        "base_contact_normal_generalized_force_max": 0.0,
+        "contact_pair_physics_step_counts": {
+          "cube_geom / gripper_link1_collision_000": 4546,
+          "cube_geom / gripper_link2_collision_000": 4418,
+          "cube_geom / table": 38099
+        },
+        "phases": [],
+        "external_force_shortcuts": false,
+        "qpos_writes_during_execution": 0,
+        "hardware_fidelity": "UNKNOWN"
+      },
+      "original_grasp_criteria": {
+        "minimum_lift_m": 0.08,
+        "hold_duration_s": 2.0,
+        "maximum_hold_drift_m": 0.01,
+        "minimum_bilateral_contact_fraction": 0.95,
+        "minimum_finger_normal_force_N": 0.05,
+        "maximum_robot_object_penetration_m": 0.001
+      },
+      "formal_grasp_acceptance": "UNKNOWN_NOT_EVALUATED_DIAGNOSTIC_FIXED_POSE",
+      "maximum_robot_penetration_m": 0.001958533708104217,
+      "maximum_coupling_residual_m": 0.00025872047143288626,
+      "arm_tracking_max_abs_rad": 0.0027214967520521327,
+      "actuator_saturation_fraction_9d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_limit_excess_max_9d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "warning_numbers_max": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_first_table": {
+        "interval": "before_first_table_geometry",
+        "start_row": 0,
+        "end_row": 4414,
+        "samples": 4415,
+        "duration_s": 4.415,
+        "start_time_s": 29.129000000012617,
+        "end_time_s": 33.543000000012526,
+        "start_relative_time_s": 0.0010000000000012221,
+        "end_relative_time_s": 4.41499999999991,
+        "contacts": {
+          "finger1": {
+            "normal_force_N": {
+              "min": 0.2645578298493954,
+              "mean": 1.076162346139331,
+              "max": 1.2216363327903377
+            },
+            "tangent_force_N": {
+              "min": 0.18341230203380107,
+              "mean": 0.7110318287423262,
+              "max": 1.0294544810881945
+            },
+            "world_force_N": {
+              "min": [
+                -0.6254221502235137,
+                -1.2998784455477932,
+                -0.3705491024530264
+              ],
+              "mean": [
+                0.027811240113720596,
+                -1.0852505913714148,
+                0.5477440518214248
+              ],
+              "max": [
+                0.6349874337027456,
+                -0.26935147906334167,
+                0.8327323017461435
+              ]
+            },
+            "geometric_rows": 4415,
+            "upward_support_rows": 4388
+          },
+          "finger2": {
+            "normal_force_N": {
+              "min": 0.2176206356218839,
+              "mean": 1.0830800499938824,
+              "max": 1.2400869811281403
+            },
+            "tangent_force_N": {
+              "min": 0.12682137527291543,
+              "mean": 0.6306442312246615,
+              "max": 1.021124380136538
+            },
+            "world_force_N": {
+              "min": [
+                -0.6696868985289276,
+                0.21896877359598793,
+                -0.5917310649790937
+              ],
+              "mean": [
+                -0.027227126272971008,
+                1.0852583610700723,
+                0.43123180145831647
+              ],
+              "max": [
+                0.6200219371521458,
+                1.2640920486293543,
+                0.8192534737339191
+              ]
+            },
+            "geometric_rows": 4415,
+            "upward_support_rows": 4401
+          },
+          "table": {
+            "normal_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "tangent_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "world_force_N": {
+              "min": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mean": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "geometric_rows": 0,
+            "upward_support_rows": 0
+          },
+          "other": {
+            "normal_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "tangent_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "world_force_N": {
+              "min": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mean": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "geometric_rows": 0,
+            "upward_support_rows": 0
+          }
+        },
+        "cube": {
+          "world_z_m": {
+            "min": 0.10806049846600752,
+            "mean": 0.12908102403882687,
+            "max": 0.1497833118991032
+          },
+          "world_vz_m_s": {
+            "min": -0.07992438192025372,
+            "mean": -0.009450554877518606,
+            "max": -0.0013863511484320638
+          },
+          "world_position_m": {
+            "min": [
+              -0.319999371764379,
+              -0.0005634358638155559,
+              0.10806049846600752
+            ],
+            "mean": [
+              -0.31674318311538363,
+              9.331141365625903e-05,
+              0.12908102403882676
+            ],
+            "max": [
+              -0.3090718603240901,
+              0.000312743263167477,
+              0.1497833118991032
+            ]
+          },
+          "position_in_gripper_m": {
+            "min": [
+              -0.010161805681824957,
+              -0.0006914775294082837,
+              0.12021587501890016
+            ],
+            "mean": [
+              -0.0025095357969062895,
+              -1.774492156973937e-05,
+              0.1400192043476057
+            ],
+            "max": [
+              0.0001309539433407824,
+              0.0002076401645774533,
+              0.1610992170324423
+            ]
+          },
+          "relative_delta_m": {
+            "min": [
+              -0.010161548638747403,
+              -0.000693282498962877,
+              7.458602642451684e-07
+            ],
+            "mean": [
+              -0.002509278753828738,
+              -1.9549891124332662e-05,
+              0.019804075188969903
+            ],
+            "max": [
+              0.0001312109864183365,
+              0.00020583519502285997,
+              0.040884087873806374
+            ]
+          },
+          "relative_z_drop_m": {
+            "min": 7.458596268383744e-07,
+            "mean": 0.01979586568308532,
+            "max": 0.04085846207281146
+          },
+          "relative_slip_norm_m": {
+            "min": 7.924304196400389e-07,
+            "mean": 0.02008893207338263,
+            "max": 0.041948377787318046
+          },
+          "relative_rotation_angle_rad": {
+            "min": 4.767952468458303e-06,
+            "mean": 0.1793994976314225,
+            "max": 0.6286521213299814
+          }
+        },
+        "bilateral_force_fraction": 1.0,
+        "maximum_robot_penetration_m": 0.001958533708104217,
+        "coupling_residual_abs_max_m": 3.993822517714407e-05,
+        "actuator_saturation_fraction_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_limit_excess_max_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force_N_or_Nm": {
+          "min": [
+            -0.023295229942561047,
+            -4.90769093717122,
+            1.524906691989915,
+            -3.0199596002453872,
+            -0.013031139851755788,
+            -0.012392581498136448,
+            -0.023553732444827502,
+            -1.2197340732886075,
+            0.43431695583957186
+          ],
+          "mean": [
+            2.0048357445053037e-05,
+            -4.871506478144397,
+            1.6299164086536422,
+            -2.985674888256032,
+            0.010941502973319644,
+            0.0013684111676847935,
+            0.00497248769741617,
+            -1.0858449970828068,
+            1.0857675678519096
+          ],
+          "max": [
+            0.027420152565330133,
+            -4.669611840082989,
+            1.655444230101283,
+            -2.7939439529214494,
+            0.05801723483929125,
+            0.014928593805213702,
+            0.037771066179042315,
+            -0.4298836809251271,
+            1.2465468348494337
+          ]
+        }
+      },
+      "before_first_table_finger_rho": {
+        "min": 0.11315509667875014,
+        "mean": 0.6254480301450236,
+        "max": 1.0000000000000002
+      },
+      "before_first_table_finger_tangential_point_speed_m_s": {
+        "min": 0.00029867404536794407,
+        "mean": 0.009444369555802556,
+        "max": 0.15390936633978214
+      },
+      "kinematics_vs_saved_pose_max_error": 0.0,
+      "saved_contact_force_projection_max_error_N": 4.440892098500626e-16,
+      "external_force_abs_max": {
+        "qfrc_applied": 0.0,
+        "xfrc_applied": 0.0
+      },
+      "observational_sustained_holding": {
+        "status": "FAIL",
+        "table_geometry_observed": true,
+        "all_samples_bilateral_force": false,
+        "final_table_geometry": true,
+        "final_table_upward_force_N": 0.9810000000000001,
+        "note": "Observation only; fixed-pose diagnostic does not evaluate original scripted lift/hold acceptance."
+      }
+    },
+    "B": {
+      "source_dir": "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001",
+      "samples": 14100,
+      "impratio": 10,
+      "key_samples": {
+        "0.068": {
+          "row": 67,
+          "elapsed_s": 0.0680000000000831,
+          "time_s": 29.1960000000127,
+          "cube_world_z_m": 0.14921401676493526,
+          "cube_world_delta_z_m": -0.0005706814853163877,
+          "gripper_world_delta_z_m": -0.0004953668454930615,
+          "relative_world_z_drop_m": 7.53146398233262e-05,
+          "cube_world_vz_m_s": -0.008783696340657688,
+          "gripper_world_vz_m_s": -0.00762890789100315,
+          "relative_world_vz_m_s": -0.0011547884496545388,
+          "cube_rotation_world": [
+            [
+              0.9999975386106766,
+              -0.00028308903733856257,
+              -0.0022005983693159236
+            ],
+            [
+              0.00026807032807375086,
+              0.9999766930593804,
+              -0.006822131362179751
+            ],
+            [
+              0.0022024783507003215,
+              0.00682152465513164,
+              0.9999743076151967
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999998952590393,
+              -4.024422540843516e-05,
+              0.0004559191938971276
+            ],
+            [
+              -4.335480723478825e-05,
+              0.9999767104815509,
+              -0.006824706210243664
+            ],
+            [
+              -0.00045563392074357887,
+              -0.006824725261706151,
+              -0.9999766074878108
+            ]
+          ],
+          "relative_rotation_rad": 0.006851139783817697,
+          "world_rotation_rad": 0.007190118043437397,
+          "cube_angular_velocity_world_rad_s": [
+            0.15996451494798242,
+            0.11328486541832565,
+            -0.04958280421603189
+          ],
+          "relative_angular_speed_rad_s": 0.22088805525301433,
+          "finger_tangential_point_speed_max_m_s": 0.00607084708066031,
+          "cube_contact_rho_max": 0.888622732861089,
+          "cube_contact_torque_world_Nm": [
+            -0.00014620670172893133,
+            -0.0010967511274171142,
+            0.0004166567650818048
+          ],
+          "robot_penetration_m": 0.0007147152364093974,
+          "coupling_residual_m": 7.212930310043775e-07,
+          "arm_tracking_error_rad": [
+            3.056617894270364e-05,
+            0.0006388825045409163,
+            -0.00042765981076597903,
+            0.0014304090693160187,
+            -1.233898020880364e-05,
+            -4.977404466477431e-06,
+            -5.124389197086465e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03864444090378046,
+          "actuator_force_N_or_Nm": [
+            0.001823129979489778,
+            -4.9008489639562836,
+            1.6421596404594239,
+            -3.0177966268145195,
+            0.010212330944651345,
+            0.001553994771265206,
+            0.002226659159840808,
+            -1.122054471093175,
+            1.1213452812670803
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9912767315382175,
+          "cube_contact_Fz_minus_mg_N": 0.010276731538217398,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.1148696549514596,
+          "finger1_Fz_normal_N": -0.00760511083850975,
+          "finger1_Fz_tangent_N": 0.7787402060375391,
+          "finger1_Fz_N": 0.7711350951990293,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.1246346729647148,
+          "finger2_Fz_normal_N": 0.007671723149649208,
+          "finger2_Fz_tangent_N": 0.21246991318953895,
+          "finger2_Fz_N": 0.22014163633918815,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "0.141": {
+          "row": 140,
+          "elapsed_s": 0.14100000000017232,
+          "time_s": 29.269000000012788,
+          "cube_world_z_m": 0.148776154645256,
+          "cube_world_delta_z_m": -0.0010085436049956376,
+          "gripper_world_delta_z_m": -0.0008416643274385405,
+          "relative_world_z_drop_m": 0.00016687927755709708,
+          "cube_world_vz_m_s": -0.003486334776602325,
+          "gripper_world_vz_m_s": -0.002344660562002414,
+          "relative_world_vz_m_s": -0.0011416742145999113,
+          "cube_rotation_world": [
+            [
+              0.9999969223377579,
+              -0.00045910188143291023,
+              -0.002438142832708284
+            ],
+            [
+              0.0004163847897834256,
+              0.9998469158630071,
+              -0.017492039987889396
+            ],
+            [
+              0.0024458002201854156,
+              0.017490970947707546,
+              0.9998440298349477
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999997984324134,
+              -4.6719451081277864e-05,
+              -0.0006332080395627026
+            ],
+            [
+              -3.5581465691635384e-05,
+              0.9998454876446369,
+              -0.017578383617763014
+            ],
+            [
+              0.0006339314535305942,
+              -0.017578357544060556,
+              -0.9998452877705437
+            ]
+          ],
+          "relative_rotation_rad": 0.01759959359851029,
+          "world_rotation_rad": 0.017681297032684062,
+          "cube_angular_velocity_world_rad_s": [
+            0.15876073773979577,
+            -0.02826323787372002,
+            0.010542516406566704
+          ],
+          "relative_angular_speed_rad_s": 0.16078030314776073,
+          "finger_tangential_point_speed_max_m_s": 0.00400320889225243,
+          "cube_contact_rho_max": 0.889148803461971,
+          "cube_contact_torque_world_Nm": [
+            3.197253557940018e-05,
+            -0.0009300738860067788,
+            0.00035107847131272095
+          ],
+          "robot_penetration_m": 0.0007312662092505422,
+          "coupling_residual_m": 1.742566891855396e-06,
+          "arm_tracking_error_rad": [
+            -1.533855474045165e-05,
+            0.0011516534989102212,
+            -0.0006951650070179394,
+            0.0023852700674198424,
+            -2.5335978408591586e-06,
+            3.281146899514198e-06,
+            2.43626545366471e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03872701546940249,
+          "actuator_force_N_or_Nm": [
+            0.006401863526528984,
+            -4.895921499226016,
+            1.642317916558346,
+            -3.0043375941840247,
+            0.009390817057480917,
+            0.0006175931606171381,
+            -0.0006024540030949836,
+            -1.1564643217460715,
+            1.1548447301783058
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9847870876899002,
+          "cube_contact_Fz_minus_mg_N": 0.003787087689900104,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.1433907639557532,
+          "finger1_Fz_normal_N": -0.019999014634229817,
+          "finger1_Fz_tangent_N": 0.8006048723279284,
+          "finger1_Fz_N": 0.7806058576936986,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.1576967856534406,
+          "finger2_Fz_normal_N": 0.02024924084412246,
+          "finger2_Fz_tangent_N": 0.1839319891520791,
+          "finger2_Fz_N": 0.20418122999620156,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "0.751": {
+          "row": 750,
+          "elapsed_s": 0.7510000000009178,
+          "time_s": 29.879000000013534,
+          "cube_world_z_m": 0.1473356729078291,
+          "cube_world_delta_z_m": -0.002449025342422556,
+          "gripper_world_delta_z_m": -0.0009334931479892394,
+          "relative_world_z_drop_m": 0.0015155321944333167,
+          "cube_world_vz_m_s": -0.001297253047293297,
+          "gripper_world_vz_m_s": 8.391086654786721e-06,
+          "relative_world_vz_m_s": -0.0013056441339480839,
+          "cube_rotation_world": [
+            [
+              0.9999865466223566,
+              -0.0006982940899942092,
+              -0.005139937709426966
+            ],
+            [
+              0.0005523802898568351,
+              0.9995983272876298,
+              -0.02833511884195442
+            ],
+            [
+              0.0051576593827324275,
+              0.028331898438618292,
+              0.9995852650377332
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999984243152574,
+              1.857311241303855e-05,
+              0.0017751118386694028
+            ],
+            [
+              -3.1892962868508706e-05,
+              0.9995959120691169,
+              -0.028425544102928253
+            ],
+            [
+              -0.0017749224882254561,
+              -0.028425555926808094,
+              -0.999594336428739
+            ]
+          ],
+          "relative_rotation_rad": 0.028495709578675026,
+          "world_rotation_rad": 0.028822816682795033,
+          "cube_angular_velocity_world_rad_s": [
+            -0.08479476380535057,
+            -0.18288425416927248,
+            0.0006625217701420133
+          ],
+          "relative_angular_speed_rad_s": 0.200822139349512,
+          "finger_tangential_point_speed_max_m_s": 0.0015803311098638413,
+          "cube_contact_rho_max": 0.8007883487633412,
+          "cube_contact_torque_world_Nm": [
+            -0.0005309233567835098,
+            -0.0012693051841937424,
+            0.0003343267907509103
+          ],
+          "robot_penetration_m": 0.0007294178120390109,
+          "coupling_residual_m": 1.4695734020173101e-06,
+          "arm_tracking_error_rad": [
+            5.835868681747236e-06,
+            0.0012683752911172297,
+            -0.000724014989278654,
+            0.0026798608089151355,
+            -7.9909888935914e-06,
+            2.2322030307497798e-06,
+            -1.0071944304579361e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.0388627594392249,
+          "actuator_force_N_or_Nm": [
+            0.0007014239700614788,
+            -4.872767308908713,
+            1.631957054055417,
+            -2.988182981445983,
+            0.009626120183009021,
+            0.0007974772453226413,
+            0.0006136264638103334,
+            -1.2052356353943257,
+            1.2025296320801477
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9741381576895567,
+          "cube_contact_Fz_minus_mg_N": -0.0068618423104434,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.1778859596119906,
+          "finger1_Fz_normal_N": -0.033371745380014466,
+          "finger1_Fz_tangent_N": 0.7980413436181368,
+          "finger1_Fz_N": 0.7646695982381224,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.2134559259782913,
+          "finger2_Fz_normal_N": 0.0343883166075669,
+          "finger2_Fz_tangent_N": 0.17508024284386733,
+          "finger2_Fz_N": 0.20946855945143422,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "1.328": {
+          "row": 1327,
+          "elapsed_s": 1.328000000001623,
+          "time_s": 30.45600000001424,
+          "cube_world_z_m": 0.14591818654665273,
+          "cube_world_delta_z_m": -0.0038665117035989183,
+          "gripper_world_delta_z_m": -0.0009322065768959664,
+          "relative_world_z_drop_m": 0.002934305126702952,
+          "cube_world_vz_m_s": -0.0011987581910464181,
+          "gripper_world_vz_m_s": -2.5237575958771643e-06,
+          "relative_world_vz_m_s": -0.0011962344334505409,
+          "cube_rotation_world": [
+            [
+              0.999999801263363,
+              -0.000630314305423706,
+              1.3308399388565294e-05
+            ],
+            [
+              0.000630439170694972,
+              0.9996036443366069,
+              -0.02814527980725821
+            ],
+            [
+              4.437247963570873e-06,
+              0.028145282603896194,
+              0.9996038430535671
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.9999943474274716,
+              -3.205631570970634e-05,
+              -0.0033621548891657233
+            ],
+            [
+              6.289329202480383e-05,
+              0.9996012602990091,
+              -0.028236792542128245
+            ],
+            [
+              0.0033617194320668905,
+              -0.028236844388599698,
+              -0.9995956079642583
+            ]
+          ],
+          "relative_rotation_rad": 0.02844713004802725,
+          "world_rotation_rad": 0.028167379253478307,
+          "cube_angular_velocity_world_rad_s": [
+            0.034039777617595156,
+            0.11073989714417436,
+            -0.007320211355036082
+          ],
+          "relative_angular_speed_rad_s": 0.11618377874476757,
+          "finger_tangential_point_speed_max_m_s": 0.003258230987844874,
+          "cube_contact_rho_max": 0.8938797195429108,
+          "cube_contact_torque_world_Nm": [
+            0.00025215843572023956,
+            -0.0010804489541109733,
+            0.00034227477293342044
+          ],
+          "robot_penetration_m": 0.0007301684628687883,
+          "coupling_residual_m": 1.010516807023465e-06,
+          "arm_tracking_error_rad": [
+            -1.0414309175033054e-06,
+            0.0012714607902439834,
+            -0.0007293378345760715,
+            0.002668112656403432,
+            -1.3643891593917434e-05,
+            3.962181887362526e-06,
+            -1.8125774846167175e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.03885890383383539,
+          "actuator_force_N_or_Nm": [
+            0.00023884805256747303,
+            -4.8727203200244995,
+            1.631863764686959,
+            -2.9881490161101567,
+            0.010650941084692058,
+            0.000723796226716544,
+            0.0020279921460429244,
+            -1.202817242381381,
+            1.2019101359702657
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9816179847874583,
+          "cube_contact_Fz_minus_mg_N": 0.0006179847874582256,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.1833504831206658,
+          "finger1_Fz_normal_N": -0.03330573376689069,
+          "finger1_Fz_tangent_N": 0.8299200305441058,
+          "finger1_Fz_N": 0.7966142967772151,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.2026155959273115,
+          "finger2_Fz_normal_N": 0.033847955811223636,
+          "finger2_Fz_tangent_N": 0.1511557321990196,
+          "finger2_Fz_N": 0.18500368801024322,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "2.164": {
+          "row": 2163,
+          "elapsed_s": 2.1640000000026447,
+          "time_s": 31.29200000001526,
+          "cube_world_z_m": 0.14384359310578904,
+          "cube_world_delta_z_m": -0.005941105144462611,
+          "gripper_world_delta_z_m": -0.0009315198582297568,
+          "relative_world_z_drop_m": 0.005009585286232854,
+          "cube_world_vz_m_s": -0.0021213418598795843,
+          "gripper_world_vz_m_s": -0.00010116537208242022,
+          "relative_world_vz_m_s": -0.002020176487797164,
+          "cube_rotation_world": [
+            [
+              0.9999875681637415,
+              -0.0007561041584122405,
+              -0.0049286737026463506
+            ],
+            [
+              0.0005977820007458931,
+              0.9994862367541893,
+              -0.0320453615306079
+            ],
+            [
+              0.004950371162358455,
+              0.03204201687549353,
+              0.9994742632904084
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.999998757778339,
+              8.167581692653143e-05,
+              0.0015740936563157914
+            ],
+            [
+              3.104475268968099e-05,
+              0.9994834264983616,
+              -0.032138437910340455
+            ],
+            [
+              -0.001575905454414912,
+              -0.03213834911992848,
+              -0.9994821874540055
+            ]
+          ],
+          "relative_rotation_rad": 0.03219323364984191,
+          "world_rotation_rad": 0.032448986956022025,
+          "cube_angular_velocity_world_rad_s": [
+            0.03282028113947177,
+            -0.1465495683746125,
+            0.050948311534448856
+          ],
+          "relative_angular_speed_rad_s": 0.15733547887133797,
+          "finger_tangential_point_speed_max_m_s": 0.004480363872088921,
+          "cube_contact_rho_max": 0.9072938441364566,
+          "cube_contact_torque_world_Nm": [
+            0.00015184185527677453,
+            0.0010004092899438249,
+            -0.0004102061309660711
+          ],
+          "robot_penetration_m": 0.0008075063004770498,
+          "coupling_residual_m": 7.542266965455957e-07,
+          "arm_tracking_error_rad": [
+            -2.1341482985270943e-06,
+            0.0012684158630406062,
+            -0.0007284387711870011,
+            0.0026683553565012286,
+            -6.656170511265547e-06,
+            2.2257897690503015e-06,
+            -1.067977017332744e-05
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.038895168227304364,
+          "actuator_force_N_or_Nm": [
+            -0.0020426992875470697,
+            -4.876306846635181,
+            1.6287055390809217,
+            -2.989890800538978,
+            0.0068724428655556925,
+            0.0025128824371573938,
+            0.0010482745769730406,
+            -1.2130971801252572,
+            1.2193320101579446
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9917440716260363,
+          "cube_contact_Fz_minus_mg_N": 0.010744071626036189,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.1816098515771263,
+          "finger1_Fz_normal_N": -0.03786116280448948,
+          "finger1_Fz_tangent_N": 0.836787336448992,
+          "finger1_Fz_N": 0.7989261736445025,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.2285385159887787,
+          "finger2_Fz_normal_N": 0.03936485186151264,
+          "finger2_Fz_tangent_N": 0.15345304612002114,
+          "finger2_Fz_N": 0.1928178979815338,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0,
+          "no_table_geometry_through_sample": true
+        },
+        "final": {
+          "row": 14099,
+          "elapsed_s": 14.099999999977339,
+          "time_s": 43.227999999989954,
+          "cube_world_z_m": 0.11339266120164725,
+          "cube_world_delta_z_m": -0.0363920370486044,
+          "gripper_world_delta_z_m": -0.0009008023486282157,
+          "relative_world_z_drop_m": 0.03549123469997617,
+          "cube_world_vz_m_s": -0.0008207588218443418,
+          "gripper_world_vz_m_s": 3.6160146364888853e-06,
+          "relative_world_vz_m_s": -0.0008243748364808307,
+          "cube_rotation_world": [
+            [
+              0.8471950637518513,
+              -0.07087441084301614,
+              -0.5265333245314634
+            ],
+            [
+              0.0006402205978900538,
+              0.991197397287265,
+              -0.13239074638561787
+            ],
+            [
+              0.5312815770117443,
+              0.11182368934447795,
+              0.839782917443137
+            ]
+          ],
+          "cube_rotation_in_gripper": [
+            [
+              -0.8487495669602182,
+              0.06996450187786758,
+              0.524146106597985
+            ],
+            [
+              0.00010211292691473351,
+              0.9912301451007443,
+              -0.1321468464115199
+            ],
+            [
+              -0.5287950095810232,
+              -0.11210605657386018,
+              -0.8413133006922368
+            ]
+          ],
+          "relative_rotation_rad": 0.5723435577638989,
+          "world_rotation_rad": 0.5752129359709891,
+          "cube_angular_velocity_world_rad_s": [
+            -0.01028885578415723,
+            0.010663313641831382,
+            -0.006822190301958693
+          ],
+          "relative_angular_speed_rad_s": 0.016430787289175457,
+          "finger_tangential_point_speed_max_m_s": 0.001049988984286076,
+          "cube_contact_rho_max": 0.5753044382533533,
+          "cube_contact_torque_world_Nm": [
+            -2.2525249494600996e-06,
+            -4.027181070878497e-05,
+            -7.54139650213214e-08
+          ],
+          "robot_penetration_m": 0.0007608407210206024,
+          "coupling_residual_m": 5.736133628850282e-08,
+          "arm_tracking_error_rad": [
+            5.372185651886241e-08,
+            0.001243690209772108,
+            -0.0007016897970069103,
+            0.002565303784095585,
+            -5.8454957863107726e-05,
+            -2.166571425066266e-05,
+            -0.0003161481347682127
+          ],
+          "physical_target_9d": [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419,
+            0.017924411184878315,
+            -0.017924411184878315
+          ],
+          "actual_slide_width_m": 0.039198121673378244,
+          "actuator_force_N_or_Nm": [
+            -0.00012137316324672124,
+            -4.869125829595252,
+            1.6271778842985527,
+            -2.979817878475584,
+            0.011790248031976144,
+            0.002243428217257104,
+            0.010815333480097078,
+            -1.339299884616906,
+            1.3392029770959923
+          ],
+          "actuator_force_available": true,
+          "actuator_saturated_9d": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "actuator_limit_excess_9d": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_warning_numbers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bilateral_geometry": true,
+          "bilateral_force": true,
+          "total_cube_contact_Fz_N": 0.9805855944602144,
+          "cube_contact_Fz_minus_mg_N": -0.0004144055397856672,
+          "finger1_count": 1,
+          "finger1_Fn_N": 1.2610348389080537,
+          "finger1_Fz_normal_N": -0.14101356807861054,
+          "finger1_Fz_tangent_N": 0.7073407312732951,
+          "finger1_Fz_N": 0.5663271631946846,
+          "finger2_count": 1,
+          "finger2_Fn_N": 1.3391019086324405,
+          "finger2_Fz_normal_N": -0.0002552210768823177,
+          "finger2_Fz_tangent_N": 0.4145136523424121,
+          "finger2_Fz_N": 0.4142584312655298,
+          "table_count": 0,
+          "table_Fn_N": 0.0,
+          "table_Fz_normal_N": 0.0,
+          "table_Fz_tangent_N": 0.0,
+          "table_Fz_N": 0.0,
+          "other_count": 0,
+          "other_Fn_N": 0.0,
+          "other_Fz_normal_N": 0.0,
+          "other_Fz_tangent_N": 0.0,
+          "other_Fz_N": 0.0
+        }
+      },
+      "snapshot": {
+        "row": -1,
+        "elapsed_s": 0.0,
+        "time_s": 29.128000000012616,
+        "cube_world_z_m": 0.14978469825025165,
+        "cube_world_delta_z_m": 0.0,
+        "gripper_world_delta_z_m": 0.0,
+        "relative_world_z_drop_m": 0.0,
+        "cube_world_vz_m_s": 2.04285254282597e-06,
+        "gripper_world_vz_m_s": -1.0752902589523204e-05,
+        "relative_world_vz_m_s": 1.2795755132349173e-05,
+        "cube_rotation_world": [
+          [
+            0.9999999998116986,
+            -4.563577678467165e-06,
+            1.8862010210110182e-05
+          ],
+          [
+            4.5633622648266336e-06,
+            0.9999999999243729,
+            1.1420530064933136e-05
+          ],
+          [
+            -1.8862062327159797e-05,
+            -1.142044398859701e-05,
+            0.9999999997568974
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.9999999997692783,
+            -2.258042466782706e-06,
+            -2.1362200114790813e-05
+          ],
+          [
+            -2.2582479954812727e-06,
+            0.9999999999511665,
+            9.62111986129559e-06
+          ],
+          [
+            2.136217838885041e-05,
+            9.621168100221383e-06,
+            -0.9999999997255445
+          ]
+        ],
+        "relative_rotation_rad": 5.960464477539064e-08,
+        "world_rotation_rad": 5.960464477539064e-08,
+        "cube_angular_velocity_world_rad_s": [
+          1.246877223584715e-05,
+          -6.940929310755605e-05,
+          -0.013845993257509745
+        ],
+        "relative_angular_speed_rad_s": 0.019746305773773436,
+        "finger_tangential_point_speed_max_m_s": 0.0004754382953904703,
+        "cube_contact_rho_max": 0.7138226895047978,
+        "cube_contact_torque_world_Nm": [
+          -2.7453112924904002e-05,
+          0.00010568195834588685,
+          -0.0005469572751306863
+        ],
+        "robot_penetration_m": 0.0007375085307752765,
+        "coupling_residual_m": 7.60114319084404e-07,
+        "arm_tracking_error_rad": [
+          9.451285049033586e-07,
+          3.3949303424041233e-07,
+          8.91327474272785e-07,
+          9.510198253348534e-07,
+          -6.569057730554384e-07,
+          -4.863843359792508e-06,
+          2.0720382873928855e-06
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03852920952384466,
+        "actuator_force_N_or_Nm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force_available": false,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 0.8948391710362513,
+        "cube_contact_Fz_minus_mg_N": -0.08616082896374877,
+        "finger1_count": 1,
+        "finger1_Fn_N": 1.0777594155114263,
+        "finger1_Fz_normal_N": 9.48331895818588e-06,
+        "finger1_Fz_tangent_N": 0.44676360352878136,
+        "finger1_Fz_N": 0.44677308684773953,
+        "finger2_count": 1,
+        "finger2_Fn_N": 1.0771519095802728,
+        "finger2_Fz_normal_N": -1.0954888475952075e-05,
+        "finger2_Fz_tangent_N": 0.44807703907698776,
+        "finger2_Fz_N": 0.4480660841885118,
+        "table_count": 0,
+        "table_Fn_N": 0.0,
+        "table_Fz_normal_N": 0.0,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.0,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_drop_at_least_1mm": {
+        "row": 493,
+        "elapsed_s": 0.49400000000060373,
+        "time_s": 29.62200000001322,
+        "cube_world_z_m": 0.14785194635119878,
+        "cube_world_delta_z_m": -0.0019327518990528703,
+        "gripper_world_delta_z_m": -0.0009326094219699321,
+        "relative_world_z_drop_m": 0.0010001424770829381,
+        "cube_world_vz_m_s": -0.0014973164125002215,
+        "gripper_world_vz_m_s": -0.00010318700643789012,
+        "relative_world_vz_m_s": -0.0013941294060623314,
+        "cube_rotation_world": [
+          [
+            0.9999979986732583,
+            -0.000733102563664433,
+            -0.0018615074833531167
+          ],
+          [
+            0.0006789044183025719,
+            0.9995806084922321,
+            -0.02895075500036636
+          ],
+          [
+            0.0018819506556337403,
+            0.028949433274791013,
+            0.9995791057113987
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.9999988727976097,
+            5.097645630150181e-05,
+            -0.0015006015167335041
+          ],
+          [
+            9.454502770070882e-05,
+            0.9995780035847334,
+            -0.02904833576640282
+          ],
+          [
+            0.00149848748705387,
+            -0.02904844489746126,
+            -0.9995768816775884
+          ]
+        ],
+        "relative_rotation_rad": 0.029099784651253572,
+        "world_rotation_rad": 0.029035706865569423,
+        "cube_angular_velocity_world_rad_s": [
+          -0.07244718797463598,
+          -0.12426580961030732,
+          0.0031687462382370066
+        ],
+        "relative_angular_speed_rad_s": 0.14271231959173478,
+        "finger_tangential_point_speed_max_m_s": 0.0017936560371085285,
+        "cube_contact_rho_max": 0.7999622345756989,
+        "cube_contact_torque_world_Nm": [
+          -0.000497360807581706,
+          -0.001281377407115017,
+          0.0002916097801641442
+        ],
+        "robot_penetration_m": 0.0007496290443002702,
+        "coupling_residual_m": 2.3217022636461138e-06,
+        "arm_tracking_error_rad": [
+          6.924166298660772e-06,
+          0.0012693187443912901,
+          -0.0007228630495237365,
+          0.002675534447587946,
+          -4.9522376981414595e-06,
+          7.006721968738638e-07,
+          -1.0132987327660103e-05
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03886100158511202,
+        "actuator_force_N_or_Nm": [
+          0.00019818958963218627,
+          -4.872339389077379,
+          1.6317527625703812,
+          -2.991165211731225,
+          0.009723484779181673,
+          0.0007356338897895642,
+          0.00014238662804177613,
+          -1.2044781952739643,
+          1.2039088823136141
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 0.976567207683171,
+        "cube_contact_Fz_minus_mg_N": -0.004432792316829137,
+        "finger1_count": 1,
+        "finger1_Fn_N": 1.179499724729944,
+        "finger1_Fz_normal_N": -0.034145848578703265,
+        "finger1_Fz_tangent_N": 0.8023774843448281,
+        "finger1_Fz_N": 0.7682316357661249,
+        "finger2_count": 1,
+        "finger2_Fn_N": 1.2121537414163464,
+        "finger2_Fz_normal_N": 0.03511520006285934,
+        "finger2_Fz_tangent_N": 0.17322037185418673,
+        "finger2_Fz_N": 0.20833557191704608,
+        "table_count": 0,
+        "table_Fn_N": 0.0,
+        "table_Fz_normal_N": 0.0,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.0,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_table_geometry": null,
+      "first_table_upward_support": null,
+      "first_bilateral_geometry_loss": null,
+      "first_bilateral_force_loss": null,
+      "first_robot_penetration_exceedance": {
+        "row": 3928,
+        "elapsed_s": 3.929000000001043,
+        "time_s": 33.05700000001366,
+        "cube_world_z_m": 0.13718308574092922,
+        "cube_world_delta_z_m": -0.01260161250932243,
+        "gripper_world_delta_z_m": -0.0009307884605308514,
+        "relative_world_z_drop_m": 0.011670824048791578,
+        "cube_world_vz_m_s": -0.00520928714976368,
+        "gripper_world_vz_m_s": -8.895004262591446e-05,
+        "relative_world_vz_m_s": -0.005120337107137766,
+        "cube_rotation_world": [
+          [
+            0.9999650441943638,
+            -0.0007474260309128253,
+            -0.008327769430638348
+          ],
+          [
+            0.00047528501444900405,
+            0.9994672912860308,
+            -0.03263292437887083
+          ],
+          [
+            0.008347723852440309,
+            0.03262782560469478,
+            0.99943270934205
+          ]
+        ],
+        "cube_rotation_in_gripper": [
+          [
+            -0.9999876433681187,
+            6.801130237895694e-05,
+            0.004970763073911656
+          ],
+          [
+            -9.474539979918916e-05,
+            0.9994640541946735,
+            -0.03273523172446132
+          ],
+          [
+            -0.004970325380036183,
+            -0.03273529818418813,
+            -0.9994516977415201
+          ]
+        ],
+        "relative_rotation_rad": 0.03312925949275847,
+        "world_rotation_rad": 0.033706342242734555,
+        "cube_angular_velocity_world_rad_s": [
+          -0.015820767305408167,
+          -0.12993092670469508,
+          0.11425923622019822
+        ],
+        "relative_angular_speed_rad_s": 0.1726065259821789,
+        "finger_tangential_point_speed_max_m_s": 0.006242492031864148,
+        "cube_contact_rho_max": 1.0000000000000002,
+        "cube_contact_torque_world_Nm": [
+          -0.0006358239030779551,
+          -0.0026430252078605077,
+          -0.008498356109231487
+        ],
+        "robot_penetration_m": 0.0010760356369593988,
+        "coupling_residual_m": 5.129711243438695e-06,
+        "arm_tracking_error_rad": [
+          -5.709821246924207e-07,
+          0.0012690831787466328,
+          -0.0007255539584292148,
+          0.0026659375798203655,
+          2.6163367199405485e-06,
+          -1.541255009507303e-06,
+          -8.928008549791144e-06
+        ],
+        "physical_target_9d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.017924411184878315,
+          -0.017924411184878315
+        ],
+        "actual_slide_width_m": 0.03888256646127177,
+        "actuator_force_N_or_Nm": [
+          -0.004764147016474983,
+          -4.876817710590539,
+          1.6268127370774415,
+          -2.98964481493341,
+          0.010598645506057165,
+          -0.0010637157260091979,
+          -9.469467802440245e-06,
+          -1.2092212530342599,
+          1.2149940123625946
+        ],
+        "actuator_force_available": true,
+        "actuator_saturated_9d": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "actuator_limit_excess_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_warning_numbers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bilateral_geometry": true,
+        "bilateral_force": true,
+        "total_cube_contact_Fz_N": 0.8038730001051961,
+        "cube_contact_Fz_minus_mg_N": -0.17712699989480396,
+        "finger1_count": 1,
+        "finger1_Fn_N": 1.156738930683559,
+        "finger1_Fz_normal_N": -0.0377683348199528,
+        "finger1_Fz_tangent_N": 0.9776897994017856,
+        "finger1_Fz_N": 0.9399214645818328,
+        "finger2_count": 1,
+        "finger2_Fn_N": 0.8765783890041315,
+        "finger2_Fz_normal_N": -0.20928036366416936,
+        "finger2_Fz_tangent_N": 0.07323189918753276,
+        "finger2_Fz_N": -0.1360484644766366,
+        "table_count": 0,
+        "table_Fn_N": 0.0,
+        "table_Fz_normal_N": 0.0,
+        "table_Fz_tangent_N": 0.0,
+        "table_Fz_N": 0.0,
+        "other_count": 0,
+        "other_Fn_N": 0.0,
+        "other_Fz_normal_N": 0.0,
+        "other_Fz_tangent_N": 0.0,
+        "other_Fz_N": 0.0
+      },
+      "first_coupling_exceedance": null,
+      "original_control_health": {
+        "status": "PASS",
+        "error": null,
+        "actual_mj_steps": 14100,
+        "recorded_physics_samples": 14100,
+        "simulation_time_s": 43.227999999989954,
+        "max_arm_velocity_rad_s": 0.025614567718035764,
+        "max_finger_velocity_m_s": 0.007572251169909267,
+        "max_coupling_error_m": 4.592824020228925e-05,
+        "minimum_contact_distance_m": -0.0017598913544846868,
+        "max_base_link_link1_normal_force_N": 0.0,
+        "base_contact_normal_generalized_force_max": 0.0,
+        "contact_pair_physics_step_counts": {
+          "cube_geom / gripper_link1_collision_000": 14100,
+          "cube_geom / gripper_link2_collision_000": 14100
+        },
+        "phases": [],
+        "external_force_shortcuts": false,
+        "qpos_writes_during_execution": 0,
+        "hardware_fidelity": "UNKNOWN"
+      },
+      "original_grasp_criteria": {
+        "minimum_lift_m": 0.08,
+        "hold_duration_s": 2.0,
+        "maximum_hold_drift_m": 0.01,
+        "minimum_bilateral_contact_fraction": 0.95,
+        "minimum_finger_normal_force_N": 0.05,
+        "maximum_robot_object_penetration_m": 0.001
+      },
+      "formal_grasp_acceptance": "UNKNOWN_NOT_EVALUATED_DIAGNOSTIC_FIXED_POSE",
+      "maximum_robot_penetration_m": 0.0017598913544846868,
+      "maximum_coupling_residual_m": 4.592824020228925e-05,
+      "arm_tracking_max_abs_rad": 0.0027395407232562174,
+      "actuator_saturation_fraction_9d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_limit_excess_max_9d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "warning_numbers_max": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_first_table": {
+        "interval": "before_first_table_geometry",
+        "start_row": 0,
+        "end_row": 14099,
+        "samples": 14100,
+        "duration_s": 14.1,
+        "start_time_s": 29.129000000012617,
+        "end_time_s": 43.227999999989954,
+        "start_relative_time_s": 0.0010000000000012221,
+        "end_relative_time_s": 14.099999999977339,
+        "contacts": {
+          "finger1": {
+            "normal_force_N": {
+              "min": 1.0285172796505349,
+              "mean": 1.3035388503456848,
+              "max": 1.5998814726384474
+            },
+            "tangent_force_N": {
+              "min": 0.7095532566973762,
+              "mean": 0.99593850442107,
+              "max": 1.3142256266322672
+            },
+            "world_force_N": {
+              "min": [
+                -0.8796175742794898,
+                -1.7426635872256928,
+                0.4539710364762832
+              ],
+              "mean": [
+                -0.13369722341043871,
+                -1.3736993954666359,
+                0.7512155704570921
+              ],
+              "max": [
+                0.6967626718630282,
+                -1.0769773931704631,
+                1.2125308652402151
+              ]
+            },
+            "geometric_rows": 14100,
+            "upward_support_rows": 14100
+          },
+          "finger2": {
+            "normal_force_N": {
+              "min": 0.8451737154693291,
+              "mean": 1.3696610235134354,
+              "max": 1.6735133876997461
+            },
+            "tangent_force_N": {
+              "min": 0.04823010430804918,
+              "mean": 0.5356355356621954,
+              "max": 1.2863088053692227
+            },
+            "world_force_N": {
+              "min": [
+                -0.7068987783130222,
+                1.0273688104268268,
+                -0.6252471284395394
+              ],
+              "mean": [
+                0.13369664053486258,
+                1.3736943557165318,
+                0.22976554599836843
+              ],
+              "max": [
+                0.8585319070591994,
+                1.7703670790238126,
+                0.5840593162863668
+              ]
+            },
+            "geometric_rows": 14100,
+            "upward_support_rows": 13191
+          },
+          "table": {
+            "normal_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "tangent_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "world_force_N": {
+              "min": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mean": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "geometric_rows": 0,
+            "upward_support_rows": 0
+          },
+          "other": {
+            "normal_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "tangent_force_N": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            },
+            "world_force_N": {
+              "min": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mean": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "geometric_rows": 0,
+            "upward_support_rows": 0
+          }
+        },
+        "cube": {
+          "world_z_m": {
+            "min": 0.11339266120164725,
+            "mean": 0.127690967240888,
+            "max": 0.14978383850023874
+          },
+          "world_vz_m_s": {
+            "min": -0.03458265041727557,
+            "mean": -0.002580995535362042,
+            "max": -0.0006720915323203496
+          },
+          "world_position_m": {
+            "min": [
+              -0.31999938987365895,
+              -0.0004072014413787802,
+              0.11339266120164725
+            ],
+            "mean": [
+              -0.31557799382397445,
+              0.0010839009508571641,
+              0.1276909672408881
+            ],
+            "max": [
+              -0.31012558987421435,
+              0.0026492897751460784,
+              0.14978383850023874
+            ]
+          },
+          "position_in_gripper_m": {
+            "min": [
+              -0.009137813274970118,
+              -0.0005171215961058728,
+              0.12021530851023246
+            ],
+            "mean": [
+              -0.0036740033850092132,
+              0.0009741370368440104,
+              0.14140612046483556
+            ],
+            "max": [
+              0.0004797375852140461,
+              0.002534569429895986,
+              0.15573360901162012
+            ]
+          },
+          "relative_delta_m": {
+            "min": [
+              -0.009137556231892564,
+              -0.0005189265656604661,
+              1.7935159654647315e-07
+            ],
+            "mean": [
+              -0.0036737463419316695,
+              0.0009723320672894166,
+              0.021190991306199652
+            ],
+            "max": [
+              0.0004799946282916002,
+              0.0025327644603413925,
+              0.0355184798529842
+            ]
+          },
+          "relative_z_drop_m": {
+            "min": 1.7935093010734704e-07,
+            "mean": 0.021179392943273048,
+            "max": 0.03549123469997617
+          },
+          "relative_slip_norm_m": {
+            "min": 3.38830395431506e-07,
+            "mean": 0.02168154318858779,
+            "max": 0.036730529140489146
+          },
+          "relative_rotation_angle_rad": {
+            "min": 3.661205905113846e-05,
+            "mean": 0.28598469776977503,
+            "max": 0.6074905122508563
+          }
+        },
+        "bilateral_force_fraction": 1.0,
+        "maximum_robot_penetration_m": 0.0017598913544846868,
+        "coupling_residual_abs_max_m": 4.592824020228925e-05,
+        "actuator_saturation_fraction_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_limit_excess_max_9d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force_N_or_Nm": {
+          "min": [
+            -0.034797035238719846,
+            -4.907671798316435,
+            1.5256407097529108,
+            -3.0212327387065674,
+            -0.025701544973972784,
+            -0.012255331098374005,
+            -0.023912736115970105,
+            -1.7085765525953254,
+            1.0739751569450258
+          ],
+          "mean": [
+            -7.268869281804892e-07,
+            -4.871634883615164,
+            1.6293124210536447,
+            -2.984636910933984,
+            0.010629127262951342,
+            0.0017740859917326976,
+            0.00604722028024908,
+            -1.3736950630340907,
+            1.3735917561879796
+          ],
+          "max": [
+            0.028388165267686442,
+            -4.669815331959629,
+            1.6482605425061239,
+            -2.794704394258296,
+            0.03525396020953315,
+            0.01725905106060939,
+            0.03798939956762396,
+            -1.0729825681244085,
+            1.7150342480134555
+          ]
+        }
+      },
+      "before_first_table_finger_rho": {
+        "min": 0.0313140943046509,
+        "mean": 0.5887678015066812,
+        "max": 1.0000000000000002
+      },
+      "before_first_table_finger_tangential_point_speed_m_s": {
+        "min": 7.826167483453598e-06,
+        "mean": 0.0027481508340926816,
+        "max": 0.07779495703226649
+      },
+      "kinematics_vs_saved_pose_max_error": 0.0,
+      "saved_contact_force_projection_max_error_N": 2.220446049250313e-16,
+      "external_force_abs_max": {
+        "qfrc_applied": 0.0,
+        "xfrc_applied": 0.0
+      },
+      "observational_sustained_holding": {
+        "status": "OBSERVED_NO_TABLE_BILATERAL_SUPPORT",
+        "table_geometry_observed": false,
+        "all_samples_bilateral_force": true,
+        "final_table_geometry": false,
+        "final_table_upward_force_N": 0.0,
+        "note": "Observation only; fixed-pose diagnostic does not evaluate original scripted lift/hold acceptance."
+      }
+    }
+  },
+  "common_no_table": {
+    "start_row": 0,
+    "stop_row_exclusive": 4415,
+    "post_step_samples": 4415,
+    "snapshot_included_in_statistics": false,
+    "groups": {
+      "A": {
+        "last_elapsed_s": 4.41499999999991,
+        "last_relative_drop_m": 0.04085846207281146,
+        "relative_world_vz_m_s": {
+          "min": -0.08446442775413639,
+          "mean": -0.009254466382062485,
+          "max": -0.0007458599615340342
+        },
+        "finger_Fz_N": {
+          "min": [
+            -0.3705491024530264,
+            -0.5917310649790937
+          ],
+          "mean": [
+            0.5477440518214249,
+            0.43123180145831647
+          ],
+          "max": [
+            0.8327323017461437,
+            0.8192534737339191
+          ]
+        },
+        "maximum_robot_penetration_m": 0.001958533708104217
+      },
+      "B": {
+        "last_elapsed_s": 4.41499999999991,
+        "last_relative_drop_m": 0.01411880030297677,
+        "relative_world_vz_m_s": {
+          "min": -0.03161279973026416,
+          "mean": -0.003197917563597195,
+          "max": -0.00017935130705289126
+        },
+        "finger_Fz_N": {
+          "min": [
+            0.4539710364762832,
+            -0.6252471284395396
+          ],
+          "mean": [
+            0.8205654375269011,
+            0.16034470094940045
+          ],
+          "max": [
+            1.2125308652402151,
+            0.4638314391112872
+          ]
+        },
+        "maximum_robot_penetration_m": 0.0010760356369593988
+      }
+    }
+  },
+  "actual_new_mj_steps_in_analysis": 0,
+  "force_solves_in_analysis": 0,
+  "kinematic_evaluations": 28202,
+  "protected_protocol_initial_state_times_and_targets_exactly_equal": true,
+  "derived_after_forward_state_max_difference": 39.178576887356726,
+  "actuator_ctrl_max_difference": 1.7001417702270107,
+  "source_hashes": {
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/STARTED": "b5ded562849414a152bd7f7e13d32047bfadb1aaa60c98421b59ab1fdd4a01df",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/elliptic-after-forward.npz": "7e279abaf05d43bb3295b6e49c859f2367fd1ec1018447de986f284c7f2f7339",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/elliptic-initial-contacts.json": "bcf6a039ea57ad80605ed16f108b4946215c36a17017471edef8694b8eadb50a",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/model.xml": "79f5f9116e812687e9c4592f9faf42e9660276f77329297e690be4a0db28d376",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/model.diff": "2ba915a98b179409fef715b4221c6ee86ba34dbb2f79a08e9d70b9373affb7dd",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/prediction.json": "26520c7a006eab3f043dc7e81103dc2c597ca1ea760eb6d2ea2ba8a09aa128d8",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/result.json": "5c6e563d59689f1374f8ba9e4d89f9201cfab1e3aaeab82fd75c41a7f8106039",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/contacts.jsonl": "89aeb60697d7c6badde163965439b2b2fe37bffc02845b1a41d36a33ec5d43b5",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/pyramidal-after-forward.npz": "493f2b9c4f87e3f635b833604a428a0a3614b156fc67d12fa379e2f3038721a7",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/observations.npz": "88d73336a539fbdf8cc330a529d4d7fbe76d669d18e97ddd11e27486039d802d",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/pyramidal-initial-contacts.json": "11b124ed8ad4a9de98ea0c0ef173d1dfc21623645251d4342d59ebdbcf6cf301",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/runner.executed.py": "b0b9e3e4c087b6c072160f78a511bc3c3184730e22fd5ce37ef752160cd4350e",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/contact-parameters.jsonl": "2991c27ee19ff75d15624ff0af633569cd3bec8d36386fa22cb3c79e135be263",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/execution.json": "734efb5665392ed47ffce6d94c1dcf22f303efc0f4270bf6f45ce0bb3616700f",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/protocol.json": "12ddd136b4d24b53ed12b571b8a5cd5ad086e4ce36a54245e04af2660b26043f",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/initial-state.npz": "79e066fb682af6e69ce44f26f06a9b2165cdc9eb0924124a3a3eb6e254bf4ddc",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/warnings.npz": "8126d6cebb9f12b7106803f4b550aa69b1214168a5a43d1b836bdcd5efe44c37",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/trajectory.npz": "fea51467c8001321dddea0f16eb85bf60f9184f2fdb2d507fd9a1464dfad948d",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/prepared.json": "8b19cf62673b51b9b76d1fc0972da7602d665850f0dea69c56671371c1048406",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/STARTED": "9dd93d7af8fc79a20c5be812174a8a9435514174d8edc61a8a5407a82f9c1eec",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/model.xml": "7a2a1c586432663038b1b77e7a48b95e3482c3a7fb3f4f7986a33543aa0d04fc",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/model.diff": "34a7fba66064dad5ca77b5373e4c951057347908e48964d77a5f0e1be2663640",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/prediction.json": "6520cc3ddc2942588436c14ae92ccd8e14903cae4161fef04291f446bf6c82f8",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio1-initial-contacts.json": "bcf6a039ea57ad80605ed16f108b4946215c36a17017471edef8694b8eadb50a",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/result.json": "3eb6ceb490f5d738e9d25a36ca64e479280cbe2b47db624a1e61733ce171fe25",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/contacts.jsonl": "8b58f6d209bed5ce73654801b9e8c68282450efc0ce5968143217e1805dc8fee",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/observations.npz": "6a9c744946ee6780473ca8a5f9f4189edc653323c9a60880f76364a570a4caa5",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio1-after-forward.npz": "5545333ee3bb2f346173a5795cf95c29ae42edf679400ae625dc97226499fb79",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio10-after-forward.npz": "94dad72771407f94e03b06d1b38ca032829d45bf6490596b9380893899b18c4d",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/runner.executed.py": "994d75bb6e9a2ed506200e5fa4666493e12b5896b83f1490c973844ec2f03c1e",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/contact-parameters.jsonl": "1ff3b37f3c57e912a0734735117697cc2e0f1b582dd3b6f283ab07354588137b",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/execution.json": "55cf33fc12c6495afb9e48ad30be1af32d92f9bddbc287f148380d612691fac0",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/protocol.json": "883ab4751c7e361a71b4947881dad6d20cdff5d4f2f61eb92466fd3c8d097db4",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/initial-state.npz": "b5dc6cdba80d29aeb9d45f18f96a5f247371ec0c713957ed458285fa9d402ddc",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/warnings.npz": "8126d6cebb9f12b7106803f4b550aa69b1214168a5a43d1b836bdcd5efe44c37",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/trajectory.npz": "322a9ae7b6277603d8ae11834df89dfc3f3b3ba3e5c1cf4f00c653d34b08ec72",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/prepared.json": "ccc26ea1ee62a995d257909633180df1d23ef5c2c3bb965b26badde787f2f212",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/runs/diag_impratio10_001/impratio10-initial-contacts.json": "ac96ae63cc0ac916234b01d2044eaed522f4e509d870be3f6a96862b3a838ce7",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/diagnose_impratio_ab.py": "ee29a7aa425f6639e91905452098ef2a34a9cb39218c9509e849822a010028de",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/diagnose_ab.py": "143fbca6f569bc3468af57adecc442f048dd48fc95db63beb30a7114c48f4b16",
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab/experiments/dynamics/diagnose.py": "17dc22ad620affd86f1f45c3a91adf2fc03bb2f94e6d9a94310322be6209867c"
+  },
+  "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+  "mujoco": "3.2.3",
+  "numpy": "1.26.4",
+  "argv": [
+    "experiments/dynamics/diagnose_impratio_ab.py",
+    "--a-dir",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+    "--b-dir",
+    "experiments/dynamics/runs/diag_impratio10_001",
+    "--output-dir",
+    "debug/issue12/analysis_001"
+  ],
+  "limitations": [
+    "One frozen state, one new impratio=10 run; no statistical or hardware-fidelity claim.",
+    "Post-step forward force samples are instantaneous, not integration-time impulses or step-average forces.",
+    "Local contact coordinates describe solver samples; no persistent material-point identity or solver stick/slip labels.",
+    "Common no-table statistics exclude the first table contact in either run. Per-run intervals use their own boundary.",
+    "P1 and observational holding do not replace original control-health or scripted grasp criteria."
+  ]
+}
