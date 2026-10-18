@@ -1,0 +1,968 @@
+{
+  "issue": 14,
+  "diagnostic_only": true,
+  "prepared": {
+    "issue": 14,
+    "source_freeze": "1e4d633730f62a398513d33991fa96f9c4977daa",
+    "diagnostic_only": true,
+    "artifacts": {
+      "gate0/offset_negative-initial-contacts.json": "6ab6424efba488f497840770958dd66de5bbebb93466ca856bccec19b032433f",
+      "gate0/offset_positive-initial.npz": "ccbf5ceb0890e665ae722b966260d32e7ed74114a865221eedd57dcb16e99f95",
+      "gate0/offset_positive-default.xml": "4534043b108fb2d1be6cb648e3eb8f09472b84264627185e9fd3865092b67134",
+      "gate0/offset_negative-initial.npz": "a58574271cace12668fb841a1c4f3507102cf124208b701553d515934df7a7f0",
+      "gate0/fixed.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "gate0/offset_positive.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "gate0/offset_negative.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "gate0/offset_positive.xml": "a66bba079bbc8f9042a3d23d6d586c0791e20abea34e13297a8c291a7f7f7692",
+      "gate0/fixed.diff": "b639e741a463f22fa56b3926a153ca5cb7fe624585420e532e10c3e3a8ce1142",
+      "gate0/fixed-initial.npz": "e7f65ab98c9cff71af5aecf279f3691e2d6c980ea96acf7fe07793b0c5275ce6",
+      "gate0/fixed-initial-contacts.json": "33a12d6dc639175f0ca4eb07317876ff6ce4e7731dbbe4d82f7554dea724ffa5",
+      "gate0/fixed-default.xml": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64",
+      "gate0/offset_negative.diff": "af88978cf62fa560b4c385da6cd79b2c9bb8f94dd51ba216df6590c0b6156a5a",
+      "gate0/offset_positive-initial-contacts.json": "c06aa3f69f17b63fd3b5ea4cddee470a1b4dbcf7cd140b0738b7bb8a9c642ff9",
+      "gate0/offset_negative.xml": "4b817c528d21a8c901113cac0b8541630a05dc37d4d87b4a4857718ae9439f36",
+      "gate0/fixed.xml": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+      "gate0/offset_negative-default.xml": "08a84040b29093528c1474119cae54c68b3f971eee54fc1cae80aab4c1e5c6f7",
+      "gate0/offset_positive.diff": "8f000290b8bb0aef8c60f45aeb54971a15c8f00b653b18b381103bc3521c13b5",
+      "gate0/frozen-plan.json": "23cf8494f4017b718a0fabbbad4e014625a730cbcd814d2bc605650086a81098",
+      "executed-source/full_grasp_loop.py": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+      "executed-source/config.json": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+      "executed-source/controller.py": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
+      "executed-source/run.py": "503098029aa320384d2536d25c47b547e7e33136fc924af3f26f04a01254063d",
+      "executed-source/grasp.json": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
+      "executed-source/base-filter-approval.json": "9d6b88a83961f492098c849c865ac0d8568ea0dbee53fe3f3c637de8ecd7d4d8"
+    },
+    "asset_hashes": {
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/base_link.obj": "4cec56c02abcb161f6962d068aaf292a2b8b90c0d75ba8231dbdc2ec9ca0a413",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/base_link.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_000.obj": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_001.obj": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_002.obj": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_003.obj": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_004.obj": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_005.obj": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_006.obj": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_007.obj": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link1.obj": "27caed860ed3ec504b4158f78611947ddd84ad086e86c799ab1cc53361fee17b",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link1.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_000.obj": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_001.obj": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_002.obj": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_003.obj": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_004.obj": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_005.obj": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_006.obj": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_007.obj": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link2.obj": "9209b580bf938d0f2e4a5e92e3e68486a2820da3ce71948a5d43163c1ab87abd",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link2.png": "13544428266a19297d227fcf9f7a7c3ccda5504a350e2caafc9d5034ea9816b5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_000.obj": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_001.obj": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_002.obj": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_003.obj": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_004.obj": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link3.obj": "2534c1a9d1604b5a78ea5122afb8f6c46f0cfb9dd5913903876e73c34f965b10",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link3.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_000.obj": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_001.obj": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_002.obj": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_003.obj": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_004.obj": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_005.obj": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_006.obj": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_007.obj": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link4.obj": "6c79398ffe8a2b5505f9ddea0bdbe6cc479708bc9323dffd8b14e357831f1665",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link4.png": "ebe6a584bfb4188eb0999f15ef8ba3e1696f98e5f7e6d2b5922c68ed6b52fd3e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_000.obj": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_001.obj": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_002.obj": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_003.obj": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_004.obj": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_005.obj": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link5.obj": "ee3d1e2f9eb26cf62eeb426848daf85cd994c968ff37e9d8b1230ef38bf6dd83",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link5.png": "c4f67308ac223864064c894935e87fc23e26233e85ef3f9e6152ba7398bcd904",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_000.obj": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_001.obj": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_002.obj": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_003.obj": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_004.obj": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_005.obj": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_006.obj": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link6.obj": "52b69bf482e9788bd81f86436cf14c04ebec0e474876869ee4dc4b4d9eb6a19f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link6.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_000.obj": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_001.obj": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_002.obj": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_003.obj": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_004.obj": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link7.obj": "16455c947aa77cbd40b24f58a89a28a9324008f61c4d63210ab786b46e4e1471",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link7.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_000.obj": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_001.obj": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_002.obj": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_003.obj": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/flange_link.obj": "23fafefe84d7feb662c95f8f5d745a5a609f24a8694b8cd03255e23e6ea4721d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/flange_link.png": "2e0a9a2d5f28563463f634d5b81ec2ef90d91afe472a0c6e2c6ef4082f93ec5f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_000.obj": "872ef90145b57099acb788cd435c58c04797addf5db349e5146f50a2e4c55844",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_001.obj": "5da3693864b65d1ef131e33079afc05cda5c9f802f4a0c7d5abcb526183f5876",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_002.obj": "afcd8b70d1fd2e8a665c1e95520e5f7959cc17bd795ded787a0831feff224cc9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_base.obj": "a91a229b077918f6b2105c5976b826c6fe4efd808414b7b37eaffdfbfac2604f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_base.png": "ebdbf4a658f652f7b9d91a40137a8888194b42dd76dd54dd85eec5caba1d35bc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_000.obj": "093856a968a5adb2ac2c6d3236fe7fdd4609ffb030b155a2fa9e1fc944c29d3a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_001.obj": "72dcfe03601873b0d0c5e9c4928e8d7582fcd4be2819712f698dca1fa78a6065",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_002.obj": "030ce8c7d270eec3889ccc246c806b40fa8de7b425afd25927827f43145bb286",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_003.obj": "8725bf15222f8ffdc03f0902b24472d5a72781018f410d57f4d5ed561d55a30e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link1.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link1.png": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link1_000.obj": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link1_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link2.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link2.png": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_000.obj": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+    },
+    "runner_sha256": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+    "maximum_episodes": 5,
+    "maximum_action_candidates": 2,
+    "actual_new_mj_steps": 0,
+    "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+    "mujoco": "3.2.3",
+    "argv": [
+      "experiments/dynamics/full_grasp_loop.py",
+      "prepare",
+      "--campaign",
+      "experiments/dynamics/runs/issue14_full_grasp_002"
+    ]
+  },
+  "prepared_sha256": "f8a51d8e7d82f810b671733f4bf852c60e3a3b191befca5bc18db88ca0026ba0",
+  "frozen_plan": {
+    "config": {
+      "baseline_commit": "8e8b805e28bd07a6799d3d838574912ab2280912",
+      "timestep_s": 0.001,
+      "command_period_s": 0.01,
+      "record_every_physics_step": true,
+      "integrator": "implicitfast",
+      "gravity_m_s2": [
+        0,
+        0,
+        -9.81
+      ],
+      "arm_kp_Nm_rad": [
+        160,
+        160,
+        160,
+        80,
+        40,
+        40,
+        30
+      ],
+      "arm_kv_Nms_rad": [
+        12,
+        12,
+        10,
+        6,
+        3,
+        3,
+        2
+      ],
+      "finger_kp_N_m": 800,
+      "finger_kv_Ns_m": 8,
+      "arm_force_limits_Nm": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "finger_force_limit_N": 10,
+      "joint2_command_envelope_rad": [
+        -0.2,
+        1.5
+      ],
+      "arm_target_slew_rad_s": 0.2,
+      "gripper_command_slew_m_s": 0.03,
+      "initial_action": [
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        0.08
+      ],
+      "parameter_status": "explicit simulation candidate; gains are not manufacturer calibration",
+      "control_design": "9 native affine general actuators: proportional and qfrc_bias feedforward in ctrl, velocity feedback in actuator bias; total actuator force clipped; 8D user target maps to 9 physical joint targets",
+      "mechanical_and_contact_parameters": "unchanged from protected asset, including original equality numerical parameters; no explicit excludes unless separately approved",
+      "acceptance": {
+        "settled_arm_error_rad": 0.005,
+        "settled_finger_error_m": 0.0005,
+        "maximum_coupling_error_m": 0.0002,
+        "maximum_arm_velocity_rad_s": 1.0,
+        "maximum_finger_velocity_m_s": 0.1,
+        "require_no_numerical_warnings_or_time_resets": true
+      }
+    },
+    "protocol": {
+      "protocol_version": 2,
+      "cube": {
+        "center": [
+          -0.32,
+          0,
+          0.15
+        ],
+        "half_size": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "mass_kg": 0.1,
+        "friction": [
+          1,
+          0.005,
+          0.0001
+        ],
+        "table": {
+          "center": [
+            -0.32,
+            0,
+            0.065
+          ],
+          "half_size": [
+            0.12,
+            0.12,
+            0.065
+          ]
+        }
+      },
+      "initial_conditions": [
+        {
+          "id": "fixed",
+          "offset_xy_m": [
+            0,
+            0
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "id": "offset_positive",
+          "offset_xy_m": [
+            0.003,
+            0.003
+          ],
+          "yaw_rad": 0.03490658503988659
+        },
+        {
+          "id": "offset_negative",
+          "offset_xy_m": [
+            -0.003,
+            -0.003
+          ],
+          "yaw_rad": -0.03490658503988659
+        }
+      ],
+      "initialization": "Legal reset at planned pregrasp pose 0.10m above cube, source width0.08m; subsequent opening, approach, closing, lift, hold and release use actual mj_step only",
+      "site_definition": "Nonphysical grasp_center=gripper_base local[0,0,0.12]m, chosen from source finger z_max0.138m and cube halfheight0.02m for nominal2mm table clearance; not calibrated hardware TCP",
+      "pregrasp_height_m": 0.1,
+      "lift_height_m": 0.1,
+      "vertical_waypoint_count": 5,
+      "open_width_m": 0.1,
+      "close_width_rate_m_s": 0.005,
+      "maximum_close_duration_s": 20,
+      "contact_trigger_force_N_each": 0.2,
+      "hold_compression_target_force_N_each": 1.5,
+      "compression_rule": "Position compression equivalent only, not calibrated force: width_target=(qfinger1-qfinger2)-2*1.5N/800NperM after bilateral contact; actual force logged",
+      "criteria": {
+        "minimum_lift_m": 0.08,
+        "hold_duration_s": 2.0,
+        "maximum_hold_drift_m": 0.01,
+        "minimum_bilateral_contact_fraction": 0.95,
+        "minimum_finger_normal_force_N": 0.05,
+        "maximum_robot_object_penetration_m": 0.001
+      },
+      "repeat_rule": "Run fixed first; only if it passes, execute both predeclared offsets. No changes to object, contact parameters or criteria after first attempt. All interrupted/failed attempts retained.",
+      "contact_parameters": "Source robot friction/solref/solimp/masks/equality unchanged; cube and table use MuJoCo default contact softness, cube friction explicitly stated; sole approved exclusion base_link/link1",
+      "expert_peak_joint_target_speed_rad_s": 0.05,
+      "expert_motion": "Synchronized cosine interpolation of7absolute joint targets at100Hz with0.05rad/s peak reference speed; existing actuator gains/limits unchanged",
+      "revision_reason": "v1 physical attempt retained as FAIL. Actual steady contact force~0.70N per finger and lateral TCP excursions~1.3mm during asymmetric target slews preceded slip. One conventional expert reference refinement; object, contact, gains, equality and acceptance thresholds unchanged. No further physics patches without confirmation."
+    },
+    "conditions_and_plans": [
+      {
+        "id": "fixed",
+        "cube": {
+          "center": [
+            -0.32,
+            0.0,
+            0.15
+          ],
+          "half_size": [
+            0.02,
+            0.02,
+            0.02
+          ],
+          "mass_kg": 0.1,
+          "friction": [
+            1,
+            0.005,
+            0.0001
+          ],
+          "table": {
+            "center": [
+              -0.32,
+              0,
+              0.065
+            ],
+            "half_size": [
+              0.12,
+              0.12,
+              0.065
+            ]
+          },
+          "yaw_rad": 0
+        },
+        "plan": {
+          "initial_action": [
+            -0.8156872599831811,
+            0.2810983432696505,
+            1.04222135944483,
+            1.5364080306631929,
+            -0.2177098003086819,
+            0.2340591176208889,
+            1.4607995377122671,
+            0.08
+          ],
+          "approach": [
+            [
+              -0.8555639482998662,
+              0.32166654471967576,
+              1.1085437472143176,
+              1.5983036800729706,
+              -0.24280153048873543,
+              0.27757152152754205,
+              1.3962349142556891
+            ],
+            [
+              -0.8736022592401742,
+              0.3640966731723003,
+              1.1477794303033204,
+              1.6555080989183482,
+              -0.2635372302626484,
+              0.3188130932102383,
+              1.331881242365328
+            ],
+            [
+              -0.8789365289534525,
+              0.4097175927596261,
+              1.1714364016987562,
+              1.708166263009515,
+              -0.2825934675258648,
+              0.3599041930301047,
+              1.2680584789684237
+            ],
+            [
+              -0.8749929903809195,
+              0.4577005267817519,
+              1.1824301815506282,
+              1.7563465295018719,
+              -0.2997693625610165,
+              0.39997551061702596,
+              1.2044234415002506
+            ],
+            [
+              -0.865130017291934,
+              0.5082930894206636,
+              1.1845866330796317,
+              1.8000569348924655,
+              -0.3158772851318046,
+              0.4393164851384921,
+              1.1410782874755419
+            ]
+          ],
+          "lift": [
+            [
+              -0.8749929903809195,
+              0.4577005267817519,
+              1.1824301815506282,
+              1.7563465295018719,
+              -0.2997693625610165,
+              0.39997551061702596,
+              1.2044234415002506
+            ],
+            [
+              -0.8789365289534525,
+              0.4097175927596261,
+              1.1714364016987562,
+              1.708166263009515,
+              -0.2825934675258648,
+              0.3599041930301047,
+              1.2680584789684237
+            ],
+            [
+              -0.8736022592401742,
+              0.3640966731723003,
+              1.1477794303033204,
+              1.6555080989183482,
+              -0.2635372302626484,
+              0.3188130932102383,
+              1.331881242365328
+            ],
+            [
+              -0.8555639482998662,
+              0.32166654471967576,
+              1.1085437472143176,
+              1.5983036800729706,
+              -0.24280153048873543,
+              0.27757152152754205,
+              1.3962349142556891
+            ],
+            [
+              -0.8156872599831811,
+              0.2810983432696505,
+              1.04222135944483,
+              1.5364080306631929,
+              -0.2177098003086819,
+              0.2340591176208889,
+              1.4607995377122671
+            ]
+          ],
+          "planning_method": "bounded SciPy least_squares in scratch MjData, source ranges plus conservative Joint2 envelope",
+          "nonobject_scratch_collision_count": 0
+        }
+      },
+      {
+        "id": "offset_positive",
+        "cube": {
+          "center": [
+            -0.317,
+            0.003,
+            0.15
+          ],
+          "half_size": [
+            0.02,
+            0.02,
+            0.02
+          ],
+          "mass_kg": 0.1,
+          "friction": [
+            1,
+            0.005,
+            0.0001
+          ],
+          "table": {
+            "center": [
+              -0.32,
+              0,
+              0.065
+            ],
+            "half_size": [
+              0.12,
+              0.12,
+              0.065
+            ]
+          },
+          "yaw_rad": 0.03490658503988659
+        },
+        "plan": {
+          "initial_action": [
+            -0.851440669706104,
+            0.2749385138989181,
+            1.0676148707773474,
+            1.5477743612010924,
+            -0.21653059973583125,
+            0.2252563213374294,
+            1.4590230915384075,
+            0.08
+          ],
+          "approach": [
+            [
+              -0.888927105406163,
+              0.3162050399626746,
+              1.131836288666285,
+              1.6096715893810523,
+              -0.2422709464357358,
+              0.2693189973253047,
+              1.3945713161772886
+            ],
+            [
+              -0.9045522380984253,
+              0.3592235509474194,
+              1.1689588045910886,
+              1.6669163470996404,
+              -0.26368848695344826,
+              0.31118645602363426,
+              1.3303452567939276
+            ],
+            [
+              -0.9072056182296956,
+              0.4049932257303687,
+              1.189829603457422,
+              1.7196452584975854,
+              -0.2830264089336594,
+              0.3525125055173105,
+              1.2665171848925143
+            ],
+            [
+              -0.9008778821750244,
+              0.4530604519937223,
+              1.1983205486792798,
+              1.7679193734592398,
+              -0.30048121923881743,
+              0.3928481251797718,
+              1.2028495411525577
+            ],
+            [
+              -0.8889096390050031,
+              0.5037207447254475,
+              1.1982467740386515,
+              1.8117399804121908,
+              -0.31687287335116937,
+              0.4324996758796317,
+              1.1394478465712976
+            ]
+          ],
+          "lift": [
+            [
+              -0.9008778821750244,
+              0.4530604519937223,
+              1.1983205486792798,
+              1.7679193734592398,
+              -0.30048121923881743,
+              0.3928481251797718,
+              1.2028495411525577
+            ],
+            [
+              -0.9072056182296956,
+              0.4049932257303687,
+              1.189829603457422,
+              1.7196452584975854,
+              -0.2830264089336594,
+              0.3525125055173105,
+              1.2665171848925143
+            ],
+            [
+              -0.9045522380984253,
+              0.3592235509474194,
+              1.1689588045910886,
+              1.6669163470996404,
+              -0.26368848695344826,
+              0.31118645602363426,
+              1.3303452567939276
+            ],
+            [
+              -0.888927105406163,
+              0.3162050399626746,
+              1.131836288666285,
+              1.6096715893810523,
+              -0.2422709464357358,
+              0.2693189973253047,
+              1.3945713161772886
+            ],
+            [
+              -0.851440669706104,
+              0.2749385138989181,
+              1.0676148707773474,
+              1.5477743612010924,
+              -0.21653059973583125,
+              0.2252563213374294,
+              1.4590230915384075
+            ]
+          ],
+          "planning_method": "bounded SciPy least_squares in scratch MjData, source ranges plus conservative Joint2 envelope",
+          "nonobject_scratch_collision_count": 0
+        }
+      },
+      {
+        "id": "offset_negative",
+        "cube": {
+          "center": [
+            -0.323,
+            -0.003,
+            0.15
+          ],
+          "half_size": [
+            0.02,
+            0.02,
+            0.02
+          ],
+          "mass_kg": 0.1,
+          "friction": [
+            1,
+            0.005,
+            0.0001
+          ],
+          "table": {
+            "center": [
+              -0.32,
+              0,
+              0.065
+            ],
+            "half_size": [
+              0.12,
+              0.12,
+              0.065
+            ]
+          },
+          "yaw_rad": -0.03490658503988659
+        },
+        "plan": {
+          "initial_action": [
+            -0.7802519130776828,
+            0.287169653152821,
+            1.0165717812092836,
+            1.524821981487602,
+            -0.21855511974142713,
+            0.24222816018952958,
+            1.4626051039204744,
+            0.08
+          ],
+          "approach": [
+            [
+              -0.8230650553129474,
+              0.3274264543187671,
+              1.0860628923629259,
+              1.5867242520824054,
+              -0.24352535765475242,
+              0.2857198438032222,
+              1.3980500724108471
+            ],
+            [
+              -0.8438281400732824,
+              0.3696560911193193,
+              1.1281662809249233,
+              1.6438952689013273,
+              -0.2640390330891197,
+              0.32683637247777203,
+              1.3337143453409726
+            ],
+            [
+              -0.8505786034072974,
+              0.4141509461766074,
+              1.1523308306780622,
+              1.6964886965446835,
+              -0.28178021605235304,
+              0.36653905251498436,
+              1.2695563739742293
+            ],
+            [
+              -0.8489126874863052,
+              0.46192702832826316,
+              1.1656552380865823,
+              1.7445804338970108,
+              -0.2986074348309797,
+              0.4062392768681979,
+              1.205907524578387
+            ],
+            [
+              -0.8408188235770883,
+              0.5120454049668876,
+              1.1693804437743816,
+              1.7881854227844294,
+              -0.3140678897410244,
+              0.44482329348385113,
+              1.1424453847262626
+            ]
+          ],
+          "lift": [
+            [
+              -0.8489126874863052,
+              0.46192702832826316,
+              1.1656552380865823,
+              1.7445804338970108,
+              -0.2986074348309797,
+              0.4062392768681979,
+              1.205907524578387
+            ],
+            [
+              -0.8505786034072974,
+              0.4141509461766074,
+              1.1523308306780622,
+              1.6964886965446835,
+              -0.28178021605235304,
+              0.36653905251498436,
+              1.2695563739742293
+            ],
+            [
+              -0.8438281400732824,
+              0.3696560911193193,
+              1.1281662809249233,
+              1.6438952689013273,
+              -0.2640390330891197,
+              0.32683637247777203,
+              1.3337143453409726
+            ],
+            [
+              -0.8230650553129474,
+              0.3274264543187671,
+              1.0860628923629259,
+              1.5867242520824054,
+              -0.24352535765475242,
+              0.2857198438032222,
+              1.3980500724108471
+            ],
+            [
+              -0.7802519130776828,
+              0.287169653152821,
+              1.0165717812092836,
+              1.524821981487602,
+              -0.21855511974142713,
+              0.24222816018952958,
+              1.4626051039204744
+            ]
+          ],
+          "planning_method": "bounded SciPy least_squares in scratch MjData, source ranges plus conservative Joint2 envelope",
+          "nonobject_scratch_collision_count": 0
+        }
+      }
+    ]
+  },
+  "R0_registration": {
+    "label": "R0",
+    "condition": "fixed",
+    "strategy": "R0",
+    "hypothesis": {
+      "action": null,
+      "rationale": "Issue12 found sensitivity in a different low-table fixed-pose diagnostic; feasibility of the unchanged v2 complete normal-table workflow is still unknown. R0 must establish full-task evidence before any action changes.",
+      "prediction": "With normal table and the fixed v2 action, the derived elliptic/impratio10 candidate will meet every original grasp criterion and control phase condition; real open/approach/close/settle/lift/continuous2s-hold/release evidence is separately checked. Any failed original criterion falsifies this feasibility prediction."
+    },
+    "protocol": {
+      "protocol_version": 2,
+      "cube": {
+        "center": [
+          -0.32,
+          0,
+          0.15
+        ],
+        "half_size": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "mass_kg": 0.1,
+        "friction": [
+          1,
+          0.005,
+          0.0001
+        ],
+        "table": {
+          "center": [
+            -0.32,
+            0,
+            0.065
+          ],
+          "half_size": [
+            0.12,
+            0.12,
+            0.065
+          ]
+        }
+      },
+      "initial_conditions": [
+        {
+          "id": "fixed",
+          "offset_xy_m": [
+            0,
+            0
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "id": "offset_positive",
+          "offset_xy_m": [
+            0.003,
+            0.003
+          ],
+          "yaw_rad": 0.03490658503988659
+        },
+        {
+          "id": "offset_negative",
+          "offset_xy_m": [
+            -0.003,
+            -0.003
+          ],
+          "yaw_rad": -0.03490658503988659
+        }
+      ],
+      "initialization": "Legal reset at planned pregrasp pose 0.10m above cube, source width0.08m; subsequent opening, approach, closing, lift, hold and release use actual mj_step only",
+      "site_definition": "Nonphysical grasp_center=gripper_base local[0,0,0.12]m, chosen from source finger z_max0.138m and cube halfheight0.02m for nominal2mm table clearance; not calibrated hardware TCP",
+      "pregrasp_height_m": 0.1,
+      "lift_height_m": 0.1,
+      "vertical_waypoint_count": 5,
+      "open_width_m": 0.1,
+      "close_width_rate_m_s": 0.005,
+      "maximum_close_duration_s": 20,
+      "contact_trigger_force_N_each": 0.2,
+      "hold_compression_target_force_N_each": 1.5,
+      "compression_rule": "Position compression equivalent only, not calibrated force: width_target=(qfinger1-qfinger2)-2*1.5N/800NperM after bilateral contact; actual force logged",
+      "criteria": {
+        "minimum_lift_m": 0.08,
+        "hold_duration_s": 2.0,
+        "maximum_hold_drift_m": 0.01,
+        "minimum_bilateral_contact_fraction": 0.95,
+        "minimum_finger_normal_force_N": 0.05,
+        "maximum_robot_object_penetration_m": 0.001
+      },
+      "repeat_rule": "Run fixed first; only if it passes, execute both predeclared offsets. No changes to object, contact parameters or criteria after first attempt. All interrupted/failed attempts retained.",
+      "contact_parameters": "Source robot friction/solref/solimp/masks/equality unchanged; cube and table use MuJoCo default contact softness, cube friction explicitly stated; sole approved exclusion base_link/link1",
+      "expert_peak_joint_target_speed_rad_s": 0.05,
+      "expert_motion": "Synchronized cosine interpolation of7absolute joint targets at100Hz with0.05rad/s peak reference speed; existing actuator gains/limits unchanged",
+      "revision_reason": "v1 physical attempt retained as FAIL. Actual steady contact force~0.70N per finger and lateral TCP excursions~1.3mm during asymmetric target slews preceded slip. One conventional expert reference refinement; object, contact, gains, equality and acceptance thresholds unchanged. No further physics patches without confirmation."
+    },
+    "case": {
+      "id": "fixed",
+      "cube": {
+        "center": [
+          -0.32,
+          0.0,
+          0.15
+        ],
+        "half_size": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "mass_kg": 0.1,
+        "friction": [
+          1,
+          0.005,
+          0.0001
+        ],
+        "table": {
+          "center": [
+            -0.32,
+            0,
+            0.065
+          ],
+          "half_size": [
+            0.12,
+            0.12,
+            0.065
+          ]
+        },
+        "yaw_rad": 0
+      },
+      "plan": {
+        "initial_action": [
+          -0.8156872599831811,
+          0.2810983432696505,
+          1.04222135944483,
+          1.5364080306631929,
+          -0.2177098003086819,
+          0.2340591176208889,
+          1.4607995377122671,
+          0.08
+        ],
+        "approach": [
+          [
+            -0.8555639482998662,
+            0.32166654471967576,
+            1.1085437472143176,
+            1.5983036800729706,
+            -0.24280153048873543,
+            0.27757152152754205,
+            1.3962349142556891
+          ],
+          [
+            -0.8736022592401742,
+            0.3640966731723003,
+            1.1477794303033204,
+            1.6555080989183482,
+            -0.2635372302626484,
+            0.3188130932102383,
+            1.331881242365328
+          ],
+          [
+            -0.8789365289534525,
+            0.4097175927596261,
+            1.1714364016987562,
+            1.708166263009515,
+            -0.2825934675258648,
+            0.3599041930301047,
+            1.2680584789684237
+          ],
+          [
+            -0.8749929903809195,
+            0.4577005267817519,
+            1.1824301815506282,
+            1.7563465295018719,
+            -0.2997693625610165,
+            0.39997551061702596,
+            1.2044234415002506
+          ],
+          [
+            -0.865130017291934,
+            0.5082930894206636,
+            1.1845866330796317,
+            1.8000569348924655,
+            -0.3158772851318046,
+            0.4393164851384921,
+            1.1410782874755419
+          ]
+        ],
+        "lift": [
+          [
+            -0.8749929903809195,
+            0.4577005267817519,
+            1.1824301815506282,
+            1.7563465295018719,
+            -0.2997693625610165,
+            0.39997551061702596,
+            1.2044234415002506
+          ],
+          [
+            -0.8789365289534525,
+            0.4097175927596261,
+            1.1714364016987562,
+            1.708166263009515,
+            -0.2825934675258648,
+            0.3599041930301047,
+            1.2680584789684237
+          ],
+          [
+            -0.8736022592401742,
+            0.3640966731723003,
+            1.1477794303033204,
+            1.6555080989183482,
+            -0.2635372302626484,
+            0.3188130932102383,
+            1.331881242365328
+          ],
+          [
+            -0.8555639482998662,
+            0.32166654471967576,
+            1.1085437472143176,
+            1.5983036800729706,
+            -0.24280153048873543,
+            0.27757152152754205,
+            1.3962349142556891
+          ],
+          [
+            -0.8156872599831811,
+            0.2810983432696505,
+            1.04222135944483,
+            1.5364080306631929,
+            -0.2177098003086819,
+            0.2340591176208889,
+            1.4607995377122671
+          ]
+        ],
+        "planning_method": "bounded SciPy least_squares in scratch MjData, source ranges plus conservative Joint2 envelope",
+        "nonobject_scratch_collision_count": 0
+      }
+    },
+    "runner_sha256": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+    "prepared_sha256": "f8a51d8e7d82f810b671733f4bf852c60e3a3b191befca5bc18db88ca0026ba0",
+    "hypothesis_file_sha256": "ddb10f65b9353f40f3c1723e7dfe86f8ea1dc23b21266584ef6720103681e254",
+    "registered_utc": "2026-10-18T15:12:31.744483+00:00",
+    "actual_mj_steps": 0
+  },
+  "R0_registration_sha256": "d9c9cdd7d662beddb10182843ee4e29a64ae1b70f65d7df2f43e582ebfab40cf",
+  "campaign": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002",
+  "prior_preparation": {
+    "path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_001",
+    "physical_episodes": 0,
+    "reason": "Read-only review fixed new harness registration-to-sealed-case binding before any physical attempt; original zero-step preparation preserved."
+  },
+  "maximum_episodes": 5,
+  "maximum_independent_R0_relative_action_candidates": 2
+}
