@@ -1,0 +1,80 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "matplotlib": "3.10.7",
+  "numpy": "2.2.6",
+  "input_summary_sha256": "becadb1eb230b894fdbdaf7c54554fe72c960a877e2feb8fcafa887ec817ea85",
+  "input_series_sha256": "b943a1e34810d4503701f5177c52bcb9f3f14ff3099e7b25d5359f321327966f",
+  "input_contacts_sha256": "4c90f1f2f4768d96391f6cda287842b7c9e2c235192fab1022986ee0748d5583",
+  "quaternion_source_sha256": "fea51467c8001321dddea0f16eb85bf60f9184f2fdb2d507fd9a1464dfad948d",
+  "new_mj_steps": 0,
+  "force_solves": 0,
+  "windows": [
+    {
+      "window_ticks": [
+        0,
+        141
+      ],
+      "positive_contact_samples": 280,
+      "interior_contact_samples": 280,
+      "interior_with_tangent_speed_gt_1mm_s": 278,
+      "cube_tilt_max_deg": 0.25825881935040285,
+      "cube_tilt_end_deg": 0.2568475325515332
+    },
+    {
+      "window_ticks": [
+        141,
+        1328
+      ],
+      "positive_contact_samples": 2374,
+      "interior_contact_samples": 2362,
+      "interior_with_tangent_speed_gt_1mm_s": 2362,
+      "cube_tilt_max_deg": 1.0855430746517627,
+      "cube_tilt_end_deg": 0.16244444133546945
+    },
+    {
+      "window_ticks": [
+        1328,
+        2164
+      ],
+      "positive_contact_samples": 1672,
+      "interior_contact_samples": 1672,
+      "interior_with_tangent_speed_gt_1mm_s": 1672,
+      "cube_tilt_max_deg": 2.093111905846234,
+      "cube_tilt_end_deg": 2.093111905846234
+    },
+    {
+      "window_ticks": [
+        2164,
+        4416
+      ],
+      "positive_contact_samples": 4504,
+      "interior_contact_samples": 4429,
+      "interior_with_tangent_speed_gt_1mm_s": 4424,
+      "cube_tilt_max_deg": 36.190381307714276,
+      "cube_tilt_end_deg": 33.389818474058224
+    }
+  ],
+  "extremes": {
+    "Fz_minus_mg_N": {
+      "row": 4407,
+      "elapsed_s": 4.407999999999927,
+      "value": -1.2368979954292014
+    },
+    "relative_world_vz_m_s": {
+      "row": 4414,
+      "elapsed_s": 4.41499999999991,
+      "value": -0.08446442775413639
+    },
+    "max_penetration_m": {
+      "row": 3256,
+      "elapsed_s": 3.257000000002609,
+      "value": 0.001958533708104217
+    },
+    "relative_rotation_rad": {
+      "row": 3804,
+      "elapsed_s": 3.805000000001332,
+      "value": 0.6286521213299814
+    }
+  },
+  "plot_average": "20 samples, trailing, display only; statistics use unsmoothed records"
+}
