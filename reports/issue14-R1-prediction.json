@@ -260,5 +260,17 @@
   },
   "registration_sha256": "efade1260109d3fe8d236963dacbabc3f18b2a372c3d7e7a980abd2e6c689f0d",
   "hypothesis_sha256": "295e55e4a6a5e7f32ad741d946330b638512a2dddb65b578a780b6762c61a878",
-  "B_has_started": false
+  "B_has_started": false,
+  "pre_execution_evidence_correction": {
+    "utc": "2026-10-18T15:19:03.895608+00:00",
+    "field": "hypothesis.evidence.R0_second_waypoint_drop_m",
+    "registered_reference": 0.020712001773823,
+    "measured_value": 0.020712474292548105,
+    "source": {
+      "row": 34706,
+      "time_s": 34.70700000000981,
+      "relative_world_z_drop_since_settle_m": 0.020712474292548105
+    },
+    "note": "Baseline reference in registration had incorrect precision. This corrects evidence only before R1; action=.2, hypothesis<.010m/penetration<=.001m, initial conditions and original criteria are unchanged. Immutable original registration preserved."
+  }
 }
