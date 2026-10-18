@@ -1,0 +1,1883 @@
+{
+  "status": "PASS_READONLY_REDUCTION",
+  "diagnostic_only": true,
+  "physical_grasp_pass": null,
+  "source": "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001",
+  "source_hashes": {
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/STARTED": "b5ded562849414a152bd7f7e13d32047bfadb1aaa60c98421b59ab1fdd4a01df",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/elliptic-after-forward.npz": "7e279abaf05d43bb3295b6e49c859f2367fd1ec1018447de986f284c7f2f7339",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/elliptic-initial-contacts.json": "bcf6a039ea57ad80605ed16f108b4946215c36a17017471edef8694b8eadb50a",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/model.xml": "79f5f9116e812687e9c4592f9faf42e9660276f77329297e690be4a0db28d376",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/model.diff": "2ba915a98b179409fef715b4221c6ee86ba34dbb2f79a08e9d70b9373affb7dd",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/prediction.json": "26520c7a006eab3f043dc7e81103dc2c597ca1ea760eb6d2ea2ba8a09aa128d8",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/result.json": "5c6e563d59689f1374f8ba9e4d89f9201cfab1e3aaeab82fd75c41a7f8106039",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/contacts.jsonl": "89aeb60697d7c6badde163965439b2b2fe37bffc02845b1a41d36a33ec5d43b5",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/pyramidal-after-forward.npz": "493f2b9c4f87e3f635b833604a428a0a3614b156fc67d12fa379e2f3038721a7",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/observations.npz": "88d73336a539fbdf8cc330a529d4d7fbe76d669d18e97ddd11e27486039d802d",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/pyramidal-initial-contacts.json": "11b124ed8ad4a9de98ea0c0ef173d1dfc21623645251d4342d59ebdbcf6cf301",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/runner.executed.py": "b0b9e3e4c087b6c072160f78a511bc3c3184730e22fd5ce37ef752160cd4350e",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/contact-parameters.jsonl": "2991c27ee19ff75d15624ff0af633569cd3bec8d36386fa22cb3c79e135be263",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/execution.json": "734efb5665392ed47ffce6d94c1dcf22f303efc0f4270bf6f45ce0bb3616700f",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/protocol.json": "12ddd136b4d24b53ed12b571b8a5cd5ad086e4ce36a54245e04af2660b26043f",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/initial-state.npz": "79e066fb682af6e69ce44f26f06a9b2165cdc9eb0924124a3a3eb6e254bf4ddc",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/warnings.npz": "8126d6cebb9f12b7106803f4b550aa69b1214168a5a43d1b836bdcd5efe44c37",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/trajectory.npz": "fea51467c8001321dddea0f16eb85bf60f9184f2fdb2d507fd9a1464dfad948d",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/experiments/dynamics/runs/diag_cone_elliptic_001/prepared.json": "8b19cf62673b51b9b76d1fc0972da7602d665850f0dea69c56671371c1048406",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/reports/issue8-friction-cone-ab.md": "05d4322566dfdc5505c4174251ea1da859419d967e7b9fada95de80a5040748d",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/debug/issue8/analysis_001/comparison.json": "94f04d1ea23eca77f39d09f87b16346ab9eddbb96203d72fa2f6f98a1721322a",
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab/debug/issue8/evidence-manifest.json": "fce8bb45ccf26bbadcc8e754b5683354cd8ba0c61eb329c69ea7d5df023ea3ae",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/base_link.obj": "4cec56c02abcb161f6962d068aaf292a2b8b90c0d75ba8231dbdc2ec9ca0a413",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/base_link.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_000.obj": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_001.obj": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_002.obj": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_003.obj": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_004.obj": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_005.obj": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_006.obj": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/base_link_007.obj": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link1.obj": "27caed860ed3ec504b4158f78611947ddd84ad086e86c799ab1cc53361fee17b",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link1.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_000.obj": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_001.obj": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_002.obj": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_003.obj": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_004.obj": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_005.obj": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_006.obj": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link1_007.obj": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link2.obj": "9209b580bf938d0f2e4a5e92e3e68486a2820da3ce71948a5d43163c1ab87abd",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link2.png": "13544428266a19297d227fcf9f7a7c3ccda5504a350e2caafc9d5034ea9816b5",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link2_000.obj": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link2_001.obj": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link2_002.obj": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link2_003.obj": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link2_004.obj": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link3.obj": "2534c1a9d1604b5a78ea5122afb8f6c46f0cfb9dd5913903876e73c34f965b10",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link3.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_000.obj": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_001.obj": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_002.obj": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_003.obj": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_004.obj": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_005.obj": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_006.obj": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link3_007.obj": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link4.obj": "6c79398ffe8a2b5505f9ddea0bdbe6cc479708bc9323dffd8b14e357831f1665",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link4.png": "ebe6a584bfb4188eb0999f15ef8ba3e1696f98e5f7e6d2b5922c68ed6b52fd3e",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link4_000.obj": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link4_001.obj": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link4_002.obj": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link4_003.obj": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link4_004.obj": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link4_005.obj": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link5.obj": "ee3d1e2f9eb26cf62eeb426848daf85cd994c968ff37e9d8b1230ef38bf6dd83",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link5.png": "c4f67308ac223864064c894935e87fc23e26233e85ef3f9e6152ba7398bcd904",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_000.obj": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_001.obj": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_002.obj": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_003.obj": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_004.obj": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_005.obj": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link5_006.obj": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link6.obj": "52b69bf482e9788bd81f86436cf14c04ebec0e474876869ee4dc4b4d9eb6a19f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link6.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link6_000.obj": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link6_001.obj": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link6_002.obj": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link6_003.obj": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link6_004.obj": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link7.obj": "16455c947aa77cbd40b24f58a89a28a9324008f61c4d63210ab786b46e4e1471",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/link7.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link7_000.obj": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link7_001.obj": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link7_002.obj": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/link7_003.obj": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/flange_link.obj": "23fafefe84d7feb662c95f8f5d745a5a609f24a8694b8cd03255e23e6ea4721d",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/flange_link.png": "2e0a9a2d5f28563463f634d5b81ec2ef90d91afe472a0c6e2c6ef4082f93ec5f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/flange_link_000.obj": "872ef90145b57099acb788cd435c58c04797addf5db349e5146f50a2e4c55844",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/flange_link_001.obj": "5da3693864b65d1ef131e33079afc05cda5c9f802f4a0c7d5abcb526183f5876",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/flange_link_002.obj": "afcd8b70d1fd2e8a665c1e95520e5f7959cc17bd795ded787a0831feff224cc9",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/gripper_base.obj": "a91a229b077918f6b2105c5976b826c6fe4efd808414b7b37eaffdfbfac2604f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/gripper_base.png": "ebdbf4a658f652f7b9d91a40137a8888194b42dd76dd54dd85eec5caba1d35bc",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_base_000.obj": "093856a968a5adb2ac2c6d3236fe7fdd4609ffb030b155a2fa9e1fc944c29d3a",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_base_001.obj": "72dcfe03601873b0d0c5e9c4928e8d7582fcd4be2819712f698dca1fa78a6065",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_base_002.obj": "030ce8c7d270eec3889ccc246c806b40fa8de7b425afd25927827f43145bb286",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_base_003.obj": "8725bf15222f8ffdc03f0902b24472d5a72781018f410d57f4d5ed561d55a30e",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/gripper_link1.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/gripper_link1.png": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_link1_000.obj": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_link1_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/gripper_link2.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/visual/gripper_link2.png": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_link2_000.obj": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916",
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/meshes/collision/gripper_link2_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+  },
+  "script_sha256": "23f2ae827a29cc44667e08616a8d2a9ad3fc880b43ca6cb34b55589812d67fd5",
+  "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+  "mujoco": "3.2.3",
+  "numpy": "1.26.4",
+  "mass_kg": 0.1,
+  "mg_N": 0.9810000000000001,
+  "dt_s": 0.001,
+  "t0_s": 29.128000000012616,
+  "pretable_rows": 4415,
+  "first_table_row": 4415,
+  "first_table_elapsed_s": 4.415999999999908,
+  "table_sample_excluded": true,
+  "window_definition": "post-step elapsed ticks [0,141),[141,1328),[1328,2164),[2164,4416); t0 kept separately",
+  "new_mj_steps": 0,
+  "force_solves": 0,
+  "kinematic_evaluations": 4416,
+  "forbidden_calls": 0,
+  "kinematics_vs_saved_pose_max_error_m": 0.0,
+  "world_force_projection_error_N": 2.220446049250313e-16,
+  "missing_fields": [
+    "integration-time contact impulses/forces",
+    "original per-step efc_state and solver regularization arrays",
+    "material-point contact identity"
+  ],
+  "initial": {
+    "row": -1,
+    "elapsed_s": 0.0,
+    "cube_world_vz_m_s": 2.04285254282597e-06,
+    "gripper_world_vz_m_s": -1.0752902589523204e-05,
+    "relative_world_vz_m_s": 1.2795755132349173e-05,
+    "cube_world_delta_z_m": 0.0,
+    "gripper_world_delta_z_m": 0.0,
+    "relative_world_z_drop_m": 0.0,
+    "Fz_N": 0.8421779981325905,
+    "Fz_minus_mg_N": -0.13882200186740956,
+    "relative_rotation_rad": 5.960464477539064e-08,
+    "world_rotation_rad": 5.960464477539064e-08,
+    "cube_angular_speed_rad_s": 0.013846172843325916,
+    "relative_angular_speed_rad_s": 0.019746305773773436,
+    "max_penetration_m": 0.0007375085307752765,
+    "actual_slide_width_m": 0.03852920952384466,
+    "target_slide_width_m": 0.03584882236975663,
+    "finger1_q_m": 0.019264224704762786,
+    "finger2_q_m": -0.01926498481908187,
+    "arm_error_max_rad": 4.863843359792508e-06,
+    "coupling_m": 7.60114319084404e-07,
+    "geometric_vertical_capacity_N": 2.133318477823873,
+    "rho_max": 0.6811101152995342,
+    "slip_speed_max_m_s": 0.0004754382953904703,
+    "contact_count": 2,
+    "torque_world_Nm": [
+      -1.9142185204896328e-05,
+      9.937932450690325e-05,
+      0.0004978046906714603
+    ],
+    "cube_angular_velocity_world_rad_s": [
+      1.246877223584715e-05,
+      -6.940929310755605e-05,
+      -0.013845993257509745
+    ],
+    "finger1_Fn_N": 1.0667124276760744,
+    "finger1_count": 1,
+    "finger1_Fz_normal_N": 9.386115345151214e-06,
+    "finger1_Fz_tangent_N": 0.42052405121819136,
+    "finger1_Fz_N": 0.42053343733353654,
+    "finger2_Fn_N": 1.0666075117783782,
+    "finger2_count": 1,
+    "finger2_Fz_normal_N": -1.0847649468214678e-05,
+    "finger2_Fz_tangent_N": 0.42165540844852223,
+    "finger2_Fz_N": 0.421644560799054
+  },
+  "windows": [
+    {
+      "window": 1,
+      "row_start": 0,
+      "row_end": 139,
+      "samples": 140,
+      "sum_step_durations_s": 0.14,
+      "first_sample_elapsed_s": 0.0010000000000012221,
+      "last_sample_elapsed_s": 0.1400000000001711,
+      "initial_boundary_elapsed_s": 0.0,
+      "relative_drop_start_m": 0.0,
+      "relative_drop_end_m": 0.000996591165679267,
+      "relative_vz_start_m_s": 1.2795755132349173e-05,
+      "relative_vz_end_m_s": -0.008973424970143067,
+      "cube_vz_start_m_s": 2.04285254282597e-06,
+      "cube_vz_end_m_s": -0.011342240431934275,
+      "fraction_samples_Fz_above_mg": 0.75,
+      "approximate_momentum": {
+        "measured_world_delta_v_m_s": -0.0113442832844771,
+        "right_post_force_delta_v_m_s": -0.010374397986588268,
+        "left_shifted_force_delta_v_m_s": -0.011995773380716852,
+        "trapezoid_force_delta_v_m_s": -0.011185085683652559,
+        "right_residual_m_s": 0.0009698852978888318,
+        "left_residual_m_s": -0.0006514900962397516,
+        "limitation": "Endpoint instantaneous-force quadrature, NOT integration-time impulse or causal closure"
+      },
+      "row_statistics": {
+        "Fz_N": {
+          "min": 0.7279456998054978,
+          "mean": 0.9735897157238655,
+          "median": 0.9881755673309703,
+          "max": 1.0064715477605963
+        },
+        "Fz_minus_mg_N": {
+          "min": -0.25305430019450226,
+          "mean": -0.007410284276134478,
+          "median": 0.007175567330970245,
+          "max": 0.025471547760596236
+        },
+        "relative_world_vz_m_s": {
+          "min": -0.009619136502920527,
+          "mean": -0.007118546142961493,
+          "median": -0.007342421381161412,
+          "max": -0.0007458599615340342
+        },
+        "cube_world_vz_m_s": {
+          "min": -0.016683715536309044,
+          "mean": -0.01310059204045822,
+          "median": -0.013615442022184183,
+          "max": -0.0013863511484320638
+        },
+        "max_penetration_m": {
+          "min": 0.0007375429405509731,
+          "mean": 0.0007726525602210505,
+          "median": 0.000780990413928434,
+          "max": 0.0007846441955951663
+        },
+        "relative_rotation_rad": {
+          "min": 4.767952468458303e-06,
+          "mean": 0.0007645363725257379,
+          "median": 0.0005540277284036781,
+          "max": 0.002093127633338873
+        },
+        "world_rotation_rad": {
+          "min": 5.834142395335804e-06,
+          "mean": 0.0013846036660726917,
+          "median": 0.001282264058004967,
+          "max": 0.0045480567998463645
+        },
+        "cube_angular_speed_rad_s": {
+          "min": 0.004255430348689068,
+          "mean": 0.10100825679065721,
+          "median": 0.0891594087201836,
+          "max": 0.291603909031117
+        },
+        "torque_world_Nm": {
+          "min": [
+            -0.0011033242199144679,
+            -0.006935591594018696,
+            -0.0014853008479162617
+          ],
+          "mean": [
+            -3.853677563341567e-06,
+            7.741976234509043e-06,
+            -1.3808295607550416e-06
+          ],
+          "median": [
+            -2.3375431448387825e-05,
+            -7.575014122577833e-05,
+            -6.401410246243376e-05
+          ],
+          "max": [
+            0.0010551214512249715,
+            0.006425790637413919,
+            0.001480980207406982
+          ]
+        },
+        "actual_slide_width_m": {
+          "min": 0.038441760533144326,
+          "mean": 0.03846149490145051,
+          "median": 0.0384447613042745,
+          "max": 0.0385288862692435
+        },
+        "target_slide_width_m": {
+          "min": 0.03584882236975663,
+          "mean": 0.03584882236975663,
+          "median": 0.03584882236975663,
+          "max": 0.03584882236975663
+        },
+        "coupling_m": {
+          "min": 3.609760435008269e-09,
+          "mean": 1.448206643878893e-06,
+          "median": 1.7783468608222053e-06,
+          "max": 2.5867787671815523e-06
+        },
+        "arm_error_max_rad": {
+          "min": 5.718678217969675e-06,
+          "mean": 0.0013339046129886925,
+          "median": 0.0014713150472505099,
+          "max": 0.002375739153852141
+        },
+        "contact_count": {
+          "min": 2,
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 2
+        },
+        "geometric_vertical_capacity_N": {
+          "min": 2.0721614777837134,
+          "mean": 2.085900825589295,
+          "median": 2.0765162776282793,
+          "max": 2.1335542085312356
+        }
+      },
+      "fingers": {
+        "1": {
+          "positive_contact_samples": 140,
+          "geometric_boundary_samples": 0,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.012388191644296638,
+              "mean": -5.970890272781048e-05,
+              "median": -0.002905060036142089,
+              "max": 0.012413162399383238
+            },
+            "point_cube_local_m_y": {
+              "min": 0.019488223616898153,
+              "mean": 0.019497184190638634,
+              "median": 0.019493014874676008,
+              "max": 0.01951878935454711
+            },
+            "point_cube_local_m_z": {
+              "min": -0.016125987914641034,
+              "mean": -0.010177633205527298,
+              "median": -0.009236918849387755,
+              "max": -0.006137326130285615
+            },
+            "normal_on_cube_z": {
+              "min": -0.0001881766390736234,
+              "mean": 2.358181875429887e-05,
+              "median": -2.1730041048378496e-05,
+              "max": 0.00043007351147100953
+            },
+            "rho_elliptic": {
+              "min": 0.23180246786098646,
+              "mean": 0.7305942491459789,
+              "median": 0.7114668581600911,
+              "max": 0.8983584251153099
+            },
+            "slip_speed_m_s": {
+              "min": 0.0008768706534686073,
+              "mean": 0.007246770214468344,
+              "median": 0.00705686154378164,
+              "max": 0.01267329710336178
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.012563102527944639,
+              "mean": -0.007178846300787905,
+              "median": -0.006985044746708662,
+              "max": -0.0008106039707301424
+            },
+            "lever_world_m_z": {
+              "min": -0.016144740376192512,
+              "mean": -0.010178613292345316,
+              "median": -0.009236509951428967,
+              "max": -0.006139847775130491
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.0428931811793727,
+            "Fz_normal_N": 2.431408735505947e-05,
+            "Fz_tangent_N": 0.5054886289503144,
+            "Fz_N": 0.5055129430376695
+          }
+        },
+        "2": {
+          "positive_contact_samples": 140,
+          "geometric_boundary_samples": 0,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.012402809485549816,
+              "mean": 1.2442113608057048e-05,
+              "median": 0.00027213214299663907,
+              "max": 0.012402720327231522
+            },
+            "point_cube_local_m_y": {
+              "min": -0.019521380002612446,
+              "mean": -0.019497570680482836,
+              "median": -0.01949448475648929,
+              "max": -0.01948851589575767
+            },
+            "point_cube_local_m_z": {
+              "min": -0.016400776777797336,
+              "mean": -0.009472196892938295,
+              "median": -0.008995714826396082,
+              "max": -0.005818206691319275
+            },
+            "normal_on_cube_z": {
+              "min": -0.0004300735114641066,
+              "mean": -2.0328178965167402e-05,
+              "median": 1.878752251027424e-05,
+              "max": 0.00020896001793171783
+            },
+            "rho_elliptic": {
+              "min": 0.23804648510199217,
+              "mean": 0.7071924547637571,
+              "median": 0.701937075937073,
+              "max": 0.9056311106199764
+            },
+            "slip_speed_m_s": {
+              "min": 0.0007137145026160584,
+              "mean": 0.0071990753789884,
+              "median": 0.007294497301656464,
+              "max": 0.01282413842547373
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.012777928814939592,
+              "mean": -0.007135927231182674,
+              "median": -0.00723368606378307,
+              "max": -0.0006811063426820983
+            },
+            "lever_world_m_z": {
+              "min": -0.016401660654426276,
+              "mean": -0.009471896961792505,
+              "median": -0.00898877709674141,
+              "max": -0.005814787487499057
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.0430042526432537,
+            "Fz_normal_N": -2.0893964467511116e-05,
+            "Fz_tangent_N": 0.46809766665066355,
+            "Fz_N": 0.4680767726861961
+          }
+        }
+      }
+    },
+    {
+      "window": 2,
+      "row_start": 140,
+      "row_end": 1326,
+      "samples": 1187,
+      "sum_step_durations_s": 1.187,
+      "first_sample_elapsed_s": 0.14100000000017232,
+      "last_sample_elapsed_s": 1.3270000000016218,
+      "initial_boundary_elapsed_s": 0.1400000000001711,
+      "relative_drop_start_m": 0.000996591165679267,
+      "relative_drop_end_m": 0.01151592379042854,
+      "relative_vz_start_m_s": -0.008973424970143067,
+      "relative_vz_end_m_s": -0.0074971356479195325,
+      "cube_vz_start_m_s": -0.011342240431934275,
+      "cube_vz_end_m_s": -0.007499109734641437,
+      "fraction_samples_Fz_above_mg": 0.7556866048862679,
+      "approximate_momentum": {
+        "measured_world_delta_v_m_s": 0.0038431306972928373,
+        "right_post_force_delta_v_m_s": 0.0035284497941503036,
+        "left_shifted_force_delta_v_m_s": 0.003753230620719432,
+        "trapezoid_force_delta_v_m_s": 0.003640840207434868,
+        "right_residual_m_s": -0.00031468090314253376,
+        "left_residual_m_s": -8.990007657340513e-05,
+        "limitation": "Endpoint instantaneous-force quadrature, NOT integration-time impulse or causal closure"
+      },
+      "row_statistics": {
+        "Fz_N": {
+          "min": 0.6292353976459281,
+          "mean": 0.981297257775413,
+          "median": 0.9860053269522029,
+          "max": 1.113007826987559
+        },
+        "Fz_minus_mg_N": {
+          "min": -0.35176460235407203,
+          "mean": 0.00029725777541283094,
+          "median": 0.005005326952202793,
+          "max": 0.13200782698755886
+        },
+        "relative_world_vz_m_s": {
+          "min": -0.021450707916079958,
+          "mean": -0.008862116906936732,
+          "median": -0.008048644946904148,
+          "max": -0.006829814966109317
+        },
+        "cube_world_vz_m_s": {
+          "min": -0.020869837875312276,
+          "mean": -0.008941952976157673,
+          "median": -0.008104920271501038,
+          "max": -0.006818754347712591
+        },
+        "max_penetration_m": {
+          "min": 0.0007288007598040436,
+          "mean": 0.0007722938318632874,
+          "median": 0.0007730906689139925,
+          "max": 0.0009094371868861563
+        },
+        "relative_rotation_rad": {
+          "min": 4.5604048921585925e-05,
+          "mean": 0.004157022031924656,
+          "median": 0.0021203369732741705,
+          "max": 0.015586239477572482
+        },
+        "world_rotation_rad": {
+          "min": 0.00034981706968179954,
+          "mean": 0.006199785379809004,
+          "median": 0.004051864222740942,
+          "max": 0.01897565521128537
+        },
+        "cube_angular_speed_rad_s": {
+          "min": 0.007504017405339042,
+          "mean": 0.20665118629673287,
+          "median": 0.14687614981571517,
+          "max": 1.0757847053203193
+        },
+        "torque_world_Nm": {
+          "min": [
+            -0.004027592544980504,
+            -0.00832292870848109,
+            -0.0018676865021939291
+          ],
+          "mean": [
+            7.600173418442525e-07,
+            -2.184686954957942e-06,
+            1.092297981261007e-06
+          ],
+          "median": [
+            1.2115666146198141e-05,
+            5.146501651746328e-05,
+            5.989049708130401e-05
+          ],
+          "max": [
+            0.005976823390377454,
+            0.0074477175188268,
+            0.0017221251357538696
+          ]
+        },
+        "actual_slide_width_m": {
+          "min": 0.038440141654481855,
+          "mean": 0.03847494157090216,
+          "median": 0.0384681499992158,
+          "max": 0.038558325260525786
+        },
+        "target_slide_width_m": {
+          "min": 0.03584882236975663,
+          "mean": 0.035848822369756624,
+          "median": 0.03584882236975663,
+          "max": 0.03584882236975663
+        },
+        "coupling_m": {
+          "min": 1.046423041967115e-09,
+          "mean": 7.922474027568396e-07,
+          "median": 7.281908393913517e-07,
+          "max": 2.8099840920295382e-06
+        },
+        "arm_error_max_rad": {
+          "min": 0.002382113226549354,
+          "mean": 0.0026577349656475074,
+          "median": 0.0026687147986990123,
+          "max": 0.0026791444791716135
+        },
+        "contact_count": {
+          "min": 2,
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 2
+        },
+        "geometric_vertical_capacity_N": {
+          "min": 1.363487772880152,
+          "mean": 2.0956964138668392,
+          "median": 2.094184210949796,
+          "max": 2.1773375227394483
+        }
+      },
+      "fingers": {
+        "1": {
+          "positive_contact_samples": 1187,
+          "geometric_boundary_samples": 5,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.012393196307554788,
+              "mean": 4.3292983178053976e-05,
+              "median": 2.7645628250406536e-05,
+              "max": 0.012554155129328348
+            },
+            "point_cube_local_m_y": {
+              "min": 0.01948033300102074,
+              "mean": 0.019500544399563453,
+              "median": 0.019500281903149876,
+              "max": 0.019535563447645343
+            },
+            "point_cube_local_m_z": {
+              "min": -0.015339211457149667,
+              "mean": -0.004319535980534575,
+              "median": -0.004824217038575498,
+              "max": 0.003605746345965597
+            },
+            "normal_on_cube_z": {
+              "min": -0.40331085190135885,
+              "mean": -0.0015689376472032464,
+              "median": 0.00012167075730138552,
+              "max": 0.0009156307227967069
+            },
+            "rho_elliptic": {
+              "min": 0.2341357547601365,
+              "mean": 0.6735664438897887,
+              "median": 0.6685767526957703,
+              "max": 1.0000000000000002
+            },
+            "slip_speed_m_s": {
+              "min": 0.001968456267942251,
+              "mean": 0.009004346056448771,
+              "median": 0.008019515996989107,
+              "max": 0.03320968428022438
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.03320669600524986,
+              "mean": -0.008889861390638862,
+              "median": -0.007944790143332433,
+              "max": -0.0016065742815475307
+            },
+            "lever_world_m_z": {
+              "min": -0.015343701692537903,
+              "mean": -0.004321895041910588,
+              "median": -0.004824006755428295,
+              "max": 0.00361338502839334
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.0497086921340075,
+            "Fz_normal_N": -0.001556657368051394,
+            "Fz_tangent_N": 0.4734455654769563,
+            "Fz_N": 0.47188890810890494
+          }
+        },
+        "2": {
+          "positive_contact_samples": 1187,
+          "geometric_boundary_samples": 7,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.012408888313393795,
+              "mean": -4.491870048404212e-05,
+              "median": -0.0009651869060245585,
+              "max": 0.012513392955564431
+            },
+            "point_cube_local_m_y": {
+              "min": -0.019526363065572785,
+              "mean": -0.019501960793184607,
+              "median": -0.01950118700182636,
+              "max": -0.01947584307897921
+            },
+            "point_cube_local_m_z": {
+              "min": -0.015485019190820022,
+              "mean": -0.005015355318249392,
+              "median": -0.005798841991476571,
+              "max": 0.004743894046045873
+            },
+            "normal_on_cube_z": {
+              "min": -0.37553953747191393,
+              "mean": -0.0017102455078156116,
+              "median": -0.00012915755284944035,
+              "max": 0.0016059201594597616
+            },
+            "rho_elliptic": {
+              "min": 0.24120276123314352,
+              "mean": 0.6987095152026547,
+              "median": 0.7020378202153564,
+              "max": 1.0000000000000002
+            },
+            "slip_speed_m_s": {
+              "min": 0.0022423833345570324,
+              "mean": 0.009004270739694812,
+              "median": 0.008021816439246593,
+              "max": 0.030431646198158174
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.030394868380265023,
+              "mean": -0.00889335242210009,
+              "median": -0.007955376898471193,
+              "max": -0.0005727345581531607
+            },
+            "lever_world_m_z": {
+              "min": -0.015489693915823777,
+              "mean": -0.0050178366901442,
+              "median": -0.005779782390603477,
+              "max": 0.00474911393078381
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.049639954845958,
+            "Fz_normal_N": -0.0016982147592010252,
+            "Fz_tangent_N": 0.5111065644257091,
+            "Fz_N": 0.509408349666508
+          }
+        }
+      }
+    },
+    {
+      "window": 3,
+      "row_start": 1327,
+      "row_end": 2162,
+      "samples": 836,
+      "sum_step_durations_s": 0.836,
+      "first_sample_elapsed_s": 1.328000000001623,
+      "last_sample_elapsed_s": 2.1630000000026435,
+      "initial_boundary_elapsed_s": 1.3270000000016218,
+      "relative_drop_start_m": 0.01151592379042854,
+      "relative_drop_end_m": 0.01808243945541832,
+      "relative_vz_start_m_s": -0.0074971356479195325,
+      "relative_vz_end_m_s": -0.008475094563878321,
+      "cube_vz_start_m_s": -0.007499109734641437,
+      "cube_vz_end_m_s": -0.008483588021756448,
+      "fraction_samples_Fz_above_mg": 0.5980861244019139,
+      "approximate_momentum": {
+        "measured_world_delta_v_m_s": -0.0009844782871150102,
+        "right_post_force_delta_v_m_s": -0.0008379331584868098,
+        "left_shifted_force_delta_v_m_s": -0.0009842969625102238,
+        "trapezoid_force_delta_v_m_s": -0.0009111150604985169,
+        "right_residual_m_s": 0.0001465451286282003,
+        "left_residual_m_s": 1.813246047863322e-07,
+        "limitation": "Endpoint instantaneous-force quadrature, NOT integration-time impulse or causal closure"
+      },
+      "row_statistics": {
+        "Fz_N": {
+          "min": 0.8029945199189454,
+          "mean": 0.9808997687609465,
+          "median": 0.9831124657415231,
+          "max": 1.006688367479179
+        },
+        "Fz_minus_mg_N": {
+          "min": -0.17800548008105466,
+          "mean": -0.00010023123905344617,
+          "median": 0.002112465741523073,
+          "max": 0.025688367479178797
+        },
+        "relative_world_vz_m_s": {
+          "min": -0.010776243508098944,
+          "mean": -0.007854683816789998,
+          "median": -0.007739622070068106,
+          "max": -0.0073148495515711395
+        },
+        "cube_world_vz_m_s": {
+          "min": -0.010667896867234678,
+          "mean": -0.007851925522086673,
+          "median": -0.007734206291295091,
+          "max": -0.007329970257900647
+        },
+        "max_penetration_m": {
+          "min": 0.0007983162526947473,
+          "mean": 0.0008180716847152815,
+          "median": 0.0008176368015036341,
+          "max": 0.0008410484694044509
+        },
+        "relative_rotation_rad": {
+          "min": 0.0015873422605043573,
+          "mean": 0.011962616739083894,
+          "median": 0.011460871802739714,
+          "max": 0.03386396962082344
+        },
+        "world_rotation_rad": {
+          "min": 0.0029585618253458444,
+          "mean": 0.013243118508996527,
+          "median": 0.011802882240832022,
+          "max": 0.036556510360371754
+        },
+        "cube_angular_speed_rad_s": {
+          "min": 0.014744291909544424,
+          "mean": 0.1205734606723668,
+          "median": 0.10625972476822382,
+          "max": 0.44611711759822786
+        },
+        "torque_world_Nm": {
+          "min": [
+            -0.0011850610328628455,
+            -0.002469982348595588,
+            -0.0019705943227949045
+          ],
+          "mean": [
+            5.248094044130258e-07,
+            -7.128538062676046e-06,
+            7.035980646414533e-07
+          ],
+          "median": [
+            5.412991163195567e-06,
+            0.0008324868405698606,
+            -1.8990100989303704e-05
+          ],
+          "max": [
+            0.0006527510429452967,
+            0.006674201213071924,
+            0.0017420014460237275
+          ]
+        },
+        "actual_slide_width_m": {
+          "min": 0.0384506681348222,
+          "mean": 0.038529230513096424,
+          "median": 0.038534429841596496,
+          "max": 0.03860829886000151
+        },
+        "target_slide_width_m": {
+          "min": 0.03584882236975663,
+          "mean": 0.035848822369756624,
+          "median": 0.03584882236975663,
+          "max": 0.03584882236975663
+        },
+        "coupling_m": {
+          "min": 1.1736717500654414e-10,
+          "mean": 2.3500167501721437e-07,
+          "median": 1.9510474191450355e-07,
+          "max": 9.926530450642124e-07
+        },
+        "arm_error_max_rad": {
+          "min": 0.002660485915803479,
+          "mean": 0.002667592979447184,
+          "median": 0.0026679440481883754,
+          "max": 0.0026701584570336667
+        },
+        "contact_count": {
+          "min": 2,
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 2
+        },
+        "geometric_vertical_capacity_N": {
+          "min": 2.078422563505688,
+          "mean": 2.1393935532754074,
+          "median": 2.1425337778863494,
+          "max": 2.2075309146694817
+        }
+      },
+      "fingers": {
+        "1": {
+          "positive_contact_samples": 836,
+          "geometric_boundary_samples": 0,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.009738942039266459,
+              "mean": 0.00029917614797438417,
+              "median": -0.006112127059230449,
+              "max": 0.009895435998244774
+            },
+            "point_cube_local_m_y": {
+              "min": 0.01950223170838663,
+              "mean": 0.019507492759590312,
+              "median": 0.019506778605948558,
+              "max": 0.019518708616256403
+            },
+            "point_cube_local_m_z": {
+              "min": -0.005146950919194596,
+              "mean": -0.002100007886817367,
+              "median": -0.0021086788728136977,
+              "max": 0.001272211240953687
+            },
+            "normal_on_cube_z": {
+              "min": -0.02010282398093249,
+              "mean": -0.01084601890552068,
+              "median": -0.01133782134412417,
+              "max": -0.0013671897328419824
+            },
+            "rho_elliptic": {
+              "min": 0.6452517842319689,
+              "mean": 0.8814145027769035,
+              "median": 0.8967249695825368,
+              "max": 0.9183236951371108
+            },
+            "slip_speed_m_s": {
+              "min": 0.003209907776053284,
+              "mean": 0.007222002214716126,
+              "median": 0.007200275182415833,
+              "max": 0.010557697024755773
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.010155133437509562,
+              "mean": -0.0071150580008130055,
+              "median": -0.007126033340259883,
+              "max": -0.003203399230453022
+            },
+            "lever_world_m_z": {
+              "min": -0.005141440620097609,
+              "mean": -0.0018839225549431267,
+              "median": -0.0018780398876254017,
+              "max": 0.00145404880926997
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.0643761126922477,
+            "Fz_normal_N": -0.011639043263102423,
+            "Fz_tangent_N": 0.7734613008039173,
+            "Fz_N": 0.7618222575408148
+          }
+        },
+        "2": {
+          "positive_contact_samples": 836,
+          "geometric_boundary_samples": 0,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.012280792307780735,
+              "mean": -0.00015126099342962753,
+              "median": -0.003117857264160446,
+              "max": 0.012643649086356854
+            },
+            "point_cube_local_m_y": {
+              "min": -0.019477865343537303,
+              "mean": -0.01945916758470875,
+              "median": -0.01945929217875798,
+              "max": -0.01943787235580349
+            },
+            "point_cube_local_m_z": {
+              "min": 0.004740081563732765,
+              "mean": 0.008196426272515593,
+              "median": 0.008196032341851678,
+              "max": 0.012064365355384942
+            },
+            "normal_on_cube_z": {
+              "min": 0.0013484000656805366,
+              "mean": 0.010841644575788439,
+              "median": 0.01133782134412972,
+              "max": 0.02010282398095477
+            },
+            "rho_elliptic": {
+              "min": 0.11563444200467171,
+              "mean": 0.5267193793552554,
+              "median": 0.5550007510816168,
+              "max": 0.5863903288005358
+            },
+            "slip_speed_m_s": {
+              "min": 0.004206191928666934,
+              "mean": 0.008758281025744644,
+              "median": 0.008647019424926832,
+              "max": 0.015320528636863655
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.015313744982546174,
+              "mean": -0.00868356430554111,
+              "median": -0.008586358063143451,
+              "max": -0.0037936503679520716
+            },
+            "lever_world_m_z": {
+              "min": 0.004680443040527227,
+              "mean": 0.007981411735175028,
+              "median": 0.0079797415813192,
+              "max": 0.011368197038578859
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.075037839520733,
+            "Fz_normal_N": 0.011787939273550204,
+            "Fz_tangent_N": 0.2072895719465816,
+            "Fz_N": 0.2190775112201318
+          }
+        }
+      }
+    },
+    {
+      "window": 4,
+      "row_start": 2163,
+      "row_end": 4414,
+      "samples": 2252,
+      "sum_step_durations_s": 2.2520000000000002,
+      "first_sample_elapsed_s": 2.1640000000026447,
+      "last_sample_elapsed_s": 4.41499999999991,
+      "initial_boundary_elapsed_s": 2.1630000000026435,
+      "relative_drop_start_m": 0.01808243945541832,
+      "relative_drop_end_m": 0.04085846207281146,
+      "relative_vz_start_m_s": -0.008475094563878321,
+      "relative_vz_end_m_s": -0.08446442775413639,
+      "cube_vz_start_m_s": -0.008483588021756448,
+      "cube_vz_end_m_s": -0.07992438192025372,
+      "fraction_samples_Fz_above_mg": 0.6083481349911191,
+      "approximate_momentum": {
+        "measured_world_delta_v_m_s": -0.07144079389849728,
+        "right_post_force_delta_v_m_s": -0.08168219634839553,
+        "left_shifted_force_delta_v_m_s": -0.0726809843421352,
+        "trapezoid_force_delta_v_m_s": -0.07718159034526537,
+        "right_residual_m_s": -0.010241402449898254,
+        "left_residual_m_s": -0.0012401904436379202,
+        "limitation": "Endpoint instantaneous-force quadrature, NOT integration-time impulse or causal closure"
+      },
+      "row_statistics": {
+        "Fz_N": {
+          "min": -0.2558979954292014,
+          "mean": 0.9773729042474069,
+          "median": 0.9818103375004954,
+          "max": 1.3597802419327443
+        },
+        "Fz_minus_mg_N": {
+          "min": -1.2368979954292014,
+          "mean": -0.0036270957525930524,
+          "median": 0.0008103375004953617,
+          "max": 0.3787802419327442
+        },
+        "relative_world_vz_m_s": {
+          "min": -0.08446442775413639,
+          "mean": -0.01011368746777128,
+          "median": -0.008052089099646578,
+          "max": -0.0067547421609880625
+        },
+        "cube_world_vz_m_s": {
+          "min": -0.07992438192025372,
+          "mean": -0.010085172726206432,
+          "median": -0.0080669473392991,
+          "max": -0.006229234018637481
+        },
+        "max_penetration_m": {
+          "min": 0.0006460067972953955,
+          "mean": 0.0007638280507825041,
+          "median": 0.0007391163704646999,
+          "max": 0.001958533708104217
+        },
+        "relative_rotation_rad": {
+          "min": 0.028370933568216936,
+          "mean": 0.34502958001989703,
+          "median": 0.41521379399795727,
+          "max": 0.6286521213299814
+        },
+        "world_rotation_rad": {
+          "min": 0.030997621932906113,
+          "mean": 0.34803955504073697,
+          "median": 0.41805568373910573,
+          "max": 0.6316604437969285
+        },
+        "cube_angular_speed_rad_s": {
+          "min": 0.0014584561381428376,
+          "mean": 0.5425489318775485,
+          "median": 0.4227373595746048,
+          "max": 4.397363244795939
+        },
+        "torque_world_Nm": {
+          "min": [
+            -0.011834879232905132,
+            -0.007625412460303285,
+            -0.011684108789287561
+          ],
+          "mean": [
+            4.9141935706692965e-05,
+            1.2049035825451793e-05,
+            2.7064833523899377e-05
+          ],
+          "median": [
+            1.2245539094887792e-07,
+            6.874162447843761e-05,
+            -1.2772106195292447e-07
+          ],
+          "max": [
+            0.01859492303378832,
+            0.008350258804262862,
+            0.012533841389347952
+          ]
+        },
+        "actual_slide_width_m": {
+          "min": 0.03807126524753705,
+          "mean": 0.038630753717619065,
+          "median": 0.03862974693305948,
+          "max": 0.038922669816997046
+        },
+        "target_slide_width_m": {
+          "min": 0.03584882236975663,
+          "mean": 0.035848822369756624,
+          "median": 0.03584882236975663,
+          "max": 0.03584882236975663
+        },
+        "coupling_m": {
+          "min": 5.695800948946061e-10,
+          "mean": 3.9855701474052145e-06,
+          "median": 9.654992466807955e-07,
+          "max": 3.993822517714407e-05
+        },
+        "arm_error_max_rad": {
+          "min": 0.0024398792612290165,
+          "mean": 0.0026174432643296095,
+          "median": 0.0026300481303576095,
+          "max": 0.0027214967520521327
+        },
+        "contact_count": {
+          "min": 2,
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 2
+        },
+        "geometric_vertical_capacity_N": {
+          "min": 0.19818320109471593,
+          "mean": 2.1653546574958233,
+          "median": 2.2241834749876643,
+          "max": 2.376855656127037
+        }
+      },
+      "fingers": {
+        "1": {
+          "positive_contact_samples": 2252,
+          "geometric_boundary_samples": 56,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.011909196074121976,
+              "mean": 0.005756509520581838,
+              "median": 0.009795492035400796,
+              "max": 0.015652224196180058
+            },
+            "point_cube_local_m_y": {
+              "min": 0.019371392932318116,
+              "mean": 0.019526883154514382,
+              "median": 0.01953717253798582,
+              "max": 0.019619046892617367
+            },
+            "point_cube_local_m_z": {
+              "min": 0.0007705823303940443,
+              "mean": 0.014359395220476167,
+              "median": 0.017948889163406354,
+              "max": 0.01955633968360845
+            },
+            "normal_on_cube_z": {
+              "min": -0.8739811117452552,
+              "mean": -0.026657609378356865,
+              "median": -5.8324709035979075e-06,
+              "max": 0.01699093483836209
+            },
+            "rho_elliptic": {
+              "min": 0.17120454331177315,
+              "mean": 0.577224240133851,
+              "median": 0.4590338212786569,
+              "max": 1.0000000000000002
+            },
+            "slip_speed_m_s": {
+              "min": 0.00029867404536794407,
+              "mean": 0.010999457556380236,
+              "median": 0.007598194341077583,
+              "max": 0.10720931166288176
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.09823208578952822,
+              "mean": -0.010330057536610664,
+              "median": -0.0075583507920922504,
+              "max": 0.008173215478039819
+            },
+            "lever_world_m_z": {
+              "min": 0.0014163177411424255,
+              "mean": 0.015768844231255852,
+              "median": 0.019826389763761207,
+              "max": 0.02476855167158501
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.096549318413077,
+            "Fz_normal_N": -0.025171586745420547,
+            "Fz_tangent_N": 0.5360519755273621,
+            "Fz_N": 0.5108803887819415
+          }
+        },
+        "2": {
+          "positive_contact_samples": 2252,
+          "geometric_boundary_samples": 19,
+          "contact_statistics": {
+            "point_cube_local_m_x": {
+              "min": -0.012064542204853526,
+              "mean": 0.007252284760653499,
+              "median": 0.009978334247875264,
+              "max": 0.01565897279898863
+            },
+            "point_cube_local_m_y": {
+              "min": -0.01957314996523501,
+              "mean": -0.019520856723560433,
+              "median": -0.019552003248202995,
+              "max": -0.018762363384357925
+            },
+            "point_cube_local_m_z": {
+              "min": 0.006197186051406189,
+              "mean": 0.014558499932830227,
+              "median": 0.015031914700515988,
+              "max": 0.019799913327968398
+            },
+            "normal_on_cube_z": {
+              "min": -0.8349456711424783,
+              "mean": -0.005659441765269294,
+              "median": -2.0547900560970002e-05,
+              "max": 0.02981953801518878
+            },
+            "rho_elliptic": {
+              "min": 0.11315509667875014,
+              "mean": 0.5397049244878095,
+              "median": 0.5397273558437548,
+              "max": 1.0000000000000002
+            },
+            "slip_speed_m_s": {
+              "min": 0.0010890077329701077,
+              "mean": 0.009709077021153064,
+              "median": 0.008200859042386278,
+              "max": 0.1539093663397821
+            },
+            "tangential_slip_m_s_z": {
+              "min": -0.04622447775300701,
+              "mean": -0.008880687105268608,
+              "median": -0.007942567831900213,
+              "max": 0.003472399655428279
+            },
+            "lever_world_m_z": {
+              "min": 0.0064573060960000095,
+              "mean": 0.016581453883809286,
+              "median": 0.016075861903829217,
+              "max": 0.024881432952675323
+            }
+          },
+          "row_mean_force": {
+            "Fn_N": 1.1061827553780863,
+            "Fz_normal_N": -0.003949366125361496,
+            "Fz_tangent_N": 0.47044188159082706,
+            "Fz_N": 0.46649251546546555
+          }
+        }
+      }
+    }
+  ],
+  "key_samples": {
+    "0": {
+      "row": -1,
+      "elapsed_s": 0.0,
+      "cube_world_vz_m_s": 2.04285254282597e-06,
+      "gripper_world_vz_m_s": -1.0752902589523204e-05,
+      "relative_world_vz_m_s": 1.2795755132349173e-05,
+      "cube_world_delta_z_m": 0.0,
+      "gripper_world_delta_z_m": 0.0,
+      "relative_world_z_drop_m": 0.0,
+      "Fz_N": 0.8421779981325905,
+      "Fz_minus_mg_N": -0.13882200186740956,
+      "relative_rotation_rad": 5.960464477539064e-08,
+      "world_rotation_rad": 5.960464477539064e-08,
+      "cube_angular_speed_rad_s": 0.013846172843325916,
+      "relative_angular_speed_rad_s": 0.019746305773773436,
+      "max_penetration_m": 0.0007375085307752765,
+      "actual_slide_width_m": 0.03852920952384466,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019264224704762786,
+      "finger2_q_m": -0.01926498481908187,
+      "arm_error_max_rad": 4.863843359792508e-06,
+      "coupling_m": 7.60114319084404e-07,
+      "geometric_vertical_capacity_N": 2.133318477823873,
+      "rho_max": 0.6811101152995342,
+      "slip_speed_max_m_s": 0.0004754382953904703,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        -1.9142185204896328e-05,
+        9.937932450690325e-05,
+        0.0004978046906714603
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        1.246877223584715e-05,
+        -6.940929310755605e-05,
+        -0.013845993257509745
+      ],
+      "finger1_Fn_N": 1.0667124276760744,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": 9.386115345151214e-06,
+      "finger1_Fz_tangent_N": 0.42052405121819136,
+      "finger1_Fz_N": 0.42053343733353654,
+      "finger2_Fn_N": 1.0666075117783782,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -1.0847649468214678e-05,
+      "finger2_Fz_tangent_N": 0.42165540844852223,
+      "finger2_Fz_N": 0.421644560799054
+    },
+    "1": {
+      "row": 0,
+      "elapsed_s": 0.0010000000000012221,
+      "cube_world_vz_m_s": -0.0013863511484320638,
+      "gripper_world_vz_m_s": -0.0006404911868980296,
+      "relative_world_vz_m_s": -0.0007458599615340342,
+      "cube_world_delta_z_m": -1.3863511484357716e-06,
+      "gripper_world_delta_z_m": -6.404915215973972e-07,
+      "relative_world_z_drop_m": 7.458596268383744e-07,
+      "Fz_N": 0.8587404410034927,
+      "Fz_minus_mg_N": -0.12225955899650742,
+      "relative_rotation_rad": 4.767952468458303e-06,
+      "world_rotation_rad": 5.834142395335804e-06,
+      "cube_angular_speed_rad_s": 0.00583380334098648,
+      "relative_angular_speed_rad_s": 0.0047675162948309655,
+      "max_penetration_m": 0.0007375429405509731,
+      "actual_slide_width_m": 0.0385288862692435,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019264045086251683,
+      "finger2_q_m": -0.019264841182991817,
+      "arm_error_max_rad": 5.718678217969675e-06,
+      "coupling_m": 7.96096740134089e-07,
+      "geometric_vertical_capacity_N": 2.133247519612312,
+      "rho_max": 0.6689196194184984,
+      "slip_speed_max_m_s": 0.0008768706534686073,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        -1.3048617834791887e-05,
+        -3.0113005389595902e-05,
+        -0.0012334633830175558
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        -0.0007026157866870606,
+        0.0036759814260956926,
+        0.004475126035387452
+      ],
+      "finger1_Fn_N": 1.064926781915419,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": 1.029600333295932e-05,
+      "finger1_Fz_tangent_N": 0.42812371965376567,
+      "finger1_Fz_N": 0.42813401565709863,
+      "finger2_Fn_N": 1.068321290634444,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -1.0848836026738593e-05,
+      "finger2_Fz_tangent_N": 0.4306172741824208,
+      "finger2_Fz_N": 0.43060642534639404
+    },
+    "15": {
+      "row": 14,
+      "elapsed_s": 0.015000000000018332,
+      "cube_world_vz_m_s": -0.011547869869434874,
+      "gripper_world_vz_m_s": -0.006021873917595525,
+      "relative_world_vz_m_s": -0.005525995951839348,
+      "cube_world_delta_z_m": -0.00011048784163328329,
+      "gripper_world_delta_z_m": -5.514129153072478e-05,
+      "relative_world_z_drop_m": 5.534655010255851e-05,
+      "Fz_N": 0.942360735401566,
+      "Fz_minus_mg_N": -0.03863926459843414,
+      "relative_rotation_rad": 0.00043639846611914703,
+      "world_rotation_rad": 0.0005570017822006343,
+      "cube_angular_speed_rad_s": 0.08243804430953645,
+      "relative_angular_speed_rad_s": 0.06452619488571099,
+      "max_penetration_m": 0.0007473418128027083,
+      "actual_slide_width_m": 0.038507474040339204,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019252791834429402,
+      "finger2_q_m": -0.019254682205909802,
+      "arm_error_max_rad": 0.00016888687739369246,
+      "coupling_m": 1.8903714803994442e-06,
+      "geometric_vertical_capacity_N": 2.112054772591425,
+      "rho_max": 0.7052627350174769,
+      "slip_speed_max_m_s": 0.006169654476231421,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        0.00014293432961190976,
+        -0.00014449102671142394,
+        0.001141839394229096
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.005068850175357629,
+        -0.08208095978419389,
+        0.005749256333337301
+      ],
+      "finger1_Fn_N": 1.0565850300475481,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -5.226486308431803e-05,
+      "finger1_Fz_tangent_N": 0.47521663404999465,
+      "finger1_Fz_N": 0.47516436918691035,
+      "finger2_Fn_N": 1.0554926433499605,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 2.93657581679519e-05,
+      "finger2_Fz_tangent_N": 0.4671670004564876,
+      "finger2_Fz_N": 0.4671963662146556
+    },
+    "68": {
+      "row": 67,
+      "elapsed_s": 0.0680000000000831,
+      "cube_world_vz_m_s": -0.014626926601333903,
+      "gripper_world_vz_m_s": -0.007701051104723055,
+      "relative_world_vz_m_s": -0.006925875496610848,
+      "cube_world_delta_z_m": -0.000937548677989869,
+      "gripper_world_delta_z_m": -0.000490504942086023,
+      "relative_world_z_drop_m": 0.00044704373590384594,
+      "Fz_N": 0.9864731053481148,
+      "Fz_minus_mg_N": 0.005473105348114737,
+      "relative_rotation_rad": 0.000566871719317716,
+      "world_rotation_rad": 0.002310917045959918,
+      "cube_angular_speed_rad_s": 0.07847087136109976,
+      "relative_angular_speed_rad_s": 0.0558472694455325,
+      "max_penetration_m": 0.0007825550728257858,
+      "actual_slide_width_m": 0.038444827562157724,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019222120928455006,
+      "finger2_q_m": -0.019222706633702714,
+      "arm_error_max_rad": 0.001418679095031461,
+      "coupling_m": 5.85705247708318e-07,
+      "geometric_vertical_capacity_N": 2.0745742925202153,
+      "rho_max": 0.8826794962347209,
+      "slip_speed_max_m_s": 0.007774337441883757,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        -0.000139970905036973,
+        0.0007929422825332052,
+        -0.0013747997689806304
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.01965885924987432,
+        -0.06129605627582478,
+        0.044877615691955156
+      ],
+      "finger1_Fn_N": 1.0382275878392995,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.00012131576819598217,
+      "finger1_Fz_tangent_N": 0.7291202812128839,
+      "finger1_Fz_N": 0.7289989654446879,
+      "finger2_Fn_N": 1.0363331242670228,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 0.0001349120514656164,
+      "finger2_Fz_tangent_N": 0.2573392278519613,
+      "finger2_Fz_N": 0.2574741399034269
+    },
+    "140": {
+      "row": 139,
+      "elapsed_s": 0.1400000000001711,
+      "cube_world_vz_m_s": -0.011342240431934275,
+      "gripper_world_vz_m_s": -0.0023688154617912075,
+      "relative_world_vz_m_s": -0.008973424970143067,
+      "cube_world_delta_z_m": -0.001834082885664251,
+      "gripper_world_delta_z_m": -0.0008374917199849841,
+      "relative_world_z_drop_m": 0.000996591165679267,
+      "Fz_N": 1.0043155375454487,
+      "Fz_minus_mg_N": 0.023315537545448572,
+      "relative_rotation_rad": 0.0014352697034510438,
+      "world_rotation_rad": 0.004528082266228424,
+      "cube_angular_speed_rad_s": 0.05913297298904823,
+      "relative_angular_speed_rad_s": 0.061350122113886366,
+      "max_penetration_m": 0.0007835784975919645,
+      "actual_slide_width_m": 0.03844518337711558,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019223624620724307,
+      "finger2_q_m": -0.019221558756391272,
+      "arm_error_max_rad": 0.002375739153852141,
+      "coupling_m": 2.0658643330347115e-06,
+      "geometric_vertical_capacity_N": 2.08020808644781,
+      "rho_max": 0.784604364105191,
+      "slip_speed_max_m_s": 0.009961946096243356,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        0.0002624933670959239,
+        0.00048617078669227704,
+        -0.001264225836765425
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        -0.02983946586728055,
+        0.024496962798817128,
+        0.04479077566767824
+      ],
+      "finger1_Fn_N": 1.0418742363585787,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": 3.3310991752204897e-06,
+      "finger1_Fz_tangent_N": 0.5808634519657686,
+      "finger1_Fz_N": 0.5808667830649439,
+      "finger2_Fn_N": 1.0383270782465757,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 3.4407545063205343e-06,
+      "finger2_Fz_tangent_N": 0.4234453137259986,
+      "finger2_Fz_N": 0.4234487544805049
+    },
+    "141": {
+      "row": 140,
+      "elapsed_s": 0.14100000000017232,
+      "cube_world_vz_m_s": -0.011107257745590378,
+      "gripper_world_vz_m_s": -0.0023277962355809307,
+      "relative_world_vz_m_s": -0.008779461510009447,
+      "cube_world_delta_z_m": -0.0018451901434098361,
+      "gripper_world_delta_z_m": -0.000839819520692453,
+      "relative_world_z_drop_m": 0.001005370622717383,
+      "Fz_N": 1.003270354897609,
+      "Fz_minus_mg_N": 0.02227035489760887,
+      "relative_rotation_rad": 0.0013841094377974495,
+      "world_rotation_rad": 0.004485319121237238,
+      "cube_angular_speed_rad_s": 0.04722861774484676,
+      "relative_angular_speed_rad_s": 0.053706721081805804,
+      "max_penetration_m": 0.0007833089034434904,
+      "actual_slide_width_m": 0.03844577417014661,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019223866750644317,
+      "finger2_q_m": -0.01922190741950229,
+      "arm_error_max_rad": 0.002382113226549354,
+      "coupling_m": 1.9593311420262882e-06,
+      "geometric_vertical_capacity_N": 2.0816273699495813,
+      "rho_max": 0.7437985165370323,
+      "slip_speed_max_m_s": 0.009698046329474495,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        0.00025641157535662325,
+        0.00030957918585461635,
+        -0.001137935306656436
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        -0.02000099942427789,
+        0.04270407409220597,
+        -0.0026200022989060264
+      ],
+      "finger1_Fn_N": 1.0425351569421488,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": 2.1407993927855357e-05,
+      "finger1_Fz_tangent_N": 0.5294397413450893,
+      "finger1_Fz_N": 0.5294611493390171,
+      "finger2_Fn_N": 1.0390882274440427,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -1.7422064681305383e-05,
+      "finger2_Fz_tangent_N": 0.47382662762327316,
+      "finger2_Fz_N": 0.47380920555859185
+    },
+    "751": {
+      "row": 750,
+      "elapsed_s": 0.7510000000009178,
+      "cube_world_vz_m_s": -0.007588948138138331,
+      "gripper_world_vz_m_s": 3.277482021633288e-05,
+      "relative_world_vz_m_s": -0.007621722958354664,
+      "cube_world_delta_z_m": -0.007338789728351752,
+      "gripper_world_delta_z_m": -0.0009339687791399265,
+      "relative_world_z_drop_m": 0.006404820949211826,
+      "Fz_N": 0.9875157207529806,
+      "Fz_minus_mg_N": 0.006515720752980458,
+      "relative_rotation_rad": 0.0005839723226882512,
+      "world_rotation_rad": 0.002865843346378424,
+      "cube_angular_speed_rad_s": 0.15566790599716815,
+      "relative_angular_speed_rad_s": 0.15536196404440172,
+      "max_penetration_m": 0.0007883122067099603,
+      "actual_slide_width_m": 0.03844946215145625,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.01922536937714664,
+      "finger2_q_m": -0.019224092774309608,
+      "arm_error_max_rad": 0.0026741896625668282,
+      "coupling_m": 1.2766028370317373e-06,
+      "geometric_vertical_capacity_N": 2.091856946392695,
+      "rho_max": 0.6502710416083112,
+      "slip_speed_max_m_s": 0.009512944111093265,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        -0.00020801651280079412,
+        7.91641925409689e-05,
+        -0.000840714059861844
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.02735431562207231,
+        -0.14881535344619523,
+        -0.036581811779560845
+      ],
+      "finger1_Fn_N": 1.0460632723737846,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": 0.0001394232550294468,
+      "finger1_Fz_tangent_N": 0.48633092347297635,
+      "finger1_Fz_N": 0.4864703467280058,
+      "finger2_Fn_N": 1.0458202054017203,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -0.00016593218282439712,
+      "finger2_Fz_tangent_N": 0.5012113062077991,
+      "finger2_Fz_N": 0.5010453740249747
+    },
+    "1327": {
+      "row": 1326,
+      "elapsed_s": 1.3270000000016218,
+      "cube_world_vz_m_s": -0.007499109734641437,
+      "gripper_world_vz_m_s": -1.9740867219052303e-06,
+      "relative_world_vz_m_s": -0.0074971356479195325,
+      "cube_world_delta_z_m": -0.01244818106836354,
+      "gripper_world_delta_z_m": -0.0009322572779350002,
+      "relative_world_z_drop_m": 0.01151592379042854,
+      "Fz_N": 0.9818374548885358,
+      "Fz_minus_mg_N": 0.0008374548885357047,
+      "relative_rotation_rad": 0.0016795233446919432,
+      "world_rotation_rad": 0.002895438592870421,
+      "cube_angular_speed_rad_s": 0.022698505623502303,
+      "relative_angular_speed_rad_s": 0.0225976079691308,
+      "max_penetration_m": 0.0008020443526745938,
+      "actual_slide_width_m": 0.03845254659088182,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019226284558137945,
+      "finger2_q_m": -0.01922626203274387,
+      "arm_error_max_rad": 0.0026701427528061927,
+      "coupling_m": 2.2525394074296434e-08,
+      "geometric_vertical_capacity_N": 2.078411324027767,
+      "rho_max": 0.9017945688798046,
+      "slip_speed_max_m_s": 0.0075270499570937325,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        3.2863880917435515e-05,
+        -0.001034933325488505,
+        0.0013994881100340487
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.012683066488744087,
+        -0.017511906078842194,
+        -0.006906165902153829
+      ],
+      "finger1_Fn_N": 1.0384420624762385,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.0013858150402683862,
+      "finger1_Fz_tangent_N": 0.7567862802735301,
+      "finger1_Fz_N": 0.7554004652332618,
+      "finger2_Fn_N": 1.0399690744828345,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 0.001387852858532555,
+      "finger2_Fz_tangent_N": 0.22504913679674154,
+      "finger2_Fz_N": 0.2264369896552741
+    },
+    "1328": {
+      "row": 1327,
+      "elapsed_s": 1.328000000001623,
+      "cube_world_vz_m_s": -0.007490704779494649,
+      "gripper_world_vz_m_s": -1.4064208633581852e-06,
+      "relative_world_vz_m_s": -0.0074892983586312915,
+      "cube_world_delta_z_m": -0.012455671773143023,
+      "gripper_world_delta_z_m": -0.0009322586843561464,
+      "relative_world_z_drop_m": 0.011523413088786877,
+      "Fz_N": 0.9742678516126348,
+      "Fz_minus_mg_N": -0.006732148387365244,
+      "relative_rotation_rad": 0.0016617847030521438,
+      "world_rotation_rad": 0.0029585618253458444,
+      "cube_angular_speed_rad_s": 0.07378442223660851,
+      "relative_angular_speed_rad_s": 0.07413464190656674,
+      "max_penetration_m": 0.0008017260925269487,
+      "actual_slide_width_m": 0.038452035580549083,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019226037597784018,
+      "finger2_q_m": -0.019225997982765065,
+      "arm_error_max_rad": 0.0026701568148361776,
+      "coupling_m": 3.9615018952721126e-08,
+      "geometric_vertical_capacity_N": 2.080735546105778,
+      "rho_max": 0.8812749684203518,
+      "slip_speed_max_m_s": 0.0077045615682551395,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        0.0003340901229751461,
+        -0.0016045655261689414,
+        0.0013490278317317191
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.013914542068297522,
+        -0.056317544284156223,
+        0.045594524776795396
+      ],
+      "finger1_Fn_N": 1.0411518382041354,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.0014234521035222506,
+      "finger1_Fz_tangent_N": 0.7609369633091838,
+      "finger1_Fz_N": 0.7595135112056616,
+      "finger2_Fn_N": 1.0396072716552158,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 0.0014018065133818564,
+      "finger2_Fz_tangent_N": 0.21335253389359135,
+      "finger2_Fz_N": 0.21475434040697322
+    },
+    "2163": {
+      "row": 2162,
+      "elapsed_s": 2.1630000000026435,
+      "cube_world_vz_m_s": -0.008483588021756448,
+      "gripper_world_vz_m_s": -8.493457878126376e-06,
+      "relative_world_vz_m_s": -0.008475094563878321,
+      "cube_world_delta_z_m": -0.019012390804827695,
+      "gripper_world_delta_z_m": -0.0009299513494093747,
+      "relative_world_z_drop_m": 0.01808243945541832,
+      "Fz_N": 0.9964738352908772,
+      "Fz_minus_mg_N": 0.015473835290877092,
+      "relative_rotation_rad": 0.03386396962082344,
+      "world_rotation_rad": 0.036556510360371754,
+      "cube_angular_speed_rad_s": 0.35132768324027863,
+      "relative_angular_speed_rad_s": 0.35246526428203306,
+      "max_penetration_m": 0.0008378832182476582,
+      "actual_slide_width_m": 0.03860829886000151,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.01930413500841024,
+      "finger2_q_m": -0.019304163851591265,
+      "arm_error_max_rad": 0.0026611705236683214,
+      "coupling_m": 2.884318102414074e-08,
+      "geometric_vertical_capacity_N": 2.193430186550513,
+      "rho_max": 0.9026649815923052,
+      "slip_speed_max_m_s": 0.013474605348422979,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        -0.0005374731726722377,
+        0.001223317148417143,
+        -0.001456745595123994
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.04906551327137654,
+        -0.3256754206789578,
+        0.12230795879247514
+      ],
+      "finger1_Fn_N": 1.0866621497085638,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.02184497792233297,
+      "finger1_Fz_tangent_N": 0.7857955648162621,
+      "finger1_Fz_N": 0.7639505868939291,
+      "finger2_Fn_N": 1.106806342583123,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 0.022249933085952845,
+      "finger2_Fz_tangent_N": 0.2102733153109952,
+      "finger2_Fz_N": 0.23252324839694805
+    },
+    "2164": {
+      "row": 2163,
+      "elapsed_s": 2.1640000000026447,
+      "cube_world_vz_m_s": -0.00832869629493654,
+      "gripper_world_vz_m_s": -1.3628689992669392e-05,
+      "relative_world_vz_m_s": -0.008315067604943872,
+      "cube_world_delta_z_m": -0.019020719501122635,
+      "gripper_world_delta_z_m": -0.0009299649781021602,
+      "relative_world_z_drop_m": 0.018090754523020475,
+      "Fz_N": 0.3941512960977107,
+      "Fz_minus_mg_N": -0.5868487039022894,
+      "relative_rotation_rad": 0.03410612058284988,
+      "world_rotation_rad": 0.036807095511452996,
+      "cube_angular_speed_rad_s": 0.28930634956733126,
+      "relative_angular_speed_rad_s": 0.2895603450025325,
+      "max_penetration_m": 0.0012855459594710093,
+      "actual_slide_width_m": 0.03860833471055039,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.01930411357671792,
+      "finger2_q_m": -0.01930422113383247,
+      "arm_error_max_rad": 0.0026612262864629255,
+      "coupling_m": 1.0755711454812911e-07,
+      "geometric_vertical_capacity_N": 1.1991690936732509,
+      "rho_max": 1.0000000000000002,
+      "slip_speed_max_m_s": 0.010737811028535294,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        0.0047892202541828886,
+        -0.007625412460303285,
+        -0.011684108789287561
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        0.02892535915080931,
+        -0.2797821990561737,
+        0.06770087583822797
+      ],
+      "finger1_Fn_N": 0.9996565566019482,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.020124605954691514,
+      "finger1_Fz_tangent_N": 0.5927168368584895,
+      "finger1_Fz_N": 0.572592230903798,
+      "finger2_Fn_N": 0.7238967644911573,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -0.3900110144867174,
+      "finger2_Fz_tangent_N": 0.21157007968063013,
+      "finger2_Fz_N": -0.17844093480608725
+    },
+    "3000": {
+      "row": 2999,
+      "elapsed_s": 3.000000000003208,
+      "cube_world_vz_m_s": -0.042102380861047964,
+      "gripper_world_vz_m_s": 0.0017229430420050455,
+      "relative_world_vz_m_s": -0.04382532390305301,
+      "cube_world_delta_z_m": -0.02732524658709072,
+      "gripper_world_delta_z_m": -0.0009304424359770636,
+      "relative_world_z_drop_m": 0.02639480415111367,
+      "Fz_N": 0.6699077520287561,
+      "Fz_minus_mg_N": -0.311092247971244,
+      "relative_rotation_rad": 0.23238185141492604,
+      "world_rotation_rad": 0.2357408524963541,
+      "cube_angular_speed_rad_s": 1.6522945812006165,
+      "relative_angular_speed_rad_s": 1.6658836080674602,
+      "max_penetration_m": 0.001248263427511076,
+      "actual_slide_width_m": 0.03853867771417108,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019279297321677033,
+      "finger2_q_m": -0.019259380392494044,
+      "arm_error_max_rad": 0.0026750747978425693,
+      "coupling_m": 1.9916929182989263e-05,
+      "geometric_vertical_capacity_N": 0.9208433545880925,
+      "rho_max": 1.0,
+      "slip_speed_max_m_s": 0.05699876843003735,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        -0.0031589119648418075,
+        -0.002548701824644975,
+        -0.00032028102940353164
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        -1.5792161370373023,
+        -0.4845174851413502,
+        -0.037370873393625506
+      ],
+      "finger1_Fn_N": 0.8913811683234439,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.6792540320048239,
+      "finger1_Fz_tangent_N": 0.5762049771929145,
+      "finger1_Fz_N": -0.1030490548119094,
+      "finger2_Fn_N": 1.0312423015873453,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -0.008323887230015732,
+      "finger2_Fz_tangent_N": 0.7812806940706812,
+      "finger2_Fz_N": 0.7729568068406655
+    },
+    "4000": {
+      "row": 3999,
+      "elapsed_s": 4.0000000000008775,
+      "cube_world_vz_m_s": -0.007663277286261591,
+      "gripper_world_vz_m_s": 9.93318652294884e-05,
+      "relative_world_vz_m_s": -0.007762609151491079,
+      "cube_world_delta_z_m": -0.0382892682878207,
+      "gripper_world_delta_z_m": -0.0008845117700439498,
+      "relative_world_z_drop_m": 0.03740475651777675,
+      "Fz_N": 0.979935100216651,
+      "Fz_minus_mg_N": -0.0010648997833491158,
+      "relative_rotation_rad": 0.5243734242276331,
+      "world_rotation_rad": 0.5270963497706319,
+      "cube_angular_speed_rad_s": 0.2982567466033015,
+      "relative_angular_speed_rad_s": 0.29840048951329495,
+      "max_penetration_m": 0.0006854975254489685,
+      "actual_slide_width_m": 0.038629270016899545,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.01931603107999018,
+      "finger2_q_m": -0.019313238936909363,
+      "arm_error_max_rad": 0.002499441591553353,
+      "coupling_m": 2.7921430808160175e-06,
+      "geometric_vertical_capacity_N": 2.2238855891904796,
+      "rho_max": 0.4415051235317075,
+      "slip_speed_max_m_s": 0.0076742966563360425,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        1.616227698109096e-05,
+        -0.0003015680337673154,
+        2.4166609009012435e-05
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        -0.006194054507852422,
+        -0.2980416075513571,
+        -0.009482655289663617
+      ],
+      "finger1_Fn_N": 1.1127628802096943,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -3.481747682943861e-06,
+      "finger1_Fz_tangent_N": 0.48948548044080026,
+      "finger1_Fz_N": 0.4894819986931173,
+      "finger2_Fn_N": 1.1111227252039928,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": 3.465535326992722e-06,
+      "finger2_Fz_tangent_N": 0.4904496359882066,
+      "finger2_Fz_N": 0.4904531015235336
+    },
+    "4415": {
+      "row": 4414,
+      "elapsed_s": 4.41499999999991,
+      "cube_world_vz_m_s": -0.07992438192025372,
+      "gripper_world_vz_m_s": 0.004540045833882665,
+      "relative_world_vz_m_s": -0.08446442775413639,
+      "cube_world_delta_z_m": -0.04172419978424413,
+      "gripper_world_delta_z_m": -0.0008657377114326681,
+      "relative_world_z_drop_m": 0.04085846207281146,
+      "Fz_N": 0.09635263466484223,
+      "Fz_minus_mg_N": -0.8846473653351579,
+      "relative_rotation_rad": 0.580138218316144,
+      "world_rotation_rad": 0.5828052877959927,
+      "cube_angular_speed_rad_s": 4.397363244795939,
+      "relative_angular_speed_rad_s": 4.40202802288431,
+      "max_penetration_m": 0.0006460067972953955,
+      "actual_slide_width_m": 0.03807126524753705,
+      "target_slide_width_m": 0.03584882236975663,
+      "finger1_q_m": 0.019033773907081,
+      "finger2_q_m": -0.019037491340456056,
+      "arm_error_max_rad": 0.0024398792612290165,
+      "coupling_m": 3.717433375054896e-06,
+      "geometric_vertical_capacity_N": 0.19818320109471593,
+      "rho_max": 1.0000000000000002,
+      "slip_speed_max_m_s": 0.1539093663397821,
+      "contact_count": 2,
+      "torque_world_Nm": [
+        0.00924747721655891,
+        0.0022863267279531144,
+        0.0037434620852321012
+      ],
+      "cube_angular_velocity_world_rad_s": [
+        3.7788428704517867,
+        0.639424587482026,
+        2.155988465655932
+      ],
+      "finger1_Fn_N": 0.2645578298493954,
+      "finger1_count": 1,
+      "finger1_Fz_normal_N": -0.004400306013135577,
+      "finger1_Fz_tangent_N": 0.2595650074079874,
+      "finger1_Fz_N": 0.2551647013948518,
+      "finger2_Fn_N": 0.2176206356218839,
+      "finger2_count": 1,
+      "finger2_Fz_normal_N": -0.18170140766376658,
+      "finger2_Fz_tangent_N": 0.022889340933757,
+      "finger2_Fz_N": -0.15881206673000958
+    }
+  },
+  "total_momentum_approx": {
+    "measured_world_delta_v_m_s": -0.07992642477279654,
+    "right_post_force_delta_v_m_s": -0.08936607769932034,
+    "residual_m_s": -0.009439652926523795
+  },
+  "notes": [
+    "Local contact coordinates describe solver contact samples, not persistent material-point trajectories.",
+    "Kinematic relative slip is not an original solver stick/slip label.",
+    "No new physics or contact force solve; no inferred strict impulse balance."
+  ]
+}
