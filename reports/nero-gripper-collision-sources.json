@@ -1,0 +1,922 @@
+{
+  "schema_version": 1,
+  "issue": 25,
+  "scope": "Read-only reference XML, docs and source mesh geometry; no MuJoCo import, compilation, query or integration",
+  "workspace_head": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+  "sources": [
+    {
+      "family": "Menagerie",
+      "repository": "google-deepmind/mujoco_menagerie",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/panda.xml",
+      "output": "menagerie/panda.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/panda.xml",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/panda.xml",
+      "sha256": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273",
+      "git_blob": "0d51ae3a52fdd48d35e22c18f3c3adbdaf2e6cd5",
+      "bytes": 14438,
+      "accessed_utc": "2026-10-19T08:22:44.807301+00:00"
+    },
+    {
+      "family": "Menagerie",
+      "repository": "google-deepmind/mujoco_menagerie",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/hand.xml",
+      "output": "menagerie/hand.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/hand.xml",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/hand.xml",
+      "sha256": "d2a6539d0fd7c55c75c14f11c78f04505ee33f31d93e6112e3ad7120e5ee786a",
+      "git_blob": "b386048ef08f0ddb93a5f902efb09865be89af5f",
+      "bytes": 4547,
+      "accessed_utc": "2026-10-19T08:22:44.695907+00:00"
+    },
+    {
+      "family": "Menagerie",
+      "repository": "google-deepmind/mujoco_menagerie",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/README.md",
+      "output": "menagerie/README.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/README.md",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/README.md",
+      "sha256": "e12684556d0154bdf2a9e77e7009ed680cd06ca89904f9e6303050f9fe59300c",
+      "git_blob": "fe10493a981079003d1f7fa245225703ad520b0f",
+      "bytes": 2908,
+      "accessed_utc": "2026-10-19T08:22:44.895815+00:00"
+    },
+    {
+      "family": "Menagerie",
+      "repository": "google-deepmind/mujoco_menagerie",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/assets/finger_0.obj",
+      "output": "menagerie/assets/finger_0.obj",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/assets/finger_0.obj",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/assets/finger_0.obj",
+      "sha256": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c",
+      "git_blob": "104cf631a225dad6a0bdc8f5cf31dc994c75216f",
+      "bytes": 87872,
+      "accessed_utc": "2026-10-19T08:22:46.058241+00:00"
+    },
+    {
+      "family": "Menagerie",
+      "repository": "google-deepmind/mujoco_menagerie",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/assets/finger_1.obj",
+      "output": "menagerie/assets/finger_1.obj",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/assets/finger_1.obj",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/assets/finger_1.obj",
+      "sha256": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44",
+      "git_blob": "31364d4804285e0594878adf0972d543453caff1",
+      "bytes": 64651,
+      "accessed_utc": "2026-10-19T08:22:50.975331+00:00"
+    },
+    {
+      "family": "robosuite",
+      "repository": "ARISE-Initiative/robosuite",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/assets/grippers/panda_gripper.xml",
+      "output": "robosuite/panda_gripper.xml",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml",
+      "sha256": "066fd7ae45afb11e1844869360e587646e9768210ba5389aa3cd35292cde29c1",
+      "git_blob": "fb9463484727e1df64cc3db2be2ddb4a8341a22a",
+      "bytes": 4546,
+      "accessed_utc": "2026-10-19T08:22:50.810866+00:00"
+    },
+    {
+      "family": "robosuite",
+      "repository": "ARISE-Initiative/robosuite",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "output": "robosuite/meshes/panda_gripper/finger.stl",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/meshes/panda_gripper/finger.stl",
+      "sha256": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8",
+      "git_blob": "3b87289fea8128bcec3e0b4d174b169124e8e444",
+      "bytes": 1684,
+      "accessed_utc": "2026-10-19T08:22:50.549454+00:00"
+    },
+    {
+      "family": "robosuite",
+      "repository": "ARISE-Initiative/robosuite",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "output": "robosuite/meshes/panda_gripper/finger_vis.stl",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/meshes/panda_gripper/finger_vis.stl",
+      "sha256": "e49613148a74f1ba9b5793813078e5becf15833e0296073dc1c523508be35ae4",
+      "git_blob": "9933b9d5c78d2be9a9ba41e71f4d29a2e9c52bd5",
+      "bytes": 31284,
+      "accessed_utc": "2026-10-19T08:22:50.726398+00:00"
+    },
+    {
+      "family": "robosuite",
+      "repository": "ARISE-Initiative/robosuite",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "output": "robosuite/meshes/panda_gripper/finger_longer.stl",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/meshes/panda_gripper/finger_longer.stl",
+      "sha256": "8857e33ee59c3a395c3036a11e4f1731c88c203c821bb03ca97737a2d04cba27",
+      "git_blob": "ea117bbd155252b6914095d47829616a74b4d033",
+      "bytes": 2884,
+      "accessed_utc": "2026-10-19T08:22:52.485111+00:00"
+    },
+    {
+      "family": "Official_NERO",
+      "local_source": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream/mujoco/agilex_arm/agilex_nero/nero.xml",
+      "output": "official/nero.xml",
+      "repository": "agilexrobotics/agx_arm_sim",
+      "commit": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+      "path": "mujoco/agilex_arm/agilex_nero/nero.xml",
+      "permalink": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/mujoco/agilex_arm/agilex_nero/nero.xml",
+      "sha256": "7d297b2e138cca902583e219806a38e6c88bf96b6d6ec1bb704ba335338a3b36",
+      "git_blob": "64f4ac48d1f250c5d0d751ca267f9b74a1c6baf9",
+      "bytes": 8910,
+      "accessed_utc": "2026-10-19T08:22:50.726976+00:00",
+      "fixed_commit_git_blob": "64f4ac48d1f250c5d0d751ca267f9b74a1c6baf9",
+      "matches_fixed_commit": true
+    },
+    {
+      "family": "Official_NERO",
+      "local_source": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream/mujoco/agilex_arm/agilex_nero/assets/gripper_link1.stl",
+      "output": "official/assets/gripper_link1.stl",
+      "repository": "agilexrobotics/agx_arm_sim",
+      "commit": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+      "path": "mujoco/agilex_arm/agilex_nero/assets/gripper_link1.stl",
+      "permalink": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/mujoco/agilex_arm/agilex_nero/assets/gripper_link1.stl",
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "git_blob": "a30d8f2e44a81db32a1f7a0e06eb87416b5cb60a",
+      "bytes": 104384,
+      "accessed_utc": "2026-10-19T08:22:50.738575+00:00",
+      "fixed_commit_git_blob": "a30d8f2e44a81db32a1f7a0e06eb87416b5cb60a",
+      "matches_fixed_commit": true
+    },
+    {
+      "family": "Official_NERO",
+      "local_source": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream/mujoco/agilex_arm/agilex_nero/assets/gripper_link2.stl",
+      "output": "official/assets/gripper_link2.stl",
+      "repository": "agilexrobotics/agx_arm_sim",
+      "commit": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+      "path": "mujoco/agilex_arm/agilex_nero/assets/gripper_link2.stl",
+      "permalink": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/mujoco/agilex_arm/agilex_nero/assets/gripper_link2.stl",
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "git_blob": "be37a66e4cfce7c4254ce817f4fb2c51f44a5701",
+      "bytes": 104384,
+      "accessed_utc": "2026-10-19T08:22:50.740904+00:00",
+      "fixed_commit_git_blob": "be37a66e4cfce7c4254ce817f4fb2c51f44a5701",
+      "matches_fixed_commit": true
+    },
+    {
+      "family": "URDF_source",
+      "local_source": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/meshes/source/agx_gripper/meshes/gripper_link1.stl",
+      "output": "urdf/gripper_link1.stl",
+      "repository": "agilexrobotics/agx_arm_urdf",
+      "commit": "a68b8e876a2c6fcb0ecee7a7943129e4d48dd864",
+      "path": "agx_gripper/meshes/gripper_link1.stl",
+      "permalink": "https://github.com/agilexrobotics/agx_arm_urdf/blob/a68b8e876a2c6fcb0ecee7a7943129e4d48dd864/agx_gripper/meshes/gripper_link1.stl",
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "git_blob": "a30d8f2e44a81db32a1f7a0e06eb87416b5cb60a",
+      "bytes": 104384,
+      "accessed_utc": "2026-10-19T08:22:50.742759+00:00",
+      "matches_urdf_source_manifest": true
+    },
+    {
+      "family": "URDF_source",
+      "local_source": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/meshes/source/agx_gripper/meshes/gripper_link2.stl",
+      "output": "urdf/gripper_link2.stl",
+      "repository": "agilexrobotics/agx_arm_urdf",
+      "commit": "a68b8e876a2c6fcb0ecee7a7943129e4d48dd864",
+      "path": "agx_gripper/meshes/gripper_link2.stl",
+      "permalink": "https://github.com/agilexrobotics/agx_arm_urdf/blob/a68b8e876a2c6fcb0ecee7a7943129e4d48dd864/agx_gripper/meshes/gripper_link2.stl",
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "git_blob": "be37a66e4cfce7c4254ce817f4fb2c51f44a5701",
+      "bytes": 104384,
+      "accessed_utc": "2026-10-19T08:22:50.744483+00:00",
+      "matches_urdf_source_manifest": true
+    },
+    {
+      "family": "URDF_source",
+      "local_source": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+      "output": "urdf/nero_with_gripper_description.xacro",
+      "repository": "agilexrobotics/agx_arm_urdf",
+      "commit": "a68b8e876a2c6fcb0ecee7a7943129e4d48dd864",
+      "path": "nero/urdf/nero_with_gripper_description.xacro",
+      "permalink": "https://github.com/agilexrobotics/agx_arm_urdf/blob/a68b8e876a2c6fcb0ecee7a7943129e4d48dd864/nero/urdf/nero_with_gripper_description.xacro",
+      "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4",
+      "git_blob": "7a9b0aa67cd1b4dd16cc4fe1a7f2187a5168c813",
+      "bytes": 4296,
+      "accessed_utc": "2026-10-19T08:22:50.744860+00:00",
+      "matches_urdf_source_manifest": true
+    },
+    {
+      "family": "MuJoCo_3.2.3_docs",
+      "local_source": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/debug/issue21/physics-docs/XMLreference.rst",
+      "output": "docs/XMLreference.rst",
+      "repository": "google-deepmind/mujoco",
+      "commit": "476599f8b6175ef5a3040c47ebb3cd99a83c5365",
+      "path": "doc/XMLreference.rst",
+      "permalink": "https://github.com/google-deepmind/mujoco/blob/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/XMLreference.rst",
+      "sha256": "45170df843894f0daccf5e2aa61b9a8dba7c6f1fd7bc5f4306c08c842455b7dc",
+      "git_blob": "2316ddf397f0ade724643065bd679b4dfcc4615c",
+      "bytes": 374620,
+      "accessed_utc": "2026-10-19T08:22:50.751492+00:00"
+    },
+    {
+      "family": "MuJoCo_3.2.3_docs",
+      "local_source": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/debug/issue21/physics-docs/index.rst",
+      "output": "docs/computation/index.rst",
+      "repository": "google-deepmind/mujoco",
+      "commit": "476599f8b6175ef5a3040c47ebb3cd99a83c5365",
+      "path": "doc/computation/index.rst",
+      "permalink": "https://github.com/google-deepmind/mujoco/blob/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/computation/index.rst",
+      "sha256": "c19b014ca08f2c34cf3b1972d62033c282287ba5c03b89ff184d0a70166a0eaa",
+      "git_blob": "048ac199053ec020353d52b021c232acd47dd239",
+      "bytes": 112135,
+      "accessed_utc": "2026-10-19T08:22:50.753510+00:00"
+    }
+  ],
+  "local_context_read": [
+    {
+      "path": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/reports/panda-gripper-reference.md",
+      "bytes": 17202,
+      "sha256": "7661c3d2d465b5cdc7b16c58d24df6cb40682714a8fd44a654b00ad20e5fcf66",
+      "accessed_utc": "2026-10-19T08:27:02.708216+00:00"
+    },
+    {
+      "path": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/reports/panda-gripper-reference-sources.json",
+      "bytes": 64513,
+      "sha256": "10fc0152dd6556d2b06e71730e3c7cfef28ffae8ba0b1d23c5c45be4ba87d7a0",
+      "accessed_utc": "2026-10-19T08:27:02.708544+00:00"
+    },
+    {
+      "path": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/SOURCE_MANIFEST.json",
+      "bytes": 8627,
+      "sha256": "785af8cc507bb3f33cfc82746b26f1eefcea6a1a967f070607cb7a39f8cdf20c",
+      "accessed_utc": "2026-10-19T08:27:02.708626+00:00"
+    }
+  ],
+  "verification": {
+    "all_output_source_bytes_rehashed": true,
+    "all_official_fixed_commit_blobs_match": true,
+    "all_urdf_source_manifest_match": true,
+    "no_mujoco_import_compile_query_or_step": true,
+    "dependencies_installed": false,
+    "artifact_write_scope": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/debug/issue25/reference-audit"
+  },
+  "local_frozen_inputs": [
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "785af8cc507bb3f33cfc82746b26f1eefcea6a1a967f070607cb7a39f8cdf20c",
+      "bytes": 8627
+    },
+    {
+      "path": "docs/robot-contract.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "b074cbe2e42754d1fa9e2c6dfde4d010743facf94405b84c79e2044923e9d7d2",
+      "bytes": 3457
+    },
+    {
+      "path": "experiments/dynamics/config.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+      "bytes": 1383
+    },
+    {
+      "path": "experiments/dynamics/controller.py",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
+      "bytes": 6402
+    },
+    {
+      "path": "experiments/dynamics/grasp.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
+      "bytes": 2885
+    },
+    {
+      "path": "meshes/collision/gripper_link1_000.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736",
+      "bytes": 54776
+    },
+    {
+      "path": "meshes/collision/gripper_link1_001.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "bytes": 17203
+    },
+    {
+      "path": "meshes/collision/gripper_link2_000.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916",
+      "bytes": 54774
+    },
+    {
+      "path": "meshes/collision/gripper_link2_001.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "bytes": 17203
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/dae/gripper_link1.dae",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "b4aaf0e024d09eb0454e70e0c5092638edcf7da7c253d1effdeeaec46f76427b",
+      "bytes": 176476
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/dae/gripper_link2.dae",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "0da1350898b2787b76b84698253aeb1efd2ddb6360b2fa2ae03ecff389883af8",
+      "bytes": 176476
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/gripper_link1.stl",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "bytes": 104384
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/gripper_link2.stl",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "bytes": 104384
+    },
+    {
+      "path": "meshes/visual/gripper_link1.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "bytes": 228764
+    },
+    {
+      "path": "meshes/visual/gripper_link2.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "bytes": 228764
+    },
+    {
+      "path": "mjcf/nero_gripper.xml",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "e5585f29fef505f48b90bbf2c7b1b035ee7eac68147d60147399db5993263b4e",
+      "bytes": 29155
+    },
+    {
+      "path": "urdf/nero_gripper.urdf",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "b5b25090669b82265c24c7ea2eab7edef41feb719db1d62391d729619b67e8f8",
+      "bytes": 11624
+    },
+    {
+      "path": "urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4",
+      "bytes": 4296
+    }
+  ],
+  "historical_context": [
+    {
+      "path": "reports/issue23-fingertip-pads.md",
+      "commit": "318a70f77621d41c970e17848ac1248e464c7163",
+      "sha256": "00f9eea9ba38924becc57bd98971014199b2c37d6bf2cc708cb65c20bab18935"
+    },
+    {
+      "path": "reports/issue23-evidence/result.json",
+      "commit": "318a70f77621d41c970e17848ac1248e464c7163",
+      "sha256": "549605e479e46235f2b9ac5d041488f8a0ff99d29c97519d251b5e0876211515"
+    }
+  ],
+  "reference_geometry_audit_local": "/data_robot/projects/.worktrees/nero-gripper-collision-architecture/debug/issue25/reference-audit/local-relations.json",
+  "reference_geometry_audit_sha256": "d62f59825d59c27c933a74c43534716d9019b8ae72e4ce37301a077ceeb5bb0c",
+  "reference_primitive_overlap_local": "debug/issue25/reference-audit/geometry-audit.json",
+  "reference_primitive_overlap_sha256": "c311933730d94801787642db31431e1f375944dbcdcd50033891994cdd50578b",
+  "reference_primitive_overlaps": [
+    {
+      "pair": [
+        "pad1",
+        "pad2"
+      ],
+      "span_m": [
+        0.006000000000000001,
+        0.0025000000000000005,
+        0.005999999999999998
+      ],
+      "volume_m3": 9.000000000000001e-08
+    },
+    {
+      "pair": [
+        "pad1",
+        "pad3"
+      ],
+      "span_m": [
+        0.006000000000000001,
+        0.0025000000000000005,
+        0.005999999999999998
+      ],
+      "volume_m3": 9.000000000000001e-08
+    },
+    {
+      "pair": [
+        "pad1",
+        "pad4"
+      ],
+      "span_m": [
+        0.006000000000000001,
+        0.0025000000000000005,
+        0.007000000000000006
+      ],
+      "volume_m3": 1.0500000000000013e-07
+    },
+    {
+      "pair": [
+        "pad1",
+        "pad5"
+      ],
+      "span_m": [
+        0.006000000000000001,
+        0.0025000000000000005,
+        0.007000000000000006
+      ],
+      "volume_m3": 1.0500000000000013e-07
+    }
+  ],
+  "reference_local_relations": {
+    "method": "Triangle line intersection along local y; linear program computes inscribed-ball radius of source vertex convex hull and analytic XML box. No model compilation, MuJoCo import, collision API or integration.",
+    "menagerie": {
+      "pad1": {
+        "menagerie/assets/finger_0.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": 0.0011708627114612115,
+            "interior_witness_m": [
+              0.005260442946488768,
+              0.008329137288538787,
+              0.03717086271146121
+            ],
+            "positive_volume_overlap": true
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 251,
+              "point_m": [
+                0.0,
+                0.01232096709100195,
+                0.0445
+              ],
+              "normal": [
+                0.21524070531958625,
+                -0.6970981337185038,
+                0.6839046941933548
+              ]
+            },
+            {
+              "face": 149,
+              "point_m": [
+                0.0,
+                0.0144130943660429,
+                0.0445
+              ],
+              "normal": [
+                -5.521882427524343e-05,
+                0.9999999958866898,
+                -7.195486107285514e-05
+              ]
+            }
+          ]
+        },
+        "menagerie/assets/finger_1.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": 0.004,
+            "interior_witness_m": [
+              0.0045000000000000005,
+              0.0055,
+              0.049
+            ],
+            "positive_volume_overlap": true
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 48,
+              "point_m": [
+                0.0,
+                0.001493089050431622,
+                0.0445
+              ],
+              "normal": [
+                -0.5758352232766889,
+                -0.8175384359266793,
+                -0.006685911788587111
+              ]
+            },
+            {
+              "face": 51,
+              "point_m": [
+                0.0,
+                0.0014930890504316222,
+                0.0445
+              ],
+              "normal": [
+                0.5762695848872867,
+                -0.8172323400261298,
+                -0.006683408505438592
+              ]
+            },
+            {
+              "face": 252,
+              "point_m": [
+                0.0,
+                0.0019128558147169642,
+                0.0445
+              ],
+              "normal": [
+                0.00048170010073734127,
+                0.9999998422646913,
+                -0.0002888522206860505
+              ]
+            }
+          ]
+        }
+      },
+      "pad2": {
+        "menagerie/assets/finger_0.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": -0.002097713335421133,
+            "interior_witness_m": [
+              0.005433207861055059,
+              0.006097713335421135,
+              0.04490228666457886
+            ],
+            "positive_volume_overlap": false
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 164,
+              "point_m": [
+                0.0055,
+                0.009481449584067086,
+                0.05
+              ],
+              "normal": [
+                0.007060753575621772,
+                -0.9998483365396466,
+                0.015920102947087015
+              ]
+            },
+            {
+              "face": 149,
+              "point_m": [
+                0.0055,
+                0.01441379382131519,
+                0.05
+              ],
+              "normal": [
+                -5.521882427524343e-05,
+                0.9999999958866898,
+                -7.195486107285514e-05
+              ]
+            }
+          ]
+        },
+        "menagerie/assets/finger_1.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": 0.002,
+            "interior_witness_m": [
+              0.0045,
+              0.002,
+              0.051000000000000004
+            ],
+            "positive_volume_overlap": true
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 25,
+              "point_m": [
+                0.0055,
+                -4.244604174959949e-05,
+                0.05
+              ],
+              "normal": [
+                0.010937810246407406,
+                -0.999937659286471,
+                0.0022454059113527366
+              ]
+            },
+            {
+              "face": 198,
+              "point_m": [
+                0.0055,
+                0.0014177112199148985,
+                0.05
+              ],
+              "normal": [
+                -0.007520448864069017,
+                0.9999094692427064,
+                0.011157785069273191
+              ]
+            }
+          ]
+        }
+      },
+      "pad3": {
+        "menagerie/assets/finger_0.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": -0.0021104454784007854,
+            "interior_witness_m": [
+              -0.0003895545215992133,
+              0.006110445478400788,
+              0.04488955452159921
+            ],
+            "positive_volume_overlap": false
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 153,
+              "point_m": [
+                -0.0055,
+                0.00945823751050122,
+                0.05
+              ],
+              "normal": [
+                -0.0002640032158231913,
+                -0.9998708062918364,
+                0.016071746252818705
+              ]
+            },
+            {
+              "face": 147,
+              "point_m": [
+                -0.0055,
+                0.014412245252934842,
+                0.05
+              ],
+              "normal": [
+                -0.0010372990552164998,
+                0.9997118085372504,
+                0.02398382542152588
+              ]
+            }
+          ]
+        },
+        "menagerie/assets/finger_1.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": 0.002,
+            "interior_witness_m": [
+              -0.0045,
+              0.002,
+              0.051000000000000004
+            ],
+            "positive_volume_overlap": true
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 30,
+              "point_m": [
+                -0.0055,
+                -5.788563578822317e-05,
+                0.05
+              ],
+              "normal": [
+                0.008470949518296814,
+                -0.9997727871364338,
+                0.019560601107982856
+              ]
+            },
+            {
+              "face": 175,
+              "point_m": [
+                -0.0055,
+                0.0014298877954428062,
+                0.05
+              ],
+              "normal": [
+                0.00040246241887190995,
+                0.999999396679507,
+                -0.0010220883638217884
+              ]
+            }
+          ]
+        }
+      },
+      "pad4": {
+        "menagerie/assets/finger_0.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": -0.0013898419488245389,
+            "interior_witness_m": [
+              0.005289051782142378,
+              0.005389841948824538,
+              0.03461015805117546
+            ],
+            "positive_volume_overlap": false
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 168,
+              "point_m": [
+                0.0055,
+                0.009418710509894089,
+                0.0395
+              ],
+              "normal": [
+                0.0003243744405258802,
+                -0.9999985872508129,
+                0.0016493264081798304
+              ]
+            },
+            {
+              "face": 148,
+              "point_m": [
+                0.0055,
+                0.014412481186137473,
+                0.0395
+              ],
+              "normal": [
+                -7.86730458387501e-09,
+                0.9999999905267397,
+                -0.00013764636099933947
+              ]
+            }
+          ]
+        },
+        "menagerie/assets/finger_1.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": 0.002,
+            "interior_witness_m": [
+              0.0045,
+              0.002,
+              0.041
+            ],
+            "positive_volume_overlap": true
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 28,
+              "point_m": [
+                0.0055,
+                -3.248029515099972e-05,
+                0.0395
+              ],
+              "normal": [
+                0.006947077381680054,
+                -0.999955164948149,
+                -0.0064347656812894566
+              ]
+            },
+            {
+              "face": 141,
+              "point_m": [
+                0.0055,
+                0.0014364909911694457,
+                0.0395
+              ],
+              "normal": [
+                -0.0030063821687735647,
+                0.9999954808224758,
+                -9.384679783904986e-07
+              ]
+            }
+          ]
+        }
+      },
+      "pad5": {
+        "menagerie/assets/finger_0.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": -0.0014034659031084624,
+            "interior_witness_m": [
+              -0.001096534096891537,
+              0.005403465903108463,
+              0.03459653409689149
+            ],
+            "positive_volume_overlap": false
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 162,
+              "point_m": [
+                -0.0055,
+                0.009417969635321512,
+                0.0395
+              ],
+              "normal": [
+                -0.0027625251561003913,
+                -0.9999893404541425,
+                0.0036996530716666342
+              ]
+            },
+            {
+              "face": 149,
+              "point_m": [
+                -0.0055,
+                0.01441243088820129,
+                0.0395
+              ],
+              "normal": [
+                -5.521882427524343e-05,
+                0.9999999958866898,
+                -7.195486107285514e-05
+              ]
+            }
+          ]
+        },
+        "menagerie/assets/finger_1.obj": {
+          "hull_overlap": {
+            "intersection_interior_radius_m": 0.002,
+            "interior_witness_m": [
+              -0.0045,
+              0.002,
+              0.041
+            ],
+            "positive_volume_overlap": true
+          },
+          "center_y_ray_intersections": [
+            {
+              "face": 33,
+              "point_m": [
+                -0.0055,
+                -3.368901455516883e-05,
+                0.0395
+              ],
+              "normal": [
+                -0.006878326074323307,
+                -0.9999594723640229,
+                -0.005808808817645734
+              ]
+            },
+            {
+              "face": 154,
+              "point_m": [
+                -0.0055,
+                0.0014331875212989465,
+                0.0395
+              ],
+              "normal": [
+                0.00015502166829898246,
+                0.9999864035533381,
+                0.005212358078893987
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "robosuite_left": {
+      "pad_center_in_finger_body_m": [
+        0,
+        0.0035,
+        0.041
+      ],
+      "pad_half_size_m": [
+        0.008,
+        0.004,
+        0.008
+      ],
+      "bounds_m": [
+        [
+          -0.008,
+          -0.0005,
+          0.033
+        ],
+        [
+          0.008,
+          0.0075,
+          0.049
+        ]
+      ],
+      "hull_overlap": {
+        "intersection_interior_radius_m": 0.0037965982918443256,
+        "interior_witness_m": [
+          0.002322644334117056,
+          0.00370340170815568,
+          0.045203401708155656
+        ],
+        "positive_volume_overlap": true
+      },
+      "center_y_ray_intersections": [
+        {
+          "face": 10,
+          "point_m": [
+            0,
+            3.7420788745485406e-05,
+            0.041
+          ],
+          "normal": [
+            0.0362711918792646,
+            -0.9979401980939567,
+            -0.052912774146249175
+          ]
+        },
+        {
+          "face": 4,
+          "point_m": [
+            0,
+            0.018322797248905003,
+            0.041
+          ],
+          "normal": [
+            0.0006682028295795214,
+            0.9535564370978056,
+            0.3012136696338953
+          ]
+        }
+      ],
+      "note": "Right pad and mesh both rotate 180 deg about local z; in their common mesh frame the same relation holds."
+    }
+  }
+}
