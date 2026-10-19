@@ -1,0 +1,42 @@
+{
+  "issue": 23,
+  "created_utc": "2026-10-19T05:40:42.947697+00:00",
+  "candidate_sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c",
+  "candidate_count": 1,
+  "new_queries_at_freeze": 0,
+  "new_steps_at_freeze": 0,
+  "new_episodes_at_freeze": 0,
+  "source_baseline": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+  "runtime_baseline": "1e4d633730f62a398513d33991fa96f9c4977daa",
+  "static_order": "R1 23622,23623,23624 then remaining Issue18 selected R1/R0; stop immediately on critical unknown before further poses",
+  "static_stop": "A fails to reproduce OR unexplained same-finger cube pad+retained000 guard participation OR any numeric/API/input anomaly. Open/close/coverage must also be resolved before Gate1; no automatic promotion.",
+  "predictions": {
+    "H1": "Source-facing flat/ramp pads should use their explicit source normals on interior face contacts; edge contacts may differ. UNKNOWN until queried.",
+    "H2": "Retaining widening side strips as guards may leave original working-surface participation. Same cube/finger pad+guard coexistence is unresolved isolation, STOP; not proof of duplicate constraint forces."
+  },
+  "conditional_dynamics": {
+    "max_episodes": 2,
+    "A": 1,
+    "B": 1,
+    "condition": "Only complete Gate0 PASS; no retry/offset/sweep; freeze actual runtime closure and full state before first step",
+    "primary": "Unmodified evaluate_grasp: hold min lift>=0.08m, hold2s, drift<=0.01m, bilateral Fn>=0.05N fraction>=0.95, no nonfinger support, max robot/cube penetration<=0.001m, original control health",
+    "diagnostics": [
+      "first >1mm time/phase",
+      "max penetration",
+      "hold min lift/drift",
+      "bilateral fraction",
+      "nonfinger support",
+      "relative Z slip",
+      "contact geometry continuity",
+      "coupling residual",
+      "saturation/warnings",
+      "contact representation participation"
+    ],
+    "frozen_options": {
+      "cone": "elliptic",
+      "impratio": 10,
+      "nativeccd": false,
+      "expert_peak_joint_target_speed_rad_s": 0.2
+    }
+  }
+}

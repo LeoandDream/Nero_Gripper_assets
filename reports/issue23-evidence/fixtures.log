@@ -1,0 +1,8 @@
+test_front_prism_difference_has_exact_volume_and_membership (test_fingertip_pads.PadGeometryTests.test_front_prism_difference_has_exact_volume_and_membership) ... ok
+test_halfspace_clip_preserves_the_required_half_solid (test_fingertip_pads.PadGeometryTests.test_halfspace_clip_preserves_the_required_half_solid) ... ok
+test_pad_outer_face_matches_source_plane_without_outward_offset (test_fingertip_pads.PadGeometryTests.test_pad_outer_face_matches_source_plane_without_outward_offset) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.307s
+
+OK

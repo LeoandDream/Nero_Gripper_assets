@@ -1,0 +1,88 @@
+{
+  "review": "Append-only re-review after the five important safety/dependency findings were addressed",
+  "reviewed_source": {
+    "path": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/fingertip_pads.py",
+    "sha256": "09bc90291bfac878eb7c5f7eacf88789fcce84bf39aa5dfed82dd2f5eb2452e7",
+    "bytes": 21236,
+    "lines": 333
+  },
+  "scope": {
+    "text_AST_only": true,
+    "project_imports": 0,
+    "mujoco_imports": 0,
+    "prepare_calls": 0,
+    "candidate_generation": 0,
+    "query_calls": 0,
+    "new_mj_steps": 0,
+    "new_episodes": 0,
+    "source_modifications": 0
+  },
+  "status": "NO_OPEN_CRITICAL_OR_IMPORTANT_FINDINGS_IN_REVIEWED_STATIC_GATE0_CODE",
+  "critical_findings": 0,
+  "important_findings": 0,
+  "closed_findings": [
+    {
+      "id": "I1",
+      "status": "RESOLVED",
+      "evidence": "prepare adds previously verified historical input SHA seals; each selected qpos is checked against the existing Issue18 sealed plan before query."
+    },
+    {
+      "id": "I2",
+      "status": "RESOLVED",
+      "evidence": "helper bytes are pinned to BASE; spec origin, actual module file and function co_filename match expected helper files; actual local runtime modules are copied before model loading and checked before every query; current code and candidate manifest must match committed Git bytes."
+    },
+    {
+      "id": "I3",
+      "status": "RESOLVED",
+      "evidence": "A reproduction is evaluated inside the A iteration, and FAIL/UNKNOWN breaks the models loop before B. The failing A record is then written and the outer row loop stops."
+    },
+    {
+      "id": "I4",
+      "status": "RESOLVED",
+      "evidence": "historical qpos finite, queried qpos unchanged, warnings zero and all returned contact geometry finite are checked; raw query JSON uses allow_nan=False."
+    },
+    {
+      "id": "I5",
+      "status": "RESOLVED",
+      "evidence": "The existing try/except/finally now encloses sealed-input archiving, model compilation, compiled invariants, episode loading and the row loop, with initialized query counts and persistent error/result/STOP output."
+    }
+  ],
+  "additional_confirmations": [
+    "The old freeze git show and current HEAD/status commands now use cwd=ROOT.",
+    "sealed-inputs and archive receipts are created before compiling A/B and before any collision query; large historical npz/jsonl remain separately sealed by SHA rather than recopied in this Gate0 stage.",
+    "Only prepare/query CLI dispatch exists. No Controller, full-grasp runner, Episode or mj_step dispatch was added. Public mj_* APIs are allowlisted by the unchanged pinned guard_api helper.",
+    "query cannot report Gate0 PASS: it retains UNKNOWN, creates STOPPED and returns2. Any need for complete coverage/extreme-pose verification remains explicit, so finishing these queries cannot accidentally unlock dynamics.",
+    "Source-derived two-pad representation and prism/guard construction were not redesigned in the fixes."
+  ],
+  "mujoco_calls_in_source": [
+    {
+      "line": 243,
+      "call": "mujoco.MjModel.from_xml_path"
+    },
+    {
+      "line": 254,
+      "call": "mujoco.mj_id2name"
+    },
+    {
+      "line": 289,
+      "call": "mujoco.MjData"
+    },
+    {
+      "line": 290,
+      "call": "mujoco.mj_kinematics"
+    },
+    {
+      "line": 290,
+      "call": "mujoco.mj_collision"
+    },
+    {
+      "line": 297,
+      "call": "mujoco.mj_id2name"
+    }
+  ],
+  "limits": [
+    "This is a source review, not a runtime API audit, candidate geometry verdict, compile result or Gate0 PASS.",
+    "Candidate and generated guards remain unexecuted by this reviewer. Their coverage, numerical construction and actual pad/guard contacts remain to be observed within the approved one-candidate static protocol.",
+    "The candidate/code commit prerequisite still must actually be fulfilled before query; the code now verifies it."
+  ]
+}

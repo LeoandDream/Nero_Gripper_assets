@@ -1,0 +1,962 @@
+[
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/reports/issue16-evidence/exceedances.csv",
+    "archive": "sealed-inputs/0_exceedances.csv",
+    "sha256": "c333ba0b4b2312c5d855aa1cd3bbc1e32425ebcc6972840e05e911369983dae8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/reports/issue16-evidence/manifest.json",
+    "archive": "sealed-inputs/1_manifest.json",
+    "sha256": "c54710c4ce20e8d60862d33f7fc77000938a9baad2f5f1fc1d23db3a68d39216"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/reports/issue16-evidence/summary.json",
+    "archive": "sealed-inputs/2_summary.json",
+    "sha256": "34760c837277bd87eeb11b36f96221ac45a3187ff9f955e6eb991c3eed7b1f50"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/SOURCE_MANIFEST.json",
+    "archive": "sealed-inputs/3_SOURCE_MANIFEST.json",
+    "sha256": "785af8cc507bb3f33cfc82746b26f1eefcea6a1a967f070607cb7a39f8cdf20c"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/A.xml",
+    "archive": "sealed-inputs/4_A.xml",
+    "sha256": "448a119ace54659680b8ebead4ec673b24fd2c97a137f452043af4f0ddbfe494"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/B.xml",
+    "archive": "sealed-inputs/5_B.xml",
+    "sha256": "df4f2576e387a8b54cc5001148da50a7df649c165ef4f48f922473cc27a3ce8a"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/candidate.diff",
+    "archive": "sealed-inputs/6_candidate.diff",
+    "sha256": "365685d5f91a352f790e74a75a102b320211d6953f0bd01196e6eed2810967e3"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/candidate.json",
+    "archive": "sealed-inputs/7_candidate.json",
+    "sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_0.obj",
+    "archive": "sealed-inputs/8_gripper_link1_guard_0.obj",
+    "sha256": "f98b2e1489f53eb2fd52db73cbeed8fcdd17aebbaf94364fa3414e9b3648c79e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_1.obj",
+    "archive": "sealed-inputs/9_gripper_link1_guard_1.obj",
+    "sha256": "69189dbb9119d944f6b214d83d706ce01cc492f1dab06d3fbd55667450f29246"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_10.obj",
+    "archive": "sealed-inputs/10_gripper_link1_guard_10.obj",
+    "sha256": "18102005f7831caf98bed4f286e179cb6e0bcf385e79b3847aa77e5e14f698d0"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_11.obj",
+    "archive": "sealed-inputs/11_gripper_link1_guard_11.obj",
+    "sha256": "3d864bb1e6edf7fcc379778045b17103a6060d52b8805c78184b36922a558d58"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_2.obj",
+    "archive": "sealed-inputs/12_gripper_link1_guard_2.obj",
+    "sha256": "6a1621c43c6dbdafa558ee315e8eabf6348f8f75a8e7719919795691b55180f7"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_3.obj",
+    "archive": "sealed-inputs/13_gripper_link1_guard_3.obj",
+    "sha256": "eb36123980c9aef19631b840d6758cadc5f140dc2f98eee2af95c512b486e2ad"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_4.obj",
+    "archive": "sealed-inputs/14_gripper_link1_guard_4.obj",
+    "sha256": "5bda52b874e28587065b1d2dbf731c81eb14777850dc4a7a25e6483c3f808c83"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_5.obj",
+    "archive": "sealed-inputs/15_gripper_link1_guard_5.obj",
+    "sha256": "1eaa3f3e9fe23b9eb6ac0bb32a8485e075dbab504e8570c12e03661b390ab083"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_6.obj",
+    "archive": "sealed-inputs/16_gripper_link1_guard_6.obj",
+    "sha256": "0bb3cce85e2d07603c19969789916fa35359d9186f33d545f251a6c23aa34e6e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_7.obj",
+    "archive": "sealed-inputs/17_gripper_link1_guard_7.obj",
+    "sha256": "c8d122025d5c8f5e72814fae7fb6e5df21f4ce31a5e8fc5b246d906486e8cf2e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_8.obj",
+    "archive": "sealed-inputs/18_gripper_link1_guard_8.obj",
+    "sha256": "136ee8863d3c849871c10f272d730420272c12ff71e29483b48a1181afce8c84"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_9.obj",
+    "archive": "sealed-inputs/19_gripper_link1_guard_9.obj",
+    "sha256": "5290baaba4a4dc41cce70488d4c183a50acc58b8eea2536203fca5a6412ee891"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_0.obj",
+    "archive": "sealed-inputs/20_gripper_link2_guard_0.obj",
+    "sha256": "2f443e62041127d0a27c144bbb6caa2e93c74019f7fddb2cd0a36da579f039ae"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_1.obj",
+    "archive": "sealed-inputs/21_gripper_link2_guard_1.obj",
+    "sha256": "4b3fa5954f8df99cdc67119204b8cb9ee4d52dd33e930f2dbc0c2694db12c392"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_10.obj",
+    "archive": "sealed-inputs/22_gripper_link2_guard_10.obj",
+    "sha256": "9c147d23c628873edcf8be71f3b3ca59d3990ba784b89317925571ac5798ea85"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_11.obj",
+    "archive": "sealed-inputs/23_gripper_link2_guard_11.obj",
+    "sha256": "a6b88c5e08c569fae06af5263365e5b77b796c500119ea46359a8d0d4d6c4be3"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_2.obj",
+    "archive": "sealed-inputs/24_gripper_link2_guard_2.obj",
+    "sha256": "be4f0290fde32bd08df5deb5894d47b91768aec9584cab46c2aaf48a7b990b4a"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_3.obj",
+    "archive": "sealed-inputs/25_gripper_link2_guard_3.obj",
+    "sha256": "102d2a6357950274c20c40b3b6fb412997a2b2cb082d1a046a36d948722e2a6b"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_4.obj",
+    "archive": "sealed-inputs/26_gripper_link2_guard_4.obj",
+    "sha256": "1cb5ec0391dce1dbf8d10a1810cc1d6182dfb3b8d32e18cd1091cdc346d3ca55"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_5.obj",
+    "archive": "sealed-inputs/27_gripper_link2_guard_5.obj",
+    "sha256": "d3e5c896b11856f799c4de4af9c1bae74ef4060c3c58db4dd8cd62be8775c9f8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_6.obj",
+    "archive": "sealed-inputs/28_gripper_link2_guard_6.obj",
+    "sha256": "d64d4ab9dbe1bdf177eec1738b3fcc22f1a17fb9f8984ceaac61e3ee68137453"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_7.obj",
+    "archive": "sealed-inputs/29_gripper_link2_guard_7.obj",
+    "sha256": "3bd7f475582c14b34201557a7bf447dd3f003da0c5d6451ad5c79d69c12f3ffe"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_8.obj",
+    "archive": "sealed-inputs/30_gripper_link2_guard_8.obj",
+    "sha256": "e88ce54b4a76b7b9a0da62e6007e0a8a67ad3c9e3615bca18816a58e878ba775"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_9.obj",
+    "archive": "sealed-inputs/31_gripper_link2_guard_9.obj",
+    "sha256": "87a113eeb2455c5af11ebb70c44313fa83cf1eecfd844d31d7bf8d7cd4750024"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/geometry-basis/geometry-basis.json",
+    "archive": "sealed-inputs/32_geometry-basis.json",
+    "sha256": "1197f6b181f1c4ea3d9f548cf2c0686b6e264e826ef2b406017517754abc79ee"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/docs/BUILD.md",
+    "archive": "sealed-inputs/33_BUILD.md",
+    "sha256": "2f416ca1f3079e70ff8d2f10bebc4ff0b3673ed3b211e6318a7e3489d9d435a7"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/base-filter-approval.json",
+    "archive": "sealed-inputs/34_base-filter-approval.json",
+    "sha256": "9d6b88a83961f492098c849c865ac0d8568ea0dbee53fe3f3c637de8ecd7d4d8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/collision_geometry_match.py",
+    "archive": "sealed-inputs/35_collision_geometry_match.py",
+    "sha256": "b70da8849c2d40f4288995e79f10e7868a13297c949af11f9b0ba7d99f9678b8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/config.json",
+    "archive": "sealed-inputs/36_config.json",
+    "sha256": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/controller.py",
+    "archive": "sealed-inputs/37_controller.py",
+    "sha256": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/fingertip_pads.py",
+    "archive": "sealed-inputs/38_fingertip_pads.py",
+    "sha256": "09bc90291bfac878eb7c5f7eacf88789fcce84bf39aa5dfed82dd2f5eb2452e7"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/fixed_collision_query.py",
+    "archive": "sealed-inputs/39_fixed_collision_query.py",
+    "sha256": "aa48f5c273af047dc3d330650f8db1727bc88d100cc9d03e6df76e150227bed6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/grasp.json",
+    "archive": "sealed-inputs/40_grasp.json",
+    "sha256": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/run.py",
+    "archive": "sealed-inputs/41_run.py",
+    "sha256": "503098029aa320384d2536d25c47b547e7e33136fc924af3f26f04a01254063d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link1_000.obj",
+    "archive": "sealed-inputs/42_gripper_link1_000.obj",
+    "sha256": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link1_001.obj",
+    "archive": "sealed-inputs/43_gripper_link1_001.obj",
+    "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link2_000.obj",
+    "archive": "sealed-inputs/44_gripper_link2_000.obj",
+    "sha256": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link2_001.obj",
+    "archive": "sealed-inputs/45_gripper_link2_001.obj",
+    "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/source/agx_gripper/meshes/dae/gripper_link1.dae",
+    "archive": "sealed-inputs/46_gripper_link1.dae",
+    "sha256": "b4aaf0e024d09eb0454e70e0c5092638edcf7da7c253d1effdeeaec46f76427b"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/source/agx_gripper/meshes/dae/gripper_link2.dae",
+    "archive": "sealed-inputs/47_gripper_link2.dae",
+    "sha256": "0da1350898b2787b76b84698253aeb1efd2ddb6360b2fa2ae03ecff389883af8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/source/agx_gripper/meshes/gripper_link1.stl",
+    "archive": "sealed-inputs/48_gripper_link1.stl",
+    "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/source/agx_gripper/meshes/gripper_link2.stl",
+    "archive": "sealed-inputs/49_gripper_link2.stl",
+    "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/visual/gripper_link1.obj",
+    "archive": "sealed-inputs/50_gripper_link1.obj",
+    "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/visual/gripper_link2.obj",
+    "archive": "sealed-inputs/51_gripper_link2.obj",
+    "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/mjcf/nero_gripper.xml",
+    "archive": "sealed-inputs/52_nero_gripper.xml",
+    "sha256": "e5585f29fef505f48b90bbf2c7b1b035ee7eac68147d60147399db5993263b4e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue18-evidence/preregistration.json",
+    "archive": "sealed-inputs/53_preregistration.json",
+    "sha256": "3b771b5a02447f32e4c0b567e31ceffb031fab530060910d5604a8d61ef4e173"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/mesh-conversion.json",
+    "archive": "sealed-inputs/54_mesh-conversion.json",
+    "sha256": "e857c949934784c0e5780cae1a0854870df9831b034f9f9541d1e82d4ae660d2"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/scripts/build.py",
+    "archive": "sealed-inputs/55_build.py",
+    "sha256": "6761e7c3736acff2da81d95b412a8771ee205dcf33931fb3328f62ca62b91fd2"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/urdf/nero_gripper.urdf",
+    "archive": "sealed-inputs/56_nero_gripper.urdf",
+    "sha256": "b5b25090669b82265c24c7ea2eab7edef41feb719db1d62391d729619b67e8f8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+    "archive": "sealed-inputs/57_nero_with_gripper_description.xacro",
+    "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/STARTED",
+    "archive": "sealed-inputs/58_STARTED",
+    "sha256": "c431ae83552bc70a244408531b600836adefe955c77c6859a89a924b4f4331df"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/execution.json",
+    "archive": "sealed-inputs/59_execution.json",
+    "sha256": "c03bb48a346f3ecb5df491e4c4710c2838fffd2bf613ccfaaba8f8ec0cb2d0fc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/grasp-result.json",
+    "archive": "sealed-inputs/60_grasp-result.json",
+    "sha256": "ae29eed002d2a82e2d7c0d5c2e03b38fe66bce5d52c83f1e9a95f20987005bd6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model-default.xml",
+    "archive": "sealed-inputs/61_model-default.xml",
+    "sha256": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.comparison.json",
+    "archive": "sealed-inputs/62_model.comparison.json",
+    "sha256": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.diff",
+    "archive": "sealed-inputs/63_model.diff",
+    "sha256": "2813528488327e6df5532efbc6a2fc17f90b0ecac144b53d466986fec26c332d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.xml",
+    "archive": "sealed-inputs/64_model.xml",
+    "sha256": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/protocol.json",
+    "archive": "sealed-inputs/65_protocol.json",
+    "sha256": "a0a2227ac254afcde705873a0a1eb4490ecc5a97083bef2da88edda02e00d148"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/raw-manifest.json",
+    "archive": "sealed-inputs/66_raw-manifest.json",
+    "sha256": "28d724b65dfa3a0f6bade367b8a6c46c93c669325f819dc337065a72417b4a47"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/registration.executed.json",
+    "archive": "sealed-inputs/67_registration.executed.json",
+    "sha256": "d9c9cdd7d662beddb10182843ee4e29a64ae1b70f65d7df2f43e582ebfab40cf"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/result.json",
+    "archive": "sealed-inputs/68_result.json",
+    "sha256": "cc26445d8324dd08fcad3af306c88163a1928f32c25c9a16bc7050b575209cc6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/runner.executed.py",
+    "archive": "sealed-inputs/69_runner.executed.py",
+    "sha256": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/STARTED",
+    "archive": "sealed-inputs/70_STARTED",
+    "sha256": "c431ae83552bc70a244408531b600836adefe955c77c6859a89a924b4f4331df"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/execution.json",
+    "archive": "sealed-inputs/71_execution.json",
+    "sha256": "994fe4eac6f47056949eca36176e9f8b9a25e83f9949bb8a76d5ff7609fd0e60"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/grasp-result.json",
+    "archive": "sealed-inputs/72_grasp-result.json",
+    "sha256": "df33ab6f41e7e124b1d38898fd240380342dc18823e117f31b7859b8aa505098"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model-default.xml",
+    "archive": "sealed-inputs/73_model-default.xml",
+    "sha256": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.comparison.json",
+    "archive": "sealed-inputs/74_model.comparison.json",
+    "sha256": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.diff",
+    "archive": "sealed-inputs/75_model.diff",
+    "sha256": "2813528488327e6df5532efbc6a2fc17f90b0ecac144b53d466986fec26c332d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.xml",
+    "archive": "sealed-inputs/76_model.xml",
+    "sha256": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/protocol.json",
+    "archive": "sealed-inputs/77_protocol.json",
+    "sha256": "a0378400aa64f06c5c043f65e2c26fa44b68d7d31b1ff69c12b5e3248a84f00e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/raw-manifest.json",
+    "archive": "sealed-inputs/78_raw-manifest.json",
+    "sha256": "cb3aaa5c2d6f07cb975a4d6a79f9315dc454812e2f4bc63129044d168fd88fd0"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/registration.executed.json",
+    "archive": "sealed-inputs/79_registration.executed.json",
+    "sha256": "efade1260109d3fe8d236963dacbabc3f18b2a372c3d7e7a980abd2e6c689f0d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/result.json",
+    "archive": "sealed-inputs/80_result.json",
+    "sha256": "e769a5226bf35a5953852240ecb7db6d76af37dcda32cb953191c6a6b04b3ad4"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/runner.executed.py",
+    "archive": "sealed-inputs/81_runner.executed.py",
+    "sha256": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/base-filter-approval.json",
+    "archive": "sealed-inputs/82_base-filter-approval.json",
+    "sha256": "9d6b88a83961f492098c849c865ac0d8568ea0dbee53fe3f3c637de8ecd7d4d8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/config.json",
+    "archive": "sealed-inputs/83_config.json",
+    "sha256": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/controller.py",
+    "archive": "sealed-inputs/84_controller.py",
+    "sha256": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/full_grasp_loop.py",
+    "archive": "sealed-inputs/85_full_grasp_loop.py",
+    "sha256": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/grasp.json",
+    "archive": "sealed-inputs/86_grasp.json",
+    "sha256": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/run.py",
+    "archive": "sealed-inputs/87_run.py",
+    "sha256": "503098029aa320384d2536d25c47b547e7e33136fc924af3f26f04a01254063d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed-default.xml",
+    "archive": "sealed-inputs/88_fixed-default.xml",
+    "sha256": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed-initial-contacts.json",
+    "archive": "sealed-inputs/89_fixed-initial-contacts.json",
+    "sha256": "33a12d6dc639175f0ca4eb07317876ff6ce4e7731dbbe4d82f7554dea724ffa5"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed.comparison.json",
+    "archive": "sealed-inputs/90_fixed.comparison.json",
+    "sha256": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed.diff",
+    "archive": "sealed-inputs/91_fixed.diff",
+    "sha256": "b639e741a463f22fa56b3926a153ca5cb7fe624585420e532e10c3e3a8ce1142"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed.xml",
+    "archive": "sealed-inputs/92_fixed.xml",
+    "sha256": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/frozen-plan.json",
+    "archive": "sealed-inputs/93_frozen-plan.json",
+    "sha256": "23cf8494f4017b718a0fabbbad4e014625a730cbcd814d2bc605650086a81098"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative-default.xml",
+    "archive": "sealed-inputs/94_offset_negative-default.xml",
+    "sha256": "08a84040b29093528c1474119cae54c68b3f971eee54fc1cae80aab4c1e5c6f7"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative-initial-contacts.json",
+    "archive": "sealed-inputs/95_offset_negative-initial-contacts.json",
+    "sha256": "6ab6424efba488f497840770958dd66de5bbebb93466ca856bccec19b032433f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative.comparison.json",
+    "archive": "sealed-inputs/96_offset_negative.comparison.json",
+    "sha256": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative.diff",
+    "archive": "sealed-inputs/97_offset_negative.diff",
+    "sha256": "af88978cf62fa560b4c385da6cd79b2c9bb8f94dd51ba216df6590c0b6156a5a"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative.xml",
+    "archive": "sealed-inputs/98_offset_negative.xml",
+    "sha256": "4b817c528d21a8c901113cac0b8541630a05dc37d4d87b4a4857718ae9439f36"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive-default.xml",
+    "archive": "sealed-inputs/99_offset_positive-default.xml",
+    "sha256": "4534043b108fb2d1be6cb648e3eb8f09472b84264627185e9fd3865092b67134"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive-initial-contacts.json",
+    "archive": "sealed-inputs/100_offset_positive-initial-contacts.json",
+    "sha256": "c06aa3f69f17b63fd3b5ea4cddee470a1b4dbcf7cd140b0738b7bb8a9c642ff9"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive.comparison.json",
+    "archive": "sealed-inputs/101_offset_positive.comparison.json",
+    "sha256": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive.diff",
+    "archive": "sealed-inputs/102_offset_positive.diff",
+    "sha256": "8f000290b8bb0aef8c60f45aeb54971a15c8f00b653b18b381103bc3521c13b5"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive.xml",
+    "archive": "sealed-inputs/103_offset_positive.xml",
+    "sha256": "a66bba079bbc8f9042a3d23d6d586c0791e20abea34e13297a8c291a7f7f7692"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/prepared.json",
+    "archive": "sealed-inputs/104_prepared.json",
+    "sha256": "f8a51d8e7d82f810b671733f4bf852c60e3a3b191befca5bc18db88ca0026ba0"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_000.obj",
+    "archive": "sealed-inputs/105_base_link_000.obj",
+    "sha256": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_001.obj",
+    "archive": "sealed-inputs/106_base_link_001.obj",
+    "sha256": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_002.obj",
+    "archive": "sealed-inputs/107_base_link_002.obj",
+    "sha256": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_003.obj",
+    "archive": "sealed-inputs/108_base_link_003.obj",
+    "sha256": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_004.obj",
+    "archive": "sealed-inputs/109_base_link_004.obj",
+    "sha256": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_005.obj",
+    "archive": "sealed-inputs/110_base_link_005.obj",
+    "sha256": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_006.obj",
+    "archive": "sealed-inputs/111_base_link_006.obj",
+    "sha256": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_007.obj",
+    "archive": "sealed-inputs/112_base_link_007.obj",
+    "sha256": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_000.obj",
+    "archive": "sealed-inputs/113_flange_link_000.obj",
+    "sha256": "872ef90145b57099acb788cd435c58c04797addf5db349e5146f50a2e4c55844"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_001.obj",
+    "archive": "sealed-inputs/114_flange_link_001.obj",
+    "sha256": "5da3693864b65d1ef131e33079afc05cda5c9f802f4a0c7d5abcb526183f5876"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_002.obj",
+    "archive": "sealed-inputs/115_flange_link_002.obj",
+    "sha256": "afcd8b70d1fd2e8a665c1e95520e5f7959cc17bd795ded787a0831feff224cc9"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_000.obj",
+    "archive": "sealed-inputs/116_gripper_base_000.obj",
+    "sha256": "093856a968a5adb2ac2c6d3236fe7fdd4609ffb030b155a2fa9e1fc944c29d3a"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_001.obj",
+    "archive": "sealed-inputs/117_gripper_base_001.obj",
+    "sha256": "72dcfe03601873b0d0c5e9c4928e8d7582fcd4be2819712f698dca1fa78a6065"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_002.obj",
+    "archive": "sealed-inputs/118_gripper_base_002.obj",
+    "sha256": "030ce8c7d270eec3889ccc246c806b40fa8de7b425afd25927827f43145bb286"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_003.obj",
+    "archive": "sealed-inputs/119_gripper_base_003.obj",
+    "sha256": "8725bf15222f8ffdc03f0902b24472d5a72781018f410d57f4d5ed561d55a30e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link1_000.obj",
+    "archive": "sealed-inputs/120_gripper_link1_000.obj",
+    "sha256": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link1_001.obj",
+    "archive": "sealed-inputs/121_gripper_link1_001.obj",
+    "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_000.obj",
+    "archive": "sealed-inputs/122_gripper_link2_000.obj",
+    "sha256": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_001.obj",
+    "archive": "sealed-inputs/123_gripper_link2_001.obj",
+    "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_000.obj",
+    "archive": "sealed-inputs/124_link1_000.obj",
+    "sha256": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_001.obj",
+    "archive": "sealed-inputs/125_link1_001.obj",
+    "sha256": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_002.obj",
+    "archive": "sealed-inputs/126_link1_002.obj",
+    "sha256": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_003.obj",
+    "archive": "sealed-inputs/127_link1_003.obj",
+    "sha256": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_004.obj",
+    "archive": "sealed-inputs/128_link1_004.obj",
+    "sha256": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_005.obj",
+    "archive": "sealed-inputs/129_link1_005.obj",
+    "sha256": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_006.obj",
+    "archive": "sealed-inputs/130_link1_006.obj",
+    "sha256": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_007.obj",
+    "archive": "sealed-inputs/131_link1_007.obj",
+    "sha256": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_000.obj",
+    "archive": "sealed-inputs/132_link2_000.obj",
+    "sha256": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_001.obj",
+    "archive": "sealed-inputs/133_link2_001.obj",
+    "sha256": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_002.obj",
+    "archive": "sealed-inputs/134_link2_002.obj",
+    "sha256": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_003.obj",
+    "archive": "sealed-inputs/135_link2_003.obj",
+    "sha256": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_004.obj",
+    "archive": "sealed-inputs/136_link2_004.obj",
+    "sha256": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_000.obj",
+    "archive": "sealed-inputs/137_link3_000.obj",
+    "sha256": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_001.obj",
+    "archive": "sealed-inputs/138_link3_001.obj",
+    "sha256": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_002.obj",
+    "archive": "sealed-inputs/139_link3_002.obj",
+    "sha256": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_003.obj",
+    "archive": "sealed-inputs/140_link3_003.obj",
+    "sha256": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_004.obj",
+    "archive": "sealed-inputs/141_link3_004.obj",
+    "sha256": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_005.obj",
+    "archive": "sealed-inputs/142_link3_005.obj",
+    "sha256": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_006.obj",
+    "archive": "sealed-inputs/143_link3_006.obj",
+    "sha256": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_007.obj",
+    "archive": "sealed-inputs/144_link3_007.obj",
+    "sha256": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_000.obj",
+    "archive": "sealed-inputs/145_link4_000.obj",
+    "sha256": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_001.obj",
+    "archive": "sealed-inputs/146_link4_001.obj",
+    "sha256": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_002.obj",
+    "archive": "sealed-inputs/147_link4_002.obj",
+    "sha256": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_003.obj",
+    "archive": "sealed-inputs/148_link4_003.obj",
+    "sha256": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_004.obj",
+    "archive": "sealed-inputs/149_link4_004.obj",
+    "sha256": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_005.obj",
+    "archive": "sealed-inputs/150_link4_005.obj",
+    "sha256": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_000.obj",
+    "archive": "sealed-inputs/151_link5_000.obj",
+    "sha256": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_001.obj",
+    "archive": "sealed-inputs/152_link5_001.obj",
+    "sha256": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_002.obj",
+    "archive": "sealed-inputs/153_link5_002.obj",
+    "sha256": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_003.obj",
+    "archive": "sealed-inputs/154_link5_003.obj",
+    "sha256": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_004.obj",
+    "archive": "sealed-inputs/155_link5_004.obj",
+    "sha256": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_005.obj",
+    "archive": "sealed-inputs/156_link5_005.obj",
+    "sha256": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_006.obj",
+    "archive": "sealed-inputs/157_link5_006.obj",
+    "sha256": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_000.obj",
+    "archive": "sealed-inputs/158_link6_000.obj",
+    "sha256": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_001.obj",
+    "archive": "sealed-inputs/159_link6_001.obj",
+    "sha256": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_002.obj",
+    "archive": "sealed-inputs/160_link6_002.obj",
+    "sha256": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_003.obj",
+    "archive": "sealed-inputs/161_link6_003.obj",
+    "sha256": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_004.obj",
+    "archive": "sealed-inputs/162_link6_004.obj",
+    "sha256": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_000.obj",
+    "archive": "sealed-inputs/163_link7_000.obj",
+    "sha256": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_001.obj",
+    "archive": "sealed-inputs/164_link7_001.obj",
+    "sha256": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_002.obj",
+    "archive": "sealed-inputs/165_link7_002.obj",
+    "sha256": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_003.obj",
+    "archive": "sealed-inputs/166_link7_003.obj",
+    "sha256": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/base_link.obj",
+    "archive": "sealed-inputs/167_base_link.obj",
+    "sha256": "4cec56c02abcb161f6962d068aaf292a2b8b90c0d75ba8231dbdc2ec9ca0a413"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/base_link.png",
+    "archive": "sealed-inputs/168_base_link.png",
+    "sha256": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/flange_link.obj",
+    "archive": "sealed-inputs/169_flange_link.obj",
+    "sha256": "23fafefe84d7feb662c95f8f5d745a5a609f24a8694b8cd03255e23e6ea4721d"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/flange_link.png",
+    "archive": "sealed-inputs/170_flange_link.png",
+    "sha256": "2e0a9a2d5f28563463f634d5b81ec2ef90d91afe472a0c6e2c6ef4082f93ec5f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_base.obj",
+    "archive": "sealed-inputs/171_gripper_base.obj",
+    "sha256": "a91a229b077918f6b2105c5976b826c6fe4efd808414b7b37eaffdfbfac2604f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_base.png",
+    "archive": "sealed-inputs/172_gripper_base.png",
+    "sha256": "ebdbf4a658f652f7b9d91a40137a8888194b42dd76dd54dd85eec5caba1d35bc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link1.obj",
+    "archive": "sealed-inputs/173_gripper_link1.obj",
+    "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link1.png",
+    "archive": "sealed-inputs/174_gripper_link1.png",
+    "sha256": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link2.obj",
+    "archive": "sealed-inputs/175_gripper_link2.obj",
+    "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link2.png",
+    "archive": "sealed-inputs/176_gripper_link2.png",
+    "sha256": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link1.obj",
+    "archive": "sealed-inputs/177_link1.obj",
+    "sha256": "27caed860ed3ec504b4158f78611947ddd84ad086e86c799ab1cc53361fee17b"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link1.png",
+    "archive": "sealed-inputs/178_link1.png",
+    "sha256": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link2.obj",
+    "archive": "sealed-inputs/179_link2.obj",
+    "sha256": "9209b580bf938d0f2e4a5e92e3e68486a2820da3ce71948a5d43163c1ab87abd"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link2.png",
+    "archive": "sealed-inputs/180_link2.png",
+    "sha256": "13544428266a19297d227fcf9f7a7c3ccda5504a350e2caafc9d5034ea9816b5"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link3.obj",
+    "archive": "sealed-inputs/181_link3.obj",
+    "sha256": "2534c1a9d1604b5a78ea5122afb8f6c46f0cfb9dd5913903876e73c34f965b10"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link3.png",
+    "archive": "sealed-inputs/182_link3.png",
+    "sha256": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link4.obj",
+    "archive": "sealed-inputs/183_link4.obj",
+    "sha256": "6c79398ffe8a2b5505f9ddea0bdbe6cc479708bc9323dffd8b14e357831f1665"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link4.png",
+    "archive": "sealed-inputs/184_link4.png",
+    "sha256": "ebe6a584bfb4188eb0999f15ef8ba3e1696f98e5f7e6d2b5922c68ed6b52fd3e"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link5.obj",
+    "archive": "sealed-inputs/185_link5.obj",
+    "sha256": "ee3d1e2f9eb26cf62eeb426848daf85cd994c968ff37e9d8b1230ef38bf6dd83"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link5.png",
+    "archive": "sealed-inputs/186_link5.png",
+    "sha256": "c4f67308ac223864064c894935e87fc23e26233e85ef3f9e6152ba7398bcd904"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link6.obj",
+    "archive": "sealed-inputs/187_link6.obj",
+    "sha256": "52b69bf482e9788bd81f86436cf14c04ebec0e474876869ee4dc4b4d9eb6a19f"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link6.png",
+    "archive": "sealed-inputs/188_link6.png",
+    "sha256": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link7.obj",
+    "archive": "sealed-inputs/189_link7.obj",
+    "sha256": "16455c947aa77cbd40b24f58a89a28a9324008f61c4d63210ab786b46e4e1471"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link7.png",
+    "archive": "sealed-inputs/190_link7.png",
+    "sha256": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc"
+  },
+  {
+    "source": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/reports/issue14-evidence-manifest.json",
+    "archive": "sealed-inputs/191_issue14-evidence-manifest.json",
+    "sha256": "69489b1dfade81c02df6075398634ad22cf78cd7a6ea59b821e9b2881aa46e04"
+  }
+]

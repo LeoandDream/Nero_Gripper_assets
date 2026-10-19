@@ -1,0 +1,77 @@
+--- A.xml
++++ B.xml
+@@ -101,6 +101,30 @@
+     <mesh name="gripper_link2_collision_000" file="/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_000.obj" />
+     <mesh name="gripper_link2_collision_001" file="/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_001.obj" />
+     <texture name="experiment_background" type="skybox" builtin="flat" rgb1=".88 .90 .92" rgb2=".88 .90 .92" width="32" height="192" />
++    <mesh name="gripper_link1_guard_0" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_0.obj" />
++    <mesh name="gripper_link1_guard_1" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_1.obj" />
++    <mesh name="gripper_link1_guard_2" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_2.obj" />
++    <mesh name="gripper_link1_guard_3" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_3.obj" />
++    <mesh name="gripper_link1_guard_4" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_4.obj" />
++    <mesh name="gripper_link1_guard_5" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_5.obj" />
++    <mesh name="gripper_link1_guard_6" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_6.obj" />
++    <mesh name="gripper_link1_guard_7" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_7.obj" />
++    <mesh name="gripper_link1_guard_8" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_8.obj" />
++    <mesh name="gripper_link1_guard_9" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_9.obj" />
++    <mesh name="gripper_link1_guard_10" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_10.obj" />
++    <mesh name="gripper_link1_guard_11" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_11.obj" />
++    <mesh name="gripper_link2_guard_0" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_0.obj" />
++    <mesh name="gripper_link2_guard_1" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_1.obj" />
++    <mesh name="gripper_link2_guard_2" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_2.obj" />
++    <mesh name="gripper_link2_guard_3" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_3.obj" />
++    <mesh name="gripper_link2_guard_4" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_4.obj" />
++    <mesh name="gripper_link2_guard_5" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_5.obj" />
++    <mesh name="gripper_link2_guard_6" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_6.obj" />
++    <mesh name="gripper_link2_guard_7" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_7.obj" />
++    <mesh name="gripper_link2_guard_8" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_8.obj" />
++    <mesh name="gripper_link2_guard_9" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_9.obj" />
++    <mesh name="gripper_link2_guard_10" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_10.obj" />
++    <mesh name="gripper_link2_guard_11" file="/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_11.obj" />
+   </asset>
+   <worldbody>
+     <body name="base_link" pos="0 0 0" quat="1 0 0 0">
+@@ -202,15 +226,41 @@
+                           <inertial pos="0.00065123185041968004 -0.049192986913198899 0.0097225876918402496" mass="0.025" diaginertia="5.0797617256239397e-06 1.0850910357125149e-05 1.4522914303830911e-05" quat="0.064306243673385458 0.68316456429046502 0.72399478374448345 -0.070586388441518322" />
+                           <joint name="gripper_joint1" type="slide" pos="0 0 0" axis="0 0 1" range="0 0.05" />
+                           <geom name="gripper_link1_visual" type="mesh" mesh="gripper_link1_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="gripper_link1_visual_material" contype="0" conaffinity="0" group="1" />
+-                          <geom name="gripper_link1_collision_000" type="mesh" mesh="gripper_link1_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                           <geom name="gripper_link1_collision_001" type="mesh" mesh="gripper_link1_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_pad_tip_zero_plane" type="box" pos="0 -0.0050110891461372375 0.0010000000474974513" quat="-8.1492162920759054e-18 1 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" size="0.0099999997764825821 0.0050110891461372375 0.0010000000474974513" />
++                          <geom name="gripper_link1_pad_inner_ramp" type="box" pos="0 -0.020090114437194856 0.0018988705262182794" quat="0.044313425550279631 0.99901767767942917 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" size="0.01271488144993782 0.010196521341049054 0.0010000000474974513" />
++                          <geom name="gripper_link1_guard_0" type="mesh" mesh="gripper_link1_guard_0" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_1" type="mesh" mesh="gripper_link1_guard_1" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_2" type="mesh" mesh="gripper_link1_guard_2" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_3" type="mesh" mesh="gripper_link1_guard_3" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_4" type="mesh" mesh="gripper_link1_guard_4" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_5" type="mesh" mesh="gripper_link1_guard_5" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_6" type="mesh" mesh="gripper_link1_guard_6" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_7" type="mesh" mesh="gripper_link1_guard_7" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_8" type="mesh" mesh="gripper_link1_guard_8" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_9" type="mesh" mesh="gripper_link1_guard_9" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_10" type="mesh" mesh="gripper_link1_guard_10" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link1_guard_11" type="mesh" mesh="gripper_link1_guard_11" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                         </body>
+                         <body name="gripper_link2" pos="0 0 0.13800000000000001" quat="0.70710679065997406 0.70710677171312097 0 0">
+                           <inertial pos="0.00065123185041968004 -0.049192986913198899 0.0097225876918402496" mass="0.025" diaginertia="5.0797617256239397e-06 1.0850910357125149e-05 1.4522914303830911e-05" quat="0.064306243673385458 0.68316456429046502 0.72399478374448345 -0.070586388441518322" />
+                           <joint name="gripper_joint2" type="slide" pos="0 0 0" axis="0 0 -1" range="-0.05 0" />
+                           <geom name="gripper_link2_visual" type="mesh" mesh="gripper_link2_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="gripper_link2_visual_material" contype="0" conaffinity="0" group="1" />
+-                          <geom name="gripper_link2_collision_000" type="mesh" mesh="gripper_link2_collision_000" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                           <geom name="gripper_link2_collision_001" type="mesh" mesh="gripper_link2_collision_001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_pad_tip_zero_plane" type="box" pos="0 -0.0050110891461372375 0.0010000000474974522" quat="4.5099165014129964e-17 1 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" size="0.0099999997764825821 0.0050110891461372375 0.0010000000474974517" />
++                          <geom name="gripper_link2_pad_inner_ramp" type="box" pos="0 -0.020090114437194856 0.0018988705262182797" quat="0.044313425550279596 0.99901767767942917 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" size="0.01271488144993782 0.010196521341049054 0.0010000000474974517" />
++                          <geom name="gripper_link2_guard_0" type="mesh" mesh="gripper_link2_guard_0" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_1" type="mesh" mesh="gripper_link2_guard_1" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_2" type="mesh" mesh="gripper_link2_guard_2" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_3" type="mesh" mesh="gripper_link2_guard_3" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_4" type="mesh" mesh="gripper_link2_guard_4" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_5" type="mesh" mesh="gripper_link2_guard_5" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_6" type="mesh" mesh="gripper_link2_guard_6" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_7" type="mesh" mesh="gripper_link2_guard_7" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_8" type="mesh" mesh="gripper_link2_guard_8" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_9" type="mesh" mesh="gripper_link2_guard_9" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_10" type="mesh" mesh="gripper_link2_guard_10" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
++                          <geom name="gripper_link2_guard_11" type="mesh" mesh="gripper_link2_guard_11" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+                         </body>
+                         <site name="grasp_center" pos="0 0 0.12" size=".002" rgba="0 0 0 0" />
+                       </body>

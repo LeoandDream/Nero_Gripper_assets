@@ -1,0 +1,93 @@
+{
+  "prepare": {
+    "argv": [
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+      "-B",
+      "experiments/dynamics/fingertip_pads.py",
+      "prepare",
+      "--campaign",
+      "debug/issue23/candidate-001",
+      "--basis",
+      "debug/issue23/geometry-basis/geometry-basis.json"
+    ],
+    "cwd": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads",
+    "started_utc": "2026-10-19T05:39:29.936600+00:00",
+    "completed_utc": "2026-10-19T05:39:33.027161+00:00",
+    "exit_code": 0
+  },
+  "fixtures": {
+    "argv": [
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "experiments/dynamics",
+      "-p",
+      "test_fingertip_pads.py",
+      "-v"
+    ],
+    "cwd": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads",
+    "started_utc": "2026-10-19T05:40:53.270557+00:00",
+    "completed_utc": "2026-10-19T05:40:53.977152+00:00",
+    "exit_code": 0
+  },
+  "query": {
+    "argv": [
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+      "-B",
+      "experiments/dynamics/fingertip_pads.py",
+      "query",
+      "--campaign",
+      "debug/issue23/candidate-001"
+    ],
+    "cwd": "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads",
+    "started_utc": "2026-10-19T05:40:59.326849+00:00",
+    "completed_utc": "2026-10-19T05:41:06.906376+00:00",
+    "exit_code": 2
+  },
+  "source_inspection": {
+    "command": [
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+      "-B",
+      "experiments/dynamics/inspect_fingertip_sources.py",
+      "--output",
+      "debug/issue23/source-inspection-published"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"status\": \"GEOMETRY_ENVELOPE_TRACED_CANDIDATE_UNFROZEN\", \"geometry_basis_json\": \"/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/source-inspection-published/geometry-basis.json\", \"source_manifest_all_match\": true, \"no_simulator_imports\": true, \"no_candidate_generated\": true}\n",
+    "stderr": "",
+    "immutable_before": {
+      "basis": "1197f6b181f1c4ea3d9f548cf2c0686b6e264e826ef2b406017517754abc79ee",
+      "candidate": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c"
+    },
+    "field_equal": {
+      "status": true,
+      "status_scope": true,
+      "no_candidate_generated": true,
+      "simulator_imports": true,
+      "physics_steps": true,
+      "index_convention": true,
+      "source_repository": true,
+      "source_revision": true,
+      "frame_convention": true,
+      "fingers": true,
+      "left_right_max_source_triangle_coordinate_difference_m": true,
+      "input_sha256": true,
+      "source_manifest_sha_matches": true
+    },
+    "all_key_geometry_fields_equal": true,
+    "geometry_unchanged": true,
+    "metadata_may_differ": [
+      "git_head",
+      "analysis_script_sha256"
+    ],
+    "immutable_after": {
+      "basis": "1197f6b181f1c4ea3d9f548cf2c0686b6e264e826ef2b406017517754abc79ee",
+      "candidate": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c"
+    },
+    "immutable_preserved": true,
+    "published_script_sha256": "c1a312a8047053495b5038db930247b8695d7007d9e5564eed8d1162191b2e27"
+  }
+}

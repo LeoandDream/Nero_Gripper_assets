@@ -1,0 +1,95 @@
+{
+  "artifacts": {
+    "reports/issue23-evidence/archive-receipt.json": {
+      "sha256": "c8ccfc16add573d4361c5b5430b52513540e1a28fda64c9d147c9a6412d90a95",
+      "bytes": 50658
+    },
+    "reports/issue23-evidence/candidate-review.json": {
+      "sha256": "6bbb32ee4861a396dc545b2743c524a81f64eb4051e8db89df00bb03edb5137e",
+      "bytes": 8565
+    },
+    "reports/issue23-evidence/candidate.diff": {
+      "sha256": "365685d5f91a352f790e74a75a102b320211d6953f0bd01196e6eed2810967e3",
+      "bytes": 13151
+    },
+    "reports/issue23-evidence/code-review.json": {
+      "sha256": "55f0ed137bdad3910cb92ed5435e10ce1e478535c3d20ad095c8dea1e8583770",
+      "bytes": 3905
+    },
+    "reports/issue23-evidence/commands.json": {
+      "sha256": "1bf58743fc788e46f66b7745fe3de1e544e7c1f2827e83c412b11068bc05698e",
+      "bytes": 3314
+    },
+    "reports/issue23-evidence/compiled-invariants.json": {
+      "sha256": "6a9b8f1298e6952c4815ab3ae89318334570aba265d29e3da521b973001b0c57",
+      "bytes": 1595
+    },
+    "reports/issue23-evidence/fixtures.log": {
+      "sha256": "b6bab645763383ca0fa6d18bc6a1eaacaaf5b04f3eef2164a63519fb10cf2093",
+      "bytes": 592
+    },
+    "reports/issue23-evidence/historical-contact-summary.json": {
+      "sha256": "0cf8a79371ca6ad0a46f8b46554e08798c36656a906f143d6fd530c5092f8c6c",
+      "bytes": 9876
+    },
+    "reports/issue23-evidence/integrity-after.json": {
+      "sha256": "e8433eed853b7185be541df9ca60801f4657190eed974dde2b8d06a5501f5a62",
+      "bytes": 23693
+    },
+    "reports/issue23-evidence/preregistration.json": {
+      "sha256": "122950f2957fc67917d572f61b8fb58a14e0c476f2a4cf7dfd2b3e207ab3e5e4",
+      "bytes": 2069
+    },
+    "reports/issue23-evidence/queries.jsonl": {
+      "sha256": "4e102b7d6e24560e00f819d607d7884d1d10b320ee273b32a3a9ca60e8225c4a",
+      "bytes": 16192
+    },
+    "reports/issue23-evidence/result.json": {
+      "sha256": "549605e479e46235f2b9ac5d041488f8a0ff99d29c97519d251b5e0876211515",
+      "bytes": 538
+    },
+    "reports/issue23-evidence/runtime-before.json": {
+      "sha256": "15099ea8f8a863713f1edd6d637bfbb52270f3048e07a070e09fd09e0ca9b8e8",
+      "bytes": 1091
+    },
+    "reports/issue23-evidence/source-geometry.json": {
+      "sha256": "1197f6b181f1c4ea3d9f548cf2c0686b6e264e826ef2b406017517754abc79ee",
+      "bytes": 88588
+    },
+    "reports/issue23-evidence/source-inspection-check.json": {
+      "sha256": "1f3211090963756207133cade2d7a0ab237db1f3080e577612a6ecdd2b1be3a6",
+      "bytes": 1709
+    },
+    "reports/issue23-evidence/static-review.json": {
+      "sha256": "dc4b1404c43ee3d71172e87d84ad9084bfe090a0ed309cbb6f564491a49ea4bf",
+      "bytes": 31921
+    },
+    "reports/issue23-evidence/summary.json": {
+      "sha256": "8cf8622157474f80529f6712e8db491ceb799560637327a47bea00aeeda8714b",
+      "bytes": 1578
+    }
+  },
+  "note": "Manifest excludes itself. Original Run bytes remain sealed in candidate input hashes.",
+  "delivery_files": {
+    "reports/issue23-fingertip-pads.md": {
+      "sha256": "00f9eea9ba38924becc57bd98971014199b2c37d6bf2cc708cb65c20bab18935",
+      "bytes": 9521
+    },
+    "reports/issue23-candidate.json": {
+      "sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c",
+      "bytes": 53461
+    },
+    "experiments/dynamics/fingertip_pads.py": {
+      "sha256": "09bc90291bfac878eb7c5f7eacf88789fcce84bf39aa5dfed82dd2f5eb2452e7",
+      "bytes": 21236
+    },
+    "experiments/dynamics/test_fingertip_pads.py": {
+      "sha256": "7a99e83bed6b0ebe81cc37315a242bc899d00a5fe86f215904377911d7a8e52a",
+      "bytes": 2523
+    },
+    "experiments/dynamics/inspect_fingertip_sources.py": {
+      "sha256": "c1a312a8047053495b5038db930247b8695d7007d9e5564eed8d1162191b2e27",
+      "bytes": 13973
+    }
+  }
+}

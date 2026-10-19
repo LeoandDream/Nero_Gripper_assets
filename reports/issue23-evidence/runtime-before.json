@@ -1,0 +1,21 @@
+{
+  "project_modules_sha256": {
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/fingertip_pads.py": "09bc90291bfac878eb7c5f7eacf88789fcce84bf39aa5dfed82dd2f5eb2452e7",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/collision_geometry_match.py": "b70da8849c2d40f4288995e79f10e7868a13297c949af11f9b0ba7d99f9678b8",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/fixed_collision_query.py": "aa48f5c273af047dc3d330650f8db1727bc88d100cc9d03e6df76e150227bed6"
+  },
+  "actual_modules": true,
+  "git_head": "db78a9649854ba6d4cb6f607ae06c9192c49a445",
+  "git_status": "",
+  "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+  "executable": "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+  "versions": {
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "trimesh": "4.8.3"
+  },
+  "candidate_sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c",
+  "new_steps": 0,
+  "new_force_solves": 0
+}
