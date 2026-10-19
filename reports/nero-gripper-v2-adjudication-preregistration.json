@@ -1,0 +1,31 @@
+{
+  "task": "Issue25 comment6271215742: read-only halfspace truth and original STL bore adjudication",
+  "candidate_commit": "6eba4f34c5ff5029eb849804e3d2e9c535f58756",
+  "geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "fidelity_policy_commit_unchanged": "8a5518b37f15678893ca6f540f5ef2edea199ab8",
+  "truth": "Union of the 346 frozen closed convex halfspace systems, using the stored binary64 coefficients as exact values. Boolean mesh is only a suspect locator, never the membership oracle.",
+  "offsets_mm": [0.000001, 0.00001, 0.0001],
+  "primary_membership_tolerance_mm": 0.0000000001,
+  "local_high_precision": "longdouble with arithmetic error bounds; Fraction.from_float exact rational fallback on only nearby cells and near-active planes. No coordinate snapping or coefficient adjustment.",
+  "barycentric_probes": [[0.3333333333333333,0.3333333333333333,0.3333333333333333],[0.6,0.2,0.2],[0.2,0.6,0.2],[0.2,0.2,0.6],[0.8,0.1,0.1],[0.1,0.8,0.1],[0.1,0.1,0.8]],
+  "classification": {
+    "TRUE_BOUNDARY": "Stable opposing solid/void memberships, consistently oriented across all fixed offset scales; retain per-probe scope. Verify actual local line transition and distance before claiming a geometric defect.",
+    "BOOLEAN_PSEUDOFACE": "Both sides solid at all fixed scales, with the saved surface point itself inside the union; or a continuous halfspace proof of coverage by other convex cells. Report any exact microscopic interval gaps separately; do not regularize them away.",
+    "NUMERICALLY_UNRESOLVED": "Unresolved arithmetic, both sides void, scale/probe inconsistency, mixed boundary/interior subregions, or inability to prove that probes characterize the whole suspect feature. Preserve detailed probe classes."
+  },
+  "suspects": {
+    "special": "triangle2940 centroid plus the frozen 0.619918918mm counterexample point",
+    "certificate_failures": "All 66 unattributed output triangles and all 268 missing-face records, not a selected successful subset",
+    "occlusion": "All 21 suspect records; retain duplicate triangle identities if present",
+    "missing_patch_locator": "Where needed, reproduce old projected missing patches only to locate points. Adjudicate those points independently with halfspaces; old patch membership is not evidence of truth."
+  },
+  "source_distance": "Direct distances to immutable original STL triangles, with frozen source A/B/C provenance. Any truly separated A/B-boundary point exceeding every original source exterior target by more than50um is a sufficient counterexample; finite absence never certifies the entire union.",
+  "central_bore": {
+    "axes_xz_mm": [[0,12.25],[0.8,12.25],[-0.8,12.25],[0,13.05],[0,11.45]],
+    "path_y_mm": [-72.9999,-69.9999],
+    "method": "Original STL triangle-plane crossings and per-part parity/occupancy intervals on the entire segment; separately mount[0:504], contact[504:660], backing[660:2086]. V2 uses analytic halfspace interval intersections. Preserve endpoint/boundary uncertainty."
+  },
+  "steps": ["Verify immutable bytes, semantic geometry SHA and isolated workspace", "Implement and sanity-check direct halfspace membership plus local exact interval checks", "Adjudicate all suspect records and validate any actual boundary-distance witness", "Independently intersect five original-source assembly paths and compare v2", "Commit scripts and evidence to existing DraftPR26 and reply to Issue25, then stop"],
+  "prohibited": ["geometry change", "second candidate", "formal MJCF", "MuJoCo", "grasp", "physics tuning", "policy edit", "main modification", "new Issue"],
+  "scope_limit": "This adjudication cannot retroactively PASS the blocked candidate or replace full frozen fidelity acceptance."
+}

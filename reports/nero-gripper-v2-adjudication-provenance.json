@@ -1,0 +1,42 @@
+{
+  "candidate_commit": "6eba4f34c5ff5029eb849804e3d2e9c535f58756",
+  "geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "halfspaces_sha256": "579c6cd7d0aa954dabdef319da45239e987227867dd35a4998b2e74bee65218f",
+  "candidate_file_byte_identical_to_6eba4f3": true,
+  "all_original_v2_runtime_evidence_byte_identical": true,
+  "original_19_mechanical_inputs_unchanged": true,
+  "other_11_worktrees_unchanged": true,
+  "policy_files_unchanged": true,
+  "preregistration_sha256": "8da86b225313d52a99f6bb500457231882471fa34198a1c8aa18d27f34a759a3",
+  "exact_gap_open_interval_all_346_cells_independently_recomputed": true,
+  "both_exact_endpoints_membership_recomputed": true,
+  "arithmetic_sanity": "PASS: solid/void/closed-boundary, touching cells, exact sub-tolerance gap and unresolved fixed-scale classification",
+  "certificate_rows": 334,
+  "occlusion_rows": 21,
+  "unique_occlusion_triangles": 21,
+  "script_parse": "PASS",
+  "source_5_paths_and_v2_intervals_agree": true,
+  "execution_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/adjudicate_v2_partition.py",
+  "exit_code": 0,
+  "candidate_acceptance_unchanged": "V2_RUNTIME_ENTITY_PARTITION_BLOCKED",
+  "analysis_results": {
+    "exterior": "V2_EXTERIOR_ADJUDICATION_MIXED",
+    "central_bore": "POLICY_SOURCE_CONTRADICTION_CONFIRMED",
+    "triangle2940": "NUMERICALLY_UNRESOLVED",
+    "literal_halfspace_true_boundary_over_AB_budget_confirmed": true,
+    "macro_geometry_defect_proven": false,
+    "second_vertex_face_candidate_required": "UNKNOWN_NOT_ESTABLISHED_BY_THIS_AUDIT",
+    "certifier_policy_only_sufficient_for_acceptance": "NOT_PROVEN; literal halfspace micro-gap and 14 unresolved records remain, and no whole-union fidelity recertification was performed",
+    "old_candidate_status_unchanged": "V2_RUNTIME_ENTITY_PARTITION_BLOCKED",
+    "policy_correction_proposal_only": "保留mount part中央孔本身；完整装配的connectivity必须与冻结source assembly一致。若backing原本封堵，不要求runtime人为挖通。",
+    "policy_correction_applied": false,
+    "stop": "Independent ChatGPT review before any repair or reacceptance."
+  },
+  "files_sha256": {
+    "scripts/adjudicate_v2_partition.py": "9fa1d409970a83613d56e206e46773265addc423329a3493cd87857320228409",
+    "reports/nero-gripper-v2-adjudication-preregistration.json": "8da86b225313d52a99f6bb500457231882471fa34198a1c8aa18d27f34a759a3",
+    "reports/nero-gripper-v2-adjudication.csv": "09c3c40de9eeb2293f878cb77ba4ebd3e6f6a73adad41e1acaa5ba1d728daa24",
+    "reports/nero-gripper-v2-adjudication.json": "6fac2178dea992ed26768e18fee6a302bd06ff86f519f731210ca851e5d0d953",
+    "reports/nero-gripper-v2-adjudication.md": "a62f61352dcd2c5d3b32fc0c15c11a8b6ef146610a99802ad050707290a88247"
+  }
+}
