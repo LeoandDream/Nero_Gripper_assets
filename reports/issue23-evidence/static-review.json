@@ -1,0 +1,1194 @@
+{
+  "status": "STOP_SUPPORTED_NO_COMPLETE_GATE0_PASS",
+  "candidate_sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c",
+  "pose": {
+    "label": "R1",
+    "row": 23622
+  },
+  "A_exact_reproduction": true,
+  "A_contact_count": 2,
+  "B_contact_count": 23,
+  "B_counts": {
+    "gripper_link1": {
+      "pad_contacts": 6,
+      "guard_contacts": 4
+    },
+    "gripper_link2": {
+      "pad_contacts": 6,
+      "guard_contacts": 7
+    }
+  },
+  "stop_rule_condition_observed": true,
+  "duplicate_forces_proven": false,
+  "interpretation": "Saved same-finger pad+guard contact coexistence supports unresolved working-face isolation; original z0 inward boundary survives in widening side wedges guard2/6. No material witness or solved force was saved or computed.",
+  "contacts_local": [
+    {
+      "finger": "gripper_link1",
+      "kind": "pad_contacts",
+      "geom": "gripper_link1_pad_tip_zero_plane",
+      "reported_distance_m": -0.00035120478491078283,
+      "representative_point_finger_local_m": [
+        -0.009999998117062163,
+        -9.434906483416177e-06,
+        0.0003510780304735292
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936942000953e-06,
+        0.026864401878341958,
+        -0.9996390868155332
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "pad_contacts",
+      "geom": "gripper_link1_pad_tip_zero_plane",
+      "reported_distance_m": -0.00035115753554241895,
+      "representative_point_finger_local_m": [
+        0.010000001435679844,
+        -9.433637157381868e-06,
+        0.0003510307981580863
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936942000953e-06,
+        0.026864401878341958,
+        -0.9996390868155332
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "pad_contacts",
+      "geom": "gripper_link1_pad_tip_zero_plane",
+      "reported_distance_m": -0.0002165848722407544,
+      "representative_point_finger_local_m": [
+        -0.009999998753132738,
+        -0.010027996715323112,
+        0.00021650670390487646
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936942000953e-06,
+        0.026864401878341958,
+        -0.9996390868155332
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "pad_contacts",
+      "geom": "gripper_link1_pad_tip_zero_plane",
+      "reported_distance_m": -0.0002165376228723905,
+      "representative_point_finger_local_m": [
+        0.010000000799609214,
+        -0.010027995445997107,
+        0.0002164594715894301
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936942000953e-06,
+        0.026864401878341958,
+        -0.9996390868155332
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "pad_contacts",
+      "geom": "gripper_link1_pad_inner_ramp",
+      "reported_distance_m": -0.00021659130094548286,
+      "representative_point_finger_local_m": [
+        -0.012714880426557572,
+        -0.010027996890679467,
+        0.00021651310044261407
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936942000953e-06,
+        0.026864401878341958,
+        -0.9996390868155332
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "pad_contacts",
+      "geom": "gripper_link1_pad_inner_ramp",
+      "reported_distance_m": -0.00021653122393240688,
+      "representative_point_finger_local_m": [
+        0.012714882473034242,
+        -0.010027995276746441,
+        0.0002164530451121208
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936942000953e-06,
+        0.026864401878341958,
+        -0.9996390868155332
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "guard_contacts",
+      "geom": "gripper_link1_guard_0",
+      "reported_distance_m": -0.00043306183641051885,
+      "representative_point_finger_local_m": [
+        0.012788810583061905,
+        -0.01059274817554357,
+        0.00015232606472535931
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.724936951504444e-06,
+        0.02686440187835986,
+        -0.9996390868155328
+      ],
+      "guard_local_bounds_m": [
+        [
+          0.01271488144993782,
+          -0.07100000232458115,
+          -5.715404442435145e-20
+        ],
+        [
+          0.02800000086426735,
+          -0.009370167043649142,
+          0.026499999687075615
+        ]
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "guard_contacts",
+      "geom": "gripper_link1_guard_2",
+      "reported_distance_m": -0.000702314819871423,
+      "representative_point_finger_local_m": [
+        0.010027379243150945,
+        -0.00019072848808254336,
+        0.00011579855812597269
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.7249369414084456e-06,
+        0.026864401878340962,
+        -0.9996390868155333
+      ],
+      "guard_local_bounds_m": [
+        [
+          0.009999999776482582,
+          -0.010022178292274479,
+          -4.024558348460907e-18
+        ],
+        [
+          0.01271488144993782,
+          2.7755575615628914e-17,
+          0.009656043845703911
+        ]
+      ],
+      "retained_z0_boundary_triangles": [
+        13,
+        14
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "guard_contacts",
+      "geom": "gripper_link1_guard_4",
+      "reported_distance_m": -0.0004331830774283003,
+      "representative_point_finger_local_m": [
+        -0.012786134239790293,
+        -0.010581234215338032,
+        0.00015193108458427945
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.7249369327810796e-06,
+        0.026864401878350784,
+        -0.999639086815533
+      ],
+      "guard_local_bounds_m": [
+        [
+          -0.02800000086426735,
+          -0.07063042216841135,
+          -3.218968183871279e-20
+        ],
+        [
+          -0.012714881449937819,
+          -0.009372788683358751,
+          0.026499999687075615
+        ]
+      ]
+    },
+    {
+      "finger": "gripper_link1",
+      "kind": "guard_contacts",
+      "geom": "gripper_link1_guard_6",
+      "reported_distance_m": -0.0007024094089211196,
+      "representative_point_finger_local_m": [
+        -0.010027398703924894,
+        -0.00019052495915563848,
+        0.00011592745003547444
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.72493694035389e-06,
+        0.026864401878332902,
+        -0.9996390868155335
+      ],
+      "guard_local_bounds_m": [
+        [
+          -0.01271488144993782,
+          -0.010022178292274479,
+          -6.383782507399936e-18
+        ],
+        [
+          -0.009999999776482582,
+          0.0,
+          0.009656043845703904
+        ]
+      ],
+      "retained_z0_boundary_triangles": [
+        17,
+        18
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "pad_contacts",
+      "geom": "gripper_link2_pad_tip_zero_plane",
+      "reported_distance_m": -0.00036558093608046873,
+      "representative_point_finger_local_m": [
+        -0.00999999806872009,
+        -0.010012357198672875,
+        0.00036544899362711786
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.6713664900551445e-06,
+        -0.02686434830789019,
+        -0.9996390882554415
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "pad_contacts",
+      "geom": "gripper_link2_pad_tip_zero_plane",
+      "reported_distance_m": -0.0003655342224166123,
+      "representative_point_finger_local_m": [
+        0.010000001484026948,
+        -0.010012358453605019,
+        0.0003654022968227711
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.6713664900551445e-06,
+        -0.02686434830789019,
+        -0.9996390882554415
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "pad_contacts",
+      "geom": "gripper_link2_pad_tip_zero_plane",
+      "reported_distance_m": -0.00023096129185674996,
+      "representative_point_finger_local_m": [
+        -0.009999998697577802,
+        6.204624590123176e-06,
+        0.00023087793521404522
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.6713664900551445e-06,
+        -0.02686434830789019,
+        -0.9996390882554415
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "pad_contacts",
+      "geom": "gripper_link2_pad_tip_zero_plane",
+      "reported_distance_m": -0.00023091457819289353,
+      "representative_point_finger_local_m": [
+        0.010000000855169238,
+        6.203369657977941e-06,
+        0.00023083123840969848
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.6713664900551445e-06,
+        -0.02686434830789019,
+        -0.9996390882554415
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "pad_contacts",
+      "geom": "gripper_link2_pad_inner_ramp",
+      "reported_distance_m": -0.00036558729213775085,
+      "representative_point_finger_local_m": [
+        -0.012714879742145664,
+        -0.010012357030574582,
+        0.0003654553175436319
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.6713664900551445e-06,
+        -0.02686434830789019,
+        -0.9996390882554415
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "pad_contacts",
+      "geom": "gripper_link2_pad_inner_ramp",
+      "reported_distance_m": -0.0003655278962666206,
+      "representative_point_finger_local_m": [
+        0.012714883157452611,
+        -0.010012358626205944,
+        0.00036539594310916777
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.6713664900551445e-06,
+        -0.02686434830789019,
+        -0.9996390882554415
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_0",
+      "reported_distance_m": -0.0007310552846547503,
+      "representative_point_finger_local_m": [
+        0.012849189214451046,
+        -0.011058737307068769,
+        0.00027673200668173293
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.671366499923097e-06,
+        -0.02686434830787907,
+        -0.9996390882554418
+      ],
+      "guard_local_bounds_m": [
+        [
+          0.01271488144993782,
+          -0.07100000232458115,
+          -7.338065004540871e-19
+        ],
+        [
+          0.02800000086426735,
+          -0.009370167043649142,
+          0.026499999687075615
+        ]
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_1",
+      "reported_distance_m": -0.0002677405836876005,
+      "representative_point_finger_local_m": [
+        0.010008296118841804,
+        -0.03053114803783479,
+        0.0011602117756462093
+      ],
+      "normal_finger_toward_cube_local": [
+        -0.011316540388563962,
+        0.9960088582756188,
+        -0.08853411856528545
+      ],
+      "guard_local_bounds_m": [
+        [
+          0.009999999776482579,
+          -0.07100000232458115,
+          0.0006695527355819232
+        ],
+        [
+          0.01271488144993782,
+          -0.029123093835990238,
+          0.026499999687075615
+        ]
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_2",
+      "reported_distance_m": -0.0007310654152266343,
+      "representative_point_finger_local_m": [
+        0.010637923878062963,
+        -0.009917063215337278,
+        0.00012095560210713943
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.3715874570043685e-06,
+        -0.026864344910074108,
+        -0.9996390883481104
+      ],
+      "guard_local_bounds_m": [
+        [
+          0.009999999776482582,
+          -0.010022178292274475,
+          -4.9873299934333204e-18
+        ],
+        [
+          0.01271488144993782,
+          2.7755575615628914e-17,
+          0.00965604384570391
+        ]
+      ],
+      "retained_z0_boundary_triangles": [
+        13,
+        14
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_4",
+      "reported_distance_m": -0.0007311748866722996,
+      "representative_point_finger_local_m": [
+        -0.01284411106625375,
+        -0.011036126542976876,
+        0.0002755539179894303
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.671366490990244e-06,
+        -0.0268643483078867,
+        -0.9996390882554417
+      ],
+      "guard_local_bounds_m": [
+        [
+          -0.02800000086426735,
+          -0.07063042216841135,
+          1.7394630140915828e-18
+        ],
+        [
+          -0.012714881449937819,
+          -0.009372788683358751,
+          0.026499999687075615
+        ]
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_5",
+      "reported_distance_m": -0.0005247927265160993,
+      "representative_point_finger_local_m": [
+        -0.012698549319372077,
+        -0.03067382453405204,
+        0.0010462156153916925
+      ],
+      "normal_finger_toward_cube_local": [
+        -0.011316540350836025,
+        0.9960088534655703,
+        -0.08853417268313918
+      ],
+      "guard_local_bounds_m": [
+        [
+          -0.012714881449937822,
+          -0.07100000232458115,
+          0.0006695527355819245
+        ],
+        [
+          -0.009999999776482582,
+          -0.029123093835990238,
+          0.026499999687075615
+        ]
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_6",
+      "reported_distance_m": -0.0007311702964675735,
+      "representative_point_finger_local_m": [
+        -0.011778550560587324,
+        -0.009916866256835539,
+        0.00012108956117233358
+      ],
+      "normal_finger_toward_cube_local": [
+        -4.377127596823814e-06,
+        -0.026864635845308432,
+        -0.9996390805294375
+      ],
+      "guard_local_bounds_m": [
+        [
+          -0.01271488144993782,
+          -0.010022178292274475,
+          -5.421010862427522e-18
+        ],
+        [
+          -0.009999999776482582,
+          0.0,
+          0.009656043845703904
+        ]
+      ],
+      "retained_z0_boundary_triangles": [
+        17,
+        18
+      ]
+    },
+    {
+      "finger": "gripper_link2",
+      "kind": "guard_contacts",
+      "geom": "gripper_link2_guard_8",
+      "reported_distance_m": -0.0004940715804517452,
+      "representative_point_finger_local_m": [
+        -0.009887473352039024,
+        -0.03065662592021291,
+        0.0010608183463809867
+      ],
+      "normal_finger_toward_cube_local": [
+        -0.011316540455613113,
+        0.9960088668025568,
+        -0.08853402262860778
+      ],
+      "guard_local_bounds_m": [
+        [
+          -0.009999999776482582,
+          -0.07100000232458115,
+          0.0006695527355819234
+        ],
+        [
+          0.009999999776482582,
+          -0.029123093835990245,
+          0.026499999687075615
+        ]
+      ]
+    }
+  ],
+  "retained_z0_guard_boundary_triangles": {
+    "gripper_link1_guard_2": [
+      [
+        [
+          0.011686925776302814,
+          -0.005501196254044771,
+          -6.487547041968308e-19
+        ],
+        [
+          0.009999999776482582,
+          -0.010022178292274479,
+          0.0
+        ],
+        [
+          0.009999999776482582,
+          0.0,
+          -4.024558348460907e-18
+        ]
+      ],
+      [
+        [
+          0.011686925776302814,
+          -0.005501196254044771,
+          -6.487547041968308e-19
+        ],
+        [
+          0.01271488144993782,
+          -0.010022178292274479,
+          0.0
+        ],
+        [
+          0.009999999776482582,
+          -0.010022178292274479,
+          0.0
+        ]
+      ]
+    ],
+    "gripper_link1_guard_6": [
+      [
+        [
+          -0.011686925776302814,
+          -0.005501196254044771,
+          8.073520592943659e-20
+        ],
+        [
+          -0.009999999776482582,
+          -0.010022178292274479,
+          1.0842021724855044e-19
+        ],
+        [
+          -0.01271488144993782,
+          -0.010022178292274479,
+          8.172062246698649e-20
+        ]
+      ],
+      [
+        [
+          -0.011686925776302814,
+          -0.005501196254044771,
+          8.073520592943659e-20
+        ],
+        [
+          -0.009999999776482582,
+          0.0,
+          -6.383782507399936e-18
+        ],
+        [
+          -0.009999999776482582,
+          -0.010022178292274479,
+          1.0842021724855044e-19
+        ]
+      ]
+    ],
+    "gripper_link2_guard_2": [
+      [
+        [
+          0.011686925776302814,
+          -0.005501196254044771,
+          -1.473414638929468e-18
+        ],
+        [
+          0.009999999776482582,
+          -0.010022178292274475,
+          -4.697602289653188e-19
+        ],
+        [
+          0.009999999776482582,
+          0.0,
+          -4.9873299934333204e-18
+        ]
+      ],
+      [
+        [
+          0.011686925776302814,
+          -0.005501196254044771,
+          -1.473414638929468e-18
+        ],
+        [
+          0.01271488144993782,
+          -0.010022178292274475,
+          -7.338065004540871e-19
+        ],
+        [
+          0.009999999776482582,
+          -0.010022178292274475,
+          -4.697602289653188e-19
+        ]
+      ]
+    ],
+    "gripper_link2_guard_6": [
+      [
+        [
+          -0.011686925776302814,
+          -0.005501196254044771,
+          1.5064432370056744e-18
+        ],
+        [
+          -0.009999999776482582,
+          -0.010022178292274475,
+          1.4754167426028145e-18
+        ],
+        [
+          -0.01271488144993782,
+          -0.010022178292274475,
+          1.7394630140915828e-18
+        ]
+      ],
+      [
+        [
+          -0.011686925776302814,
+          -0.005501196254044771,
+          1.5064432370056744e-18
+        ],
+        [
+          -0.009999999776482582,
+          0.0,
+          -5.421010862427522e-18
+        ],
+        [
+          -0.009999999776482582,
+          -0.010022178292274475,
+          1.4754167426028145e-18
+        ]
+      ]
+    ]
+  },
+  "unqueried_selected_rows": {
+    "R0": [
+      33317,
+      33318,
+      33319,
+      33320,
+      33321,
+      33490,
+      33491,
+      33492,
+      34327,
+      34328,
+      34329,
+      34435,
+      34436,
+      34437,
+      34443,
+      34444,
+      34445,
+      34450,
+      34451,
+      34452,
+      34453,
+      34454,
+      34455,
+      34461,
+      34462,
+      34463,
+      34464,
+      34467,
+      34468,
+      34469,
+      34470,
+      34471,
+      34472,
+      34473,
+      34474,
+      34475,
+      34476,
+      34477,
+      34478,
+      34479,
+      34480,
+      34481,
+      34482,
+      34483,
+      34500,
+      34501,
+      34502,
+      34503,
+      35369,
+      35370,
+      35371,
+      35372,
+      35374,
+      35375,
+      35376,
+      35377,
+      35378,
+      35379,
+      35380,
+      35381,
+      35382,
+      35383,
+      35384,
+      35385,
+      35386,
+      35387,
+      35388,
+      35414,
+      35415,
+      35416,
+      35417,
+      35418,
+      35419,
+      35420,
+      35421,
+      35422,
+      35423,
+      35424,
+      35425,
+      35456,
+      35457,
+      35458,
+      35459,
+      35460,
+      35461,
+      35462,
+      35463,
+      35464,
+      35487,
+      35488,
+      35489,
+      35490,
+      35491,
+      35492,
+      35493,
+      35494,
+      35495,
+      35496,
+      35497,
+      35498,
+      35499,
+      35500,
+      35501,
+      35502,
+      35503,
+      35504,
+      35505,
+      35506,
+      35507,
+      35508,
+      35578,
+      35579,
+      35580,
+      35581,
+      35582,
+      35583,
+      35584,
+      35781,
+      35782,
+      35783,
+      35784,
+      35788,
+      35789,
+      35790,
+      35791,
+      35792,
+      35793,
+      35794,
+      35797,
+      35798,
+      35799,
+      35800,
+      35801,
+      35802,
+      35803,
+      35806,
+      35807,
+      35808,
+      35809,
+      35810,
+      35811,
+      35812,
+      35813,
+      35814,
+      35815,
+      35816,
+      35819,
+      35820,
+      35821,
+      35822,
+      35823,
+      35824,
+      35825,
+      35826,
+      35827,
+      35828,
+      35829,
+      35830,
+      35831,
+      35832,
+      35834,
+      35835,
+      35836,
+      35837,
+      35838,
+      35839,
+      35842,
+      35843,
+      35844,
+      35846,
+      35847,
+      35848,
+      35849,
+      35850,
+      35851,
+      35854,
+      35855,
+      35856,
+      35857,
+      35858,
+      35859,
+      35860,
+      35861,
+      35862,
+      35863,
+      35864,
+      35865,
+      35866,
+      35867,
+      35868,
+      35979,
+      35980,
+      35981,
+      36002,
+      36003,
+      36004,
+      36006,
+      36007,
+      36008,
+      36009,
+      36010,
+      36011,
+      36012,
+      36013,
+      36014,
+      36015,
+      36016,
+      36017,
+      36018,
+      36019,
+      36020,
+      36021,
+      36022,
+      36024,
+      36025,
+      36026,
+      36027,
+      36028,
+      36029,
+      36030,
+      36031,
+      36032,
+      36033,
+      36034,
+      36035,
+      36036,
+      36037,
+      36038,
+      36039,
+      36040,
+      36741,
+      36742,
+      36743,
+      36744,
+      36745,
+      36746,
+      36747,
+      36748,
+      36772,
+      36773,
+      36774,
+      36775,
+      36776,
+      36777,
+      36778,
+      36779,
+      36780,
+      36781,
+      36782,
+      36783,
+      38914,
+      38915,
+      38916,
+      40945,
+      40946,
+      40947,
+      41015,
+      41016,
+      41017,
+      43173,
+      43174,
+      43175,
+      43176,
+      43177,
+      43178,
+      43179,
+      43180
+    ],
+    "R1": [
+      23620,
+      23621,
+      23623,
+      23624,
+      25320,
+      25321,
+      25322,
+      25972,
+      25973,
+      25974,
+      25975,
+      25983,
+      25984,
+      25985,
+      25986,
+      25987,
+      25988,
+      25989,
+      25990,
+      25991,
+      25992,
+      25996,
+      25997,
+      25998,
+      25999,
+      26000,
+      26001,
+      26002,
+      26003,
+      26004,
+      26545,
+      26546,
+      26547,
+      26548,
+      26549,
+      26562,
+      26563,
+      26564,
+      26799,
+      26800,
+      26801,
+      26802,
+      26804,
+      26805,
+      26806,
+      26807,
+      26808,
+      26809,
+      26810,
+      26811,
+      26812,
+      26813,
+      26814,
+      26815,
+      26816,
+      26817,
+      26818,
+      26819,
+      26820,
+      26821,
+      26822,
+      27751,
+      27752,
+      27753,
+      28271,
+      28272,
+      28273,
+      28274,
+      28276,
+      28277,
+      28278,
+      28279,
+      28280,
+      28281,
+      28282,
+      28449,
+      28450,
+      28451,
+      28452,
+      28453,
+      28462,
+      28463,
+      28464,
+      28514,
+      28515,
+      28516,
+      28517,
+      28518,
+      28519,
+      28520,
+      28521,
+      28522,
+      28523,
+      28524,
+      28525,
+      28526,
+      28527,
+      28528,
+      28529,
+      28530,
+      28531,
+      28532,
+      28533,
+      28534,
+      28535,
+      28536,
+      29046,
+      29047,
+      29048,
+      29049,
+      29050,
+      29150,
+      29151,
+      29152,
+      29158,
+      29159,
+      29160,
+      29161,
+      29162,
+      29163,
+      29164,
+      29165,
+      29166,
+      29167,
+      29168,
+      29169,
+      29170,
+      29182,
+      29183,
+      29184,
+      29185,
+      29186,
+      29187,
+      29206,
+      29207,
+      29208,
+      29209,
+      29210,
+      29211,
+      29212,
+      29213,
+      29214,
+      29215,
+      29216,
+      30046,
+      30047,
+      30048,
+      30049,
+      30050,
+      30051,
+      30052,
+      30053,
+      30054,
+      30055
+    ]
+  },
+  "unqueried_counts": {
+    "R0": 267,
+    "R1": 154
+  },
+  "unqueried_A_B_call_count": 842,
+  "other_unresolved": [
+    "Opening/closing and extreme-pose guard coverage",
+    "Whole candidate geometric coverage/fit acceptance",
+    "Any physical A/B grasp or force effect"
+  ],
+  "code_limitation": "Current static wrapper never sets status PASS; without this observed STOP it would stop as COVERAGE_AND_EXTREME_POSES_NOT_YET_VERIFIED. Full Gate0 PASS is not implemented or claimed.",
+  "observed_queries_result": {
+    "issue": 23,
+    "gate0": "UNKNOWN",
+    "stop_reason": "WORKFACE_ISOLATION_UNKNOWN",
+    "counts": {
+      "A": 1,
+      "B": 1
+    },
+    "api_calls": {
+      "calls": {
+        "mj_id2name": 228,
+        "mj_kinematics": 2,
+        "mj_collision": 2
+      },
+      "forbidden_attempts": []
+    },
+    "new_steps": 0,
+    "new_force_solves": 0,
+    "new_episodes": 0,
+    "A_episode": "NOT_RUN",
+    "B_episode": "NOT_RUN",
+    "completed_utc": "2026-10-19T05:41:06.637364+00:00",
+    "candidate_sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c"
+  },
+  "review_new_engine_calls": 0,
+  "review_new_episodes": 0,
+  "input_sha256": {
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/candidate.json": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/candidate.sha256": "18ed208e6446fcfaea9ceb7a7c0dee09f238d1f96c80e56d378cde00d9e9c57e",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/A.xml": "448a119ace54659680b8ebead4ec673b24fd2c97a137f452043af4f0ddbfe494",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/B.xml": "df4f2576e387a8b54cc5001148da50a7df649c165ef4f48f922473cc27a3ce8a",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/STOPPED.json": "549605e479e46235f2b9ac5d041488f8a0ff99d29c97519d251b5e0876211515",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/static/result.json": "549605e479e46235f2b9ac5d041488f8a0ff99d29c97519d251b5e0876211515",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/static/queries.jsonl": "4e102b7d6e24560e00f819d607d7884d1d10b320ee273b32a3a9ca60e8225c4a",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/static/compiled-invariants.json": "6a9b8f1298e6952c4815ab3ae89318334570aba265d29e3da521b973001b0c57",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/static/runtime-before.json": "15099ea8f8a863713f1edd6d637bfbb52270f3048e07a070e09fd09e0ca9b8e8",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/static/executed-source/0_fingertip_pads.py": "09bc90291bfac878eb7c5f7eacf88789fcce84bf39aa5dfed82dd2f5eb2452e7",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue18-evidence/preregistration.json": "3b771b5a02447f32e4c0b567e31ceffb031fab530060910d5604a8d61ef4e173",
+    "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/debug/issue16/geometry-002/geometry.json": "6580a0e8255f7d484a61fb830cc99391e5995e33c12bffc1f76c9fba924233ce",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/experiments/dynamics/fingertip_pads.py": "09bc90291bfac878eb7c5f7eacf88789fcce84bf39aa5dfed82dd2f5eb2452e7",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue23-evidence/preregistration.json": "122950f2957fc67917d572f61b8fb58a14e0c476f2a4cf7dfd2b3e207ab3e5e4",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_0.obj": "f98b2e1489f53eb2fd52db73cbeed8fcdd17aebbaf94364fa3414e9b3648c79e",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_1.obj": "69189dbb9119d944f6b214d83d706ce01cc492f1dab06d3fbd55667450f29246",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_2.obj": "6a1621c43c6dbdafa558ee315e8eabf6348f8f75a8e7719919795691b55180f7",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_3.obj": "eb36123980c9aef19631b840d6758cadc5f140dc2f98eee2af95c512b486e2ad",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_4.obj": "5bda52b874e28587065b1d2dbf731c81eb14777850dc4a7a25e6483c3f808c83",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_5.obj": "1eaa3f3e9fe23b9eb6ac0bb32a8485e075dbab504e8570c12e03661b390ab083",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_6.obj": "0bb3cce85e2d07603c19969789916fa35359d9186f33d545f251a6c23aa34e6e",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_7.obj": "c8d122025d5c8f5e72814fae7fb6e5df21f4ce31a5e8fc5b246d906486e8cf2e",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_8.obj": "136ee8863d3c849871c10f272d730420272c12ff71e29483b48a1181afce8c84",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_9.obj": "5290baaba4a4dc41cce70488d4c183a50acc58b8eea2536203fca5a6412ee891",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_10.obj": "18102005f7831caf98bed4f286e179cb6e0bcf385e79b3847aa77e5e14f698d0",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link1_guard_11.obj": "3d864bb1e6edf7fcc379778045b17103a6060d52b8805c78184b36922a558d58",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_0.obj": "2f443e62041127d0a27c144bbb6caa2e93c74019f7fddb2cd0a36da579f039ae",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_1.obj": "4b3fa5954f8df99cdc67119204b8cb9ee4d52dd33e930f2dbc0c2694db12c392",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_2.obj": "be4f0290fde32bd08df5deb5894d47b91768aec9584cab46c2aaf48a7b990b4a",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_3.obj": "102d2a6357950274c20c40b3b6fb412997a2b2cb082d1a046a36d948722e2a6b",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_4.obj": "1cb5ec0391dce1dbf8d10a1810cc1d6182dfb3b8d32e18cd1091cdc346d3ca55",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_5.obj": "d3e5c896b11856f799c4de4af9c1bae74ef4060c3c58db4dd8cd62be8775c9f8",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_6.obj": "d64d4ab9dbe1bdf177eec1738b3fcc22f1a17fb9f8984ceaac61e3ee68137453",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_7.obj": "3bd7f475582c14b34201557a7bf447dd3f003da0c5d6451ad5c79d69c12f3ffe",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_8.obj": "e88ce54b4a76b7b9a0da62e6007e0a8a67ad3c9e3615bca18816a58e878ba775",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_9.obj": "87a113eeb2455c5af11ebb70c44313fa83cf1eecfd844d31d7bf8d7cd4750024",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_10.obj": "9c147d23c628873edcf8be71f3b3ca59d3990ba784b89317925571ac5798ea85",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/debug/issue23/candidate-001/guards/gripper_link2_guard_11.obj": "a6b88c5e08c569fae06af5263365e5b77b796c500119ea46359a8d0d4d6c4be3"
+  },
+  "inputs_unchanged_after": true,
+  "review_script_sha256": "7da8a24015135a10dcf9d60dc31447e72b4cbebd303436bc7ba74d7dfdd38a33"
+}

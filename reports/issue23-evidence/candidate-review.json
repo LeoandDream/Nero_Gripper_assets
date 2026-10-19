@@ -1,0 +1,264 @@
+{
+  "candidate_sha256": "12d0c170c53319917704a07f4756908aba778c4467f850d9c1775201616d018c",
+  "scope": "Pure data: frozen JSON/XML/OBJ, source triangles, convex halfspaces and linear programs only. No simulator, no candidate generation or modification.",
+  "candidate_seals_match": true,
+  "fingers": {
+    "gripper_link1": {
+      "guards": 12,
+      "independent_removed_prism_union_volume_m3": 1.7302268496562138e-06,
+      "guard_volume_m3": 4.6514536110926095e-05,
+      "difference_volume_residual_m3": -1.463672932855431e-18,
+      "guard_vertices_max_outside_old_hull_m": 5.1486592766991635e-15,
+      "uniform_membership_samples": 16384,
+      "uniform_membership_mismatches": 0,
+      "maximum_uniform_guard_membership": 1,
+      "maximum_guard_pair_interior_radius_m": -0.0,
+      "maximum_guard_removed_prism_intersection_radius_m": 0.0,
+      "old_vertices_preserved_outside_open_prisms": true,
+      "pads": [
+        {
+          "name": "gripper_link1_pad_tip_zero_plane",
+          "source_faces": [
+            545,
+            546,
+            547,
+            548
+          ],
+          "source_halfwidth_match": true,
+          "source_tangent_length_match": true,
+          "max_front_plane_error_m": 1.6183193377332701e-19,
+          "front_corners_in_source_triangle_union": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "normal_depth_range_m": [
+            -0.0020000000949949026,
+            1.6183193377332701e-19
+          ],
+          "corners_max_outside_old_hull_m": 4.225786387479502e-15,
+          "source_nearest_corner_signed_distances_m": [
+            0.0,
+            0.0,
+            -7.854717008757629e-06,
+            -3.485487737121119e-20,
+            0.0,
+            1.9808183936077646e-19,
+            -7.854717008757781e-06,
+            -5.448884889185305e-20
+          ],
+          "source_nearest_corner_face_indices": [
+            541,
+            593,
+            537,
+            545,
+            540,
+            548,
+            537,
+            545
+          ],
+          "source_nearest_corner_distances_m": [
+            0.0,
+            0.0,
+            7.85471699581789e-06,
+            3.485487737121119e-20,
+            0.0,
+            1.9808183936077646e-19,
+            7.854716995818044e-06,
+            5.448884889185305e-20
+          ],
+          "xml_matches_frozen_json": true
+        },
+        {
+          "name": "gripper_link1_pad_inner_ramp",
+          "source_faces": [
+            549,
+            550,
+            551,
+            552,
+            553,
+            554,
+            555,
+            556
+          ],
+          "source_halfwidth_match": true,
+          "source_tangent_length_match": true,
+          "max_front_plane_error_m": 5.435822779882633e-19,
+          "front_corners_in_source_triangle_union": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "normal_depth_range_m": [
+            -0.002000000094994903,
+            -4.0572497484751648e-19
+          ],
+          "corners_max_outside_old_hull_m": 2.9921938245278806e-11,
+          "source_nearest_corner_signed_distances_m": [
+            3.705802130840789e-05,
+            2.9846788203176225e-11,
+            1.6283480217709421e-10,
+            -2.051234755852347e-12,
+            3.706698420371461e-05,
+            2.984678817821186e-11,
+            1.6283480217709421e-10,
+            -2.051234755852347e-12
+          ],
+          "source_nearest_corner_face_indices": [
+            645,
+            545,
+            526,
+            549,
+            594,
+            545,
+            526,
+            549
+          ],
+          "source_nearest_corner_distances_m": [
+            3.705802114094372e-05,
+            2.996446944820419e-11,
+            2.813736853336494e-10,
+            2.051234737590424e-12,
+            3.706698457076115e-05,
+            2.9964469423337874e-11,
+            2.813736853336494e-10,
+            2.051234737590424e-12
+          ],
+          "xml_matches_frozen_json": true
+        }
+      ]
+    },
+    "gripper_link2": {
+      "guards": 12,
+      "independent_removed_prism_union_volume_m3": 1.7302268496562138e-06,
+      "guard_volume_m3": 4.6514536110926095e-05,
+      "difference_volume_residual_m3": -1.463672932855431e-18,
+      "guard_vertices_max_outside_old_hull_m": 5.1486592766991635e-15,
+      "uniform_membership_samples": 16384,
+      "uniform_membership_mismatches": 0,
+      "maximum_uniform_guard_membership": 1,
+      "maximum_guard_pair_interior_radius_m": -0.0,
+      "maximum_guard_removed_prism_intersection_radius_m": 0.0,
+      "old_vertices_preserved_outside_open_prisms": true,
+      "pads": [
+        {
+          "name": "gripper_link2_pad_tip_zero_plane",
+          "source_faces": [
+            545,
+            546,
+            547,
+            548
+          ],
+          "source_halfwidth_match": true,
+          "source_tangent_length_match": true,
+          "max_front_plane_error_m": 1.0655638387871908e-19,
+          "front_corners_in_source_triangle_union": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "normal_depth_range_m": [
+            -0.0020000000949949035,
+            -6.993437665848711e-20
+          ],
+          "corners_max_outside_old_hull_m": 4.225786387479502e-15,
+          "source_nearest_corner_signed_distances_m": [
+            0.0,
+            1.1804872365575957e-18,
+            -7.854717008755901e-06,
+            6.080550046144109e-19,
+            8.673617379884035e-19,
+            0.0,
+            -7.854717008756053e-06,
+            -1.3371219669537223e-18
+          ],
+          "source_nearest_corner_face_indices": [
+            1965,
+            547,
+            537,
+            545,
+            540,
+            592,
+            537,
+            545
+          ],
+          "source_nearest_corner_distances_m": [
+            0.0,
+            1.1804872365575957e-18,
+            7.854716995816161e-06,
+            6.080550046144109e-19,
+            8.673617379884035e-19,
+            0.0,
+            7.854716995816316e-06,
+            1.3371219669537223e-18
+          ],
+          "xml_matches_frozen_json": true
+        },
+        {
+          "name": "gripper_link2_pad_inner_ramp",
+          "source_faces": [
+            549,
+            550,
+            551,
+            552,
+            553,
+            554,
+            555,
+            556
+          ],
+          "source_halfwidth_match": true,
+          "source_tangent_length_match": true,
+          "max_front_plane_error_m": 2.285751903831375e-19,
+          "front_corners_in_source_triangle_union": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "normal_depth_range_m": [
+            -0.002000000094994904,
+            -2.0998167600710495e-19
+          ],
+          "corners_max_outside_old_hull_m": 2.992193775738783e-11,
+          "source_nearest_corner_signed_distances_m": [
+            3.705802130840789e-05,
+            2.984678954114805e-11,
+            1.6283480200614276e-10,
+            -2.0512338918970423e-12,
+            3.706698420371422e-05,
+            2.984678706787854e-11,
+            1.6283480200614276e-10,
+            -2.0512338918970423e-12
+          ],
+          "source_nearest_corner_face_indices": [
+            645,
+            545,
+            526,
+            549,
+            594,
+            545,
+            526,
+            549
+          ],
+          "source_nearest_corner_distances_m": [
+            3.705802114094372e-05,
+            2.996447062732932e-11,
+            2.813736880607214e-10,
+            2.0512338736352305e-12,
+            3.706698457076077e-05,
+            2.996446816377321e-11,
+            2.813736880607214e-10,
+            2.0512338736352305e-12
+          ],
+          "xml_matches_frozen_json": true
+        }
+      ]
+    }
+  },
+  "finding": "No geometry seal, face calibration, transform, or guard-difference failure found that blocks the planned first static collision query. This is not Gate0 PASS. Guard side strips still leave workface isolation to the preregistered static check.",
+  "approximation": "Inscription applies to the front rectangles. Ramp normal extrusion gives two rear tip-side corners approximately 37.06 micrometres outside the actual source side wall, while remaining in the original convex000 to about 3e-11m. Do not claim the full pad volume is strictly inside the source solid.",
+  "script_sha256": "73015dd70850dd4d4f98479655acd4883da4f9495dbb1d73303f7a80a7c45afb"
+}

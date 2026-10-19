@@ -1,0 +1,267 @@
+{
+  "scope": "Saved Issue18 fixed set only; 0 physics/query/forward/force/controller calls",
+  "selected_pose_counts": {
+    "R0": 267,
+    "R1": 155
+  },
+  "contact_count": 844,
+  "pair_counts": {
+    "gripper_link1_collision_000": 422,
+    "gripper_link2_collision_000": 422
+  },
+  "collision001_contacts": 0,
+  "coordinate_frame": "finger body local = visual OBJ source local = collision OBJ source local (identity geom transforms)",
+  "conventions": "All points in metres; normals toward cube. nearest faces are geometric candidates, not engine feature IDs.",
+  "saved_local_contacts_reused": 840,
+  "missing_local_contacts_derived_from_saved_gripper_pose": 4,
+  "fixed_finger_pose_crosscheck_max_abs_error": 7.771561172376096e-16,
+  "archive_A_max_saved_field_error": 0.0,
+  "key_geometry_saved_checks": 64,
+  "input_sha256": {
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue16-evidence/summary.json": "34760c837277bd87eeb11b36f96221ac45a3187ff9f955e6eb991c3eed7b1f50",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue16-evidence/exceedances.csv": "c333ba0b4b2312c5d855aa1cd3bbc1e32425ebcc6972840e05e911369983dae8",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue16-evidence/manifest.json": "c54710c4ce20e8d60862d33f7fc77000938a9baad2f5f1fc1d23db3a68d39216",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue18-evidence/preregistration.json": "3b771b5a02447f32e4c0b567e31ceffb031fab530060910d5604a8d61ef4e173",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue18-evidence/contacts.csv": "eaedb0ae41f9ca40e67d2b51fbdd362cb6208f3563edca2f56bf557df407d0a3",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/reports/issue18-evidence/key-geometry.json": "fd4f30e31cf643c9964565957f34fce1a4858dd9725796f176ec0b38777c4463",
+    "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/debug/issue16/geometry-002/geometry.json": "6580a0e8255f7d484a61fb830cc99391e5995e33c12bffc1f76c9fba924233ce",
+    "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.xml": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+    "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/observations.npz": "754b236594566d6fd058f9c35c59f9ea66455b4359499be83564f7c0b2aa8c3e",
+    "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/trajectory.npz": "aa90f76b401d8f6ad5b24db7f0dea8c7eefaf9b397c7cc0eee50ac3dea957651",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/visual/gripper_link1.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link1_000.obj": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link1_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/visual/gripper_link2.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link2_000.obj": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916",
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads/meshes/collision/gripper_link2_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701"
+  },
+  "inputs_unchanged_after": true,
+  "mujoco_imported": false,
+  "statistics": {
+    "R0/gripper_link1": {
+      "count": 267,
+      "archive": {
+        "point_local_bounds_m": [
+          [
+            -0.009860258455712373,
+            -0.0010554203737624887,
+            0.00014512501087542447
+          ],
+          [
+            0.009864061199655176,
+            -0.0006310370263521513,
+            0.00024272416145788882
+          ]
+        ],
+        "collision_region_counts": {
+          "inner_flat_z0": 267
+        },
+        "visual_region_counts": {
+          "inner_flat_z0": 267
+        },
+        "nearest_visual_distance_range_m": [
+          0.00014512501087542447,
+          0.00024272416145788882
+        ]
+      },
+      "B": {
+        "point_local_bounds_m": [
+          [
+            -0.009999981262285731,
+            -7.99816525235113e-05,
+            0.0002188234074328701
+          ],
+          [
+            0.00999997878152796,
+            -7.0535164821521565e-06,
+            0.00042466458385640544
+          ]
+        ],
+        "collision_region_counts": {
+          "side_or_other": 267
+        },
+        "visual_region_counts": {
+          "side_or_other": 267
+        },
+        "nearest_visual_distance_range_m": [
+          2.111727813414407e-06,
+          6.695942685123316e-05
+        ]
+      }
+    },
+    "R0/gripper_link2": {
+      "count": 267,
+      "archive": {
+        "point_local_bounds_m": [
+          [
+            -0.012374350635765924,
+            -0.02406917851295477,
+            0.00013981159725501624
+          ],
+          [
+            0.01552547703241347,
+            -0.000607933295265407,
+            0.0007257405717743042
+          ]
+        ],
+        "collision_region_counts": {
+          "inner_slope": 82,
+          "inner_flat_z0": 185
+        },
+        "visual_region_counts": {
+          "side_or_other": 1,
+          "inner_slope": 81,
+          "inner_flat_z0": 185
+        },
+        "nearest_visual_distance_range_m": [
+          5.915529348989102e-06,
+          0.0007902659069964325
+        ]
+      },
+      "B": {
+        "point_local_bounds_m": [
+          [
+            -0.012714851586618557,
+            -0.024646866864163033,
+            6.487900728135321e-05
+          ],
+          [
+            0.016264074476025184,
+            -1.2591966230473246e-07,
+            0.0008989648643422964
+          ]
+        ],
+        "collision_region_counts": {
+          "inner_slope": 32,
+          "side_or_other": 172,
+          "inner_flat_z0": 63
+        },
+        "visual_region_counts": {
+          "inner_slope": 40,
+          "side_or_other": 170,
+          "inner_flat_z0": 57
+        },
+        "nearest_visual_distance_range_m": [
+          1.2591966230473246e-07,
+          0.0013068749400870553
+        ]
+      }
+    },
+    "R1/gripper_link1": {
+      "count": 155,
+      "archive": {
+        "point_local_bounds_m": [
+          [
+            -0.009836850713153536,
+            -0.00960276630855743,
+            0.0001684003224990547
+          ],
+          [
+            0.01214661808465535,
+            -0.0007322435868120996,
+            0.0002669991844768185
+          ]
+        ],
+        "collision_region_counts": {
+          "inner_flat_z0": 155
+        },
+        "visual_region_counts": {
+          "inner_flat_z0": 155
+        },
+        "nearest_visual_distance_range_m": [
+          0.0001684003224990547,
+          0.0002669991844768185
+        ]
+      },
+      "B": {
+        "point_local_bounds_m": [
+          [
+            -0.010000008419465519,
+            -0.009941013288953636,
+            0.00025157241780979174
+          ],
+          [
+            0.012692103034172668,
+            -6.431543319906592e-06,
+            0.00042490733143581795
+          ]
+        ],
+        "collision_region_counts": {
+          "side_or_other": 155
+        },
+        "visual_region_counts": {
+          "side_or_other": 155
+        },
+        "nearest_visual_distance_range_m": [
+          1.9590916873924893e-06,
+          3.7823328800231616e-05
+        ]
+      }
+    },
+    "R1/gripper_link2": {
+      "count": 155,
+      "archive": {
+        "point_local_bounds_m": [
+          [
+            -0.01239509276667221,
+            -0.022206587864397134,
+            0.0002482798634760459
+          ],
+          [
+            0.015061080159623904,
+            -0.0011119890313971803,
+            0.0006703387540871638
+          ]
+        ],
+        "collision_region_counts": {
+          "inner_slope": 79,
+          "inner_flat_z0": 76
+        },
+        "visual_region_counts": {
+          "inner_slope": 79,
+          "inner_flat_z0": 76
+        },
+        "nearest_visual_distance_range_m": [
+          2.880710562121333e-06,
+          0.0005708347542608189
+        ]
+      },
+      "B": {
+        "point_local_bounds_m": [
+          [
+            -0.012714856393015095,
+            -0.022774877884900638,
+            0.00036371803103005696
+          ],
+          [
+            0.015810213231779082,
+            -1.45571736713188e-07,
+            0.0008399745337799694
+          ]
+        ],
+        "collision_region_counts": {
+          "side_or_other": 118,
+          "inner_flat_z0": 12,
+          "inner_slope": 25
+        },
+        "visual_region_counts": {
+          "side_or_other": 117,
+          "inner_slope": 31,
+          "inner_flat_z0": 7
+        },
+        "nearest_visual_distance_range_m": [
+          1.45571736713188e-07,
+          0.0010963011641823318
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "422 poses are an exceedance-enriched frozen subset, not all historical contacts or future coverage.",
+    "Archived/native representative contact points differ; neither is a saved material witness or unique surface feature.",
+    "Nearest visual side/slope is a geometric scope warning, not proof that the engine selected that visual face.",
+    "No candidate tested, no new collision query, and no gate threshold chosen here."
+  ],
+  "final_reducer_sha256": "7beede3419176f0b1b82d5d12236f872b1c987aac7619aa9201af82bc42e8568",
+  "note": "This historical reducer ran before candidate freeze, no new queries. Its B means historical nativeccd, not Issue23 pads B."
+}
