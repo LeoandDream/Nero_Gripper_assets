@@ -1,0 +1,1454 @@
+{
+  "schema_version": 2,
+  "status": "V2_FIDELITY_POLICY_FROZEN",
+  "task_comment": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6268240279",
+  "baseline_commit": "8662fd134b63406dd08b9671e6460d70eafe2c1f",
+  "baseline_candidate_status_unchanged": "RUNTIME_ENTITY_PARTITION_BLOCKED",
+  "scope": "Classification and preregistered rules only. No v2 geometry or model execution.",
+  "units": "mm",
+  "input_sha256": {
+    "reports/nero-gripper-runtime-partition.json": "8da6fdf623e5561cca0e99ac2ad92ac2e3053db9856c44cdca253d0ef0e43f62",
+    "reports/nero-gripper-runtime-errors.json": "453bba20ff15a48e055dcde6a31e8cd6cada6109032ddcccae793dda4d890eba",
+    "reports/nero-gripper-runtime-evidence.json": "a1d14b2e96add3dce96797aa1d45a3a8b025ac10978ae25a08126359fe9b8b8f",
+    "reports/nero-gripper-runtime-buried-interface.json": "059c8ec476a63f49e6ea337e6d53686e2cfc10bb50003de500da92968353f5fc",
+    "reports/nero-gripper-entity-partition.json": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+    "reports/nero-gripper-functional-regions.json": "bd6bf30911500c860c5ef90724d3a44789d53b817a8f490ff161c3acd7bb9c75",
+    "reports/nero-gripper-runtime-preregistration.json": "00b7e74230ac36f12296feac8cc6acdc09eb621661c8fd0572dd9e87943a2d93",
+    "scripts/analyze_runtime_partition.py": "3d49b2b59eca55df730deb70027a006111936eeb396e113772ab3217a01d21f2",
+    "reports/nero-gripper-collision-sources.json": "2260b862aafa9c21879870a462877b607228a662ace2c11765a7be001c488993"
+  },
+  "tiers": {
+    "A": {
+      "meaning": "manipulation-critical workfaces, front edges, major manipulation sidewalls",
+      "outward_surface_mm": 0.01,
+      "inward_surface_mm": 0.01,
+      "contour_mm": 0.01,
+      "normal_deviation_deg": 0.05,
+      "symmetric_surface_certificate_gap_mm": 0.001
+    },
+    "B": {
+      "meaning": "macroscopic shell, pocket, root silhouette and protected void boundaries",
+      "outward_surface_mm": 0.05,
+      "inward_surface_mm": 0.05,
+      "contour_mm": 0.05,
+      "normal_rule": "Preserve outward orientation and feature connectivity; no literal STL-facet-normal target.",
+      "symmetric_surface_certificate_gap_mm": 0.005
+    },
+    "C": {
+      "meaning": "Explicitly retired assembly interfaces, microseams, tessellation identities and nonfunctional deep recess detail",
+      "maximum_local_gap_or_normal_feature_thickness_mm": 0.1,
+      "maximum_material_set_distance_mm": 0.05,
+      "lateral_extent_rule": "A thin sheet can be long only within the explicitly listed C source domain. A small insphere alone never makes a real feature C.",
+      "surface_distance_target": false,
+      "fill_rule": "A local gap must be <=0.1mm, additions/removals within 0.05mm of the opposite material set, with A/B targets and all protected voids overriding. No complete large-hole/recess/pocket filling."
+    }
+  },
+  "minimum_runtime_entity_scale": {
+    "measure": "largest inscribed sphere diameter of every closed full-dimensional convex entity",
+    "minimum_mm": 0.1,
+    "tier_exemptions": [],
+    "rule": "A/B functionality may be repartitioned into thicker entities without moving its protected workface. C identities must be absorbed/repartitioned; their shared A/B exterior obligations survive. No subminimum exception."
+  },
+  "frozen_workfaces": {
+    "source_triangle_ids": {
+      "main": [
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577
+      ],
+      "tip": [
+        545,
+        546,
+        547,
+        548,
+        592,
+        593,
+        1962,
+        1963,
+        1964,
+        1965
+      ],
+      "ramp": [
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556
+      ],
+      "shoulder": [
+        578,
+        579,
+        580,
+        581
+      ]
+    },
+    "rule": "Keep the already accepted source workface planes, normals and main contours. Repartition only interior closures/adjacent thin fragments when later authorized; do not redesign these faces."
+  },
+  "tier_priority": [
+    "protected_void_or_A_B_boundary",
+    "A",
+    "B",
+    "C"
+  ],
+  "source_region_policy": {
+    "short_inner_plane": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          545,
+          548
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "inner_ramp": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          549,
+          556
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "inner_transition_1": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          578,
+          579
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "inner_transition_2": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          580,
+          581
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "broad_main_inner_plane": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          557,
+          577
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "tip_front_edge": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          592,
+          593
+        ],
+        [
+          1962,
+          1965
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "mount_inner_notched_plane": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          2,
+          8
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_outer_plane": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          12,
+          18
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_y_recess_1": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          194,
+          278
+        ]
+      ],
+      "tier": "B_OR_C_BY_SOURCE_POSITION",
+      "rule": "0.1mm entrance collar/mouth B; deeper fastener-detail surface C. Entire named blind void/depth remains protected B; no complete filling.",
+      "predicate": {
+        "B": "p.y >= mouth_y_mm - 0.1mm",
+        "C": "p.y < mouth_y_mm - 0.1mm",
+        "mouth_y_mm": -70.00000029802322
+      }
+    },
+    "mount_y_recess_2": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          279,
+          363
+        ]
+      ],
+      "tier": "B_OR_C_BY_SOURCE_POSITION",
+      "rule": "0.1mm entrance collar/mouth B; deeper fastener-detail surface C. Entire named blind void/depth remains protected B; no complete filling.",
+      "predicate": {
+        "B": "p.y >= mouth_y_mm - 0.1mm",
+        "C": "p.y < mouth_y_mm - 0.1mm",
+        "mouth_y_mm": -70.00000029802322
+      }
+    },
+    "mount_y_recess_3": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          364,
+          448
+        ]
+      ],
+      "tier": "B_OR_C_BY_SOURCE_POSITION",
+      "rule": "0.1mm entrance collar/mouth B; deeper fastener-detail surface C. Entire named blind void/depth remains protected B; no complete filling.",
+      "predicate": {
+        "B": "p.y >= mouth_y_mm - 0.1mm",
+        "C": "p.y < mouth_y_mm - 0.1mm",
+        "mouth_y_mm": -70.00000029802322
+      }
+    },
+    "mount_y_recess_4": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          109,
+          193
+        ]
+      ],
+      "tier": "B_OR_C_BY_SOURCE_POSITION",
+      "rule": "0.1mm entrance collar/mouth B; deeper fastener-detail surface C. Entire named blind void/depth remains protected B; no complete filling.",
+      "predicate": {
+        "B": "p.y >= mouth_y_mm - 0.1mm",
+        "C": "p.y < mouth_y_mm - 0.1mm",
+        "mouth_y_mm": -70.00000029802322
+      }
+    },
+    "mount_central_y_bore": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          449,
+          479
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_notch_floor": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          480,
+          499
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_notch_left_right_walls": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          500,
+          503
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_left_side": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          9,
+          11
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_right_side": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          19,
+          21
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_tipward_face": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          22,
+          106
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "mount_rootward_face": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          0,
+          1
+        ],
+        [
+          107,
+          108
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "thin_inner_layer_back_interface": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          504,
+          541
+        ]
+      ],
+      "tier": "C",
+      "rule": "Retire only assembly interface/microseam exterior; protect adjacent A/B edges"
+    },
+    "thin_layer_left_sidewall": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          542,
+          542
+        ],
+        [
+          586,
+          589
+        ],
+        [
+          620,
+          646
+        ],
+        [
+          649,
+          650
+        ],
+        [
+          653,
+          654
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "thin_layer_right_sidewall": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          582,
+          583
+        ],
+        [
+          590,
+          591
+        ],
+        [
+          594,
+          619
+        ],
+        [
+          647,
+          648
+        ],
+        [
+          655,
+          656
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "thin_layer_root_edges_and_bevels": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          543,
+          544
+        ],
+        [
+          584,
+          585
+        ],
+        [
+          651,
+          652
+        ],
+        [
+          657,
+          659
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "backing_inner_interface": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          660,
+          697
+        ]
+      ],
+      "tier": "C",
+      "rule": "Retire only assembly interface/microseam exterior; protect adjacent A/B edges"
+    },
+    "backing_y_through_bore_1": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1324,
+          1347
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_y_through_bore_2": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1348,
+          1371
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_y_through_bore_3": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1372,
+          1395
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_y_through_bore_4": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1396,
+          1419
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_side_y_bore": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          864,
+          887
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "back_pocket_floor": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          710,
+          721
+        ],
+        [
+          723,
+          723
+        ],
+        [
+          795,
+          795
+        ],
+        [
+          797,
+          805
+        ],
+        [
+          888,
+          893
+        ],
+        [
+          895,
+          937
+        ],
+        [
+          942,
+          964
+        ],
+        [
+          978,
+          979
+        ],
+        [
+          1225,
+          1245
+        ],
+        [
+          1257,
+          1276
+        ],
+        [
+          1289,
+          1307
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "back_pocket_sidewalls": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          722,
+          722
+        ],
+        [
+          726,
+          752
+        ],
+        [
+          754,
+          754
+        ],
+        [
+          760,
+          760
+        ],
+        [
+          763,
+          763
+        ],
+        [
+          769,
+          794
+        ],
+        [
+          969,
+          974
+        ],
+        [
+          980,
+          982
+        ],
+        [
+          985,
+          988
+        ],
+        [
+          994,
+          999
+        ],
+        [
+          1002,
+          1003
+        ],
+        [
+          1015,
+          1032
+        ],
+        [
+          1034,
+          1035
+        ],
+        [
+          1055,
+          1061
+        ],
+        [
+          1074,
+          1084
+        ],
+        [
+          1142,
+          1151
+        ],
+        [
+          1161,
+          1161
+        ],
+        [
+          1163,
+          1176
+        ],
+        [
+          1178,
+          1179
+        ],
+        [
+          1192,
+          1209
+        ],
+        [
+          1211,
+          1212
+        ],
+        [
+          1246,
+          1253
+        ],
+        [
+          1277,
+          1288
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "back_pocket_root_cap_and_blends": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          698,
+          709
+        ],
+        [
+          724,
+          725
+        ],
+        [
+          753,
+          753
+        ],
+        [
+          755,
+          759
+        ],
+        [
+          761,
+          762
+        ],
+        [
+          764,
+          768
+        ],
+        [
+          796,
+          796
+        ],
+        [
+          806,
+          863
+        ],
+        [
+          894,
+          894
+        ],
+        [
+          938,
+          941
+        ],
+        [
+          965,
+          968
+        ],
+        [
+          975,
+          977
+        ],
+        [
+          983,
+          984
+        ],
+        [
+          989,
+          993
+        ],
+        [
+          1000,
+          1001
+        ],
+        [
+          1004,
+          1014
+        ],
+        [
+          1033,
+          1033
+        ],
+        [
+          1036,
+          1054
+        ],
+        [
+          1062,
+          1073
+        ],
+        [
+          1085,
+          1141
+        ],
+        [
+          1152,
+          1160
+        ],
+        [
+          1162,
+          1162
+        ],
+        [
+          1177,
+          1177
+        ],
+        [
+          1180,
+          1191
+        ],
+        [
+          1210,
+          1210
+        ],
+        [
+          1213,
+          1224
+        ],
+        [
+          1254,
+          1256
+        ],
+        [
+          1308,
+          1323
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_root_notch_sidewalls": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1432,
+          1439
+        ],
+        [
+          1514,
+          1515
+        ],
+        [
+          1518,
+          1519
+        ],
+        [
+          2082,
+          2085
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_root_mount_caps": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1420,
+          1431
+        ],
+        [
+          1440,
+          1503
+        ],
+        [
+          1516,
+          1517
+        ],
+        [
+          1520,
+          1527
+        ],
+        [
+          1532,
+          1551
+        ],
+        [
+          2058,
+          2081
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    },
+    "backing_outer_left_sidewall": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1528,
+          1531
+        ],
+        [
+          1829,
+          1885
+        ],
+        [
+          1893,
+          1895
+        ],
+        [
+          1936,
+          1948
+        ],
+        [
+          1951,
+          1953
+        ],
+        [
+          1960,
+          1961
+        ],
+        [
+          1966,
+          2013
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "backing_outer_right_sidewall": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1703,
+          1704
+        ],
+        [
+          1713,
+          1716
+        ],
+        [
+          1718,
+          1728
+        ],
+        [
+          1730,
+          1732
+        ],
+        [
+          1758,
+          1760
+        ],
+        [
+          1779,
+          1828
+        ],
+        [
+          2014,
+          2057
+        ]
+      ],
+      "tier": "A",
+      "rule": "Preserve manipulation shell/contour"
+    },
+    "back_outer_roof_and_transitions": {
+      "source_triangle_ranges_zero_based_inclusive": [
+        [
+          1504,
+          1513
+        ],
+        [
+          1552,
+          1702
+        ],
+        [
+          1705,
+          1712
+        ],
+        [
+          1717,
+          1717
+        ],
+        [
+          1729,
+          1729
+        ],
+        [
+          1733,
+          1757
+        ],
+        [
+          1761,
+          1778
+        ],
+        [
+          1886,
+          1892
+        ],
+        [
+          1896,
+          1935
+        ],
+        [
+          1949,
+          1950
+        ],
+        [
+          1954,
+          1959
+        ]
+      ],
+      "tier": "B",
+      "rule": "Preserve macroscopic boundary/void"
+    }
+  },
+  "thin_entity_classification_rule": {
+    "contact_layer": "A: real workface/perimeter function, including the four thin cells; repartition, never relax the accepted workface.",
+    "backing": "A for tip/major exterior sidewall; B for pocket wall/bulkhead/roof. A thin convex cut is not a reason to retire its functional shell.",
+    "mount_block": "C for assembly bore/recess terrain slivers with no independent feature identity; retain all incident B cap, mouth and void obligations. B for a cell carrying the actual root-slot floor.",
+    "distinction": "Entity tier describes why the thin entity exists. Surface tiers independently describe what its replacement must preserve. A C entity never retires an incident A/B surface."
+  },
+  "runtime_surface_metric": {
+    "reference_target": "Only actual frozen reference-union exterior subpatches labelled A or B by the pre-geometry source atlas/predicates. Reference internal closures are never surface targets.",
+    "runtime_target": "Actual union-exterior patches corresponding to A/B targets. A novel exterior closure or C-gap mouth cap adjoining the macroscopic envelope inherits the stricter adjacent A/B tier.",
+    "formula": "For t in {A,B}: sup_{x in T_t} dist(x,R_t) and sup_{y in R_t} dist(y,T_t) <= the tier budget; also enforce each tier contour and normal obligations.",
+    "C_exclusion": "Exclude only prelisted C subpatches in the reference-to-runtime direction. A vanished C seam has no required runtime exterior counterpart. Still-C deep cavity surfaces use local material/void checks rather than Hausdorff. Forward C exclusion requires the same frozen source-space C predicate, <=0.05mm provenance neighborhood, and no overlap with an A/B target or protected mouth/edge.",
+    "no_mask_evasion": "No post-generation relabelling, nearest-distance-based retirement, broad semantic-family masking, or unlabelled new external face. A/B sides of a mixed entity stay in the metric.",
+    "proof_scope": "Use certified actual union exterior, not the current provisional v1 extracted mesh. Finite samples are evidence, not a PASS certificate.",
+    "legacy_results": "Do not recompute the old 753-entity candidate as PASS under this v2 policy; its original FAIL/BLOCKED remains historical."
+  },
+  "protected_void_policy": {
+    "general": "Every named large void below remains B regardless of presumed fastener purpose or inaccessible deep facets. Preserve source-space mouths, exits, loop adjacency, connected source void cores eroded by 0.05mm, and opening/depth contours within 0.05mm. Never connect separate source voids or disconnect a named passage.",
+    "corridor": "For each protected passage, preserve every connected source corridor with clearance >0.05mm; retain nonzero continuous clearance and the source inlet/outlet relation. Blind recesses remain blind with source depth within 0.05mm. Pocket remains open, with floor/walls/bulkhead retained.",
+    "side_channel": "Both nominal 0.15mm channels explicitly protected. Each source wall deviation <=0.05mm; at each source section w_runtime >= w_source - 0.10mm (nominal remaining width 0.05mm), positive and continuously connected. Source precision is not rounded into a larger nominal width. Entity minimum scale is not a minimum void size.",
+    "features": [
+      {
+        "name": "side_channels",
+        "tier": "B",
+        "source_regions": [
+          "backing_root_notch_sidewalls",
+          "mount_left_side",
+          "mount_right_side"
+        ],
+        "rule": "Both source 0.15mm channels; do not fill or disconnect.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "backing_root_notch_sidewalls": [
+            [
+              1432,
+              1439
+            ],
+            [
+              1514,
+              1515
+            ],
+            [
+              1518,
+              1519
+            ],
+            [
+              2082,
+              2085
+            ]
+          ],
+          "mount_left_side": [
+            [
+              9,
+              11
+            ]
+          ],
+          "mount_right_side": [
+            [
+              19,
+              21
+            ]
+          ]
+        },
+        "specific_backing_channel_wall_triangle_ids": [
+          1514,
+          1515,
+          2082,
+          2083
+        ]
+      },
+      {
+        "name": "large_rear_pocket",
+        "tier": "B",
+        "source_regions": [
+          "back_pocket_floor",
+          "back_pocket_sidewalls",
+          "back_pocket_root_cap_and_blends"
+        ],
+        "rule": "Open pocket, floor/walls/root bulkhead and source connectivity.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "back_pocket_floor": [
+            [
+              710,
+              721
+            ],
+            [
+              723,
+              723
+            ],
+            [
+              795,
+              795
+            ],
+            [
+              797,
+              805
+            ],
+            [
+              888,
+              893
+            ],
+            [
+              895,
+              937
+            ],
+            [
+              942,
+              964
+            ],
+            [
+              978,
+              979
+            ],
+            [
+              1225,
+              1245
+            ],
+            [
+              1257,
+              1276
+            ],
+            [
+              1289,
+              1307
+            ]
+          ],
+          "back_pocket_sidewalls": [
+            [
+              722,
+              722
+            ],
+            [
+              726,
+              752
+            ],
+            [
+              754,
+              754
+            ],
+            [
+              760,
+              760
+            ],
+            [
+              763,
+              763
+            ],
+            [
+              769,
+              794
+            ],
+            [
+              969,
+              974
+            ],
+            [
+              980,
+              982
+            ],
+            [
+              985,
+              988
+            ],
+            [
+              994,
+              999
+            ],
+            [
+              1002,
+              1003
+            ],
+            [
+              1015,
+              1032
+            ],
+            [
+              1034,
+              1035
+            ],
+            [
+              1055,
+              1061
+            ],
+            [
+              1074,
+              1084
+            ],
+            [
+              1142,
+              1151
+            ],
+            [
+              1161,
+              1161
+            ],
+            [
+              1163,
+              1176
+            ],
+            [
+              1178,
+              1179
+            ],
+            [
+              1192,
+              1209
+            ],
+            [
+              1211,
+              1212
+            ],
+            [
+              1246,
+              1253
+            ],
+            [
+              1277,
+              1288
+            ]
+          ],
+          "back_pocket_root_cap_and_blends": [
+            [
+              698,
+              709
+            ],
+            [
+              724,
+              725
+            ],
+            [
+              753,
+              753
+            ],
+            [
+              755,
+              759
+            ],
+            [
+              761,
+              762
+            ],
+            [
+              764,
+              768
+            ],
+            [
+              796,
+              796
+            ],
+            [
+              806,
+              863
+            ],
+            [
+              894,
+              894
+            ],
+            [
+              938,
+              941
+            ],
+            [
+              965,
+              968
+            ],
+            [
+              975,
+              977
+            ],
+            [
+              983,
+              984
+            ],
+            [
+              989,
+              993
+            ],
+            [
+              1000,
+              1001
+            ],
+            [
+              1004,
+              1014
+            ],
+            [
+              1033,
+              1033
+            ],
+            [
+              1036,
+              1054
+            ],
+            [
+              1062,
+              1073
+            ],
+            [
+              1085,
+              1141
+            ],
+            [
+              1152,
+              1160
+            ],
+            [
+              1162,
+              1162
+            ],
+            [
+              1177,
+              1177
+            ],
+            [
+              1180,
+              1191
+            ],
+            [
+              1210,
+              1210
+            ],
+            [
+              1213,
+              1224
+            ],
+            [
+              1254,
+              1256
+            ],
+            [
+              1308,
+              1323
+            ]
+          ]
+        }
+      },
+      {
+        "name": "five_backing_holes",
+        "tier": "B",
+        "source_regions": [
+          "backing_y_through_bore_1",
+          "backing_y_through_bore_2",
+          "backing_y_through_bore_3",
+          "backing_y_through_bore_4",
+          "backing_side_y_bore"
+        ],
+        "rule": "Keep all five source inlet/outlet and void corridors.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "backing_y_through_bore_1": [
+            [
+              1324,
+              1347
+            ]
+          ],
+          "backing_y_through_bore_2": [
+            [
+              1348,
+              1371
+            ]
+          ],
+          "backing_y_through_bore_3": [
+            [
+              1372,
+              1395
+            ]
+          ],
+          "backing_y_through_bore_4": [
+            [
+              1396,
+              1419
+            ]
+          ],
+          "backing_side_y_bore": [
+            [
+              864,
+              887
+            ]
+          ]
+        }
+      },
+      {
+        "name": "four_mount_recesses",
+        "tier": "B",
+        "source_regions": [
+          "mount_y_recess_1",
+          "mount_y_recess_2",
+          "mount_y_recess_3",
+          "mount_y_recess_4"
+        ],
+        "rule": "Keep mouths, blind void cores and depths; deep facet identities may retire.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "mount_y_recess_1": [
+            [
+              194,
+              278
+            ]
+          ],
+          "mount_y_recess_2": [
+            [
+              279,
+              363
+            ]
+          ],
+          "mount_y_recess_3": [
+            [
+              364,
+              448
+            ]
+          ],
+          "mount_y_recess_4": [
+            [
+              109,
+              193
+            ]
+          ]
+        }
+      },
+      {
+        "name": "central_through_bore",
+        "tier": "B",
+        "source_regions": [
+          "mount_central_y_bore"
+        ],
+        "rule": "Preserve full through-path, no cap.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "mount_central_y_bore": [
+            [
+              449,
+              479
+            ]
+          ]
+        }
+      },
+      {
+        "name": "root_slot",
+        "tier": "B",
+        "source_regions": [
+          "mount_notch_floor",
+          "mount_notch_left_right_walls",
+          "backing_root_notch_sidewalls"
+        ],
+        "rule": "Keep opening, floor/walls, root silhouette.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "mount_notch_floor": [
+            [
+              480,
+              499
+            ]
+          ],
+          "mount_notch_left_right_walls": [
+            [
+              500,
+              503
+            ]
+          ],
+          "backing_root_notch_sidewalls": [
+            [
+              1432,
+              1439
+            ],
+            [
+              1514,
+              1515
+            ],
+            [
+              1518,
+              1519
+            ],
+            [
+              2082,
+              2085
+            ]
+          ]
+        }
+      },
+      {
+        "name": "major_notches",
+        "tier": "B",
+        "source_regions": [
+          "broad_main_inner_plane",
+          "thin_layer_root_edges_and_bevels"
+        ],
+        "rule": "Keep main central root notch, left asymmetric notch and the protected main outline; A where part of main contour.",
+        "stronger_A_contour_overrides": true,
+        "source_triangle_ranges_by_region": {
+          "broad_main_inner_plane": [
+            [
+              557,
+              577
+            ]
+          ],
+          "thin_layer_root_edges_and_bevels": [
+            [
+              543,
+              544
+            ],
+            [
+              584,
+              585
+            ],
+            [
+              651,
+              652
+            ],
+            [
+              657,
+              659
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "budget_basis": {
+    "source_format_vertex_difference_mm": 9.7226e-05,
+    "old_penetration_limit_mm": 1.0,
+    "allocation": "A 0.01mm and B 0.05mm inherited from the prior protocol; C local thickness 0.1mm and material bound 0.05mm inherit its meaningful-feature and ordinary budgets. 0.15mm named channels receive explicit priority, not automatic microfeature retirement. No physics or grasp outcome used."
+  },
+  "freeze_rule": "Commit this classification/protocol before ANY v2 geometry. Later physics/contact/grasp results cannot tune it. Any policy amendment requires an explicit separately reviewed revision, never retroactive PASS.",
+  "forbidden": [
+    "new collision geometry",
+    "MJCF",
+    "MuJoCo import or query",
+    "mj_step",
+    "grasp",
+    "parameter tuning",
+    "new Issue",
+    "merge"
+  ],
+  "classification_outputs_sha256": {
+    "reports/nero-gripper-v2-thin-classification.json": "73ce4243e50f62a252cf557bb6f1d4306f85fde0a7fcff2d0c288fe68bcc3ddf",
+    "reports/nero-gripper-v2-thin-classification.csv": "11e1a7abab4ab0501eb99287e8c10dd81652c014cfd015acbcda7733f80e1448",
+    "reports/nero-gripper-v2-buried-classification.json": "16a61adc4f97cb27aa254205363b5575780228ea3fbc38af4a3d844c4a21162c",
+    "scripts/classify_v2_fidelity.py": "1a794f75b9f279be3df09329194199d620956bde64420366efd8d8511ceb33ac"
+  },
+  "functional_assumption": "Tiers are preregistered runtime engineering obligations, not newly proven manufacturer intent or real hardware calibration. Unknown fastener purpose never licenses closure of a protected large void."
+}
