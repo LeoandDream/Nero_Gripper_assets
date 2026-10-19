@@ -1,0 +1,3216 @@
+{
+  "issue": 18,
+  "source_commit": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+  "plan": {
+    "issue": 18,
+    "source_commit": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+    "created_utc": "2026-10-19T02:46:38.943269+00:00",
+    "source_root": "/data_robot/projects/.worktrees/nero-gripper-contact-geometry",
+    "history": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002",
+    "inputs_sha256": {
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/prepared.json": "f8a51d8e7d82f810b671733f4bf852c60e3a3b191befca5bc18db88ca0026ba0",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/STARTED": "c431ae83552bc70a244408531b600836adefe955c77c6859a89a924b4f4331df",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/raw-manifest.json": "28d724b65dfa3a0f6bade367b8a6c46c93c669325f819dc337065a72417b4a47",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.xml": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.diff": "2813528488327e6df5532efbc6a2fc17f90b0ecac144b53d466986fec26c332d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/registration.executed.json": "d9c9cdd7d662beddb10182843ee4e29a64ae1b70f65d7df2f43e582ebfab40cf",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/result.json": "cc26445d8324dd08fcad3af306c88163a1928f32c25c9a16bc7050b575209cc6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/contacts.jsonl": "98cbdcd9aeb8ffc5f1771e7dbc19a95e85396b77720a13ed7c5390e36109fc82",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/grasp-result.json": "ae29eed002d2a82e2d7c0d5c2e03b38fe66bce5d52c83f1e9a95f20987005bd6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/observations.npz": "70864acab856994d5ec144437c5783d367a6723b6ff29b979d7dfdfbdc9cb5b2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/runner.executed.py": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model-default.xml": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/contact-parameters.jsonl": "e2e024feee183b293b06ea02d0358a3ec6651be47a4186e3be9d8220eaeec771",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/execution.json": "c03bb48a346f3ecb5df491e4c4710c2838fffd2bf613ccfaaba8f8ec0cb2d0fc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/protocol.json": "a0a2227ac254afcde705873a0a1eb4490ecc5a97083bef2da88edda02e00d148",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/initial-state.npz": "e7f65ab98c9cff71af5aecf279f3691e2d6c980ea96acf7fe07793b0c5275ce6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/warnings.npz": "fcd1d57f4270f306d1cecf1aa2b558eab3f0ce50eed802080a99634f259a9f5f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/trajectory.npz": "ae210b35827b2e9bc12d5496c9548da5b50f0762fb37d5b90bee3f5590b430e9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/STARTED": "c431ae83552bc70a244408531b600836adefe955c77c6859a89a924b4f4331df",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/raw-manifest.json": "cb3aaa5c2d6f07cb975a4d6a79f9315dc454812e2f4bc63129044d168fd88fd0",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.xml": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.diff": "2813528488327e6df5532efbc6a2fc17f90b0ecac144b53d466986fec26c332d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/registration.executed.json": "efade1260109d3fe8d236963dacbabc3f18b2a372c3d7e7a980abd2e6c689f0d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/result.json": "e769a5226bf35a5953852240ecb7db6d76af37dcda32cb953191c6a6b04b3ad4",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/contacts.jsonl": "c979ad97c0823fbc803f01de1ae2b1cc16586cf67105bc920c7fff7b0f86d2b9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/grasp-result.json": "df33ab6f41e7e124b1d38898fd240380342dc18823e117f31b7859b8aa505098",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/observations.npz": "754b236594566d6fd058f9c35c59f9ea66455b4359499be83564f7c0b2aa8c3e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/runner.executed.py": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/model-default.xml": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/contact-parameters.jsonl": "690652c1744b307a8ce32a0aa07e5f5eb1c6ff02308cd2b83fc6ef7a17785b67",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/execution.json": "994fe4eac6f47056949eca36176e9f8b9a25e83f9949bb8a76d5ff7609fd0e60",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/protocol.json": "a0378400aa64f06c5c043f65e2c26fa44b68d7d31b1ff69c12b5e3248a84f00e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/initial-state.npz": "e7f65ab98c9cff71af5aecf279f3691e2d6c980ea96acf7fe07793b0c5275ce6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/warnings.npz": "135c5805e71cb4a84582d92a7fe1f6446240a99117ba7ac1fd1678ec6b3728f5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/trajectory.npz": "aa90f76b401d8f6ad5b24db7f0dea8c7eefaf9b397c7cc0eee50ac3dea957651",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/base_link.obj": "4cec56c02abcb161f6962d068aaf292a2b8b90c0d75ba8231dbdc2ec9ca0a413",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/base_link.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_000.obj": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_001.obj": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_002.obj": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_003.obj": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_004.obj": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_005.obj": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_006.obj": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/base_link_007.obj": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link1.obj": "27caed860ed3ec504b4158f78611947ddd84ad086e86c799ab1cc53361fee17b",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link1.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_000.obj": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_001.obj": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_002.obj": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_003.obj": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_004.obj": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_005.obj": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_006.obj": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link1_007.obj": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link2.obj": "9209b580bf938d0f2e4a5e92e3e68486a2820da3ce71948a5d43163c1ab87abd",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link2.png": "13544428266a19297d227fcf9f7a7c3ccda5504a350e2caafc9d5034ea9816b5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_000.obj": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_001.obj": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_002.obj": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_003.obj": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link2_004.obj": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link3.obj": "2534c1a9d1604b5a78ea5122afb8f6c46f0cfb9dd5913903876e73c34f965b10",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link3.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_000.obj": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_001.obj": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_002.obj": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_003.obj": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_004.obj": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_005.obj": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_006.obj": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link3_007.obj": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link4.obj": "6c79398ffe8a2b5505f9ddea0bdbe6cc479708bc9323dffd8b14e357831f1665",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link4.png": "ebe6a584bfb4188eb0999f15ef8ba3e1696f98e5f7e6d2b5922c68ed6b52fd3e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_000.obj": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_001.obj": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_002.obj": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_003.obj": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_004.obj": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link4_005.obj": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link5.obj": "ee3d1e2f9eb26cf62eeb426848daf85cd994c968ff37e9d8b1230ef38bf6dd83",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link5.png": "c4f67308ac223864064c894935e87fc23e26233e85ef3f9e6152ba7398bcd904",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_000.obj": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_001.obj": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_002.obj": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_003.obj": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_004.obj": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_005.obj": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link5_006.obj": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link6.obj": "52b69bf482e9788bd81f86436cf14c04ebec0e474876869ee4dc4b4d9eb6a19f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link6.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_000.obj": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_001.obj": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_002.obj": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_003.obj": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link6_004.obj": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link7.obj": "16455c947aa77cbd40b24f58a89a28a9324008f61c4d63210ab786b46e4e1471",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/link7.png": "fc7c624fba798327cce1c6f87ab1503930bc0eb07de1a070ad80a31f9b7c3fbc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_000.obj": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_001.obj": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_002.obj": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/link7_003.obj": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/flange_link.obj": "23fafefe84d7feb662c95f8f5d745a5a609f24a8694b8cd03255e23e6ea4721d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/flange_link.png": "2e0a9a2d5f28563463f634d5b81ec2ef90d91afe472a0c6e2c6ef4082f93ec5f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_000.obj": "872ef90145b57099acb788cd435c58c04797addf5db349e5146f50a2e4c55844",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_001.obj": "5da3693864b65d1ef131e33079afc05cda5c9f802f4a0c7d5abcb526183f5876",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/flange_link_002.obj": "afcd8b70d1fd2e8a665c1e95520e5f7959cc17bd795ded787a0831feff224cc9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_base.obj": "a91a229b077918f6b2105c5976b826c6fe4efd808414b7b37eaffdfbfac2604f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_base.png": "ebdbf4a658f652f7b9d91a40137a8888194b42dd76dd54dd85eec5caba1d35bc",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_000.obj": "093856a968a5adb2ac2c6d3236fe7fdd4609ffb030b155a2fa9e1fc944c29d3a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_001.obj": "72dcfe03601873b0d0c5e9c4928e8d7582fcd4be2819712f698dca1fa78a6065",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_002.obj": "030ce8c7d270eec3889ccc246c806b40fa8de7b425afd25927827f43145bb286",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_base_003.obj": "8725bf15222f8ffdc03f0902b24472d5a72781018f410d57f4d5ed561d55a30e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link1.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link1.png": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link1_000.obj": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link1_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link2.obj": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/visual/gripper_link2.png": "3255de957251766df3525e0c206d6242602b12c3e2632ffc878ea6c38bcebdaa",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_000.obj": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/meshes/collision/gripper_link2_001.obj": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative-initial-contacts.json": "6ab6424efba488f497840770958dd66de5bbebb93466ca856bccec19b032433f",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive-initial.npz": "ccbf5ceb0890e665ae722b966260d32e7ed74114a865221eedd57dcb16e99f95",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive-default.xml": "4534043b108fb2d1be6cb648e3eb8f09472b84264627185e9fd3865092b67134",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative-initial.npz": "a58574271cace12668fb841a1c4f3507102cf124208b701553d515934df7a7f0",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative.comparison.json": "18278e3b369254b081f7173d9776fc236a570ddd459af06febfad86921533fab",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive.xml": "a66bba079bbc8f9042a3d23d6d586c0791e20abea34e13297a8c291a7f7f7692",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed.diff": "b639e741a463f22fa56b3926a153ca5cb7fe624585420e532e10c3e3a8ce1142",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed-initial.npz": "e7f65ab98c9cff71af5aecf279f3691e2d6c980ea96acf7fe07793b0c5275ce6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed-initial-contacts.json": "33a12d6dc639175f0ca4eb07317876ff6ce4e7731dbbe4d82f7554dea724ffa5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed-default.xml": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative.diff": "af88978cf62fa560b4c385da6cd79b2c9bb8f94dd51ba216df6590c0b6156a5a",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive-initial-contacts.json": "c06aa3f69f17b63fd3b5ea4cddee470a1b4dbcf7cd140b0738b7bb8a9c642ff9",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative.xml": "4b817c528d21a8c901113cac0b8541630a05dc37d4d87b4a4857718ae9439f36",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/fixed.xml": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_negative-default.xml": "08a84040b29093528c1474119cae54c68b3f971eee54fc1cae80aab4c1e5c6f7",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/offset_positive.diff": "8f000290b8bb0aef8c60f45aeb54971a15c8f00b653b18b381103bc3521c13b5",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/gate0/frozen-plan.json": "23cf8494f4017b718a0fabbbad4e014625a730cbcd814d2bc605650086a81098",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/full_grasp_loop.py": "9cb81aa8c5c6983f3f453751c263db67bac4d9cb5a11c8e1a66ef00881fbfeb6",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/config.json": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/controller.py": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/run.py": "503098029aa320384d2536d25c47b547e7e33136fc924af3f26f04a01254063d",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/grasp.json": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/executed-source/base-filter-approval.json": "9d6b88a83961f492098c849c865ac0d8568ea0dbee53fe3f3c637de8ecd7d4d8",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp/reports/issue14-evidence-manifest.json": "69489b1dfade81c02df6075398634ad22cf78cd7a6ea59b821e9b2881aa46e04",
+      "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/reports/issue16-evidence/manifest.json": "c54710c4ce20e8d60862d33f7fc77000938a9baad2f5f1fc1d23db3a68d39216",
+      "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/reports/issue16-evidence/summary.json": "34760c837277bd87eeb11b36f96221ac45a3187ff9f955e6eb991c3eed7b1f50",
+      "/data_robot/projects/.worktrees/nero-gripper-contact-geometry/reports/issue16-evidence/exceedances.csv": "c333ba0b4b2312c5d855aa1cd3bbc1e32425ebcc6972840e05e911369983dae8"
+    },
+    "selected_rows": {
+      "R0": [
+        33317,
+        33318,
+        33319,
+        33320,
+        33321,
+        33490,
+        33491,
+        33492,
+        34327,
+        34328,
+        34329,
+        34435,
+        34436,
+        34437,
+        34443,
+        34444,
+        34445,
+        34450,
+        34451,
+        34452,
+        34453,
+        34454,
+        34455,
+        34461,
+        34462,
+        34463,
+        34464,
+        34467,
+        34468,
+        34469,
+        34470,
+        34471,
+        34472,
+        34473,
+        34474,
+        34475,
+        34476,
+        34477,
+        34478,
+        34479,
+        34480,
+        34481,
+        34482,
+        34483,
+        34500,
+        34501,
+        34502,
+        34503,
+        35369,
+        35370,
+        35371,
+        35372,
+        35374,
+        35375,
+        35376,
+        35377,
+        35378,
+        35379,
+        35380,
+        35381,
+        35382,
+        35383,
+        35384,
+        35385,
+        35386,
+        35387,
+        35388,
+        35414,
+        35415,
+        35416,
+        35417,
+        35418,
+        35419,
+        35420,
+        35421,
+        35422,
+        35423,
+        35424,
+        35425,
+        35456,
+        35457,
+        35458,
+        35459,
+        35460,
+        35461,
+        35462,
+        35463,
+        35464,
+        35487,
+        35488,
+        35489,
+        35490,
+        35491,
+        35492,
+        35493,
+        35494,
+        35495,
+        35496,
+        35497,
+        35498,
+        35499,
+        35500,
+        35501,
+        35502,
+        35503,
+        35504,
+        35505,
+        35506,
+        35507,
+        35508,
+        35578,
+        35579,
+        35580,
+        35581,
+        35582,
+        35583,
+        35584,
+        35781,
+        35782,
+        35783,
+        35784,
+        35788,
+        35789,
+        35790,
+        35791,
+        35792,
+        35793,
+        35794,
+        35797,
+        35798,
+        35799,
+        35800,
+        35801,
+        35802,
+        35803,
+        35806,
+        35807,
+        35808,
+        35809,
+        35810,
+        35811,
+        35812,
+        35813,
+        35814,
+        35815,
+        35816,
+        35819,
+        35820,
+        35821,
+        35822,
+        35823,
+        35824,
+        35825,
+        35826,
+        35827,
+        35828,
+        35829,
+        35830,
+        35831,
+        35832,
+        35834,
+        35835,
+        35836,
+        35837,
+        35838,
+        35839,
+        35842,
+        35843,
+        35844,
+        35846,
+        35847,
+        35848,
+        35849,
+        35850,
+        35851,
+        35854,
+        35855,
+        35856,
+        35857,
+        35858,
+        35859,
+        35860,
+        35861,
+        35862,
+        35863,
+        35864,
+        35865,
+        35866,
+        35867,
+        35868,
+        35979,
+        35980,
+        35981,
+        36002,
+        36003,
+        36004,
+        36006,
+        36007,
+        36008,
+        36009,
+        36010,
+        36011,
+        36012,
+        36013,
+        36014,
+        36015,
+        36016,
+        36017,
+        36018,
+        36019,
+        36020,
+        36021,
+        36022,
+        36024,
+        36025,
+        36026,
+        36027,
+        36028,
+        36029,
+        36030,
+        36031,
+        36032,
+        36033,
+        36034,
+        36035,
+        36036,
+        36037,
+        36038,
+        36039,
+        36040,
+        36741,
+        36742,
+        36743,
+        36744,
+        36745,
+        36746,
+        36747,
+        36748,
+        36772,
+        36773,
+        36774,
+        36775,
+        36776,
+        36777,
+        36778,
+        36779,
+        36780,
+        36781,
+        36782,
+        36783,
+        38914,
+        38915,
+        38916,
+        40945,
+        40946,
+        40947,
+        41015,
+        41016,
+        41017,
+        43173,
+        43174,
+        43175,
+        43176,
+        43177,
+        43178,
+        43179,
+        43180
+      ],
+      "R1": [
+        23620,
+        23621,
+        23622,
+        23623,
+        23624,
+        25320,
+        25321,
+        25322,
+        25972,
+        25973,
+        25974,
+        25975,
+        25983,
+        25984,
+        25985,
+        25986,
+        25987,
+        25988,
+        25989,
+        25990,
+        25991,
+        25992,
+        25996,
+        25997,
+        25998,
+        25999,
+        26000,
+        26001,
+        26002,
+        26003,
+        26004,
+        26545,
+        26546,
+        26547,
+        26548,
+        26549,
+        26562,
+        26563,
+        26564,
+        26799,
+        26800,
+        26801,
+        26802,
+        26804,
+        26805,
+        26806,
+        26807,
+        26808,
+        26809,
+        26810,
+        26811,
+        26812,
+        26813,
+        26814,
+        26815,
+        26816,
+        26817,
+        26818,
+        26819,
+        26820,
+        26821,
+        26822,
+        27751,
+        27752,
+        27753,
+        28271,
+        28272,
+        28273,
+        28274,
+        28276,
+        28277,
+        28278,
+        28279,
+        28280,
+        28281,
+        28282,
+        28449,
+        28450,
+        28451,
+        28452,
+        28453,
+        28462,
+        28463,
+        28464,
+        28514,
+        28515,
+        28516,
+        28517,
+        28518,
+        28519,
+        28520,
+        28521,
+        28522,
+        28523,
+        28524,
+        28525,
+        28526,
+        28527,
+        28528,
+        28529,
+        28530,
+        28531,
+        28532,
+        28533,
+        28534,
+        28535,
+        28536,
+        29046,
+        29047,
+        29048,
+        29049,
+        29050,
+        29150,
+        29151,
+        29152,
+        29158,
+        29159,
+        29160,
+        29161,
+        29162,
+        29163,
+        29164,
+        29165,
+        29166,
+        29167,
+        29168,
+        29169,
+        29170,
+        29182,
+        29183,
+        29184,
+        29185,
+        29186,
+        29187,
+        29206,
+        29207,
+        29208,
+        29209,
+        29210,
+        29211,
+        29212,
+        29213,
+        29214,
+        29215,
+        29216,
+        30046,
+        30047,
+        30048,
+        30049,
+        30050,
+        30051,
+        30052,
+        30053,
+        30054,
+        30055
+      ]
+    },
+    "original_exceedance_rows": {
+      "R0": [
+        33318,
+        33320,
+        33491,
+        34328,
+        34436,
+        34444,
+        34451,
+        34452,
+        34454,
+        34462,
+        34463,
+        34468,
+        34470,
+        34471,
+        34474,
+        34476,
+        34477,
+        34478,
+        34479,
+        34481,
+        34482,
+        34501,
+        34502,
+        35370,
+        35371,
+        35375,
+        35376,
+        35377,
+        35380,
+        35381,
+        35382,
+        35383,
+        35384,
+        35385,
+        35386,
+        35387,
+        35415,
+        35416,
+        35418,
+        35419,
+        35421,
+        35423,
+        35424,
+        35457,
+        35458,
+        35459,
+        35460,
+        35461,
+        35462,
+        35463,
+        35488,
+        35489,
+        35490,
+        35491,
+        35492,
+        35493,
+        35494,
+        35495,
+        35496,
+        35497,
+        35498,
+        35500,
+        35502,
+        35503,
+        35504,
+        35505,
+        35506,
+        35507,
+        35579,
+        35580,
+        35581,
+        35582,
+        35583,
+        35782,
+        35783,
+        35789,
+        35792,
+        35793,
+        35798,
+        35799,
+        35800,
+        35802,
+        35807,
+        35810,
+        35812,
+        35813,
+        35814,
+        35815,
+        35820,
+        35822,
+        35823,
+        35824,
+        35825,
+        35828,
+        35831,
+        35835,
+        35836,
+        35838,
+        35843,
+        35847,
+        35848,
+        35849,
+        35850,
+        35855,
+        35856,
+        35858,
+        35860,
+        35863,
+        35865,
+        35866,
+        35867,
+        35980,
+        36003,
+        36007,
+        36010,
+        36011,
+        36012,
+        36014,
+        36015,
+        36017,
+        36020,
+        36021,
+        36025,
+        36026,
+        36027,
+        36030,
+        36031,
+        36033,
+        36034,
+        36035,
+        36036,
+        36037,
+        36038,
+        36039,
+        36742,
+        36743,
+        36744,
+        36745,
+        36746,
+        36747,
+        36773,
+        36775,
+        36776,
+        36779,
+        36780,
+        36781,
+        36782,
+        38915,
+        40946,
+        41016,
+        43174,
+        43175,
+        43176,
+        43177,
+        43178,
+        43179
+      ],
+      "R1": [
+        23623,
+        25321,
+        25973,
+        25974,
+        25984,
+        25985,
+        25986,
+        25987,
+        25988,
+        25989,
+        25990,
+        25991,
+        25997,
+        25999,
+        26002,
+        26003,
+        26546,
+        26548,
+        26563,
+        26800,
+        26801,
+        26805,
+        26806,
+        26807,
+        26810,
+        26811,
+        26812,
+        26813,
+        26814,
+        26815,
+        26816,
+        26817,
+        26818,
+        26819,
+        26820,
+        26821,
+        27752,
+        28272,
+        28273,
+        28277,
+        28279,
+        28280,
+        28281,
+        28450,
+        28451,
+        28452,
+        28463,
+        28515,
+        28516,
+        28519,
+        28520,
+        28521,
+        28522,
+        28523,
+        28524,
+        28527,
+        28529,
+        28530,
+        28531,
+        28532,
+        28533,
+        28534,
+        28535,
+        29047,
+        29049,
+        29151,
+        29159,
+        29160,
+        29161,
+        29163,
+        29164,
+        29166,
+        29169,
+        29183,
+        29185,
+        29186,
+        29207,
+        29208,
+        29209,
+        29210,
+        29211,
+        29212,
+        29213,
+        29214,
+        29215,
+        30047,
+        30048,
+        30049,
+        30050,
+        30051,
+        30052,
+        30053,
+        30054
+      ]
+    },
+    "gate0_rows": {
+      "R1": [
+        23620,
+        23621,
+        23622,
+        23623,
+        23624,
+        25984,
+        25985
+      ],
+      "R0": [
+        33317,
+        33318,
+        33319
+      ]
+    },
+    "normal_controls": [
+      {
+        "label": "R1",
+        "row": 23621,
+        "phase": "lift",
+        "geometry": {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.000731560600578326,
+          "position_m": [
+            -0.30692092904092416,
+            -0.01955757112990462,
+            0.18194675833877272
+          ],
+          "normal": [
+            0.0005071897658217499,
+            -0.9996426436829655,
+            -0.026726909456074484
+          ]
+        },
+        "adjacent_normal_jumps_deg": [
+          0.004673816888558256,
+          0.006230850660717166
+        ],
+        "rule": "nearest earlier unselected lift rows; saved penetration<0.9mm; adjacent jumps<30deg"
+      },
+      {
+        "label": "R1",
+        "row": 23620,
+        "phase": "lift",
+        "geometry": {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0007318313538696073,
+          "position_m": [
+            -0.3069212856313667,
+            -0.019557965580281587,
+            0.18194696986375747
+          ],
+          "normal": [
+            0.00045725298729366995,
+            -0.9996443896239644,
+            -0.026662430741351138
+          ]
+        },
+        "adjacent_normal_jumps_deg": [
+          0.0031678784751944574,
+          0.004673816888558256
+        ],
+        "rule": "nearest earlier unselected lift rows; saved penetration<0.9mm; adjacent jumps<30deg"
+      }
+    ],
+    "gate0_tolerances": {
+      "distance_m": 1e-09,
+      "position_m": 1e-08,
+      "normal_deg": 1e-05
+    },
+    "ab_matching_cost_scales": {
+      "distance_m": 0.001,
+      "position_m": 0.01,
+      "normal_deg": 30.0
+    },
+    "qpos_sha256": {
+      "R0": {
+        "33317": "71da1dd885fcf1fcbba530a692543a5bb61ba9d8c7cdd257e4be90a7eec07036",
+        "33318": "a13ee24f98c26b72b7e914ebe7071fbdd5bb50a3be52910ef35eb1725c963db1",
+        "33319": "c804352f334da97b7a11797c287f30d14fc74f76cbd5c181ef9c0e38c35f6bbb",
+        "33320": "dc34b3be25c1196fa8db0f78837f1f7f969a62585b5956e693a9366038dee84e",
+        "33321": "b16f3f895fee936f7807957863fadfae2eb2fe7931f4a872be95c75c9e1fec2b",
+        "33490": "1b6987c5f7d02b8ffe4222f59540f5f183d5e4aeab2b18c190558c69400d604d",
+        "33491": "f82461d3b64df0236362587a753a0b1e80c67572f683afea73acfeab48e26da9",
+        "33492": "67917fb1452fbef23ed662317f6ee14700d2395ea22c49b7b25fd9783ac4e955",
+        "34327": "c5b1b51c578a6effe4eb4e79d1e2959290027ae4aa4b99765a0c942ffbf067b3",
+        "34328": "1b4ac1a6bdfdbaa6ca7d0a5f66e96583679da4aafc447f5b48fef4815cfa0f7c",
+        "34329": "b05d22d0e4068f23837abf9a8941dfdbe433d95a5a7bd5af086b071c41fa32d0",
+        "34435": "6e77bf3aeb0e4226cf7bcb8a49b636df7c233f1030017d554bcaf40bba2d3df9",
+        "34436": "1bd3b75d6a3f9483845762c916a0eab8cc9246d281c8c85371135d425afab73a",
+        "34437": "4e78856bb0d917500356f2042e49199553571aac21a4bd5daba8feb019999ee2",
+        "34443": "8c3319dc564b4d724edbc09efca8c71befd158f3eb0c211fb4319a81d56492d0",
+        "34444": "85c471517006639ae973cb44b8d2555e16b353c39dd4bb21ed3d82077904ef62",
+        "34445": "9a891d5cedab53b230e7f44a1e7f1d7f6b24877b0f30c7e2ce172860d2a7577e",
+        "34450": "d1a8ec07d9f100acbd1c9c1977c4c0d1a32a317ed0ca7031a6050499434f2b52",
+        "34451": "f945dae8fb4603d299b82f900522c3a4ef0438fedb836a5dfaff26dc59f34105",
+        "34452": "f2c4719d908fcfe074b9de3753d40cd0eeeefe60a3c460592e934f5e4f8bcb74",
+        "34453": "be01d9e381fc97fb3ebb23db693124ac5476f52d7166c78e7cf860b4fb501075",
+        "34454": "8f0a85586aade5ecfd50f67d3acc78a3b5210254558e851ad44486febc521251",
+        "34455": "ce048c45c168ce4086ab0e558043a0b12b831fc2c4ee2b922a28177b03a6903d",
+        "34461": "03bf02bdfb3501b071355177c58431a8fab5fb3c7ed736d61144bfce56170e1f",
+        "34462": "54751b210e89181330b3a6dd19523857b2fa2a72df8e194d79cc47027de2c28e",
+        "34463": "37021f712e119fce41bde41448dd2898de9dd2f22370a2508a0133c62e2ac96c",
+        "34464": "b358d9abd91c9497f4104b462aeeab85a8fe125e8cd1f81058a7d91f6acd333f",
+        "34467": "a120fd74d39e125efc1880f69e588b9f67171e2d8886a696f1b98a8a1fdf36c6",
+        "34468": "c79d011baaac19b83ad13efb98f27c3459ba19d89e2d1eb1421aa574ac23962e",
+        "34469": "c4f8ab6c0beadeca86b7cc65ca6df386b2a4214ed4bf23ccdab013d018e0d6e3",
+        "34470": "2877ce0f1af3909fa7e3ea954d8df2670a4a329e06a3d579ab430453b7953c49",
+        "34471": "053c974b45f94be6dcd387438e9d290a9db8c5b954464eba5108278dab66ba1f",
+        "34472": "1067718813dd7b6d5d7ad90c432c1d36916725c22899719e98f779389ddf94ab",
+        "34473": "664af5c54c4244b18dd29aa8d6e79bdedb8ef5ebc958d6289e081ad1b01fb579",
+        "34474": "8b278ca6295ac0eccffe1211bb4bf5988903eb5add4a5ca6f0823afe52340c5e",
+        "34475": "940734fbde19db948d7baa4d8a1ad4712c7825e26e244c3f2ec767e396c59ce2",
+        "34476": "990afdd03a060354e0fa5eb9c710a53ad4a60e8339ff4fe3909b3ac8ad9ee5e7",
+        "34477": "3df3ae5a1563319846d8bcff0372c8409cdba7cd5300bc6fd790723ec4e735af",
+        "34478": "55fefe52abcf04cceb788793d8383f9123be934b6b31b3b344317d43a8322313",
+        "34479": "b86f395682b5b4f90d872e0c38382ee93aeb80784203f165ee1732424926df2c",
+        "34480": "0b2248932038b4ff367eaeaa13cab4c22f2f9013567afd50777001a88d64d590",
+        "34481": "b3bde15285043483db9daf286dcca964205286ae47277e146696da66b1d47e16",
+        "34482": "3f5f828083e04f1a6c1de92f4e367d57e6d85ec2dafa60dd90d5cb9eabfbc1f6",
+        "34483": "ad7e057caee3efd007fd12c356ab3c8bc3098f22a120584217c4ddeb5c301a59",
+        "34500": "d2b5a5f3cf802daf76d613d780d55d8e965681803367c5704abe575858dc0c54",
+        "34501": "a92adac7e554c0ceba131668b6cc651738cf79898baff53718c1790e516c2688",
+        "34502": "48ca8cb8cc8d4ffa2e9e1f3c06a21d3f00fd0c68c80efc3042a7903651cfc927",
+        "34503": "5cc23530d8b32d0f1b67397d000999510ffcf6d5827527c5f8421348bfb30e22",
+        "35369": "0bc1582e4a98a998004ba93b62695acc44633202456ce904f019549859edb5ef",
+        "35370": "c1cf3fe02ae92f4742a20f1a4512026816389fd34faedefd7531978a4fe2acd4",
+        "35371": "ae161b76441026f4443925eb1f3468ece10d1301f2def6debec2b762bcb4a45d",
+        "35372": "65b64aff2507a1ad964313126594821c5a0f452898d7e0e1c2693e91c0cd8ecd",
+        "35374": "b280ddf30cff61d0d6772910a1e932a6c6ae71c6604da2dea11f68256273875c",
+        "35375": "9e8d9e071758e53fddbd73a315c574e051ed1b8a06581050f9f5e003fc9a9272",
+        "35376": "10b0764b66d2383333bc65ec2185f1ec1611fbde4a7e0c2a4c3dcf2112411fc0",
+        "35377": "cf734beac6623ec10fd013a75211b67d7e073b1afde8f31e7b9f546bf26de5a0",
+        "35378": "917240e5bc4a37a379f16c89a52ac2b0831d8c3437e28b914b0513bacb1f8dcf",
+        "35379": "076e868e6c80e031c1f335b41179e2298251e65233200e56451ed04bf18a95d5",
+        "35380": "acd38f1e457cc8ae1aa5cf63237d2878140db00a194e9525c9388811130b7cea",
+        "35381": "d000c3ff1f2c626dce35e86b6a999fab7ba280b2c0535634a8f6948b3947a6a2",
+        "35382": "5353e6502c49169415c42abadb5dfae14df7a5cad3f1b203757b25daebab2356",
+        "35383": "07d861913b6ccf8955468db515406736f3d02e526942c913a9993c00012beeab",
+        "35384": "9cf5d8965135d0bc79666b2d9d35caecd3abba803d6d5c924401aa821ff7a65e",
+        "35385": "a24c0b560cb688e8375fb15a80ceef1f529404f82193a933172244de86cec68d",
+        "35386": "97feae8ef9e77c9acc4fcf2d4ba3efd05a119f5003cc5adab3a42fa62ce8059f",
+        "35387": "2fd5704e06762d5d04a97c0d72ef39f72a2c75c512fd74189afdf4d21d388f2a",
+        "35388": "a89c4aaafdd5735aac671d2ce3fca168f1d4230e3c4631e4f435bf336d991a3b",
+        "35414": "1a56ed4699c5e5c8af2ab3a6ade68970f3ede31c7dfa4d78b5de3e3eb9c66889",
+        "35415": "705c25d633c1830eb454a357d5bed6d2324954afb3014114f43ad9d29724b87a",
+        "35416": "68287f06853fa57a0d27def59b62bc95ab44302c3cf1b4a49ea3bc32aa541d66",
+        "35417": "a83b8fcfc900e747b82da60349bd1597376ff37fb6920dd96fb6f03d3a37d7c0",
+        "35418": "bd5fdb091aa30d3b004dc8fc269ce396d24ce6d68be2811c77d20d25fe0977d7",
+        "35419": "9e68e9a9fc45404e646ccb6f6294a0b319d64de547f27a5853a932592c4be22f",
+        "35420": "143b1ad1da34a700f3807b03de7f2ced730c5c0c309525ff324f342aebac5d76",
+        "35421": "fb033f44e65869bfdce45fcfde263fb5510ce73c2ef4b85acd39ae5e43c6ebe3",
+        "35422": "a2ce0b63f433d44aeaff45f8c414ee69a951c9e3fcc665bc6b73f7f1f5abde9e",
+        "35423": "c14ffdf61bdb6ac0ad8b7063bb8b84a2dad1844e8a94fc4c648f285c90d78c81",
+        "35424": "2a41db93b7fe58eef1eef865e936d278d47c694ec130a87b43bbac8297d7451f",
+        "35425": "d460f97fa91d2adc19ed4f798b6a0a35bf95818115bc97fb825cd8adad713cb4",
+        "35456": "81d145721658b6999fab26f5f06a2b1c606a5e9ffa3e063cf7d6859230cacb62",
+        "35457": "f52d46fed83d3ec3a6edd356ed92f998b8e3656e0133dac2187cc3e2e5b2bb21",
+        "35458": "79de74bfc92c12b03618cd566869fa212bc81eb3e612b405b2899a8323f92bc6",
+        "35459": "b0e894bff5a6cd47373268e239e8e83d0622ee26d387d36a42d0d5c2c7f36c6f",
+        "35460": "f57943ca57a3b3ecff66cd3a08cac1f12b241be1904ec61a5e4f3399521e53e1",
+        "35461": "e4a04fdeba78170b525603cddc6492a203c2c95d62a1ba535f8340de3d1c42b5",
+        "35462": "877e2a0279fb8ea8b5ac5941f60aced161b78ebfce3dbe51a48f95d1c2b45759",
+        "35463": "e2cae73ad157fc268763df81810bfda3d2a0012838e6fd553650b910e953ce40",
+        "35464": "3d0bce5bc4e1f46e36e0704639441fa60fc0743327f6a8d3ebb234255b2c8b90",
+        "35487": "012062414b958b01b18c0a8c971e59d807f65b4d0b9bd50b3e36430b16dfc35c",
+        "35488": "5440a8217944ecfeb924f44344a6f78880d3575e6199bff508eb242baf1e9046",
+        "35489": "bbbb6e8b230a82fde82691a7f3b2fc9873b2ec430bdc6aa651448e4c568b8484",
+        "35490": "ca0371be7b001053a2754255ad36c8ea28f9ea9e50429d76b5925964ee7072ac",
+        "35491": "1e3b59843308eab938f737f7f9f1898e0ff6cafe9ddca2564865e63bd8a4972b",
+        "35492": "98d9d8839cc3a559dc6a9105e41418a0d3d80c6999d03bf9e6c7f35be7021206",
+        "35493": "a0a1207d1bab548426997b55e9f0452ab19b47ef8fc428ebb3a772f4d38891f4",
+        "35494": "7fc98f29efa0b9c16d7ba35dc7fada367b10420d4eb1faef72fd5a0ca029370c",
+        "35495": "de3f8c780f6b45479139332c6ed6853ae5258672a498244bbc34f1f8ba8b946d",
+        "35496": "136a58ca9e74a602309482e7048a0485c188824e0384476908a18ba55a3f187f",
+        "35497": "7f95d7926c43dce386cbc37902ec43bd9098589aad36920da86f8db4e31658a5",
+        "35498": "16417289396cacc043caeca24e9120c16c32ec0c88e72d10122c3ab0868332d6",
+        "35499": "266a93dc5f9ea76c8c2732487c306c0d4525b0ead4896a978d534e5943b40ebb",
+        "35500": "1c320723aedfbd4327ac31ec13eb3f8c917c9db012b2b2d7daaff292840d413b",
+        "35501": "00dda67b6d269973518a9126c131f48674d7df17912e101242bdea34a28b847e",
+        "35502": "31d89af8e7d83b16ef0583e9a010fd6eab7fdd934da63797502a96dd7eaac1c2",
+        "35503": "5c26d45754627f946f2bdfd7cb10962eee274fa6ff11f79c043a25f588e1a808",
+        "35504": "1a8fe586c510158d36e064a5d2e3f28816d3b89c1e2e2ebec3454f99039ae3c7",
+        "35505": "e3751bf9d5524d0afa6db74593a960914969a9d310f772c40202a26e55a6a494",
+        "35506": "e9be961fcd6310f331881a8e7f56275cb519fd9e29110f15f51b0337a894e3e1",
+        "35507": "b68c6489f38ee3f0579507690a6858746791e9875c6e1e70b57899532be99f50",
+        "35508": "ca9e409fe32822feeb83357151e8ee41cb0fee05a4accdf60992e266bf9868a4",
+        "35578": "2900fd4d6fce930f1023d17f4ab54352db4f790dbfc42e7dbe8babe08b8701fe",
+        "35579": "01890781a091b428bc108d7965e45f61b502ef655d7e9731401bc0d81af63814",
+        "35580": "8627f3f89a2dd50b09083c93a1b09db8288a7e613f1219ee90850e5866ea7428",
+        "35581": "db30855ef33e2edae4ef530a9268c4955d81916b020f663336d6512fbf9078aa",
+        "35582": "2d3abaddf10d611730c72028ee6bcd0cf36c85fb0f4c6aa2497e68d89598092d",
+        "35583": "1bfdb0dba71f15e74aeed2e111553f08c17e8e68d138dff498d1d154d3dc069b",
+        "35584": "f09e720a34ab2be6ab9b3f6445c33f9ea891a7275eb4efa0e3f33949fbfc566f",
+        "35781": "30dbd4e64b796abfecfdfec09910fc22e6e8261c9fa359811ce9528a5e35dbec",
+        "35782": "935e34218c3798c43cbeb2765158bcf56a2b7de92b07e55adce6721f2303a430",
+        "35783": "9b119e0e926bb913e55557a42e81655dbf9747e46483899be6db60cd4a13921f",
+        "35784": "08bf1b3b69763e830a5b152825993cc3165bf7ab6f10ed435e2ec9054fd3597a",
+        "35788": "ef021616de9bc40fd5be90a2906ee1c55beb7f8e657809098dac8ed17241ab45",
+        "35789": "e10a3cd4ec0496d75c47b62320b6d19f2477cfca554abf4fc3d5cba9c2f17952",
+        "35790": "7143284a6291dcecfb3f40ebeb14fd1185eea17a4e2057a590ff9bdb7d5412c9",
+        "35791": "a681f63f9bb3ce97ffdc1d178504cc0dd8665cba05f196fb98151afd9ef34e25",
+        "35792": "e753e7cbaeb00d843038d5ec382ca15a78cf9635ec605f65f78ef30c0f4023f9",
+        "35793": "ed1333398bf41ffb511d42c75bbe8fa2849d763056c3b87e45dbab09eecc8ac9",
+        "35794": "e7427829f437f27716dccbfc619de76160dae1a288394db9aaac6c92be852053",
+        "35797": "5022c2f901af787a1130cba5a32d6928277bd1543de92d99a9a6d3c2855a1632",
+        "35798": "500d41e940193cca9becbc7e2aab83ed64d134f67b6cb582321b505302937d28",
+        "35799": "655e7f810e9cda27cf6d097934f2b4e5b612a24c32df73f84390f467e46b99f1",
+        "35800": "9778ad2dcf3804ce0b81397b8fe8928cf843e9e0333624f25a207e7c57468c15",
+        "35801": "9b0598c29a94ac790c19109032850d9d3ca02f1b217d6e709c3bafb20f5a4c04",
+        "35802": "d5c75b1bf7bdc3371e431f828d47031d22a8338eb7507d05a39d1688d9c2ce41",
+        "35803": "5a480d04ce883d9662f9f58bab614669f645be6a2465a44e683a3675beefe739",
+        "35806": "019450b674c324cf3a2b694e596fb08f4795c2011e824c23ad4122beec3709e6",
+        "35807": "db3d741a342e8719c309524fec32d356051f9fd736e3e8800af9144210da3d9d",
+        "35808": "026cd145b4bb98d5c9c0995b963ebf4eb21fb0bff01d8f0f750d79a33a430404",
+        "35809": "8f4a595443c4fa37ed46756f8245c19ec43b6ad20effb8592caa12ea340a787d",
+        "35810": "acca34b87efefef6a9766f59b023c95c9a5fa15dad269af17705913006860fb0",
+        "35811": "1eae5b0df970355862270defa72516011f368793278582b833325723333a50f4",
+        "35812": "15659d37005b4e4302896e6ebee8f87725308934e775ac502aa86345dcc0d371",
+        "35813": "5daa3dc242910e61617f363bb2d6fc2653c2345524c04c86a633461532d91abc",
+        "35814": "9e84d1538a637ee74d5bd991d17bf12018b14e4931f69e9c8b91ea229f7994ff",
+        "35815": "fe032c3d0d8f1f3a8ea8abd76bea19ce37efb5935b09cbb6e559dcf5d87b8689",
+        "35816": "21ab907bed7bc2246325960fe426ecb5a299341bf17846f6f0681d5994f8e7cd",
+        "35819": "b00d08c338cd5410a859b3db534b4da76f39c162425b2df1a4e5516961161af1",
+        "35820": "8e66ed3fcc2a4471924c202a15cf343956359638d0a36d690a73952420f6bf3d",
+        "35821": "1225488aacd7b2fcf1231f60fc077cd8cb8264140622dd2549a7243cec69ba70",
+        "35822": "08575ddc242cd3ccd6e92e01c12ecac962bdad75d67edc515eb6ed8f9f0b5f1a",
+        "35823": "7a7496be84a4faeca5eec3c2a55ae082757f68bd8244ba390246d16ebde3cc7d",
+        "35824": "dbbd4a6c55f1847c8332b14ab6884eb4c8a85fae14381c08e7031bdf4622b492",
+        "35825": "eae0c90b14982d2e38167143674d6935032b35554acb6ffc9da82fb4ff4b85f8",
+        "35826": "69bffd55769c95cf4752367b7152f77b6e06e70f0d74dc458d509d0c1ae77b86",
+        "35827": "d71a4a25574d02832db2ed1665f7f31d575b098ae3ccc971ca6355cd9bed41a8",
+        "35828": "e4805cf64168f3d1c458e5d68139adf5983380f093e5a6ad447d3f2711fd7204",
+        "35829": "c93381b6deda217dd43002fed449ad2a42b5253bb15112c5261e73e867bffc22",
+        "35830": "ee2bf81e4a992b64a515f666ed5d7f6dfa6fe1ea4c5d70b9ed4b67e3755e2d53",
+        "35831": "22bff58f07b9de3718fca76697e4cd3bfe78d9e8f50b6921c82bb288f0a518f1",
+        "35832": "33e1beb6becf2eb5fa49b6fb1a565c75bfd36e8eb0c638671104904ab3d8e25b",
+        "35834": "699e5bc615a2be2e31eea625f521f8a57c77d76dda25faecbf0ef9e2a0ea84e6",
+        "35835": "8d6666fd4b645ed8723db0c6c1be43c924f2a86e861d247ead7ac51adf26e39c",
+        "35836": "9df06a02f35113aa8bbb31a0b9c32cbc7bdd006ef4ab9d9aa4fc26bed99e797c",
+        "35837": "1b2d849f165b35b8776755a027b62bb800b244679feaf6d902cbd9590a7da028",
+        "35838": "bf7d6daa497fb0847d65eb5eec351994e3928d7516261ee25f18d233f5d11ec9",
+        "35839": "d0f24aaeecd5ac7fe7f5089e7dc38fcb9ac52cb8d12efdc01d2136a958cefc08",
+        "35842": "2eabeb789ba02c26c3800c942b90907fa49b077e3ec5765d77fb45e66084219d",
+        "35843": "3c2db5733692e4fb4401f2d012e7831d597da644a1a78a65a3d70b1399ca71c0",
+        "35844": "6690c9d63a7819cbf970ecf51f2f0492a52403b93391cee1ad9a55c54913ad0e",
+        "35846": "c267a53e51ee92a0f00b1fd2ed2cae0e77d54005b0b5d29bab21ee185d76f06f",
+        "35847": "02e88dbd423203ed5862086e97a67b633c8fe34443a6edf983e41140c6b20718",
+        "35848": "e37d0a41e7b60e02ad188e38905b5affdde698090c1ca4526f21700d0671c365",
+        "35849": "4a45d41c2dcb9c5800870e630ad9d08c2193e244ff9535ca43cdf7eeaec212f5",
+        "35850": "f6ccf29f0e276ea599297f9ea2a04891dafcd09c58446678d5aca54a34275ef6",
+        "35851": "92fad6980972dd7280a32961463385c0813ad0fc2501276251c0198eaf8b725b",
+        "35854": "7bc9f56b035d79e8df6b1f049b411265cbfb90188f17ac23bbf36a0ef19830d9",
+        "35855": "8f87942e2cce2df4a17c9cc8c1acab82fdb0f315e86827eb63b7f61b84fb4d44",
+        "35856": "64c99f84b9285007054ef7e1f6544388043c8bef816abf38a3086f66688fd006",
+        "35857": "ffd13b61904f6c3a9d8d142f13e2e0ae884bd0a9de96122967c8d41f4befedb1",
+        "35858": "33ade809e218591cbdc928056f3661d74fd0244bed78963f519800a7a1c364c2",
+        "35859": "044a861384236cf275b8af1f366f3fe0cc1f00cd3adcf8cc65d73846b9a24bfa",
+        "35860": "caa82249bece3f823f047b99ccc7d1ab719b3886533dcea063fa04e4b205bb71",
+        "35861": "db1b0496bc1af26af30b62df427d52211e547e8008898bb4c0e91c4159921821",
+        "35862": "883bd9773a76471c1ac001eb5e42f527b74f7f936d7019cd8d3e1db38d986728",
+        "35863": "bd96077e5481f671591c5500025bc8b92dee18ba46d0c6a1e1b0cdeed7fba962",
+        "35864": "9ec449015ffd892fcbd11d423967325b30d87b27ef154a06145295ee459668f9",
+        "35865": "738d7d28512a1a4c6b95b126db902ee784ac008ae7646dc8d3550f983694c24b",
+        "35866": "1fb12f7912bf0edbcf7f2d9dc03e188eabc34c7bb47781f556d5906fc8c192e1",
+        "35867": "8687a22b1c545853b4f5dd287572de89bf359159086a72674d3e82de944dc66f",
+        "35868": "efd6a851aed4028f0d3b64a12055df7aa5505b2b37b1420c44b5e4ef274c85fe",
+        "35979": "ebd70ddb17acf70f561fd63c87e23d08b049f7a23d8a7028a367bce73fe4eb98",
+        "35980": "371a84cb493d4617aea4ff17d2a8cf5dd63fddeac65bed04d29be6ace304969f",
+        "35981": "40e01e32e3bb0cf2fb351e2a83300673bba61bcb2afb53c3ebec2cff9adf9752",
+        "36002": "1acfbfc9ed7d713c89fd235396328d46dd7f5b60873f00af78259fd88c1a8337",
+        "36003": "5a94d9d1140d3a3d686da754710a3f052d0818c4cab05284dbd62d4f227d2a6b",
+        "36004": "56dc84ce5950ffa3ca961c2bad4ccfaa22e82e1c102a782c32cadd9193c436c0",
+        "36006": "58c472edc6dd937282d64684f113ce93c833cf9e472d4b07094bfea8d06db780",
+        "36007": "2b54d2e2726d02f0653b95c09f7e1214387b372adcfe1de21fcd1d887a753a84",
+        "36008": "1b7aefed3ab175df945bb09672ed0c6cabc789a297701331514f2a09ad6cc7d5",
+        "36009": "00be1adb831c51541f15e8230ee8d2a873886539826dc0bd2af34b5e4752757f",
+        "36010": "ac3bc7106ac1237587d738944cb586e81dbf6abc0f5d11ebfea0e0cbd3d505ed",
+        "36011": "094f8f398e043a128fef6b8411a821bb825d74cd7b4cdb00df58c300df9baa63",
+        "36012": "67552b92ea51488fae65d07093ebb8c18e0203e15b050df56c896dad5054acb3",
+        "36013": "e94ff005314dfb9cb32948dc7ef588c89e089d58a3a0f0ef6e50fd9b187fd980",
+        "36014": "3238c2f2148de17ef54d2ef91de46d29831a944c483ff4311efd38753e60b5f2",
+        "36015": "2de8e37b0439014314f9cafe861dceed41d76a996c0317fbd0949f83e46b1125",
+        "36016": "bc60999096caf28a4c8546d34c03ef981053fbf6823a15f4698c42e14dfff351",
+        "36017": "c53c09e5e5c47bfe41baef9ce82aa2adbee98a80edfeff37b12afc3f410c1265",
+        "36018": "d1869156992af84ceb63c5dd13238a820dc4a59e329a473aa5b91606a656dc6f",
+        "36019": "099eb5cec716cfabacbf91d9c609e046ca422d1eddeccba1291ec0f01692bea8",
+        "36020": "a396ad92da904812ab01cde211d14b45c2b3fc67499b38760f29f2f83388f09d",
+        "36021": "a017e05ab342c63ea00aeb9414d2a70e1509fbd36c9ab173b23074f8628bea62",
+        "36022": "b55ae09f3b2403b8ff362f135c50918277132952f14d41ecd0fbd0ac22bd6c0b",
+        "36024": "fc0cb2077243fe84a0af3fe694e756c167ca6facbe792fbb492908803c01e977",
+        "36025": "74a1fd888e3c9c5f453d8f6a867b23b30a53d5eb79239aa9f926b10829450932",
+        "36026": "6d555e6e28018c444c360473f003144fb0ee0d9e26a37f1f2a1e527ac9899bdc",
+        "36027": "918f0eb8bd53b6a7601d67d0985f970c3e77b2a336e978c487c584c3ffdef2f2",
+        "36028": "40ca8de0aeb5807154d9ca6218105b18467bcd3699da2eb1caf2d5746a017010",
+        "36029": "8bf31052b8aa82c6cc441d85206aa1f771bc242df8596d5705851b310293933b",
+        "36030": "f34293964383decbad04d6773677102c96e47705306eacf4a1de27faa7e41e65",
+        "36031": "b07b7da9a1907004a04971897b47181571f53ba9d1eabb21749ae6de14bebfe0",
+        "36032": "404488b3fb5d89e51900eaefa2f98b264e3590845f59436cc3877b330144346c",
+        "36033": "8150a34d1952dbbabe838a6f2a9da46afecb38641d0ca586016665d27c024e89",
+        "36034": "389d3881cee028966fd987bd50828a2f9c383383a6e492dce79bd25c933cde92",
+        "36035": "cf9c85d34eac352bf763559cc77b8b0c172951875d86b189c5cba3fd7eeed726",
+        "36036": "873343fbd2ae7df5d000cc59da2cc1ff099b66c51248c18a1998d65cc06fdac7",
+        "36037": "075bcac2029bfee71b516d55eb799f4bd6af084241cecc511b776d199333ec46",
+        "36038": "c916a7d0f213d553e554910a7c94fddd563860f8f7ee892109e0ae4e70d0feb8",
+        "36039": "8e312e59d76c49284bbb1ba94090f1ec688d8325ce56e8f873e06d1bd67534fe",
+        "36040": "e2c3a160a2af3b785fbafb633bf6b7c5600369e93f0b0ece3c87788fdcbaf9b1",
+        "36741": "ebbc2969eeb49ad1f933a0587979606d9733f73a92b0a13853f6c1ebe19cdcab",
+        "36742": "1a8f75d0ffa29479d93d88580505d4d90f11a3b41d3b592cadcb886e08ae5fd3",
+        "36743": "ee348e9d03e5cf422f966da3a11a0cbae7e2c8803dab0f55550cc4ce6da716a6",
+        "36744": "4838dd6f6039f28ea62f80709c483a56a9aa10dc7068989d71904ba5766eb7e1",
+        "36745": "d32d247e680888a548b139d3cd9f1054dbf57cd0e37116672ac6c061e64d6c73",
+        "36746": "a7c0b2c057cc9cd2525a7cc578499b4b4d95a8d84720a3b5f9d4b09f18b1db96",
+        "36747": "8c6a435f305a99a2ba262df18412a7211f045436f81a59b68f2422c69d935490",
+        "36748": "1a3d8a9557fae09e03229634d863b0798b48dd28a41100356adc1eec23c51f0e",
+        "36772": "9d88bc0a0ee91cf78079b5b5c2ea2ce39b282e0e3d38a07a4d4444e904800749",
+        "36773": "b2f5d4a9a1f2062911fab098fbc081b4ff7a7d22e287e47452cf6687db82a7ba",
+        "36774": "371a487bfc0ae84121570dbf6ba3f6646069b22e14e4bc8606d70b00c1e2a430",
+        "36775": "262f84fa11fc2a98910ef931358178139bdc5e282e2bc3e1b8e29991d5578e39",
+        "36776": "8564c7b81878dd4aed505ac79b0f5be5d241881fde71c1f3c97a8b56e13d3360",
+        "36777": "f9c1379e02710c433584f523ce411f8568a9cbfc0cc6b33729801ec0a9f86487",
+        "36778": "e659a9adbca891c28ab9b1bca35a6bf29d177a12a9765676b39416688ba39853",
+        "36779": "ffb09601e5142697be20bf52a9a7c6f121dd6a9178b8001836eca3fc25a4e7e4",
+        "36780": "42fecad76b1cb558a41a768c43d78fa7c15555ccf7cb36e824548de9217a0b56",
+        "36781": "3a95fb2a03add4b75841db6bfb1c598354c4e7efa95ca2b9f5d41c602d61a31b",
+        "36782": "33f5cb845a1a92e209caa3996988b1256e2e85f728344c0e7592b9f4baba1eb7",
+        "36783": "04229d53c4b5674f1d624aa48cc21f178c88373e59a202dac6b1f37e33f18ad1",
+        "38914": "fb2613a4066f15919fd29cf7b7c433625634814c54a8cbfcc17f3a2e77056fd3",
+        "38915": "3a4064732d20dab5b635167b4ac51cabb1a84a4dad825192574c218bb67f3312",
+        "38916": "6ac693c166ace197c327cd5e1e9c12d5a17020068e36ed291d382763997c6bdf",
+        "40945": "9bb598e0a97d984bd7d676e659771c6988cc48d743e87177571707858acff049",
+        "40946": "1710eeed1dd6684845bc03ebd5a52fb335955ce360f367f337f7d525098bba6c",
+        "40947": "0b100caa872ba6930def8c316482f92e4bd9f45217c80f99dff89622c9b37c3d",
+        "41015": "109b6a903b522ed52bfe3e2ee8db400314b0d2f1922a47d840ad3ebfa1002b13",
+        "41016": "273d4d4a4fc331c5c4997bf6764d527250c97d3b4cd22ac45a6f6ed140658050",
+        "41017": "3a66e8e662b4f15e569815541d87b9684d75490bdb64fc94d577ebde963f6b14",
+        "43173": "6ca8e2e788f2e5c621c19a800cbfd96410ea73c1da3334569a9879998e958bab",
+        "43174": "99581a119e921ac3fec768787ed5bf3a170d1414a06a26e6c574330aeb6ea1e6",
+        "43175": "0eb9d7f32d40b6c27e4821b60ab048fc8ec432ad922bc37d687909f6d0edb20c",
+        "43176": "e21134c28dab1937774c94178ccb290cf6db7958c325feaa14e6f17f7dde154a",
+        "43177": "7d779bace7fb0174d23cdf844c0e6b19f5de8ff40e17d937bbb4755bfe77e9fa",
+        "43178": "7616de90ffbf3237847f18e8664a2e81be7927f4b7a5b0c3abf6d05e799ccb74",
+        "43179": "2c4460c09747ae3df229a526f4484115e81fd7eb6ff73a6b4fabf58ddb216871",
+        "43180": "84eb8a60cf30dbb5645efd050f3dafa2faa4a101ab73806230305306cf9a99fd"
+      },
+      "R1": {
+        "23620": "d74da0e0fc568563059731af93396336ce5228b8cbab1fa3ddeb18be35d61bad",
+        "23621": "ca0a2c3a3a8fcc79ab7b08245f193f6337b00aa1a6751f83c72bb15861f2123c",
+        "23622": "94f60836e833eb62afbad2016b40ca945ae731c787ccea68e2c41b1931ec0342",
+        "23623": "8c761c399e9c36d64eb0f144ee69cca7357e2c6baab56fe303ba46a692c5e4e2",
+        "23624": "0cc147e333cbf0db6d4aae0e15c2665336889979d5ceab8b47c2142972a29577",
+        "25320": "5257f8a97400d6922c7647de0cabe0febf7e1b646df0a9605dccafb8b073b3e3",
+        "25321": "49f55ad1ebda580b46d280528e56ab512f6f92e59b1d45ce949c927223cc5f22",
+        "25322": "5fe259d34d47478980203b92980e5291f5b691be3bd60c44a9ce3506ab3c0bf9",
+        "25972": "5a91d25b0b25f6a31d2ffc02e094c1460a1fbed42c204a449199c9f0adfcb51b",
+        "25973": "01c88e920a080a451200f889979be68e9fc2b975d21de7bbbba252acd8f8868d",
+        "25974": "048727d872038dd9ce8694312f729ac5c61db9e6105f61dbdab4a63d6a67d304",
+        "25975": "6e417573680e020c5cd9ce2426ec5daed7e26128f4ed4b89d1dda04ebf27b4b4",
+        "25983": "3431b78567447087a489bafd04cfb1b2325593a8c77779cbc4d5c5962d5cb519",
+        "25984": "4a4db5792959d4a3eebb2552edd8724653cd0c12495434ff92002236591f0f20",
+        "25985": "67136fc11e304b288bee864e66e6e01e4f6876dbb521e0d7b3aba183eaafe663",
+        "25986": "2c233070d06c8557be2ab382888b3e0644c62c2916288221e004fa93d68abe35",
+        "25987": "ccff81f4a21e82584ef80b59135f2f6825740dd25f9332e09e37a5411a71fc9b",
+        "25988": "00ffefea0615c6508fb6b00cee1ceeaff3ab37f56e16aa042a115b1f9c688aa5",
+        "25989": "2368b2fcd88d8634bf03dbe152e284d85ff15d2f8b21397bc042616f80986b39",
+        "25990": "ad14d7052c5d93188e4429abe449d590092911494a8fe66dc86371a0330852ef",
+        "25991": "07a1109a13370b1b0392e1182830971b7b18775a9c2acef5e74a018ef1428062",
+        "25992": "82e4f819f70d45ff616d6920a62c6d82c057aa8572cef3aa010d87bcc9753090",
+        "25996": "485b96fc30475e2140406bf2ff3c5b4ec8942671f6d5024168c88bbc865286ac",
+        "25997": "c2d1ef7dfda6e0291f7702016b8db566ffc2ec9d5e1f4e5abfac5b5899ab3e93",
+        "25998": "2ac5fa11acff67d97cb5f485ba0cc3975a389fae77103b6199ee8808e5435a82",
+        "25999": "125bda6d4ee1b013d25b7bc9c8aec3a12b8fa4bc3433d4189f78dcc4f1844187",
+        "26000": "650b268fe38e775c25cc4f42b250ea7c4a9d7c60d0104335a196cb872366eebe",
+        "26001": "be6636731c21a42324ab113986867788e3a8686b69a02560d5119b2ca313e3f2",
+        "26002": "de4a494a727856b4606652ed8fb7128f377395aa2033f582770d07ef2dc9f8fe",
+        "26003": "aeb87217f9d2a001481709139173fa79b9938a03c360b2c9900e0c6c87c768d1",
+        "26004": "63733655bb7fa30dbe6e3b717db41fa92728b0955609b9ddddac7510d5ccbcb3",
+        "26545": "c30e45572912620a19f079b1df042999cfa81e7fc6abe11a65e81276f97cb2aa",
+        "26546": "7f08cd8affb6fbab9b79867aa6e62842e3858995809409d1447e46cae3969054",
+        "26547": "d93dc9ee282f06c3361f5e383aa68784900471870d07bcc359f6abecf5d3643a",
+        "26548": "599798ad49bd86fdc4f75f1fbc91fe578050055504451e398d9dee42a2f56193",
+        "26549": "838d5d14c90748183a74b70e28dd2d54ca517d3ffdb429eeb92f14ddfa46c871",
+        "26562": "5cdca1c4336448aa210e3a928f8d1f2483606875cefb0264dfd375d25bceaab9",
+        "26563": "0fd5acdddea03cc5aa034b3cae37b12c139e9a22fd636618b8010af116bd5b1c",
+        "26564": "dd7e2044a0a9e10a0a6f1e2c590453c0245a239c2cb8f52e18ec2ec88e49c557",
+        "26799": "fb3ff8ad5ecbdf6508a2a18c750c241743de996a93b1c20525c5e23b844277bc",
+        "26800": "4138501dacfa65d613c74fbde0fde373df8cb10877d230abccb89ac2b887ba1f",
+        "26801": "1f8cbc57b0c18d370ee4cd0c70e6f630ff1ddacd77b9f099941d0289c282c7b5",
+        "26802": "2de3e177fdeeddb22e2c7ea857d22264243c04d9acd4436dd443d2b980543e67",
+        "26804": "b50afd68225d92697c87516a27a1106fa80a015398e1823eb028427716c641aa",
+        "26805": "e4967eee9c49a25ef788a980ae584dc70741f917a9cb3f7054c4719d6d305efd",
+        "26806": "f6d45b8ced400e7d3130e1819d02c0ee4321ce8384db9decc9a059565d3bbf32",
+        "26807": "6b784f85661dbcebb6d4f3a7c3cba8a27fcc13287b9554453c976d1d1c2dafb7",
+        "26808": "a5cda2f20dca9ff9de34488a39419d651266f1a3b3ce43b01f83a3dff2a9c4e3",
+        "26809": "55ed9c4fce0b97978b771e438e0019b813214dc0b571a83e3a06bc7f57ab84fc",
+        "26810": "71dbd104a3911ba3a8567557d29b8d4c1fbdca6b85d3d87cfd0a72b998b9642e",
+        "26811": "bb59aed65c5616ed63b54286c7df316922e6f2e7597e7d4c3a4f7602cc4fa38b",
+        "26812": "f30f15ab312229133d7e974a0ba1491cc364444611b66851e4e2749aba7a8644",
+        "26813": "8d0dbd185e1d3fd9eebd3cdadfcfe581d9a7eea1a5713ef3aa063550fdd02a2e",
+        "26814": "9f863617f8b7cf01ce3608d287aecfb14e9bb21e309a970734e4b5d0bf876419",
+        "26815": "697a5d26b7f84548f0e77fc4fd8e96bb0252ecb970af0386bde5958a142ea040",
+        "26816": "808c0a21b3e1c21fb00ed8827a069516b850f4297af72c3b056908e65940552e",
+        "26817": "9f68870bf5929e24a858b127073c8a7a64be49fbdc31cd2fa37467dcd5168664",
+        "26818": "7c1e87bc0d44f8e663b440e106a4ef5fdf48ff181c061cd54282c0d8ec5fed0e",
+        "26819": "a1bcf4c14cf6d49554efec9eec8cc3340e35f1357865fdcb94e5826d11fcd612",
+        "26820": "8397139ef82ec9e6251ae4bfaaf6bac041d7afef47a2c79734148419ab32e03d",
+        "26821": "8690a3e6a57ff8201d0c7f0b631c7ab1c1b23885458e5e539bc07772c5538fc2",
+        "26822": "df1e556851ee6cd0a4239b0696e96b01e7df1cf632754567c38941a7282098e2",
+        "27751": "c92f1acf23f806971e05a0f8e043260b18c62b0df45b34d3498306f38c1099e8",
+        "27752": "ff081357ae0308258ede2574fa6ed9042d10aac0b93ebce24b03e52c84ed1a9a",
+        "27753": "4fd5d9e53e42cd6cf75aa52254b056a8e73cbd15c526a6da183e1225e400ed63",
+        "28271": "4acc3460a6a877b628b3ed903bdeb437e74be1f15e00f1c03c8a8de83b154994",
+        "28272": "038e36e9546fd7755e2e4e0d4fc5fd124c5327f52cbbe515ba9873fa938c6ca2",
+        "28273": "db2e08200f316b898f7bca21370daba4de58e270d62640b929c93fe02265fb60",
+        "28274": "fd143212cc4406b209db4a478383598bc71df77a6f4b41b357cd2ac4355541e2",
+        "28276": "0567a2a6ffbfe19effe7bddf7d37bc4c4ec148f56fa2d4821bc625c39dcb9b6e",
+        "28277": "5a0363affeeb2bed235018d9fba148a8583c3e2ea0254e86ba3a71d81e1ef776",
+        "28278": "87e2dad2977de0f0af2c11eae853edf699ae6143ffd1b81d51cf1407b7016fe7",
+        "28279": "a4cf473a05fa8bcd8139964fd8c4a52688499c493b26c4f2029b2c931d38cf1a",
+        "28280": "ec03947da903bf0012062f5fa39598ab6e0cc454628fbfce74f3dd7793446232",
+        "28281": "5088ea232443e5a712f64b0c3e85482f8cb46e448ac67350b74424a09a8de517",
+        "28282": "f2b1d9601526e7ab18d835e4dd48bf76c926997e8e4c174b3cb34a9ce6c69d37",
+        "28449": "993685b96294324aa1553624a41780c63e71a73672e6cea935cffef9b738f07d",
+        "28450": "defaabcdd433186843558952adc5d36eca3e385659110006c242ea2e5a0d4485",
+        "28451": "e69cef85375883a11d0535f056095d7d39aaacb91b837964dfa443c7d8141da3",
+        "28452": "7677ac83ca4faef99a9e2baf3056489c47741eea54dc620b332cd392ca57ab42",
+        "28453": "6bdf261070c83b22e226bd41f3d8334d152dbae680c152b542e66ea39eca5966",
+        "28462": "4addf4b6863dea6975440cc4e99d657eb8c33388511068a76f1214202d5dc2ff",
+        "28463": "07db766189d528ad63b1bd233e95a0ea1b37257bc687d93504eae3f1e7590f6f",
+        "28464": "54839755afedba34685697e81add13bfa9c410307181f4efd910e966ff979a02",
+        "28514": "18d58505f619fe5538b3f5db5ebe85789304b630841e341a4d98c976b7846685",
+        "28515": "3576e84799fd0b21efd28e14769f9987ba14c25facf4c1711be72e8d5259ccd7",
+        "28516": "fdae1e71858d3ef585f80840651dfe42c85232088eb42a17784ec9389f732015",
+        "28517": "0531cbc21cc6e868eebcddbc42551c348e38f7aa2d54a9d89f2452de0087c087",
+        "28518": "95797ab6d4f17bba395b5e2289cbbe0b02000b7977e352ae26355c057dace118",
+        "28519": "b917db4fc47201f24202eacd355d50acc8847a04aeff85e36f4c646c8bb02d7f",
+        "28520": "8071fc646e7b23124e9b3adb451ae8aa6e859ab87675b9a9b52e3ba0b6488fe3",
+        "28521": "2383a858170f1496a2f570f127796353fdb73451a54eb2c6a676e653573b13a0",
+        "28522": "95b1eb649b79584bf157fcfe218cb18e6fd6e1233b5476bfdb6b0d6ffae5a342",
+        "28523": "f24aabaaef8e473b399c07a4907b555846b8dabc915bfe90597fc4a5c48213bc",
+        "28524": "8f89fd1560e781226f0c3e896e9caacabf426f461a38319cadf3d748bc65dc5a",
+        "28525": "d83d85f05e6a742346dc1b42ddfcd99a0f71dd9ca8667ef4664b09f2616c16a4",
+        "28526": "af607b5613ce120f4d5c87d7bfc096eceda8df9169d365692dd82b694f3d62f4",
+        "28527": "62f9e32c4786c61b46a8b1727e354256715e6531e2414323f4238b1b95e22adb",
+        "28528": "4b51097f856cc457b794169719280da1e883155c00a2d3eeea87d1572328b451",
+        "28529": "337c438fc9abbec40d08d48576200fca1ecca35dcf83cd94cc6144ef65d9770d",
+        "28530": "02bdee5b44b5d658b372d0bf8636daa9919de0b9bb18b5fed17ef9ae1827a95d",
+        "28531": "8eee12c729aac3b656ad0426b2af27466173dfdae85003019ae077d5b2d1eb80",
+        "28532": "091ab6ebdee2711cfee57bf09c6407231c633203807b9ead1fb76702aa89cb1d",
+        "28533": "7577ead6a1d494b8534b6cad38a83b0ea0d98b0560efc38c8f5c721da54ff8e6",
+        "28534": "7a4e18ae1580af57bc37399f8d34dcc8142b5cca1e6c36eee35713d14d1c74fe",
+        "28535": "92d0ec764efbd3b6e919729acaaeb3405f767a1178a4d6d445050c8ca7445e67",
+        "28536": "9cef2fb07c2e97e75ec4a1943a5176cd97e894a4fd1be204cfd6bbd352532588",
+        "29046": "b2ed6e0b766db4a886c53769029ecaa08f300ee829838eb51c0641e457c46a4a",
+        "29047": "a24ac1aeea33f4b67dc1805eef364fe4752362941cbc7f011923b6cd36644084",
+        "29048": "349101a4ca335dd4ab981486593bb4a92057d6841da5f4d1deecfc21b3393f2c",
+        "29049": "6dd62d0ef17d4989235afbad6ac64935ffdb8018cdff658c19e074f3aaeabe9c",
+        "29050": "0adf41e3d8d57bee81553baed87cc60f7d4308dc75a1182da5a8307c83d35fbf",
+        "29150": "48f2b9e4072e3cc84a548e9bbddb05b001605bdf471ab9a05665d3a275001af4",
+        "29151": "251d9ca3c2b652df53f4e51727955a5b8e328f8237f686d59e0076d36150c59e",
+        "29152": "df9f0b03d2c888eeccb4e26f3cd22b28543e43b87f83e283b5320171b1a606c9",
+        "29158": "3a7add0bf7783fe072984707715e5ddd09ac848820e6e55dbc09bebbe2a32d5a",
+        "29159": "4a482372f5675257c421a332c22e641d4903f6b5088b988817461f1a46e36c59",
+        "29160": "60f421e7b9a34cb7fce95d3e2bc62c99990554ff2b1bb955ebc387a44d9ce925",
+        "29161": "2626f093b30657b63c49f824fd70fe9d8e83e848db92414d48eebba5f402156b",
+        "29162": "f15735c9051303d3a0a161dfb216eab02a944620c4cd67de2e116abc26dd47cf",
+        "29163": "b6bce04ad9fb3335e8faf4400e77c0193c1099545a4d32beaa0804ded7676c50",
+        "29164": "506c5633e88ac89f4d5fc3bfc2fb676057f5e3ee5876cc456d7c7f39cb00770d",
+        "29165": "1763de35ac58d0170539e0355fb90058ea065a159dbe8548deae1d134eb6169a",
+        "29166": "720e7f09abac6b8d4af32234a93334ea1332be30e4a2e8ff6ad2f97f4ba4f321",
+        "29167": "bda5eafed79cf23e6f77b22fd7844794091448c36f629c64b2786b557e198076",
+        "29168": "05260e7107ed7724e4010c1463e3ecd1128aabf8f58781b70adc2104885ae2cb",
+        "29169": "dab44cf22ea7f27f33b9d114cd99c473b16123d112aee5a28279198e93ea2aec",
+        "29170": "98e50ca83e614369f96895fc2b61aa14717c3866463e832b1ca3738472f5b156",
+        "29182": "6150cf30208775e88aa13e2d957bc20fe08283404e99b5706702285570ce196f",
+        "29183": "424c2674f95764ddae1f289a370382530946492c7a7249b460d0be75dd6b325f",
+        "29184": "92ee932c1eaa2eda33caf552a8d55d6fdf4d928dd11f7cd3b21d8359b268819a",
+        "29185": "26aa144095448dd192159774d24affe7b9fde7e6b41081adc248f3236f11a7d7",
+        "29186": "4ceb3b2d02c97911a18d19ed5e0f4e328aa586705c877450b9c5096d625183f3",
+        "29187": "4ab0c45249ace8b55e4c1b9427428b6293469bf87901d33a9197e8ba181a9be5",
+        "29206": "eea49838a25ea24481a4ff2c1212296b5931dac0973aa1d12946128753378085",
+        "29207": "661ad96d1d80c1723afcbcdb09ebfc6ffae0ba4cfbca3270ac767a1bb3ac83fe",
+        "29208": "28a016cf8423b4c482fea6995e0958a29a7981eb2a92f21185dc4418ce776173",
+        "29209": "d4be1f1100ae2378a776dfb4762b74cf65242a46c9edbd98df923b887cef8046",
+        "29210": "84e5484de4a0dca0a1ea0b6f0ede718c2409ade2466f634cac62d6bc9d28f63d",
+        "29211": "c0739b3a063fb24a98e8c71ed8f41c8c17944b42143324670987cfd29f4519dd",
+        "29212": "3b579c6c0ef0e51418985b9ae3756a6958a6ddb1f577a648ebca4b0cc0067c7c",
+        "29213": "34d7e9515132bd50234220e8885a1a4feceee07a236e19c9709a09ac9ab4bde7",
+        "29214": "73ea44f6bf48f3012fa9760dc6001a6f3c53211119a49f27ba021902ba0a00d1",
+        "29215": "ef69915ac9ef4c075438f37e1aadab004f5204e8c93957c559cd4a83e6033356",
+        "29216": "cc51c0e33e6260eb707e0d05b92e96d585b01c9144953e73a3e8c84c4321ccb7",
+        "30046": "3a70bb5ca322111b3bc8bc8bb87b25eeebd9c9dfd54e47bb801cdc760117e659",
+        "30047": "f284f0f42bcfe5ff98678b90d1c53eea9191ce4fefb097d3a9e4d8c7ed2007f7",
+        "30048": "75b8797cdbf3af960bb8611f31a0832e34cdbc33a28183cdccbc99ccbe9f5735",
+        "30049": "3362f431f3192a8aec60f78e2b195c804bd25116a2dd7bc3f7f63e0b9e6d592f",
+        "30050": "d6786844e293e019e26ee7d54403857c6f309a3773cbd7ba0d135ed46a239f70",
+        "30051": "c868452c5d071d8a67779db56740c70c5b7f0e9852d555e126b09a6de25bdc58",
+        "30052": "55c5d9555df201ab61f0cd7d93f55301ed35208ba5188afbf45084bd4932b02b",
+        "30053": "d476cda40d5dbf26d14b7d2b210ae017bc5ac5c58bb3f3d6f0a9c8b1a586dd65",
+        "30054": "0c139c90ace29fab688a420ae423f0a1986d79ac3abc8a0d056719359598d523",
+        "30055": "48964ee119e6b9c6d3254422a9e318e890865103720c683445e2a692e621243d"
+      }
+    },
+    "new_steps": 0,
+    "new_force_solves": 0,
+    "query_count": 0,
+    "code_sha256": {
+      "fixed_collision_query.py": "aa48f5c273af047dc3d330650f8db1727bc88d100cc9d03e6df76e150227bed6",
+      "collision_geometry_match.py": "b70da8849c2d40f4288995e79f10e7868a13297c949af11f9b0ba7d99f9678b8"
+    }
+  },
+  "plan_sha256": "7d319ee5ac05d609d22ce1aaf2b2fa6e11e6f4e118f0a0cb1a74c82a8b7844aa",
+  "predictions": {
+    "issue": 18,
+    "created_utc": "2026-10-19T02:47:48.060508+00:00",
+    "source_commit": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+    "plan_sha256": "7d319ee5ac05d609d22ce1aaf2b2fa6e11e6f4e118f0a0cb1a74c82a8b7844aa",
+    "gate0_result_sha256": "2c76c10afdd609241bf49c6c7ded322c82b20a18c59beb8260e803f12724c762",
+    "code_sha256": {
+      "fixed_collision_query.py": "aa48f5c273af047dc3d330650f8db1727bc88d100cc9d03e6df76e150227bed6",
+      "collision_geometry_match.py": "b70da8849c2d40f4288995e79f10e7868a13297c949af11f9b0ba7d99f9678b8"
+    },
+    "first_native_query_not_yet_executed": true,
+    "H1": {
+      "row": 23623,
+      "preceding_row": 23622,
+      "geom_pair": [
+        "cube_geom",
+        "gripper_link2_collision_000"
+      ],
+      "independent_MTD_reference_m": 0.0007317830315549834,
+      "error_reduction_fraction_at_least": 0.5,
+      "native_incoming_normal_jump_strictly_below_deg": 20.0,
+      "conjunction_required": true,
+      "interpretation": "Fixed-pose collision-query sensitivity only, not grasp/root-cause acceptance"
+    },
+    "H2": {
+      "rows": [
+        25984,
+        25985,
+        25986,
+        25987,
+        25988,
+        25989,
+        25990,
+        25991
+      ],
+      "predicted_any_native_robot_cube_penetration_over_m": 0.001,
+      "expected_any": true,
+      "interpretation": "Boundary observation; report actual yes/no, not an obligatory success or replacement criterion"
+    },
+    "physical_grasp": "FAIL",
+    "model_change_authorization": "NONE",
+    "new_steps": 0,
+    "new_force_solves": 0
+  },
+  "predictions_sha256": "dc96f8805e00dcbf2ed7f0e8891a057418c5ca3a451477f411d0182885077852",
+  "gate0_result": {
+    "status": "PASS",
+    "query_reproduction": "PASS",
+    "mode": "gate0",
+    "rows": {
+      "R1": 7,
+      "R0": 3
+    },
+    "native_queries": 0,
+    "api_calls": {
+      "calls": {
+        "mj_id2name": 90,
+        "mj_kinematics": 10,
+        "mj_collision": 10
+      },
+      "forbidden_attempts": []
+    },
+    "plan_sha256": "7d319ee5ac05d609d22ce1aaf2b2fa6e11e6f4e118f0a0cb1a74c82a8b7844aa",
+    "new_steps": 0,
+    "new_force_solves": 0,
+    "input_hashes_unchanged": true,
+    "completed_utc": "2026-10-19T02:47:15.187488+00:00"
+  },
+  "gate0_started": {
+    "utc": "2026-10-19T02:47:08.928869+00:00",
+    "mode": "gate0",
+    "git_head": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+    "argv": [
+      "experiments/dynamics/fixed_collision_query.py",
+      "gate0",
+      "--campaign",
+      "debug/issue18/query-003"
+    ],
+    "code_sha256": {
+      "fixed_collision_query.py": "aa48f5c273af047dc3d330650f8db1727bc88d100cc9d03e6df76e150227bed6",
+      "collision_geometry_match.py": "b70da8849c2d40f4288995e79f10e7868a13297c949af11f9b0ba7d99f9678b8"
+    },
+    "plan_sha256": "7d319ee5ac05d609d22ce1aaf2b2fa6e11e6f4e118f0a0cb1a74c82a8b7844aa",
+    "python": "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+    "new_steps": 0,
+    "new_force_solves": 0
+  },
+  "gate0_reproduction": [
+    {
+      "label": "R1",
+      "row": 23620,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R1",
+      "row": 23621,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R1",
+      "row": 23622,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R1",
+      "row": 23623,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R1",
+      "row": 23624,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R1",
+      "row": 25984,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R1",
+      "row": 25985,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R0",
+      "row": 33317,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R0",
+      "row": 33318,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "label": "R0",
+      "row": 33319,
+      "comparison": {
+        "status": "PASS",
+        "tolerances": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "cost_scales": {
+          "distance_m": 1e-09,
+          "position_m": 1e-08,
+          "normal_deg": 1e-05
+        },
+        "normal_orientation": "lexically first geom -> second geom",
+        "pairs": [
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 0,
+                "query_event_index": 0,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link1"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          },
+          {
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "reference_count": 1,
+            "query_count": 1,
+            "presence_status": "SAME_COUNT",
+            "count_status": "PASS",
+            "correspondence_status": "PASS",
+            "matches": [
+              {
+                "reference_event_index": 1,
+                "query_event_index": 1,
+                "distance_m": 0.0,
+                "position_m": 0.0,
+                "normal_deg": 0.0,
+                "reference_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "query_bodies": [
+                  "cube",
+                  "gripper_link2"
+                ],
+                "bodies_match": true,
+                "within_tolerance": {
+                  "distance_m": true,
+                  "position_m": true,
+                  "normal_deg": true
+                },
+                "status": "PASS"
+              }
+            ],
+            "best_candidate_matches": [],
+            "missing_reference_event_indices": [],
+            "extra_query_event_indices": [],
+            "assignment": {
+              "best_cost": 0.0,
+              "alternative_cost": null,
+              "ambiguity_rtol": 1e-06,
+              "ambiguity_atol": 1e-09,
+              "ambiguous": false,
+              "alternative_indices": null,
+              "alternative_event_pairs": null
+            },
+            "measurement_status": "PASS",
+            "status": "PASS"
+          }
+        ]
+      }
+    }
+  ],
+  "gate0_fresh_queries": [
+    {
+      "label": "R1",
+      "row": 23620,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.214881+00:00",
+      "end_utc": "2026-10-19T02:47:14.272058+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "d74da0e0fc568563059731af93396336ce5228b8cbab1fa3ddeb18be35d61bad",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0007020202738618066,
+          "position_m": [
+            -0.3290745357605811,
+            0.019778504248111214,
+            0.17196973127516596
+          ],
+          "normal": [
+            -0.00045725298729374167,
+            0.9996443896239642,
+            0.026662430741356442
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0007318313538696073,
+          "position_m": [
+            -0.3069212856313667,
+            -0.019557965580281587,
+            0.18194696986375747
+          ],
+          "normal": [
+            0.00045725298729366995,
+            -0.9996443896239644,
+            -0.026662430741351138
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R1",
+      "row": 23621,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.273643+00:00",
+      "end_utc": "2026-10-19T02:47:14.274252+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "ca0a2c3a3a8fcc79ab7b08245f193f6337b00aa1a6751f83c72bb15861f2123c",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0007022112438508814,
+          "position_m": [
+            -0.32907420330976306,
+            0.019778541101828098,
+            0.17196989212576763
+          ],
+          "normal": [
+            -0.0005071897658244638,
+            0.9996426436829657,
+            0.026726909456068704
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.000731560600578326,
+          "position_m": [
+            -0.30692092904092416,
+            -0.01955757112990462,
+            0.18194675833877272
+          ],
+          "normal": [
+            0.0005071897658217499,
+            -0.9996426436829655,
+            -0.026726909456074484
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R1",
+      "row": 23622,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.275520+00:00",
+      "end_utc": "2026-10-19T02:47:14.276051+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "94f60836e833eb62afbad2016b40ca945ae731c787ccea68e2c41b1931ec0342",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0007024097275294029,
+          "position_m": [
+            -0.32907384612505747,
+            0.01977858753027231,
+            0.1719700274233909
+          ],
+          "normal": [
+            -0.0005723402400881236,
+            0.9996403140554021,
+            0.026812589242122646
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0007311150744865861,
+          "position_m": [
+            -0.3194102965021172,
+            -0.019563140108998782,
+            0.18190242853515096
+          ],
+          "normal": [
+            0.000574156029844485,
+            -0.999640313737476,
+            -0.02681256227394367
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R1",
+      "row": 23623,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.277305+00:00",
+      "end_utc": "2026-10-19T02:47:14.277823+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "8c761c399e9c36d64eb0f144ee69cca7357e2c6baab56fe303ba46a692c5e4e2",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0007025333177763679,
+          "position_m": [
+            -0.32907368899084877,
+            0.019778616009785935,
+            0.17197014460444657
+          ],
+          "normal": [
+            -0.0006022353327634678,
+            0.9996390791057058,
+            0.026857938068675292
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0010611088784191188,
+          "position_m": [
+            -0.31941006015919254,
+            -0.01956301132865759,
+            0.18190294290219236
+          ],
+          "normal": [
+            -0.3846352004554921,
+            -0.7058069305842889,
+            0.5948885099829618
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R1",
+      "row": 23624,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.279056+00:00",
+      "end_utc": "2026-10-19T02:47:14.279577+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "0cc147e333cbf0db6d4aae0e15c2665336889979d5ceab8b47c2142972a29577",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0007061645788628837,
+          "position_m": [
+            -0.3095162597576333,
+            0.019789583716269085,
+            0.1720441507432596
+          ],
+          "normal": [
+            -0.0007387258074020363,
+            0.9996338778667153,
+            0.027047449146535316
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0007329991404410377,
+          "position_m": [
+            -0.33172342897032203,
+            -0.01957001249937121,
+            0.18186205335626796
+          ],
+          "normal": [
+            0.000738725807413861,
+            -0.9996338778667158,
+            -0.027047449146519607
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R1",
+      "row": 25984,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.280883+00:00",
+      "end_utc": "2026-10-19T02:47:14.281424+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "4a4db5792959d4a3eebb2552edd8724653cd0c12495434ff92002236591f0f20",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0005299212477765625,
+          "position_m": [
+            -0.30962333590755003,
+            0.019859782738204133,
+            0.2109280580106394
+          ],
+          "normal": [
+            -0.0017393428733131861,
+            0.9996359194028966,
+            0.026925885795913644
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0010035624051500003,
+          "position_m": [
+            -0.331806939194667,
+            -0.019465140364984073,
+            0.22131948537928361
+          ],
+          "normal": [
+            0.0017393428732995415,
+            -0.999635919402897,
+            -0.026925885795905404
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R1",
+      "row": 25985,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.282623+00:00",
+      "end_utc": "2026-10-19T02:47:14.283137+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "67136fc11e304b288bee864e66e6e01e4f6876dbb521e0d7b3aba183eaafe663",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0005258763808657184,
+          "position_m": [
+            -0.3096223953619868,
+            0.019852760478343952,
+            0.2109392730223428
+          ],
+          "normal": [
+            -0.00168453458006203,
+            0.999641589317867,
+            0.02671806971503772
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0010071311504494483,
+          "position_m": [
+            -0.33180541492005133,
+            -0.019469013409433727,
+            0.22134075315252993
+          ],
+          "normal": [
+            0.0016845345800554651,
+            -0.9996415893178666,
+            -0.026718069715053507
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R0",
+      "row": 33317,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.284563+00:00",
+      "end_utc": "2026-10-19T02:47:14.285100+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "71da1dd885fcf1fcbba530a692543a5bb61ba9d8c7cdd257e4be90a7eec07036",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0006701242208249797,
+          "position_m": [
+            -0.3095338516489235,
+            0.01986479239717048,
+            0.1668923406903108
+          ],
+          "normal": [
+            -0.0004358422801497062,
+            0.9994398616373256,
+            0.03346300960569387
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.0008256239689515427,
+          "position_m": [
+            -0.334945935025278,
+            -0.01996239377178813,
+            0.1899027668461439
+          ],
+          "normal": [
+            0.0004613457647721345,
+            -0.9994709165268875,
+            -0.03252190303455484
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R0",
+      "row": 33318,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.286316+00:00",
+      "end_utc": "2026-10-19T02:47:14.286816+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "a13ee24f98c26b72b7e914ebe7071fbdd5bb50a3be52910ef35eb1725c963db1",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0006537464719066278,
+          "position_m": [
+            -0.3291235693525559,
+            0.019863014165058788,
+            0.16680378497715684
+          ],
+          "normal": [
+            -0.0001526535934599218,
+            0.9994456115568928,
+            0.033293336218363175
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.001054967052414634,
+          "position_m": [
+            -0.3075799108846182,
+            -0.019931106013938882,
+            0.18916487094124348
+          ],
+          "normal": [
+            -0.5246125661980271,
+            -0.7968324231772498,
+            0.29973278893139654
+          ]
+        }
+      ]
+    },
+    {
+      "label": "R0",
+      "row": 33319,
+      "algorithm": "A",
+      "start_utc": "2026-10-19T02:47:14.288017+00:00",
+      "end_utc": "2026-10-19T02:47:14.288523+00:00",
+      "time": 0.0,
+      "nefc": 0,
+      "scratch_qvel_and_ctrl_zero": true,
+      "fresh_MjData": true,
+      "qpos_sha256": "c804352f334da97b7a11797c287f30d14fc74f76cbd5c181ef9c0e38c35f6bbb",
+      "contact_count": 2,
+      "events": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link1"
+          ],
+          "distance_m": -0.0006380194941048951,
+          "position_m": [
+            -0.31944578502450766,
+            0.019863223315925382,
+            0.16683527506168505
+          ],
+          "normal": [
+            -0.00022071953636669452,
+            0.9994535667469282,
+            0.033053278199446375
+          ]
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "bodies": [
+            "cube",
+            "gripper_link2"
+          ],
+          "distance_m": -0.000834871000162249,
+          "position_m": [
+            -0.332522120225528,
+            -0.019958563369332858,
+            0.1898394133314489
+          ],
+          "normal": [
+            0.00023121316247748364,
+            -0.9994688519075143,
+            -0.032587737067014455
+          ]
+        }
+      ]
+    }
+  ],
+  "native_queries_so_far": 0
+}
