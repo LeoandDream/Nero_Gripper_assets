@@ -1446,9 +1446,9 @@
   ],
   "classification_outputs_sha256": {
     "reports/nero-gripper-v2-thin-classification.json": "73ce4243e50f62a252cf557bb6f1d4306f85fde0a7fcff2d0c288fe68bcc3ddf",
-    "reports/nero-gripper-v2-thin-classification.csv": "11e1a7abab4ab0501eb99287e8c10dd81652c014cfd015acbcda7733f80e1448",
-    "reports/nero-gripper-v2-buried-classification.json": "16a61adc4f97cb27aa254205363b5575780228ea3fbc38af4a3d844c4a21162c",
-    "scripts/classify_v2_fidelity.py": "1a794f75b9f279be3df09329194199d620956bde64420366efd8d8511ceb33ac"
+    "reports/nero-gripper-v2-thin-classification.csv": "3875301bd4fd194f7acd81266c8dd5caa4fdba506a3d3220f1e8720bf6cfe544",
+    "reports/nero-gripper-v2-buried-classification.json": "18af3a076844e0c2d1a8ce4964602ee51674684f85c5d3c67d8c9ccec37a0027",
+    "scripts/classify_v2_fidelity.py": "579598a0c4efdb8af6a7509084ca95a8089502edce6f0984d4b07085ffb6db3e"
   },
   "functional_assumption": "Tiers are preregistered runtime engineering obligations, not newly proven manufacturer intent or real hardware calibration. Unknown fastener purpose never licenses closure of a protected large void."
 }

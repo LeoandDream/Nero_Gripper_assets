@@ -80,7 +80,7 @@ def main():
     write('reports/nero-gripper-v2-thin-classification.json',thin_result)
     with (ROOT/'reports/nero-gripper-v2-thin-classification.csv').open('w',newline='') as f:
         fields=['id','name','classification_tier','source_part','semantic_feature','inscribed_diameter_mm','reference_entity_ids','retained_A_B_surface_obligations','v2_action','reason']
-        w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
+        w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');w.writeheader()
         for e in thin:w.writerow({k:';'.join(e[k]) if isinstance(e[k],list) else e[k] for k in fields})
 
     triangles=[];provenance=[];patch_ledger=[]
