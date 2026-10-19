@@ -1,6 +1,6 @@
 # Issue #25 — 唯一 runtime-oriented semantic partition 候选
 
-**最终状态：`RUNTIME_ENTITY_PARTITION_BLOCKED`。** 已实际生成新几何、映射与误差证据，尚不能作为活动碰撞资产。对应[执行任务](https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6266903359)。生成前的预算已单独提交为 `7905a9542ee3fe7aae6ce5386a14b017688463e6`，本轮没有事后改预算或尝试第二版。
+**最终状态：`RUNTIME_ENTITY_PARTITION_BLOCKED`。** 已实际生成新几何、映射与误差证据，几何提交为 `66ff4536255e70efa86b81a1535129cce0376203`，尚不能作为活动碰撞资产。对应[执行任务](https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6266903359)。生成前的预算已单独提交为 `7905a9542ee3fe7aae6ce5386a14b017688463e6`，预算没有事后修改。
 
 两个现有 finger-local frame 各使用同一 **753 体**模板，双指1506体；每指减少 **500体，39.90%**。接触层22、背体482、安装根部249。全部是闭合凸多面体，未生成MJCF。
 
@@ -64,3 +64,7 @@ python scripts/draw_runtime_partition.py
 两处退化三角化只修复了同顶点凸包的faces表示，未改变分组或顶点，修复前FAIL及前后SHA保留在evidence。独立总装核验753个闭合、凸、定向边界，1253个reference各唯一归属一次、2086源片全部映射；分析工具另以相邻/重叠/重合盒子的解析表面积与已知三角形最近距离检查。详见[evidence](nero-gripper-runtime-evidence.json)、[误差报告](nero-gripper-runtime-errors.json)、[独立埋面反例](nero-gripper-runtime-buried-interface.json)和[对比图](nero-gripper-runtime-partition.png)。
 
 **唯一下一步：交独立审查，确认129个残余薄体的机械语义和微缝表面口径，再批准局部重分区方案。** 当前不派生活动碰撞资产，不实施另一版。正式模型、源网格、控制/接触配置、main和用户README均未改；未导入MuJoCo、查询碰撞、运行mj_step或grasp。
+
+交付前再次只读复核：753个闭合、定向、Euler=2的凸边界；1253个reference唯一归属、2086源片覆盖、753行CSV及几何SHA一致；独立重算内切球与129个尺度失败。埋面反例另用352组半空间LP交叉检查（可行性容差1e-10mm，最大补集共同内裕量−1.0038e-8mm），与既有长双精度证据一致。19个冻结输入及11个受保护工作树HEAD/status未变；复核退出码0仅代表这些检查通过，不改变BLOCKED。原始复核脚本和输出保存在本runtime工作树`debug/issue25/runtime-partition/reverification/`。
+
+执行记录纠正：核查独立runtime工作树前，曾误启动一路重复的离线合并计算。发现已有新提交后已停止；其未完成代码和检查点保留在原架构工作树`debug/issue25/runtime-partition/`，未完成或提交第二版几何，不作为本次候选或对照。最终交付几何仍仅为上述753体模板。

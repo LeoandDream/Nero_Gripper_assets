@@ -2,7 +2,7 @@
 
 Issue [#25](https://github.com/LeoandDream/Nero_Gripper_assets/issues/25)，2026-10-19，Ubuntu 22.04。**唯一推荐：完整功能接触层＋有语义的侧壁/背体/安装框架。** 不再以中心矩形 pad 加顺序切割 guards 表示工作面，不预设 Panda 的 pad 数量。
 
-**最新状态：`ENTITY_PARTITION_FROZEN`，每指1253个已定义闭合凸多面体。** 本轮具体数量、顶点/封口规则、实际外露子面、邻接和限制见§7及权威JSON。尚未生成/编译MJCF，运行时可行性未验收；上一阶段记录保留为来源依据。 §1–6保留此前阶段记录，其中“未来/未生成”描述对应历史阶段；本轮具体实体定义以§7和权威JSON为准。
+**当前 runtime 状态：`RUNTIME_ENTITY_PARTITION_BLOCKED`。** 新候选每指753个闭合凸多面体，具体数量、误差预算、129个残余薄体及微缝埋面反例见[本轮报告](nero-gripper-runtime-partition.md)、[实体JSON](nero-gripper-runtime-partition.json)和[离线对比图](nero-gripper-runtime-partition.png)。尚不能派生为活动碰撞资产。§1–7保留来源、外壳分析及高保真 reference partition 的历史记录；其中历史冻结状态不表示 runtime 验收通过。未生成/编译MJCF。
 
 ## 1. 来源与坐标
 
