@@ -1,0 +1,1342 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/21",
+  "created_utc": "2026-10-19T03:54:25.935732+00:00",
+  "access_date": "2026-10-19",
+  "base": {
+    "branch": "feature/fixed-state-collision-ab",
+    "commit": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7"
+  },
+  "scope": "Source review only; no model or code implementation",
+  "new_calls": {
+    "model_loads": 0,
+    "mujoco_imports": 0,
+    "mj_step": 0,
+    "mj_forward": 0,
+    "mj_collision": 0,
+    "constraint_or_force_solves": 0,
+    "controller_runs": 0,
+    "benchmark": 0,
+    "physical_episodes": 0
+  },
+  "external_sources": [
+    {
+      "family": "Menagerie Panda",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/README.md",
+      "local_path": "debug/issue21/panda-source/README.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/README.md",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/README.md",
+      "accessed_utc": "2026-10-19T03:38:15.287703Z",
+      "sha256": "e12684556d0154bdf2a9e77e7009ed680cd06ca89904f9e6303050f9fe59300c",
+      "bytes": 2908
+    },
+    {
+      "family": "Menagerie Panda",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/panda.xml",
+      "local_path": "debug/issue21/panda-source/panda.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/panda.xml",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/panda.xml",
+      "accessed_utc": "2026-10-19T03:38:16.255142Z",
+      "sha256": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273",
+      "bytes": 14438
+    },
+    {
+      "family": "Menagerie Panda",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/hand.xml",
+      "local_path": "debug/issue21/panda-source/hand.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/hand.xml",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/hand.xml",
+      "accessed_utc": "2026-10-19T03:38:17.549988Z",
+      "sha256": "d2a6539d0fd7c55c75c14f11c78f04505ee33f31d93e6112e3ad7120e5ee786a",
+      "bytes": 4547
+    },
+    {
+      "family": "Menagerie Panda",
+      "commit": "62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35",
+      "path": "franka_emika_panda/mjx_panda.xml",
+      "local_path": "debug/issue21/panda-source/mjx_panda.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/mjx_panda.xml",
+      "permalink": "https://github.com/google-deepmind/mujoco_menagerie/blob/62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35/franka_emika_panda/mjx_panda.xml",
+      "accessed_utc": "2026-10-19T03:38:37.174469Z",
+      "sha256": "8c0f15b755f686a09f04a2cae4afa3b8444d61d3318ea36cee87cc8bb98f9098",
+      "bytes": 14387
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/grippers/gripper_model.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/grippers/gripper_model.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/gripper_model.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/gripper_model.py",
+      "accessed_utc": "2026-10-19T03:38:37.185543+00:00",
+      "sha256": "b4582d448add9f4726a343a257fa32932465360b2bbc0362665846828a1356cb",
+      "bytes": 5315,
+      "evidence_ranges": [
+        {
+          "lines": [
+            11,
+            43
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/gripper_model.py#L11-L43"
+        },
+        {
+          "lines": [
+            50,
+            72
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/gripper_model.py#L50-L72"
+        },
+        {
+          "lines": [
+            104,
+            161
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/gripper_model.py#L104-L161"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/grippers/panda_gripper.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/grippers/panda_gripper.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/panda_gripper.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/panda_gripper.py",
+      "accessed_utc": "2026-10-19T03:38:39.177617+00:00",
+      "sha256": "df0449a9b003e9a019fad4ef59b435ae2b9accd2705026da041165dd99faab8d",
+      "bytes": 1750,
+      "evidence_ranges": [
+        {
+          "lines": [
+            10,
+            35
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/panda_gripper.py#L10-L35"
+        },
+        {
+          "lines": [
+            38,
+            66
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/grippers/panda_gripper.py#L38-L66"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/robots/robot_model.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/robots/robot_model.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/robot_model.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/robot_model.py",
+      "accessed_utc": "2026-10-19T03:38:40.533371+00:00",
+      "sha256": "3244422f60a23a35fe675461cd0a68f6ac59082bb9f16049507eff2e4e403760",
+      "bytes": 17483,
+      "evidence_ranges": [
+        {
+          "lines": [
+            58,
+            82
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/robot_model.py#L58-L82"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/robots/manipulators/panda_robot.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/robots/manipulators/panda_robot.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/panda_robot.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/panda_robot.py",
+      "accessed_utc": "2026-10-19T03:38:44.942769+00:00",
+      "sha256": "326cf4f4fb8b06dcc8345139d0f21eb62128bd8ca18fb5fc80bdc852636c6e1e",
+      "bytes": 1492,
+      "evidence_ranges": [
+        {
+          "lines": [
+            7,
+            37
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/panda_robot.py#L7-L37"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/assets/grippers/panda_gripper.xml",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/assets/grippers/panda_gripper.xml",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml",
+      "accessed_utc": "2026-10-19T03:42:30.432251+00:00",
+      "sha256": "066fd7ae45afb11e1844869360e587646e9768210ba5389aa3cd35292cde29c1",
+      "bytes": 4546,
+      "evidence_ranges": [
+        {
+          "lines": [
+            1,
+            54
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml#L1-L54"
+        },
+        {
+          "lines": [
+            9,
+            12
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml#L9-L12"
+        },
+        {
+          "lines": [
+            14,
+            52
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml#L14-L52"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/assets/robots/panda/robot.xml",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/assets/robots/panda/robot.xml",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/robots/panda/robot.xml",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/robots/panda/robot.xml",
+      "accessed_utc": "2026-10-19T03:42:32.366740+00:00",
+      "sha256": "67f62e98681d2ae0d5c50352105492b0041bcc9b9502e83fed02823195338c90",
+      "bytes": 21368,
+      "evidence_ranges": [
+        {
+          "lines": [
+            4,
+            13
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/robots/panda/robot.xml#L4-L13"
+        },
+        {
+          "lines": [
+            208,
+            226
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/robots/panda/robot.xml#L208-L226"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/robots/manipulators/manipulator_model.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/robots/manipulators/manipulator_model.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/manipulator_model.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/manipulator_model.py",
+      "accessed_utc": "2026-10-19T03:42:52.534483+00:00",
+      "sha256": "96707f46c1869353a17a9e79f4f235bba4f55283bc7e8ce53d8696f0aba21c36",
+      "bytes": 12767,
+      "evidence_ranges": [
+        {
+          "lines": [
+            11,
+            25
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/manipulator_model.py#L11-L25"
+        },
+        {
+          "lines": [
+            64,
+            93
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/manipulator_model.py#L64-L93"
+        },
+        {
+          "lines": [
+            175,
+            186
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/robots/manipulators/manipulator_model.py#L175-L186"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/models/base.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/models/base.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/base.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/base.py",
+      "accessed_utc": "2026-10-19T03:42:54.230319+00:00",
+      "sha256": "5bc7f3d8ca37ad1ff747942885981748d57717f269808cd194164f7b41c31a07",
+      "bytes": 23971,
+      "evidence_ranges": [
+        {
+          "lines": [
+            35,
+            42
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/base.py#L35-L42"
+        },
+        {
+          "lines": [
+            83,
+            123
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/base.py#L83-L123"
+        },
+        {
+          "lines": [
+            526,
+            553
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/base.py#L526-L553"
+        },
+        {
+          "lines": [
+            596,
+            629
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/base.py#L596-L629"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/robots/robot.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/robots/robot.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/robot.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/robot.py",
+      "accessed_utc": "2026-10-19T03:42:55.622013+00:00",
+      "sha256": "dcb317e6d6b9eba54469f38d1c26ba44bafb1beb0dd4612ebc026ad0b25efda6",
+      "bytes": 46108,
+      "evidence_ranges": [
+        {
+          "lines": [
+            179,
+            215
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/robot.py#L179-L215"
+        },
+        {
+          "lines": [
+            284,
+            289
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/robot.py#L284-L289"
+        },
+        {
+          "lines": [
+            954,
+            979
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/robot.py#L954-L979"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/controllers/parts/gripper/simple_grip.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/controllers/parts/gripper/simple_grip.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/simple_grip.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/simple_grip.py",
+      "accessed_utc": "2026-10-19T03:44:40.723465+00:00",
+      "sha256": "2207911877d3416ae7dd247c948eeae9c684c511e92cb9dc5410668b40a90c4c",
+      "bytes": 8816,
+      "evidence_ranges": [
+        {
+          "lines": [
+            63,
+            105
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/simple_grip.py#L63-L105"
+        },
+        {
+          "lines": [
+            110,
+            145
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/simple_grip.py#L110-L145"
+        },
+        {
+          "lines": [
+            150,
+            186
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/simple_grip.py#L150-L186"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/controllers/composite/composite_controller.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/controllers/composite/composite_controller.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/composite/composite_controller.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/composite/composite_controller.py",
+      "accessed_utc": "2026-10-19T03:44:40.961392+00:00",
+      "sha256": "28e1bd7d1f48d6f6d9799dd6ef748040fe2833d384f905bcdc6369a67cfab6d0",
+      "bytes": 27431,
+      "evidence_ranges": [
+        {
+          "lines": [
+            86,
+            103
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/composite/composite_controller.py#L86-L103"
+        },
+        {
+          "lines": [
+            109,
+            116
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/composite/composite_controller.py#L109-L116"
+        },
+        {
+          "lines": [
+            158,
+            176
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/composite/composite_controller.py#L158-L176"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/utils/mjcf_utils.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/utils/mjcf_utils.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/utils/mjcf_utils.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/utils/mjcf_utils.py",
+      "accessed_utc": "2026-10-19T03:44:40.962008+00:00",
+      "sha256": "273486c4781fdad3d0d37e883411f8b893164ac900cec6d60c6b7fface08db9b",
+      "bytes": 41539,
+      "evidence_ranges": [
+        {
+          "lines": [
+            653,
+            695
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/utils/mjcf_utils.py#L653-L695"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/controllers/parts/gripper/gripper_controller.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/controllers/parts/gripper/gripper_controller.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/gripper_controller.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/gripper_controller.py",
+      "accessed_utc": "2026-10-19T03:47:04.906011+00:00",
+      "sha256": "8cd31a8683f9e6da11623f0aa83eab8a3678c165d4f1b86a1b47f17e9798f460",
+      "bytes": 8149,
+      "evidence_ranges": [
+        {
+          "lines": [
+            40,
+            47
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/gripper_controller.py#L40-L47"
+        },
+        {
+          "lines": [
+            97,
+            116
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/controllers/parts/gripper/gripper_controller.py#L97-L116"
+        }
+      ]
+    },
+    {
+      "family": "robosuite Panda",
+      "commit": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+      "path": "robosuite/robots/fixed_base_robot.py",
+      "local_path": "debug/issue21/robosuite-source/robosuite/robots/fixed_base_robot.py",
+      "url": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/fixed_base_robot.py",
+      "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/fixed_base_robot.py",
+      "accessed_utc": "2026-10-19T03:47:22.114211+00:00",
+      "sha256": "5bfbd5f1ba7d4afbe9626d87b9623dc64ef3b188aeb0a306158687e03423f20b",
+      "bytes": 8835,
+      "evidence_ranges": [
+        {
+          "lines": [
+            139,
+            153
+          ],
+          "permalink": "https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/robots/fixed_base_robot.py#L139-L153"
+        }
+      ]
+    },
+    {
+      "family": "MuJoCo 3.2.3 documentation",
+      "commit": "476599f8b6175ef5a3040c47ebb3cd99a83c5365",
+      "local_path": "debug/issue21/physics-docs/index.rst",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/computation/index.rst",
+      "permalink": "https://github.com/google-deepmind/mujoco/blob/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/computation/index.rst",
+      "accessed_utc": "2026-10-19T03:42:13.418618+00:00",
+      "sha256": "c19b014ca08f2c34cf3b1972d62033c282287ba5c03b89ff184d0a70166a0eaa",
+      "bytes": 112135
+    },
+    {
+      "family": "MuJoCo 3.2.3 documentation",
+      "commit": "476599f8b6175ef5a3040c47ebb3cd99a83c5365",
+      "local_path": "debug/issue21/physics-docs/XMLreference.rst",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/XMLreference.rst",
+      "permalink": "https://github.com/google-deepmind/mujoco/blob/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/XMLreference.rst",
+      "accessed_utc": "2026-10-19T03:42:21.462663+00:00",
+      "sha256": "45170df843894f0daccf5e2aa61b9a8dba7c6f1fd7bc5f4306c08c842455b7dc",
+      "bytes": 374620
+    }
+  ],
+  "local_sources": [
+    {
+      "id": "S01",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/mjcf/nero_gripper.xml",
+      "bytes": 29155,
+      "sha256": "e5585f29fef505f48b90bbf2c7b1b035ee7eac68147d60147399db5993263b4e",
+      "read_mode": "text/json/xml only",
+      "purpose": "Self-built protected static MJCF",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "mjcf/nero_gripper.xml",
+        "tracked_blob": "622b04288deb81d878364079999b9711d78446f6",
+        "current_bytes_git_blob": "622b04288deb81d878364079999b9711d78446f6",
+        "last_change_commit": "1e4d633730f62a398513d33991fa96f9c4977daa",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/mjcf/nero_gripper.xml"
+    },
+    {
+      "id": "S02",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/experiments/dynamics/controller.py",
+      "bytes": 6402,
+      "sha256": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
+      "read_mode": "text/json/xml only",
+      "purpose": "Read as text only; derivation and 8D-to-9D controller",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "experiments/dynamics/controller.py",
+        "tracked_blob": "a32bfa08153c517c2660bb4d507fb828b8b04df8",
+        "current_bytes_git_blob": "a32bfa08153c517c2660bb4d507fb828b8b04df8",
+        "last_change_commit": "44f497dd90d3f89f43954310352b39d25e0619dd",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/experiments/dynamics/controller.py"
+    },
+    {
+      "id": "S03",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/experiments/dynamics/config.json",
+      "bytes": 1383,
+      "sha256": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+      "read_mode": "text/json/xml only",
+      "purpose": "Self-built gains and limits",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "experiments/dynamics/config.json",
+        "tracked_blob": "e5417ee854fec16d33317cc906b856197ccacca1",
+        "current_bytes_git_blob": "e5417ee854fec16d33317cc906b856197ccacca1",
+        "last_change_commit": "f2959392152b7e685866dfebcc55af4cf87948aa",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/experiments/dynamics/config.json"
+    },
+    {
+      "id": "S04",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/experiments/dynamics/run.py",
+      "bytes": 30313,
+      "sha256": "503098029aa320384d2536d25c47b547e7e33136fc924af3f26f04a01254063d",
+      "read_mode": "text/json/xml only",
+      "purpose": "Read as text only; recorder, clipping and grasp semantics",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "experiments/dynamics/run.py",
+        "tracked_blob": "9ace04156cf20c8f386c8dca1140eb6c7afe99c9",
+        "current_bytes_git_blob": "9ace04156cf20c8f386c8dca1140eb6c7afe99c9",
+        "last_change_commit": "44f497dd90d3f89f43954310352b39d25e0619dd",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/experiments/dynamics/run.py"
+    },
+    {
+      "id": "S05",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/docs/MODEL.md",
+      "bytes": 8495,
+      "sha256": "88da6c75a9ae0e50f74dc6c59e43afd5947571a2c368192bd91d4b71c8eedaa6",
+      "read_mode": "text/json/xml only",
+      "purpose": "Mechanical source, geometry conversion and interface; stale coupling statement flagged",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "docs/MODEL.md",
+        "tracked_blob": "3ac1022d191b96b69c21744936eb51da338d40ea",
+        "current_bytes_git_blob": "3ac1022d191b96b69c21744936eb51da338d40ea",
+        "last_change_commit": "1e4d633730f62a398513d33991fa96f9c4977daa",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/docs/MODEL.md"
+    },
+    {
+      "id": "S06",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/docs/BUILD.md",
+      "bytes": 4050,
+      "sha256": "2f416ca1f3079e70ff8d2f10bebc4ff0b3673ed3b211e6318a7e3489d9d435a7",
+      "read_mode": "text/json/xml only",
+      "purpose": "Build provenance and convex component conversion; relevant text searched",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "docs/BUILD.md",
+        "tracked_blob": "15fbdff75679aa2a3e1d95a3e35248d8efab4990",
+        "current_bytes_git_blob": "15fbdff75679aa2a3e1d95a3e35248d8efab4990",
+        "last_change_commit": "1e4d633730f62a398513d33991fa96f9c4977daa",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/docs/BUILD.md"
+    },
+    {
+      "id": "S07",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/docs/robot-contract.json",
+      "bytes": 3457,
+      "sha256": "b074cbe2e42754d1fa9e2c6dfde4d010743facf94405b84c79e2044923e9d7d2",
+      "read_mode": "text/json/xml only",
+      "purpose": "Source command explicitly not calibrated fingertip gap",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "docs/robot-contract.json",
+        "tracked_blob": "9ef905f0854d88559d2416014fc5090aaca223e5",
+        "current_bytes_git_blob": "9ef905f0854d88559d2416014fc5090aaca223e5",
+        "last_change_commit": "829cb0eca0fac1472c5513dbc9e200335fedd228",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/docs/robot-contract.json"
+    },
+    {
+      "id": "S08",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/SOURCE_MANIFEST.json",
+      "bytes": 8627,
+      "sha256": "785af8cc507bb3f33cfc82746b26f1eefcea6a1a967f070607cb7a39f8cdf20c",
+      "read_mode": "text/json/xml only",
+      "purpose": "URDF source revision and frozen path/blob mapping",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "SOURCE_MANIFEST.json",
+        "tracked_blob": "5782e8172c99dca38e3ac476a7442966625e5ebd",
+        "current_bytes_git_blob": "5782e8172c99dca38e3ac476a7442966625e5ebd",
+        "last_change_commit": "6bc1590e3ab2c06a1a177bbe03937282e230433b",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/SOURCE_MANIFEST.json"
+    },
+    {
+      "id": "S09",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+      "bytes": 4296,
+      "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4",
+      "read_mode": "text/json/xml only",
+      "purpose": "Frozen vendor virtual gripper and mimic source",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+        "tracked_blob": "7a9b0aa67cd1b4dd16cc4fe1a7f2187a5168c813",
+        "current_bytes_git_blob": "7a9b0aa67cd1b4dd16cc4fe1a7f2187a5168c813",
+        "last_change_commit": "6bc1590e3ab2c06a1a177bbe03937282e230433b",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/urdf/source/nero/urdf/nero_with_gripper_description.xacro"
+    },
+    {
+      "id": "S10",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue14-full-grasp.md",
+      "bytes": 13611,
+      "sha256": "d7351da5120d20a134444f191e9e0bb351e343a4c2def69982cfe352e394c555",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical complete grasp and control results",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue14-full-grasp.md",
+        "tracked_blob": "bd430183715b59df9baf1cd79a61443c676d21cc",
+        "current_bytes_git_blob": "bd430183715b59df9baf1cd79a61443c676d21cc",
+        "last_change_commit": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue14-full-grasp.md"
+    },
+    {
+      "id": "S11",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue14-results.json",
+      "bytes": 181309,
+      "sha256": "f60e57523f0f722c934c49001ab8ff74bc350b2a31ff0bd923031d6944ba98f4",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical coupling, force saturation and grasp metrics; selected fields only",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue14-results.json",
+        "tracked_blob": "160198e38d79113a97c971116df4a2d589ec176f",
+        "current_bytes_git_blob": "160198e38d79113a97c971116df4a2d589ec176f",
+        "last_change_commit": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue14-results.json"
+    },
+    {
+      "id": "S12",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue16-contact-geometry.md",
+      "bytes": 8931,
+      "sha256": "5daa578dc64ce0c9473a92ebee04237dec26444d9e63f8ad9bec2a6f90a4b098",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical contact geometry analysis and limits",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue16-contact-geometry.md",
+        "tracked_blob": "9c486a3356b21b0be0310301bb83e065e8af9660",
+        "current_bytes_git_blob": "9c486a3356b21b0be0310301bb83e065e8af9660",
+        "last_change_commit": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue16-contact-geometry.md"
+    },
+    {
+      "id": "S13",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue16-evidence/summary.json",
+      "bytes": 130706,
+      "sha256": "34760c837277bd87eeb11b36f96221ac45a3187ff9f955e6eb991c3eed7b1f50",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical static mesh identity, nativeccd=false and geometry evidence; selected fields only",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue16-evidence/summary.json",
+        "tracked_blob": "83c57f17a5b477062acad2d9b85065b62889cf53",
+        "current_bytes_git_blob": "83c57f17a5b477062acad2d9b85065b62889cf53",
+        "last_change_commit": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue16-evidence/summary.json"
+    },
+    {
+      "id": "S14",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue18-fixed-collision-ab.md",
+      "bytes": 7851,
+      "sha256": "95d8e29b5516ef7aa359668b4feffc3642a99f7946eba192f75e124af306d05b",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical collision-query intervention; no physical grasp fix",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue18-fixed-collision-ab.md",
+        "tracked_blob": "0e47cde0d6fc7f267d013f3d0db71ff4807a94fe",
+        "current_bytes_git_blob": "0e47cde0d6fc7f267d013f3d0db71ff4807a94fe",
+        "last_change_commit": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue18-fixed-collision-ab.md"
+    },
+    {
+      "id": "S15",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue18-evidence/summary.json",
+      "bytes": 24266,
+      "sha256": "e7fe7631f43766bd449bc3f2d0fcfdc89b9412c5869bc87cfa06913b376beea4",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical fixed-pose MPR/native results; selected fields only",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue18-evidence/summary.json",
+        "tracked_blob": "2d8aea6de8244536ab1e4d133579352929577bf1",
+        "current_bytes_git_blob": "2d8aea6de8244536ab1e4d133579352929577bf1",
+        "last_change_commit": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue18-evidence/summary.json"
+    },
+    {
+      "id": "S16",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/reports/issue14-full-grasp.inputs.json",
+      "bytes": 918,
+      "sha256": "3bb50be6c186cc25e44e222a0c6e16213cd893be31a7be1fea99f638b546f68f",
+      "read_mode": "text/json/xml only",
+      "purpose": "Input index read for orientation only",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "reports/issue14-full-grasp.inputs.json",
+        "tracked_blob": "2d26ca10d033aadb3625d7b13d5036a4bd7425eb",
+        "current_bytes_git_blob": "2d26ca10d033aadb3625d7b13d5036a4bd7425eb",
+        "last_change_commit": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/reports/issue14-full-grasp.inputs.json"
+    },
+    {
+      "id": "S17",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/README.md",
+      "bytes": 6023,
+      "sha256": "cff0aaffaf7fe35c2511718bad98e11577c71873556afde657896788a0fef0b0",
+      "read_mode": "text/json/xml only",
+      "purpose": "Static versus controlled delivery context",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "README.md",
+        "tracked_blob": "9993eec73e6a6213acc0e8686d351e993767f533",
+        "current_bytes_git_blob": "9993eec73e6a6213acc0e8686d351e993767f533",
+        "last_change_commit": "1e4d633730f62a398513d33991fa96f9c4977daa",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/README.md"
+    },
+    {
+      "id": "S18",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/experiments/dynamics/grasp.json",
+      "bytes": 2885,
+      "sha256": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
+      "read_mode": "text/json/xml only",
+      "purpose": "Frozen Self-built grasp criteria and softness boundary",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+        "relative_path": "experiments/dynamics/grasp.json",
+        "tracked_blob": "8a1ec813ce52476a9b1f1bbc93ddf768f8cb0c8e",
+        "current_bytes_git_blob": "8a1ec813ce52476a9b1f1bbc93ddf768f8cb0c8e",
+        "last_change_commit": "44f497dd90d3f89f43954310352b39d25e0619dd",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19",
+      "permalink": "https://github.com/LeoandDream/Nero_Gripper_assets/blob/6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7/experiments/dynamics/grasp.json"
+    },
+    {
+      "id": "R01",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model.xml",
+      "bytes": 33092,
+      "sha256": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+      "read_mode": "text/json/xml only",
+      "purpose": "Actual historical elliptic/impratio10 derived model; XML only",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-full-grasp",
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "relative_path": "experiments/dynamics/runs/issue14_full_grasp_002/R0/model.xml",
+        "tracked_blob": null,
+        "current_bytes_git_blob": "031e31b80c30c06439aacae23bf9548b16daeb83",
+        "last_change_commit": "",
+        "status": "!! experiments/dynamics/runs/"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "R02",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/model-default.xml",
+      "bytes": 33062,
+      "sha256": "35dcba3cac40933806afa161447de27e04255911e34991a110ea3e641c0a8a64",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical base model before option differences; XML only",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-full-grasp",
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "relative_path": "experiments/dynamics/runs/issue14_full_grasp_002/R0/model-default.xml",
+        "tracked_blob": null,
+        "current_bytes_git_blob": "6720f4e8cd2ac25529b7f381e03e85966188d55e",
+        "last_change_commit": "",
+        "status": "!! experiments/dynamics/runs/"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "R03",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/result.json",
+      "bytes": 12220,
+      "sha256": "cc26445d8324dd08fcad3af306c88163a1928f32c25c9a16bc7050b575209cc6",
+      "read_mode": "text/json/xml only",
+      "purpose": "Original R0 control health and coupling metrics",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-full-grasp",
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "relative_path": "experiments/dynamics/runs/issue14_full_grasp_002/R0/result.json",
+        "tracked_blob": null,
+        "current_bytes_git_blob": "25bdd520081e0a3ed8965a80166bb1aa6404cd6e",
+        "last_change_commit": "",
+        "status": "!! experiments/dynamics/runs/"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "R04",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1/result.json",
+      "bytes": 12223,
+      "sha256": "e769a5226bf35a5953852240ecb7db6d76af37dcda32cb953191c6a6b04b3ad4",
+      "read_mode": "text/json/xml only",
+      "purpose": "Original R1 control health and coupling metrics",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-full-grasp",
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "relative_path": "experiments/dynamics/runs/issue14_full_grasp_002/R1/result.json",
+        "tracked_blob": null,
+        "current_bytes_git_blob": "48a94e6d8510af74baaaea51569ddc81f05197ed",
+        "last_change_commit": "",
+        "status": "!! experiments/dynamics/runs/"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "R05",
+      "path": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R0/protocol.json",
+      "bytes": 7995,
+      "sha256": "a0a2227ac254afcde705873a0a1eb4490ecc5a97083bef2da88edda02e00d148",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical protocol structure read for orientation",
+      "git": {
+        "repository_root": "/data_robot/projects/.worktrees/nero-gripper-full-grasp",
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+        "relative_path": "experiments/dynamics/runs/issue14_full_grasp_002/R0/protocol.json",
+        "tracked_blob": null,
+        "current_bytes_git_blob": "c8244c2282f327472b797611f1fd514345d58ef0",
+        "last_change_commit": "",
+        "status": "!! experiments/dynamics/runs/"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "O01",
+      "path": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream/mujoco/agilex_arm/agilex_nero/nero.xml",
+      "bytes": 8910,
+      "sha256": "7d297b2e138cca902583e219806a38e6c88bf96b6d6ec1bb704ba335338a3b36",
+      "read_mode": "text/json/xml only",
+      "purpose": "Official original model, topology and defaults",
+      "git": {
+        "repository_root": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream",
+        "head": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+        "relative_path": "mujoco/agilex_arm/agilex_nero/nero.xml",
+        "tracked_blob": "64f4ac48d1f250c5d0d751ca267f9b74a1c6baf9",
+        "current_bytes_git_blob": "64f4ac48d1f250c5d0d751ca267f9b74a1c6baf9",
+        "last_change_commit": "d1e1e6cc915ab30da69da774fc81056bb493d3f0",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "O02",
+      "path": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream/mujoco/agilex_arm/agilex_nero/scene.xml",
+      "bytes": 863,
+      "sha256": "4a9fb5b52bca76f956f71ffda01a61cae2c1f3dc6649f537c45c3131263c06ac",
+      "read_mode": "text/json/xml only",
+      "purpose": "Official original entrypoint",
+      "git": {
+        "repository_root": "/data_robot/projects/.experiments/nero-official-issue6-20261017/upstream",
+        "head": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+        "relative_path": "mujoco/agilex_arm/agilex_nero/scene.xml",
+        "tracked_blob": "fe50b18a0eeda0242640742f53333be1a5b41669",
+        "current_bytes_git_blob": "fe50b18a0eeda0242640742f53333be1a5b41669",
+        "last_change_commit": "d1e1e6cc915ab30da69da774fc81056bb493d3f0",
+        "status": ""
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "O03",
+      "path": "/data_robot/projects/.experiments/nero-official-issue6-20261017/evidence/compile.json",
+      "bytes": 7033,
+      "sha256": "4df902dbe3f51e020d87b39466795e263a6d190be3e40857b48fff5d5eec1cfd",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing official compile field snapshot; no compile performed",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Historical official experiment records; upstream frozen checkout is O01/O02"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "O04",
+      "path": "/data_robot/projects/.experiments/nero-official-issue6-20261017/RESULTS.md",
+      "bytes": 6160,
+      "sha256": "478510665e00253b0a3200c0515cca658d31a0b25945ab880edc3e48396cbe4c",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing Issue6 results; no rerun",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Historical official experiment records; upstream frozen checkout is O01/O02"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "O05",
+      "path": "/data_robot/projects/.experiments/nero-official-contact-audit-20261018/RESULTS.md",
+      "bytes": 11032,
+      "sha256": "4d40b33fc70360f87b52613122e4f273d3ba275efbf97a7bfbcbf52d7e0a7bcd",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing source-triangle versus single-hull geometry audit",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Historical official experiment records; upstream frozen checkout is O01/O02"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K01",
+      "path": "/data_robot/projects/.experiments/nero-official-gripper-kp80-20261019/model_B/nero.xml",
+      "bytes": 8974,
+      "sha256": "ee29d78da9bfc08d156ebcc63677d70545b0757b0de533f6fb0daeac57939931",
+      "read_mode": "text/json/xml only",
+      "purpose": "Diagnostic copy with temporary exclude and kp80; not original official source",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K02",
+      "path": "/data_robot/projects/.experiments/nero-official-gripper-kp80-20261019/evidence/model-only-difference.diff",
+      "bytes": 489,
+      "sha256": "84f075a861a31f6f524ae603b0dc55f2c6fb27dc1fff0ebe7951afe42174f160",
+      "read_mode": "text/json/xml only",
+      "purpose": "Historical kp40-to80 single change",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K03",
+      "path": "/data_robot/projects/.experiments/nero-official-gripper-kp80-20261019/RESULTS.md",
+      "bytes": 10035,
+      "sha256": "da65ca7427c5429f3b557d1ad18dbd0f0bbc7d4a8e313540a1708018ed7d380a",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing diagnostic minimum-grasp result and limits",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K04",
+      "path": "/data_robot/projects/.experiments/nero-official-gripper-kp80-20261019/evidence/metrics.json",
+      "bytes": 12045,
+      "sha256": "de84f7d3089c565d26239705ca80c302a8d66008c9ef9b89ed5ae8ff1259fac4",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing minimal grasp metrics; selected fields only",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K05",
+      "path": "/data_robot/projects/.experiments/nero-official-kp80-data-audit-20261019/RESULTS.md",
+      "bytes": 5839,
+      "sha256": "e132da2c53cee78c0d47afa793d2a50844d700d2ca82c8c99c299714221ce297",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing independent raw-saved-data audit; command semantics and minimum success",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K06",
+      "path": "/data_robot/projects/.experiments/nero-official-kp80-data-audit-20261019/audit.json",
+      "bytes": 14132,
+      "sha256": "0d1a5769351f7a6a75c849a170f1fb60ba961cdc4aef13e4f829c44d7c2bee10",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing independent mask agreement and qualified interval; selected fields only",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    },
+    {
+      "id": "K07",
+      "path": "/data_robot/projects/.experiments/nero-official-gripper-kp80-20261019/evidence/result.json",
+      "bytes": 22619,
+      "sha256": "828d15ff23d711c6bdd78929683741c5357c082d481a8a5a6f1853fc520e52b6",
+      "read_mode": "text/json/xml only",
+      "purpose": "Existing diagnostic outcome; selected fields only",
+      "git": {
+        "repository_root": null,
+        "head": null,
+        "relative_path": null,
+        "tracked_blob": null,
+        "current_bytes_git_blob": null,
+        "last_change_commit": null,
+        "status": "outside_git_repository; historical frozen evidence artifact",
+        "provenance": "Derived diagnostic copy from agilexrobotics/agx_arm_sim@f8cd8b147c75d59e14f90fb0646770eefa268ed0; not an upstream commit"
+      },
+      "sha_verified_after_read": true,
+      "access_date": "2026-10-19"
+    }
+  ],
+  "local_provenance": {
+    "official_upstream_url": "https://github.com/agilexrobotics/agx_arm_sim",
+    "official_upstream_commit": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+    "official_upstream_local_git_clean": true,
+    "selfbuilt_urdf_upstream_url": "https://github.com/agilexrobotics/agx_arm_urdf",
+    "selfbuilt_urdf_upstream_commit": "a68b8e876a2c6fcb0ecee7a7943129e4d48dd864",
+    "selfbuilt_static_current_head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7",
+    "selfbuilt_original_issue14_worktree_head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316",
+    "historical_metrics_independently_recomputed_this_subtask": false,
+    "historical_helper_execution_identity": "UNKNOWN for grasp_support_ab.py and grasp_cone_ab.py per Issue16/18 reports"
+  },
+  "structural_summary": {
+    "Menagerie": {
+      "physical_finger_joints": 2,
+      "gripper_actuators": 1,
+      "transmission": "fixed tendon split, coefficients .5/.5",
+      "joint_equality": true,
+      "pad_boxes_per_finger": 5
+    },
+    "robosuite": {
+      "physical_finger_joints": 2,
+      "gripper_actuators": 2,
+      "upper_gripper_action_dof": 1,
+      "transmission": "two joint position actuators; sign and accumulated software mapping",
+      "joint_equality": false,
+      "tendon": false,
+      "pad_boxes_per_finger": 1
+    },
+    "Official_NERO": {
+      "physical_finger_joints": 2,
+      "robot_actuators": 8,
+      "gripper_actuators": 1,
+      "transmission": "joint finger1 position; equality follower",
+      "tendon": false,
+      "dedicated_primitive_pads": false
+    },
+    "Self_built_NERO": {
+      "physical_finger_joints": 2,
+      "static_actuators": 0,
+      "derived_robot_actuators": 9,
+      "gripper_actuators": 2,
+      "upper_action_dof": 8,
+      "physical_target_dof": 9,
+      "joint_equality": true,
+      "tendon": false,
+      "dedicated_primitive_pads": false
+    }
+  },
+  "overdrive_cause": "UNKNOWN; consistent finite-force drives and healthy saved coupling do not rule out redundant internal force",
+  "only_candidate": "Calibrated primitive working-face pads plus necessary finger-body collision protection; geometry representation only; no implementation",
+  "historical_result_scope": {
+    "official_original": "Not repaired; original self contact",
+    "official_kp80_temporary_diagnostic": "Minimal grasp PASS only, 20mm/1s plus support conditions; not selfbuilt full criteria",
+    "selfbuilt_complete_grasp": "FAIL; unchanged original criteria",
+    "nativeccd_issue18": "Fixed-state query only; not adopted for new physics"
+  },
+  "historical_metrics_note": "Read existing saved metrics; no new recomputation or independent physics acceptance in Issue21",
+  "verification": {
+    "source_hashes_after_read": "PASS",
+    "external_source_count": 20,
+    "local_source_count": 35,
+    "stdlib_xml_structure_checks": "PASS",
+    "protected_git_worktrees_unchanged": 9,
+    "report_sha256": "7661c3d2d465b5cdc7b16c58d24df6cb40682714a8fd44a654b00ad20e5fcf66",
+    "physical_tests_run": false,
+    "installation_or_dependency_changes": false,
+    "method": "Python stdlib XML/hash/JSON and git state, not importing robot/robosuite/MuJoCo modules"
+  },
+  "local_analysis_root": "/data_robot/projects/.worktrees/nero-gripper-panda-reference/debug/issue21",
+  "protected_worktrees": {
+    "before": {
+      "/data_robot/projects/nero_gripper_assets": {
+        "head": "7f01deedc434d1d09cf98a043fcd2c53894e835e\n",
+        "status": "?? closed.png\n?? preview.png\n"
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-collision-query": {
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-contact-geometry": {
+        "head": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab": {
+        "head": "c0e23102d7d2231414b712966b9c246615d14f0a\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-readonly": {
+        "head": "bbec36b0420088e937e00d1f7e589d853f95a8a0\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp": {
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis": {
+        "head": "bf5dc44ab4e97650dfcb0ebdfc550047b87ec947\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab": {
+        "head": "a1d899c40626962bd62fc0d02d9ec779a3513cb6\n",
+        "status": ""
+      },
+      "/data_robot/projects/nero_gripper_dynamics": {
+        "head": "ef15cd524d1d72ff13ad6564c7e681f6ec15f60c\n",
+        "status": ""
+      }
+    },
+    "after": {
+      "/data_robot/projects/nero_gripper_assets": {
+        "head": "7f01deedc434d1d09cf98a043fcd2c53894e835e\n",
+        "status": "?? closed.png\n?? preview.png\n"
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-collision-query": {
+        "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-contact-geometry": {
+        "head": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab": {
+        "head": "c0e23102d7d2231414b712966b9c246615d14f0a\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-readonly": {
+        "head": "bbec36b0420088e937e00d1f7e589d853f95a8a0\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp": {
+        "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis": {
+        "head": "bf5dc44ab4e97650dfcb0ebdfc550047b87ec947\n",
+        "status": ""
+      },
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab": {
+        "head": "a1d899c40626962bd62fc0d02d9ec779a3513cb6\n",
+        "status": ""
+      },
+      "/data_robot/projects/nero_gripper_dynamics": {
+        "head": "ef15cd524d1d72ff13ad6564c7e681f6ec15f60c\n",
+        "status": ""
+      }
+    }
+  },
+  "limitations": [
+    "No material/gap/calibration established by source review",
+    "No internal equality load attribution or topology counterfactual",
+    "No proof primitive pads improve closed-loop grasp",
+    "Historical helper execution-time identities remain UNKNOWN per Issues16/18"
+  ]
+}
