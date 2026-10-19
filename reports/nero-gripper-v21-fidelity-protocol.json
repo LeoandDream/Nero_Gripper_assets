@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.1",
+  "task": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6271873067",
+  "status": "V21_RULES_FROZEN_BEFORE_REACCEPTANCE",
+  "inherits": {
+    "commit": "8a5518b37f15678893ca6f540f5ef2edea199ab8",
+    "path": "reports/nero-gripper-v2-fidelity-protocol.json",
+    "sha256": "4ffb096f2519fed41d8d45c9c0b4ed3ec4dc781f959d4f0420905ce8b5df999b"
+  },
+  "candidate_commit": "6eba4f34c5ff5029eb849804e3d2e9c535f58756",
+  "candidate_geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "protected_void_single_override": {
+    "feature_name": "central_through_bore",
+    "old_rule": "Preserve full through-path, no cap.",
+    "new_rule": "Preserve the mount-part central bore wall and void. Full-assembly connectivity must match the frozen source assembly. If the backing originally blocks the path, runtime is not required to excavate that source material.",
+    "source_adjudication_commit": "59ee1d2a638e0ee5ffa8a7d5f25ce19d3c183e75"
+  },
+  "representation_equivalence": {
+    "numerical_support_mm": 0.0000001,
+    "runtime_geometry_truth": "The frozen vertices and faces of the same346 convex entities. No candidate coordinates or faces may be modified or snapped.",
+    "halfspaces_role": "Analysis/verification representation. Infinite-precision literal binary64 halfspace coefficients need not form perfect seam topology.",
+    "equivalence_rule": "A closure gap or overlap <=1e-7mm is an equivalent boundary representation only when it creates no effective solid/void region exceeding1e-7mm. Any larger effective boundary remains subject to the original A/B/C fidelity rules.",
+    "evidence_requirement": "A waiver requires local geometric support/containment or interval evidence bounding the discrepancy, not merely a small floating residual. Mixed or unbounded regions remain UNKNOWN.",
+    "unchanged_constraints": ["Tier A surface and contour<=0.01mm", "Tier A normal<=0.05deg", "Tier B surface and contour<=0.05mm", "Frozen Tier C source domains and material-set<=0.05mm", "All other protected void rules", "Every runtime entity inscribed diameter>=0.1mm"],
+    "not_permitted": ["Retiering", "Larger fidelity budgets", "Ignoring effective void occlusion", "Changing frozen vertices/faces", "Automatically accepting the old candidate"]
+  },
+  "application_rule": "Load the exact inherited Git blob, replace only central_through_bore.rule, and add the representation-equivalence interpretation above. All other inherited rules remain byte-value identical.",
+  "acceptance": "No acceptance result exists in this rules-only commit. Reacceptance starts only after this commit is created.",
+  "prohibited": ["new candidate geometry", "formal MJCF", "MuJoCo", "grasp", "physics tuning", "main modification", "new Issue"]
+}
