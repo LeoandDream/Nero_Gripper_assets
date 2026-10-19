@@ -371,6 +371,12 @@
       "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
       "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4",
       "bytes": 4296
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/gripper_base.stl",
+      "commit": "e7bdfe262e376cb7326229d1bcc82a233850c853",
+      "sha256": "0b839dc0bcb7d94e3422c74f6396b54a0441ba4836448ab5586e7f372d1bdbf3",
+      "bytes": 1837884
     }
   ],
   "historical_context": [
@@ -918,5 +924,91 @@
       ],
       "note": "Right pad and mesh both rotate 180 deg about local z; in their common mesh frame the same relation holds."
     }
+  },
+  "external_shell_evidence": [
+    {
+      "local_path": "debug/issue25/external-shell/external-view-witnesses.json",
+      "sha256": "29749641bc660d9a6246af8078eee200892a4e6ea5eebd7e48f487656506c521",
+      "bytes": 725377
+    },
+    {
+      "local_path": "debug/issue25/external-shell/external-view-witnesses-gripper_link2.json",
+      "sha256": "f62b8b91b526946c5f520f9da956ab538565ae41fca34c593bcf4fb831dc32e4",
+      "bytes": 730257
+    },
+    {
+      "local_path": "debug/issue25/shell-interfaces/interface-analysis.json",
+      "sha256": "c2c17429f07d670fc23e4e22afa13a21d1bedbcef19424bb3a798ae98233ddc3",
+      "bytes": 363052
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/mount-reachability.json",
+      "sha256": "a1faeaf9157af48d19a11dd922032310a32f78e923bcc50d98f746d5bb62896a",
+      "bytes": 5688368
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/known-interface-overlap.json",
+      "sha256": "1373f3100e465689d23c30a83ff66b98660fa87e474561685da69d463919bdca",
+      "bytes": 324864
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/notch-grazing-rays.json",
+      "sha256": "5ccd20d08aa3f0d50d1be9c41cac6ca5382a8bb6ff98620f48506425b44a2b5e",
+      "bytes": 161405
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/targeted-opening-rays.json",
+      "sha256": "083c34cad4d3ea94ba0665a54d7949e831430027cf340acfc084ab93660f16b3",
+      "bytes": 1169194
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/representative-direct-crosscheck.json",
+      "sha256": "17666494f83c762c2c9239bbe2eac469d8cb2de972581e9a6b9e94796e227f9d",
+      "bytes": 2315
+    }
+  ],
+  "external_shell_analysis_scripts": [
+    {
+      "local_path": "debug/issue25/shell-interfaces/analyze_interfaces.py",
+      "sha256": "0a6bd01df3c3acb6020a273a2c34b36248354ec62d5df98bf46c4813f905a9a2"
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/targeted_openings.py",
+      "sha256": "e03d4be5b5e1db6f320ed04928f3145022d3d63bfc532e64f4724d6d53ee5dbb"
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/audit_mount.py",
+      "sha256": "a8e35a32ebbee84a26e00d410c89551647f1a1364e6967585527322b3e8be355"
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/refine_notch.py",
+      "sha256": "f7bb0913baadf962155418079af771fd44beb1fe9ff5bd5fdf934cb6fc57bbd7"
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/section_mount.py",
+      "sha256": "f83cc622da7d8e290e28f3bfb699711fba5b9c2fb03701045d9e1653c0974abf"
+    },
+    {
+      "local_path": "debug/issue25/shell-mount/interface_overlap.py",
+      "sha256": "8a74ca0b73bd646aa88515787a8214d36b4d448ca2fbda37332832379e791d0b"
+    },
+    {
+      "local_path": "debug/issue25/external-shell/analyze_external_views.py",
+      "sha256": "34653aa919e1b5bc73a2d5eab908e43938dcfce8f351271f6383ace431d24f33"
+    },
+    {
+      "local_path": "debug/issue25/external-shell/analyze_external_views.link1-executed.py",
+      "sha256": "818f528ff7b329999cd3ae950dfea3a64530bbea4acf03fbd949f02703048e20"
+    },
+    {
+      "local_path": "debug/issue25/external-shell/summarize_shell.py",
+      "sha256": "28dcadec85ba011b233aa92aed22d718139361a7cae7eee20581bfa7782d6d06"
+    }
+  ],
+  "external_shell_stage": {
+    "revision_base": "e7bdfe262e376cb7326229d1bcc82a233850c853",
+    "status": "EXTERNAL_SHELL_CLOSED",
+    "no_source_assets_changed": true,
+    "source_only": true
   }
 }
