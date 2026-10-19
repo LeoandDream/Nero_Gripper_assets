@@ -2,7 +2,7 @@
 
 Issue [#25](https://github.com/LeoandDream/Nero_Gripper_assets/issues/25)，2026-10-19，Ubuntu 22.04。**唯一推荐：完整功能接触层＋有语义的侧壁/背体/安装框架。** 不再以中心矩形 pad 加顺序切割 guards 表示工作面，不预设 Panda 的 pad 数量。
 
-**最新状态：`EXTERNAL_SHELL_CLOSED`。已足够开始具体 collision 实体设计；本轮没有实现实体或可执行模型。** 继续同一 Issue #25 / Draft PR #26，在已审查通过的功能架构上闭合冻结源资产的 externally reachable collision shell。下面8项仍是每指的**语义组件族，不是8个已定型 geom**；实体分组数量属于下一步设计选择，不再作为源外壳阻断。本轮没有导入 MuJoCo、编译模型、MuJoCo碰撞查询、`mj_step`、控制器执行、抓取/benchmark或参数修改。
+**最新状态：`ENTITY_PARTITION_FROZEN`，每指1253个已定义闭合凸多面体。** 本轮具体数量、顶点/封口规则、实际外露子面、邻接和限制见§7及权威JSON。尚未生成/编译MJCF，运行时可行性未验收；上一阶段记录保留为来源依据。 §1–6保留此前阶段记录，其中“未来/未生成”描述对应历史阶段；本轮具体实体定义以§7和权威JSON为准。
 
 ## 1. 来源与坐标
 
@@ -147,3 +147,69 @@ mesh与finger body局部帧一致：`y=0`是指尖、负y朝根部、`−z`朝�
 [R]: https://github.com/ARISE-Initiative/robosuite/blob/5ce6643f3092639d08f7b0f90ed1c6a84f50552c/robosuite/models/assets/grippers/panda_gripper.xml
 
 [D]: https://github.com/google-deepmind/mujoco/blob/476599f8b6175ef5a3040c47ebb3cd99a83c5365/doc/XMLreference.rst#L1110-L1116
+
+
+## 7. 具体 collision entity partition — 本轮冻结交付
+
+**状态：`ENTITY_PARTITION_FROZEN`。每指 1253 个闭合凸多面体，双指共 2506 个。** 这是唯一一版离线几何候选的设计冻结，尚未生成或编译任何MJCF，不是运行时可用性或抓取验收。依据[指定任务评论](https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6265270438)，不重复交付上一阶段结论。
+
+逐实体的**语义名称、源区域/三角片、类型、外露子面、内部封口、邻接和overlap策略**完整列于[分区表CSV](nero-gripper-entity-partition.csv)；[权威JSON](nero-gripper-entity-partition.json)给出全部顶点、定向三角面、半空间和裁片坐标，CSV是由它生成的索引。37个区域没有机械对应37个geom。全部实体类型为`convex_polyhedron`，未将任何非凸大面直接取整体凸包。
+
+### 固定数量与物理职责
+
+| 源实体 | STL源片（0-based inclusive） | 每指实体数 | 分区依据 |
+|---|---|---:|---|
+| 接触薄层 | 504–659 | 50 | 源上下高度面叠置；tip/main/ramp/两肩部边界；精确有理数凸合并 |
+| 承托背体 | 660–2085 | 945 | 源多区间材料剖分，保留背袋/孔道/侧壁；新增凸包面必须被原单元并集覆盖 |
+| 安装根部 | 0–503 | 258 | 左右耳、中央孔桥、四凹座盲底与孔唇，按源slot/孔轴分区 |
+
+| 语义组件族 | 每指实体数 |
+|---|---:|
+| `distal_tip_contact` | 18 |
+| `inner_main_contact_plate` | 14 |
+| `inner_ramp_contact` | 16 |
+| `inner_transition_contact` | 7 |
+| `sidewall_negative_x` | 88 |
+| `outer_chassis` | 743 |
+| `sidewall_positive_x` | 109 |
+| `mount_root` | 258 |
+
+两种肩部facet仍归同一`inner_transition_contact`族，具体实体保留`shoulder_bevel`/`shoulder_blend_facet`特征名。每一块都关联真实source区域与空间位置；没有`guard_N`或`part_N`。该数量来自源约束下的确定性局部凸合并，**不声称数学全局最少或轻量实时模型**。未复制Panda数量/尺寸，也没有使用历史cube结果选择切口。
+
+### 外露面、内部封口与邻接的唯一事实来源
+
+- `source_boundary_patches`是原**单个源part**的表面及源片/平面索引，不能直接等同装配外露面。
+- 每entity的`source_surface_partition`才是装配外边界归属：`exterior_subpolygons`列实际外露多边形；`assembly_relation_subpolygons`列真实共享界面、原材料交叠埋藏域及数值分辨记录。均给出实际3D多边形，未用整片mixed标签代替。
+- `internal_closure_patches`给出新分区封口的多边形和实际覆盖邻居。它们在同part并集内部，不被设计成环境首次接触面。`entity_face`索引本entity的`faces`；`support_plane_id`索引其`halfspaces_m`，约定单位法向`n·p+d≤0`。
+- 同part不添加正体积overlap；薄层为精确有理数零交集证据，根部/背体为明确有限计算精度的闭合、覆盖及合并证据。真实相邻外面可以同时接物，不能因多contact预设重复力。
+- 跨part共 1098 对实际关系，逐对多边形/量级保存在`cross_part_entity_relations`。其中 146 对有可分辨的**原源材料交叠**，总体积约`1.0756824247e−11m³`，没有新增inflation；没有正面积同法向重复外露面。原开放微缝、孔口环带和窄侧带仍保留。
+
+共享界面和材料交叠只解释原闭合实体并集，不允许据这些标签删掉闭合mesh面、关闭body/root对外碰撞或添加filter。后续生成必须使用完整`vertices_m`/`faces`，不能只输出外露面成为开口壳。
+
+### 旧代理替换与生成接口
+
+`gripper_link{1,2}_collision_000`的活动实例**全部由薄层50+背体945替换**；`_collision_001`活动实例全部由安装根部258替换。旧文件保留历史基线，不能与新工作面叠加实例化。**本轮实际未替换任何active geom。**
+
+JSON共享一份finger-local几何模板，分别放入原`gripper_link1/2`坐标系；不使用编译mesh主轴。两源STL对应坐标差最大约`1.77e−18m`已披露。`future_geometry_emission`列明确mesh命名、顶点/面路径、局部pos/quat和惯性策略，几何边界/实体数量没有留待runtime猜测的TBD。保留原body transform、惯性、joint、equality、两个finger actuator、kp/kv、friction/solver/nativeccd及8D action；不从新collision体积重算质量。
+
+### 离线图与可复核证据
+
+![具体实体分区总览](nero-gripper-entity-partition.png)
+
+[离线逐实体三维图HTML](nero-gripper-entity-partition.html)下载后可直接打开；不依赖网络或MuJoCo。可按语义名、E编号或源三角片搜索，选择实体、聚焦、查看完整邻接。静态PNG是总览，完整1253行对应见CSV/JSON。
+
+验证未把“总体积接近”当完整证明：
+
+- 薄层156源片全部精确覆盖，422个人工封口裁片有精确邻居覆盖；源/并集有理体积相等。拓扑等价端点最大规范化`1.32e−17m`逐点公开，未改源文件。
+- 根部504源片全覆盖；857个人工封口覆盖。独立longdouble几何差集复核未覆盖封口为0，源面积最大残余约`4.14e−20m²`；浮点LP不被描述为数学严格零交叠。
+- 背体1426源片全映射；体积差约`2.87e−10mm³`、最大源片面积残余`5.94e−8mm²`、封口覆盖数值残余总计`6.66e−9mm²`。有限精度残余保留，未写成精确零。
+- 近竖直源2021的遗漏正域用完整Fraction配对恢复；其面积差约`4.44e−16mm²`。源1858的误标封口由局部点到平面判别纠正，未移动几何，也没有通过放宽物理判据处理。
+- 全局源裁片面积闭合最大残余约`5.42e−19m²`，真实shared对片残余最大约`4.00e−19m²`；9条极小边界分辨记录及1对约0.492pm公共内球记录仍保留，不额外声称精确符号或严格零。
+
+原始计算及脚本保存在`debug/issue25/entity-partition/`各part与`global-interfaces/`中，路径/SHA见来源清单。全部为纯源几何计算，无MuJoCo导入、模型编译、引擎碰撞查询、积分、抓取或benchmark。旧Run未覆盖。
+
+### 必须披露的限制与唯一下一步
+
+**1253/指是较重的保真分区，而且包含亚纳米薄实体。** 独立计算的最小facet-normal宽度约`5.595e−11m`（0.05595nm），来自源facet微小翘曲；它不是实体实际制造尺寸的认证。没有为减少数量擅自粗化、删除这类正体积单元或引入新简化误差预算。精确几何设计冻结**不证明MuJoCo可编译、数值稳定、可实时运行或适合物理接触**。这些问题未在本轮运行；也未将最小厚度变成新增验收Gate。
+
+**唯一下一步：交ChatGPT独立审查这版分区，重点评估复杂度与亚纳米单元；审查后再决定如何进入派生MJCF生成及静态验收。** 本轮到此停止。

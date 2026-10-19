@@ -1010,5 +1010,202 @@
     "status": "EXTERNAL_SHELL_CLOSED",
     "no_source_assets_changed": true,
     "source_only": true
-  }
+  },
+  "entity_partition_stage": {
+    "task_comment": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6265270438",
+    "baseline_commit": "8f48ca2013483a09a3e1adfcb2c39bdf0efe9bce",
+    "status": "ENTITY_PARTITION_FROZEN",
+    "entity_count_per_finger": 1253,
+    "formal_mjcf_generated": false,
+    "engine_operations": 0,
+    "artifacts": [
+      {
+        "path": "reports/nero-gripper-entity-partition.json",
+        "sha256": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+        "bytes": 36084611
+      },
+      {
+        "path": "reports/nero-gripper-entity-partition.csv",
+        "sha256": "ec9a11ca12e465e0d66de3d522b64b661d938956db2e6ef0ac46ad02862213fc",
+        "bytes": 1391893
+      },
+      {
+        "path": "reports/nero-gripper-entity-partition.png",
+        "sha256": "047eff453eb11e1626187754a8547677ef71b5c6f22981584325c8b3ce5266e7",
+        "bytes": 790250
+      },
+      {
+        "path": "reports/nero-gripper-entity-partition.html",
+        "sha256": "8e7d02344e8884bf1d6e2359ad9183ef6b12eaeaa5be83789bdac3246c2811c1",
+        "bytes": 1795905
+      }
+    ],
+    "evidence": [
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/partition.json",
+        "sha256": "5244060244d856a7def9a96fd805751482b21d52e3e20bb2e2f6de9aa9fd7a23",
+        "bytes": 271598
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/surface-mapping.json",
+        "sha256": "becdc0351e9e4cb44e530592b0622fb2f91f734d1ab06b54fb3c1eec80f3808d",
+        "bytes": 967402
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/verification.json",
+        "sha256": "c363e30d0883c17d761f46ca3ef49e2f30e146684d41880ed9769d0f6c917d6e",
+        "bytes": 76810
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/review-mount.json",
+        "sha256": "56fdab49d0343266f7301da6346c66633b5a7c1417b05bc7934ec28ff34a00b4",
+        "bytes": 213708
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/review-backing-final.json",
+        "sha256": "91e9aedb887ee1a16feccb64461e7ac539654da6a6602d773ee0587c6fe02fcd",
+        "bytes": 7557
+      },
+      {
+        "path": "debug/issue25/entity-partition/mount-root/mount-root-entities.json",
+        "sha256": "3c9b90a5564fab53db74c7dfd6e14941830f351e6de880562ae336f291310120",
+        "bytes": 4429479
+      },
+      {
+        "path": "debug/issue25/entity-partition/mount-root/mount-root-summary.json",
+        "sha256": "6d1e8fa2bc2edfd0783bd16706dce21b857c378f7eb40221654341e8337c252e",
+        "bytes": 4249
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/backing-entities.json",
+        "sha256": "48e2ac4f826c303ee0d75a1870b6a1155555b336bfe7a40a74ae978414d398da",
+        "bytes": 17525068
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/export-schema-check.json",
+        "sha256": "cbd310991a681ad4dc0f51d6c4ce31520cf0cd560dacc3b4d9ad550eb70d5b33",
+        "bytes": 326
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/rational-refinement-certificate.json",
+        "sha256": "9e0259763439dca2a46e24e73a7fe6a6ae1f8f000a58999e4f17dcd2828b3d49",
+        "bytes": 12936
+      },
+      {
+        "path": "debug/issue25/entity-partition/global-interfaces/interface-summary.json",
+        "sha256": "f6e7972605f3083a61a94a64da91708ef14c387d2838d2369cdee2ff88407d79",
+        "bytes": 11218
+      },
+      {
+        "path": "debug/issue25/entity-partition/global-interfaces/entity-source-boundary-partition.json",
+        "sha256": "437b0fe8b9a7e489d0f60126d1402fe559d2dbcbb185953235b308419b079d1a",
+        "bytes": 32351042
+      },
+      {
+        "path": "debug/issue25/entity-partition/global-interfaces/cross-part-entity-relations.json",
+        "sha256": "94c2c280437ddc756ee1159a1850542810a8a617ec39f0c0c7163f0ec9953449",
+        "bytes": 16998109
+      },
+      {
+        "path": "debug/issue25/entity-partition/conditioning.json",
+        "sha256": "9925a6df0c864f836e6862204618cff6d3fec490f176640f3d62acbeb5cefac4",
+        "bytes": 1183
+      },
+      {
+        "path": "debug/issue25/entity-partition/viewer-verification.json",
+        "sha256": "04f1ddb3d3f0549141e4cbd89c9b822d9cd9f1a39b5b083d1fe68d82840da618",
+        "bytes": 284
+      }
+    ],
+    "analysis_scripts": [
+      {
+        "path": "debug/issue25/entity-partition/assemble_partition.py",
+        "sha256": "f989f724ae619721c9d9841af815fab321352742776bb13b228556c41b28a691",
+        "bytes": 14968
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/check_intervals.py",
+        "sha256": "3ef8dcca1a77f68d3e189fda8bcde755945c812c7bef4e80ff4ade7765f4472e",
+        "bytes": 681
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/export_entities.py",
+        "sha256": "b703e46ce7a7e87d18c52ac2b6b66ee0104031c2b539b366f6352b6da5c455e2",
+        "bytes": 2238
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/finalize_partition.py",
+        "sha256": "b9e54fa772f52f7f1b07e3bd955785b54694c2c2d23df44b3f0f899f1b6365e3",
+        "bytes": 10207
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/geometry_cover.py",
+        "sha256": "11145555b0df8751c50d06a1bbe694b9d33f7e2d2a43499a9a2bb06cc6b06aad",
+        "bytes": 1428
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/height_intervals.py",
+        "sha256": "482318d0687c6e50f253b32c48e8d12e41503b60af15d30c01ceb98b7f05478c",
+        "bytes": 3972
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/merge_intervals.py",
+        "sha256": "dc678c077391b12419acaa2b9e21e62f8cd507ac42f46c4d658b391ae8d29a1c",
+        "bytes": 2385
+      },
+      {
+        "path": "debug/issue25/entity-partition/backing/rational_refine.py",
+        "sha256": "450c94ceff677499eb9340769259ef4799d2703eca864eef85c48bf82850f42e",
+        "bytes": 4150
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/partition_contact_layer.py",
+        "sha256": "cd7934473e5cfdf4a9db02db4b2c20c1b3e8ca8fb4066b2c44717e60b0e0a531",
+        "bytes": 16154
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/review_backing_exact_cells.py",
+        "sha256": "180af63d58c4b763a0dab63f9c090c92dbdf9e7b582a367d33a4ee6e050a86b7",
+        "bytes": 2599
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/review_backing_final.py",
+        "sha256": "0d67fb0d77a3d6a98976aac827d970f41711b04e1581374b58d111ceb0d1d7e5",
+        "bytes": 8248
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/review_mount.py",
+        "sha256": "efa37343e851acb68f289eebbb1b2aac908e6073d506920eba8e7e5690a9e092",
+        "bytes": 7685
+      },
+      {
+        "path": "debug/issue25/entity-partition/contact-layer/verify_contact_layer.py",
+        "sha256": "45b485f9afb29ec319fd889a8468cc0e6a137fcd3169975ca84a032754f6f509",
+        "bytes": 7623
+      },
+      {
+        "path": "debug/issue25/entity-partition/draw_partition.py",
+        "sha256": "1ba77d4edd50bd0a8192d2a60ba891d79e3ac24e8efc92b77bd09268a986761e",
+        "bytes": 8415
+      },
+      {
+        "path": "debug/issue25/entity-partition/global-interfaces/analyze_interfaces.py",
+        "sha256": "200447da3b3d2a417e957d69c4e7f9cdc8384e1a4bc5f00f66e26249db19c574",
+        "bytes": 21367
+      },
+      {
+        "path": "debug/issue25/entity-partition/mount-root/build_mount_root.py",
+        "sha256": "ab612337d96630ab48bdfeb6fbeb12c62a6164443a7c48f1d49144bbb1609b26",
+        "bytes": 7831
+      },
+      {
+        "path": "debug/issue25/entity-partition/mount-root/finalize_mount_root.py",
+        "sha256": "a4d577b57e1283cf8ec5892fa994b882dbac5cdb50643d7febf1612f711cc26c",
+        "bytes": 17237
+      }
+    ],
+    "rejected_intermediates": "Local BSP probe and intermediate floating overlays are not frozen designs, not active assets, and never ran in a physics engine. Only the accepted final source constraints/certificates/data are delivered.",
+    "numeric_limits": "Finite-precision residuals and sub-nanometre thin entities are disclosed in the authority JSON and report; no new physical acceptance threshold introduced."
+  },
+  "reference_audit_note": "Top-level workspace_head/verification describe the original reference audit. The current concrete partition baseline, outputs and verification evidence are under entity_partition_stage."
 }

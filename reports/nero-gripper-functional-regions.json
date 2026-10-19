@@ -4,18 +4,20 @@
   "title": "Recommended NERO Gripper Collision Architecture v1",
   "created_utc": "2026-10-19T08:32:21.838258+00:00",
   "branch_base": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
-  "status": "EXTERNAL_SHELL_CLOSED",
+  "status": "ENTITY_PARTITION_FROZEN",
   "concept_status": "ONE_RECOMMENDED_FUNCTIONAL_ARCHITECTURE",
   "scope": {
     "mujoco_imports": 0,
     "model_loads": 0,
     "mj_step": 0,
     "controller_runs": 0,
-    "candidates_generated": 0,
-    "physics_or_formal_model_changes": 0,
+    "formal_mjcf_generation": 0,
+    "active_collision_model_changes": 0,
+    "physics_or_control_parameter_changes": 0,
     "benchmarks": 0,
     "mujoco_collision_queries": 0,
-    "source_only_geometry_analysis": "Source triangle rays, contour/topology analysis and fixed reference primitive/hull intersections; no generated NERO candidate or runtime query"
+    "frozen_geometry_partition_versions": 1,
+    "analysis": "Source-derived concrete closed convex entity partition, finite-precision and exact geometry verification; geometry only, not runtime acceptance"
   },
   "frame": {
     "units": "m",
@@ -7108,105 +7110,147 @@
   },
   "recommended_components": [
     {
-      "name_template": "finger{1|2}_inner_main_contact_plate",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "inner_main_contact_plate",
       "source_region_names": [
         "broad_main_inner_plane"
       ],
-      "recommended_primitive_family": "Source-contour convex polyhedral plate assembly; not one box or whole-region convex hull",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Primary inward contact candidate; preserve full nonconvex 23-vertex footprint and genuine taper/root notches",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 14,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "inner_main_contact_plate"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_distal_tip_contact",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "distal_tip_contact",
       "source_region_names": [
         "short_inner_plane",
         "tip_front_edge"
       ],
-      "recommended_primitive_family": "Source-derived closed polyhedral cap; convex subdivision count UNKNOWN",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Precision tip grip, front-edge probing/insertion and table approach; do not add a separate overlapping capsule",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 18,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "distal_tip_contact"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_inner_ramp_contact",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "inner_ramp_contact",
       "source_region_names": [
         "inner_ramp"
       ],
-      "recommended_primitive_family": "Source-matched inclined convex wedge assembly",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Oblique/transition contact; preserve full source tapered contour, including its small nonconvex boundary",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 16,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "inner_ramp_contact"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_inner_transition_contact",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "inner_transition_contact",
       "source_region_names": [
         "inner_transition_1",
         "inner_transition_2"
       ],
-      "recommended_primitive_family": "Source-facet convex wedges with two named facet zones",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Shoulder contact between main face and ramp; not two new physical materials",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 7,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "inner_transition_contact"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_sidewall_negative_x",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "sidewall_negative_x",
       "source_region_names": [
         "backing_outer_left_sidewall"
       ],
-      "recommended_primitive_family": "Source-profiled convex sidewall/frame pieces",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Lateral pushing, wall contact and protection; exclude cap/plate side surfaces already owned by their solids",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 88,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "sidewall_negative_x"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_sidewall_positive_x",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "sidewall_positive_x",
       "source_region_names": [
         "backing_outer_right_sidewall"
       ],
-      "recommended_primitive_family": "Source-profiled convex sidewall/frame pieces",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Opposite lateral pushing, wall contact and protection; local +x is not a world-left label",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 109,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "sidewall_positive_x"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_outer_chassis",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "outer_chassis",
       "source_region_names": [
         "backing_y_through_bore_1",
@@ -7221,18 +7265,25 @@
         "backing_root_mount_caps",
         "back_outer_roof_and_transitions"
       ],
-      "recommended_primitive_family": "Recess-preserving convex frame pieces, never one enclosing hull over an open pocket",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Back/outer body and bore/pocket boundary protection; root caps are explicit responsibilities",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 743,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "outer_chassis"
+        }
+      }
     },
     {
-      "name_template": "finger{1|2}_mount_root",
+      "name_template": "finger{1|2}_{entity.name}",
       "component_family": "mount_root",
       "source_region_names": [
         "mount_inner_notched_plane",
@@ -7249,15 +7300,22 @@
         "mount_tipward_face",
         "mount_rootward_face"
       ],
-      "recommended_primitive_family": "Source-notched convex frame pieces with named physical lugs/bridge after solid audit",
+      "recommended_primitive_family": "Frozen source-derived convex_polyhedron partition; individual vertices/faces and semantic names in authoritative JSON",
       "physical_role": "Mount and environment protection; source notches/holes remain until assembled occupancy is established",
       "all_objects_physically_collidable": true,
       "executable_geom_count": null,
       "executable_geom_names": null,
-      "closed_solid_bounds_status": "NOT_GENERATED_THIS_ROUND",
+      "closed_solid_bounds_status": "DEFINED_IN_AUTHORITATIVE_ENTITY_PARTITION_JSON_NOT_MJCF_COMPILED",
       "geometry_rule": "All primitive outer faces must have physical source/assembly ownership; arbitrary back/side closure faces may not become new exposed workfaces",
-      "unknown": "Convex partition/count and internal closure are the next design decisions; no remaining relevant source-shell boundary blocker",
-      "source_external_boundary_sufficient": true
+      "unknown": "Engine compilation, numeric conditioning and runtime cost are not validated; no remaining entity count or source-boundary partition decision is deferred to simulation.",
+      "source_external_boundary_sufficient": true,
+      "collision_entity_count": 258,
+      "entity_list_source": {
+        "file": "nero-gripper-entity-partition.json",
+        "filter": {
+          "semantic_family": "mount_root"
+        }
+      }
     }
   ],
   "ownership_contract": [
@@ -7291,7 +7349,7 @@
     "adapter": "unchanged",
     "net_gap_calibrated": false
   },
-  "next_single_validation": "After review, freeze actual source-conforming collision entity partition and closure faces under v1 while retaining known openings, lips and external profiles; do not implement in this round",
+  "next_single_validation": "Independent ChatGPT review of the concrete entity partition, including 1253 entities per finger and sub-nanometre cells; only after review decide derived MJCF generation and static validation. No runtime or dynamics in this round.",
   "provenance": {
     "full_analysis_local": "debug/issue25/source-surfaces/source-surface-regions.json",
     "full_analysis_sha256": "8f62c7742ea016134bdec0e9cb485dc6fbdefb301ebfd5e525ac80ffc10e53a1",
@@ -13128,5 +13186,14 @@
       "candidates": 0
     },
     "next_single_step": "After review, freeze actual source-conforming collision entity partition and closure faces under v1 while retaining known openings, lips and external profiles; do not implement in this round"
+  },
+  "entity_partition": {
+    "status": "ENTITY_PARTITION_FROZEN",
+    "authoritative_file": "nero-gripper-entity-partition.json",
+    "sha256": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+    "entity_count_per_finger": 1253,
+    "total_finger_entities": 2506,
+    "counts_are_generated_from": "nero-gripper-entity-partition.json",
+    "engine_static_validation": "NOT_RUN_THIS_ROUND"
   }
 }
