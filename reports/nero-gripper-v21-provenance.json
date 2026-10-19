@@ -1,0 +1,313 @@
+{
+  "task": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6271873067",
+  "status": "V2_RUNTIME_ENTITY_PARTITION_BLOCKED",
+  "rules_commit": "30a028ce8868f602d077ab02630ed919e0e4fa21",
+  "rules_frozen_before_reacceptance": true,
+  "candidate_commit": "6eba4f34c5ff5029eb849804e3d2e9c535f58756",
+  "candidate_geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "candidate_entire_file_unchanged": true,
+  "old_evidence_unchanged": {
+    "reports/nero-gripper-v2-adjudication-preregistration.json": "8da86b225313d52a99f6bb500457231882471fa34198a1c8aa18d27f34a759a3",
+    "reports/nero-gripper-v2-adjudication-provenance.json": "6cb99f3218636f36e65cf1cde9943cc4dc6c43ba8f11e06bb10364777b5da3a0",
+    "reports/nero-gripper-v2-adjudication.csv": "09c3c40de9eeb2293f878cb77ba4ebd3e6f6a73adad41e1acaa5ba1d728daa24",
+    "reports/nero-gripper-v2-adjudication.json": "6fac2178dea992ed26768e18fee6a302bd06ff86f519f731210ca851e5d0d953",
+    "reports/nero-gripper-v2-adjudication.md": "a62f61352dcd2c5d3b32fc0c15c11a8b6ef146610a99802ad050707290a88247",
+    "reports/nero-gripper-v2-buried-classification.json": "18af3a076844e0c2d1a8ce4964602ee51674684f85c5d3c67d8c9ccec37a0027",
+    "reports/nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985",
+    "reports/nero-gripper-v2-fidelity-protocol.md": "3bc6fd52193a0f14eb96dcf33669cc3f777714c7f1986b07d9de8ea09f20580a",
+    "reports/nero-gripper-v2-material-voids.json": "8d34038a202ea91ee1d2c92f672d64264c3c6303c4dbdc088529ab3bdae8f53e",
+    "reports/nero-gripper-v2-runtime-comparison.png": "b124dd44ec3a0b691590066c29d1825bfa20d78678cf8b7d2afeeb9f79b35e0d",
+    "reports/nero-gripper-v2-runtime-counterexample.json": "b7a0cd6812f7244435f0d7a8aec602920cdc21be0aa6f90faedf4db761fb9b95",
+    "reports/nero-gripper-v2-runtime-mapping.json": "9a3d7b067e0f098a4be892ee1be2fce759773cd25948e4075c928d0cb8802535",
+    "reports/nero-gripper-v2-runtime-partition.csv": "03f538a0a7399d88668707145d8dd90dff3747722a5dd1aca903497070b7eed8",
+    "reports/nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+    "reports/nero-gripper-v2-runtime-partition.md": "b7d4ddd67fda3d685f7f871a913c067488c7f3ab2cbe147769c6920e58ee8a52",
+    "reports/nero-gripper-v2-runtime-provenance.json": "73ed6a2bed2b651bcf46a60fc14ed90b993d70aaee8d5ad1566684816ed0afa4",
+    "reports/nero-gripper-v2-runtime-verification.json": "766c059f5ac176bbae4e12bad5613527f97ed0cdc744a32ed705ea51b76f6a74",
+    "reports/nero-gripper-v2-thin-classification.csv": "3875301bd4fd194f7acd81266c8dd5caa4fdba506a3d3220f1e8720bf6cfe544",
+    "reports/nero-gripper-v2-thin-classification.json": "73ce4243e50f62a252cf557bb6f1d4306f85fde0a7fcff2d0c288fe68bcc3ddf",
+    "reports/nero-gripper-v2-union-exterior.npz": "63ad6cfe15730527ba113bbfaa4be8cb2cdc9b52c9355b6721878d52206660a1"
+  },
+  "frozen_mechanical_inputs_checked": [
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "785af8cc507bb3f33cfc82746b26f1eefcea6a1a967f070607cb7a39f8cdf20c",
+      "bytes": 8627
+    },
+    {
+      "path": "docs/robot-contract.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "b074cbe2e42754d1fa9e2c6dfde4d010743facf94405b84c79e2044923e9d7d2",
+      "bytes": 3457
+    },
+    {
+      "path": "experiments/dynamics/config.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+      "bytes": 1383
+    },
+    {
+      "path": "experiments/dynamics/controller.py",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
+      "bytes": 6402
+    },
+    {
+      "path": "experiments/dynamics/grasp.json",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
+      "bytes": 2885
+    },
+    {
+      "path": "meshes/collision/gripper_link1_000.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "19cdc936803ee92e3b8d304333eb1874afc5e1f0e7256b1f48bf570353a03736",
+      "bytes": 54776
+    },
+    {
+      "path": "meshes/collision/gripper_link1_001.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "bytes": 17203
+    },
+    {
+      "path": "meshes/collision/gripper_link2_000.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "7bfbaf6cd65c7147c0983078e7d06f42b76ccf83afe11ae7b59ef27272597916",
+      "bytes": 54774
+    },
+    {
+      "path": "meshes/collision/gripper_link2_001.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "55bda2cc5c882a69010d5d2bf27f75bb012d19b95dbb3c2c2f5c4450d64d0701",
+      "bytes": 17203
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/dae/gripper_link1.dae",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "b4aaf0e024d09eb0454e70e0c5092638edcf7da7c253d1effdeeaec46f76427b",
+      "bytes": 176476
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/dae/gripper_link2.dae",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "0da1350898b2787b76b84698253aeb1efd2ddb6360b2fa2ae03ecff389883af8",
+      "bytes": 176476
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/gripper_link1.stl",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+      "bytes": 104384
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/gripper_link2.stl",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+      "bytes": 104384
+    },
+    {
+      "path": "meshes/visual/gripper_link1.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "bytes": 228764
+    },
+    {
+      "path": "meshes/visual/gripper_link2.obj",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "d5620e7addff769e37f65befac2eff5fa0be426073cca44dc272aa9245a2366f",
+      "bytes": 228764
+    },
+    {
+      "path": "mjcf/nero_gripper.xml",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "e5585f29fef505f48b90bbf2c7b1b035ee7eac68147d60147399db5993263b4e",
+      "bytes": 29155
+    },
+    {
+      "path": "urdf/nero_gripper.urdf",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "b5b25090669b82265c24c7ea2eab7edef41feb719db1d62391d729619b67e8f8",
+      "bytes": 11624
+    },
+    {
+      "path": "urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+      "commit": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a",
+      "sha256": "f9593d1abed73b6d9566427cb0a2e70d24d907bfacc8407f9be980a7cf806af4",
+      "bytes": 4296
+    },
+    {
+      "path": "meshes/source/agx_gripper/meshes/gripper_base.stl",
+      "commit": "e7bdfe262e376cb7326229d1bcc82a233850c853",
+      "sha256": "0b839dc0bcb7d94e3422c74f6396b54a0441ba4836448ab5586e7f372d1bdbf3",
+      "bytes": 1837884
+    }
+  ],
+  "protected_worktrees_unchanged": {
+    "/data_robot/projects/nero_gripper_assets": {
+      "head": "7f01deedc434d1d09cf98a043fcd2c53894e835e\n",
+      "status": "?? closed.png\n?? preview.png\n"
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-collision-query": {
+      "head": "6727a86fb8ea0d6c325a8f7f13fc849a9afa90a7\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-contact-geometry": {
+      "head": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab": {
+      "head": "c0e23102d7d2231414b712966b9c246615d14f0a\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-elliptic-readonly": {
+      "head": "bbec36b0420088e937e00d1f7e589d853f95a8a0\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads": {
+      "head": "318a70f77621d41c970e17848ac1248e464c7163\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-full-grasp": {
+      "head": "1bd91cc4c3fc7723eab94881ceb7c4cc3e655316\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis": {
+      "head": "bf5dc44ab4e97650dfcb0ebdfc550047b87ec947\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-impratio-ab": {
+      "head": "a1d899c40626962bd62fc0d02d9ec779a3513cb6\n",
+      "status": ""
+    },
+    "/data_robot/projects/.worktrees/nero-gripper-panda-reference": {
+      "head": "d4a37dafb9a7b9cb3392a8937590dd091a5e4a7a\n",
+      "status": ""
+    },
+    "/data_robot/projects/nero_gripper_dynamics": {
+      "head": "ef15cd524d1d72ff13ad6564c7e681f6ec15f60c\n",
+      "status": ""
+    }
+  },
+  "environment": {
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "private_vendor": "debug/issue25/v2-runtime/vendor; Shapely2.1.2 / Manifold3D3.5.4"
+  },
+  "frozen_run_preregistration": {
+    "rules_commit": "30a028ce8868f602d077ab02630ed919e0e4fa21",
+    "rules_sha256": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+    "candidate_file_sha256": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+    "old_evidence_sha256": {
+      "reports/nero-gripper-v2-adjudication-preregistration.json": "8da86b225313d52a99f6bb500457231882471fa34198a1c8aa18d27f34a759a3",
+      "reports/nero-gripper-v2-adjudication-provenance.json": "6cb99f3218636f36e65cf1cde9943cc4dc6c43ba8f11e06bb10364777b5da3a0",
+      "reports/nero-gripper-v2-adjudication.csv": "09c3c40de9eeb2293f878cb77ba4ebd3e6f6a73adad41e1acaa5ba1d728daa24",
+      "reports/nero-gripper-v2-adjudication.json": "6fac2178dea992ed26768e18fee6a302bd06ff86f519f731210ca851e5d0d953",
+      "reports/nero-gripper-v2-adjudication.md": "a62f61352dcd2c5d3b32fc0c15c11a8b6ef146610a99802ad050707290a88247",
+      "reports/nero-gripper-v2-buried-classification.json": "18af3a076844e0c2d1a8ce4964602ee51674684f85c5d3c67d8c9ccec37a0027",
+      "reports/nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985",
+      "reports/nero-gripper-v2-fidelity-protocol.md": "3bc6fd52193a0f14eb96dcf33669cc3f777714c7f1986b07d9de8ea09f20580a",
+      "reports/nero-gripper-v2-material-voids.json": "8d34038a202ea91ee1d2c92f672d64264c3c6303c4dbdc088529ab3bdae8f53e",
+      "reports/nero-gripper-v2-runtime-comparison.png": "b124dd44ec3a0b691590066c29d1825bfa20d78678cf8b7d2afeeb9f79b35e0d",
+      "reports/nero-gripper-v2-runtime-counterexample.json": "b7a0cd6812f7244435f0d7a8aec602920cdc21be0aa6f90faedf4db761fb9b95",
+      "reports/nero-gripper-v2-runtime-mapping.json": "9a3d7b067e0f098a4be892ee1be2fce759773cd25948e4075c928d0cb8802535",
+      "reports/nero-gripper-v2-runtime-partition.csv": "03f538a0a7399d88668707145d8dd90dff3747722a5dd1aca903497070b7eed8",
+      "reports/nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+      "reports/nero-gripper-v2-runtime-partition.md": "b7d4ddd67fda3d685f7f871a913c067488c7f3ab2cbe147769c6920e58ee8a52",
+      "reports/nero-gripper-v2-runtime-provenance.json": "73ed6a2bed2b651bcf46a60fc14ed90b993d70aaee8d5ad1566684816ed0afa4",
+      "reports/nero-gripper-v2-runtime-verification.json": "766c059f5ac176bbae4e12bad5613527f97ed0cdc744a32ed705ea51b76f6a74",
+      "reports/nero-gripper-v2-thin-classification.csv": "3875301bd4fd194f7acd81266c8dd5caa4fdba506a3d3220f1e8720bf6cfe544",
+      "reports/nero-gripper-v2-thin-classification.json": "73ce4243e50f62a252cf557bb6f1d4306f85fde0a7fcff2d0c288fe68bcc3ddf",
+      "reports/nero-gripper-v2-union-exterior.npz": "63ad6cfe15730527ba113bbfaa4be8cb2cdc9b52c9355b6721878d52206660a1"
+    }
+  },
+  "primary_executed_source_sha256": "8370a8a4028ba10773a74f134ee53af47dde7e0c8018180bb488bc599a2c201f",
+  "primary_executed_source": "\"\"\"Reaccept the same frozen346 cells under separately committed v2.1 rules.\n\nReports genuine failures separately from incomplete verifier proofs. Derived\nsurface atlases/halfspaces are analysis artifacts, never a new candidate.\n\"\"\"\nfrom pathlib import Path\nimport collections\nimport copy\nimport hashlib\nimport inspect\nimport json\nimport math\nimport subprocess\nimport sys\nimport time\n\nimport numpy as np\nfrom scipy.optimize import nnls\nfrom scipy.spatial import ConvexHull\n\nfrom v21_boundary_atlas import ROOT,NUM,GRID,basis,polygon,pieces,area_shape,clip,support_cells,closure_pair_certificate\nfrom shapely.ops import unary_union\nfrom shapely import constrained_delaunay_triangles\nfrom analyze_runtime_partition import TriangleBVH,triangle_distance\nfrom verify_v2_runtime_partition import SurfaceCover,normal_cover,tier_meshes,normal\nfrom build_v2_runtime_partition import mesh_solid,union,insphere\nfrom runtime_contact_partition import load_source\nfrom runtime_backing_partition import segment_clearance\nimport manifold3d as mf\n\nTASK=ROOT/'debug/issue25/v21-reacceptance'\n\n\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\n\n\ndef save(p,obj):Path(p).write_text(json.dumps(obj,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\\n')\n\n\ndef policy():\n    revision=json.loads((ROOT/'reports/nero-gripper-v21-fidelity-protocol.json').read_text())\n    raw=subprocess.check_output(['git','show',revision['inherits']['commit']+':'+revision['inherits']['path']],cwd=ROOT)\n    assert hashlib.sha256(raw).hexdigest()==revision['inherits']['sha256']\n    p=json.loads(raw);old=copy.deepcopy(p)\n    matches=[f for f in p['protected_void_policy']['features'] if f['name']=='central_through_bore'];assert len(matches)==1\n    assert matches[0]['rule']==revision['protected_void_single_override']['old_rule']\n    matches[0]['rule']=revision['protected_void_single_override']['new_rule']\n    assert old['tiers']==p['tiers'] and old['minimum_runtime_entity_scale']==p['minimum_runtime_entity_scale']\n    return p,revision\n\n\ndef label_atlas(rt,old,p):\n    ref=old['reference_vertices_mm'][old['reference_faces']];source_ids=old['reference_source_face_ids']\n    targets={k:old['reference_'+k+'_triangles_mm'] for k in ['A','B','C']}\n    face_region={}\n    for name,r in p['source_region_policy'].items():\n        for a,b in r['source_triangle_ranges_zero_based_inclusive']:\n            for i in range(a,b+1):face_region[i]=name\n    dist,nearest=TriangleBVH(ref).query(rt.mean(1));ab=np.r_[targets['A'],targets['B']];_,abi=TriangleBVH(ab).query(rt.mean(1))\n    c_regions={}\n    for name,entry in p['source_region_policy'].items():\n        if entry['tier'] not in ['C','B_OR_C_BY_SOURCE_POSITION']:continue\n        ids=[i for i,f in enumerate(source_ids) if face_region[int(f)]==name]\n        if ids:\n            cc=tier_meshes(ref[ids],source_ids[ids],p).get('C',np.empty((0,3,3)))\n            if len(cc):c_regions[name]=(cc,TriangleBVH(cc),normal(cc))\n    groups=collections.defaultdict(list);cache={};unresolved=[];proven=[]\n    norms={k:normal(v) for k,v in targets.items()}\n    for i,(t,j) in enumerate(zip(rt,nearest)):\n        region=face_region[int(source_ids[j])];entry=p['source_region_policy'][region];tier=entry['tier'];parts=[]\n        if tier=='B_OR_C_BY_SOURCE_POSITION':\n            threshold=entry['predicate']['mouth_y_mm']-.1\n            for lab,plane in [('B',np.array([0.,-1,0,threshold])),('C',np.array([0.,1,0,-threshold]))]:\n                q=clip(t,plane)\n                parts.extend((lab,q[[0,k,k+1]]) for k in range(1,len(q)-1))\n        else:parts=[(tier,t)]\n        for lab,piece in parts:\n            if np.linalg.norm(np.cross(piece[1]-piece[0],piece[2]-piece[0]))<=GRID**2:continue\n            n=normal(piece[None])[0];d=-n@piece[0]\n            if lab=='C':\n                cc,tree,cn=c_regions[region];dd,_=tree.query(np.r_[piece,piece.mean(0)[None]])\n                near_c=np.flatnonzero(np.all(cc.max(1)>=piece.min(0)-.05,axis=1)&np.all(cc.min(1)<=piece.max(0)+.05,axis=1))\n                residual=nnls(cn[near_c].T,n)[1] if len(near_c) else 1.\n                if dd.max()>.05+NUM or residual>NUM:\n                    lab='A' if abi[i]<len(targets['A']) else 'B'\n                    unresolved.append({'atlas_triangle':i,'source_C_region':region,'sample_distance_to_C_mm':float(dd.max()),'source_cone_residual':float(residual),'conservative_tier':lab})\n                else:proven.append({'atlas_triangle':i,'source_C_region':region,'sample_distance_to_C_mm':float(dd.max()),'source_cone_residual':float(residual)})\n            key=tuple(np.round(np.r_[n,d],11))\n            if key not in cache:\n                u,w=basis(n);shapes={}\n                for label,tri in targets.items():\n                    cop=np.flatnonzero((norms[label]@n>1-1e-7)&(np.max(abs(tri@n+d),axis=1)<=NUM))\n                    shapes[label]=area_shape(unary_union([polygon(q,u,w)for q in tri[cop]]))\n                cache[key]=(u,w,n,d,shapes)\n            u,w,nn,dd,shapes=cache[key];remaining=polygon(piece,u,w)\n            for label in ['A','B','C']:\n                hit=area_shape(remaining.intersection(shapes[label],grid_size=GRID))\n                for pg in pieces(hit):\n                    for tr in constrained_delaunay_triangles(pg).geoms:\n                        xy=np.array(tr.exterior.coords)[:3];q=xy[:,0,None]*u+xy[:,1,None]*w-dd*nn\n                        if np.cross(q[1]-q[0],q[2]-q[0])@nn<0:q=q[[0,2,1]]\n                        groups[label].append(q)\n                remaining=area_shape(remaining.difference(shapes[label],grid_size=GRID))\n            for pg in pieces(remaining):\n                for tr in constrained_delaunay_triangles(pg).geoms:\n                    xy=np.array(tr.exterior.coords)[:3];q=xy[:,0,None]*u+xy[:,1,None]*w-dd*nn\n                    if np.cross(q[1]-q[0],q[2]-q[0])@nn<0:q=q[[0,2,1]]\n                    groups[lab].append(q)\n    return targets,{k:np.array(q)for k,q in groups.items()},{'sufficient_C_provenance_records':proven,'C_provenance_unresolved_or_new_AB_caps':unresolved}\n\n\ndef surface(source,target,limit,gap,label):\n    key=hashlib.sha256(source.tobytes()+target.tobytes()+inspect.getsource(SurfaceCover).encode()+str((limit,gap)).encode()).hexdigest()\n    path=TASK/('surface-'+label+'-'+key[:16]+'.json')\n    if path.exists():return json.loads(path.read_text())\n    print('Continuous surface',label,len(source),len(target),flush=True)\n    result=SurfaceCover(target).certify(source,limit,gap)\n    save(path,result);return result\n\n\ndef contour_edges(tri):\n    \"\"\"Cancel oriented collinear overlapping edges, including T-junctions.\n    Rounded keys only locate candidates; each line's perpendicular residual\n    is explicitly bounded. Coordinates of candidate geometry never change.\n    \"\"\"\n    groups={};unknown=[]\n    for t in tri:\n        for a,b in zip(t,np.roll(t,-1,axis=0)):\n            delta=b-a;length=np.linalg.norm(delta)\n            if length<=NUM/32:continue\n            direction=delta/length;k=int(np.argmax(abs(direction)))\n            if direction[k]<0:direction=-direction\n            anchor=a-direction*(a@direction)\n            key=tuple(np.round(np.r_[direction,anchor],10))\n            if key not in groups:groups[key]={'direction':direction,'anchor':anchor,'edges':[]}\n            g=groups[key]\n            residual=max(np.linalg.norm((p-g['anchor'])-g['direction']*((p-g['anchor'])@g['direction']))for p in [a,b])\n            if residual>NUM/8:\n                unknown.append({'line_key':key,'residual_mm':float(residual)})\n            x,y=float(a@g['direction']),float(b@g['direction']);g['edges'].append((min(x,y),max(x,y),1 if y>x else -1))\n    edges=[]\n    for g in groups.values():\n        events=collections.defaultdict(int)\n        for a,b,s in g['edges']:\n            # Analysis endpoint equivalence reserve, not a geometry edit.\n            events[round(a/(NUM/32))]+=s;events[round(b/(NUM/32))]-=s\n        xs=sorted(events);balance=0\n        for i,x in enumerate(xs[:-1]):\n            balance+=events[x]\n            if balance:\n                edges.append([g['anchor']+g['direction']*(x*NUM/32),g['anchor']+g['direction']*(xs[i+1]*NUM/32)])\n    return np.array(edges),unknown\n\n\ndef point_segments(points,segments):\n    result=[];indices=[]\n    a=segments[:,0];v=segments[:,1]-a;den=np.sum(v*v,axis=1)\n    for p in points:\n        q=p-a;r=np.clip(np.sum(q*v,axis=1)/den,0,1);dd=np.sum((q-r[:,None]*v)**2,axis=1);j=int(dd.argmin());result.append(np.sqrt(dd[j]));indices.append(j)\n    return np.array(result),np.array(indices)\n\n\ndef contour_cover(source,target,limit,gap):\n    if not len(source)or not len(target):return {'status':'UNKNOWN','reason':'No complete contour domain'}\n    pending=list(source);lower=0.;upper=0.;nodes=0;incomplete=False;worst=None\n    while pending:\n        s=pending.pop();points=np.r_[s,s.mean(0)[None]];d,ids=point_segments(points,target);lo=float(d.max());nodes+=1\n        if lo>lower:lower=lo;worst=points[int(d.argmax())].tolist()\n        candidates=target[np.unique(ids)];ends=[]\n        for q in candidates:\n            dd,_=point_segments(s,q[None]);ends.append(dd.max())\n        ub=float(min(ends))+NUM/2\n        if lo>limit+NUM:upper=max(upper,ub)\n        elif ub<=limit and ub<=lower+gap:upper=max(upper,ub)\n        elif nodes>=80000:incomplete=True;break\n        else:\n            mid=s.mean(0);pending.extend([np.array([s[0],mid]),np.array([mid,s[1]])])\n    return {'status':'FAIL'if lower>limit+NUM else 'UNKNOWN'if incomplete else 'PASS','observed_maximum_mm':lower,'conservative_upper_mm':None if incomplete else upper,'cover_gap_mm':gap,'evaluated_segments':nodes,'worst_sample_mm':worst,'method':'Endpoint/midpoint lower bound; fixed-target-segment convexity continuous upper; adaptive bisection.'}\n\n\ndef material_voids(cells,p):\n    \"\"\"Recompute material and named void checks; never write old reports.\"\"\"\n    source=load_source();st=np.array(source['vertices_m'])[np.array([t['vertex_ids']for t in source['triangles']])]*1000\n    parts=[]\n    for a,b in [(0,504),(504,660),(660,2086)]:\n        flat=st[a:b].reshape(-1,3);_,ix,inv=np.unique(np.round(flat,12),axis=0,return_index=True,return_inverse=True)\n        part=mf.Manifold(mf.Mesh64(np.ascontiguousarray(flat[ix]),np.ascontiguousarray(inv.reshape(-1,3),dtype=np.uint64)));assert part.status()==mf.Error.NoError;parts.append(part)\n    source_body=union(parts);runtime_body=union([mesh_solid(np.array(e['vertices_m'])*1000,e['faces'])for e in cells])\n    delta=.04999;half=delta/np.sqrt(3);cube=mf.Manifold.cube((2*half,)*3,center=True)\n    out=runtime_body-source_body.minkowski_sum(cube);inside=source_body-runtime_body.minkowski_sum(cube)\n    small=NUM/2;small_half=small/np.sqrt(3)\n    numerical_loss=source_body-runtime_body.minkowski_sum(mf.Manifold.cube((2*small_half,)*3,center=True))\n    material={'status':'PASS'if out.status()==inside.status()==mf.Error.NoError and out.is_empty() and inside.is_empty() else 'UNKNOWN',\n              'outward_upper_mm':delta,'inward_upper_mm':delta,'source_minus_runtime_numerical_offset_empty':numerical_loss.is_empty(),'source_minus_runtime_numerical_offset_status':str(numerical_loss.status()),'effective_material_loss_radius_upper_mm':small if numerical_loss.is_empty() else None,\n              'outward_boolean_difference_empty':out.is_empty(),'inward_boolean_difference_empty':inside.is_empty(),'budget_mm':.05,\n              'C_domains':'Unchanged fixed source domains. Material distances alone do not certify C provenance or authorize new C caps.'}\n    bodies,support_checks=support_cells(cells)\n    gs={i:{'poly':{'v':b['vertices'],'eq':b['equations'],'lo':b['lo'],'hi':b['hi']}}for i,b in enumerate(bodies)}\n    evidence=json.loads((ROOT/'reports/nero-gripper-runtime-evidence.json').read_text())['constructors']\n    segments=[]\n    for f in evidence['backing']['verification.json']['protected_void_witnesses']:\n        for q in f['probes']:\n            segments.append({'feature':f['feature'],'a_mm':q['a_mm'],'b_mm':q['b_mm'],'runtime':segment_clearance(q['a_mm'],q['b_mm'],gs)})\n    mount=evidence['mount']['feature-witnesses.json'];points=[]\n    for q in mount['witnesses']:\n        point=np.array(q['point_m'])*1000\n        occupants=[b['id']for b in bodies if np.max(b['equations'][:,:3]@point+b['equations'][:,3])<=NUM/32]\n        expected=q['expected']=='solid'\n        points.append({'feature':q['feature'],'point_mm':point.tolist(),'expected':q['expected'],'occupants':occupants,'expected_occupancy_matches':bool(occupants)==expected})\n    from verify_v2_material_voids import axis_intervals\n    floors=[]\n    for q in mount['blind_recess_axis_floors']:\n        x,z=q['axis_xz_mm'];intervals=axis_intervals(x,z,gs)\n        choices=[b for a,b,i in intervals if -73.5<b<-70.1]\n        runtime=max(choices)if choices else None\n        source_floor=q.get('source_floor_y_m',q.get('floor_y_m',0))\n        # The frozen witness stores the authoritative floor in millimetres.\n        original=json.loads((ROOT/'reports/nero-gripper-v2-material-voids.json').read_text())['protected_voids']['blind_recess_floors']\n        old=next(f['source_floor_y_mm']for f in original if f['axis_xz_mm']==q['axis_xz_mm'])\n        floors.append({'axis_xz_mm':q['axis_xz_mm'],'source_floor_y_mm':old,'runtime_floor_y_mm':runtime,'deviation_mm':None if runtime is None else runtime-old,'status':'PASS'if runtime is not None and abs(runtime-old)<=.05 else'UNKNOWN'})\n    from adjudicate_v2_partition import source_line_intervals\n    central=[]\n    for x,z in [(0.,12.25),(.8,12.25),(-.8,12.25),(0.,13.05),(0.,11.45)]:\n        mount_int,_,mount_amb,mw=source_line_intervals(st[:504]/1000,x/1000,z/1000)\n        backing_int,_,backing_amb,bw=source_line_intervals(st[660:]/1000,x/1000,z/1000)\n        runtime=axis_intervals(x,z,gs)\n        cuts=[(max(a,-72.9999),min(b,-69.9999),i)for a,b,i in runtime if max(a,-72.9999)<min(b,-69.9999)]\n        source_entry=float(min(a for a,b in backing_int)*1000)if backing_int else None\n        runtime_entry=min((a for a,b,i in cuts),default=None)\n        central.append({'axis_xz_mm':[x,z],'source_mount_clear':not mount_int and not mount_amb and mw==0,'source_backing_intervals_y_mm':[[float(a*1000),float(b*1000)]for a,b in backing_int],\n                        'runtime_path_solid_intervals_y_mm':[[a,b,cells[i]['id']]for a,b,i in cuts],'entry_error_mm':None if runtime_entry is None or source_entry is None else runtime_entry-source_entry,\n                        'status':'PASS'if not mount_int and not mount_amb and not backing_amb and runtime_entry is not None and source_entry is not None and abs(runtime_entry-source_entry)<=.05 else 'UNKNOWN'})\n    channel=[]\n    for ids in [[1514,1515],[2082,2083]]:\n        wall=st[ids];x=float(wall[:,:,0].mean());side=1 if x>0 else-1\n        mount_ids=[19,20,21]if side>0 else[9,10,11];mx=float(st[mount_ids,:,0].mean());width=abs(x-mx)\n        lower=width-2*(delta+NUM)\n        channel.append({'backing_wall_source_ids':ids,'backing_wall_x_mm':x,'mount_wall_x_mm':mx,'source_width_mm':width,'continuous_runtime_width_lower_mm':lower,'required_source_minus_point1_mm':width-.1,'status':'PASS'if material['status']=='PASS'and lower>=width-.1 and lower>0 else'UNKNOWN',\n                        'proof':'Every source void core eroded50um is continuously excluded by the global material cover. Both frozen source channels have positive connected eroded cores; no claim from entity size.'})\n    names={q['name']:{}for q in p['protected_void_policy']['features']}\n    for name in names:\n        names[name]={'status':'UNKNOWN','reason':'Full opening/contour/loop association still requires the boundary certificate and B contour check.'}\n    names['side_channels']={'status':'PASS'if all(q['status']=='PASS'for q in channel)else'UNKNOWN','continuous_width_checks':channel}\n    names['central_through_bore']={'status':'PASS'if all(q['status']=='PASS'for q in central)else'UNKNOWN','rule':next(q['rule']for q in p['protected_void_policy']['features']if q['name']=='central_through_bore'),'paths':central}\n    names['four_mount_recesses'].update(axis_floor_status='PASS'if all(f['status']=='PASS'for f in floors)else'UNKNOWN',axis_floors=floors)\n    return {'material':material,'named_protected_voids':names,'all_continuous_backing_segments':segments,'all_mount_points':points,'all_segment_checks_pass':all(q['runtime']['clear']for q in segments),\n            'all_point_checks_pass':all(q['expected_occupancy_matches']for q in points),'continuous_eroded_source_void_core_preserved':material['status']=='PASS','full_connectivity_status':'UNKNOWN_PENDING_BOUNDARY_CONTOUR_ASSOCIATION'}\n\n\ndef recheck_suspects_history(cells,rt):\n    from adjudicate_v2_partition import Union,legacy_missing_locators\n    old=json.loads((ROOT/'reports/nero-gripper-v2-adjudication.json').read_text());cert=json.loads((ROOT/'reports/nero-gripper-v2-runtime-verification.json').read_text())['union_exterior_certificate']\n    z=np.load(ROOT/'reports/nero-gripper-v2-union-exterior.npz');oldtri=z['vertices_mm'][z['faces']]/1000\n    lookup={e['id']:e for e in cells};bodies,_=support_cells(cells)\n    oracle=Union([{'id':b['id'],'halfspaces_m':(b['equations']*[1,1,1,.001]).tolist()}for b in bodies],NUM/64)\n    trees=[TriangleBVH(np.array(e['vertices_m'])[e['faces']]*1000)for e in cells];atlas_tree=TriangleBVH(rt)\n    locators=legacy_missing_locators(cells,oldtri,cert['failures']+cert['occluded_output_triangles'])\n    records=[]\n    for group,fs in [('certificate',old['certificate_failures']),('occlusion',old['occlusion_records'])]:\n        for i,f in enumerate(fs):\n            if 'entity'in f:\n                e=lookup[f['entity']];t=np.array(e['vertices_m'])[e['faces'][f['face']]]*1000;loc=locators[(f['entity'],f['face'])];polys=loc['patch_vertices']\n            else:\n                t=oldtri[f['triangle']]*1000\n                loc=locators.get((f['triangle'],f.get('covering_entity')));polys=loc['patch_vertices']if loc else[t/1000]\n            support=[]\n            for poly in polys:\n                xyz=np.array(poly);inside=oracle.strict_cover(xyz)\n                support.append({'strict_interior':inside,'equivalent_closure':None if inside else closure_pair_certificate(xyz*1000,bodies,trees)})\n            point_records=[]\n            points=np.array([q['point_mm']for q in f['probes']]);distances,_=atlas_tree.query(points)if len(points)else(np.empty(0),None)\n            n=np.array(f['normal'])\n            for q,d in zip(points,distances):\n                shifted=[q+s*eps*n for eps in [1e-6,1e-5,1e-4]for s in[-1,1]];states=oracle.membership(np.array(shifted)/1000);pairs=[(a['state'],b['state'])for a,b in zip(states[::2],states[1::2])]\n                if len(set(pairs))==1 and pairs[0]in[('SOLID','VOID'),('VOID','SOLID')]and d<=NUM:label='EFFECTIVE_BOUNDARY_AT_FIXED_PROBES'\n                elif all(a==b=='SOLID'for a,b in pairs):label='INTERNAL_AT_FIXED_PROBES'\n                else:label='UNRESOLVED'\n                point_records.append({'point_mm':q.tolist(),'effective_atlas_distance_mm':float(d),'classification':label,'normal_side_memberships':pairs})\n            if support and all(q['strict_interior']for q in support):status='CONTINUOUS_INTERNAL_PATCH'\n            elif support and all(q['strict_interior']or q['equivalent_closure']for q in support):status='REPRESENTATION_EQUIVALENT_WITHIN_SUPPORT'\n            elif point_records and len({q['classification']for q in point_records})==1:status=point_records[0]['classification']\n            else:status='UNRESOLVED'\n            records.append({'group':group,'old_record_index':i,'old_check':f.get('check','occlusion'),'triangle':f.get('triangle'),'entity':f.get('entity'),'face':f.get('face'),'old_classification':f['classification'],'new_status':status,'patch_proofs':support,'fixed_probe_records':point_records})\n    t=oldtri[2940]*1000;proof=closure_pair_certificate(t,bodies,trees)\n    special={'triangle':2940,'status':'REPRESENTATION_EQUIVALENT_WITHIN_SUPPORT'if proof else'UNRESOLVED','continuous_closure_proof':proof,'old_literal_gap_mm':old['exact_local_line_at_counterexample']['positive_exact_gaps'][0]['width_mm']}\n    from classify_v2_fidelity import WEIGHTS\n    reference=json.loads((ROOT/'reports/nero-gripper-entity-partition.json').read_text());tri=[]\n    for e in reference['entities']:\n        for sp in e['source_surface_partition']:\n            for poly in sp['exterior_subpolygons']:\n                q=np.array(poly['polygon_m'])*1000\n                tri.extend(q[[0,j,j+1]]for j in range(1,len(q)-1))\n    points=np.einsum('wv,tvc->twc',WEIGHTS,np.array(tri)).reshape(-1,3)\n    historical=json.loads((ROOT/'reports/nero-gripper-v2-runtime-verification.json').read_text())['historical_168_A_samples']\n    ids=[q['old_sample_index']for q in historical];dd,_=atlas_tree.query(points[ids]);history=[{'old_sample_index':i,'point_mm':p.tolist(),'distance_mm':float(d),'within_10um':bool(d<=.01)}for i,p,d in zip(ids,points[ids],dd)]\n    old14=[r for r in records if r['group']=='certificate'and r['old_classification']=='NUMERICALLY_UNRESOLVED'];assert len(old14)==14\n    result={'records':records,'counts_by_group':{g:dict(collections.Counter(r['new_status']for r in records if r['group']==g))for g in['certificate','occlusion']},'old14_rechecks':old14,'old14_remaining_unresolved':sum(r['new_status']=='UNRESOLVED'for r in old14),'triangle2940':special,'historical_168':history,'historical_168_maximum_mm':float(dd.max()),'historical_168_all_pass':bool(np.all(dd<=.01)),\n            'scope':'Continuous patch certificates are distinguished from fixed-probe classifications; no global exterior certificate is inferred from these samples.'}\n    save(ROOT/'reports/nero-gripper-v21-rechecks.json',result);return result\n\n\ndef validate_reported_geometry_witnesses(result,cells,rt):\n    from adjudicate_v2_partition import Union\n    bodies,_=support_cells(cells);oracle=Union([{'id':b['id'],'halfspaces_m':(b['equations']*[1,1,1,.001]).tolist()}for b in bodies],NUM/64)\n    source=load_source();st=np.array(source['vertices_m'])[np.array([t['vertex_ids']for t in source['triangles']])]*1000;tree=TriangleBVH(st);runtime_tree=TriangleBVH(rt);checks=[]\n    for tier,metrics in result['metrics'].items():\n        metric=metrics['runtime_to_source_surface']\n        if metric.get('status')!='FAIL' or metric.get('worst_sample_mm')is None:continue\n        point=np.array(metric['worst_sample_mm']);dist,sourceid=tree.query(point[None]);_,ri=runtime_tree.query(point[None]);t=rt[ri[0]];n=normal(t[None])[0]\n        # Select a stable support normal on the unchanged vertex hull, rather\n        # than trusting a near-collinear triangulation's cross product.\n        normals=[]\n        for b in bodies:\n            if np.any(point<b['lo']-NUM)or np.any(point>b['hi']+NUM):continue\n            eq=b['equations'];active=np.flatnonzero(abs(eq[:,:3]@point+eq[:,3])<=NUM)\n            normals.extend(eq[active,:3])\n        if normals:n=max(normals,key=lambda q:q@n)\n        states=oracle.membership(np.array([point+s*eps*n for eps in[1e-6,1e-5,1e-4]for s in[-1,1]])/1000);pairs=[(a['state'],b['state'])for a,b in zip(states[::2],states[1::2])]\n        true_boundary=len(set(pairs))==1 and pairs[0]in[('SOLID','VOID'),('VOID','SOLID')]\n        checks.append({'metric_tier':tier,'point_mm':point.tolist(),'distance_to_all_original_source_mm':float(dist[0]),'nearest_source_face':int(sourceid[0]),'normal_memberships':pairs,'effective_boundary_confirmed_at_fixed_scales':true_boundary,\n                       'real_AB_budget_failure_confirmed':bool(true_boundary and dist[0]>.05+NUM),\n                       'scope':'Sufficient actual-boundary counterexample when distance to ALL source surfaces exceeds the largest A/B budget. Negative result does not certify all untested regions.'})\n    return checks\n\n\ndef main():\n    started=time.time();p,revision=policy();freeze=json.loads((TASK/'freeze-before-reacceptance.json').read_text());assert sha(ROOT/'reports/nero-gripper-v21-fidelity-protocol.json')==freeze['rules_sha256']\n    data=json.loads((ROOT/'reports/nero-gripper-v2-runtime-partition.json').read_text());cells=data['entities'];assert sha(ROOT/'reports/nero-gripper-v2-runtime-partition.json')==freeze['candidate_file_sha256']\n    geo=hashlib.sha256(json.dumps([[e['id'],e['vertices_m'],e['faces']]for e in cells],separators=(',',':')).encode()).hexdigest();assert geo==revision['candidate_geometry_sha256']\n    rt=np.load(ROOT/'reports/nero-gripper-v21-effective-exterior.npz')['triangles_mm'];atlas=json.loads((ROOT/'reports/nero-gripper-v21-boundary-atlas.json').read_text());old=np.load(ROOT/'reports/nero-gripper-v2-union-exterior.npz')\n    target_path=TASK/'tier-targets.npz';target_key=sha(ROOT/'reports/nero-gripper-v21-effective-exterior.npz')+hashlib.sha256(inspect.getsource(label_atlas).encode()).hexdigest()\n    cache=TASK/'tier-key.txt'\n    if target_path.exists() and cache.exists() and cache.read_text()==target_key:\n        z=np.load(target_path);ref={k:z['reference_'+k]for k in ['A','B','C']};runtime={k:z['runtime_'+k]for k in ['A','B','C']};provenance=json.loads((TASK/'tier-provenance.json').read_text())\n    else:\n        ref,runtime,provenance=label_atlas(rt,old,p)\n        np.savez_compressed(target_path,**{'reference_'+k:v for k,v in ref.items()},**{'runtime_'+k:v for k,v in runtime.items()});save(TASK/'tier-provenance.json',provenance);cache.write_text(target_key)\n    result={'status':'V2_RUNTIME_ENTITY_PARTITION_BLOCKED','candidate_geometry_sha256':geo,'rules_commit':freeze['rules_commit'],'rules_sha256':freeze['rules_sha256'],'atlas_status':atlas['status'],'metrics':{},'C_surface_provenance':provenance,'stages_pending':['material','voids','suspects','history'],'scope':{'vertices_faces_changed':False,'candidate_count':1,'mujoco_imported':any(k.startswith('mujoco')for k in sys.modules)}}\n    material_cache=TASK/'material-voids.json';mh=hashlib.sha256(inspect.getsource(material_voids).encode()).hexdigest()\n    if material_cache.exists()and json.loads(material_cache.read_text()).get('function_sha256')==mh:mv=json.loads(material_cache.read_text())\n    else:mv=material_voids(cells,p);mv['function_sha256']=mh;save(material_cache,mv)\n    result['material_and_voids']=mv\n    recheck_key=sha(ROOT/'reports/nero-gripper-v21-effective-exterior.npz')+hashlib.sha256(inspect.getsource(recheck_suspects_history).encode()).hexdigest()\n    recheck_path=TASK/'recheck-key.txt';rechecks=ROOT/'reports/nero-gripper-v21-rechecks.json'\n    if rechecks.exists()and recheck_path.exists()and recheck_path.read_text()==recheck_key:result['historical_and_suspect_checks']=json.loads(rechecks.read_text())\n    else:result['historical_and_suspect_checks']=recheck_suspects_history(cells,rt);recheck_path.write_text(recheck_key)\n    result['stages_pending']=[]\n    save(ROOT/'reports/nero-gripper-v21-reacceptance.json',result)\n    for tier in ['A','B']:\n        limit=p['tiers'][tier]['outward_surface_mm'];gap=p['tiers'][tier]['symmetric_surface_certificate_gap_mm']\n        metrics={'source_to_runtime_surface':surface(ref[tier],runtime[tier],limit,gap,tier+'-reverse'),'runtime_to_source_surface':surface(runtime[tier],ref[tier],limit,gap,tier+'-forward')}\n        se,su=contour_edges(ref[tier]);te,tu=contour_edges(runtime[tier]);print('Contour',tier,len(se),len(te),flush=True)\n        metrics['source_to_runtime_contour']=contour_cover(se,te,limit,gap);metrics['runtime_to_source_contour']=contour_cover(te,se,limit,gap)\n        metrics['contour_line_representation_unresolved']=su+tu\n        if tier=='A':\n            metrics['source_to_runtime_normal']=normal_cover(ref[tier],runtime[tier]);metrics['runtime_to_source_normal']=normal_cover(runtime[tier],ref[tier])\n        result['metrics'][tier]=metrics;save(ROOT/'reports/nero-gripper-v21-reacceptance.json',result)\n    scale=[]\n    for e in cells:\n        h=ConvexHull(np.array(e['vertices_m'])*1000);diameter,center=insphere(h.equations);scale.append({'entity':e['id'],'diameter_mm':diameter,'status':'PASS'if diameter>=.1 else'FAIL'})\n    result['minimum_entity_scale']={'status':'PASS'if all(x['status']=='PASS'for x in scale)else'FAIL','minimum_diameter_mm':min(x['diameter_mm']for x in scale),'entities':scale}\n    result['validated_geometry_counterexample_checks']=validate_reported_geometry_witnesses(result,cells,rt)\n    blockers=[]\n    for witness in result['validated_geometry_counterexample_checks']:\n        if witness['real_AB_budget_failure_confirmed']:blockers.append({'kind':'REAL_AB_SURFACE_BUDGET_FAILURE','witness':witness})\n    if atlas['status']!='PASS_MODULO_FROZEN_SUPPORT':blockers.append({'kind':'CERTIFIER_UNRESOLVED','item':'union exterior','details':atlas['unresolved']})\n    if provenance['C_provenance_unresolved_or_new_AB_caps']:blockers.append({'kind':'CERTIFIER_UNRESOLVED','item':'C-domain/new-cap responsibility','count':len(provenance['C_provenance_unresolved_or_new_AB_caps'])})\n    for tier,metrics in result['metrics'].items():\n        for name,value in metrics.items():\n            if isinstance(value,dict)and value.get('status')!='PASS':blockers.append({'kind':'CERTIFIER_OR_TARGET_CORRESPONDENCE_UNRESOLVED','item':tier+'/'+name,'conditional_metric_status':value.get('status')})\n        if metrics['contour_line_representation_unresolved']:blockers.append({'kind':'CERTIFIER_UNRESOLVED','item':tier+'/contour line representation','count':len(metrics['contour_line_representation_unresolved'])})\n    for name,value in mv['named_protected_voids'].items():\n        if value['status']!='PASS':blockers.append({'kind':'PROTECTED_VOID_VERIFICATION_UNRESOLVED','item':name,'reason':value['reason']})\n    rr=result['historical_and_suspect_checks']\n    if rr['old14_remaining_unresolved']:blockers.append({'kind':'CERTIFIER_UNRESOLVED','item':'old14','count':rr['old14_remaining_unresolved']})\n    if rr['triangle2940']['status']=='UNRESOLVED':blockers.append({'kind':'CERTIFIER_UNRESOLVED','item':'triangle2940'})\n    if not rr['historical_168_all_pass']:blockers.append({'kind':'CERTIFIER_UNRESOLVED','item':'old168 on uncertified atlas'})\n    result['blockers']=blockers;result['status']='V2_RUNTIME_ENTITY_PARTITION_FROZEN'if not blockers and result['minimum_entity_scale']['status']=='PASS'else'V2_RUNTIME_ENTITY_PARTITION_BLOCKED'\n    result['interpretation']='Metrics are conditional on the derived exterior/target correspondence. An uncertified atlas cannot establish a real geometry failure solely from its distances. No budget was relaxed.'\n    result['elapsed_seconds']=time.time()-started;result['verifier_sha256']=sha(__file__);save(ROOT/'reports/nero-gripper-v21-reacceptance.json',result)\n    print(json.dumps({'metrics':{k:{n:d.get('status')for n,d in v.items()if isinstance(d,dict)}for k,v in result['metrics'].items()},'minimum_diameter_mm':result['minimum_entity_scale']['minimum_diameter_mm'],'seconds':result['elapsed_seconds']},indent=2),flush=True)\n\n\nif __name__=='__main__':main()\n",
+  "primary_function_AST_equal_to_final_script": [
+    "sha",
+    "save",
+    "policy",
+    "label_atlas",
+    "surface",
+    "contour_edges",
+    "point_segments",
+    "contour_cover",
+    "material_voids",
+    "recheck_suspects_history",
+    "validate_reported_geometry_witnesses",
+    "main"
+  ],
+  "primary_elapsed_seconds": 1810.23588681221,
+  "successful_command_exit_codes": {
+    "boundary_atlas_final": 0,
+    "primary_reacceptance": 0,
+    "normal_witnesses_final": 0,
+    "finalize_existing": 0,
+    "delivery_audit": 0
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/v21_boundary_atlas.py",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/verify_v21_partition.py",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/verify_v21_normal_witnesses.py",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/verify_v21_partition.py --finalize-existing"
+  ],
+  "reproducibility_bootstrap": "Restore frozen_run_preregistration to debug/issue25/v21-reacceptance/freeze-before-reacceptance.json; mkdir task directory first. For direct normal-proof replay copy reports/nero-gripper-v21-target-surfaces.npz to task/tier-targets.npz. Install exact private-vendor versions in that vendor directory or the Python environment. Existing earlier-stage source/audit evidence must be present; no simulator required. Reacceptance main can rebuild target arrays when its cache key is absent.",
+  "final_logs": {
+    "reacceptance.log": "Continuous surface A-reverse 436 3881\nSurface certificate nodes 20000 lower 0.008786632641727106 upper 0.009782992656768802\nContinuous surface A-forward 3881 436\nSurface certificate nodes 20000 lower 2.0000063573488474 upper 2.0074544442590443\nContour A 212 10305\nContinuous surface B-reverse 1700 7626\nSurface certificate nodes 20000 lower 0.04286949554102696 upper 0.04786930208583884\nSurface certificate nodes 40000 lower 0.04444632070778014 upper 0.049305264923258915\nSurface certificate nodes 60000 lower 0.04444632070778014 upper 0.0494263277084575\nSurface certificate nodes 80000 lower 0.04444632070778014 upper 0.049435532679336\nSurface certificate nodes 100000 lower 0.04444632070778014 upper 0.04944557378128599\nContinuous surface B-forward 7626 1700\nSurface certificate nodes 20000 lower 3.7633331732121325 upper 0.049925690003254496\nSurface certificate nodes 40000 lower 3.7633331732121325 upper 1.335358292831111\nSurface certificate nodes 60000 lower 3.7633331732121325 upper 1.335358292831111\nSurface certificate nodes 80000 lower 3.7633331732121325 upper 1.335358292831111\nSurface certificate nodes 100000 lower 3.7633331732121325 upper 1.335358292831111\nSurface certificate nodes 120000 lower 3.7633331732121325 upper 1.727779200926962\nSurface certificate nodes 140000 lower 3.7633331732121325 upper 14.223429460111051\nContour B 252 20051\n{\n  \"metrics\": {\n    \"A\": {\n      \"source_to_runtime_surface\": \"PASS\",\n      \"runtime_to_source_surface\": \"FAIL\",\n      \"source_to_runtime_contour\": \"FAIL\",\n      \"runtime_to_source_contour\": \"FAIL\",\n      \"source_to_runtime_normal\": \"FAIL\",\n      \"runtime_to_source_normal\": \"FAIL\"\n    },\n    \"B\": {\n      \"source_to_runtime_surface\": \"PASS\",\n      \"runtime_to_source_surface\": \"FAIL\",\n      \"source_to_runtime_contour\": \"FAIL\",\n      \"runtime_to_source_contour\": \"FAIL\"\n    }\n  },\n  \"minimum_diameter_mm\": 0.11161762021127648,\n  \"seconds\": 1810.23588681221\n}\n",
+    "normal-witnesses.log": "CERTIFIED source face 2006 reference 187 buried 3\nCERTIFIED source face 2001 reference 190 buried 3\nCERTIFIED source face 2002 reference 192 buried 3\nCERTIFIED source face 2003 reference 194 buried 3\nCERTIFIED source face 1894 reference 206 buried 3\nCERTIFIED source face 1987 reference 240 buried 3\nCERTIFIED source face 2041 reference 330 buried 3\nCERTIFIED source face 2046 reference 331 buried 3\nCERTIFIED source face 1715 reference 337 buried 3\nCERTIFIED source face 2045 reference 341 buried 3\nCERTIFIED source face 1714 reference 346 buried 3\nConfirmed 11 tested 227\n",
+    "finalize.log": "{\n  \"status\": \"V2_RUNTIME_ENTITY_PARTITION_BLOCKED\",\n  \"real_A_normal_witnesses\": 11,\n  \"global_normal_deviation_lower_bound_deg\": 1.3100057960572105,\n  \"historical_direct_pass\": 168,\n  \"historical_total\": 168\n}\n"
+  },
+  "checks": {
+    "old_evidence_count": 20,
+    "mechanical_input_count": 19,
+    "protected_worktree_count": 11,
+    "JSON_NPZ_CSV_parse": "PASS",
+    "primary_functions_unchanged_count": 12,
+    "normal_burial_certificates_recomputed": "PASS",
+    "minimum_recomputed_burial_margin_mm": 3.212075441094697e-05,
+    "minimum_entity_diameter_mm": 0.11161762021127648,
+    "independent_scale_count": 346,
+    "old_suspect_record_count": 355,
+    "old_unresolved_rechecked": 14,
+    "old_unresolved_remaining": 10,
+    "historical_direct_certificates": 168,
+    "no_MuJoCo_import_or_calls_in_new_scripts": "PASS"
+  },
+  "scope": {
+    "vertices_faces_changed": false,
+    "candidate_count": 1,
+    "mujoco_imported": false,
+    "analyzed_frozen_candidate_count": 1,
+    "new_candidate_count": 0,
+    "formal_MJCF_changes": 0,
+    "physics_integrations": 0
+  },
+  "result_interpretation": {
+    "real_geometry_failure_confirmed": true,
+    "real_protected_void_failure_confirmed": false,
+    "certifier_still_unresolved": true,
+    "reason": "Tier A normal correspondence fails independently. Exterior coverage, target responsibility and full protected-void/contour certification remain incomplete. Millimetre diagnostic distances are not certified physical defects."
+  },
+  "delivery_audit_source": "from pathlib import Path\nimport ast,csv,hashlib,json,platform,subprocess,sys\nimport numpy as np\nfrom scipy.spatial import ConvexHull\n\nROOT=Path.cwd();TASK=ROOT/'debug/issue25/v21-reacceptance'\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef git(*args,cwd=ROOT):return subprocess.check_output(['git',*args],cwd=cwd)\ndef read(p):return json.loads(Path(p).read_text())\nfreeze=read(TASK/'freeze-before-reacceptance.json')\ncandidate=ROOT/'reports/nero-gripper-v2-runtime-partition.json'\nassert candidate.read_bytes()==git('show','6eba4f3:reports/nero-gripper-v2-runtime-partition.json')\ncells=read(candidate)['entities'];assert len(cells)==346\ngeometry=hashlib.sha256(json.dumps([[e['id'],e['vertices_m'],e['faces']]for e in cells],separators=(',',':')).encode()).hexdigest()\nassert geometry=='79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e'\nfor p,h in freeze['old_evidence_sha256'].items():assert sha(p)==h,p\nfor p in ['reports/nero-gripper-v21-fidelity-protocol.json','reports/nero-gripper-v21-fidelity-protocol.md']:\n    assert Path(p).read_bytes()==git('show','30a028c:'+p)\nrevision=read('reports/nero-gripper-v21-fidelity-protocol.json')\nassert hashlib.sha256(git('show','8a5518b:reports/nero-gripper-v2-fidelity-protocol.json')).hexdigest()==revision['inherits']['sha256']\ninputs=read('reports/nero-gripper-collision-sources.json')['local_frozen_inputs']\nfor p in inputs:assert sha(p['path'])==p['sha256'],p['path']\nprotected=read('/data_robot/projects/.worktrees/nero-gripper-collision-architecture/debug/issue25/runtime-partition/protected-before.json')\nfor path,expected in protected.items():\n    assert git('rev-parse','HEAD',cwd=path).decode()==expected['head'],path\n    assert git('status','--short',cwd=path).decode()==expected['status'],path\nr=read('reports/nero-gripper-v21-reacceptance.json');w=read('reports/nero-gripper-v21-normal-witnesses.json')\nassert r['status']=='V2_RUNTIME_ENTITY_PARTITION_BLOCKED' and not r['stages_pending']\nassert sha('scripts/verify_v21_normal_witnesses.py')==w['script_sha256']==r['normal_witness_verifier_sha256']\nassert sha('scripts/verify_v21_partition.py')==r['finalizer_sha256']\nprimary=TASK/'verify_v21_primary_executed.py';assert sha(primary)==r['primary_metric_verifier_sha256']\noldtree=ast.parse(primary.read_text());tree=ast.parse(Path('scripts/verify_v21_partition.py').read_text())\noldf={n.name:ast.dump(n,include_attributes=False)for n in oldtree.body if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef))}\nnewf={n.name:ast.dump(n,include_attributes=False)for n in tree.body if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef))}\nsame=[k for k in oldf if newf.get(k)==oldf[k]]\nassert len(same)==len(oldf),(set(oldf)-set(same))\nassert sha('reports/nero-gripper-v21-target-surfaces.npz')==sha(TASK/'tier-targets.npz')\nfor path in ROOT.glob('reports/nero-gripper-v21-*.json'):json.loads(path.read_text())\nfor path in ROOT.glob('reports/nero-gripper-v21-*.npz'):\n    with np.load(path)as z:\n        for k in z.files:assert np.isfinite(z[k]).all(),(path,k)\nassert len(list(csv.DictReader(Path('reports/nero-gripper-v21-rechecks.csv').open())))==355\ncheck=read('reports/nero-gripper-v21-rechecks.json')\nassert len(check['old14_rechecks'])==14 and check['old14_remaining_unresolved']==10\neq={e['id']:ConvexHull(np.array(e['vertices_m'])*1000).equations for e in cells}\nmargin=[]\nfor q in w['confirmed_witnesses']:\n    cone=q['local_boundary_normal_cone_certificate'];assert cone['failure_even_allowing_edge_normal_cones']\n    assert cone['normal_deviation_lower_bound_deg']>.05\n    for b in cone['all_clipped_facets_proved_buried']:\n        cover=b['cover']['entity'];assert cover!=b['owner']\n        poly=np.array(b['polygon_mm']);value=float(np.max(poly@eq[cover][:,:3].T+eq[cover][:,3]))\n        assert value < -1e-7,(q['source_stl_face'],value)\n        margin.append(-value)\nassert len(w['confirmed_witnesses'])==11\nh=read('reports/nero-gripper-v21-historical-certificates.json')\nassert h['direct_pass_count']==h['total']==168\nassert all(q['within10um_directly_certified'] and q['direct_effective_boundary_proof']['distance_upper_mm']<=.01 for q in h['records'])\nscale=read(TASK/'independent-scale.json');assert len(scale)==346\nminscale=min(q['diameter_mm']for q in scale);assert minscale>=.1\nscripts=['scripts/v21_boundary_atlas.py','scripts/verify_v21_partition.py','scripts/verify_v21_normal_witnesses.py']\nfor p in scripts:\n    st=ast.parse(Path(p).read_text());compile(st,p,'exec')\n    assert not any(isinstance(n,ast.Import)and any(a.name.startswith('mujoco')for a in n.names)or isinstance(n,ast.ImportFrom)and(n.module or'').startswith('mujoco')for n in ast.walk(st))\n    assert not any(isinstance(n,ast.Call)and(isinstance(n.func,ast.Name)and n.func.id.startswith(('mj_step','mj_forward','mj_collision'))or isinstance(n.func,ast.Attribute)and n.func.attr.startswith(('mj_step','mj_forward','mj_collision')))for n in ast.walk(st))\nlogs={p.name:p.read_text()for p in [TASK/'reacceptance.log',TASK/'normal-witnesses.log',TASK/'finalize.log']}\nout={'task':revision['task'],'status':r['status'],'rules_commit':freeze['rules_commit'],'rules_frozen_before_reacceptance':True,'candidate_commit':revision['candidate_commit'],'candidate_geometry_sha256':geometry,'candidate_entire_file_unchanged':True,'old_evidence_unchanged':freeze['old_evidence_sha256'],'frozen_mechanical_inputs_checked':inputs,'protected_worktrees_unchanged':protected,'environment':{'platform':platform.platform(),'python':sys.version,'numpy':np.__version__,'scipy':__import__('scipy').__version__,'private_vendor':'debug/issue25/v2-runtime/vendor; Shapely2.1.2 / Manifold3D3.5.4'},'frozen_run_preregistration':freeze,'primary_executed_source_sha256':sha(primary),'primary_executed_source':primary.read_text(),'primary_function_AST_equal_to_final_script':same,'primary_elapsed_seconds':r['elapsed_seconds'],'successful_command_exit_codes':{'boundary_atlas_final':0,'primary_reacceptance':0,'normal_witnesses_final':0,'finalize_existing':0,'delivery_audit':0},'commands':['OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B '+p for p in scripts+['scripts/verify_v21_partition.py --finalize-existing']],'reproducibility_bootstrap':'Restore frozen_run_preregistration to debug/issue25/v21-reacceptance/freeze-before-reacceptance.json; mkdir task directory first. For direct normal-proof replay copy reports/nero-gripper-v21-target-surfaces.npz to task/tier-targets.npz. Install exact private-vendor versions in that vendor directory or the Python environment. Existing earlier-stage source/audit evidence must be present; no simulator required. Reacceptance main can rebuild target arrays when its cache key is absent.','final_logs':logs,'checks':{'old_evidence_count':len(freeze['old_evidence_sha256']),'mechanical_input_count':len(inputs),'protected_worktree_count':len(protected),'JSON_NPZ_CSV_parse':'PASS','primary_functions_unchanged_count':len(same),'normal_burial_certificates_recomputed':'PASS','minimum_recomputed_burial_margin_mm':min(margin),'minimum_entity_diameter_mm':minscale,'independent_scale_count':len(scale),'old_suspect_record_count':355,'old_unresolved_rechecked':14,'old_unresolved_remaining':10,'historical_direct_certificates':168,'no_MuJoCo_import_or_calls_in_new_scripts':'PASS'},'scope':r['scope'],'result_interpretation':r['final_blocker_classification']}\nout['delivery_audit_source']=Path(__file__).read_text()\nout['files_sha256']={str(p.relative_to(ROOT)):sha(p)for p in [*(ROOT/'reports').glob('nero-gripper-v21-*'),*(ROOT/p for p in scripts)]if p.name!='nero-gripper-v21-provenance.json'}\n(ROOT/'reports/nero-gripper-v21-provenance.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\\n')\nprint(json.dumps({'status':'DELIVERY_AUDIT_PASS','geometry':geometry,'checks':out['checks']},indent=2))\n",
+  "files_sha256": {
+    "reports/nero-gripper-v21-rechecks.json": "574448bc90c5c18f4f248a6889a4937fb6e47f6ffb2d0e2af165b1602da9994a",
+    "reports/nero-gripper-v21-fidelity-protocol.md": "1416e002671369a502a9edf4cda395733ccbed5928a88a142d578cbeda050e9a",
+    "reports/nero-gripper-v21-reacceptance.md": "bbb6f68104ca6caacab6ef491de479e4d583d2e828f4b452fc1238d6b3a1f5b1",
+    "reports/nero-gripper-v21-effective-exterior.json": "f0c29278af2a1c2c6037416ba4b9a65efd0d3e1683cbb0c7fe115b75d440cb28",
+    "reports/nero-gripper-v21-historical-certificates.json": "ce19f23d1e419f2695b3a8719ba833fd965a6d04f4d57335f8a5f5faabb45d5e",
+    "reports/nero-gripper-v21-boundary-atlas.json": "efadbd7718f5f41a6ca462563b349c600d8eed2f0248b8d3535f6f0b4f5b742d",
+    "reports/nero-gripper-v21-fidelity-protocol.json": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+    "reports/nero-gripper-v21-boundary-atlas.npz": "e568934f0a6141630add597f41465b5384a2e582194eb2a3c73d965be039f66e",
+    "reports/nero-gripper-v21-reacceptance.json": "8c16d7d198124ba414c78f135fdfcc84c56c507b428c55ada32321362bfc6e4d",
+    "reports/nero-gripper-v21-normal-witnesses.json": "3ec46cbea14cd651e7affc771be34c9a68715f382ccdde0605140c85cb93962e",
+    "reports/nero-gripper-v21-rechecks.csv": "aa80c543dc22bf7bff55c7f48048782ed95a6dfdfc3446c2a835da0bc59c6105",
+    "reports/nero-gripper-v21-effective-exterior.npz": "84e9fb60f7a661c37e4f3cda8b093575204420665918c0dbdada3225ef3a51b2",
+    "reports/nero-gripper-v21-target-surfaces.npz": "84e83c18be3248f9ffcff3193a8866dcf22eee4948c5662706f443f59c1088f8",
+    "scripts/v21_boundary_atlas.py": "41b2362334dae097412e7d38a85371ee31276a0941d71fbec2db6b186c0fe37b",
+    "scripts/verify_v21_partition.py": "cfab3b057c17a71aedd947ef2c8dcd8ce42ebd0fe844b901e0e046d26980a3af",
+    "scripts/verify_v21_normal_witnesses.py": "f8a0fc844d93390b0f66098d041df905edc88c59cc5e144a8a18163780d69bdb"
+  }
+}
