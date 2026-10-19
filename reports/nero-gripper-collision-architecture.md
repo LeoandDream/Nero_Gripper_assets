@@ -2,7 +2,7 @@
 
 Issue [#25](https://github.com/LeoandDream/Nero_Gripper_assets/issues/25)，2026-10-19，Ubuntu 22.04。**唯一推荐：完整功能接触层＋有语义的侧壁/背体/安装框架。** 不再以中心矩形 pad 加顺序切割 guards 表示工作面，不预设 Panda 的 pad 数量。
 
-**当前阶段：`V2_FIDELITY_POLICY_FROZEN`。** [v2分类与规则](nero-gripper-v2-fidelity-protocol.md)已单独冻结；本阶段没有生成v2几何。原753体runtime候选仍为`RUNTIME_ENTITY_PARTITION_BLOCKED`，其历史证据见[报告](nero-gripper-runtime-partition.md)、[实体JSON](nero-gripper-runtime-partition.json)和[对比图](nero-gripper-runtime-partition.png)。§1–7保留来源、外壳分析及高保真reference的历史记录，均不表示runtime验收通过。未生成/编译MJCF。
+**当前阶段：`V2_RUNTIME_ENTITY_PARTITION_BLOCKED`。** 严格使用`8a5518b`冻结规则，已生成唯一一版346体/指的v2候选；最小实体尺度通过，但union exterior独立认证未通过。新结果见[v2报告](nero-gripper-v2-runtime-partition.md)、[候选JSON](nero-gripper-v2-runtime-partition.json)及[对比图](nero-gripper-v2-runtime-comparison.png)。[v2分类与规则](nero-gripper-v2-fidelity-protocol.md)保持不变。原753体候选仍为`RUNTIME_ENTITY_PARTITION_BLOCKED`，历史见[报告](nero-gripper-runtime-partition.md)。§1–7保留来源、外壳分析及reference历史记录，均不表示runtime验收通过。未生成/编译MJCF。
 
 ## 1. 来源与坐标
 
