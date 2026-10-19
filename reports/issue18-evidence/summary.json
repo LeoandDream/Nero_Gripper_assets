@@ -1,0 +1,942 @@
+{
+  "issue": 18,
+  "status": "COMPLETE",
+  "diagnostic_only": true,
+  "query_reproduction": {
+    "status": "PASS",
+    "gate0": {
+      "status": "PASS",
+      "pose_rows": 10,
+      "matched_contacts": 20,
+      "max_abs_distance_error_m": 0.0,
+      "max_point_error_m": 0.0,
+      "max_oriented_normal_error_deg": 0.0,
+      "count_changed_pairs": 0,
+      "ambiguous_pairs": 0
+    },
+    "all_A": {
+      "status": "PASS",
+      "pose_rows": 422,
+      "matched_contacts": 844,
+      "max_abs_distance_error_m": 0.0,
+      "max_point_error_m": 0.0,
+      "max_oriented_normal_error_deg": 0.0,
+      "count_changed_pairs": 0,
+      "ambiguous_pairs": 0
+    }
+  },
+  "H1": {
+    "status": "PASS",
+    "conjunction_required": true,
+    "geom_pair": [
+      "cube_geom",
+      "gripper_link2_collision_000"
+    ],
+    "row": 23623,
+    "preceding_row": 23622,
+    "reference_MTD_m": 0.0007317830315549834,
+    "penetration_m": {
+      "archive": 0.0010611088784191188,
+      "A": 0.0010611088784191188,
+      "B": 0.0007314718757064057
+    },
+    "absolute_MTD_error_m": {
+      "archive": 0.00032932584686413535,
+      "A": 0.00032932584686413535,
+      "B": 3.111558485776591e-07
+    },
+    "relative_error_reduction_fraction": 0.9990551733137848,
+    "error_reduction_fraction_at_least": 0.5,
+    "error_reduction_condition": true,
+    "B_incoming_canonical_normal_jump_deg": 0.0028159532364830197,
+    "normal_jump_strictly_below_deg": 20.0,
+    "normal_condition": true,
+    "B_previous": {
+      "original_event_index": 1,
+      "geoms": [
+        "cube_geom",
+        "gripper_link2_collision_000"
+      ],
+      "bodies": [
+        "cube",
+        "gripper_link2"
+      ],
+      "distance_m": -0.000731115074486586,
+      "position_m": [
+        -0.31939919919538895,
+        -0.019666119171715443,
+        0.1809982111334179
+      ],
+      "normal": [
+        0.0005741560298255041,
+        -0.9996403137374765,
+        -0.02681256227392198
+      ]
+    },
+    "B_current": {
+      "original_event_index": 1,
+      "geoms": [
+        "cube_geom",
+        "gripper_link2_collision_000"
+      ],
+      "bodies": [
+        "cube",
+        "gripper_link2"
+      ],
+      "distance_m": -0.0007314718757064057,
+      "position_m": [
+        -0.31939893539067904,
+        -0.019666025693408303,
+        0.18099821646009553
+      ],
+      "normal": [
+        0.0005926502353834421,
+        -0.9996390809992955,
+        -0.026858080806013863
+      ]
+    },
+    "interpretation": "Fixed-pose collision-query sensitivity only; not physical grasp or unique root-cause acceptance"
+  },
+  "H2": {
+    "status": "OBSERVED",
+    "rows": [
+      {
+        "row": 25984,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005299212477765625,
+            "position_m": [
+              -0.3094594823417338,
+              0.019947867968269646,
+              0.21016617159942727
+            ],
+            "normal": [
+              -0.0017393428733363141,
+              0.9996359194028974,
+              0.02692588579588759
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.0010035624051500003,
+            "position_m": [
+              -0.3322225497677354,
+              -0.019606279862595423,
+              0.2200784167336889
+            ],
+            "normal": [
+              0.001739342873349665,
+              -0.9996359194028975,
+              -0.02692588579587594
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25985,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005258763808657183,
+            "position_m": [
+              -0.3094597311560661,
+              0.019940117961273523,
+              0.2101829081023941
+            ],
+            "normal": [
+              -0.0016845345799583235,
+              0.9996415893178685,
+              0.026718069714991497
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.0010071311504494486,
+            "position_m": [
+              -0.3322224490278065,
+              -0.019610747753163696,
+              0.2200956542239798
+            ],
+            "normal": [
+              0.0016845345800468507,
+              -0.9996415893178671,
+              -0.02671806971503648
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25986,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005218639743120911,
+            "position_m": [
+              -0.3094597930361397,
+              0.019932648394911094,
+              0.21019925732572387
+            ],
+            "normal": [
+              -0.0015931266374108399,
+              0.9996467288720249,
+              0.02653072563986435
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.0010093121934625106,
+            "position_m": [
+              -0.33222219246680473,
+              -0.01961500317207137,
+              0.22011248872758016
+            ],
+            "normal": [
+              0.0015931266374235827,
+              -0.9996467288720259,
+              -0.026530725639827814
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25987,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005179798528068277,
+            "position_m": [
+              -0.3094596964466719,
+              0.019925468877484052,
+              0.2102152333683545
+            ],
+            "normal": [
+              -0.0014699143151125113,
+              0.9996513219199109,
+              0.026364254885750223
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.0010102262762971674,
+            "position_m": [
+              -0.33222180316929817,
+              -0.019619042020858415,
+              0.22012893331453653
+            ],
+            "normal": [
+              0.00146991431508098,
+              -0.9996513219199102,
+              -0.026364254885778426
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25988,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005143122704196773,
+            "position_m": [
+              -0.3094594647087094,
+              0.019918587202635354,
+              0.21023084974350126
+            ],
+            "normal": [
+              -0.001319227253247432,
+              0.9996553500186113,
+              0.0262190926353713
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.0010099857461787834,
+            "position_m": [
+              -0.33222129973506953,
+              -0.019622859814407315,
+              0.22014500035408618
+            ],
+            "normal": [
+              0.0013192272533059809,
+              -0.9996553500186132,
+              -0.026219092635299642
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25989,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005109419314228672,
+            "position_m": [
+              -0.3094591169704957,
+              0.01991200967061702,
+              0.2102461193128936
+            ],
+            "normal": [
+              -0.0011449754224752999,
+              0.9996587937576416,
+              0.02609569110598393
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.001008695134642609,
+            "position_m": [
+              -0.3322206971939313,
+              -0.01962645189056491,
+              0.22016070150690276
+            ],
+            "normal": [
+              0.0011449754226518323,
+              -0.9996587937576391,
+              -0.0260956911060735
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25990,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.0005079420809738576,
+            "position_m": [
+              -0.30945866898852514,
+              0.01990574136780227,
+              0.21026105425961322
+            ],
+            "normal": [
+              -0.0009506904721046393,
+              0.9996616336440356,
+              0.02599450726142412
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.0010064516905095005,
+            "position_m": [
+              -0.3322200077334273,
+              -0.019629813605966974,
+              0.22017604773790364
+            ],
+            "normal": [
+              0.000950690472031462,
+              -0.9996616336440372,
+              -0.02599450726137271
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      },
+      {
+        "row": 25991,
+        "status": "OBSERVED",
+        "contacts": [
+          {
+            "original_event_index": 0,
+            "geoms": [
+              "cube_geom",
+              "gripper_link1_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link1"
+            ],
+            "distance_m": -0.000505378655419634,
+            "position_m": [
+              -0.309458133757081,
+              0.019899786404409585,
+              0.21027566608754983
+            ],
+            "normal": [
+              -0.0007395630320409438,
+              0.9996638506517478,
+              0.025915994031523636
+            ],
+            "over_1mm": false
+          },
+          {
+            "original_event_index": 1,
+            "geoms": [
+              "cube_geom",
+              "gripper_link2_collision_000"
+            ],
+            "bodies": [
+              "cube",
+              "gripper_link2"
+            ],
+            "distance_m": -0.001003345872937566,
+            "position_m": [
+              -0.33221924127764146,
+              -0.01963294051875324,
+              0.2201910493427538
+            ],
+            "normal": [
+              0.0007395630319984355,
+              -0.9996638506517481,
+              -0.025915994031507305
+            ],
+            "over_1mm": true
+          }
+        ],
+        "B_any_robot_cube_over_1mm": true,
+        "A_B_contact_correspondence_status": "PASS"
+      }
+    ],
+    "threshold_m": 0.001,
+    "strict_greater_than": true,
+    "B_rows_with_any_robot_cube_over_1mm": 8,
+    "interpretation": "Boundary observation only; neither B nor historical SAT is automatically ground truth"
+  },
+  "physical_grasp": "FAIL",
+  "root_cause": "UNKNOWN",
+  "model_change_authorization": "NONE",
+  "actual": {
+    "selected_pose_rows": 422,
+    "selected_pose_rows_per_label": {
+      "R0": 267,
+      "R1": 155
+    },
+    "gate0_pose_rows": 10,
+    "A_queries": 422,
+    "B_queries": 422,
+    "total_collision_queries": 854,
+    "api_audit": {
+      "gate0": {
+        "pose_rows": 10,
+        "collision_queries": 10,
+        "calls": {
+          "mj_id2name": 90,
+          "mj_kinematics": 10,
+          "mj_collision": 10
+        },
+        "forbidden_attempts": []
+      },
+      "ab": {
+        "pose_rows": 422,
+        "collision_queries": 844,
+        "calls": {
+          "mj_id2name": 90,
+          "mj_kinematics": 844,
+          "mj_collision": 844
+        },
+        "forbidden_attempts": []
+      }
+    },
+    "new_steps": 0,
+    "new_force_solves": 0,
+    "new_constraint_solves": 0,
+    "new_control_executions": 0,
+    "reducer_simulator_calls": 0
+  },
+  "per_label": {
+    "R0": {
+      "pose_rows": 267,
+      "archive": {
+        "all_contacts": 534,
+        "robot_cube_contacts": 534,
+        "robot_cube_over_1mm_contacts": 156,
+        "robot_cube_over_1mm_pose_rows": 156,
+        "robot_cube_max_penetration_m": 0.001820233567887083
+      },
+      "A": {
+        "all_contacts": 534,
+        "robot_cube_contacts": 534,
+        "robot_cube_over_1mm_contacts": 156,
+        "robot_cube_over_1mm_pose_rows": 156,
+        "robot_cube_max_penetration_m": 0.001820233567887083
+      },
+      "B": {
+        "all_contacts": 534,
+        "robot_cube_contacts": 534,
+        "robot_cube_over_1mm_contacts": 14,
+        "robot_cube_over_1mm_pose_rows": 14,
+        "robot_cube_max_penetration_m": 0.0010171908334002644
+      },
+      "reported_over_1mm_pose_changes": {
+        "eliminated_rows": [
+          33318,
+          33320,
+          33491,
+          34328,
+          34436,
+          34444,
+          34451,
+          34452,
+          34454,
+          34462,
+          34463,
+          34468,
+          34470,
+          34471,
+          34474,
+          34478,
+          34479,
+          34481,
+          34482,
+          34501,
+          34502,
+          35370,
+          35371,
+          35375,
+          35376,
+          35377,
+          35380,
+          35381,
+          35382,
+          35383,
+          35384,
+          35385,
+          35386,
+          35387,
+          35415,
+          35416,
+          35418,
+          35419,
+          35421,
+          35423,
+          35424,
+          35457,
+          35458,
+          35459,
+          35460,
+          35461,
+          35462,
+          35463,
+          35500,
+          35502,
+          35503,
+          35504,
+          35505,
+          35506,
+          35507,
+          35579,
+          35580,
+          35581,
+          35582,
+          35583,
+          35782,
+          35783,
+          35789,
+          35792,
+          35793,
+          35798,
+          35799,
+          35800,
+          35802,
+          35807,
+          35810,
+          35812,
+          35813,
+          35814,
+          35815,
+          35820,
+          35822,
+          35823,
+          35824,
+          35825,
+          35828,
+          35831,
+          35835,
+          35836,
+          35838,
+          35843,
+          35847,
+          35848,
+          35849,
+          35850,
+          35855,
+          35856,
+          35858,
+          35860,
+          35863,
+          35865,
+          35866,
+          35867,
+          35980,
+          36003,
+          36007,
+          36010,
+          36011,
+          36012,
+          36014,
+          36015,
+          36017,
+          36020,
+          36021,
+          36025,
+          36026,
+          36027,
+          36030,
+          36031,
+          36033,
+          36034,
+          36035,
+          36036,
+          36037,
+          36038,
+          36039,
+          36742,
+          36743,
+          36744,
+          36745,
+          36746,
+          36747,
+          36773,
+          36775,
+          36776,
+          36779,
+          36780,
+          36781,
+          36782,
+          38915,
+          40946,
+          41016,
+          43174,
+          43175,
+          43176,
+          43177,
+          43178
+        ],
+        "new_rows": [],
+        "scope": "Frozen selected pose rows only; no claim about any unsampled state or physical acceptance"
+      },
+      "matched_contact_changes": {
+        "matched_contacts": 534,
+        "distance_changed_contacts": 476,
+        "point_changed_contacts": 534,
+        "normal_changed_contacts": 534,
+        "distance_changes_over_reproduction_tolerance": 219,
+        "point_changes_over_reproduction_tolerance": 534,
+        "normal_changes_over_reproduction_tolerance": 219,
+        "max_abs_distance_change_m": 0.0009014682370433848,
+        "max_point_displacement_m": 0.012955255390242061,
+        "max_canonical_normal_change_deg": 82.01319125947212,
+        "eliminated_robot_cube_over_1mm_contacts": 142,
+        "new_robot_cube_over_1mm_contacts": 0
+      },
+      "A_B_measurement_status_counts": {
+        "FAIL": 267
+      },
+      "contact_count_or_pair_changes": [],
+      "contact_correspondence_status": "PASS",
+      "contact_correspondence_status_counts": {
+        "MATCHED": 534
+      }
+    },
+    "R1": {
+      "pose_rows": 155,
+      "archive": {
+        "all_contacts": 310,
+        "robot_cube_contacts": 310,
+        "robot_cube_over_1mm_contacts": 93,
+        "robot_cube_over_1mm_pose_rows": 93,
+        "robot_cube_max_penetration_m": 0.001791855846911581
+      },
+      "A": {
+        "all_contacts": 310,
+        "robot_cube_contacts": 310,
+        "robot_cube_over_1mm_contacts": 93,
+        "robot_cube_over_1mm_pose_rows": 93,
+        "robot_cube_max_penetration_m": 0.001791855846911581
+      },
+      "B": {
+        "all_contacts": 310,
+        "robot_cube_contacts": 310,
+        "robot_cube_over_1mm_contacts": 8,
+        "robot_cube_over_1mm_pose_rows": 8,
+        "robot_cube_max_penetration_m": 0.0010102262762971674
+      },
+      "reported_over_1mm_pose_changes": {
+        "eliminated_rows": [
+          23623,
+          25321,
+          25973,
+          25974,
+          25997,
+          25999,
+          26002,
+          26003,
+          26546,
+          26548,
+          26563,
+          26800,
+          26801,
+          26805,
+          26806,
+          26807,
+          26810,
+          26811,
+          26812,
+          26813,
+          26814,
+          26815,
+          26816,
+          26817,
+          26818,
+          26819,
+          26820,
+          26821,
+          27752,
+          28272,
+          28273,
+          28277,
+          28279,
+          28280,
+          28281,
+          28450,
+          28451,
+          28452,
+          28463,
+          28515,
+          28516,
+          28519,
+          28520,
+          28521,
+          28522,
+          28523,
+          28524,
+          28527,
+          28529,
+          28530,
+          28531,
+          28532,
+          28533,
+          28534,
+          28535,
+          29047,
+          29049,
+          29151,
+          29159,
+          29160,
+          29161,
+          29163,
+          29164,
+          29166,
+          29169,
+          29183,
+          29185,
+          29186,
+          29207,
+          29208,
+          29209,
+          29210,
+          29211,
+          29212,
+          29213,
+          29214,
+          29215,
+          30047,
+          30048,
+          30049,
+          30050,
+          30051,
+          30052,
+          30053,
+          30054
+        ],
+        "new_rows": [],
+        "scope": "Frozen selected pose rows only; no claim about any unsampled state or physical acceptance"
+      },
+      "matched_contact_changes": {
+        "matched_contacts": 310,
+        "distance_changed_contacts": 259,
+        "point_changed_contacts": 310,
+        "normal_changed_contacts": 310,
+        "distance_changes_over_reproduction_tolerance": 106,
+        "point_changes_over_reproduction_tolerance": 310,
+        "normal_changes_over_reproduction_tolerance": 107,
+        "max_abs_distance_change_m": 0.0009000109345951732,
+        "max_point_displacement_m": 0.019877965459426012,
+        "max_canonical_normal_change_deg": 60.612454903285304,
+        "eliminated_robot_cube_over_1mm_contacts": 85,
+        "new_robot_cube_over_1mm_contacts": 0
+      },
+      "A_B_measurement_status_counts": {
+        "FAIL": 155
+      },
+      "contact_count_or_pair_changes": [],
+      "contact_correspondence_status": "PASS",
+      "contact_correspondence_status_counts": {
+        "MATCHED": 310
+      }
+    }
+  },
+  "normal_orientation": "lexically first geom -> second geom",
+  "contact_feature_id": "UNKNOWN",
+  "source_commit": "53c99982ffb9d5b8cec51849dba0a33e2f9b751e",
+  "plan_sha256": "7d319ee5ac05d609d22ce1aaf2b2fa6e11e6f4e118f0a0cb1a74c82a8b7844aa",
+  "prediction_sha256": "dc96f8805e00dcbf2ed7f0e8891a057418c5ca3a451477f411d0182885077852",
+  "SAT_scope": "Only stored historical exceedance rows; no new SAT computation; independent nonstandard geometry reference, not official mjContact.dist criterion",
+  "limitations": [
+    "Frozen pose set only; no new physics or grasp attempt.",
+    "Missing/extra contacts and ambiguous matching have UNKNOWN contact correspondence.",
+    "A/B measurement FAIL records changed geometry, not experiment failure."
+  ],
+  "key_geometry_pose_rows": 16,
+  "normal_control_rows": [
+    {
+      "label": "R1",
+      "row": 23621
+    },
+    {
+      "label": "R1",
+      "row": 23620
+    }
+  ],
+  "historical_original_over_1mm_pose_rows": {
+    "R0": 156,
+    "R1": 93
+  },
+  "input_immutability": "PASS"
+}

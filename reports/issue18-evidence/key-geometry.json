@@ -1,0 +1,4380 @@
+[
+  {
+    "label": "R0",
+    "row": 33317,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006701242208249797,
+        "position_m": [
+          -0.3095338516489235,
+          0.01986479239717048,
+          0.1668923406903108
+        ],
+        "normal": [
+          -0.0004358422801497061,
+          0.9994398616373253,
+          0.033463009605693865
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0008256239689515427,
+        "position_m": [
+          -0.334945935025278,
+          -0.01996239377178813,
+          0.1899027668461439
+        ],
+        "normal": [
+          0.0004613457647721345,
+          -0.9994709165268875,
+          -0.03252190303455484
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006701242208249797,
+        "position_m": [
+          -0.3095338516489235,
+          0.01986479239717048,
+          0.1668923406903108
+        ],
+        "normal": [
+          -0.0004358422801497061,
+          0.9994398616373253,
+          0.033463009605693865
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0008256239689515427,
+        "position_m": [
+          -0.334945935025278,
+          -0.01996239377178813,
+          0.1899027668461439
+        ],
+        "normal": [
+          0.0004613457647721345,
+          -0.9994709165268875,
+          -0.03252190303455484
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006701242208249797,
+        "position_m": [
+          -0.30932738863387405,
+          0.019977833993804404,
+          0.16594061202346333
+        ],
+        "normal": [
+          -0.0004358422801833581,
+          0.9994398616373248,
+          0.03346300960571526
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000825623968951543,
+        "position_m": [
+          -0.33568685609962584,
+          -0.020129323748866793,
+          0.19047748231749806
+        ],
+        "normal": [
+          0.0004613457647805392,
+          -0.9994709165268866,
+          -0.03252190303458428
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.000980404423925217,
+              "normal_deg": 2.2849413786337775e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.0980404423925217,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0009524324273533042,
+              "normal_deg": 1.754657063659912e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.09524324273533043,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": []
+  },
+  {
+    "label": "R0",
+    "row": 33318,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006537464719066278,
+        "position_m": [
+          -0.3291235693525559,
+          0.019863014165058788,
+          0.16680378497715684
+        ],
+        "normal": [
+          -0.0001526535934599218,
+          0.9994456115568928,
+          0.033293336218363175
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.001054967052414634,
+        "position_m": [
+          -0.3075799108846182,
+          -0.019931106013938882,
+          0.18916487094124348
+        ],
+        "normal": [
+          -0.5246125661980271,
+          -0.7968324231772498,
+          0.29973278893139654
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006537464719066278,
+        "position_m": [
+          -0.3291235693525559,
+          0.019863014165058788,
+          0.16680378497715684
+        ],
+        "normal": [
+          -0.0001526535934599218,
+          0.9994456115568928,
+          0.033293336218363175
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.001054967052414634,
+        "position_m": [
+          -0.3075799108846182,
+          -0.019931106013938882,
+          0.18916487094124348
+        ],
+        "normal": [
+          -0.5246125661980271,
+          -0.7968324231772498,
+          0.29973278893139654
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006537464719066278,
+        "position_m": [
+          -0.3293280530712479,
+          0.019973196435558283,
+          0.16587334369175027
+        ],
+        "normal": [
+          -0.00015265359345196107,
+          0.9994456115568932,
+          0.033293336218355174
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0008297859848924441,
+        "position_m": [
+          -0.3072835280209426,
+          -0.020097642860274184,
+          0.18971462475937406
+        ],
+        "normal": [
+          0.00017171061795470083,
+          -0.999468870108424,
+          -0.032587546695849935
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.0009589967202923911,
+              "normal_deg": 6.469429629948714e-13,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.0958996720292391,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 0.00022518106752218996,
+              "position_m": 0.0006463795971540361,
+              "normal_deg": 38.1355924731972,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": false,
+                "position_m": false,
+                "normal_deg": false
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 1.2925940904448774,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R0",
+        "row": "33318",
+        "contacts_jsonl_line": "33319",
+        "recorded_step": "33319",
+        "event_index": "1",
+        "time_s": "33.31900000001305",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.001054967052414634",
+        "penetration_mm": "1.054967052414634",
+        "incoming_world_angle_deg": "38.14771201305466",
+        "outgoing_world_angle_deg": "38.13849531307386",
+        "normal_toward_cube_world": "[0.5246125661980271, 0.7968324231772498, -0.29973278893139654]",
+        "normal_toward_cube_local": "[0.533338593343308, 0.7863314799797868, -0.31182166127993455]",
+        "position_world_m": "[-0.3075799108846182, -0.019931106013938882, 0.18916487094124348]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "0.829785693322863",
+        "nearest_source_triangles": "[226]",
+        "nearest_source_surface_distance_mm": "0.2662851764870359",
+        "nearest_hull_face_normal_angle_deg": "14.265146579954099"
+      }
+    ]
+  },
+  {
+    "label": "R0",
+    "row": 33319,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006380194941048951,
+        "position_m": [
+          -0.31944578502450766,
+          0.019863223315925382,
+          0.16683527506168505
+        ],
+        "normal": [
+          -0.00022071953636669452,
+          0.9994535667469282,
+          0.033053278199446375
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000834871000162249,
+        "position_m": [
+          -0.332522120225528,
+          -0.019958563369332858,
+          0.1898394133314489
+        ],
+        "normal": [
+          0.00023121316247748364,
+          -0.9994688519075143,
+          -0.032587737067014455
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006380194941048951,
+        "position_m": [
+          -0.31944578502450766,
+          0.019863223315925382,
+          0.16683527506168505
+        ],
+        "normal": [
+          -0.00022071953636669452,
+          0.9994535667469282,
+          0.033053278199446375
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000834871000162249,
+        "position_m": [
+          -0.332522120225528,
+          -0.019958563369332858,
+          0.1898394133314489
+        ],
+        "normal": [
+          0.00023121316247748364,
+          -0.9994688519075143,
+          -0.032587737067014455
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0006381755112037708,
+        "position_m": [
+          -0.3242652220528957,
+          0.019970259849539915,
+          0.1659080975678827
+        ],
+        "normal": [
+          -0.00022089841355708566,
+          0.999453920358334,
+          0.03304258289310495
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0008349773386260411,
+        "position_m": [
+          -0.3267617735252978,
+          -0.0201199967505099,
+          0.19024486309678712
+        ],
+        "normal": [
+          0.00022261047333510333,
+          -0.9994689576271397,
+          -0.032584554382347794
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.5601709887566335e-07,
+              "position_m": 0.004908980362064988,
+              "normal_deg": 0.0006132164036985452,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": false,
+                "position_m": false,
+                "normal_deg": false
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.49089806142471987,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 1.0633846379219224e-07,
+              "position_m": 0.005776854191999692,
+              "normal_deg": 0.0005255835227587994,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": false,
+                "position_m": false,
+                "normal_deg": false
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.5776854292528453,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": []
+  },
+  {
+    "label": "R1",
+    "row": 23620,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007020202738618066,
+        "position_m": [
+          -0.3290745357605811,
+          0.019778504248111214,
+          0.17196973127516596
+        ],
+        "normal": [
+          -0.00045725298729374167,
+          0.9996443896239642,
+          0.026662430741356442
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007318313538696073,
+        "position_m": [
+          -0.3069212856313667,
+          -0.019557965580281587,
+          0.18194696986375747
+        ],
+        "normal": [
+          0.00045725298729366995,
+          -0.9996443896239644,
+          -0.026662430741351138
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007020202738618066,
+        "position_m": [
+          -0.3290745357605811,
+          0.019778504248111214,
+          0.17196973127516596
+        ],
+        "normal": [
+          -0.00045725298729374167,
+          0.9996443896239642,
+          0.026662430741356442
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007318313538696073,
+        "position_m": [
+          -0.3069212856313667,
+          -0.019557965580281587,
+          0.18194696986375747
+        ],
+        "normal": [
+          0.00045725298729366995,
+          -0.9996443896239644,
+          -0.026662430741351138
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007020202738618067,
+        "position_m": [
+          -0.3292968406068744,
+          0.019894687777581976,
+          0.1709584685204419
+        ],
+        "normal": [
+          -0.0004572529872474076,
+          0.9996443896239644,
+          0.026662430741351044
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007318313538696075,
+        "position_m": [
+          -0.3065982277755195,
+          -0.019660958105211138,
+          0.18104323197224328
+        ],
+        "normal": [
+          0.0004572529872474469,
+          -0.9996443896239638,
+          -0.02666243074137379
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0010419071054071482,
+              "normal_deg": 2.672753816350443e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.10419071054071481,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0009652543783762308,
+              "normal_deg": 2.9494813802323145e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.09652543783762307,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": []
+  },
+  {
+    "label": "R1",
+    "row": 23621,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007022112438508814,
+        "position_m": [
+          -0.32907420330976306,
+          0.019778541101828098,
+          0.17196989212576763
+        ],
+        "normal": [
+          -0.0005071897658244638,
+          0.9996426436829657,
+          0.026726909456068704
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000731560600578326,
+        "position_m": [
+          -0.30692092904092416,
+          -0.01955757112990462,
+          0.18194675833877272
+        ],
+        "normal": [
+          0.0005071897658217499,
+          -0.9996426436829655,
+          -0.026726909456074484
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007022112438508814,
+        "position_m": [
+          -0.32907420330976306,
+          0.019778541101828098,
+          0.17196989212576763
+        ],
+        "normal": [
+          -0.0005071897658244638,
+          0.9996426436829657,
+          0.026726909456068704
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000731560600578326,
+        "position_m": [
+          -0.30692092904092416,
+          -0.01955757112990462,
+          0.18194675833877272
+        ],
+        "normal": [
+          0.0005071897658217499,
+          -0.9996426436829655,
+          -0.026726909456074484
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007022112438508814,
+        "position_m": [
+          -0.3292965668873783,
+          0.019894773377727756,
+          0.17095845651432992
+        ],
+        "normal": [
+          -0.0005071897658417561,
+          0.9996426436829658,
+          0.026726909456060766
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000731560600578326,
+        "position_m": [
+          -0.30659793780107986,
+          -0.01966049861866056,
+          0.18104324035724845
+        ],
+        "normal": [
+          0.000507189765812265,
+          -0.999642643682966,
+          -0.026726909456059728
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.00104209284552531,
+              "normal_deg": 1.090185947074936e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.104209284552531,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 0.0,
+              "position_m": 0.0009650192494947749,
+              "normal_deg": 1.0053671025124045e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.09650192494947749,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": []
+  },
+  {
+    "label": "R1",
+    "row": 23622,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007024097275294029,
+        "position_m": [
+          -0.32907384612505747,
+          0.01977858753027231,
+          0.1719700274233909
+        ],
+        "normal": [
+          -0.0005723402400881236,
+          0.9996403140554021,
+          0.026812589242122646
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007311150744865861,
+        "position_m": [
+          -0.3194102965021172,
+          -0.019563140108998782,
+          0.18190242853515096
+        ],
+        "normal": [
+          0.000574156029844485,
+          -0.999640313737476,
+          -0.02681256227394367
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007024097275294029,
+        "position_m": [
+          -0.32907384612505747,
+          0.01977858753027231,
+          0.1719700274233909
+        ],
+        "normal": [
+          -0.0005723402400881236,
+          0.9996403140554021,
+          0.026812589242122646
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007311150744865861,
+        "position_m": [
+          -0.3194102965021172,
+          -0.019563140108998782,
+          0.18190242853515096
+        ],
+        "normal": [
+          0.000574156029844485,
+          -0.999640313737476,
+          -0.02681256227394367
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007024097275294027,
+        "position_m": [
+          -0.32929627030806,
+          0.019894875677542147,
+          0.1709584419007927
+        ],
+        "normal": [
+          -0.0005723402400600312,
+          0.9996403140554029,
+          0.026812589242090377
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.000731115074486586,
+        "position_m": [
+          -0.31939919919538895,
+          -0.019666119171715443,
+          0.1809982111334179
+        ],
+        "normal": [
+          0.0005741560298255041,
+          -0.9996403137374765,
+          -0.02681256227392198
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0010422575113234118,
+              "normal_deg": 2.451802836197508e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.10422575113234117,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0009101301814419125,
+              "normal_deg": 1.6518929714006185e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.09101301814419124,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": []
+  },
+  {
+    "label": "R1",
+    "row": 23623,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007025333177763679,
+        "position_m": [
+          -0.32907368899084877,
+          0.019778616009785935,
+          0.17197014460444657
+        ],
+        "normal": [
+          -0.0006022353327634677,
+          0.9996390791057056,
+          0.026857938068675286
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010611088784191188,
+        "position_m": [
+          -0.31941006015919254,
+          -0.01956301132865759,
+          0.18190294290219236
+        ],
+        "normal": [
+          -0.384635200455492,
+          -0.7058069305842888,
+          0.5948885099829617
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007025333177763679,
+        "position_m": [
+          -0.32907368899084877,
+          0.019778616009785935,
+          0.17197014460444657
+        ],
+        "normal": [
+          -0.0006022353327634677,
+          0.9996390791057056,
+          0.026857938068675286
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010611088784191188,
+        "position_m": [
+          -0.31941006015919254,
+          -0.01956301132865759,
+          0.18190294290219236
+        ],
+        "normal": [
+          -0.384635200455492,
+          -0.7058069305842888,
+          0.5948885099829617
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007025333177763679,
+        "position_m": [
+          -0.32929614905033583,
+          0.019894936925480725,
+          0.17095845508011892
+        ],
+        "normal": [
+          -0.0006022353327403166,
+          0.9996390791057049,
+          0.026857938068702906
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007314718757064057,
+        "position_m": [
+          -0.31939893539067904,
+          -0.019666025693408303,
+          0.18099821646009553
+        ],
+        "normal": [
+          0.0005926502353834421,
+          -0.9996390809992955,
+          -0.026858080806013863
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.0010423697650686929,
+              "normal_deg": 2.0652215347972916e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.10423697650686929,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 0.000329637002712713,
+              "position_m": 0.0009106402444701495,
+              "normal_deg": 46.42158534755132,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": false,
+                "position_m": false,
+                "normal_deg": false
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 1.584726220755605,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "23623",
+        "contacts_jsonl_line": "23624",
+        "recorded_step": "23624",
+        "event_index": "1",
+        "time_s": "23.62400000000589",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010611088784191188",
+        "penetration_mm": "1.0611088784191187",
+        "incoming_world_angle_deg": "46.41881220282423",
+        "outgoing_world_angle_deg": "46.435227833075444",
+        "normal_toward_cube_world": "[0.3846352004554921, 0.7058069305842889, -0.5948885099829618]",
+        "normal_toward_cube_local": "[0.3758774215458527, 0.6893430704488757, -0.6192917690363416]",
+        "position_world_m": "[-0.31941006015919254, -0.01956301132865759, 0.18190294290219236]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "0.7317830315549834",
+        "nearest_source_triangles": "[226]",
+        "nearest_source_surface_distance_mm": "0.23315285081656006",
+        "nearest_hull_face_normal_angle_deg": "31.33477734166325"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 23624,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007061645788628837,
+        "position_m": [
+          -0.3095162597576333,
+          0.019789583716269085,
+          0.1720441507432596
+        ],
+        "normal": [
+          -0.0007387258074020363,
+          0.9996338778667153,
+          0.027047449146535316
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007329991404410377,
+        "position_m": [
+          -0.33172342897032203,
+          -0.01957001249937121,
+          0.18186205335626796
+        ],
+        "normal": [
+          0.000738725807413861,
+          -0.9996338778667158,
+          -0.027047449146519607
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007061645788628837,
+        "position_m": [
+          -0.3095162597576333,
+          0.019789583716269085,
+          0.1720441507432596
+        ],
+        "normal": [
+          -0.0007387258074020363,
+          0.9996338778667153,
+          0.027047449146535316
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007329991404410377,
+        "position_m": [
+          -0.33172342897032203,
+          -0.01957001249937121,
+          0.18186205335626796
+        ],
+        "normal": [
+          0.000738725807413861,
+          -0.9996338778667158,
+          -0.027047449146519607
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0007061645788628839,
+        "position_m": [
+          -0.30929721382882946,
+          0.019906795380829123,
+          0.1710291966603818
+        ],
+        "normal": [
+          -0.0007387258073658775,
+          0.9996338778667159,
+          0.02704744914651916
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0007329991404410374,
+        "position_m": [
+          -0.3320278800891931,
+          -0.019673349213103937,
+          0.18095410881642818
+        ],
+        "normal": [
+          0.0007387258074280597,
+          -0.9996338778667162,
+          -0.02704744914650537
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0010449169744935665,
+              "normal_deg": 2.2694181918732595e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.10449169744935664,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 3.2526065174565133e-19,
+              "position_m": 0.0009631885836178645,
+              "normal_deg": 1.1522563466032968e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.09631885836178644,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": []
+  },
+  {
+    "label": "R1",
+    "row": 25984,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005299212477765625,
+        "position_m": [
+          -0.30962333590755003,
+          0.019859782738204133,
+          0.2109280580106394
+        ],
+        "normal": [
+          -0.0017393428733131861,
+          0.9996359194028966,
+          0.026925885795913644
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010035624051500003,
+        "position_m": [
+          -0.331806939194667,
+          -0.019465140364984073,
+          0.22131948537928361
+        ],
+        "normal": [
+          0.0017393428732995415,
+          -0.999635919402897,
+          -0.026925885795905404
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005299212477765625,
+        "position_m": [
+          -0.30962333590755003,
+          0.019859782738204133,
+          0.2109280580106394
+        ],
+        "normal": [
+          -0.0017393428733131861,
+          0.9996359194028966,
+          0.026925885795913644
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010035624051500003,
+        "position_m": [
+          -0.331806939194667,
+          -0.019465140364984073,
+          0.22131948537928361
+        ],
+        "normal": [
+          0.0017393428732995415,
+          -0.999635919402897,
+          -0.026925885795905404
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005299212477765625,
+        "position_m": [
+          -0.3094594823417338,
+          0.019947867968269646,
+          0.21016617159942727
+        ],
+        "normal": [
+          -0.0017393428733363141,
+          0.9996359194028974,
+          0.02692588579588759
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010035624051500003,
+        "position_m": [
+          -0.3322225497677354,
+          -0.019606279862595423,
+          0.2200784167336889
+        ],
+        "normal": [
+          0.001739342873349665,
+          -0.9996359194028975,
+          -0.02692588579587594
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.0007842690242360041,
+              "normal_deg": 1.9966018768065516e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07842690242360041,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 0.0,
+              "position_m": 0.001316398074030248,
+              "normal_deg": 3.3314768463439385e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.1316398074030248,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25984",
+        "contacts_jsonl_line": "25985",
+        "recorded_step": "25985",
+        "event_index": "1",
+        "time_s": "25.985000000008775",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010035624051500003",
+        "penetration_mm": "1.0035624051500003",
+        "incoming_world_angle_deg": "0.013085876883513247",
+        "outgoing_world_angle_deg": "0.012318408743876042",
+        "normal_toward_cube_world": "[-0.0017393428732995415, 0.999635919402897, 0.026925885795905404]",
+        "normal_toward_cube_local": "[4.958175253704609e-15, 1.0000000000000004, -6.2932958881206106e-15]",
+        "position_world_m": "[-0.331806939194667, -0.019465140364984073, 0.22131948537928361]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0035620956462052",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.3194797831537338",
+        "nearest_hull_face_normal_angle_deg": "0.37376394755472975"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25985,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005258763808657184,
+        "position_m": [
+          -0.3096223953619868,
+          0.019852760478343952,
+          0.2109392730223428
+        ],
+        "normal": [
+          -0.00168453458006203,
+          0.999641589317867,
+          0.02671806971503772
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010071311504494483,
+        "position_m": [
+          -0.33180541492005133,
+          -0.019469013409433727,
+          0.22134075315252993
+        ],
+        "normal": [
+          0.0016845345800554651,
+          -0.9996415893178666,
+          -0.026718069715053507
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005258763808657184,
+        "position_m": [
+          -0.3096223953619868,
+          0.019852760478343952,
+          0.2109392730223428
+        ],
+        "normal": [
+          -0.00168453458006203,
+          0.999641589317867,
+          0.02671806971503772
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010071311504494483,
+        "position_m": [
+          -0.33180541492005133,
+          -0.019469013409433727,
+          0.22134075315252993
+        ],
+        "normal": [
+          0.0016845345800554651,
+          -0.9996415893178666,
+          -0.026718069715053507
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005258763808657183,
+        "position_m": [
+          -0.3094597311560661,
+          0.019940117961273523,
+          0.2101829081023941
+        ],
+        "normal": [
+          -0.0016845345799583235,
+          0.9996415893178685,
+          0.026718069714991497
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010071311504494486,
+        "position_m": [
+          -0.3322224490278065,
+          -0.019610747753163696,
+          0.2200956542239798
+        ],
+        "normal": [
+          0.0016845345800468507,
+          -0.9996415893178671,
+          -0.02671806971503648
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0007785748941756482,
+              "normal_deg": 6.506036286826838e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07785748941756482,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.001320710949867681,
+              "normal_deg": 1.0935545206901415e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.13207109498676808,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25985",
+        "contacts_jsonl_line": "25986",
+        "recorded_step": "25986",
+        "event_index": "1",
+        "time_s": "25.986000000008776",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010071311504494483",
+        "penetration_mm": "1.0071311504494482",
+        "incoming_world_angle_deg": "0.012318408743876042",
+        "outgoing_world_angle_deg": "0.011947183912986088",
+        "normal_toward_cube_world": "[-0.0016845345800554651, 0.9996415893178666, 0.026718069715053507]",
+        "normal_toward_cube_local": "[8.444426004026565e-15, 0.9999999999999996, 2.1459019428106714e-14]",
+        "position_world_m": "[-0.33180541492005133, -0.019469013409433727, 0.22134075315252993]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0071308407364008",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.3205438070998646",
+        "nearest_hull_face_normal_angle_deg": "0.38377867804775545"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25986,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005218639743120911,
+        "position_m": [
+          -0.30962128438308617,
+          0.01984600946374373,
+          0.2109501236917108
+        ],
+        "normal": [
+          -0.0015931266374341116,
+          0.9996467288720253,
+          0.02653072563984778
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010093121934625106,
+        "position_m": [
+          -0.33180427536657814,
+          -0.019472883543378523,
+          0.22135996125156804
+        ],
+        "normal": [
+          0.0015931266374394778,
+          -0.9996467288720253,
+          -0.02653072563984241
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005218639743120911,
+        "position_m": [
+          -0.30962128438308617,
+          0.01984600946374373,
+          0.2109501236917108
+        ],
+        "normal": [
+          -0.0015931266374341116,
+          0.9996467288720253,
+          0.02653072563984778
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010093121934625106,
+        "position_m": [
+          -0.33180427536657814,
+          -0.019472883543378523,
+          0.22135996125156804
+        ],
+        "normal": [
+          0.0015931266374394778,
+          -0.9996467288720253,
+          -0.02653072563984241
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005218639743120911,
+        "position_m": [
+          -0.3094597930361397,
+          0.019932648394911094,
+          0.21019925732572387
+        ],
+        "normal": [
+          -0.0015931266374108399,
+          0.9996467288720249,
+          0.02653072563986435
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010093121934625106,
+        "position_m": [
+          -0.33222219246680473,
+          -0.01961500317207137,
+          0.22011248872758016
+        ],
+        "normal": [
+          0.0015931266374235827,
+          -0.9996467288720259,
+          -0.026530725639827814
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.0007729075359335185,
+              "normal_deg": 1.6369531478900614e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07729075359335184,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 0.0,
+              "position_m": 0.0013232688274218097,
+              "normal_deg": 1.2368538251883554e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.13232688274218096,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25986",
+        "contacts_jsonl_line": "25987",
+        "recorded_step": "25987",
+        "event_index": "1",
+        "time_s": "25.987000000008777",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010093121934625106",
+        "penetration_mm": "1.0093121934625107",
+        "incoming_world_angle_deg": "0.011947183912986088",
+        "outgoing_world_angle_deg": "0.011869341008034044",
+        "normal_toward_cube_world": "[-0.0015931266374394778, 0.9996467288720253, 0.02653072563984241]",
+        "normal_toward_cube_local": "[-2.2000994575700647e-15, 0.9999999999999988, -5.65357553671394e-15]",
+        "position_world_m": "[-0.33180427536657814, -0.019472883543378523, 0.22135996125156804]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0093118835673138",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.3211788407201132",
+        "nearest_hull_face_normal_angle_deg": "0.3921982339540438"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25987,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005179798528068276,
+        "position_m": [
+          -0.3096200592647592,
+          0.019839523112609173,
+          0.21096076089569596
+        ],
+        "normal": [
+          -0.0014699143151194077,
+          0.9996513219199097,
+          0.02636425488579691
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010102262762971676,
+        "position_m": [
+          -0.3318034962218488,
+          -0.019476729544103507,
+          0.22137727187959208
+        ],
+        "normal": [
+          0.001469914315120474,
+          -0.9996513219199098,
+          -0.02636425488579902
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005179798528068276,
+        "position_m": [
+          -0.3096200592647592,
+          0.019839523112609173,
+          0.21096076089569596
+        ],
+        "normal": [
+          -0.0014699143151194077,
+          0.9996513219199097,
+          0.02636425488579691
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010102262762971676,
+        "position_m": [
+          -0.3318034962218488,
+          -0.019476729544103507,
+          0.22137727187959208
+        ],
+        "normal": [
+          0.001469914315120474,
+          -0.9996513219199098,
+          -0.02636425488579902
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005179798528068277,
+        "position_m": [
+          -0.3094596964466719,
+          0.019925468877484052,
+          0.2102152333683545
+        ],
+        "normal": [
+          -0.0014699143151125113,
+          0.9996513219199109,
+          0.026364254885750223
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010102262762971674,
+        "position_m": [
+          -0.33222180316929817,
+          -0.019619042020858415,
+          0.22012893331453653
+        ],
+        "normal": [
+          0.00146991431508098,
+          -0.9996513219199102,
+          -0.026364254885778426
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0007674074549733876,
+              "normal_deg": 2.7050562719018092e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07674074549733877,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0013242291026591547,
+              "normal_deg": 2.5520987881127022e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.13242291026591546,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25987",
+        "contacts_jsonl_line": "25988",
+        "recorded_step": "25988",
+        "event_index": "1",
+        "time_s": "25.98800000000878",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010102262762971676",
+        "penetration_mm": "1.0102262762971677",
+        "incoming_world_angle_deg": "0.011869341008034044",
+        "outgoing_world_angle_deg": "0.011990419511951757",
+        "normal_toward_cube_world": "[-0.001469914315120474, 0.9996513219199098, 0.02636425488579902]",
+        "normal_toward_cube_local": "[-1.021092579634548e-15, 1.0, 1.8936137832666877e-15]",
+        "position_world_m": "[-0.3318034962218488, -0.019476729544103507, 0.22137727187959208]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0102259662466921",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.3214231263698364",
+        "nearest_hull_face_normal_angle_deg": "0.3991689453128734"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25988,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005143122704196774,
+        "position_m": [
+          -0.3096187690774549,
+          0.019833294346461937,
+          0.2109713242879371
+        ],
+        "normal": [
+          -0.0013192272533766646,
+          0.9996553500186117,
+          0.026219092635347854
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010099857461787834,
+        "position_m": [
+          -0.33180305211721633,
+          -0.019480530927535496,
+          0.22139283591051026
+        ],
+        "normal": [
+          0.0013192272533849847,
+          -0.9996553500186117,
+          -0.026219092635349363
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005143122704196774,
+        "position_m": [
+          -0.3096187690774549,
+          0.019833294346461937,
+          0.2109713242879371
+        ],
+        "normal": [
+          -0.0013192272533766646,
+          0.9996553500186117,
+          0.026219092635347854
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010099857461787834,
+        "position_m": [
+          -0.33180305211721633,
+          -0.019480530927535496,
+          0.22139283591051026
+        ],
+        "normal": [
+          0.0013192272533849847,
+          -0.9996553500186117,
+          -0.026219092635349363
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005143122704196773,
+        "position_m": [
+          -0.3094594647087094,
+          0.019918587202635354,
+          0.21023084974350126
+        ],
+        "normal": [
+          -0.001319227253247432,
+          0.9996553500186113,
+          0.0262190926353713
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010099857461787834,
+        "position_m": [
+          -0.33222129973506953,
+          -0.019622859814407315,
+          0.22014500035408618
+        ],
+        "normal": [
+          0.0013192272533059809,
+          -0.9996553500186132,
+          -0.026219092635299642
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0007622042404586192,
+              "normal_deg": 7.525401686123955e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07622042404586192,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 0.0,
+              "position_m": 0.0013237379490496704,
+              "normal_deg": 5.349056824965568e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.13237379490496703,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25988",
+        "contacts_jsonl_line": "25989",
+        "recorded_step": "25989",
+        "event_index": "1",
+        "time_s": "25.98900000000878",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010099857461787834",
+        "penetration_mm": "1.0099857461787833",
+        "incoming_world_angle_deg": "0.011990419511951757",
+        "outgoing_world_angle_deg": "0.012235499582497741",
+        "normal_toward_cube_world": "[-0.0013192272533849847, 0.9996553500186117, 0.026219092635349363]",
+        "normal_toward_cube_local": "[-6.13136412555159e-15, 0.9999999999999992, 7.71397591885066e-16]",
+        "position_world_m": "[-0.33180305211721633, -0.019480530927535496, 0.22139283591051026]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0099854359997535",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.32131219336734895",
+        "nearest_hull_face_normal_angle_deg": "0.40481796683727594"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25989,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005109419314228673,
+        "position_m": [
+          -0.3096174566238341,
+          0.019827315897427783,
+          0.21098194221593908
+        ],
+        "normal": [
+          -0.0011449754226382505,
+          0.9996587937576397,
+          0.02609569110604955
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010086951346426091,
+        "position_m": [
+          -0.33180291727061634,
+          -0.019484268085713456,
+          0.22140679362740953
+        ],
+        "normal": [
+          0.0011449754226389337,
+          -0.9996587937576396,
+          -0.026095691106053705
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005109419314228673,
+        "position_m": [
+          -0.3096174566238341,
+          0.019827315897427783,
+          0.21098194221593908
+        ],
+        "normal": [
+          -0.0011449754226382505,
+          0.9996587937576397,
+          0.02609569110604955
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010086951346426091,
+        "position_m": [
+          -0.33180291727061634,
+          -0.019484268085713456,
+          0.22140679362740953
+        ],
+        "normal": [
+          0.0011449754226389337,
+          -0.9996587937576396,
+          -0.026095691106053705
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005109419314228672,
+        "position_m": [
+          -0.3094591169704957,
+          0.01991200967061702,
+          0.2102461193128936
+        ],
+        "normal": [
+          -0.0011449754224752999,
+          0.9996587937576416,
+          0.02609569110598393
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.001008695134642609,
+        "position_m": [
+          -0.3322206971939313,
+          -0.01962645189056491,
+          0.22016070150690276
+        ],
+        "normal": [
+          0.0011449754226518323,
+          -0.9996587937576391,
+          -0.0260956911060735
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0007574165470087206,
+              "normal_deg": 1.0065456147591826e-11,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07574165470087206,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0013219311144973419,
+              "normal_deg": 1.3539459647684334e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.1321931114497342,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25989",
+        "contacts_jsonl_line": "25990",
+        "recorded_step": "25990",
+        "event_index": "1",
+        "time_s": "25.99000000000878",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010086951346426091",
+        "penetration_mm": "1.0086951346426092",
+        "incoming_world_angle_deg": "0.012235499582497741",
+        "outgoing_world_angle_deg": "0.01255194497873496",
+        "normal_toward_cube_world": "[-0.0011449754226389337, 0.9996587937576396, 0.026095691106053705]",
+        "normal_toward_cube_local": "[3.823652964811649e-16, 0.999999999999999, 2.325854979576465e-15]",
+        "position_world_m": "[-0.33180291727061634, -0.019484268085713456, 0.22140679362740953]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0086948243616716",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.32087904960063696",
+        "nearest_hull_face_normal_angle_deg": "0.4092532334861321"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25990,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005079420809738577,
+        "position_m": [
+          -0.30961615922334884,
+          0.019821580561418178,
+          0.21099273177172725
+        ],
+        "normal": [
+          -0.0009506904720568328,
+          0.9996616336440368,
+          0.02599450726137904
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010064516905095007,
+        "position_m": [
+          -0.33180306597055864,
+          -0.019487922415840474,
+          0.22141927542235784
+        ],
+        "normal": [
+          0.0009506904720456853,
+          -0.9996616336440375,
+          -0.025994507261358026
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005079420809738577,
+        "position_m": [
+          -0.30961615922334884,
+          0.019821580561418178,
+          0.21099273177172725
+        ],
+        "normal": [
+          -0.0009506904720568328,
+          0.9996616336440368,
+          0.02599450726137904
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010064516905095007,
+        "position_m": [
+          -0.33180306597055864,
+          -0.019487922415840474,
+          0.22141927542235784
+        ],
+        "normal": [
+          0.0009506904720456853,
+          -0.9996616336440375,
+          -0.025994507261358026
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.0005079420809738576,
+        "position_m": [
+          -0.30945866898852514,
+          0.01990574136780227,
+          0.21026105425961322
+        ],
+        "normal": [
+          -0.0009506904721046393,
+          0.9996616336440356,
+          0.02599450726142412
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010064516905095005,
+        "position_m": [
+          -0.3322200077334273,
+          -0.019629813605966974,
+          0.22017604773790364
+        ],
+        "normal": [
+          0.000950690472031462,
+          -0.9996616336440372,
+          -0.02599450726137271
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 1.0842021724855044e-19,
+              "position_m": 0.0007531521739525309,
+              "normal_deg": 3.765469128215189e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07531521739525308,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0013189346529881214,
+              "normal_deg": 1.1715377160999825e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.13189346529881213,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25990",
+        "contacts_jsonl_line": "25991",
+        "recorded_step": "25991",
+        "event_index": "1",
+        "time_s": "25.991000000008782",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010064516905095007",
+        "penetration_mm": "1.0064516905095007",
+        "incoming_world_angle_deg": "0.01255194497873496",
+        "outgoing_world_angle_deg": "0.012906697889787273",
+        "normal_toward_cube_world": "[-0.0009506904720456853, 0.9996616336440375, 0.025994507261358026]",
+        "normal_toward_cube_local": "[-5.011643639112336e-15, 0.999999999999999, -8.502876253787835e-15]",
+        "position_world_m": "[-0.33180306597055864, -0.019487922415840474, 0.22141927542235784]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.0064513801533028",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.32015435751490723",
+        "nearest_hull_face_normal_angle_deg": "0.41256447979516847"
+      }
+    ]
+  },
+  {
+    "label": "R1",
+    "row": 25991,
+    "phase": "lift",
+    "archive": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.000505378655419634,
+        "position_m": [
+          -0.3096149093620423,
+          0.019816081399363535,
+          0.21100379895215787
+        ],
+        "normal": [
+          -0.0007395630320072614,
+          0.9996638506517487,
+          0.025915994031489278
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010033458729375663,
+        "position_m": [
+          -0.33180347293501444,
+          -0.0194914764409008,
+          0.2214304024588665
+        ],
+        "normal": [
+          0.0007395630320088108,
+          -0.9996638506517486,
+          -0.025915994031493528
+        ]
+      }
+    ],
+    "A": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.000505378655419634,
+        "position_m": [
+          -0.3096149093620423,
+          0.019816081399363535,
+          0.21100379895215787
+        ],
+        "normal": [
+          -0.0007395630320072614,
+          0.9996638506517487,
+          0.025915994031489278
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.0010033458729375663,
+        "position_m": [
+          -0.33180347293501444,
+          -0.0194914764409008,
+          0.2214304024588665
+        ],
+        "normal": [
+          0.0007395630320088108,
+          -0.9996638506517486,
+          -0.025915994031493528
+        ]
+      }
+    ],
+    "B": [
+      {
+        "original_event_index": 0,
+        "geoms": [
+          "cube_geom",
+          "gripper_link1_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link1"
+        ],
+        "distance_m": -0.000505378655419634,
+        "position_m": [
+          -0.309458133757081,
+          0.019899786404409585,
+          0.21027566608754983
+        ],
+        "normal": [
+          -0.0007395630320409438,
+          0.9996638506517478,
+          0.025915994031523636
+        ]
+      },
+      {
+        "original_event_index": 1,
+        "geoms": [
+          "cube_geom",
+          "gripper_link2_collision_000"
+        ],
+        "bodies": [
+          "cube",
+          "gripper_link2"
+        ],
+        "distance_m": -0.001003345872937566,
+        "position_m": [
+          -0.33221924127764146,
+          -0.01963294051875324,
+          0.2201910493427538
+        ],
+        "normal": [
+          0.0007395630319984355,
+          -0.9996638506517481,
+          -0.025915994031507305
+        ]
+      }
+    ],
+    "A_B_comparison": {
+      "status": "FAIL",
+      "tolerances": {
+        "distance_m": 1e-09,
+        "position_m": 1e-08,
+        "normal_deg": 1e-05
+      },
+      "cost_scales": {
+        "distance_m": 0.001,
+        "position_m": 0.01,
+        "normal_deg": 30.0
+      },
+      "normal_orientation": "lexically first geom -> second geom",
+      "pairs": [
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link1_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 0,
+              "query_event_index": 0,
+              "distance_m": 0.0,
+              "position_m": 0.0007495082299101576,
+              "normal_deg": 2.7573102842231166e-12,
+              "reference_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link1"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.07495082299101576,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        },
+        {
+          "geoms": [
+            "cube_geom",
+            "gripper_link2_collision_000"
+          ],
+          "reference_count": 1,
+          "query_count": 1,
+          "presence_status": "SAME_COUNT",
+          "count_status": "PASS",
+          "correspondence_status": "PASS",
+          "matches": [
+            {
+              "reference_event_index": 1,
+              "query_event_index": 1,
+              "distance_m": 2.168404344971009e-19,
+              "position_m": 0.0013148656001552874,
+              "normal_deg": 9.884928546378969e-13,
+              "reference_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "query_bodies": [
+                "cube",
+                "gripper_link2"
+              ],
+              "bodies_match": true,
+              "within_tolerance": {
+                "distance_m": true,
+                "position_m": false,
+                "normal_deg": true
+              },
+              "status": "FAIL"
+            }
+          ],
+          "best_candidate_matches": [],
+          "missing_reference_event_indices": [],
+          "extra_query_event_indices": [],
+          "assignment": {
+            "best_cost": 0.13148656001552872,
+            "alternative_cost": null,
+            "ambiguity_rtol": 1e-06,
+            "ambiguity_atol": 1e-09,
+            "ambiguous": false,
+            "alternative_indices": null,
+            "alternative_event_pairs": null
+          },
+          "measurement_status": "FAIL",
+          "status": "FAIL"
+        }
+      ]
+    },
+    "historical_SAT_reference": [
+      {
+        "episode": "R1",
+        "row": "25991",
+        "contacts_jsonl_line": "25992",
+        "recorded_step": "25992",
+        "event_index": "1",
+        "time_s": "25.992000000008783",
+        "phase": "lift",
+        "geom_pair": "cube_geom|gripper_link2_collision_000",
+        "geoms_saved_order": "cube_geom|gripper_link2_collision_000",
+        "bodies_saved_order": "cube|gripper_link2",
+        "distance_m": "-0.0010033458729375663",
+        "penetration_mm": "1.0033458729375664",
+        "incoming_world_angle_deg": "0.012906697889787273",
+        "outgoing_world_angle_deg": "0.013281702501791337",
+        "normal_toward_cube_world": "[-0.0007395630320088108, 0.9996638506517486, 0.025915994031493528]",
+        "normal_toward_cube_local": "[-9.87105982785261e-16, 0.9999999999999996, -9.65075691676238e-16]",
+        "position_world_m": "[-0.33180347293501444, -0.0194914764409008, 0.2214304024588665]",
+        "feature_id": "UNKNOWN",
+        "independent_convex_mtd_mm": "1.003345562532796",
+        "nearest_source_triangles": "[225]",
+        "nearest_source_surface_distance_mm": "0.3191665966679395",
+        "nearest_hull_face_normal_angle_deg": "0.4148248621212644"
+      }
+    ]
+  }
+]
