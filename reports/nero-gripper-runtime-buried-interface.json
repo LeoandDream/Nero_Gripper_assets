@@ -1,0 +1,26 @@
+{
+  "reference_surface_point_mm": [
+    -9.750153549407482,
+    -16.323127202444525,
+    2.567970098398184
+  ],
+  "reference_source": {
+    "entity": "E0362",
+    "source_face": 689
+  },
+  "distance_to_reference_exterior_mm": 1.485920280127011e-16,
+  "test": "Full 0.12mm cube centred at the old exterior point is subtracted by actual runtime hulls.",
+  "cube_half_width_mm": 0.06,
+  "remaining_pieces": 0,
+  "remaining_volume_mm3": 0,
+  "covering_runtime_entities": [
+    "R0017",
+    "R0193"
+  ],
+  "certified_distance_to_runtime_exterior_lower_bound_mm": 0.06,
+  "independent_long_double_pairwise_halfspace_certificate": {
+    "method": "For every A/B halfspace pair, maximize min(a(x),b(x)) on cube vertices and equality-plane/cube-edge intersections. Max<=0 proves cube subset A union B.",
+    "maximum_pairwise_minimum_mm": -1.0038013468181839e-08,
+    "strict_coverage": true
+  }
+}

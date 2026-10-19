@@ -1,0 +1,6487 @@
+{
+  "schema_version": 1,
+  "status": "RUNTIME_ENTITY_PARTITION_BLOCKED",
+  "runtime_geometry_sha256": "4c39ad33db526a641a2d4e6df70cbd62450a1f72eaf2afcfa1c3678d74086e83",
+  "entity_count_per_finger": 753,
+  "counts_by_semantic_family": {
+    "distal_tip_contact": 7,
+    "inner_main_contact_plate": 14,
+    "inner_ramp_contact": 1,
+    "inner_transition_contact": 5,
+    "sidewall_negative_x": 35,
+    "outer_chassis": 395,
+    "sidewall_positive_x": 47,
+    "mount_root": 249
+  },
+  "maximum_material_inward_mm": 0.0,
+  "material_inward_basis": "Every original convex cell is contained in its assigned new hull; maximum arithmetic vertex residual is disclosed separately. This does not imply reverse exterior distance zero.",
+  "continuous_runtime_solid_to_reference_upper_mm": 0.05,
+  "continuous_critical_contact_solid_upper_mm": 0.008660254037844387,
+  "continuous_mount_source_part_exterior_upper_mm": 0.008298777650992406,
+  "runtime_exterior_to_reference_exterior": {
+    "sample_count": 239666,
+    "sampled_maximum_mm": 0.04413744122953241,
+    "sampled_signed_range_mm": [
+      -5.813506660521927e-07,
+      0.04413744122953241
+    ],
+    "signed_convention": "Negative inside the target closed-solid union; zero within 1e-8 mm arithmetic resolution.",
+    "sampled_maximum_position_mm": [
+      11.820187538008765,
+      -62.337204233017225,
+      23.76951126574147
+    ],
+    "nearest_target_triangle": 7278,
+    "conservative_triangle_cover_upper_mm": 24.933459214856942,
+    "actual_maximum_covering_radius_mm": 24.933459214856942,
+    "resolution": "vertices, edge midpoints and centroids; continuous bound uses actual triangle radius",
+    "by_semantic_family": {
+      "distal_tip_contact": {
+        "sampled_maximum_mm": 0.001097099015705682,
+        "conservative_triangle_cover_upper_mm": 16.946477297808634
+      },
+      "inner_main_contact_plate": {
+        "sampled_maximum_mm": 1.6464412151712216e-14,
+        "conservative_triangle_cover_upper_mm": 24.933459214856942
+      },
+      "inner_ramp_contact": {
+        "sampled_maximum_mm": 0.00376990365819844,
+        "conservative_triangle_cover_upper_mm": 20.841862427050906
+      },
+      "inner_transition_contact": {
+        "sampled_maximum_mm": 3.259359993171905e-07,
+        "conservative_triangle_cover_upper_mm": 21.955994464484593
+      },
+      "mount_root": {
+        "sampled_maximum_mm": 0.005548637817719175,
+        "conservative_triangle_cover_upper_mm": 6.472574451147578
+      },
+      "outer_chassis": {
+        "sampled_maximum_mm": 0.04413744122953241,
+        "conservative_triangle_cover_upper_mm": 18.706584214399832
+      },
+      "sidewall_negative_x": {
+        "sampled_maximum_mm": 0.034517960418107965,
+        "conservative_triangle_cover_upper_mm": 15.003702912589695
+      },
+      "sidewall_positive_x": {
+        "sampled_maximum_mm": 0.029873619707929126,
+        "conservative_triangle_cover_upper_mm": 12.384340499509014
+      }
+    }
+  },
+  "reference_exterior_to_runtime_exterior": {
+    "sample_count": 81060,
+    "sampled_maximum_mm": 2.0000001295081535,
+    "sampled_signed_range_mm": [
+      -2.0000001295081535,
+      0.0
+    ],
+    "signed_convention": "Negative inside the target closed-solid union; zero within 1e-8 mm arithmetic resolution.",
+    "sampled_maximum_position_mm": [
+      -9.750153549407482,
+      -16.323127202444525,
+      2.567970098398184
+    ],
+    "nearest_target_triangle": 1186,
+    "conservative_triangle_cover_upper_mm": 24.07025500854233,
+    "actual_maximum_covering_radius_mm": 24.07025500854233,
+    "resolution": "vertices, edge midpoints and centroids; continuous bound uses actual triangle radius",
+    "by_semantic_family": {
+      "distal_tip_contact": {
+        "sampled_maximum_mm": 1.005582465471747,
+        "conservative_triangle_cover_upper_mm": 16.951751486411883
+      },
+      "inner_main_contact_plate": {
+        "sampled_maximum_mm": 0.012586374351683884,
+        "conservative_triangle_cover_upper_mm": 24.07025500854233
+      },
+      "inner_ramp_contact": {
+        "sampled_maximum_mm": 2.000000061751501,
+        "conservative_triangle_cover_upper_mm": 20.83997793321003
+      },
+      "inner_transition_contact": {
+        "sampled_maximum_mm": 0.6631213305854964,
+        "conservative_triangle_cover_upper_mm": 22.04550284537573
+      },
+      "mount_root": {
+        "sampled_maximum_mm": 0.004622784839249339,
+        "conservative_triangle_cover_upper_mm": 9.154720674560703
+      },
+      "outer_chassis": {
+        "sampled_maximum_mm": 2.0000001295081535,
+        "conservative_triangle_cover_upper_mm": 19.9951467762718
+      },
+      "sidewall_negative_x": {
+        "sampled_maximum_mm": 2.000000116371462,
+        "conservative_triangle_cover_upper_mm": 15.003702912589695
+      },
+      "sidewall_positive_x": {
+        "sampled_maximum_mm": 2.0000001245442522,
+        "conservative_triangle_cover_upper_mm": 12.767026684543533
+      }
+    }
+  },
+  "symmetric_sampled_surface_distance_mm": 2.0000001295081535,
+  "actual_working_surface_samples": {
+    "main": {
+      "source_triangle_ids": [
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577
+      ],
+      "sample_count": 147,
+      "sampled_source_workface_to_runtime_exterior_max_mm": 0.0,
+      "note": "Actual working source triangles only; excludes buried back/interface surfaces in the same semantic family."
+    },
+    "tip": {
+      "source_triangle_ids": [
+        545,
+        546,
+        547,
+        548
+      ],
+      "sample_count": 28,
+      "sampled_source_workface_to_runtime_exterior_max_mm": 3.8435607786626066e-15,
+      "note": "Actual working source triangles only; excludes buried back/interface surfaces in the same semantic family."
+    },
+    "ramp": {
+      "source_triangle_ids": [
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556
+      ],
+      "sample_count": 56,
+      "sampled_source_workface_to_runtime_exterior_max_mm": 6.73901729884138e-08,
+      "note": "Actual working source triangles only; excludes buried back/interface surfaces in the same semantic family."
+    },
+    "shoulder": {
+      "source_triangle_ids": [
+        578,
+        579,
+        580,
+        581
+      ],
+      "sample_count": 28,
+      "sampled_source_workface_to_runtime_exterior_max_mm": 3.5469786369558257e-16,
+      "note": "Actual working source triangles only; excludes buried back/interface surfaces in the same semantic family."
+    }
+  },
+  "continuous_reverse_exterior_budget_counterexample": {
+    "reference_surface_point_mm": [
+      -9.750153549407482,
+      -16.323127202444525,
+      2.567970098398184
+    ],
+    "cube_half_width_mm": 0.06,
+    "remaining_pieces": 0,
+    "covering_runtime_entities": [
+      "R0017",
+      "R0193"
+    ],
+    "certified_distance_to_runtime_exterior_lower_bound_mm": 0.06,
+    "arithmetic_resolution_mm": 1e-09,
+    "interpretation": "The entire cube is inside the actual runtime solid union. Its central reference exterior point is therefore at least 60um from the new exterior, independently of exterior triangulation."
+  },
+  "union_exterior_area_partition_residual_mm2": 0.03848541977332509,
+  "exterior_triangulation_certified": false,
+  "requested_preregistered_covering_radius_met": false,
+  "surface_interpretation": "Finite-set extrema and triangle-radius bounds describe the extracted polygon meshes only. Their nonzero area-partition residual prevents certification as actual union-exterior bounds. The requested 50um/10um global exterior bounds are not certified. Independent continuous solid certificates and the 60um buried-interface counterexample remain distinct.",
+  "original_minimum_width_mm": 5.594848495604765e-08,
+  "original_entities_narrower_than_1nm": 9,
+  "original_entities_narrower_than_100nm": 32,
+  "original_entities_below_0_1mm_inscribed_diameter": 351,
+  "runtime_minimum_inscribed_diameter_mm": 0.0018447963728086506,
+  "runtime_minimum_facet_normal_width_mm": 0.001845644080372466,
+  "runtime_subminimum_entities": 129,
+  "original_scale_measurements": [
+    {
+      "id": "E0001",
+      "minimum_width_mm": 0.0010318713479247066,
+      "inscribed_diameter_mm": 0.0010169271855276852
+    },
+    {
+      "id": "E0002",
+      "minimum_width_mm": 0.0010384084707943941,
+      "inscribed_diameter_mm": 0.0007104893126341771
+    },
+    {
+      "id": "E0003",
+      "minimum_width_mm": 0.08871406316757202,
+      "inscribed_diameter_mm": 0.08871406316757202
+    },
+    {
+      "id": "E0004",
+      "minimum_width_mm": 0.0010397037818936639,
+      "inscribed_diameter_mm": 0.0007104865135447724
+    },
+    {
+      "id": "E0005",
+      "minimum_width_mm": 0.0010243686908602,
+      "inscribed_diameter_mm": 0.001012137254701173
+    },
+    {
+      "id": "E0006",
+      "minimum_width_mm": 0.00019277619590951645,
+      "inscribed_diameter_mm": 0.00018065783762228027
+    },
+    {
+      "id": "E0007",
+      "minimum_width_mm": 0.08355492742268389,
+      "inscribed_diameter_mm": 0.0785044505908602
+    },
+    {
+      "id": "E0008",
+      "minimum_width_mm": 0.002243820302702204,
+      "inscribed_diameter_mm": 0.002211323989033476
+    },
+    {
+      "id": "E0009",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0010",
+      "minimum_width_mm": 2.000000094994903,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0011",
+      "minimum_width_mm": 0.0022435667365989787,
+      "inscribed_diameter_mm": 0.0022418434099644264
+    },
+    {
+      "id": "E0012",
+      "minimum_width_mm": 2.000000094994909,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0013",
+      "minimum_width_mm": 2.000000094994909,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0014",
+      "minimum_width_mm": 1.76776831286098,
+      "inscribed_diameter_mm": 1.7573597373238705
+    },
+    {
+      "id": "E0015",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0016",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0017",
+      "minimum_width_mm": 0.3572883789185184,
+      "inscribed_diameter_mm": 0.325408525700837
+    },
+    {
+      "id": "E0018",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0019",
+      "minimum_width_mm": 1.4142151085690102,
+      "inscribed_diameter_mm": 1.1715741548255791
+    },
+    {
+      "id": "E0020",
+      "minimum_width_mm": 1.4142150289496414,
+      "inscribed_diameter_mm": 1.1515740551185942
+    },
+    {
+      "id": "E0021",
+      "minimum_width_mm": 0.018237364852562443,
+      "inscribed_diameter_mm": 0.01815450660169606
+    },
+    {
+      "id": "E0022",
+      "minimum_width_mm": 0.11617767777514132,
+      "inscribed_diameter_mm": 0.11485779369531186
+    },
+    {
+      "id": "E0023",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0024",
+      "minimum_width_mm": 0.24933808807599434,
+      "inscribed_diameter_mm": 0.2424820496380616
+    },
+    {
+      "id": "E0025",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0026",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0027",
+      "minimum_width_mm": 2.0000000949949026,
+      "inscribed_diameter_mm": 2.0000000949949026
+    },
+    {
+      "id": "E0028",
+      "minimum_width_mm": 0.17707981169223785,
+      "inscribed_diameter_mm": 0.1675829515873768
+    },
+    {
+      "id": "E0029",
+      "minimum_width_mm": 0.0018268668554615175,
+      "inscribed_diameter_mm": 0.0018260425336930456
+    },
+    {
+      "id": "E0030",
+      "minimum_width_mm": 1.9999999433676061,
+      "inscribed_diameter_mm": 1.9999999398636987
+    },
+    {
+      "id": "E0031",
+      "minimum_width_mm": 0.0018268885410215319,
+      "inscribed_diameter_mm": 0.001826887365112384
+    },
+    {
+      "id": "E0032",
+      "minimum_width_mm": 0.16585852986166216,
+      "inscribed_diameter_mm": 0.15268360688256033
+    },
+    {
+      "id": "E0033",
+      "minimum_width_mm": 1.9999999426868629,
+      "inscribed_diameter_mm": 1.999999938648346
+    },
+    {
+      "id": "E0034",
+      "minimum_width_mm": 2.0000001476989815,
+      "inscribed_diameter_mm": 1.9999999654664813
+    },
+    {
+      "id": "E0035",
+      "minimum_width_mm": 2.7545316783061935e-07,
+      "inscribed_diameter_mm": 2.7545314765688806e-07
+    },
+    {
+      "id": "E0036",
+      "minimum_width_mm": 2.730813690732248e-07,
+      "inscribed_diameter_mm": 2.7545314854514816e-07
+    },
+    {
+      "id": "E0037",
+      "minimum_width_mm": 5.594848495604765e-08,
+      "inscribed_diameter_mm": 5.594848161457457e-08
+    },
+    {
+      "id": "E0038",
+      "minimum_width_mm": 5.594848495604765e-08,
+      "inscribed_diameter_mm": 5.594848229151239e-08
+    },
+    {
+      "id": "E0039",
+      "minimum_width_mm": 2.0000001439616732,
+      "inscribed_diameter_mm": 2.0000000913088667
+    },
+    {
+      "id": "E0040",
+      "minimum_width_mm": 2.000000095801835,
+      "inscribed_diameter_mm": 2.0000000323089626
+    },
+    {
+      "id": "E0041",
+      "minimum_width_mm": 2.000000095794702,
+      "inscribed_diameter_mm": 2.0000000263875584
+    },
+    {
+      "id": "E0042",
+      "minimum_width_mm": 0.0010397037818954402,
+      "inscribed_diameter_mm": 0.0010392294486429577
+    },
+    {
+      "id": "E0043",
+      "minimum_width_mm": 0.00010239079353446812,
+      "inscribed_diameter_mm": 9.82212404962201e-05
+    },
+    {
+      "id": "E0044",
+      "minimum_width_mm": 1.9984309106895572,
+      "inscribed_diameter_mm": 1.9982401664881166
+    },
+    {
+      "id": "E0045",
+      "minimum_width_mm": 0.0018456568845781618,
+      "inscribed_diameter_mm": 0.001844796372799777
+    },
+    {
+      "id": "E0046",
+      "minimum_width_mm": 0.0018456440803760188,
+      "inscribed_diameter_mm": 0.0018456415640854724
+    },
+    {
+      "id": "E0047",
+      "minimum_width_mm": 1.9984309106895572,
+      "inscribed_diameter_mm": 1.9982401664881237
+    },
+    {
+      "id": "E0048",
+      "minimum_width_mm": 0.5114264786243439,
+      "inscribed_diameter_mm": 0.5114264786243439
+    },
+    {
+      "id": "E0049",
+      "minimum_width_mm": 6.560008571909748e-07,
+      "inscribed_diameter_mm": 6.560007150824276e-07
+    },
+    {
+      "id": "E0050",
+      "minimum_width_mm": 6.560008589673316e-07,
+      "inscribed_diameter_mm": 6.56005381118723e-07
+    },
+    {
+      "id": "E0051",
+      "minimum_width_mm": 0.328815970665687,
+      "inscribed_diameter_mm": 0.29526529110054667
+    },
+    {
+      "id": "E0052",
+      "minimum_width_mm": 0.140662472810412,
+      "inscribed_diameter_mm": 0.13762248328390925
+    },
+    {
+      "id": "E0053",
+      "minimum_width_mm": 0.18269350570360032,
+      "inscribed_diameter_mm": 0.17927213841697665
+    },
+    {
+      "id": "E0054",
+      "minimum_width_mm": 0.005662841033355903,
+      "inscribed_diameter_mm": 0.00566280611050729
+    },
+    {
+      "id": "E0055",
+      "minimum_width_mm": 0.5059844126966979,
+      "inscribed_diameter_mm": 0.4396994335562993
+    },
+    {
+      "id": "E0056",
+      "minimum_width_mm": 0.001990878411479713,
+      "inscribed_diameter_mm": 0.0019908728690012367
+    },
+    {
+      "id": "E0057",
+      "minimum_width_mm": 0.9107901405406054,
+      "inscribed_diameter_mm": 0.8266798214612903
+    },
+    {
+      "id": "E0058",
+      "minimum_width_mm": 0.0017834456277432409,
+      "inscribed_diameter_mm": 0.0017834411764638958
+    },
+    {
+      "id": "E0059",
+      "minimum_width_mm": 0.4494512336128693,
+      "inscribed_diameter_mm": 0.43095100602708314
+    },
+    {
+      "id": "E0060",
+      "minimum_width_mm": 0.025786188197110427,
+      "inscribed_diameter_mm": 0.02578525810673682
+    },
+    {
+      "id": "E0061",
+      "minimum_width_mm": 0.0019641774016463387,
+      "inscribed_diameter_mm": 0.0019587461964935657
+    },
+    {
+      "id": "E0062",
+      "minimum_width_mm": 0.5598939318659433,
+      "inscribed_diameter_mm": 0.5444718182796535
+    },
+    {
+      "id": "E0063",
+      "minimum_width_mm": 0.005098650727799914,
+      "inscribed_diameter_mm": 0.005094447546859726
+    },
+    {
+      "id": "E0064",
+      "minimum_width_mm": 0.005860339037664808,
+      "inscribed_diameter_mm": 0.0058602909775018475
+    },
+    {
+      "id": "E0065",
+      "minimum_width_mm": 1.378373805773954,
+      "inscribed_diameter_mm": 1.2686121995955943
+    },
+    {
+      "id": "E0066",
+      "minimum_width_mm": 0.9212541039353255,
+      "inscribed_diameter_mm": 0.9051752632302574
+    },
+    {
+      "id": "E0067",
+      "minimum_width_mm": 0.49999356269836426,
+      "inscribed_diameter_mm": 0.49999356269836426
+    },
+    {
+      "id": "E0068",
+      "minimum_width_mm": 0.44314833029256206,
+      "inscribed_diameter_mm": 0.4373091019507047
+    },
+    {
+      "id": "E0069",
+      "minimum_width_mm": 0.304312433341412,
+      "inscribed_diameter_mm": 0.3021789694750301
+    },
+    {
+      "id": "E0070",
+      "minimum_width_mm": 0.031369885686252985,
+      "inscribed_diameter_mm": 0.03136851975509103
+    },
+    {
+      "id": "E0071",
+      "minimum_width_mm": 0.5596121160023476,
+      "inscribed_diameter_mm": 0.49739702845967315
+    },
+    {
+      "id": "E0072",
+      "minimum_width_mm": 0.17278301156409626,
+      "inscribed_diameter_mm": 0.17219365986311175
+    },
+    {
+      "id": "E0073",
+      "minimum_width_mm": 0.1676929024764462,
+      "inscribed_diameter_mm": 0.1619686959713107
+    },
+    {
+      "id": "E0074",
+      "minimum_width_mm": 0.9412881650912261,
+      "inscribed_diameter_mm": 0.9271703703273477
+    },
+    {
+      "id": "E0075",
+      "minimum_width_mm": 0.6436258691197649,
+      "inscribed_diameter_mm": 0.5559557506277315
+    },
+    {
+      "id": "E0076",
+      "minimum_width_mm": 0.09902045767556977,
+      "inscribed_diameter_mm": 0.09598369721939548
+    },
+    {
+      "id": "E0077",
+      "minimum_width_mm": 0.017068684210596263,
+      "inscribed_diameter_mm": 0.017068280373379707
+    },
+    {
+      "id": "E0078",
+      "minimum_width_mm": 0.2331632175988858,
+      "inscribed_diameter_mm": 0.22561675506290868
+    },
+    {
+      "id": "E0079",
+      "minimum_width_mm": 0.298758117052202,
+      "inscribed_diameter_mm": 0.23806778879296076
+    },
+    {
+      "id": "E0080",
+      "minimum_width_mm": 1.1844251986256324,
+      "inscribed_diameter_mm": 1.0633285482726507
+    },
+    {
+      "id": "E0081",
+      "minimum_width_mm": 0.49446172179816417,
+      "inscribed_diameter_mm": 0.48929464371853726
+    },
+    {
+      "id": "E0082",
+      "minimum_width_mm": 0.2331276391038557,
+      "inscribed_diameter_mm": 0.22178691299929199
+    },
+    {
+      "id": "E0083",
+      "minimum_width_mm": 0.9727873205931772,
+      "inscribed_diameter_mm": 0.845793016348253
+    },
+    {
+      "id": "E0084",
+      "minimum_width_mm": 0.0643021558492407,
+      "inscribed_diameter_mm": 0.06389945593475232
+    },
+    {
+      "id": "E0085",
+      "minimum_width_mm": 0.3808595263377583,
+      "inscribed_diameter_mm": 0.3602979601912466
+    },
+    {
+      "id": "E0086",
+      "minimum_width_mm": 1.0523490979521686,
+      "inscribed_diameter_mm": 1.0051526530825257
+    },
+    {
+      "id": "E0087",
+      "minimum_width_mm": 0.00012505045410371451,
+      "inscribed_diameter_mm": 0.00012505043363120194
+    },
+    {
+      "id": "E0088",
+      "minimum_width_mm": 0.0923933539486761,
+      "inscribed_diameter_mm": 0.07423064709796279
+    },
+    {
+      "id": "E0089",
+      "minimum_width_mm": 0.3318303209383924,
+      "inscribed_diameter_mm": 0.32854038693122334
+    },
+    {
+      "id": "E0090",
+      "minimum_width_mm": 0.82301035355693,
+      "inscribed_diameter_mm": 0.8019744448793205
+    },
+    {
+      "id": "E0091",
+      "minimum_width_mm": 1.4462143840009603,
+      "inscribed_diameter_mm": 1.3995954515669666
+    },
+    {
+      "id": "E0092",
+      "minimum_width_mm": 1.3662288392310913,
+      "inscribed_diameter_mm": 1.2842254229448145
+    },
+    {
+      "id": "E0093",
+      "minimum_width_mm": 0.7910757545931659,
+      "inscribed_diameter_mm": 0.780776159068851
+    },
+    {
+      "id": "E0094",
+      "minimum_width_mm": 0.8793511225025501,
+      "inscribed_diameter_mm": 0.7393782978744952
+    },
+    {
+      "id": "E0095",
+      "minimum_width_mm": 0.44232479935685376,
+      "inscribed_diameter_mm": 0.4419390067647834
+    },
+    {
+      "id": "E0096",
+      "minimum_width_mm": 0.3825667765779599,
+      "inscribed_diameter_mm": 0.37837343145450575
+    },
+    {
+      "id": "E0097",
+      "minimum_width_mm": 0.0019483340258403814,
+      "inscribed_diameter_mm": 0.0019220713280958535
+    },
+    {
+      "id": "E0098",
+      "minimum_width_mm": 2.5855093168422605e-05,
+      "inscribed_diameter_mm": 2.5855036507432997e-05
+    },
+    {
+      "id": "E0099",
+      "minimum_width_mm": 0.5838463353339591,
+      "inscribed_diameter_mm": 0.5287726236464181
+    },
+    {
+      "id": "E0100",
+      "minimum_width_mm": 0.7878881815487944,
+      "inscribed_diameter_mm": 0.6600246684863293
+    },
+    {
+      "id": "E0101",
+      "minimum_width_mm": 1.0964677685513244,
+      "inscribed_diameter_mm": 1.055346059019314
+    },
+    {
+      "id": "E0102",
+      "minimum_width_mm": 0.3547600322558182,
+      "inscribed_diameter_mm": 0.34993204771473074
+    },
+    {
+      "id": "E0103",
+      "minimum_width_mm": 0.022475844673884637,
+      "inscribed_diameter_mm": 0.02247517150320988
+    },
+    {
+      "id": "E0104",
+      "minimum_width_mm": 0.9353755897382356,
+      "inscribed_diameter_mm": 0.7801818600691774
+    },
+    {
+      "id": "E0105",
+      "minimum_width_mm": 1.2086087426398464,
+      "inscribed_diameter_mm": 1.1864607008412804
+    },
+    {
+      "id": "E0106",
+      "minimum_width_mm": 0.08625922161705546,
+      "inscribed_diameter_mm": 0.08529943318656308
+    },
+    {
+      "id": "E0107",
+      "minimum_width_mm": 0.8801295838638197,
+      "inscribed_diameter_mm": 0.8551066313169287
+    },
+    {
+      "id": "E0108",
+      "minimum_width_mm": 0.6347678168718254,
+      "inscribed_diameter_mm": 0.5270508937348524
+    },
+    {
+      "id": "E0109",
+      "minimum_width_mm": 0.07478744318940267,
+      "inscribed_diameter_mm": 0.07459073977146724
+    },
+    {
+      "id": "E0110",
+      "minimum_width_mm": 0.45318862150955397,
+      "inscribed_diameter_mm": 0.43001576541129793
+    },
+    {
+      "id": "E0111",
+      "minimum_width_mm": 0.2639422618138241,
+      "inscribed_diameter_mm": 0.23711416849921818
+    },
+    {
+      "id": "E0112",
+      "minimum_width_mm": 0.8729409438333278,
+      "inscribed_diameter_mm": 0.840811034009235
+    },
+    {
+      "id": "E0113",
+      "minimum_width_mm": 0.63602275091921,
+      "inscribed_diameter_mm": 0.6284408964241983
+    },
+    {
+      "id": "E0114",
+      "minimum_width_mm": 0.6475899557331743,
+      "inscribed_diameter_mm": 0.5226588547324695
+    },
+    {
+      "id": "E0115",
+      "minimum_width_mm": 0.09117087089112985,
+      "inscribed_diameter_mm": 0.09058181456074976
+    },
+    {
+      "id": "E0116",
+      "minimum_width_mm": 0.539868922962981,
+      "inscribed_diameter_mm": 0.4451898959309233
+    },
+    {
+      "id": "E0117",
+      "minimum_width_mm": 3.0366097906409095e-05,
+      "inscribed_diameter_mm": 3.0366096758882577e-05
+    },
+    {
+      "id": "E0118",
+      "minimum_width_mm": 0.9955889263783186,
+      "inscribed_diameter_mm": 0.8784724613329473
+    },
+    {
+      "id": "E0119",
+      "minimum_width_mm": 0.7474065407507275,
+      "inscribed_diameter_mm": 0.7044222644222344
+    },
+    {
+      "id": "E0120",
+      "minimum_width_mm": 6.899820393257983e-06,
+      "inscribed_diameter_mm": 6.899815495162972e-06
+    },
+    {
+      "id": "E0121",
+      "minimum_width_mm": 2.1645530779202744,
+      "inscribed_diameter_mm": 2.003027787567973
+    },
+    {
+      "id": "E0122",
+      "minimum_width_mm": 0.19613934666704225,
+      "inscribed_diameter_mm": 0.1905415442415892
+    },
+    {
+      "id": "E0123",
+      "minimum_width_mm": 0.16189850924145066,
+      "inscribed_diameter_mm": 0.14881168506894937
+    },
+    {
+      "id": "E0124",
+      "minimum_width_mm": 0.7374425746915279,
+      "inscribed_diameter_mm": 0.7235136446427646
+    },
+    {
+      "id": "E0125",
+      "minimum_width_mm": 0.2848221440800387,
+      "inscribed_diameter_mm": 0.2782487769720774
+    },
+    {
+      "id": "E0126",
+      "minimum_width_mm": 0.7076438618151606,
+      "inscribed_diameter_mm": 0.6602469473801733
+    },
+    {
+      "id": "E0127",
+      "minimum_width_mm": 0.7882163902092003,
+      "inscribed_diameter_mm": 0.7753828761375843
+    },
+    {
+      "id": "E0128",
+      "minimum_width_mm": 0.013065962565825373,
+      "inscribed_diameter_mm": 0.013065754697212384
+    },
+    {
+      "id": "E0129",
+      "minimum_width_mm": 1.144215367889423,
+      "inscribed_diameter_mm": 1.0954090832272954
+    },
+    {
+      "id": "E0130",
+      "minimum_width_mm": 0.05715483584957326,
+      "inscribed_diameter_mm": 0.05701269507850031
+    },
+    {
+      "id": "E0131",
+      "minimum_width_mm": 0.6654534342144984,
+      "inscribed_diameter_mm": 0.6315939822679297
+    },
+    {
+      "id": "E0132",
+      "minimum_width_mm": 0.3005780897246595,
+      "inscribed_diameter_mm": 0.2969940953184391
+    },
+    {
+      "id": "E0133",
+      "minimum_width_mm": 0.6962713289504592,
+      "inscribed_diameter_mm": 0.6877680287167891
+    },
+    {
+      "id": "E0134",
+      "minimum_width_mm": 0.3554299473762512,
+      "inscribed_diameter_mm": 0.35448200958228204
+    },
+    {
+      "id": "E0135",
+      "minimum_width_mm": 4.111987604144943,
+      "inscribed_diameter_mm": 3.813218088490885
+    },
+    {
+      "id": "E0136",
+      "minimum_width_mm": 0.649388879537586,
+      "inscribed_diameter_mm": 0.6262470857824012
+    },
+    {
+      "id": "E0137",
+      "minimum_width_mm": 2.6358903788548105e-05,
+      "inscribed_diameter_mm": 2.6358903006951095e-05
+    },
+    {
+      "id": "E0138",
+      "minimum_width_mm": 0.7002451366597526,
+      "inscribed_diameter_mm": 0.6828472807150092
+    },
+    {
+      "id": "E0139",
+      "minimum_width_mm": 1.0278922981994283,
+      "inscribed_diameter_mm": 0.8556826866900735
+    },
+    {
+      "id": "E0140",
+      "minimum_width_mm": 0.0011480952577560544,
+      "inscribed_diameter_mm": 0.001052695725832109
+    },
+    {
+      "id": "E0141",
+      "minimum_width_mm": 7.32451048524041e-06,
+      "inscribed_diameter_mm": 7.324503988646752e-06
+    },
+    {
+      "id": "E0142",
+      "minimum_width_mm": 5.95615444253525,
+      "inscribed_diameter_mm": 4.283178285404816
+    },
+    {
+      "id": "E0143",
+      "minimum_width_mm": 0.06769800050191321,
+      "inscribed_diameter_mm": 0.0675333827627469
+    },
+    {
+      "id": "E0144",
+      "minimum_width_mm": 4.7332969241395375,
+      "inscribed_diameter_mm": 4.405967116780815
+    },
+    {
+      "id": "E0145",
+      "minimum_width_mm": 0.3035694063179868,
+      "inscribed_diameter_mm": 0.2966229328639969
+    },
+    {
+      "id": "E0146",
+      "minimum_width_mm": 0.013732605055313485,
+      "inscribed_diameter_mm": 0.013732403700046802
+    },
+    {
+      "id": "E0147",
+      "minimum_width_mm": 0.7262504101937495,
+      "inscribed_diameter_mm": 0.7232108101158445
+    },
+    {
+      "id": "E0148",
+      "minimum_width_mm": 0.03472645671549124,
+      "inscribed_diameter_mm": 0.03465869960095862
+    },
+    {
+      "id": "E0149",
+      "minimum_width_mm": 1.0603888309592424,
+      "inscribed_diameter_mm": 1.0063998354655013
+    },
+    {
+      "id": "E0150",
+      "minimum_width_mm": 1.3042802028471598,
+      "inscribed_diameter_mm": 1.2798976975559668
+    },
+    {
+      "id": "E0151",
+      "minimum_width_mm": 0.49999356269836426,
+      "inscribed_diameter_mm": 0.49999356269836426
+    },
+    {
+      "id": "E0152",
+      "minimum_width_mm": 0.7653475147523707,
+      "inscribed_diameter_mm": 0.7612308559690888
+    },
+    {
+      "id": "E0153",
+      "minimum_width_mm": 0.0043510548607592625,
+      "inscribed_diameter_mm": 0.004348240424097042
+    },
+    {
+      "id": "E0154",
+      "minimum_width_mm": 1.3165427655044866,
+      "inscribed_diameter_mm": 1.2991022691755063
+    },
+    {
+      "id": "E0155",
+      "minimum_width_mm": 1.2733691523436619e-05,
+      "inscribed_diameter_mm": 1.2733681635977624e-05
+    },
+    {
+      "id": "E0156",
+      "minimum_width_mm": 1.2678931719634079e-05,
+      "inscribed_diameter_mm": 1.267890717864198e-05
+    },
+    {
+      "id": "E0157",
+      "minimum_width_mm": 1.0567136172348413,
+      "inscribed_diameter_mm": 0.8570103380689176
+    },
+    {
+      "id": "E0158",
+      "minimum_width_mm": 0.007020433282752592,
+      "inscribed_diameter_mm": 0.007017382348921331
+    },
+    {
+      "id": "E0159",
+      "minimum_width_mm": 0.5691497437963378,
+      "inscribed_diameter_mm": 0.4464370706140295
+    },
+    {
+      "id": "E0160",
+      "minimum_width_mm": 0.2619208704796776,
+      "inscribed_diameter_mm": 0.24787738555491226
+    },
+    {
+      "id": "E0161",
+      "minimum_width_mm": 0.7473446746391303,
+      "inscribed_diameter_mm": 0.6322419520024515
+    },
+    {
+      "id": "E0162",
+      "minimum_width_mm": 0.01391842688144962,
+      "inscribed_diameter_mm": 0.013885630565836827
+    },
+    {
+      "id": "E0163",
+      "minimum_width_mm": 3.6036824459877295,
+      "inscribed_diameter_mm": 3.2967367501417755
+    },
+    {
+      "id": "E0164",
+      "minimum_width_mm": 1.9155016099041617,
+      "inscribed_diameter_mm": 1.837743755601025
+    },
+    {
+      "id": "E0165",
+      "minimum_width_mm": 0.4733611855937667,
+      "inscribed_diameter_mm": 0.4717620897158241
+    },
+    {
+      "id": "E0166",
+      "minimum_width_mm": 0.39603933691979165,
+      "inscribed_diameter_mm": 0.34267212890580756
+    },
+    {
+      "id": "E0167",
+      "minimum_width_mm": 0.01249203748377603,
+      "inscribed_diameter_mm": 0.012482654185252073
+    },
+    {
+      "id": "E0168",
+      "minimum_width_mm": 1.7613883734065716,
+      "inscribed_diameter_mm": 1.5994747008528698
+    },
+    {
+      "id": "E0169",
+      "minimum_width_mm": 1.0777074262505995,
+      "inscribed_diameter_mm": 0.9398379779538715
+    },
+    {
+      "id": "E0170",
+      "minimum_width_mm": 0.8294474548362061,
+      "inscribed_diameter_mm": 0.8188574676471347
+    },
+    {
+      "id": "E0171",
+      "minimum_width_mm": 5.356948693575703,
+      "inscribed_diameter_mm": 4.017579336849607
+    },
+    {
+      "id": "E0172",
+      "minimum_width_mm": 1.7444559237134172e-06,
+      "inscribed_diameter_mm": 1.7444559237134172e-06
+    },
+    {
+      "id": "E0173",
+      "minimum_width_mm": 1.8176382299797949,
+      "inscribed_diameter_mm": 1.5873171595001914
+    },
+    {
+      "id": "E0174",
+      "minimum_width_mm": 2.051280067931728,
+      "inscribed_diameter_mm": 1.6810098495321033
+    },
+    {
+      "id": "E0175",
+      "minimum_width_mm": 0.16818583478163518,
+      "inscribed_diameter_mm": 0.15979164782421407
+    },
+    {
+      "id": "E0176",
+      "minimum_width_mm": 1.4458171282427656e-05,
+      "inscribed_diameter_mm": 1.445812318809041e-05
+    },
+    {
+      "id": "E0177",
+      "minimum_width_mm": 0.7330399993998,
+      "inscribed_diameter_mm": 0.7263931105192398
+    },
+    {
+      "id": "E0178",
+      "minimum_width_mm": 1.0806060497968275,
+      "inscribed_diameter_mm": 0.8726742348502583
+    },
+    {
+      "id": "E0179",
+      "minimum_width_mm": 0.3653578460216522,
+      "inscribed_diameter_mm": 0.3649017439515077
+    },
+    {
+      "id": "E0180",
+      "minimum_width_mm": 1.7517899815895035,
+      "inscribed_diameter_mm": 1.6694392387302166
+    },
+    {
+      "id": "E0181",
+      "minimum_width_mm": 2.719142052280816,
+      "inscribed_diameter_mm": 2.408507204434386
+    },
+    {
+      "id": "E0182",
+      "minimum_width_mm": 1.0221159422702897,
+      "inscribed_diameter_mm": 0.8377859956860998
+    },
+    {
+      "id": "E0183",
+      "minimum_width_mm": 0.39339110503737373,
+      "inscribed_diameter_mm": 0.39318728461771923
+    },
+    {
+      "id": "E0184",
+      "minimum_width_mm": 1.215589093247722,
+      "inscribed_diameter_mm": 1.201108293750524
+    },
+    {
+      "id": "E0185",
+      "minimum_width_mm": 0.12257014169439451,
+      "inscribed_diameter_mm": 0.1203442132329009
+    },
+    {
+      "id": "E0186",
+      "minimum_width_mm": 0.6672206452370659,
+      "inscribed_diameter_mm": 0.6478442581329631
+    },
+    {
+      "id": "E0187",
+      "minimum_width_mm": 1.775109273642066,
+      "inscribed_diameter_mm": 1.6492698690104453
+    },
+    {
+      "id": "E0188",
+      "minimum_width_mm": 1.0841703066253636,
+      "inscribed_diameter_mm": 0.9680519192579707
+    },
+    {
+      "id": "E0189",
+      "minimum_width_mm": 0.32862304148421373,
+      "inscribed_diameter_mm": 0.3026772987131019
+    },
+    {
+      "id": "E0190",
+      "minimum_width_mm": 0.6285198032855988,
+      "inscribed_diameter_mm": 0.6218083133128784
+    },
+    {
+      "id": "E0191",
+      "minimum_width_mm": 2.3670686475002842,
+      "inscribed_diameter_mm": 1.9961656007253907
+    },
+    {
+      "id": "E0192",
+      "minimum_width_mm": 0.5374710367675277,
+      "inscribed_diameter_mm": 0.52868446568813
+    },
+    {
+      "id": "E0193",
+      "minimum_width_mm": 3.587948895827033,
+      "inscribed_diameter_mm": 3.0882764583940165
+    },
+    {
+      "id": "E0194",
+      "minimum_width_mm": 0.7825139981407361,
+      "inscribed_diameter_mm": 0.628446831995948
+    },
+    {
+      "id": "E0195",
+      "minimum_width_mm": 0.9474922193749507,
+      "inscribed_diameter_mm": 0.8017412966006532
+    },
+    {
+      "id": "E0196",
+      "minimum_width_mm": 1.073844955875881,
+      "inscribed_diameter_mm": 1.0132284770880715
+    },
+    {
+      "id": "E0197",
+      "minimum_width_mm": 0.3725209826591649,
+      "inscribed_diameter_mm": 0.3541207041173884
+    },
+    {
+      "id": "E0198",
+      "minimum_width_mm": 0.21800593390305423,
+      "inscribed_diameter_mm": 0.20608766999305528
+    },
+    {
+      "id": "E0199",
+      "minimum_width_mm": 0.8996588731785415,
+      "inscribed_diameter_mm": 0.8743516419594393
+    },
+    {
+      "id": "E0200",
+      "minimum_width_mm": 1.0841353924709385,
+      "inscribed_diameter_mm": 0.8914695295694797
+    },
+    {
+      "id": "E0201",
+      "minimum_width_mm": 0.4161201186003609,
+      "inscribed_diameter_mm": 0.4126252103876169
+    },
+    {
+      "id": "E0202",
+      "minimum_width_mm": 0.6504698049840751,
+      "inscribed_diameter_mm": 0.6399266491013904
+    },
+    {
+      "id": "E0203",
+      "minimum_width_mm": 1.0840418265200213,
+      "inscribed_diameter_mm": 0.8555607320738047
+    },
+    {
+      "id": "E0204",
+      "minimum_width_mm": 0.42833390418132744,
+      "inscribed_diameter_mm": 0.4247841125121772
+    },
+    {
+      "id": "E0205",
+      "minimum_width_mm": 1.624693359561391,
+      "inscribed_diameter_mm": 1.5337283610862933
+    },
+    {
+      "id": "E0206",
+      "minimum_width_mm": 1.003035149948822,
+      "inscribed_diameter_mm": 0.983657243951356
+    },
+    {
+      "id": "E0207",
+      "minimum_width_mm": 0.5593074769050332,
+      "inscribed_diameter_mm": 0.5383879690863012
+    },
+    {
+      "id": "E0208",
+      "minimum_width_mm": 2.3072448848117446,
+      "inscribed_diameter_mm": 2.04099177754418
+    },
+    {
+      "id": "E0209",
+      "minimum_width_mm": 0.596219817960197,
+      "inscribed_diameter_mm": 0.5750385277633114
+    },
+    {
+      "id": "E0210",
+      "minimum_width_mm": 2.9021538568694147,
+      "inscribed_diameter_mm": 2.670271501867834
+    },
+    {
+      "id": "E0211",
+      "minimum_width_mm": 0.6885262974265824,
+      "inscribed_diameter_mm": 0.6571084488588976
+    },
+    {
+      "id": "E0212",
+      "minimum_width_mm": 0.29869292483518706,
+      "inscribed_diameter_mm": 0.29761276357206157
+    },
+    {
+      "id": "E0213",
+      "minimum_width_mm": 0.7545538246631622,
+      "inscribed_diameter_mm": 0.7545538246631622
+    },
+    {
+      "id": "E0214",
+      "minimum_width_mm": 0.5878253068363541,
+      "inscribed_diameter_mm": 0.5699965097458914
+    },
+    {
+      "id": "E0215",
+      "minimum_width_mm": 1.920878080374278,
+      "inscribed_diameter_mm": 1.863410694895908
+    },
+    {
+      "id": "E0216",
+      "minimum_width_mm": 1.6017482514437624,
+      "inscribed_diameter_mm": 1.327154721700581
+    },
+    {
+      "id": "E0217",
+      "minimum_width_mm": 0.48060688915024485,
+      "inscribed_diameter_mm": 0.47332357341570486
+    },
+    {
+      "id": "E0218",
+      "minimum_width_mm": 0.795378970714232,
+      "inscribed_diameter_mm": 0.7313244032277584
+    },
+    {
+      "id": "E0219",
+      "minimum_width_mm": 0.7286498467269773,
+      "inscribed_diameter_mm": 0.72624363460854
+    },
+    {
+      "id": "E0220",
+      "minimum_width_mm": 0.41985325515270233,
+      "inscribed_diameter_mm": 0.3706473682461738
+    },
+    {
+      "id": "E0221",
+      "minimum_width_mm": 1.341521361104249,
+      "inscribed_diameter_mm": 1.2790027718521486
+    },
+    {
+      "id": "E0222",
+      "minimum_width_mm": 0.31328946352005005,
+      "inscribed_diameter_mm": 0.31328946352005005
+    },
+    {
+      "id": "E0223",
+      "minimum_width_mm": 0.549081712961204,
+      "inscribed_diameter_mm": 0.5175536286468942
+    },
+    {
+      "id": "E0224",
+      "minimum_width_mm": 0.7429910578035361,
+      "inscribed_diameter_mm": 0.7203523328265504
+    },
+    {
+      "id": "E0225",
+      "minimum_width_mm": 2.4297384601424845,
+      "inscribed_diameter_mm": 2.275067818373916
+    },
+    {
+      "id": "E0226",
+      "minimum_width_mm": 0.5559122429919512,
+      "inscribed_diameter_mm": 0.5428399595903457
+    },
+    {
+      "id": "E0227",
+      "minimum_width_mm": 2.302110313324974,
+      "inscribed_diameter_mm": 2.254163577648175
+    },
+    {
+      "id": "E0228",
+      "minimum_width_mm": 0.7454835841257861,
+      "inscribed_diameter_mm": 0.7242534946690569
+    },
+    {
+      "id": "E0229",
+      "minimum_width_mm": 0.7446139795984283,
+      "inscribed_diameter_mm": 0.7230140099114095
+    },
+    {
+      "id": "E0230",
+      "minimum_width_mm": 0.4703884577681947,
+      "inscribed_diameter_mm": 0.41736703166586153
+    },
+    {
+      "id": "E0231",
+      "minimum_width_mm": 0.1558200384721431,
+      "inscribed_diameter_mm": 0.1556748168305262
+    },
+    {
+      "id": "E0232",
+      "minimum_width_mm": 1.5365690362914712,
+      "inscribed_diameter_mm": 1.2258445745380833
+    },
+    {
+      "id": "E0233",
+      "minimum_width_mm": 0.48629194474052184,
+      "inscribed_diameter_mm": 0.45173568930005104
+    },
+    {
+      "id": "E0234",
+      "minimum_width_mm": 0.7302099528562884,
+      "inscribed_diameter_mm": 0.6965703499422499
+    },
+    {
+      "id": "E0235",
+      "minimum_width_mm": 1.0139181193001416,
+      "inscribed_diameter_mm": 0.9108584249770022
+    },
+    {
+      "id": "E0236",
+      "minimum_width_mm": 0.4803399304738569,
+      "inscribed_diameter_mm": 0.45186663302190766
+    },
+    {
+      "id": "E0237",
+      "minimum_width_mm": 0.36341338787019595,
+      "inscribed_diameter_mm": 0.36040028995679974
+    },
+    {
+      "id": "E0238",
+      "minimum_width_mm": 7.644580760413078e-06,
+      "inscribed_diameter_mm": 7.644577695777518e-06
+    },
+    {
+      "id": "E0239",
+      "minimum_width_mm": 0.48831844197848184,
+      "inscribed_diameter_mm": 0.4779552984606923
+    },
+    {
+      "id": "E0240",
+      "minimum_width_mm": 0.5157201438535939,
+      "inscribed_diameter_mm": 0.5075482013226846
+    },
+    {
+      "id": "E0241",
+      "minimum_width_mm": 0.26794988662004293,
+      "inscribed_diameter_mm": 0.2657141650501186
+    },
+    {
+      "id": "E0242",
+      "minimum_width_mm": 0.3794366780502312,
+      "inscribed_diameter_mm": 0.36580576778981566
+    },
+    {
+      "id": "E0243",
+      "minimum_width_mm": 0.6023598976744804,
+      "inscribed_diameter_mm": 0.4569185160896697
+    },
+    {
+      "id": "E0244",
+      "minimum_width_mm": 0.26794988662004293,
+      "inscribed_diameter_mm": 0.26602627445322824
+    },
+    {
+      "id": "E0245",
+      "minimum_width_mm": 0.2679498866200447,
+      "inscribed_diameter_mm": 0.2659390532741348
+    },
+    {
+      "id": "E0246",
+      "minimum_width_mm": 0.2679498866200447,
+      "inscribed_diameter_mm": 0.26583687388951205
+    },
+    {
+      "id": "E0247",
+      "minimum_width_mm": 0.2679498866200447,
+      "inscribed_diameter_mm": 0.2632874619726097
+    },
+    {
+      "id": "E0248",
+      "minimum_width_mm": 0.26301060218745675,
+      "inscribed_diameter_mm": 0.2050503788474458
+    },
+    {
+      "id": "E0249",
+      "minimum_width_mm": 0.846156850457195,
+      "inscribed_diameter_mm": 0.7688979050494665
+    },
+    {
+      "id": "E0250",
+      "minimum_width_mm": 1.1877151528949526e-07,
+      "inscribed_diameter_mm": 1.187715101439844e-07
+    },
+    {
+      "id": "E0251",
+      "minimum_width_mm": 0.25653135965387364,
+      "inscribed_diameter_mm": 0.20736531728945806
+    },
+    {
+      "id": "E0252",
+      "minimum_width_mm": 0.41401113318394955,
+      "inscribed_diameter_mm": 0.3993163127894679
+    },
+    {
+      "id": "E0253",
+      "minimum_width_mm": 0.07031488895962568,
+      "inscribed_diameter_mm": 0.07011884847339177
+    },
+    {
+      "id": "E0254",
+      "minimum_width_mm": 0.07454596240362399,
+      "inscribed_diameter_mm": 0.07433812552963033
+    },
+    {
+      "id": "E0255",
+      "minimum_width_mm": 0.22192008542024588,
+      "inscribed_diameter_mm": 0.22186056489395867
+    },
+    {
+      "id": "E0256",
+      "minimum_width_mm": 0.4554095817824084,
+      "inscribed_diameter_mm": 0.43163737383753187
+    },
+    {
+      "id": "E0257",
+      "minimum_width_mm": 0.054039616144823555,
+      "inscribed_diameter_mm": 0.053917312605157974
+    },
+    {
+      "id": "E0258",
+      "minimum_width_mm": 0.595440267997736,
+      "inscribed_diameter_mm": 0.5724324362499047
+    },
+    {
+      "id": "E0259",
+      "minimum_width_mm": 0.1714727316355038,
+      "inscribed_diameter_mm": 0.1714722557451943
+    },
+    {
+      "id": "E0260",
+      "minimum_width_mm": 0.01992677942921972,
+      "inscribed_diameter_mm": 0.019910199786931315
+    },
+    {
+      "id": "E0261",
+      "minimum_width_mm": 0.17083433399805692,
+      "inscribed_diameter_mm": 0.17081701472827499
+    },
+    {
+      "id": "E0262",
+      "minimum_width_mm": 0.8979411438917175,
+      "inscribed_diameter_mm": 0.7681953881056813
+    },
+    {
+      "id": "E0263",
+      "minimum_width_mm": 0.5474485481872355,
+      "inscribed_diameter_mm": 0.47227305060985003
+    },
+    {
+      "id": "E0264",
+      "minimum_width_mm": 0.22600193057004958,
+      "inscribed_diameter_mm": 0.18953191156926152
+    },
+    {
+      "id": "E0265",
+      "minimum_width_mm": 1.0855949342648046,
+      "inscribed_diameter_mm": 1.0173613758724418
+    },
+    {
+      "id": "E0266",
+      "minimum_width_mm": 0.31165105119374203,
+      "inscribed_diameter_mm": 0.3088931085297708
+    },
+    {
+      "id": "E0267",
+      "minimum_width_mm": 0.170680477353649,
+      "inscribed_diameter_mm": 0.17066317368192707
+    },
+    {
+      "id": "E0268",
+      "minimum_width_mm": 0.0222381917532104,
+      "inscribed_diameter_mm": 0.015312103622001416
+    },
+    {
+      "id": "E0269",
+      "minimum_width_mm": 0.07461470373227286,
+      "inscribed_diameter_mm": 0.06952232716839324
+    },
+    {
+      "id": "E0270",
+      "minimum_width_mm": 0.19364745275075634,
+      "inscribed_diameter_mm": 0.19362684589498969
+    },
+    {
+      "id": "E0271",
+      "minimum_width_mm": 0.35489651122329136,
+      "inscribed_diameter_mm": 0.3211537281073529
+    },
+    {
+      "id": "E0272",
+      "minimum_width_mm": 0.17988631771717856,
+      "inscribed_diameter_mm": 0.17938856710596546
+    },
+    {
+      "id": "E0273",
+      "minimum_width_mm": 0.1587139319323363,
+      "inscribed_diameter_mm": 0.15827476592110554
+    },
+    {
+      "id": "E0274",
+      "minimum_width_mm": 0.49421627567182114,
+      "inscribed_diameter_mm": 0.4923508872030943
+    },
+    {
+      "id": "E0275",
+      "minimum_width_mm": 0.0051554460072580355,
+      "inscribed_diameter_mm": 0.0051520724995697265
+    },
+    {
+      "id": "E0276",
+      "minimum_width_mm": 0.1545155952639199,
+      "inscribed_diameter_mm": 0.1540880461709132
+    },
+    {
+      "id": "E0277",
+      "minimum_width_mm": 0.12733907751208662,
+      "inscribed_diameter_mm": 0.11669232946557329
+    },
+    {
+      "id": "E0278",
+      "minimum_width_mm": 0.42357841296492627,
+      "inscribed_diameter_mm": 0.3968210880176457
+    },
+    {
+      "id": "E0279",
+      "minimum_width_mm": 0.45899172596327453,
+      "inscribed_diameter_mm": 0.4140196064021211
+    },
+    {
+      "id": "E0280",
+      "minimum_width_mm": 2.047591594540622,
+      "inscribed_diameter_mm": 1.9628747639139514
+    },
+    {
+      "id": "E0281",
+      "minimum_width_mm": 0.14091352039829452,
+      "inscribed_diameter_mm": 0.14018877288468634
+    },
+    {
+      "id": "E0282",
+      "minimum_width_mm": 0.13040764741165844,
+      "inscribed_diameter_mm": 0.11770590174147678
+    },
+    {
+      "id": "E0283",
+      "minimum_width_mm": 0.5708315992897788,
+      "inscribed_diameter_mm": 0.4359877499368565
+    },
+    {
+      "id": "E0284",
+      "minimum_width_mm": 0.1804573484877725,
+      "inscribed_diameter_mm": 0.17952921885011539
+    },
+    {
+      "id": "E0285",
+      "minimum_width_mm": 0.7697600084047364,
+      "inscribed_diameter_mm": 0.7016022880015722
+    },
+    {
+      "id": "E0286",
+      "minimum_width_mm": 0.01807896620056937,
+      "inscribed_diameter_mm": 0.015738481487318268
+    },
+    {
+      "id": "E0287",
+      "minimum_width_mm": 0.18829861423669492,
+      "inscribed_diameter_mm": 0.1873301553400801
+    },
+    {
+      "id": "E0288",
+      "minimum_width_mm": 0.8395743178889603,
+      "inscribed_diameter_mm": 0.7626706319657908
+    },
+    {
+      "id": "E0289",
+      "minimum_width_mm": 0.47688858224276487,
+      "inscribed_diameter_mm": 0.47606459466358975
+    },
+    {
+      "id": "E0290",
+      "minimum_width_mm": 0.44951804674821005,
+      "inscribed_diameter_mm": 0.44709977508021836
+    },
+    {
+      "id": "E0291",
+      "minimum_width_mm": 0.2869865993399898,
+      "inscribed_diameter_mm": 0.2856684323586262
+    },
+    {
+      "id": "E0292",
+      "minimum_width_mm": 0.026371357724315203,
+      "inscribed_diameter_mm": 0.026334315976754397
+    },
+    {
+      "id": "E0293",
+      "minimum_width_mm": 0.36606361406449395,
+      "inscribed_diameter_mm": 0.3550253140250632
+    },
+    {
+      "id": "E0294",
+      "minimum_width_mm": 0.32263559717378243,
+      "inscribed_diameter_mm": 0.32115368968337976
+    },
+    {
+      "id": "E0295",
+      "minimum_width_mm": 0.1931545122782623,
+      "inscribed_diameter_mm": 0.16703638828936107
+    },
+    {
+      "id": "E0296",
+      "minimum_width_mm": 0.3297045452044429,
+      "inscribed_diameter_mm": 0.3281901691112954
+    },
+    {
+      "id": "E0297",
+      "minimum_width_mm": 0.40630845248288416,
+      "inscribed_diameter_mm": 0.3725689270105619
+    },
+    {
+      "id": "E0298",
+      "minimum_width_mm": 0.24287639620490253,
+      "inscribed_diameter_mm": 0.24282581685069982
+    },
+    {
+      "id": "E0299",
+      "minimum_width_mm": 0.001845559881907377,
+      "inscribed_diameter_mm": 0.0018442509503393024
+    },
+    {
+      "id": "E0300",
+      "minimum_width_mm": 0.4277316288571944,
+      "inscribed_diameter_mm": 0.38081248309498505
+    },
+    {
+      "id": "E0301",
+      "minimum_width_mm": 0.4659317309289115,
+      "inscribed_diameter_mm": 0.4638982656281385
+    },
+    {
+      "id": "E0302",
+      "minimum_width_mm": 0.24060582473841308,
+      "inscribed_diameter_mm": 0.23990907683657245
+    },
+    {
+      "id": "E0303",
+      "minimum_width_mm": 0.645968586003212,
+      "inscribed_diameter_mm": 0.599559464337533
+    },
+    {
+      "id": "E0304",
+      "minimum_width_mm": 0.010508190615865942,
+      "inscribed_diameter_mm": 0.009152563893607635
+    },
+    {
+      "id": "E0305",
+      "minimum_width_mm": 0.595799071081327,
+      "inscribed_diameter_mm": 0.5944620400781888
+    },
+    {
+      "id": "E0306",
+      "minimum_width_mm": 0.4380292903425685,
+      "inscribed_diameter_mm": 0.4280434866288587
+    },
+    {
+      "id": "E0307",
+      "minimum_width_mm": 0.19746624895844,
+      "inscribed_diameter_mm": 0.19689442491886874
+    },
+    {
+      "id": "E0308",
+      "minimum_width_mm": 1.0500634932299864,
+      "inscribed_diameter_mm": 0.9185958009724748
+    },
+    {
+      "id": "E0309",
+      "minimum_width_mm": 0.6981154336027204,
+      "inscribed_diameter_mm": 0.6543671130469613
+    },
+    {
+      "id": "E0310",
+      "minimum_width_mm": 0.17498958905878403,
+      "inscribed_diameter_mm": 0.17448285307617276
+    },
+    {
+      "id": "E0311",
+      "minimum_width_mm": 0.25262736112125594,
+      "inscribed_diameter_mm": 0.25256877115145127
+    },
+    {
+      "id": "E0312",
+      "minimum_width_mm": 0.17847964202100997,
+      "inscribed_diameter_mm": 0.1580670870839782
+    },
+    {
+      "id": "E0313",
+      "minimum_width_mm": 0.24024339324146382,
+      "inscribed_diameter_mm": 0.2395445830691793
+    },
+    {
+      "id": "E0314",
+      "minimum_width_mm": 0.39538267019309536,
+      "inscribed_diameter_mm": 0.3511706737913798
+    },
+    {
+      "id": "E0315",
+      "minimum_width_mm": 0.549090249539951,
+      "inscribed_diameter_mm": 0.4241848394375296
+    },
+    {
+      "id": "E0316",
+      "minimum_width_mm": 0.022243262182740864,
+      "inscribed_diameter_mm": 0.022224587001716145
+    },
+    {
+      "id": "E0317",
+      "minimum_width_mm": 0.19716879984935431,
+      "inscribed_diameter_mm": 0.1965952832954427
+    },
+    {
+      "id": "E0318",
+      "minimum_width_mm": 0.17053262391562996,
+      "inscribed_diameter_mm": 0.17003879444147776
+    },
+    {
+      "id": "E0319",
+      "minimum_width_mm": 0.1747259971911177,
+      "inscribed_diameter_mm": 0.17421776134516154
+    },
+    {
+      "id": "E0320",
+      "minimum_width_mm": 0.3270024249308019,
+      "inscribed_diameter_mm": 0.3181779366505282
+    },
+    {
+      "id": "E0321",
+      "minimum_width_mm": 0.37627650672770585,
+      "inscribed_diameter_mm": 0.3425666110785066
+    },
+    {
+      "id": "E0322",
+      "minimum_width_mm": 0.1702757457031705,
+      "inscribed_diameter_mm": 0.16978045456702326
+    },
+    {
+      "id": "E0323",
+      "minimum_width_mm": 0.26282736712686017,
+      "inscribed_diameter_mm": 0.26275829434019293
+    },
+    {
+      "id": "E0324",
+      "minimum_width_mm": 0.24096166399929153,
+      "inscribed_diameter_mm": 0.24025449019197315
+    },
+    {
+      "id": "E0325",
+      "minimum_width_mm": 0.19775828779063076,
+      "inscribed_diameter_mm": 0.19717790716499708
+    },
+    {
+      "id": "E0326",
+      "minimum_width_mm": 0.17524838647608654,
+      "inscribed_diameter_mm": 0.17473406786359771
+    },
+    {
+      "id": "E0327",
+      "minimum_width_mm": 0.35303062393935747,
+      "inscribed_diameter_mm": 0.3456556669365174
+    },
+    {
+      "id": "E0328",
+      "minimum_width_mm": 0.017877601882064553,
+      "inscribed_diameter_mm": 0.017859401368300536
+    },
+    {
+      "id": "E0329",
+      "minimum_width_mm": 0.17078482979183995,
+      "inscribed_diameter_mm": 0.1702836108165398
+    },
+    {
+      "id": "E0330",
+      "minimum_width_mm": 0.11769557792881358,
+      "inscribed_diameter_mm": 0.11051026089660354
+    },
+    {
+      "id": "E0331",
+      "minimum_width_mm": 0.45043666194298027,
+      "inscribed_diameter_mm": 0.4453782591416413
+    },
+    {
+      "id": "E0332",
+      "minimum_width_mm": 0.09830437963865535,
+      "inscribed_diameter_mm": 0.09829398231701347
+    },
+    {
+      "id": "E0333",
+      "minimum_width_mm": 0.08724608142838086,
+      "inscribed_diameter_mm": 0.08715282287363876
+    },
+    {
+      "id": "E0334",
+      "minimum_width_mm": 0.07160323925954337,
+      "inscribed_diameter_mm": 0.07152670155723143
+    },
+    {
+      "id": "E0335",
+      "minimum_width_mm": 0.06345297730318933,
+      "inscribed_diameter_mm": 0.06338515152969582
+    },
+    {
+      "id": "E0336",
+      "minimum_width_mm": 0.06183683711113552,
+      "inscribed_diameter_mm": 0.06177073885245684
+    },
+    {
+      "id": "E0337",
+      "minimum_width_mm": 0.5065703728509412,
+      "inscribed_diameter_mm": 0.492880003899554
+    },
+    {
+      "id": "E0338",
+      "minimum_width_mm": 1.08032340931433,
+      "inscribed_diameter_mm": 1.079803833221522
+    },
+    {
+      "id": "E0339",
+      "minimum_width_mm": 0.2580328931155538,
+      "inscribed_diameter_mm": 0.2502103960434603
+    },
+    {
+      "id": "E0340",
+      "minimum_width_mm": 0.26555515715065425,
+      "inscribed_diameter_mm": 0.24137615200565854
+    },
+    {
+      "id": "E0341",
+      "minimum_width_mm": 0.030303319926844097,
+      "inscribed_diameter_mm": 0.018350150016772204
+    },
+    {
+      "id": "E0342",
+      "minimum_width_mm": 0.12516545979088534,
+      "inscribed_diameter_mm": 0.09498867855153659
+    },
+    {
+      "id": "E0343",
+      "minimum_width_mm": 0.5031202579994809,
+      "inscribed_diameter_mm": 0.469550629276803
+    },
+    {
+      "id": "E0344",
+      "minimum_width_mm": 0.2079175049170754,
+      "inscribed_diameter_mm": 0.20751165032564264
+    },
+    {
+      "id": "E0345",
+      "minimum_width_mm": 0.23653440946340432,
+      "inscribed_diameter_mm": 0.23607269472634673
+    },
+    {
+      "id": "E0346",
+      "minimum_width_mm": 0.2514444408960159,
+      "inscribed_diameter_mm": 0.25095362180472314
+    },
+    {
+      "id": "E0347",
+      "minimum_width_mm": 0.2544009963039322,
+      "inscribed_diameter_mm": 0.2539044060218591
+    },
+    {
+      "id": "E0348",
+      "minimum_width_mm": 0.3675248676539642,
+      "inscribed_diameter_mm": 0.3670805006650655
+    },
+    {
+      "id": "E0349",
+      "minimum_width_mm": 0.3513271568748735,
+      "inscribed_diameter_mm": 0.31926526037208447
+    },
+    {
+      "id": "E0350",
+      "minimum_width_mm": 0.30439154508510136,
+      "inscribed_diameter_mm": 0.2709786518499584
+    },
+    {
+      "id": "E0351",
+      "minimum_width_mm": 0.007016417744971193,
+      "inscribed_diameter_mm": 0.007011874283875841
+    },
+    {
+      "id": "E0352",
+      "minimum_width_mm": 0.07662549014236042,
+      "inscribed_diameter_mm": 0.0761797533120743
+    },
+    {
+      "id": "E0353",
+      "minimum_width_mm": 0.03925972772805508,
+      "inscribed_diameter_mm": 0.03913088574838142
+    },
+    {
+      "id": "E0354",
+      "minimum_width_mm": 0.1629172932618328,
+      "inscribed_diameter_mm": 0.16196958985710055
+    },
+    {
+      "id": "E0355",
+      "minimum_width_mm": 0.07778467395684174,
+      "inscribed_diameter_mm": 0.07202389220320837
+    },
+    {
+      "id": "E0356",
+      "minimum_width_mm": 0.23057545987905814,
+      "inscribed_diameter_mm": 0.22322039019131168
+    },
+    {
+      "id": "E0357",
+      "minimum_width_mm": 0.5369483062955567,
+      "inscribed_diameter_mm": 0.42167857364361794
+    },
+    {
+      "id": "E0358",
+      "minimum_width_mm": 0.42566299735560165,
+      "inscribed_diameter_mm": 0.3577293152696601
+    },
+    {
+      "id": "E0359",
+      "minimum_width_mm": 0.20787720479959404,
+      "inscribed_diameter_mm": 0.20666796586117014
+    },
+    {
+      "id": "E0360",
+      "minimum_width_mm": 0.20903348987268977,
+      "inscribed_diameter_mm": 0.206024078257375
+    },
+    {
+      "id": "E0361",
+      "minimum_width_mm": 0.21679244218171867,
+      "inscribed_diameter_mm": 0.21553134256815124
+    },
+    {
+      "id": "E0362",
+      "minimum_width_mm": 0.3657719804498196,
+      "inscribed_diameter_mm": 0.3648209420878824
+    },
+    {
+      "id": "E0363",
+      "minimum_width_mm": 0.0437322548100223,
+      "inscribed_diameter_mm": 0.043624733363621715
+    },
+    {
+      "id": "E0364",
+      "minimum_width_mm": 0.3028940135725602,
+      "inscribed_diameter_mm": 0.3014057661126621
+    },
+    {
+      "id": "E0365",
+      "minimum_width_mm": 0.15362749528094355,
+      "inscribed_diameter_mm": 0.13642048143682928
+    },
+    {
+      "id": "E0366",
+      "minimum_width_mm": 0.029766123130237077,
+      "inscribed_diameter_mm": 0.021639854300445904
+    },
+    {
+      "id": "E0367",
+      "minimum_width_mm": 0.23116724383993326,
+      "inscribed_diameter_mm": 0.18411799414050023
+    },
+    {
+      "id": "E0368",
+      "minimum_width_mm": 0.5600699935342028,
+      "inscribed_diameter_mm": 0.5576555121734277
+    },
+    {
+      "id": "E0369",
+      "minimum_width_mm": 1.767768312860973,
+      "inscribed_diameter_mm": 1.7573597373238705
+    },
+    {
+      "id": "E0370",
+      "minimum_width_mm": 0.4045530048435442,
+      "inscribed_diameter_mm": 0.40350113250884667
+    },
+    {
+      "id": "E0371",
+      "minimum_width_mm": 0.3648993017746661,
+      "inscribed_diameter_mm": 0.3313262461418791
+    },
+    {
+      "id": "E0372",
+      "minimum_width_mm": 0.4432549589060244,
+      "inscribed_diameter_mm": 0.43548484952363253
+    },
+    {
+      "id": "E0373",
+      "minimum_width_mm": 0.13448564851670497,
+      "inscribed_diameter_mm": 0.1344545556222414
+    },
+    {
+      "id": "E0374",
+      "minimum_width_mm": 0.42475876440649607,
+      "inscribed_diameter_mm": 0.4236543553726962
+    },
+    {
+      "id": "E0375",
+      "minimum_width_mm": 0.22296867774962825,
+      "inscribed_diameter_mm": 0.18919262162204475
+    },
+    {
+      "id": "E0376",
+      "minimum_width_mm": 0.013940151810892587,
+      "inscribed_diameter_mm": 0.013926910113013946
+    },
+    {
+      "id": "E0377",
+      "minimum_width_mm": 0.42876542582616395,
+      "inscribed_diameter_mm": 0.42765059913076603
+    },
+    {
+      "id": "E0378",
+      "minimum_width_mm": 0.3316029822061708,
+      "inscribed_diameter_mm": 0.30304588508261077
+    },
+    {
+      "id": "E0379",
+      "minimum_width_mm": 0.03625452032396481,
+      "inscribed_diameter_mm": 0.03583273764287753
+    },
+    {
+      "id": "E0380",
+      "minimum_width_mm": 0.113417417767959,
+      "inscribed_diameter_mm": 0.11326433976804418
+    },
+    {
+      "id": "E0381",
+      "minimum_width_mm": 0.24204515996301623,
+      "inscribed_diameter_mm": 0.24192659941111394
+    },
+    {
+      "id": "E0382",
+      "minimum_width_mm": 0.294148722201272,
+      "inscribed_diameter_mm": 0.2630662125936354
+    },
+    {
+      "id": "E0383",
+      "minimum_width_mm": 0.17794315367083247,
+      "inscribed_diameter_mm": 0.1481851467964681
+    },
+    {
+      "id": "E0384",
+      "minimum_width_mm": 0.09328548325247965,
+      "inscribed_diameter_mm": 0.09315957706030778
+    },
+    {
+      "id": "E0385",
+      "minimum_width_mm": 0.14844320503870367,
+      "inscribed_diameter_mm": 0.14338680938767823
+    },
+    {
+      "id": "E0386",
+      "minimum_width_mm": 0.5839468097439866,
+      "inscribed_diameter_mm": 0.5825708624945252
+    },
+    {
+      "id": "E0387",
+      "minimum_width_mm": 0.20249562721975956,
+      "inscribed_diameter_mm": 0.2020062803586261
+    },
+    {
+      "id": "E0388",
+      "minimum_width_mm": 0.14504089577513923,
+      "inscribed_diameter_mm": 0.1260753907307901
+    },
+    {
+      "id": "E0389",
+      "minimum_width_mm": 0.08279630627182044,
+      "inscribed_diameter_mm": 0.082684557184127
+    },
+    {
+      "id": "E0390",
+      "minimum_width_mm": 0.05441942557777679,
+      "inscribed_diameter_mm": 0.03415286431307152
+    },
+    {
+      "id": "E0391",
+      "minimum_width_mm": 0.21316154322048497,
+      "inscribed_diameter_mm": 0.21304080059502084
+    },
+    {
+      "id": "E0392",
+      "minimum_width_mm": 0.16655204124252343,
+      "inscribed_diameter_mm": 0.16614955492853653
+    },
+    {
+      "id": "E0393",
+      "minimum_width_mm": 0.18126461226097845,
+      "inscribed_diameter_mm": 0.17216401387348412
+    },
+    {
+      "id": "E0394",
+      "minimum_width_mm": 0.5037208724872286,
+      "inscribed_diameter_mm": 0.40251327283991145
+    },
+    {
+      "id": "E0395",
+      "minimum_width_mm": 0.14782464898199343,
+      "inscribed_diameter_mm": 0.14746741890759216
+    },
+    {
+      "id": "E0396",
+      "minimum_width_mm": 0.11796160672491496,
+      "inscribed_diameter_mm": 0.0913137473377219
+    },
+    {
+      "id": "E0397",
+      "minimum_width_mm": 0.1762333814158552,
+      "inscribed_diameter_mm": 0.17586088760279997
+    },
+    {
+      "id": "E0398",
+      "minimum_width_mm": 0.08071637551734945,
+      "inscribed_diameter_mm": 0.08060743368488715
+    },
+    {
+      "id": "E0399",
+      "minimum_width_mm": 0.09542696355376279,
+      "inscribed_diameter_mm": 0.09539575656773636
+    },
+    {
+      "id": "E0400",
+      "minimum_width_mm": 0.14495142345976753,
+      "inscribed_diameter_mm": 0.1446450484245852
+    },
+    {
+      "id": "E0401",
+      "minimum_width_mm": 0.010157146371767567,
+      "inscribed_diameter_mm": 0.010149525323143394
+    },
+    {
+      "id": "E0402",
+      "minimum_width_mm": 0.1286528410731318,
+      "inscribed_diameter_mm": 0.12838091536333715
+    },
+    {
+      "id": "E0403",
+      "minimum_width_mm": 0.23052133074968495,
+      "inscribed_diameter_mm": 0.19196222263361662
+    },
+    {
+      "id": "E0404",
+      "minimum_width_mm": 0.1209060599698919,
+      "inscribed_diameter_mm": 0.09818131691818976
+    },
+    {
+      "id": "E0405",
+      "minimum_width_mm": 0.1441111375038684,
+      "inscribed_diameter_mm": 0.1437628814266361
+    },
+    {
+      "id": "E0406",
+      "minimum_width_mm": 0.0783050754012713,
+      "inscribed_diameter_mm": 0.07823121908260676
+    },
+    {
+      "id": "E0407",
+      "minimum_width_mm": 0.41980442590185163,
+      "inscribed_diameter_mm": 0.41100196463781963
+    },
+    {
+      "id": "E0408",
+      "minimum_width_mm": 0.04003069410730831,
+      "inscribed_diameter_mm": 0.03923880565537985
+    },
+    {
+      "id": "E0409",
+      "minimum_width_mm": 0.0644056878007433,
+      "inscribed_diameter_mm": 0.06434494120190734
+    },
+    {
+      "id": "E0410",
+      "minimum_width_mm": 0.30620935834424756,
+      "inscribed_diameter_mm": 0.2823235875729312
+    },
+    {
+      "id": "E0411",
+      "minimum_width_mm": 0.16189923569601916,
+      "inscribed_diameter_mm": 0.16178098141966046
+    },
+    {
+      "id": "E0412",
+      "minimum_width_mm": 0.0571638037010036,
+      "inscribed_diameter_mm": 0.057109887552137854
+    },
+    {
+      "id": "E0413",
+      "minimum_width_mm": 0.03523957318960136,
+      "inscribed_diameter_mm": 0.03456773118466039
+    },
+    {
+      "id": "E0414",
+      "minimum_width_mm": 0.12542094568012274,
+      "inscribed_diameter_mm": 0.12515585103165988
+    },
+    {
+      "id": "E0415",
+      "minimum_width_mm": 0.13252501138229356,
+      "inscribed_diameter_mm": 0.13231305904185744
+    },
+    {
+      "id": "E0416",
+      "minimum_width_mm": 0.03044599062429576,
+      "inscribed_diameter_mm": 0.029908489626841117
+    },
+    {
+      "id": "E0417",
+      "minimum_width_mm": 0.10900142123787404,
+      "inscribed_diameter_mm": 0.10882709107859731
+    },
+    {
+      "id": "E0418",
+      "minimum_width_mm": 0.022785513819975733,
+      "inscribed_diameter_mm": 0.02278253373004091
+    },
+    {
+      "id": "E0419",
+      "minimum_width_mm": 0.09674511769906147,
+      "inscribed_diameter_mm": 0.09659038951674563
+    },
+    {
+      "id": "E0420",
+      "minimum_width_mm": 0.05572778851247051,
+      "inscribed_diameter_mm": 0.055675226794271664
+    },
+    {
+      "id": "E0421",
+      "minimum_width_mm": 0.11478945504636684,
+      "inscribed_diameter_mm": 0.11332852464209786
+    },
+    {
+      "id": "E0422",
+      "minimum_width_mm": 0.13053458132544904,
+      "inscribed_diameter_mm": 0.11738265308678919
+    },
+    {
+      "id": "E0423",
+      "minimum_width_mm": 0.018599031258915488,
+      "inscribed_diameter_mm": 0.018594843115231217
+    },
+    {
+      "id": "E0424",
+      "minimum_width_mm": 0.11590092887080061,
+      "inscribed_diameter_mm": 0.11383649091111891
+    },
+    {
+      "id": "E0425",
+      "minimum_width_mm": 0.015297646985453994,
+      "inscribed_diameter_mm": 0.015294202249932894
+    },
+    {
+      "id": "E0426",
+      "minimum_width_mm": 0.11657795093533707,
+      "inscribed_diameter_mm": 0.11353470444539582
+    },
+    {
+      "id": "E0427",
+      "minimum_width_mm": 0.09431477805340016,
+      "inscribed_diameter_mm": 0.09416393680661994
+    },
+    {
+      "id": "E0428",
+      "minimum_width_mm": 0.013577553772412543,
+      "inscribed_diameter_mm": 0.013574496368761981
+    },
+    {
+      "id": "E0429",
+      "minimum_width_mm": 0.13289503056030938,
+      "inscribed_diameter_mm": 0.1327673199456279
+    },
+    {
+      "id": "E0430",
+      "minimum_width_mm": 0.10844892930302841,
+      "inscribed_diameter_mm": 0.1083064700329064
+    },
+    {
+      "id": "E0431",
+      "minimum_width_mm": 0.013236471266036887,
+      "inscribed_diameter_mm": 0.013233490667597178
+    },
+    {
+      "id": "E0432",
+      "minimum_width_mm": 0.08919891650984368,
+      "inscribed_diameter_mm": 0.08908174419082444
+    },
+    {
+      "id": "E0433",
+      "minimum_width_mm": 0.0791692399821251,
+      "inscribed_diameter_mm": 0.07906524271616207
+    },
+    {
+      "id": "E0434",
+      "minimum_width_mm": 0.07718042496776789,
+      "inscribed_diameter_mm": 0.07707904022308261
+    },
+    {
+      "id": "E0435",
+      "minimum_width_mm": 0.05125698837026249,
+      "inscribed_diameter_mm": 0.04970665847242238
+    },
+    {
+      "id": "E0436",
+      "minimum_width_mm": 0.04439800977706909,
+      "inscribed_diameter_mm": 0.04307067689318164
+    },
+    {
+      "id": "E0437",
+      "minimum_width_mm": 0.03755651414394556,
+      "inscribed_diameter_mm": 0.036451312874289814
+    },
+    {
+      "id": "E0438",
+      "minimum_width_mm": 0.03075692802667973,
+      "inscribed_diameter_mm": 0.03074802011579214
+    },
+    {
+      "id": "E0439",
+      "minimum_width_mm": 0.025078035676340704,
+      "inscribed_diameter_mm": 0.025070397823766584
+    },
+    {
+      "id": "E0440",
+      "minimum_width_mm": 0.0206266085327087,
+      "inscribed_diameter_mm": 0.020620326422057186
+    },
+    {
+      "id": "E0441",
+      "minimum_width_mm": 0.01830731790069251,
+      "inscribed_diameter_mm": 0.018301742161158537
+    },
+    {
+      "id": "E0442",
+      "minimum_width_mm": 0.017847418718616836,
+      "inscribed_diameter_mm": 0.017841983047549276
+    },
+    {
+      "id": "E0443",
+      "minimum_width_mm": 1.402318437193358,
+      "inscribed_diameter_mm": 1.2786512171799949
+    },
+    {
+      "id": "E0444",
+      "minimum_width_mm": 2.0376007374702,
+      "inscribed_diameter_mm": 2.026581580997793
+    },
+    {
+      "id": "E0445",
+      "minimum_width_mm": 2.1014564449727473,
+      "inscribed_diameter_mm": 1.7418481660646312
+    },
+    {
+      "id": "E0446",
+      "minimum_width_mm": 1.1434065232159583,
+      "inscribed_diameter_mm": 1.1241300685207136
+    },
+    {
+      "id": "E0447",
+      "minimum_width_mm": 0.16076955944299787,
+      "inscribed_diameter_mm": 0.1607695594429881
+    },
+    {
+      "id": "E0448",
+      "minimum_width_mm": 0.16076955944299698,
+      "inscribed_diameter_mm": 0.16076955944299698
+    },
+    {
+      "id": "E0449",
+      "minimum_width_mm": 0.16076955944299698,
+      "inscribed_diameter_mm": 0.16076955944299698
+    },
+    {
+      "id": "E0450",
+      "minimum_width_mm": 0.43923035264015287,
+      "inscribed_diameter_mm": 0.4392303526401413
+    },
+    {
+      "id": "E0451",
+      "minimum_width_mm": 0.439230352640152,
+      "inscribed_diameter_mm": 0.439230352640152
+    },
+    {
+      "id": "E0452",
+      "minimum_width_mm": 0.439230352640152,
+      "inscribed_diameter_mm": 0.439230352640152
+    },
+    {
+      "id": "E0453",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0454",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0455",
+      "minimum_width_mm": 0.5999999120831498,
+      "inscribed_diameter_mm": 0.5999999120831596
+    },
+    {
+      "id": "E0456",
+      "minimum_width_mm": 1.9034243887290376,
+      "inscribed_diameter_mm": 1.846952922275431
+    },
+    {
+      "id": "E0457",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0458",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0459",
+      "minimum_width_mm": 0.5999999120831498,
+      "inscribed_diameter_mm": 0.5999999120831507
+    },
+    {
+      "id": "E0460",
+      "minimum_width_mm": 0.4392308183014393,
+      "inscribed_diameter_mm": 0.4392308183014393
+    },
+    {
+      "id": "E0461",
+      "minimum_width_mm": 0.4392308183014393,
+      "inscribed_diameter_mm": 0.4392308183014393
+    },
+    {
+      "id": "E0462",
+      "minimum_width_mm": 0.4392308183014393,
+      "inscribed_diameter_mm": 0.4392308183014393
+    },
+    {
+      "id": "E0463",
+      "minimum_width_mm": 0.16076909378170967,
+      "inscribed_diameter_mm": 0.16076909378170967
+    },
+    {
+      "id": "E0464",
+      "minimum_width_mm": 0.16076909378170967,
+      "inscribed_diameter_mm": 0.16076909378170967
+    },
+    {
+      "id": "E0465",
+      "minimum_width_mm": 0.16076909378171056,
+      "inscribed_diameter_mm": 0.16076909378172033
+    },
+    {
+      "id": "E0466",
+      "minimum_width_mm": 2.270929445129327,
+      "inscribed_diameter_mm": 2.2581905058846434
+    },
+    {
+      "id": "E0467",
+      "minimum_width_mm": 4.19033237912193,
+      "inscribed_diameter_mm": 3.956770487523915
+    },
+    {
+      "id": "E0468",
+      "minimum_width_mm": 0.829232926695775,
+      "inscribed_diameter_mm": 0.8158954956701532
+    },
+    {
+      "id": "E0469",
+      "minimum_width_mm": 1.0354297244714439,
+      "inscribed_diameter_mm": 1.0330391100292085
+    },
+    {
+      "id": "E0470",
+      "minimum_width_mm": 5.913874479506499,
+      "inscribed_diameter_mm": 5.694872536165363
+    },
+    {
+      "id": "E0471",
+      "minimum_width_mm": 5.99999725818634,
+      "inscribed_diameter_mm": 5.99999725818634
+    },
+    {
+      "id": "E0472",
+      "minimum_width_mm": 4.249999765306711,
+      "inscribed_diameter_mm": 4.249999765306711
+    },
+    {
+      "id": "E0473",
+      "minimum_width_mm": 0.7545538246631622,
+      "inscribed_diameter_mm": 0.7545538246631622
+    },
+    {
+      "id": "E0474",
+      "minimum_width_mm": 3.805246204137802,
+      "inscribed_diameter_mm": 3.805246204137802
+    },
+    {
+      "id": "E0475",
+      "minimum_width_mm": 5.081417357958949,
+      "inscribed_diameter_mm": 4.875167536480381
+    },
+    {
+      "id": "E0476",
+      "minimum_width_mm": 3.0322862419760357,
+      "inscribed_diameter_mm": 3.0018237021782177
+    },
+    {
+      "id": "E0477",
+      "minimum_width_mm": 1.6891422257205115,
+      "inscribed_diameter_mm": 1.6774736660134382
+    },
+    {
+      "id": "E0478",
+      "minimum_width_mm": 1.3548314403836894,
+      "inscribed_diameter_mm": 1.3222447065919596
+    },
+    {
+      "id": "E0479",
+      "minimum_width_mm": 3.5284924002792533,
+      "inscribed_diameter_mm": 3.379949866226923
+    },
+    {
+      "id": "E0480",
+      "minimum_width_mm": 0.16076909378170967,
+      "inscribed_diameter_mm": 0.16076909378171145
+    },
+    {
+      "id": "E0481",
+      "minimum_width_mm": 0.16076909378170967,
+      "inscribed_diameter_mm": 0.16076909378170967
+    },
+    {
+      "id": "E0482",
+      "minimum_width_mm": 0.16076909378170967,
+      "inscribed_diameter_mm": 0.16076909378170967
+    },
+    {
+      "id": "E0483",
+      "minimum_width_mm": 0.4392308183014393,
+      "inscribed_diameter_mm": 0.4392308183014393
+    },
+    {
+      "id": "E0484",
+      "minimum_width_mm": 0.4392308183014393,
+      "inscribed_diameter_mm": 0.4392308183014393
+    },
+    {
+      "id": "E0485",
+      "minimum_width_mm": 0.43923081830144106,
+      "inscribed_diameter_mm": 0.4392308183014588
+    },
+    {
+      "id": "E0486",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0487",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0488",
+      "minimum_width_mm": 0.5999999120831498,
+      "inscribed_diameter_mm": 0.5999999120831596
+    },
+    {
+      "id": "E0489",
+      "minimum_width_mm": 3.2432669211715965,
+      "inscribed_diameter_mm": 2.884419264421591
+    },
+    {
+      "id": "E0490",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.5999999120831507
+    },
+    {
+      "id": "E0491",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0492",
+      "minimum_width_mm": 0.599999912083149,
+      "inscribed_diameter_mm": 0.599999912083149
+    },
+    {
+      "id": "E0493",
+      "minimum_width_mm": 0.439230352640152,
+      "inscribed_diameter_mm": 0.439230352640152
+    },
+    {
+      "id": "E0494",
+      "minimum_width_mm": 0.439230352640152,
+      "inscribed_diameter_mm": 0.439230352640152
+    },
+    {
+      "id": "E0495",
+      "minimum_width_mm": 0.43923035264015287,
+      "inscribed_diameter_mm": 0.4392303526401715
+    },
+    {
+      "id": "E0496",
+      "minimum_width_mm": 0.16076955944299698,
+      "inscribed_diameter_mm": 0.16076955944299698
+    },
+    {
+      "id": "E0497",
+      "minimum_width_mm": 0.16076955944299698,
+      "inscribed_diameter_mm": 0.16076955944299698
+    },
+    {
+      "id": "E0498",
+      "minimum_width_mm": 0.16076955944299787,
+      "inscribed_diameter_mm": 0.16076955944300764
+    },
+    {
+      "id": "E0499",
+      "minimum_width_mm": 1.1441037058830261,
+      "inscribed_diameter_mm": 1.1441037058830261
+    },
+    {
+      "id": "E0500",
+      "minimum_width_mm": 0.07363906752015659,
+      "inscribed_diameter_mm": 0.0735467057854889
+    },
+    {
+      "id": "E0501",
+      "minimum_width_mm": 0.07553662746736656,
+      "inscribed_diameter_mm": 0.07544188571983146
+    },
+    {
+      "id": "E0502",
+      "minimum_width_mm": 0.08510610091012971,
+      "inscribed_diameter_mm": 0.08499935665907478
+    },
+    {
+      "id": "E0503",
+      "minimum_width_mm": 0.10347284341553831,
+      "inscribed_diameter_mm": 0.10334306269409979
+    },
+    {
+      "id": "E0504",
+      "minimum_width_mm": 0.12684147804976043,
+      "inscribed_diameter_mm": 0.12677910471089504
+    },
+    {
+      "id": "E0505",
+      "minimum_width_mm": 0.03249926282176219,
+      "inscribed_diameter_mm": 0.03248129321371953
+    },
+    {
+      "id": "E0506",
+      "minimum_width_mm": 0.0958425671241061,
+      "inscribed_diameter_mm": 0.09320307287976703
+    },
+    {
+      "id": "E0507",
+      "minimum_width_mm": 0.10153268855274877,
+      "inscribed_diameter_mm": 0.09890069421177472
+    },
+    {
+      "id": "E0508",
+      "minimum_width_mm": 0.0333367163844045,
+      "inscribed_diameter_mm": 0.03331828372855803
+    },
+    {
+      "id": "E0509",
+      "minimum_width_mm": 0.0375600294022842,
+      "inscribed_diameter_mm": 0.03753926157717569
+    },
+    {
+      "id": "E0510",
+      "minimum_width_mm": 0.08226669905508821,
+      "inscribed_diameter_mm": 0.08215187871372705
+    },
+    {
+      "id": "E0511",
+      "minimum_width_mm": 0.04566585708266757,
+      "inscribed_diameter_mm": 0.0456406073544739
+    },
+    {
+      "id": "E0512",
+      "minimum_width_mm": 0.10504972493510767,
+      "inscribed_diameter_mm": 0.08641548786363096
+    },
+    {
+      "id": "E0513",
+      "minimum_width_mm": 0.04140528078587202,
+      "inscribed_diameter_mm": 0.041376236461265245
+    },
+    {
+      "id": "E0514",
+      "minimum_width_mm": 0.05594742757114801,
+      "inscribed_diameter_mm": 0.05594432091176582
+    },
+    {
+      "id": "E0515",
+      "minimum_width_mm": 0.08438657914554781,
+      "inscribed_diameter_mm": 0.08426880006926199
+    },
+    {
+      "id": "E0516",
+      "minimum_width_mm": 0.09507722228298299,
+      "inscribed_diameter_mm": 0.09494452218387144
+    },
+    {
+      "id": "E0517",
+      "minimum_width_mm": 0.061329544587334084,
+      "inscribed_diameter_mm": 0.060615266808651036
+    },
+    {
+      "id": "E0518",
+      "minimum_width_mm": 0.1155958318905963,
+      "inscribed_diameter_mm": 0.11543449379109645
+    },
+    {
+      "id": "E0519",
+      "minimum_width_mm": 0.11090545335460611,
+      "inscribed_diameter_mm": 0.11069786276644943
+    },
+    {
+      "id": "E0520",
+      "minimum_width_mm": 0.04247222806084672,
+      "inscribed_diameter_mm": 0.042442435310857826
+    },
+    {
+      "id": "E0521",
+      "minimum_width_mm": 0.06968768146537219,
+      "inscribed_diameter_mm": 0.06875177263195997
+    },
+    {
+      "id": "E0522",
+      "minimum_width_mm": 0.04785288737951987,
+      "inscribed_diameter_mm": 0.04781932028932575
+    },
+    {
+      "id": "E0523",
+      "minimum_width_mm": 0.14129245083511854,
+      "inscribed_diameter_mm": 0.1412504320882011
+    },
+    {
+      "id": "E0524",
+      "minimum_width_mm": 0.07412817229407409,
+      "inscribed_diameter_mm": 0.07403567008291038
+    },
+    {
+      "id": "E0525",
+      "minimum_width_mm": 0.07711631689144527,
+      "inscribed_diameter_mm": 0.06287289535860907
+    },
+    {
+      "id": "E0526",
+      "minimum_width_mm": 0.05818001611929979,
+      "inscribed_diameter_mm": 0.05813920491739728
+    },
+    {
+      "id": "E0527",
+      "minimum_width_mm": 0.6098891351867515,
+      "inscribed_diameter_mm": 0.564544896770883
+    },
+    {
+      "id": "E0528",
+      "minimum_width_mm": 0.006968306681415015,
+      "inscribed_diameter_mm": 0.0069662819728932845
+    },
+    {
+      "id": "E0529",
+      "minimum_width_mm": 0.11376330793234857,
+      "inscribed_diameter_mm": 0.11355036806970356
+    },
+    {
+      "id": "E0530",
+      "minimum_width_mm": 0.11035515825195308,
+      "inscribed_diameter_mm": 0.10713564992335911
+    },
+    {
+      "id": "E0531",
+      "minimum_width_mm": 0.12817558698848686,
+      "inscribed_diameter_mm": 0.1279356705129207
+    },
+    {
+      "id": "E0532",
+      "minimum_width_mm": 0.15863411701464258,
+      "inscribed_diameter_mm": 0.15821279499969054
+    },
+    {
+      "id": "E0533",
+      "minimum_width_mm": 0.07099509114172697,
+      "inscribed_diameter_mm": 0.07099504741541135
+    },
+    {
+      "id": "E0534",
+      "minimum_width_mm": 3.6036309083544324,
+      "inscribed_diameter_mm": 2.985546989725778
+    },
+    {
+      "id": "E0535",
+      "minimum_width_mm": 0.11804375848164317,
+      "inscribed_diameter_mm": 0.11443734836825925
+    },
+    {
+      "id": "E0536",
+      "minimum_width_mm": 0.15583715268732234,
+      "inscribed_diameter_mm": 0.1555454598516305
+    },
+    {
+      "id": "E0537",
+      "minimum_width_mm": 0.07603833568209417,
+      "inscribed_diameter_mm": 0.07594344983821244
+    },
+    {
+      "id": "E0538",
+      "minimum_width_mm": 0.024335516383317213,
+      "inscribed_diameter_mm": 0.024303001038788352
+    },
+    {
+      "id": "E0539",
+      "minimum_width_mm": 0.0856713687991224,
+      "inscribed_diameter_mm": 0.08556446219665055
+    },
+    {
+      "id": "E0540",
+      "minimum_width_mm": 0.08629357573584784,
+      "inscribed_diameter_mm": 0.08518238304896286
+    },
+    {
+      "id": "E0541",
+      "minimum_width_mm": 0.12318909238362241,
+      "inscribed_diameter_mm": 0.10206310232173443
+    },
+    {
+      "id": "E0542",
+      "minimum_width_mm": 0.18903543971160097,
+      "inscribed_diameter_mm": 0.18899119731575098
+    },
+    {
+      "id": "E0543",
+      "minimum_width_mm": 0.10416010173356582,
+      "inscribed_diameter_mm": 0.10403012362366064
+    },
+    {
+      "id": "E0544",
+      "minimum_width_mm": 0.1224454389295353,
+      "inscribed_diameter_mm": 0.12229100598813147
+    },
+    {
+      "id": "E0545",
+      "minimum_width_mm": 0.16272186224071916,
+      "inscribed_diameter_mm": 0.1622896834372803
+    },
+    {
+      "id": "E0546",
+      "minimum_width_mm": 0.09547839647885148,
+      "inscribed_diameter_mm": 0.09401763728699275
+    },
+    {
+      "id": "E0547",
+      "minimum_width_mm": 0.09474827602455349,
+      "inscribed_diameter_mm": 0.08152766130203659
+    },
+    {
+      "id": "E0548",
+      "minimum_width_mm": 0.18333653079925583,
+      "inscribed_diameter_mm": 0.18284960076160647
+    },
+    {
+      "id": "E0549",
+      "minimum_width_mm": 0.15088993914331716,
+      "inscribed_diameter_mm": 0.14679086150170306
+    },
+    {
+      "id": "E0550",
+      "minimum_width_mm": 0.15076424694015955,
+      "inscribed_diameter_mm": 0.14968713437854575
+    },
+    {
+      "id": "E0551",
+      "minimum_width_mm": 0.12597576514966313,
+      "inscribed_diameter_mm": 0.12594571881917388
+    },
+    {
+      "id": "E0552",
+      "minimum_width_mm": 0.7743060209979031,
+      "inscribed_diameter_mm": 0.7713417099283024
+    },
+    {
+      "id": "E0553",
+      "minimum_width_mm": 0.22290237645561284,
+      "inscribed_diameter_mm": 0.22231036207589938
+    },
+    {
+      "id": "E0554",
+      "minimum_width_mm": 0.17956400306810139,
+      "inscribed_diameter_mm": 0.1600656511265015
+    },
+    {
+      "id": "E0555",
+      "minimum_width_mm": 0.030241199496359172,
+      "inscribed_diameter_mm": 0.0300144387983039
+    },
+    {
+      "id": "E0556",
+      "minimum_width_mm": 0.019764500724534173,
+      "inscribed_diameter_mm": 0.019738575228217314
+    },
+    {
+      "id": "E0557",
+      "minimum_width_mm": 0.15920562988661935,
+      "inscribed_diameter_mm": 0.15441085763868045
+    },
+    {
+      "id": "E0558",
+      "minimum_width_mm": 0.10521268984251719,
+      "inscribed_diameter_mm": 0.06635159908179844
+    },
+    {
+      "id": "E0559",
+      "minimum_width_mm": 0.15233114025819106,
+      "inscribed_diameter_mm": 0.1498703981895666
+    },
+    {
+      "id": "E0560",
+      "minimum_width_mm": 0.2652688276632187,
+      "inscribed_diameter_mm": 0.2652185884986844
+    },
+    {
+      "id": "E0561",
+      "minimum_width_mm": 0.1646811437467388,
+      "inscribed_diameter_mm": 0.14015434257656167
+    },
+    {
+      "id": "E0562",
+      "minimum_width_mm": 0.5144436172297429,
+      "inscribed_diameter_mm": 0.5121974339770046
+    },
+    {
+      "id": "E0563",
+      "minimum_width_mm": 0.28314846137326555,
+      "inscribed_diameter_mm": 0.2660103313926072
+    },
+    {
+      "id": "E0564",
+      "minimum_width_mm": 0.10587065107558402,
+      "inscribed_diameter_mm": 0.1032220966254016
+    },
+    {
+      "id": "E0565",
+      "minimum_width_mm": 0.5077239244123337,
+      "inscribed_diameter_mm": 0.5055070809374915
+    },
+    {
+      "id": "E0566",
+      "minimum_width_mm": 0.16273999973082098,
+      "inscribed_diameter_mm": 0.15957085412977534
+    },
+    {
+      "id": "E0567",
+      "minimum_width_mm": 0.4738362350910226,
+      "inscribed_diameter_mm": 0.4717673533318634
+    },
+    {
+      "id": "E0568",
+      "minimum_width_mm": 0.22118285195076837,
+      "inscribed_diameter_mm": 0.2165918712294328
+    },
+    {
+      "id": "E0569",
+      "minimum_width_mm": 0.47992638176567226,
+      "inscribed_diameter_mm": 0.3966742834610528
+    },
+    {
+      "id": "E0570",
+      "minimum_width_mm": 0.4081796467147001,
+      "inscribed_diameter_mm": 0.3977965757115811
+    },
+    {
+      "id": "E0571",
+      "minimum_width_mm": 0.4087954083840373,
+      "inscribed_diameter_mm": 0.4070105103517697
+    },
+    {
+      "id": "E0572",
+      "minimum_width_mm": 0.1902381089731815,
+      "inscribed_diameter_mm": 0.18798453944996396
+    },
+    {
+      "id": "E0573",
+      "minimum_width_mm": 0.09992567159663679,
+      "inscribed_diameter_mm": 0.09757435509001766
+    },
+    {
+      "id": "E0574",
+      "minimum_width_mm": 0.2327699672628638,
+      "inscribed_diameter_mm": 0.22702729809185485
+    },
+    {
+      "id": "E0575",
+      "minimum_width_mm": 0.7203019346077042,
+      "inscribed_diameter_mm": 0.7179218225466417
+    },
+    {
+      "id": "E0576",
+      "minimum_width_mm": 0.2489605194491471,
+      "inscribed_diameter_mm": 0.24613640614472843
+    },
+    {
+      "id": "E0577",
+      "minimum_width_mm": 0.017888098216360504,
+      "inscribed_diameter_mm": 0.017874922705757967
+    },
+    {
+      "id": "E0578",
+      "minimum_width_mm": 0.4313377194742962,
+      "inscribed_diameter_mm": 0.4292026894667141
+    },
+    {
+      "id": "E0579",
+      "minimum_width_mm": 0.9414914441198832,
+      "inscribed_diameter_mm": 0.8686112590347657
+    },
+    {
+      "id": "E0580",
+      "minimum_width_mm": 0.42378794920592355,
+      "inscribed_diameter_mm": 0.4216902889560636
+    },
+    {
+      "id": "E0581",
+      "minimum_width_mm": 1.2418478727340698,
+      "inscribed_diameter_mm": 1.2418478727340698
+    },
+    {
+      "id": "E0582",
+      "minimum_width_mm": 0.28394898097877963,
+      "inscribed_diameter_mm": 0.27940443711694485
+    },
+    {
+      "id": "E0583",
+      "minimum_width_mm": 0.2804342580701942,
+      "inscribed_diameter_mm": 0.26524516079619787
+    },
+    {
+      "id": "E0584",
+      "minimum_width_mm": 0.38571414490354883,
+      "inscribed_diameter_mm": 0.38380494189036923
+    },
+    {
+      "id": "E0585",
+      "minimum_width_mm": 0.3126388849108839,
+      "inscribed_diameter_mm": 0.31109138889862653
+    },
+    {
+      "id": "E0586",
+      "minimum_width_mm": 0.1430030052434006,
+      "inscribed_diameter_mm": 0.142128292020959
+    },
+    {
+      "id": "E0587",
+      "minimum_width_mm": 0.2703102284057479,
+      "inscribed_diameter_mm": 0.2502260081631734
+    },
+    {
+      "id": "E0588",
+      "minimum_width_mm": 0.1295768486741622,
+      "inscribed_diameter_mm": 0.12712303394448554
+    },
+    {
+      "id": "E0589",
+      "minimum_width_mm": 0.9780342350564624,
+      "inscribed_diameter_mm": 0.9610906624855939
+    },
+    {
+      "id": "E0590",
+      "minimum_width_mm": 0.24866251731060984,
+      "inscribed_diameter_mm": 0.2476018811798955
+    },
+    {
+      "id": "E0591",
+      "minimum_width_mm": 0.30269751988265003,
+      "inscribed_diameter_mm": 0.29643371775231486
+    },
+    {
+      "id": "E0592",
+      "minimum_width_mm": 0.5346312398587507,
+      "inscribed_diameter_mm": 0.5238818534875005
+    },
+    {
+      "id": "E0593",
+      "minimum_width_mm": 0.4107294830129433,
+      "inscribed_diameter_mm": 0.39985312379307913
+    },
+    {
+      "id": "E0594",
+      "minimum_width_mm": 0.0006614050910016545,
+      "inscribed_diameter_mm": 0.0006612129973062562
+    },
+    {
+      "id": "E0595",
+      "minimum_width_mm": 0.2551593248103998,
+      "inscribed_diameter_mm": 0.2540709774313478
+    },
+    {
+      "id": "E0596",
+      "minimum_width_mm": 0.287922994239322,
+      "inscribed_diameter_mm": 0.28669489788665775
+    },
+    {
+      "id": "E0597",
+      "minimum_width_mm": 0.35080648344408694,
+      "inscribed_diameter_mm": 0.34931016612511817
+    },
+    {
+      "id": "E0598",
+      "minimum_width_mm": 0.47819564212538523,
+      "inscribed_diameter_mm": 0.40022027950659833
+    },
+    {
+      "id": "E0599",
+      "minimum_width_mm": 0.31615035916745526,
+      "inscribed_diameter_mm": 0.31359907205684134
+    },
+    {
+      "id": "E0600",
+      "minimum_width_mm": 0.3801048537824947,
+      "inscribed_diameter_mm": 0.3800828168669923
+    },
+    {
+      "id": "E0601",
+      "minimum_width_mm": 0.035317145223885404,
+      "inscribed_diameter_mm": 0.034978319938801405
+    },
+    {
+      "id": "E0602",
+      "minimum_width_mm": 0.3229160847310304,
+      "inscribed_diameter_mm": 0.3149036841043409
+    },
+    {
+      "id": "E0603",
+      "minimum_width_mm": 0.41499020927023267,
+      "inscribed_diameter_mm": 0.3933562735131595
+    },
+    {
+      "id": "E0604",
+      "minimum_width_mm": 0.02496577282421697,
+      "inscribed_diameter_mm": 0.024931751951683623
+    },
+    {
+      "id": "E0605",
+      "minimum_width_mm": 0.31308551861959977,
+      "inscribed_diameter_mm": 0.2811549648840632
+    },
+    {
+      "id": "E0606",
+      "minimum_width_mm": 0.6168672958654611,
+      "inscribed_diameter_mm": 0.616138597327655
+    },
+    {
+      "id": "E0607",
+      "minimum_width_mm": 0.7128225184181165,
+      "inscribed_diameter_mm": 0.6784819965189017
+    },
+    {
+      "id": "E0608",
+      "minimum_width_mm": 0.22141827654022705,
+      "inscribed_diameter_mm": 0.2207909654638911
+    },
+    {
+      "id": "E0609",
+      "minimum_width_mm": 0.2940118257275586,
+      "inscribed_diameter_mm": 0.292633976366929
+    },
+    {
+      "id": "E0610",
+      "minimum_width_mm": 0.02761511631059932,
+      "inscribed_diameter_mm": 0.02304628054938007
+    },
+    {
+      "id": "E0611",
+      "minimum_width_mm": 0.47918310617836823,
+      "inscribed_diameter_mm": 0.4780324360458754
+    },
+    {
+      "id": "E0612",
+      "minimum_width_mm": 0.4755254496432215,
+      "inscribed_diameter_mm": 0.47438356270044596
+    },
+    {
+      "id": "E0613",
+      "minimum_width_mm": 0.06181378997341014,
+      "inscribed_diameter_mm": 0.05984323844108391
+    },
+    {
+      "id": "E0614",
+      "minimum_width_mm": 0.018312861035468586,
+      "inscribed_diameter_mm": 0.018296058303789664
+    },
+    {
+      "id": "E0615",
+      "minimum_width_mm": 0.3857817453403811,
+      "inscribed_diameter_mm": 0.38350262107085564
+    },
+    {
+      "id": "E0616",
+      "minimum_width_mm": 0.5207606541167351,
+      "inscribed_diameter_mm": 0.48895616112667817
+    },
+    {
+      "id": "E0617",
+      "minimum_width_mm": 0.4570797361745651,
+      "inscribed_diameter_mm": 0.4559821432214655
+    },
+    {
+      "id": "E0618",
+      "minimum_width_mm": 0.4216767778369217,
+      "inscribed_diameter_mm": 0.4206641985795005
+    },
+    {
+      "id": "E0619",
+      "minimum_width_mm": 0.24572563133661163,
+      "inscribed_diameter_mm": 0.21729371588818935
+    },
+    {
+      "id": "E0620",
+      "minimum_width_mm": 0.021561015673270845,
+      "inscribed_diameter_mm": 0.02150830148215732
+    },
+    {
+      "id": "E0621",
+      "minimum_width_mm": 0.003610712906954916,
+      "inscribed_diameter_mm": 0.003607395918194811
+    },
+    {
+      "id": "E0622",
+      "minimum_width_mm": 1.3696672552745905,
+      "inscribed_diameter_mm": 1.2474680108189684
+    },
+    {
+      "id": "E0623",
+      "minimum_width_mm": 0.29285618625716126,
+      "inscribed_diameter_mm": 0.29225310364384427
+    },
+    {
+      "id": "E0624",
+      "minimum_width_mm": 0.02405989784074336,
+      "inscribed_diameter_mm": 0.024035723938254705
+    },
+    {
+      "id": "E0625",
+      "minimum_width_mm": 0.31186343198025135,
+      "inscribed_diameter_mm": 0.2600333429359907
+    },
+    {
+      "id": "E0626",
+      "minimum_width_mm": 0.42391745174378315,
+      "inscribed_diameter_mm": 0.41228048368789416
+    },
+    {
+      "id": "E0627",
+      "minimum_width_mm": 0.4739955044098547,
+      "inscribed_diameter_mm": 0.4736833932154963
+    },
+    {
+      "id": "E0628",
+      "minimum_width_mm": 0.10120505618834841,
+      "inscribed_diameter_mm": 0.10022116272772053
+    },
+    {
+      "id": "E0629",
+      "minimum_width_mm": 0.4384400336192087,
+      "inscribed_diameter_mm": 0.4327676052912679
+    },
+    {
+      "id": "E0630",
+      "minimum_width_mm": 0.3476030871124358,
+      "inscribed_diameter_mm": 0.34692687387336857
+    },
+    {
+      "id": "E0631",
+      "minimum_width_mm": 0.3654227966357606,
+      "inscribed_diameter_mm": 0.3647119176415748
+    },
+    {
+      "id": "E0632",
+      "minimum_width_mm": 0.36247399846691586,
+      "inscribed_diameter_mm": 0.3617688559475639
+    },
+    {
+      "id": "E0633",
+      "minimum_width_mm": 0.422630486408309,
+      "inscribed_diameter_mm": 0.41843923379160985
+    },
+    {
+      "id": "E0634",
+      "minimum_width_mm": 0.0007517029084596061,
+      "inscribed_diameter_mm": 0.000751679324196175
+    },
+    {
+      "id": "E0635",
+      "minimum_width_mm": 0.4329477813753435,
+      "inscribed_diameter_mm": 0.4327652374644574
+    },
+    {
+      "id": "E0636",
+      "minimum_width_mm": 0.11753498734218226,
+      "inscribed_diameter_mm": 0.11745932179582041
+    },
+    {
+      "id": "E0637",
+      "minimum_width_mm": 0.34553013709976277,
+      "inscribed_diameter_mm": 0.32404881129481755
+    },
+    {
+      "id": "E0638",
+      "minimum_width_mm": 0.8159236236145695,
+      "inscribed_diameter_mm": 0.7502482928142946
+    },
+    {
+      "id": "E0639",
+      "minimum_width_mm": 0.06417119162783358,
+      "inscribed_diameter_mm": 0.06396307129507776
+    },
+    {
+      "id": "E0640",
+      "minimum_width_mm": 0.0007401229352126393,
+      "inscribed_diameter_mm": 0.0007398535116515797
+    },
+    {
+      "id": "E0641",
+      "minimum_width_mm": 0.8350578122481789,
+      "inscribed_diameter_mm": 0.8191141048396275
+    },
+    {
+      "id": "E0642",
+      "minimum_width_mm": 0.18652958301381162,
+      "inscribed_diameter_mm": 0.1859079137744643
+    },
+    {
+      "id": "E0643",
+      "minimum_width_mm": 0.1915956636532492,
+      "inscribed_diameter_mm": 0.19095711008678065
+    },
+    {
+      "id": "E0644",
+      "minimum_width_mm": 0.2171441182405438,
+      "inscribed_diameter_mm": 0.21642041631276013
+    },
+    {
+      "id": "E0645",
+      "minimum_width_mm": 0.2280477833665291,
+      "inscribed_diameter_mm": 0.22802021256513605
+    },
+    {
+      "id": "E0646",
+      "minimum_width_mm": 0.05339537741201639,
+      "inscribed_diameter_mm": 0.05337166681124472
+    },
+    {
+      "id": "E0647",
+      "minimum_width_mm": 0.008743722312793523,
+      "inscribed_diameter_mm": 0.008740531523038442
+    },
+    {
+      "id": "E0648",
+      "minimum_width_mm": 0.06967059845317003,
+      "inscribed_diameter_mm": 0.06958409003510888
+    },
+    {
+      "id": "E0649",
+      "minimum_width_mm": 0.01952081626764368,
+      "inscribed_diameter_mm": 0.019496945416822342
+    },
+    {
+      "id": "E0650",
+      "minimum_width_mm": 0.0757957110762888,
+      "inscribed_diameter_mm": 0.07483094733069606
+    },
+    {
+      "id": "E0651",
+      "minimum_width_mm": 0.31045726462483003,
+      "inscribed_diameter_mm": 0.3079422713457092
+    },
+    {
+      "id": "E0652",
+      "minimum_width_mm": 3.677009536382883,
+      "inscribed_diameter_mm": 3.334773540432146
+    },
+    {
+      "id": "E0653",
+      "minimum_width_mm": 0.07156282843759776,
+      "inscribed_diameter_mm": 0.07147397048004159
+    },
+    {
+      "id": "E0654",
+      "minimum_width_mm": 0.4272747707862514,
+      "inscribed_diameter_mm": 0.4099219848606559
+    },
+    {
+      "id": "E0655",
+      "minimum_width_mm": 0.0519485758647491,
+      "inscribed_diameter_mm": 0.03788641901462597
+    },
+    {
+      "id": "E0656",
+      "minimum_width_mm": 0.292633231459833,
+      "inscribed_diameter_mm": 0.2924529566013923
+    },
+    {
+      "id": "E0657",
+      "minimum_width_mm": 0.08110542265718834,
+      "inscribed_diameter_mm": 0.08100471587461468
+    },
+    {
+      "id": "E0658",
+      "minimum_width_mm": 0.0144030945946092,
+      "inscribed_diameter_mm": 0.014374955276288404
+    },
+    {
+      "id": "E0659",
+      "minimum_width_mm": 0.08154955445882983,
+      "inscribed_diameter_mm": 0.08154667379403041
+    },
+    {
+      "id": "E0660",
+      "minimum_width_mm": 0.4362440136502812,
+      "inscribed_diameter_mm": 0.4240418283067413
+    },
+    {
+      "id": "E0661",
+      "minimum_width_mm": 0.4965034370781627,
+      "inscribed_diameter_mm": 0.4901216272761345
+    },
+    {
+      "id": "E0662",
+      "minimum_width_mm": 0.5807857362065096,
+      "inscribed_diameter_mm": 0.5806892201023075
+    },
+    {
+      "id": "E0663",
+      "minimum_width_mm": 0.018444268454478774,
+      "inscribed_diameter_mm": 0.018367459255113516
+    },
+    {
+      "id": "E0664",
+      "minimum_width_mm": 0.007072001154286411,
+      "inscribed_diameter_mm": 0.0070598507184582715
+    },
+    {
+      "id": "E0665",
+      "minimum_width_mm": 0.12065217575708687,
+      "inscribed_diameter_mm": 0.12027246920739375
+    },
+    {
+      "id": "E0666",
+      "minimum_width_mm": 0.11585632752883868,
+      "inscribed_diameter_mm": 0.11549171407607774
+    },
+    {
+      "id": "E0667",
+      "minimum_width_mm": 0.1567546278238332,
+      "inscribed_diameter_mm": 0.10841564926629782
+    },
+    {
+      "id": "E0668",
+      "minimum_width_mm": 0.02394905851177498,
+      "inscribed_diameter_mm": 0.02392510481401544
+    },
+    {
+      "id": "E0669",
+      "minimum_width_mm": 0.2016203308510338,
+      "inscribed_diameter_mm": 0.18258118318199834
+    },
+    {
+      "id": "E0670",
+      "minimum_width_mm": 0.516279851684633,
+      "inscribed_diameter_mm": 0.5113689602282578
+    },
+    {
+      "id": "E0671",
+      "minimum_width_mm": 0.28503899047154135,
+      "inscribed_diameter_mm": 0.2840405271281554
+    },
+    {
+      "id": "E0672",
+      "minimum_width_mm": 0.5276221459284578,
+      "inscribed_diameter_mm": 0.523045763278823
+    },
+    {
+      "id": "E0673",
+      "minimum_width_mm": 0.0995864887988116,
+      "inscribed_diameter_mm": 0.09957570164414875
+    },
+    {
+      "id": "E0674",
+      "minimum_width_mm": 6.548498280523063e-06,
+      "inscribed_diameter_mm": 6.5441576913016775e-06
+    },
+    {
+      "id": "E0675",
+      "minimum_width_mm": 0.07179994559876945,
+      "inscribed_diameter_mm": 0.0713919122851081
+    },
+    {
+      "id": "E0676",
+      "minimum_width_mm": 0.01039838332410703,
+      "inscribed_diameter_mm": 0.01038079966140698
+    },
+    {
+      "id": "E0677",
+      "minimum_width_mm": 0.007837815587590669,
+      "inscribed_diameter_mm": 0.007824561844075808
+    },
+    {
+      "id": "E0678",
+      "minimum_width_mm": 0.3239840085763248,
+      "inscribed_diameter_mm": 0.3202738766008224
+    },
+    {
+      "id": "E0679",
+      "minimum_width_mm": 0.5125539029838677,
+      "inscribed_diameter_mm": 0.4558819749836225
+    },
+    {
+      "id": "E0680",
+      "minimum_width_mm": 0.11324721254815273,
+      "inscribed_diameter_mm": 0.11135674093998915
+    },
+    {
+      "id": "E0681",
+      "minimum_width_mm": 0.19676370211293914,
+      "inscribed_diameter_mm": 0.19671953757992355
+    },
+    {
+      "id": "E0682",
+      "minimum_width_mm": 0.34154365712262624,
+      "inscribed_diameter_mm": 0.3229428000189274
+    },
+    {
+      "id": "E0683",
+      "minimum_width_mm": 0.22293304542526826,
+      "inscribed_diameter_mm": 0.21852223080894626
+    },
+    {
+      "id": "E0684",
+      "minimum_width_mm": 0.2536993033562691,
+      "inscribed_diameter_mm": 0.2520925579926622
+    },
+    {
+      "id": "E0685",
+      "minimum_width_mm": 0.2546093338563864,
+      "inscribed_diameter_mm": 0.25287575163378995
+    },
+    {
+      "id": "E0686",
+      "minimum_width_mm": 0.2525838718395068,
+      "inscribed_diameter_mm": 0.25106215149514033
+    },
+    {
+      "id": "E0687",
+      "minimum_width_mm": 0.5815695194748578,
+      "inscribed_diameter_mm": 0.570180952939106
+    },
+    {
+      "id": "E0688",
+      "minimum_width_mm": 0.36256765014882575,
+      "inscribed_diameter_mm": 0.35929833527630944
+    },
+    {
+      "id": "E0689",
+      "minimum_width_mm": 0.2540352718139527,
+      "inscribed_diameter_mm": 0.2490090878857593
+    },
+    {
+      "id": "E0690",
+      "minimum_width_mm": 1.3169428532821215,
+      "inscribed_diameter_mm": 1.1763489881698845
+    },
+    {
+      "id": "E0691",
+      "minimum_width_mm": 0.255284326312168,
+      "inscribed_diameter_mm": 0.23489571323337133
+    },
+    {
+      "id": "E0692",
+      "minimum_width_mm": 0.5838053937859797,
+      "inscribed_diameter_mm": 0.5551545982599011
+    },
+    {
+      "id": "E0693",
+      "minimum_width_mm": 0.36040687559486884,
+      "inscribed_diameter_mm": 0.35480907904259595
+    },
+    {
+      "id": "E0694",
+      "minimum_width_mm": 0.7391231452087439,
+      "inscribed_diameter_mm": 0.7227967153915138
+    },
+    {
+      "id": "E0695",
+      "minimum_width_mm": 0.3446940141004191,
+      "inscribed_diameter_mm": 0.32910876592754335
+    },
+    {
+      "id": "E0696",
+      "minimum_width_mm": 0.4122293596738231,
+      "inscribed_diameter_mm": 0.40881087712858744
+    },
+    {
+      "id": "E0697",
+      "minimum_width_mm": 0.6233909558856592,
+      "inscribed_diameter_mm": 0.6031208843384809
+    },
+    {
+      "id": "E0698",
+      "minimum_width_mm": 0.8851554705163451,
+      "inscribed_diameter_mm": 0.7821803610724185
+    },
+    {
+      "id": "E0699",
+      "minimum_width_mm": 0.02948109846825453,
+      "inscribed_diameter_mm": 0.028925539274089716
+    },
+    {
+      "id": "E0700",
+      "minimum_width_mm": 0.7009130166439768,
+      "inscribed_diameter_mm": 0.6847485428305866
+    },
+    {
+      "id": "E0701",
+      "minimum_width_mm": 0.6991210149488403,
+      "inscribed_diameter_mm": 0.6835215406367237
+    },
+    {
+      "id": "E0702",
+      "minimum_width_mm": 0.6967539443422197,
+      "inscribed_diameter_mm": 0.681445652230332
+    },
+    {
+      "id": "E0703",
+      "minimum_width_mm": 0.7803272455930745,
+      "inscribed_diameter_mm": 0.6804124748436222
+    },
+    {
+      "id": "E0704",
+      "minimum_width_mm": 0.5955002937178815,
+      "inscribed_diameter_mm": 0.5937670380725546
+    },
+    {
+      "id": "E0705",
+      "minimum_width_mm": 0.46233135699664984,
+      "inscribed_diameter_mm": 0.44908594796525847
+    },
+    {
+      "id": "E0706",
+      "minimum_width_mm": 0.5817738689757359,
+      "inscribed_diameter_mm": 0.5331262157482684
+    },
+    {
+      "id": "E0707",
+      "minimum_width_mm": 0.5305806442604659,
+      "inscribed_diameter_mm": 0.5109561078654989
+    },
+    {
+      "id": "E0708",
+      "minimum_width_mm": 0.1410578461618286,
+      "inscribed_diameter_mm": 0.1394124897308302
+    },
+    {
+      "id": "E0709",
+      "minimum_width_mm": 0.5572729206227933,
+      "inscribed_diameter_mm": 0.5009240432703876
+    },
+    {
+      "id": "E0710",
+      "minimum_width_mm": 0.5777830401311057,
+      "inscribed_diameter_mm": 0.5755427478898704
+    },
+    {
+      "id": "E0711",
+      "minimum_width_mm": 0.6783795184175947,
+      "inscribed_diameter_mm": 0.6563214483659877
+    },
+    {
+      "id": "E0712",
+      "minimum_width_mm": 0.18682112532754047,
+      "inscribed_diameter_mm": 0.18588057143529113
+    },
+    {
+      "id": "E0713",
+      "minimum_width_mm": 0.5420980401661404,
+      "inscribed_diameter_mm": 0.4818570595258622
+    },
+    {
+      "id": "E0714",
+      "minimum_width_mm": 0.5587903574688582,
+      "inscribed_diameter_mm": 0.5121122401715243
+    },
+    {
+      "id": "E0715",
+      "minimum_width_mm": 0.5085464671918061,
+      "inscribed_diameter_mm": 0.4597488914403444
+    },
+    {
+      "id": "E0716",
+      "minimum_width_mm": 0.15137454247566318,
+      "inscribed_diameter_mm": 0.1490315489835162
+    },
+    {
+      "id": "E0717",
+      "minimum_width_mm": 0.5887546791390008,
+      "inscribed_diameter_mm": 0.5863626941932694
+    },
+    {
+      "id": "E0718",
+      "minimum_width_mm": 0.47996682887826836,
+      "inscribed_diameter_mm": 0.46607169333506704
+    },
+    {
+      "id": "E0719",
+      "minimum_width_mm": 0.03029141761969889,
+      "inscribed_diameter_mm": 0.03025058215503012
+    },
+    {
+      "id": "E0720",
+      "minimum_width_mm": 2.5691876313516104e-05,
+      "inscribed_diameter_mm": 2.5691755796586335e-05
+    },
+    {
+      "id": "E0721",
+      "minimum_width_mm": 0.64117693362331,
+      "inscribed_diameter_mm": 0.6161257789740855
+    },
+    {
+      "id": "E0722",
+      "minimum_width_mm": 0.7002322141855792,
+      "inscribed_diameter_mm": 0.6745175214442938
+    },
+    {
+      "id": "E0723",
+      "minimum_width_mm": 0.6776781491927704,
+      "inscribed_diameter_mm": 0.6747738537388104
+    },
+    {
+      "id": "E0724",
+      "minimum_width_mm": 0.7739731068701374,
+      "inscribed_diameter_mm": 0.7596060417513493
+    },
+    {
+      "id": "E0725",
+      "minimum_width_mm": 3.209560674008533,
+      "inscribed_diameter_mm": 2.6275110649096165
+    },
+    {
+      "id": "E0726",
+      "minimum_width_mm": 0.5058876665646892,
+      "inscribed_diameter_mm": 0.4911685707698581
+    },
+    {
+      "id": "E0727",
+      "minimum_width_mm": 0.6799581584186036,
+      "inscribed_diameter_mm": 0.6652127106325167
+    },
+    {
+      "id": "E0728",
+      "minimum_width_mm": 0.3595674398979636,
+      "inscribed_diameter_mm": 0.3169465694978146
+    },
+    {
+      "id": "E0729",
+      "minimum_width_mm": 0.00240028559027472,
+      "inscribed_diameter_mm": 0.0023917447888130994
+    },
+    {
+      "id": "E0730",
+      "minimum_width_mm": 1.0356120530019552e-06,
+      "inscribed_diameter_mm": 1.0356079549467267e-06
+    },
+    {
+      "id": "E0731",
+      "minimum_width_mm": 0.0011462074469577033,
+      "inscribed_diameter_mm": 0.0007757854594840907
+    },
+    {
+      "id": "E0732",
+      "minimum_width_mm": 2.6375561716918128e-06,
+      "inscribed_diameter_mm": 2.6375266883818124e-06
+    },
+    {
+      "id": "E0733",
+      "minimum_width_mm": 0.523309288831669,
+      "inscribed_diameter_mm": 0.5082565168702473
+    },
+    {
+      "id": "E0734",
+      "minimum_width_mm": 1.561404053388383,
+      "inscribed_diameter_mm": 1.4876633092135236
+    },
+    {
+      "id": "E0735",
+      "minimum_width_mm": 1.3556970611845074,
+      "inscribed_diameter_mm": 1.3255760224548325
+    },
+    {
+      "id": "E0736",
+      "minimum_width_mm": 0.8545008973669255,
+      "inscribed_diameter_mm": 0.8219944712632525
+    },
+    {
+      "id": "E0737",
+      "minimum_width_mm": 0.9734389427737042,
+      "inscribed_diameter_mm": 0.9566709652230276
+    },
+    {
+      "id": "E0738",
+      "minimum_width_mm": 0.6159724204507668,
+      "inscribed_diameter_mm": 0.59457294292379
+    },
+    {
+      "id": "E0739",
+      "minimum_width_mm": 0.8612847115184543,
+      "inscribed_diameter_mm": 0.777571405588068
+    },
+    {
+      "id": "E0740",
+      "minimum_width_mm": 0.0011462074469594796,
+      "inscribed_diameter_mm": 0.0011460543157806313
+    },
+    {
+      "id": "E0741",
+      "minimum_width_mm": 0.015779771752683303,
+      "inscribed_diameter_mm": 0.015609770980147708
+    },
+    {
+      "id": "E0742",
+      "minimum_width_mm": 0.44347863008679766,
+      "inscribed_diameter_mm": 0.35529521605043457
+    },
+    {
+      "id": "E0743",
+      "minimum_width_mm": 0.5467698125070726,
+      "inscribed_diameter_mm": 0.464906044498818
+    },
+    {
+      "id": "E0744",
+      "minimum_width_mm": 0.7912585269678942,
+      "inscribed_diameter_mm": 0.6461948929233746
+    },
+    {
+      "id": "E0745",
+      "minimum_width_mm": 0.6396106817289979,
+      "inscribed_diameter_mm": 0.6254169818042357
+    },
+    {
+      "id": "E0746",
+      "minimum_width_mm": 0.18056477020090256,
+      "inscribed_diameter_mm": 0.17807002626265955
+    },
+    {
+      "id": "E0747",
+      "minimum_width_mm": 0.6988728749276127,
+      "inscribed_diameter_mm": 0.6691034132688929
+    },
+    {
+      "id": "E0748",
+      "minimum_width_mm": 0.6950668439803778,
+      "inscribed_diameter_mm": 0.6871012575843451
+    },
+    {
+      "id": "E0749",
+      "minimum_width_mm": 0.7887259864225129,
+      "inscribed_diameter_mm": 0.7125860520111758
+    },
+    {
+      "id": "E0750",
+      "minimum_width_mm": 1.517557898695662,
+      "inscribed_diameter_mm": 1.4598707440305532
+    },
+    {
+      "id": "E0751",
+      "minimum_width_mm": 0.16578493741520361,
+      "inscribed_diameter_mm": 0.15550509536372303
+    },
+    {
+      "id": "E0752",
+      "minimum_width_mm": 0.7292139458750597,
+      "inscribed_diameter_mm": 0.6213475461709308
+    },
+    {
+      "id": "E0753",
+      "minimum_width_mm": 0.00010693598221500622,
+      "inscribed_diameter_mm": 0.000102179559519944
+    },
+    {
+      "id": "E0754",
+      "minimum_width_mm": 1.6797176968292176,
+      "inscribed_diameter_mm": 1.6356792942738458
+    },
+    {
+      "id": "E0755",
+      "minimum_width_mm": 0.6783847701334622,
+      "inscribed_diameter_mm": 0.6538610839892129
+    },
+    {
+      "id": "E0756",
+      "minimum_width_mm": 0.16578493741520361,
+      "inscribed_diameter_mm": 0.16332297935323492
+    },
+    {
+      "id": "E0757",
+      "minimum_width_mm": 0.603385308993964,
+      "inscribed_diameter_mm": 0.5079248823458187
+    },
+    {
+      "id": "E0758",
+      "minimum_width_mm": 0.49015904566562796,
+      "inscribed_diameter_mm": 0.42328747058284577
+    },
+    {
+      "id": "E0759",
+      "minimum_width_mm": 0.6440002228663673,
+      "inscribed_diameter_mm": 0.5446324394885117
+    },
+    {
+      "id": "E0760",
+      "minimum_width_mm": 0.9138749147425251,
+      "inscribed_diameter_mm": 0.8181005138381107
+    },
+    {
+      "id": "E0761",
+      "minimum_width_mm": 0.7002011614602495,
+      "inscribed_diameter_mm": 0.5954952966557778
+    },
+    {
+      "id": "E0762",
+      "minimum_width_mm": 0.8535907067044448,
+      "inscribed_diameter_mm": 0.7454489660761762
+    },
+    {
+      "id": "E0763",
+      "minimum_width_mm": 0.015579450579863874,
+      "inscribed_diameter_mm": 0.01547574964240539
+    },
+    {
+      "id": "E0764",
+      "minimum_width_mm": 0.12659442636321216,
+      "inscribed_diameter_mm": 0.120045305064671
+    },
+    {
+      "id": "E0765",
+      "minimum_width_mm": 0.24793263742213156,
+      "inscribed_diameter_mm": 0.24740791778158666
+    },
+    {
+      "id": "E0766",
+      "minimum_width_mm": 0.1674685627222079,
+      "inscribed_diameter_mm": 0.16746856272215993
+    },
+    {
+      "id": "E0767",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.16746856272220612
+    },
+    {
+      "id": "E0768",
+      "minimum_width_mm": 0.061760212324749375,
+      "inscribed_diameter_mm": 0.0614049889519275
+    },
+    {
+      "id": "E0769",
+      "minimum_width_mm": 0.028699513273323873,
+      "inscribed_diameter_mm": 0.028623428073681716
+    },
+    {
+      "id": "E0770",
+      "minimum_width_mm": 0.1667741763889481,
+      "inscribed_diameter_mm": 0.1642981931080811
+    },
+    {
+      "id": "E0771",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.16746856272220612
+    },
+    {
+      "id": "E0772",
+      "minimum_width_mm": 0.12436633998678559,
+      "inscribed_diameter_mm": 0.12312470196689772
+    },
+    {
+      "id": "E0773",
+      "minimum_width_mm": 0.15382785234991303,
+      "inscribed_diameter_mm": 0.13793464141333758
+    },
+    {
+      "id": "E0774",
+      "minimum_width_mm": 0.01775010531150123,
+      "inscribed_diameter_mm": 0.017683663559368998
+    },
+    {
+      "id": "E0775",
+      "minimum_width_mm": 0.484206890100495,
+      "inscribed_diameter_mm": 0.34749153766553825
+    },
+    {
+      "id": "E0776",
+      "minimum_width_mm": 0.08443918886712964,
+      "inscribed_diameter_mm": 0.0836384080688894
+    },
+    {
+      "id": "E0777",
+      "minimum_width_mm": 1.0129913058401527,
+      "inscribed_diameter_mm": 0.9756022108881091
+    },
+    {
+      "id": "E0778",
+      "minimum_width_mm": 0.6285198032855988,
+      "inscribed_diameter_mm": 0.6219901976909528
+    },
+    {
+      "id": "E0779",
+      "minimum_width_mm": 0.4842068901004879,
+      "inscribed_diameter_mm": 0.4564019832782332
+    },
+    {
+      "id": "E0780",
+      "minimum_width_mm": 0.6142389394849506,
+      "inscribed_diameter_mm": 0.4647414194018444
+    },
+    {
+      "id": "E0781",
+      "minimum_width_mm": 0.04481191622144465,
+      "inscribed_diameter_mm": 0.04143032199573886
+    },
+    {
+      "id": "E0782",
+      "minimum_width_mm": 0.14428183577152254,
+      "inscribed_diameter_mm": 0.13475764919565525
+    },
+    {
+      "id": "E0783",
+      "minimum_width_mm": 3.154426813125614,
+      "inscribed_diameter_mm": 2.7166242358685793
+    },
+    {
+      "id": "E0784",
+      "minimum_width_mm": 0.008465175450041329,
+      "inscribed_diameter_mm": 0.007303239542352458
+    },
+    {
+      "id": "E0785",
+      "minimum_width_mm": 0.3168716095470927,
+      "inscribed_diameter_mm": 0.2783413502218824
+    },
+    {
+      "id": "E0786",
+      "minimum_width_mm": 0.01755897960381958,
+      "inscribed_diameter_mm": 0.0174824976389214
+    },
+    {
+      "id": "E0787",
+      "minimum_width_mm": 0.23122637547429292,
+      "inscribed_diameter_mm": 0.19351497765771697
+    },
+    {
+      "id": "E0788",
+      "minimum_width_mm": 4.2846049908007444e-05,
+      "inscribed_diameter_mm": 4.284581168612078e-05
+    },
+    {
+      "id": "E0789",
+      "minimum_width_mm": 0.45753177255392075,
+      "inscribed_diameter_mm": 0.45753177255392075
+    },
+    {
+      "id": "E0790",
+      "minimum_width_mm": 0.4575317725539225,
+      "inscribed_diameter_mm": 0.457531772553903
+    },
+    {
+      "id": "E0791",
+      "minimum_width_mm": 0.05951175693149935,
+      "inscribed_diameter_mm": 0.05916946589617347
+    },
+    {
+      "id": "E0792",
+      "minimum_width_mm": 0.027654672704073846,
+      "inscribed_diameter_mm": 0.027581357478357344
+    },
+    {
+      "id": "E0793",
+      "minimum_width_mm": 0.16070256033967212,
+      "inscribed_diameter_mm": 0.1583167182314394
+    },
+    {
+      "id": "E0794",
+      "minimum_width_mm": 0.25387447250086836,
+      "inscribed_diameter_mm": 0.24828539247304615
+    },
+    {
+      "id": "E0795",
+      "minimum_width_mm": 0.11983863262702954,
+      "inscribed_diameter_mm": 0.11864219794434104
+    },
+    {
+      "id": "E0796",
+      "minimum_width_mm": 0.27583002873721085,
+      "inscribed_diameter_mm": 0.2473317772021771
+    },
+    {
+      "id": "E0797",
+      "minimum_width_mm": 5.8930468416207304e-06,
+      "inscribed_diameter_mm": 5.893046709282146e-06
+    },
+    {
+      "id": "E0798",
+      "minimum_width_mm": 0.5199061780520106,
+      "inscribed_diameter_mm": 0.5085174764929334
+    },
+    {
+      "id": "E0799",
+      "minimum_width_mm": 0.015583343918214254,
+      "inscribed_diameter_mm": 0.008593567766009613
+    },
+    {
+      "id": "E0800",
+      "minimum_width_mm": 2.2268281755694517,
+      "inscribed_diameter_mm": 1.8623632246152084
+    },
+    {
+      "id": "E0801",
+      "minimum_width_mm": 1.141393697068338e-05,
+      "inscribed_diameter_mm": 1.1413910138940983e-05
+    },
+    {
+      "id": "E0802",
+      "minimum_width_mm": 0.7029339056810109,
+      "inscribed_diameter_mm": 0.6873199450032672
+    },
+    {
+      "id": "E0803",
+      "minimum_width_mm": 0.016659588709558193,
+      "inscribed_diameter_mm": 0.016626521717134857
+    },
+    {
+      "id": "E0804",
+      "minimum_width_mm": 0.7928080549539587,
+      "inscribed_diameter_mm": 0.7730225517573217
+    },
+    {
+      "id": "E0805",
+      "minimum_width_mm": 0.5000010132789612,
+      "inscribed_diameter_mm": 0.3916031782389688
+    },
+    {
+      "id": "E0806",
+      "minimum_width_mm": 1.4655247085937795,
+      "inscribed_diameter_mm": 1.4553202317823182
+    },
+    {
+      "id": "E0807",
+      "minimum_width_mm": 0.793074441240976,
+      "inscribed_diameter_mm": 0.7393883480595829
+    },
+    {
+      "id": "E0808",
+      "minimum_width_mm": 0.39496023273460423,
+      "inscribed_diameter_mm": 0.39469589530518867
+    },
+    {
+      "id": "E0809",
+      "minimum_width_mm": 0.5000010132789612,
+      "inscribed_diameter_mm": 0.5000010132789612
+    },
+    {
+      "id": "E0810",
+      "minimum_width_mm": 0.10580196976662037,
+      "inscribed_diameter_mm": 0.10255431082892745
+    },
+    {
+      "id": "E0811",
+      "minimum_width_mm": 0.3498912035750621,
+      "inscribed_diameter_mm": 0.3477820375747222
+    },
+    {
+      "id": "E0812",
+      "minimum_width_mm": 0.6250003352761304,
+      "inscribed_diameter_mm": 0.6250003352761304
+    },
+    {
+      "id": "E0813",
+      "minimum_width_mm": 0.05336887396373413,
+      "inscribed_diameter_mm": 0.05306191466585179
+    },
+    {
+      "id": "E0814",
+      "minimum_width_mm": 0.024800120482929344,
+      "inscribed_diameter_mm": 0.024734372952648652
+    },
+    {
+      "id": "E0815",
+      "minimum_width_mm": 0.14411462760693183,
+      "inscribed_diameter_mm": 0.14197505530496438
+    },
+    {
+      "id": "E0816",
+      "minimum_width_mm": 0.2276692106587035,
+      "inscribed_diameter_mm": 0.22265704292988506
+    },
+    {
+      "id": "E0817",
+      "minimum_width_mm": 0.10746872904491056,
+      "inscribed_diameter_mm": 0.10639579194678254
+    },
+    {
+      "id": "E0818",
+      "minimum_width_mm": 1.0235413168924694,
+      "inscribed_diameter_mm": 1.023063448399844
+    },
+    {
+      "id": "E0819",
+      "minimum_width_mm": 0.6250003352761269,
+      "inscribed_diameter_mm": 0.6250003352761269
+    },
+    {
+      "id": "E0820",
+      "minimum_width_mm": 3.9826672923126694e-05,
+      "inscribed_diameter_mm": 3.982654984295017e-05
+    },
+    {
+      "id": "E0821",
+      "minimum_width_mm": 0.26031801586557535,
+      "inscribed_diameter_mm": 0.2458969671551275
+    },
+    {
+      "id": "E0822",
+      "minimum_width_mm": 0.12189031182708021,
+      "inscribed_diameter_mm": 0.10657629460773023
+    },
+    {
+      "id": "E0823",
+      "minimum_width_mm": 4.832720495061999,
+      "inscribed_diameter_mm": 3.7360182362809127
+    },
+    {
+      "id": "E0824",
+      "minimum_width_mm": 0.0009029818428611947,
+      "inscribed_diameter_mm": 0.0008496741998626555
+    },
+    {
+      "id": "E0825",
+      "minimum_width_mm": 8.714337695892027e-08,
+      "inscribed_diameter_mm": 8.714267719863061e-08
+    },
+    {
+      "id": "E0826",
+      "minimum_width_mm": 8.714337518256343e-08,
+      "inscribed_diameter_mm": 8.714337056889559e-08
+    },
+    {
+      "id": "E0827",
+      "minimum_width_mm": 1.7647924104033166,
+      "inscribed_diameter_mm": 1.616033260072193
+    },
+    {
+      "id": "E0828",
+      "minimum_width_mm": 0.3630489501547842,
+      "inscribed_diameter_mm": 0.3627168559432697
+    },
+    {
+      "id": "E0829",
+      "minimum_width_mm": 0.6249994039535558,
+      "inscribed_diameter_mm": 0.6249994039535061
+    },
+    {
+      "id": "E0830",
+      "minimum_width_mm": 0.6249994039535522,
+      "inscribed_diameter_mm": 0.6249994039535522
+    },
+    {
+      "id": "E0831",
+      "minimum_width_mm": 0.04497753560271178,
+      "inscribed_diameter_mm": 0.04471884037976236
+    },
+    {
+      "id": "E0832",
+      "minimum_width_mm": 0.0209007276925135,
+      "inscribed_diameter_mm": 0.020845317831570388
+    },
+    {
+      "id": "E0833",
+      "minimum_width_mm": 0.12145507882492268,
+      "inscribed_diameter_mm": 0.11965191750187634
+    },
+    {
+      "id": "E0834",
+      "minimum_width_mm": 0.19187213946096904,
+      "inscribed_diameter_mm": 0.1876480489803811
+    },
+    {
+      "id": "E0835",
+      "minimum_width_mm": 0.09057111810304974,
+      "inscribed_diameter_mm": 0.08966688192665413
+    },
+    {
+      "id": "E0836",
+      "minimum_width_mm": 0.3080087286031201,
+      "inscribed_diameter_mm": 0.2985315271930266
+    },
+    {
+      "id": "E0837",
+      "minimum_width_mm": 0.3366662439356176,
+      "inscribed_diameter_mm": 0.29839445231808626
+    },
+    {
+      "id": "E0838",
+      "minimum_width_mm": 0.5000010132789612,
+      "inscribed_diameter_mm": 0.5000010132789612
+    },
+    {
+      "id": "E0839",
+      "minimum_width_mm": 1.026136507415572,
+      "inscribed_diameter_mm": 0.9935945709699627
+    },
+    {
+      "id": "E0840",
+      "minimum_width_mm": 0.9947441526994325,
+      "inscribed_diameter_mm": 0.9421336572276708
+    },
+    {
+      "id": "E0841",
+      "minimum_width_mm": 0.5000010132789612,
+      "inscribed_diameter_mm": 0.3916032326994738
+    },
+    {
+      "id": "E0842",
+      "minimum_width_mm": 0.004456162698334154,
+      "inscribed_diameter_mm": 0.0044545538517572975
+    },
+    {
+      "id": "E0843",
+      "minimum_width_mm": 3.252730941333027,
+      "inscribed_diameter_mm": 2.8104615701944446
+    },
+    {
+      "id": "E0844",
+      "minimum_width_mm": 0.005924468249482118,
+      "inscribed_diameter_mm": 0.0050553801630144335
+    },
+    {
+      "id": "E0845",
+      "minimum_width_mm": 2.166744541219998,
+      "inscribed_diameter_mm": 1.748662387131489
+    },
+    {
+      "id": "E0846",
+      "minimum_width_mm": 0.6682390981657136,
+      "inscribed_diameter_mm": 0.5659005057614159
+    },
+    {
+      "id": "E0847",
+      "minimum_width_mm": 4.864052892689002,
+      "inscribed_diameter_mm": 4.613088439676844
+    },
+    {
+      "id": "E0848",
+      "minimum_width_mm": 0.45753270387649536,
+      "inscribed_diameter_mm": 0.45753270387649536
+    },
+    {
+      "id": "E0849",
+      "minimum_width_mm": 0.03658620974575655,
+      "inscribed_diameter_mm": 0.03637577852579293
+    },
+    {
+      "id": "E0850",
+      "minimum_width_mm": 0.017001340712653246,
+      "inscribed_diameter_mm": 0.016956268505683166
+    },
+    {
+      "id": "E0851",
+      "minimum_width_mm": 0.0987955638082596,
+      "inscribed_diameter_mm": 0.0973288129628471
+    },
+    {
+      "id": "E0852",
+      "minimum_width_mm": 0.15607512160498516,
+      "inscribed_diameter_mm": 0.15263910719830068
+    },
+    {
+      "id": "E0853",
+      "minimum_width_mm": 0.07367353234058527,
+      "inscribed_diameter_mm": 0.0729379968345599
+    },
+    {
+      "id": "E0854",
+      "minimum_width_mm": 0.2505444506283183,
+      "inscribed_diameter_mm": 0.24283538266926338
+    },
+    {
+      "id": "E0855",
+      "minimum_width_mm": 0.31925258101909293,
+      "inscribed_diameter_mm": 0.308456864836148
+    },
+    {
+      "id": "E0856",
+      "minimum_width_mm": 0.1125094327334466,
+      "inscribed_diameter_mm": 0.11197898327383789
+    },
+    {
+      "id": "E0857",
+      "minimum_width_mm": 0.4575327038764989,
+      "inscribed_diameter_mm": 0.45753270387647405
+    },
+    {
+      "id": "E0858",
+      "minimum_width_mm": 0.020497635312869633,
+      "inscribed_diameter_mm": 0.02042304478765821
+    },
+    {
+      "id": "E0859",
+      "minimum_width_mm": 1.0366932554581254,
+      "inscribed_diameter_mm": 0.9882871581582171
+    },
+    {
+      "id": "E0860",
+      "minimum_width_mm": 0.1077703875125593,
+      "inscribed_diameter_mm": 0.0913239016579972
+    },
+    {
+      "id": "E0861",
+      "minimum_width_mm": 0.3986246883869171,
+      "inscribed_diameter_mm": 0.3779949008897128
+    },
+    {
+      "id": "E0862",
+      "minimum_width_mm": 0.484206890100495,
+      "inscribed_diameter_mm": 0.45640215069643997
+    },
+    {
+      "id": "E0863",
+      "minimum_width_mm": 0.4842068901004879,
+      "inscribed_diameter_mm": 0.3474915376655321
+    },
+    {
+      "id": "E0864",
+      "minimum_width_mm": 0.24249403787634272,
+      "inscribed_diameter_mm": 0.23085433597273028
+    },
+    {
+      "id": "E0865",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.16746856272220612
+    },
+    {
+      "id": "E0866",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.16746856272220612
+    },
+    {
+      "id": "E0867",
+      "minimum_width_mm": 0.030443314273938427,
+      "inscribed_diameter_mm": 0.030268214863335613
+    },
+    {
+      "id": "E0868",
+      "minimum_width_mm": 0.014146782680960257,
+      "inscribed_diameter_mm": 0.014109278184821121
+    },
+    {
+      "id": "E0869",
+      "minimum_width_mm": 0.08220759731016614,
+      "inscribed_diameter_mm": 0.08098711677230719
+    },
+    {
+      "id": "E0870",
+      "minimum_width_mm": 0.1298698064210555,
+      "inscribed_diameter_mm": 0.12701070548770105
+    },
+    {
+      "id": "E0871",
+      "minimum_width_mm": 0.06130360357907705,
+      "inscribed_diameter_mm": 0.06069156590900441
+    },
+    {
+      "id": "E0872",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.16746856272220612
+    },
+    {
+      "id": "E0873",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.16746856272220612
+    },
+    {
+      "id": "E0874",
+      "minimum_width_mm": 0.10036707578982629,
+      "inscribed_diameter_mm": 0.09920177104484942
+    },
+    {
+      "id": "E0875",
+      "minimum_width_mm": 0.16746856272220612,
+      "inscribed_diameter_mm": 0.1603635259097157
+    },
+    {
+      "id": "E0876",
+      "minimum_width_mm": 1.7380593447908765,
+      "inscribed_diameter_mm": 1.6481599547562524
+    },
+    {
+      "id": "E0877",
+      "minimum_width_mm": 0.12659442636321927,
+      "inscribed_diameter_mm": 0.12004530506468432
+    },
+    {
+      "id": "E0878",
+      "minimum_width_mm": 0.8663903424232089,
+      "inscribed_diameter_mm": 0.7524290319875249
+    },
+    {
+      "id": "E0879",
+      "minimum_width_mm": 0.7401115798690299,
+      "inscribed_diameter_mm": 0.6222534724273091
+    },
+    {
+      "id": "E0880",
+      "minimum_width_mm": 0.1657849374151965,
+      "inscribed_diameter_mm": 0.1633229793532306
+    },
+    {
+      "id": "E0881",
+      "minimum_width_mm": 0.8606419476263625,
+      "inscribed_diameter_mm": 0.827082908634921
+    },
+    {
+      "id": "E0882",
+      "minimum_width_mm": 0.16578493741520361,
+      "inscribed_diameter_mm": 0.15550509536373247
+    },
+    {
+      "id": "E0883",
+      "minimum_width_mm": 0.010357350160203893,
+      "inscribed_diameter_mm": 0.010350413333903123
+    },
+    {
+      "id": "E0884",
+      "minimum_width_mm": 5.765550306868761e-05,
+      "inscribed_diameter_mm": 5.7654952519033457e-05
+    },
+    {
+      "id": "E0885",
+      "minimum_width_mm": 0.003936832269806345,
+      "inscribed_diameter_mm": 0.0034747110331455203
+    },
+    {
+      "id": "E0886",
+      "minimum_width_mm": 0.6683779118273838,
+      "inscribed_diameter_mm": 0.5946906126163565
+    },
+    {
+      "id": "E0887",
+      "minimum_width_mm": 2.3406879256171464e-05,
+      "inscribed_diameter_mm": 2.340684563151285e-05
+    },
+    {
+      "id": "E0888",
+      "minimum_width_mm": 0.3276893885317378,
+      "inscribed_diameter_mm": 0.32473962596742467
+    },
+    {
+      "id": "E0889",
+      "minimum_width_mm": 0.028194858880667084,
+      "inscribed_diameter_mm": 0.028032691807545973
+    },
+    {
+      "id": "E0890",
+      "minimum_width_mm": 0.07613598126090437,
+      "inscribed_diameter_mm": 0.07500564189568593
+    },
+    {
+      "id": "E0891",
+      "minimum_width_mm": 0.1202779970654575,
+      "inscribed_diameter_mm": 0.11763006108133922
+    },
+    {
+      "id": "E0892",
+      "minimum_width_mm": 0.056775896219321,
+      "inscribed_diameter_mm": 0.0562090618864417
+    },
+    {
+      "id": "E0893",
+      "minimum_width_mm": 0.24602935181523833,
+      "inscribed_diameter_mm": 0.23770972274162716
+    },
+    {
+      "id": "E0894",
+      "minimum_width_mm": 0.09295425303231042,
+      "inscribed_diameter_mm": 0.09187501433504863
+    },
+    {
+      "id": "E0895",
+      "minimum_width_mm": 0.3050633910009992,
+      "inscribed_diameter_mm": 0.29524517142699835
+    },
+    {
+      "id": "E0896",
+      "minimum_width_mm": 0.19308000139646708,
+      "inscribed_diameter_mm": 0.18713907215787273
+    },
+    {
+      "id": "E0897",
+      "minimum_width_mm": 0.01310194211171023,
+      "inscribed_diameter_mm": 0.013067207589511298
+    },
+    {
+      "id": "E0898",
+      "minimum_width_mm": 0.9971356143350647,
+      "inscribed_diameter_mm": 0.9966580764375976
+    },
+    {
+      "id": "E0899",
+      "minimum_width_mm": 0.023851982411370543,
+      "inscribed_diameter_mm": 0.02156067799726813
+    },
+    {
+      "id": "E0900",
+      "minimum_width_mm": 1.6067467829487327,
+      "inscribed_diameter_mm": 1.308445353015702
+    },
+    {
+      "id": "E0901",
+      "minimum_width_mm": 1.299664176569621,
+      "inscribed_diameter_mm": 1.2755853308351917
+    },
+    {
+      "id": "E0902",
+      "minimum_width_mm": 2.011321737526302,
+      "inscribed_diameter_mm": 1.866598634268116
+    },
+    {
+      "id": "E0903",
+      "minimum_width_mm": 1.3479680834461618,
+      "inscribed_diameter_mm": 1.2611087465655708
+    },
+    {
+      "id": "E0904",
+      "minimum_width_mm": 0.03565819408439275,
+      "inscribed_diameter_mm": 0.035656731308879586
+    },
+    {
+      "id": "E0905",
+      "minimum_width_mm": 0.026779398731680004,
+      "inscribed_diameter_mm": 0.026778637490746604
+    },
+    {
+      "id": "E0906",
+      "minimum_width_mm": 0.4081020953801371,
+      "inscribed_diameter_mm": 0.40577470147569983
+    },
+    {
+      "id": "E0907",
+      "minimum_width_mm": 0.2994110990736303,
+      "inscribed_diameter_mm": 0.2980430108392369
+    },
+    {
+      "id": "E0908",
+      "minimum_width_mm": 0.7281647465903145,
+      "inscribed_diameter_mm": 0.6547607745123543
+    },
+    {
+      "id": "E0909",
+      "minimum_width_mm": 1.0498709337398893,
+      "inscribed_diameter_mm": 1.0266637324915138
+    },
+    {
+      "id": "E0910",
+      "minimum_width_mm": 0.5000010132789754,
+      "inscribed_diameter_mm": 0.5000010132788475
+    },
+    {
+      "id": "E0911",
+      "minimum_width_mm": 3.871914176301061e-05,
+      "inscribed_diameter_mm": 3.871894568016161e-05
+    },
+    {
+      "id": "E0912",
+      "minimum_width_mm": 0.45322142458282144,
+      "inscribed_diameter_mm": 0.45283583108455616
+    },
+    {
+      "id": "E0913",
+      "minimum_width_mm": 0.07050906650673738,
+      "inscribed_diameter_mm": 0.07031549884138144
+    },
+    {
+      "id": "E0914",
+      "minimum_width_mm": 0.7984807188230576,
+      "inscribed_diameter_mm": 0.7860495449958691
+    },
+    {
+      "id": "E0915",
+      "minimum_width_mm": 0.00223373764929935,
+      "inscribed_diameter_mm": 0.001920087336984011
+    },
+    {
+      "id": "E0916",
+      "minimum_width_mm": 4.461696849147529,
+      "inscribed_diameter_mm": 4.2155384590734
+    },
+    {
+      "id": "E0917",
+      "minimum_width_mm": 0.7604509592056274,
+      "inscribed_diameter_mm": 0.7134193598028802
+    },
+    {
+      "id": "E0918",
+      "minimum_width_mm": 0.46356806749690804,
+      "inscribed_diameter_mm": 0.4561745960352681
+    },
+    {
+      "id": "E0919",
+      "minimum_width_mm": 5.241228637656732,
+      "inscribed_diameter_mm": 4.119749458238644
+    },
+    {
+      "id": "E0920",
+      "minimum_width_mm": 1.006203327625328,
+      "inscribed_diameter_mm": 0.9822655769637052
+    },
+    {
+      "id": "E0921",
+      "minimum_width_mm": 1.6613260955555234,
+      "inscribed_diameter_mm": 1.5289219196886705
+    },
+    {
+      "id": "E0922",
+      "minimum_width_mm": 1.920449289159201,
+      "inscribed_diameter_mm": 1.7871487612456791
+    },
+    {
+      "id": "E0923",
+      "minimum_width_mm": 0.4963223706279045,
+      "inscribed_diameter_mm": 0.487983298878234
+    },
+    {
+      "id": "E0924",
+      "minimum_width_mm": 0.06514183970865872,
+      "inscribed_diameter_mm": 0.06495617862124448
+    },
+    {
+      "id": "E0925",
+      "minimum_width_mm": 0.47517660853552,
+      "inscribed_diameter_mm": 0.4745899827017013
+    },
+    {
+      "id": "E0926",
+      "minimum_width_mm": 0.032526925276179064,
+      "inscribed_diameter_mm": 0.032525366249182966
+    },
+    {
+      "id": "E0927",
+      "minimum_width_mm": 0.5193993961150554,
+      "inscribed_diameter_mm": 0.4308289855900931
+    },
+    {
+      "id": "E0928",
+      "minimum_width_mm": 2.446699990782104,
+      "inscribed_diameter_mm": 1.9143631782784594
+    },
+    {
+      "id": "E0929",
+      "minimum_width_mm": 0.7285118791180665,
+      "inscribed_diameter_mm": 0.7229658553062706
+    },
+    {
+      "id": "E0930",
+      "minimum_width_mm": 0.8163024726954191,
+      "inscribed_diameter_mm": 0.8093385012423369
+    },
+    {
+      "id": "E0931",
+      "minimum_width_mm": 1.2433837085957435,
+      "inscribed_diameter_mm": 1.2310511650802027
+    },
+    {
+      "id": "E0932",
+      "minimum_width_mm": 0.5771882859011299,
+      "inscribed_diameter_mm": 0.523854584147827
+    },
+    {
+      "id": "E0933",
+      "minimum_width_mm": 0.48432765470512606,
+      "inscribed_diameter_mm": 0.4838347231321123
+    },
+    {
+      "id": "E0934",
+      "minimum_width_mm": 0.5927419433060823,
+      "inscribed_diameter_mm": 0.5818760273411385
+    },
+    {
+      "id": "E0935",
+      "minimum_width_mm": 0.8300613876045642,
+      "inscribed_diameter_mm": 0.781841692718352
+    },
+    {
+      "id": "E0936",
+      "minimum_width_mm": 1.9535762666222922e-05,
+      "inscribed_diameter_mm": 1.953572106498718e-05
+    },
+    {
+      "id": "E0937",
+      "minimum_width_mm": 0.0013210065633852963,
+      "inscribed_diameter_mm": 0.0011560814197082436
+    },
+    {
+      "id": "E0938",
+      "minimum_width_mm": 1.1394602577671904,
+      "inscribed_diameter_mm": 1.1236371835956902
+    },
+    {
+      "id": "E0939",
+      "minimum_width_mm": 0.5462736978085161,
+      "inscribed_diameter_mm": 0.46270589068947743
+    },
+    {
+      "id": "E0940",
+      "minimum_width_mm": 0.5157412923171236,
+      "inscribed_diameter_mm": 0.514634612405132
+    },
+    {
+      "id": "E0941",
+      "minimum_width_mm": 0.07574947939318122,
+      "inscribed_diameter_mm": 0.07574163053233203
+    },
+    {
+      "id": "E0942",
+      "minimum_width_mm": 1.3893465802268086,
+      "inscribed_diameter_mm": 1.1716030746717632
+    },
+    {
+      "id": "E0943",
+      "minimum_width_mm": 0.6102599816220646,
+      "inscribed_diameter_mm": 0.6062597638883176
+    },
+    {
+      "id": "E0944",
+      "minimum_width_mm": 2.140965657408259,
+      "inscribed_diameter_mm": 2.0456123816410092
+    },
+    {
+      "id": "E0945",
+      "minimum_width_mm": 0.6205301103484899,
+      "inscribed_diameter_mm": 0.5407566802883963
+    },
+    {
+      "id": "E0946",
+      "minimum_width_mm": 0.9228388383206904,
+      "inscribed_diameter_mm": 0.9208860229136135
+    },
+    {
+      "id": "E0947",
+      "minimum_width_mm": 0.33946502101407816,
+      "inscribed_diameter_mm": 0.31147773724077865
+    },
+    {
+      "id": "E0948",
+      "minimum_width_mm": 0.10373097211080129,
+      "inscribed_diameter_mm": 0.10241239106355238
+    },
+    {
+      "id": "E0949",
+      "minimum_width_mm": 0.036685064449653026,
+      "inscribed_diameter_mm": 0.03657142513189626
+    },
+    {
+      "id": "E0950",
+      "minimum_width_mm": 0.031432616430894234,
+      "inscribed_diameter_mm": 0.031431302811576245
+    },
+    {
+      "id": "E0951",
+      "minimum_width_mm": 0.9958035838510977,
+      "inscribed_diameter_mm": 0.906043897673598
+    },
+    {
+      "id": "E0952",
+      "minimum_width_mm": 0.6771864853189982,
+      "inscribed_diameter_mm": 0.674079778723069
+    },
+    {
+      "id": "E0953",
+      "minimum_width_mm": 0.9037492256809807,
+      "inscribed_diameter_mm": 0.7432822868757967
+    },
+    {
+      "id": "E0954",
+      "minimum_width_mm": 0.6739855149073151,
+      "inscribed_diameter_mm": 0.570649497732532
+    },
+    {
+      "id": "E0955",
+      "minimum_width_mm": 0.33493179442689325,
+      "inscribed_diameter_mm": 0.3325564482453274
+    },
+    {
+      "id": "E0956",
+      "minimum_width_mm": 5.766537810417138e-05,
+      "inscribed_diameter_mm": 5.7665071586650586e-05
+    },
+    {
+      "id": "E0957",
+      "minimum_width_mm": 0.5000010132789896,
+      "inscribed_diameter_mm": 0.5000010132789612
+    },
+    {
+      "id": "E0958",
+      "minimum_width_mm": 0.8746964334862639,
+      "inscribed_diameter_mm": 0.83003295177447
+    },
+    {
+      "id": "E0959",
+      "minimum_width_mm": 0.8540202916469468,
+      "inscribed_diameter_mm": 0.8439907984437269
+    },
+    {
+      "id": "E0960",
+      "minimum_width_mm": 0.0024436427665767146,
+      "inscribed_diameter_mm": 0.0019942560527823616
+    },
+    {
+      "id": "E0961",
+      "minimum_width_mm": 0.8885608596753363,
+      "inscribed_diameter_mm": 0.887346315174895
+    },
+    {
+      "id": "E0962",
+      "minimum_width_mm": 2.251094665547228,
+      "inscribed_diameter_mm": 2.125817522135847
+    },
+    {
+      "id": "E0963",
+      "minimum_width_mm": 1.126120631770931,
+      "inscribed_diameter_mm": 0.9708741165999797
+    },
+    {
+      "id": "E0964",
+      "minimum_width_mm": 0.8229140361494132,
+      "inscribed_diameter_mm": 0.6903286757375184
+    },
+    {
+      "id": "E0965",
+      "minimum_width_mm": 0.9549978974140458,
+      "inscribed_diameter_mm": 0.9442512877272691
+    },
+    {
+      "id": "E0966",
+      "minimum_width_mm": 0.9430076913754846,
+      "inscribed_diameter_mm": 0.8911995810776432
+    },
+    {
+      "id": "E0967",
+      "minimum_width_mm": 0.3897506807464026,
+      "inscribed_diameter_mm": 0.36049027041420345
+    },
+    {
+      "id": "E0968",
+      "minimum_width_mm": 0.3978270582599279,
+      "inscribed_diameter_mm": 0.3819591898264747
+    },
+    {
+      "id": "E0969",
+      "minimum_width_mm": 0.07159159397539927,
+      "inscribed_diameter_mm": 0.07158405879166145
+    },
+    {
+      "id": "E0970",
+      "minimum_width_mm": 0.4598140462460094,
+      "inscribed_diameter_mm": 0.4441152966152657
+    },
+    {
+      "id": "E0971",
+      "minimum_width_mm": 1.1105137596901073,
+      "inscribed_diameter_mm": 1.0564435678975883
+    },
+    {
+      "id": "E0972",
+      "minimum_width_mm": 0.9182412135984066,
+      "inscribed_diameter_mm": 0.7568652128189228
+    },
+    {
+      "id": "E0973",
+      "minimum_width_mm": 0.4515514785500869,
+      "inscribed_diameter_mm": 0.3594721520758384
+    },
+    {
+      "id": "E0974",
+      "minimum_width_mm": 0.853940532261177,
+      "inscribed_diameter_mm": 0.7284831337241684
+    },
+    {
+      "id": "E0975",
+      "minimum_width_mm": 0.053506676230618666,
+      "inscribed_diameter_mm": 0.0533005783926086
+    },
+    {
+      "id": "E0976",
+      "minimum_width_mm": 0.5802182438073347,
+      "inscribed_diameter_mm": 0.5018940910504597
+    },
+    {
+      "id": "E0977",
+      "minimum_width_mm": 0.009093624347073614,
+      "inscribed_diameter_mm": 0.009093509003513134
+    },
+    {
+      "id": "E0978",
+      "minimum_width_mm": 0.2889346408203579,
+      "inscribed_diameter_mm": 0.2706423104365996
+    },
+    {
+      "id": "E0979",
+      "minimum_width_mm": 2.3228868133062655,
+      "inscribed_diameter_mm": 2.238982278183471
+    },
+    {
+      "id": "E0980",
+      "minimum_width_mm": 0.5977433652943498,
+      "inscribed_diameter_mm": 0.4348225415113376
+    },
+    {
+      "id": "E0981",
+      "minimum_width_mm": 0.0018063902557869937,
+      "inscribed_diameter_mm": 0.0018063856973000725
+    },
+    {
+      "id": "E0982",
+      "minimum_width_mm": 0.5000010132789612,
+      "inscribed_diameter_mm": 0.5000010132789612
+    },
+    {
+      "id": "E0983",
+      "minimum_width_mm": 1.5326780900440937,
+      "inscribed_diameter_mm": 1.4601478723586374
+    },
+    {
+      "id": "E0984",
+      "minimum_width_mm": 0.004945461108426308,
+      "inscribed_diameter_mm": 0.0049454268740021234
+    },
+    {
+      "id": "E0985",
+      "minimum_width_mm": 0.025786152685750352,
+      "inscribed_diameter_mm": 0.025763862182534396
+    },
+    {
+      "id": "E0986",
+      "minimum_width_mm": 0.002530786747638736,
+      "inscribed_diameter_mm": 0.0025210482752235
+    },
+    {
+      "id": "E0987",
+      "minimum_width_mm": 0.3354906876675088,
+      "inscribed_diameter_mm": 0.3310323169428422
+    },
+    {
+      "id": "E0988",
+      "minimum_width_mm": 0.006167548712495474,
+      "inscribed_diameter_mm": 0.006159742924616296
+    },
+    {
+      "id": "E0989",
+      "minimum_width_mm": 0.0024882262060614835,
+      "inscribed_diameter_mm": 0.002488217542754967
+    },
+    {
+      "id": "E0990",
+      "minimum_width_mm": 0.9745468058078259,
+      "inscribed_diameter_mm": 0.9576674431051941
+    },
+    {
+      "id": "E0991",
+      "minimum_width_mm": 0.006042010742836723,
+      "inscribed_diameter_mm": 0.006041973596623507
+    },
+    {
+      "id": "E0992",
+      "minimum_width_mm": 0.2409416791356307,
+      "inscribed_diameter_mm": 0.21667499431486487
+    },
+    {
+      "id": "E0993",
+      "minimum_width_mm": 0.1457066751324021,
+      "inscribed_diameter_mm": 0.1448537771046885
+    },
+    {
+      "id": "E0994",
+      "minimum_width_mm": 0.05419606624997897,
+      "inscribed_diameter_mm": 0.05406579406045431
+    },
+    {
+      "id": "E0995",
+      "minimum_width_mm": 0.3391395938571762,
+      "inscribed_diameter_mm": 0.32419556465640115
+    },
+    {
+      "id": "E0996",
+      "minimum_width_mm": 0.4061076398643433,
+      "inscribed_diameter_mm": 0.39812101539772193
+    },
+    {
+      "id": "E0997",
+      "minimum_width_mm": 0.1564919545491712,
+      "inscribed_diameter_mm": 0.15612747447236686
+    },
+    {
+      "id": "E0998",
+      "minimum_width_mm": 2.99999862909317,
+      "inscribed_diameter_mm": 2.99999862909317
+    },
+    {
+      "id": "E0999",
+      "minimum_width_mm": 0.20924604522295276,
+      "inscribed_diameter_mm": 0.20828444759737863
+    },
+    {
+      "id": "E1000",
+      "minimum_width_mm": 0.45355750120312166,
+      "inscribed_diameter_mm": 0.44096493154540184
+    },
+    {
+      "id": "E1001",
+      "minimum_width_mm": 0.6101444101516744,
+      "inscribed_diameter_mm": 0.5662379608950587
+    },
+    {
+      "id": "E1002",
+      "minimum_width_mm": 0.5343540294020457,
+      "inscribed_diameter_mm": 0.510901195449259
+    },
+    {
+      "id": "E1003",
+      "minimum_width_mm": 0.31323873646281175,
+      "inscribed_diameter_mm": 0.30932967810060497
+    },
+    {
+      "id": "E1004",
+      "minimum_width_mm": 0.02456063519705065,
+      "inscribed_diameter_mm": 0.024410710762096777
+    },
+    {
+      "id": "E1005",
+      "minimum_width_mm": 0.021537234533868244,
+      "inscribed_diameter_mm": 0.021114716706618353
+    },
+    {
+      "id": "E1006",
+      "minimum_width_mm": 2.4009619373828173,
+      "inscribed_diameter_mm": 2.3526130494173687
+    },
+    {
+      "id": "E1007",
+      "minimum_width_mm": 0.5200735019547524,
+      "inscribed_diameter_mm": 0.5102703781421445
+    },
+    {
+      "id": "E1008",
+      "minimum_width_mm": 0.6208746413174131,
+      "inscribed_diameter_mm": 0.5971272649118857
+    },
+    {
+      "id": "E1009",
+      "minimum_width_mm": 0.5526419078657705,
+      "inscribed_diameter_mm": 0.5401100525920638
+    },
+    {
+      "id": "E1010",
+      "minimum_width_mm": 2.99999862909317,
+      "inscribed_diameter_mm": 2.99999862909317
+    },
+    {
+      "id": "E1011",
+      "minimum_width_mm": 0.4277770784968471,
+      "inscribed_diameter_mm": 0.4178892716138627
+    },
+    {
+      "id": "E1012",
+      "minimum_width_mm": 0.5994705307033144,
+      "inscribed_diameter_mm": 0.5911698733806503
+    },
+    {
+      "id": "E1013",
+      "minimum_width_mm": 0.5887052440183727,
+      "inscribed_diameter_mm": 0.5550260605806443
+    },
+    {
+      "id": "E1014",
+      "minimum_width_mm": 4.345323963004921,
+      "inscribed_diameter_mm": 3.626438693106119
+    },
+    {
+      "id": "E1015",
+      "minimum_width_mm": 1.4564415905624628,
+      "inscribed_diameter_mm": 1.4187987757684795
+    },
+    {
+      "id": "E1016",
+      "minimum_width_mm": 0.43482006099394144,
+      "inscribed_diameter_mm": 0.42620896417139065
+    },
+    {
+      "id": "E1017",
+      "minimum_width_mm": 1.6564419493079185,
+      "inscribed_diameter_mm": 1.6193008636426498
+    },
+    {
+      "id": "E1018",
+      "minimum_width_mm": 0.27566446985023507,
+      "inscribed_diameter_mm": 0.2722369921928234
+    },
+    {
+      "id": "E1019",
+      "minimum_width_mm": 0.4499418871017564,
+      "inscribed_diameter_mm": 0.4294210391633726
+    },
+    {
+      "id": "E1020",
+      "minimum_width_mm": 4.004007425564437,
+      "inscribed_diameter_mm": 3.7779887576517126
+    },
+    {
+      "id": "E1021",
+      "minimum_width_mm": 0.30595034821030254,
+      "inscribed_diameter_mm": 0.30228389858265636
+    },
+    {
+      "id": "E1022",
+      "minimum_width_mm": 1.5416089445352554,
+      "inscribed_diameter_mm": 1.5312990336036936
+    },
+    {
+      "id": "E1023",
+      "minimum_width_mm": 1.3416081201285124,
+      "inscribed_diameter_mm": 1.331154519196657
+    },
+    {
+      "id": "E1024",
+      "minimum_width_mm": 0.37191438874105653,
+      "inscribed_diameter_mm": 0.3672504322198389
+    },
+    {
+      "id": "E1025",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.3177577802432942
+    },
+    {
+      "id": "E1026",
+      "minimum_width_mm": 0.39999996050647724,
+      "inscribed_diameter_mm": 0.3177581682941195
+    },
+    {
+      "id": "E1027",
+      "minimum_width_mm": 0.4000000384963922,
+      "inscribed_diameter_mm": 0.31775821221196815
+    },
+    {
+      "id": "E1028",
+      "minimum_width_mm": 0.3999996892506077,
+      "inscribed_diameter_mm": 0.3177579499879215
+    },
+    {
+      "id": "E1029",
+      "minimum_width_mm": 0.4000003097521602,
+      "inscribed_diameter_mm": 0.31775833803827247
+    },
+    {
+      "id": "E1030",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329204
+    },
+    {
+      "id": "E1031",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.31775830469185895
+    },
+    {
+      "id": "E1032",
+      "minimum_width_mm": 0.400000247365087,
+      "inscribed_diameter_mm": 0.31775840812625056
+    },
+    {
+      "id": "E1033",
+      "minimum_width_mm": 0.39999975163730994,
+      "inscribed_diameter_mm": 0.3177580457299442
+    },
+    {
+      "id": "E1034",
+      "minimum_width_mm": 0.40000010088338417,
+      "inscribed_diameter_mm": 0.3177583079541968
+    },
+    {
+      "id": "E1035",
+      "minimum_width_mm": 0.39999989811934994,
+      "inscribed_diameter_mm": 0.31775823838182937
+    },
+    {
+      "id": "E1036",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.3177583046918597
+    },
+    {
+      "id": "E1037",
+      "minimum_width_mm": 0.08672916525232743,
+      "inscribed_diameter_mm": 0.07589262465775448
+    },
+    {
+      "id": "E1038",
+      "minimum_width_mm": 0.019323655767364833,
+      "inscribed_diameter_mm": 0.01926466169066554
+    },
+    {
+      "id": "E1039",
+      "minimum_width_mm": 0.32498729304900564,
+      "inscribed_diameter_mm": 0.32347545216497053
+    },
+    {
+      "id": "E1040",
+      "minimum_width_mm": 0.13153070070499595,
+      "inscribed_diameter_mm": 0.12294292650871208
+    },
+    {
+      "id": "E1041",
+      "minimum_width_mm": 0.06123678332297544,
+      "inscribed_diameter_mm": 0.05507730957388901
+    },
+    {
+      "id": "E1042",
+      "minimum_width_mm": 0.014155314249753914,
+      "inscribed_diameter_mm": 0.014123605625588453
+    },
+    {
+      "id": "E1043",
+      "minimum_width_mm": 0.4697808159440431,
+      "inscribed_diameter_mm": 0.46864987704061356
+    },
+    {
+      "id": "E1044",
+      "minimum_width_mm": 0.03179789710217662,
+      "inscribed_diameter_mm": 0.029878597049956213
+    },
+    {
+      "id": "E1045",
+      "minimum_width_mm": 0.007709801038254582,
+      "inscribed_diameter_mm": 0.007700376471856174
+    },
+    {
+      "id": "E1046",
+      "minimum_width_mm": 0.30407456124914534,
+      "inscribed_diameter_mm": 0.303012508803004
+    },
+    {
+      "id": "E1047",
+      "minimum_width_mm": 0.17129443658983146,
+      "inscribed_diameter_mm": 0.1526119647224098
+    },
+    {
+      "id": "E1048",
+      "minimum_width_mm": 0.46068719228982724,
+      "inscribed_diameter_mm": 0.45093154076583986
+    },
+    {
+      "id": "E1049",
+      "minimum_width_mm": 0.007709912455425183,
+      "inscribed_diameter_mm": 0.0077004873534392
+    },
+    {
+      "id": "E1050",
+      "minimum_width_mm": 0.1712946128860935,
+      "inscribed_diameter_mm": 0.15261206641524439
+    },
+    {
+      "id": "E1051",
+      "minimum_width_mm": 0.031797468333236045,
+      "inscribed_diameter_mm": 0.029878230119667393
+    },
+    {
+      "id": "E1052",
+      "minimum_width_mm": 0.4615809629238776,
+      "inscribed_diameter_mm": 0.45671465382537413
+    },
+    {
+      "id": "E1053",
+      "minimum_width_mm": 0.16880342240260937,
+      "inscribed_diameter_mm": 0.14930219567566638
+    },
+    {
+      "id": "E1054",
+      "minimum_width_mm": 0.01415503495195125,
+      "inscribed_diameter_mm": 0.014123328346400399
+    },
+    {
+      "id": "E1055",
+      "minimum_width_mm": 0.061237142165207814,
+      "inscribed_diameter_mm": 0.05507756612706416
+    },
+    {
+      "id": "E1056",
+      "minimum_width_mm": 0.2055752978329508,
+      "inscribed_diameter_mm": 0.1748567270201793
+    },
+    {
+      "id": "E1057",
+      "minimum_width_mm": 0.16544486798768077,
+      "inscribed_diameter_mm": 0.14524873074163125
+    },
+    {
+      "id": "E1058",
+      "minimum_width_mm": 0.01932365576736572,
+      "inscribed_diameter_mm": 0.01926466169066532
+    },
+    {
+      "id": "E1059",
+      "minimum_width_mm": 0.08672916525232566,
+      "inscribed_diameter_mm": 0.07589262465775448
+    },
+    {
+      "id": "E1060",
+      "minimum_width_mm": 0.20104833133006927,
+      "inscribed_diameter_mm": 0.17346082266545437
+    },
+    {
+      "id": "E1061",
+      "minimum_width_mm": 0.16098792213163904,
+      "inscribed_diameter_mm": 0.14030012799399927
+    },
+    {
+      "id": "E1062",
+      "minimum_width_mm": 0.02320756960093462,
+      "inscribed_diameter_mm": 0.023122580660428937
+    },
+    {
+      "id": "E1063",
+      "minimum_width_mm": 0.10770949206909464,
+      "inscribed_diameter_mm": 0.09286932227274747
+    },
+    {
+      "id": "E1064",
+      "minimum_width_mm": 0.3601605236300429,
+      "inscribed_diameter_mm": 0.3589202454865488
+    },
+    {
+      "id": "E1065",
+      "minimum_width_mm": 0.1551204116746181,
+      "inscribed_diameter_mm": 0.13425778037044456
+    },
+    {
+      "id": "E1066",
+      "minimum_width_mm": 0.025799595146364762,
+      "inscribed_diameter_mm": 0.02569464963830015
+    },
+    {
+      "id": "E1067",
+      "minimum_width_mm": 0.12439981001107903,
+      "inscribed_diameter_mm": 0.10663910828546008
+    },
+    {
+      "id": "E1068",
+      "minimum_width_mm": 4.621278421161375,
+      "inscribed_diameter_mm": 3.6168903713453413
+    },
+    {
+      "id": "E1069",
+      "minimum_width_mm": 0.1474351897199193,
+      "inscribed_diameter_mm": 0.12686733578340714
+    },
+    {
+      "id": "E1070",
+      "minimum_width_mm": 0.027096810678719052,
+      "inscribed_diameter_mm": 0.02698109357683265
+    },
+    {
+      "id": "E1071",
+      "minimum_width_mm": 0.4421330685816409,
+      "inscribed_diameter_mm": 0.4388087399316021
+    },
+    {
+      "id": "E1072",
+      "minimum_width_mm": 0.13740749042399347,
+      "inscribed_diameter_mm": 0.11779997425895772
+    },
+    {
+      "id": "E1073",
+      "minimum_width_mm": 0.027096755106372328,
+      "inscribed_diameter_mm": 0.02698103894456949
+    },
+    {
+      "id": "E1074",
+      "minimum_width_mm": 0.48331961856747907,
+      "inscribed_diameter_mm": 0.47934255912336265
+    },
+    {
+      "id": "E1075",
+      "minimum_width_mm": 0.12439973246877756,
+      "inscribed_diameter_mm": 0.10663900674187943
+    },
+    {
+      "id": "E1076",
+      "minimum_width_mm": 0.025799392103150964,
+      "inscribed_diameter_mm": 0.02569444883811478
+    },
+    {
+      "id": "E1077",
+      "minimum_width_mm": 0.21846181564549205,
+      "inscribed_diameter_mm": 0.2115646098176267
+    },
+    {
+      "id": "E1078",
+      "minimum_width_mm": 0.10770950876396412,
+      "inscribed_diameter_mm": 0.09286936255740841
+    },
+    {
+      "id": "E1079",
+      "minimum_width_mm": 0.02320756960093462,
+      "inscribed_diameter_mm": 0.023122580660430714
+    },
+    {
+      "id": "E1080",
+      "minimum_width_mm": 0.21846195631938325,
+      "inscribed_diameter_mm": 0.21329027246163434
+    },
+    {
+      "id": "E1081",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329
+    },
+    {
+      "id": "E1082",
+      "minimum_width_mm": 0.39999996050647724,
+      "inscribed_diameter_mm": 0.3177581682941053
+    },
+    {
+      "id": "E1083",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.31775839717161575
+    },
+    {
+      "id": "E1084",
+      "minimum_width_mm": 0.39999978616833687,
+      "inscribed_diameter_mm": 0.31775813494731686
+    },
+    {
+      "id": "E1085",
+      "minimum_width_mm": 0.4000003097521603,
+      "inscribed_diameter_mm": 0.31775833803826714
+    },
+    {
+      "id": "E1086",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329066
+    },
+    {
+      "id": "E1087",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329565
+    },
+    {
+      "id": "E1088",
+      "minimum_width_mm": 0.4000003097521603,
+      "inscribed_diameter_mm": 0.3177583380382849
+    },
+    {
+      "id": "E1089",
+      "minimum_width_mm": 0.39999978616833687,
+      "inscribed_diameter_mm": 0.3177581349473162
+    },
+    {
+      "id": "E1090",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.3177583971716178
+    },
+    {
+      "id": "E1091",
+      "minimum_width_mm": 0.39999996050647724,
+      "inscribed_diameter_mm": 0.3177581682941195
+    },
+    {
+      "id": "E1092",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.3177577802432963
+    },
+    {
+      "id": "E1093",
+      "minimum_width_mm": 0.08672888975954507,
+      "inscribed_diameter_mm": 0.07589251075748393
+    },
+    {
+      "id": "E1094",
+      "minimum_width_mm": 0.019323655767364726,
+      "inscribed_diameter_mm": 0.01926466169066643
+    },
+    {
+      "id": "E1095",
+      "minimum_width_mm": 0.2184623567834585,
+      "inscribed_diameter_mm": 0.21501512215095175
+    },
+    {
+      "id": "E1096",
+      "minimum_width_mm": 0.06123732663179027,
+      "inscribed_diameter_mm": 0.05507780777000093
+    },
+    {
+      "id": "E1097",
+      "minimum_width_mm": 0.014155972793215454,
+      "inscribed_diameter_mm": 0.01412426004533529
+    },
+    {
+      "id": "E1098",
+      "minimum_width_mm": 0.21846184774151567,
+      "inscribed_diameter_mm": 0.21673841554229156
+    },
+    {
+      "id": "E1099",
+      "minimum_width_mm": 0.031798513835379794,
+      "inscribed_diameter_mm": 0.02987923298757167
+    },
+    {
+      "id": "E1100",
+      "minimum_width_mm": 0.007711532256848841,
+      "inscribed_diameter_mm": 0.0077021015418523575
+    },
+    {
+      "id": "E1101",
+      "minimum_width_mm": 0.3813423181700122,
+      "inscribed_diameter_mm": 0.37899295471859773
+    },
+    {
+      "id": "E1102",
+      "minimum_width_mm": 0.17129464840464337,
+      "inscribed_diameter_mm": 0.15261207981558655
+    },
+    {
+      "id": "E1103",
+      "minimum_width_mm": 0.4857815572959927,
+      "inscribed_diameter_mm": 0.4848807115586524
+    },
+    {
+      "id": "E1104",
+      "minimum_width_mm": 0.007711643674785051,
+      "inscribed_diameter_mm": 0.007702212423950527
+    },
+    {
+      "id": "E1105",
+      "minimum_width_mm": 0.031798085069654536,
+      "inscribed_diameter_mm": 0.029878866059448228
+    },
+    {
+      "id": "E1106",
+      "minimum_width_mm": 0.2113831409596827,
+      "inscribed_diameter_mm": 0.17641791880145163
+    },
+    {
+      "id": "E1107",
+      "minimum_width_mm": 0.16880312831892041,
+      "inscribed_diameter_mm": 0.1493019857471083
+    },
+    {
+      "id": "E1108",
+      "minimum_width_mm": 0.014155693495936816,
+      "inscribed_diameter_mm": 0.01412398276684712
+    },
+    {
+      "id": "E1109",
+      "minimum_width_mm": 0.061237685474766934,
+      "inscribed_diameter_mm": 0.055078064323812015
+    },
+    {
+      "id": "E1110",
+      "minimum_width_mm": 0.20557570682471749,
+      "inscribed_diameter_mm": 0.17485697076651263
+    },
+    {
+      "id": "E1111",
+      "minimum_width_mm": 0.16544577910502056,
+      "inscribed_diameter_mm": 0.14524926633202995
+    },
+    {
+      "id": "E1112",
+      "minimum_width_mm": 0.01932365576736572,
+      "inscribed_diameter_mm": 0.019264661690663765
+    },
+    {
+      "id": "E1113",
+      "minimum_width_mm": 0.08672888975954685,
+      "inscribed_diameter_mm": 0.07589251075747683
+    },
+    {
+      "id": "E1114",
+      "minimum_width_mm": 0.24949681268749124,
+      "inscribed_diameter_mm": 0.2494886768748774
+    },
+    {
+      "id": "E1115",
+      "minimum_width_mm": 0.16098814668507977,
+      "inscribed_diameter_mm": 0.1403002041415018
+    },
+    {
+      "id": "E1116",
+      "minimum_width_mm": 0.023207736932920442,
+      "inscribed_diameter_mm": 0.023122745577136783
+    },
+    {
+      "id": "E1117",
+      "minimum_width_mm": 0.10770856943415907,
+      "inscribed_diameter_mm": 0.09286870174441475
+    },
+    {
+      "id": "E1118",
+      "minimum_width_mm": 0.4356307601138987,
+      "inscribed_diameter_mm": 0.42734368693459857
+    },
+    {
+      "id": "E1119",
+      "minimum_width_mm": 0.15512039692643498,
+      "inscribed_diameter_mm": 0.1342578464381119
+    },
+    {
+      "id": "E1120",
+      "minimum_width_mm": 0.025800253690348995,
+      "inscribed_diameter_mm": 0.025695300033589774
+    },
+    {
+      "id": "E1121",
+      "minimum_width_mm": 0.12439922700281514,
+      "inscribed_diameter_mm": 0.10663874488584923
+    },
+    {
+      "id": "E1122",
+      "minimum_width_mm": 0.46878717606361775,
+      "inscribed_diameter_mm": 0.45911112479376115
+    },
+    {
+      "id": "E1123",
+      "minimum_width_mm": 0.14743518971991953,
+      "inscribed_diameter_mm": 0.12686733578340892
+    },
+    {
+      "id": "E1124",
+      "minimum_width_mm": 0.02709632588923583,
+      "inscribed_diameter_mm": 0.026980615102104366
+    },
+    {
+      "id": "E1125",
+      "minimum_width_mm": 0.3035421003032468,
+      "inscribed_diameter_mm": 0.3024709600048041
+    },
+    {
+      "id": "E1126",
+      "minimum_width_mm": 0.13740790457758045,
+      "inscribed_diameter_mm": 0.11780018672531867
+    },
+    {
+      "id": "E1127",
+      "minimum_width_mm": 0.027096270316420146,
+      "inscribed_diameter_mm": 0.02698056046934738
+    },
+    {
+      "id": "E1128",
+      "minimum_width_mm": 0.4601316669078699,
+      "inscribed_diameter_mm": 0.45223854168679267
+    },
+    {
+      "id": "E1129",
+      "minimum_width_mm": 0.12439914945951358,
+      "inscribed_diameter_mm": 0.10663864334192397
+    },
+    {
+      "id": "E1130",
+      "minimum_width_mm": 0.025800050646612505,
+      "inscribed_diameter_mm": 0.025695099232994068
+    },
+    {
+      "id": "E1131",
+      "minimum_width_mm": 0.21846175757902309,
+      "inscribed_diameter_mm": 0.21156466552132258
+    },
+    {
+      "id": "E1132",
+      "minimum_width_mm": 0.10770858612900014,
+      "inscribed_diameter_mm": 0.092868742028557
+    },
+    {
+      "id": "E1133",
+      "minimum_width_mm": 0.023207736932921108,
+      "inscribed_diameter_mm": 0.023122745577135895
+    },
+    {
+      "id": "E1134",
+      "minimum_width_mm": 0.218461831740262,
+      "inscribed_diameter_mm": 0.2132901118360735
+    },
+    {
+      "id": "E1135",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.3177577802432928
+    },
+    {
+      "id": "E1136",
+      "minimum_width_mm": 0.4000003097521602,
+      "inscribed_diameter_mm": 0.31775833803827247
+    },
+    {
+      "id": "E1137",
+      "minimum_width_mm": 0.3999996892506077,
+      "inscribed_diameter_mm": 0.3177579499879213
+    },
+    {
+      "id": "E1138",
+      "minimum_width_mm": 0.4000000384963922,
+      "inscribed_diameter_mm": 0.3177582122119702
+    },
+    {
+      "id": "E1139",
+      "minimum_width_mm": 0.39999996050647724,
+      "inscribed_diameter_mm": 0.3177581682941195
+    },
+    {
+      "id": "E1140",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.3177577802432935
+    },
+    {
+      "id": "E1141",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.31775830469185895
+    },
+    {
+      "id": "E1142",
+      "minimum_width_mm": 0.39999989811934994,
+      "inscribed_diameter_mm": 0.31775823838182937
+    },
+    {
+      "id": "E1143",
+      "minimum_width_mm": 0.40000010088338417,
+      "inscribed_diameter_mm": 0.31775830795419907
+    },
+    {
+      "id": "E1144",
+      "minimum_width_mm": 0.39999975163730994,
+      "inscribed_diameter_mm": 0.31775804572994204
+    },
+    {
+      "id": "E1145",
+      "minimum_width_mm": 0.400000247365087,
+      "inscribed_diameter_mm": 0.31775840812625056
+    },
+    {
+      "id": "E1146",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.3177583046918597
+    },
+    {
+      "id": "E1147",
+      "minimum_width_mm": 0.08672916525232566,
+      "inscribed_diameter_mm": 0.07589262465775448
+    },
+    {
+      "id": "E1148",
+      "minimum_width_mm": 0.01932365576736572,
+      "inscribed_diameter_mm": 0.01926466169066554
+    },
+    {
+      "id": "E1149",
+      "minimum_width_mm": 0.30595034821030254,
+      "inscribed_diameter_mm": 0.3048486779435571
+    },
+    {
+      "id": "E1150",
+      "minimum_width_mm": 0.13153070070499506,
+      "inscribed_diameter_mm": 0.12294292650871208
+    },
+    {
+      "id": "E1151",
+      "minimum_width_mm": 0.061237142165207814,
+      "inscribed_diameter_mm": 0.05507756612706416
+    },
+    {
+      "id": "E1152",
+      "minimum_width_mm": 0.01415503495195125,
+      "inscribed_diameter_mm": 0.014123328346403952
+    },
+    {
+      "id": "E1153",
+      "minimum_width_mm": 0.4615809629238776,
+      "inscribed_diameter_mm": 0.4611146814995042
+    },
+    {
+      "id": "E1154",
+      "minimum_width_mm": 0.031797468333236045,
+      "inscribed_diameter_mm": 0.029878230119667393
+    },
+    {
+      "id": "E1155",
+      "minimum_width_mm": 0.007709912455425183,
+      "inscribed_diameter_mm": 0.007700487353435648
+    },
+    {
+      "id": "E1156",
+      "minimum_width_mm": 0.21846198669414285,
+      "inscribed_diameter_mm": 0.21846197447529292
+    },
+    {
+      "id": "E1157",
+      "minimum_width_mm": 0.28656967698612945,
+      "inscribed_diameter_mm": 0.28622533023123964
+    },
+    {
+      "id": "E1158",
+      "minimum_width_mm": 0.007709801038254582,
+      "inscribed_diameter_mm": 0.007700376471856174
+    },
+    {
+      "id": "E1159",
+      "minimum_width_mm": 0.17129461288609527,
+      "inscribed_diameter_mm": 0.15261206641524971
+    },
+    {
+      "id": "E1160",
+      "minimum_width_mm": 0.03179789710217662,
+      "inscribed_diameter_mm": 0.02987859704995799
+    },
+    {
+      "id": "E1161",
+      "minimum_width_mm": 0.5592191045946375,
+      "inscribed_diameter_mm": 0.5456881707862937
+    },
+    {
+      "id": "E1162",
+      "minimum_width_mm": 0.16880334643373374,
+      "inscribed_diameter_mm": 0.14930210152508394
+    },
+    {
+      "id": "E1163",
+      "minimum_width_mm": 0.014155314249753914,
+      "inscribed_diameter_mm": 0.0141236056255849
+    },
+    {
+      "id": "E1164",
+      "minimum_width_mm": 0.06123678332297544,
+      "inscribed_diameter_mm": 0.05507730957388546
+    },
+    {
+      "id": "E1165",
+      "minimum_width_mm": 0.8744049177785378,
+      "inscribed_diameter_mm": 0.7795699695031726
+    },
+    {
+      "id": "E1166",
+      "minimum_width_mm": 0.16544486798768077,
+      "inscribed_diameter_mm": 0.14524873074163125
+    },
+    {
+      "id": "E1167",
+      "minimum_width_mm": 0.019323655767364833,
+      "inscribed_diameter_mm": 0.0192646616906631
+    },
+    {
+      "id": "E1168",
+      "minimum_width_mm": 0.08672916525232743,
+      "inscribed_diameter_mm": 0.07589262465775448
+    },
+    {
+      "id": "E1169",
+      "minimum_width_mm": 0.5601456142861068,
+      "inscribed_diameter_mm": 0.5449194389811075
+    },
+    {
+      "id": "E1170",
+      "minimum_width_mm": 0.1609881797788965,
+      "inscribed_diameter_mm": 0.14030032253949543
+    },
+    {
+      "id": "E1171",
+      "minimum_width_mm": 0.02320756960093462,
+      "inscribed_diameter_mm": 0.023122580660428937
+    },
+    {
+      "id": "E1172",
+      "minimum_width_mm": 0.10770950876396412,
+      "inscribed_diameter_mm": 0.09286936255740841
+    },
+    {
+      "id": "E1173",
+      "minimum_width_mm": 1.2767688143403033,
+      "inscribed_diameter_mm": 1.0712719243860647
+    },
+    {
+      "id": "E1174",
+      "minimum_width_mm": 0.15512041167461899,
+      "inscribed_diameter_mm": 0.13425778037044467
+    },
+    {
+      "id": "E1175",
+      "minimum_width_mm": 0.025799392103150964,
+      "inscribed_diameter_mm": 0.025694448838116557
+    },
+    {
+      "id": "E1176",
+      "minimum_width_mm": 0.12439973246877756,
+      "inscribed_diameter_mm": 0.10663900674187943
+    },
+    {
+      "id": "E1177",
+      "minimum_width_mm": 4.395273767796615,
+      "inscribed_diameter_mm": 3.7929763693834264
+    },
+    {
+      "id": "E1178",
+      "minimum_width_mm": 0.14743539715917642,
+      "inscribed_diameter_mm": 0.12686748999639974
+    },
+    {
+      "id": "E1179",
+      "minimum_width_mm": 0.027096755106372328,
+      "inscribed_diameter_mm": 0.02698103894456949
+    },
+    {
+      "id": "E1180",
+      "minimum_width_mm": 0.449231227539995,
+      "inscribed_diameter_mm": 0.4454726925377148
+    },
+    {
+      "id": "E1181",
+      "minimum_width_mm": 0.13740749042399436,
+      "inscribed_diameter_mm": 0.11779997425895772
+    },
+    {
+      "id": "E1182",
+      "minimum_width_mm": 0.027096810678719052,
+      "inscribed_diameter_mm": 0.026981093576829096
+    },
+    {
+      "id": "E1183",
+      "minimum_width_mm": 0.4798618892118931,
+      "inscribed_diameter_mm": 0.4767811242316302
+    },
+    {
+      "id": "E1184",
+      "minimum_width_mm": 0.12439981001107903,
+      "inscribed_diameter_mm": 0.10663910828546008
+    },
+    {
+      "id": "E1185",
+      "minimum_width_mm": 0.025799595146364762,
+      "inscribed_diameter_mm": 0.025694649638307254
+    },
+    {
+      "id": "E1186",
+      "minimum_width_mm": 0.21846177358358637,
+      "inscribed_diameter_mm": 0.21156450767542623
+    },
+    {
+      "id": "E1187",
+      "minimum_width_mm": 0.10770949206909464,
+      "inscribed_diameter_mm": 0.09286932227274747
+    },
+    {
+      "id": "E1188",
+      "minimum_width_mm": 0.02320756960093462,
+      "inscribed_diameter_mm": 0.023122580660427605
+    },
+    {
+      "id": "E1189",
+      "minimum_width_mm": 0.21846154478926483,
+      "inscribed_diameter_mm": 0.2132899502728307
+    },
+    {
+      "id": "E1190",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329
+    },
+    {
+      "id": "E1191",
+      "minimum_width_mm": 0.4000003097521603,
+      "inscribed_diameter_mm": 0.31775833803826714
+    },
+    {
+      "id": "E1192",
+      "minimum_width_mm": 0.39999978616833687,
+      "inscribed_diameter_mm": 0.31775813494731503
+    },
+    {
+      "id": "E1193",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.3177583971716178
+    },
+    {
+      "id": "E1194",
+      "minimum_width_mm": 0.39999996050647724,
+      "inscribed_diameter_mm": 0.3177581682941266
+    },
+    {
+      "id": "E1195",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329066
+    },
+    {
+      "id": "E1196",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.31775778024329565
+    },
+    {
+      "id": "E1197",
+      "minimum_width_mm": 0.39999996050647724,
+      "inscribed_diameter_mm": 0.3177581682941266
+    },
+    {
+      "id": "E1198",
+      "minimum_width_mm": 0.4000002518296242,
+      "inscribed_diameter_mm": 0.3177583971716169
+    },
+    {
+      "id": "E1199",
+      "minimum_width_mm": 0.39999978616833687,
+      "inscribed_diameter_mm": 0.3177581349473151
+    },
+    {
+      "id": "E1200",
+      "minimum_width_mm": 0.4000003097521603,
+      "inscribed_diameter_mm": 0.31775833803827425
+    },
+    {
+      "id": "E1201",
+      "minimum_width_mm": 0.39999932050704956,
+      "inscribed_diameter_mm": 0.3177577802432963
+    },
+    {
+      "id": "E1202",
+      "minimum_width_mm": 0.08672888975954685,
+      "inscribed_diameter_mm": 0.07589251075747683
+    },
+    {
+      "id": "E1203",
+      "minimum_width_mm": 0.01932365576736572,
+      "inscribed_diameter_mm": 0.01926466169066643
+    },
+    {
+      "id": "E1204",
+      "minimum_width_mm": 0.2184623567834585,
+      "inscribed_diameter_mm": 0.21501512215095175
+    },
+    {
+      "id": "E1205",
+      "minimum_width_mm": 0.061237685474766934,
+      "inscribed_diameter_mm": 0.055078064323812015
+    },
+    {
+      "id": "E1206",
+      "minimum_width_mm": 0.014155693495936816,
+      "inscribed_diameter_mm": 0.014123982766843568
+    },
+    {
+      "id": "E1207",
+      "minimum_width_mm": 0.43482006099394144,
+      "inscribed_diameter_mm": 0.4302234320472298
+    },
+    {
+      "id": "E1208",
+      "minimum_width_mm": 0.15090224401985175,
+      "inscribed_diameter_mm": 0.1380225609595307
+    },
+    {
+      "id": "E1209",
+      "minimum_width_mm": 0.031798085069654536,
+      "inscribed_diameter_mm": 0.029878866059453557
+    },
+    {
+      "id": "E1210",
+      "minimum_width_mm": 0.007711643674785051,
+      "inscribed_diameter_mm": 0.007702212423950527
+    },
+    {
+      "id": "E1211",
+      "minimum_width_mm": 0.2184610824343487,
+      "inscribed_diameter_mm": 0.1780431646610694
+    },
+    {
+      "id": "E1212",
+      "minimum_width_mm": 0.17129464840464692,
+      "inscribed_diameter_mm": 0.15261207981558142
+    },
+    {
+      "id": "E1213",
+      "minimum_width_mm": 0.3635608646632704,
+      "inscribed_diameter_mm": 0.3624144131463325
+    },
+    {
+      "id": "E1214",
+      "minimum_width_mm": 0.007711532256848841,
+      "inscribed_diameter_mm": 0.0077021015418523575
+    },
+    {
+      "id": "E1215",
+      "minimum_width_mm": 0.17129370444859404,
+      "inscribed_diameter_mm": 0.15261140288682284
+    },
+    {
+      "id": "E1216",
+      "minimum_width_mm": 0.031798513835379794,
+      "inscribed_diameter_mm": 0.029879232987564563
+    },
+    {
+      "id": "E1217",
+      "minimum_width_mm": 0.2113828321692406,
+      "inscribed_diameter_mm": 0.17641775229373025
+    },
+    {
+      "id": "E1218",
+      "minimum_width_mm": 0.16880305235074644,
+      "inscribed_diameter_mm": 0.14930189159716178
+    },
+    {
+      "id": "E1219",
+      "minimum_width_mm": 0.014155972793215454,
+      "inscribed_diameter_mm": 0.01412426004533529
+    },
+    {
+      "id": "E1220",
+      "minimum_width_mm": 0.06123732663179027,
+      "inscribed_diameter_mm": 0.05507780777000093
+    },
+    {
+      "id": "E1221",
+      "minimum_width_mm": 0.3446019121045385,
+      "inscribed_diameter_mm": 0.3436747604080921
+    },
+    {
+      "id": "E1222",
+      "minimum_width_mm": 0.16544577910502056,
+      "inscribed_diameter_mm": 0.14524926633203705
+    },
+    {
+      "id": "E1223",
+      "minimum_width_mm": 0.019323655767364726,
+      "inscribed_diameter_mm": 0.01926466169066332
+    },
+    {
+      "id": "E1224",
+      "minimum_width_mm": 0.08672888975954507,
+      "inscribed_diameter_mm": 0.07589251075748393
+    },
+    {
+      "id": "E1225",
+      "minimum_width_mm": 0.47283406980242937,
+      "inscribed_diameter_mm": 0.4676731637187075
+    },
+    {
+      "id": "E1226",
+      "minimum_width_mm": 0.1609884043326244,
+      "inscribed_diameter_mm": 0.1403003986870388
+    },
+    {
+      "id": "E1227",
+      "minimum_width_mm": 0.023207736932921108,
+      "inscribed_diameter_mm": 0.023122745577136783
+    },
+    {
+      "id": "E1228",
+      "minimum_width_mm": 0.10770858612900014,
+      "inscribed_diameter_mm": 0.09286874202854278
+    },
+    {
+      "id": "E1229",
+      "minimum_width_mm": 0.46562533531959005,
+      "inscribed_diameter_mm": 0.46298684364308684
+    },
+    {
+      "id": "E1230",
+      "minimum_width_mm": 0.1551203969264341,
+      "inscribed_diameter_mm": 0.1342578464381119
+    },
+    {
+      "id": "E1231",
+      "minimum_width_mm": 0.025800050646612505,
+      "inscribed_diameter_mm": 0.025695099232994068
+    },
+    {
+      "id": "E1232",
+      "minimum_width_mm": 0.12439914945951358,
+      "inscribed_diameter_mm": 0.10663864334192397
+    },
+    {
+      "id": "E1233",
+      "minimum_width_mm": 0.33104047187595853,
+      "inscribed_diameter_mm": 0.3293271767843464
+    },
+    {
+      "id": "E1234",
+      "minimum_width_mm": 0.14743539715917642,
+      "inscribed_diameter_mm": 0.12686748999639974
+    },
+    {
+      "id": "E1235",
+      "minimum_width_mm": 0.027096270316420146,
+      "inscribed_diameter_mm": 0.026980560469340276
+    },
+    {
+      "id": "E1236",
+      "minimum_width_mm": 0.3124056066993752,
+      "inscribed_diameter_mm": 0.31226690047827077
+    },
+    {
+      "id": "E1237",
+      "minimum_width_mm": 0.13740790457757868,
+      "inscribed_diameter_mm": 0.11780018672532222
+    },
+    {
+      "id": "E1238",
+      "minimum_width_mm": 0.02709632588923583,
+      "inscribed_diameter_mm": 0.02698061510211147
+    },
+    {
+      "id": "E1239",
+      "minimum_width_mm": 0.46878717606361775,
+      "inscribed_diameter_mm": 0.45911112479377536
+    },
+    {
+      "id": "E1240",
+      "minimum_width_mm": 0.12439922700281514,
+      "inscribed_diameter_mm": 0.10663874488586345
+    },
+    {
+      "id": "E1241",
+      "minimum_width_mm": 0.025800253690348995,
+      "inscribed_diameter_mm": 0.025695300033589774
+    },
+    {
+      "id": "E1242",
+      "minimum_width_mm": 0.2184617155169679,
+      "inscribed_diameter_mm": 0.21156456337901375
+    },
+    {
+      "id": "E1243",
+      "minimum_width_mm": 0.10770856943415907,
+      "inscribed_diameter_mm": 0.09286870174441475
+    },
+    {
+      "id": "E1244",
+      "minimum_width_mm": 0.023207736932920442,
+      "inscribed_diameter_mm": 0.02312274557713412
+    },
+    {
+      "id": "E1245",
+      "minimum_width_mm": 0.21846142020921278,
+      "inscribed_diameter_mm": 0.21328978964650958
+    },
+    {
+      "id": "E1246",
+      "minimum_width_mm": 0.4356307601138987,
+      "inscribed_diameter_mm": 0.4168516684627903
+    },
+    {
+      "id": "E1247",
+      "minimum_width_mm": 0.24949681268749124,
+      "inscribed_diameter_mm": 0.2469027110573183
+    },
+    {
+      "id": "E1248",
+      "minimum_width_mm": 1.6564419493079185,
+      "inscribed_diameter_mm": 1.6193008636426498
+    },
+    {
+      "id": "E1249",
+      "minimum_width_mm": 1.8236588221043348,
+      "inscribed_diameter_mm": 1.315334942297991
+    },
+    {
+      "id": "E1250",
+      "minimum_width_mm": 4.5728718495086165,
+      "inscribed_diameter_mm": 4.052793598822348
+    },
+    {
+      "id": "E1251",
+      "minimum_width_mm": 0.3601605236300429,
+      "inscribed_diameter_mm": 0.3559459823831288
+    },
+    {
+      "id": "E1252",
+      "minimum_width_mm": 1.5416089445352554,
+      "inscribed_diameter_mm": 1.5312990336036947
+    },
+    {
+      "id": "E1253",
+      "minimum_width_mm": 4.80000046081841,
+      "inscribed_diameter_mm": 4.23935332852426
+    }
+  ]
+}
