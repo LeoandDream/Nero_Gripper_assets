@@ -1,7 +1,7 @@
 """Targeted zero-integration tests for the policy action boundary and scheduler."""
 import unittest
 import numpy as np
-from replay_mvp_actions import ReplayPolicy, position_action, dispatch
+from replay_mvp_actions import ReplayPolicy, position_action, dispatch, close_phase_check
 
 
 class ActionContract(unittest.TestCase):
@@ -47,6 +47,21 @@ class ActionContract(unittest.TestCase):
         self.assertEqual(len(targets), 687)
         self.assertEqual(len(advances), 3415)
         self.assertEqual(advances[-1], 34140)
+
+    def test_source_contact_time_is_not_the_original_close_timeout(self):
+        force = np.zeros((34150, 2)); force[20500] = .25
+        actual = close_phase_check(force, 8372, 20483, 20., .2)
+        self.assertEqual(actual['status'], 'PASS')
+        self.assertEqual(actual['new_bilateral_contact_step'], 20501)
+        self.assertFalse(actual['within_source_close_window'])
+        force[:] = 0; force[28372] = .25
+        self.assertEqual(close_phase_check(force, 8372, 20483, 20., .2)['status'], 'FAIL')
+
+    def test_contact_only_after_lift_is_not_successful_close(self):
+        force = np.zeros((34150, 2)); force[22000] = .25
+        actual = close_phase_check(force, 8372, 20483, 20., .2, first_lift_step=21483)
+        self.assertEqual(actual['status'], 'FAIL')
+        self.assertIsNone(actual['new_bilateral_contact_time_s'])
 
 
 if __name__ == '__main__': unittest.main()

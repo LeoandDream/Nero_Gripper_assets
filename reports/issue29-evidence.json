@@ -1,0 +1,711 @@
+{
+  "runtime": {
+    "ACTION_RUNTIME": "PASS",
+    "REPLAY_GRASP": "PASS",
+    "checks": {
+      "complete": true,
+      "order": true,
+      "high_level_calls": true,
+      "timing": true,
+      "slew_calls": true,
+      "feedback_calls": true,
+      "observations": true,
+      "no_forces": true
+    },
+    "error": null,
+    "actual_mj_steps": 34150,
+    "high_level_calls": 682,
+    "slew_calls": 3415,
+    "feedback_calls": 34150,
+    "observations": 683,
+    "padding_consumed": 0,
+    "wall_s": 47.68579769693315,
+    "input_integrity": {
+      "files": 467,
+      "changed": []
+    },
+    "video_exit_code": 0,
+    "evaluation_mode": "zero-integration",
+    "actual_mj_steps_in_evaluation": 0,
+    "physical_source": "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001",
+    "preserved_original_report_status": "FAIL",
+    "correction": "Use unchanged original maximum_close_duration_s, not source successful trigger time as a deadline",
+    "input_integrity_after_evaluation": {
+      "files": 467,
+      "changed": []
+    }
+  },
+  "grasp": {
+    "status": "PASS",
+    "criteria": {
+      "minimum_lift_m": 0.08,
+      "hold_duration_s": 2.0,
+      "maximum_hold_drift_m": 0.01,
+      "minimum_bilateral_contact_fraction": 0.95,
+      "minimum_finger_normal_force_N": 0.05,
+      "maximum_robot_object_penetration_m": 0.001
+    },
+    "checks": {
+      "complete_hold": true,
+      "lift_height": true,
+      "hold_position_drift": true,
+      "bilateral_finger_support": true,
+      "no_nonfinger_support_during_hold": true,
+      "robot_object_penetration": true
+    },
+    "failed_criteria": [],
+    "maximum_lift_m": 0.09689173953268987,
+    "minimum_lift_during_hold_m": 0.0961527782706878,
+    "hold_duration_s": 2.0,
+    "maximum_hold_position_drift_m": 0.0005742525667245956,
+    "bilateral_contact_fraction_during_hold": 1.0,
+    "minimum_robot_object_contact_distance_m": -0.0005263754459245415,
+    "maximum_penetration_phase": "lift",
+    "finger_normal_force_range_during_hold_N": [
+      [
+        1.2429204084796976,
+        1.2446314540462187
+      ],
+      [
+        1.2435120505770854,
+        1.2450007107354248
+      ]
+    ],
+    "nonfinger_support_samples_during_hold": 0,
+    "control_health_status": "PASS",
+    "actual_mj_steps": 34150,
+    "error": null,
+    "maximum_cube_table_penetration_m": 0.004902505118602872
+  },
+  "control": {
+    "status": "PASS",
+    "error": null,
+    "actual_mj_steps": 34150,
+    "recorded_physics_samples": 34150,
+    "simulation_time_s": 34.15000000001111,
+    "max_arm_velocity_rad_s": 0.2038470705316124,
+    "max_finger_velocity_m_s": 0.02893681035973568,
+    "max_coupling_error_m": 6.042196773630923e-05,
+    "minimum_contact_distance_m": -0.004902505118602872,
+    "max_base_link_link1_normal_force_N": 0.0,
+    "base_contact_normal_generalized_force_max": 0.0,
+    "contact_pair_physics_step_counts": {
+      "cube_geom / table": 100449,
+      "cube_geom / gripper_link1_mvp_V20004": 10079,
+      "cube_geom / gripper_link1_mvp_V20015": 10112,
+      "cube_geom / gripper_link1_mvp_V20017": 10079,
+      "cube_geom / gripper_link2_mvp_V20004": 10086,
+      "cube_geom / gripper_link2_mvp_V20015": 10112,
+      "cube_geom / gripper_link2_mvp_V20017": 10086,
+      "cube_geom / gripper_link1_mvp_V20003": 10064,
+      "cube_geom / gripper_link2_mvp_V20003": 10075,
+      "cube_geom / gripper_link1_mvp_V20018": 3720,
+      "cube_geom / gripper_link2_mvp_V20018": 3793
+    },
+    "phases": [
+      {
+        "phase": "open",
+        "start_time_s": 0.0,
+        "end_time_s": 1.8469999999999074,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.8156872599831811,
+          0.2810983432696505,
+          1.04222135944483,
+          1.5364080306631929,
+          -0.2177098003086819,
+          0.2340591176208889,
+          1.4607995377122671,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          2.081638128537122e-08,
+          7.289275238964166e-09,
+          5.169042638364374e-08,
+          3.608635257279502e-08,
+          5.6678950421940044e-09,
+          7.3736024508441744e-09,
+          3.713992113851816e-08,
+          2.525757381022231e-15,
+          3.094746681142624e-15
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "approach",
+        "start_time_s": 1.8469999999999074,
+        "end_time_s": 3.167999999999762,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.8555639482998662,
+          0.32166654471967576,
+          1.1085437472143176,
+          1.5983036800729706,
+          -0.24280153048873543,
+          0.27757152152754205,
+          1.3962349142556891,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          2.336262177937698e-06,
+          1.1357439533288272e-07,
+          1.601153583941084e-06,
+          1.056912112717967e-06,
+          1.7585091905969463e-06,
+          3.4975620451516143e-06,
+          1.9584828587770886e-06,
+          1.0035892471227381e-08,
+          1.0004005714103759e-08
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "approach",
+        "start_time_s": 3.167999999999762,
+        "end_time_s": 4.4729999999998284,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.8736022592401742,
+          0.3640966731723003,
+          1.1477794303033204,
+          1.6555080989183482,
+          -0.2635372302626484,
+          0.3188130932102383,
+          1.331881242365328,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          1.1063743268202586e-06,
+          1.0246079573672517e-07,
+          9.2581108424028e-07,
+          7.430534882946205e-07,
+          1.6368606451933054e-06,
+          3.512503539138123e-06,
+          2.0665814710607577e-06,
+          1.0377417335172279e-08,
+          1.03508660878604e-08
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "approach",
+        "start_time_s": 4.4729999999998284,
+        "end_time_s": 5.774000000000263,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.8789365289534525,
+          0.4097175927596261,
+          1.1714364016987562,
+          1.708166263009515,
+          -0.2825934675258648,
+          0.3599041930301047,
+          1.2680584789684237,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          4.7615351994600985e-07,
+          2.966684995997504e-07,
+          6.54882336137419e-07,
+          4.798133004246807e-07,
+          1.7098584830232966e-06,
+          3.823955252335587e-06,
+          2.1892608257356727e-06,
+          1.2312435640482455e-08,
+          1.2288199686960599e-08
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "approach",
+        "start_time_s": 5.774000000000263,
+        "end_time_s": 7.074000000000697,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.8749929903809195,
+          0.4577005267817519,
+          1.1824301815506282,
+          1.7563465295018719,
+          -0.2997693625610165,
+          0.39997551061702596,
+          1.2044234415002506,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          2.1816424222720343e-08,
+          3.915200468274094e-07,
+          4.567839710922783e-07,
+          1.9353470781524607e-07,
+          1.545146728010316e-06,
+          3.709741377755371e-06,
+          2.016296331452949e-06,
+          1.2698822542123178e-08,
+          1.267865446658023e-08
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "approach",
+        "start_time_s": 7.074000000000697,
+        "end_time_s": 8.3720000000008,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          2.7220159926066856e-07,
+          4.5214419985839527e-07,
+          2.7447015793491403e-07,
+          1.0642138370542398e-07,
+          1.475530355288246e-06,
+          3.683692966216512e-06,
+          1.92250338137967e-06,
+          1.3449114426300479e-08,
+          1.3431619080850332e-08
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "close",
+        "start_time_s": 8.3720000000008,
+        "end_time_s": 20.48300000000205,
+        "loaded_fingers": true,
+        "status": "PASS",
+        "new_bilateral_contact_step": 20501,
+        "new_bilateral_contact_time_s": 20.501,
+        "original_close_timeout_step": 28372,
+        "first_lift_step": 21483,
+        "source_close_end_step": 20483,
+        "within_source_close_window": false
+      },
+      {
+        "phase": "grasp_settle",
+        "start_time_s": 20.48300000000205,
+        "end_time_s": 21.483000000003273,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.865130017291934,
+          0.5082930894206636,
+          1.1845866330796317,
+          1.8000569348924655,
+          -0.3158772851318046,
+          0.4393164851384921,
+          1.1410782874755419,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          2.6643765381972884e-05,
+          7.053439045945353e-06,
+          2.7250585481697343e-05,
+          3.203331309675761e-05,
+          0.00013922977685532079,
+          0.00018207287850080522,
+          3.77012797114773e-06,
+          0.0015992609103906603,
+          0.0015875845952919403
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "lift",
+        "start_time_s": 21.483000000003273,
+        "end_time_s": 22.78100000000486,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.8749929903809195,
+          0.4577005267817519,
+          1.1824301815506282,
+          1.7563465295018719,
+          -0.2997693625610165,
+          0.39997551061702596,
+          1.2044234415002506,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          3.512389865623078e-07,
+          0.0012559787828368418,
+          0.0006655596877349623,
+          0.0028061834845045652,
+          6.8938560817688455e-06,
+          3.9044155802914204e-06,
+          1.9044006759560972e-05,
+          0.0015605272338426283,
+          0.0015604362926608037
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "lift",
+        "start_time_s": 22.78100000000486,
+        "end_time_s": 24.081000000006448,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.8789365289534525,
+          0.4097175927596261,
+          1.1714364016987562,
+          1.708166263009515,
+          -0.2825934675258648,
+          0.3599041930301047,
+          1.2680584789684237,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          5.350504550527546e-08,
+          0.001250227677842164,
+          0.0006021818699990522,
+          0.002927923639129082,
+          6.515282855168447e-06,
+          4.014536937435587e-06,
+          1.901555556238499e-05,
+          0.0015551948216471247,
+          0.0015551141269995392
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "lift",
+        "start_time_s": 24.081000000006448,
+        "end_time_s": 25.382000000008038,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.8736022592401742,
+          0.3640966731723003,
+          1.1477794303033204,
+          1.6555080989183482,
+          -0.2635372302626484,
+          0.3188130932102383,
+          1.331881242365328,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          5.21990100366132e-07,
+          0.001258437114561639,
+          0.0005362417669194652,
+          0.003032530265134392,
+          6.1931368536272124e-06,
+          4.063941348275701e-06,
+          1.8969914075572802e-05,
+          0.0015547569557635976,
+          0.0015546536192132775
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "lift",
+        "start_time_s": 25.382000000008038,
+        "end_time_s": 26.687000000009633,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.8555639482998662,
+          0.32166654471967576,
+          1.1085437472143176,
+          1.5983036800729706,
+          -0.24280153048873543,
+          0.27757152152754205,
+          1.3962349142556891,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          1.2693357457349563e-06,
+          0.001285484030839501,
+          0.00046917992486905646,
+          0.0031188771268098048,
+          5.831731415717467e-06,
+          3.948361321226557e-06,
+          1.8884749018122093e-05,
+          0.0015546818199422656,
+          0.0015545411580110517
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "lift",
+        "start_time_s": 26.687000000009633,
+        "end_time_s": 28.008000000011247,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.8156872599831811,
+          0.2810983432696505,
+          1.04222135944483,
+          1.5364080306631929,
+          -0.2177098003086819,
+          0.2340591176208889,
+          1.4607995377122671,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          2.3836551786837745e-06,
+          0.0013437098757569377,
+          0.00039756577764338275,
+          0.0031880256748306746,
+          5.497473665100339e-06,
+          3.6151864117039967e-06,
+          1.843168846904497e-05,
+          0.0015546416896515015,
+          0.0015544445100781727
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "hold",
+        "start_time_s": 28.008000000011247,
+        "end_time_s": 30.00800000001369,
+        "loaded_fingers": true,
+        "target_8d": [
+          -0.8156872599831811,
+          0.2810983432696505,
+          1.04222135944483,
+          1.5364080306631929,
+          -0.2177098003086819,
+          0.2340591176208889,
+          1.4607995377122671,
+          0.036169710367880664
+        ],
+        "settled_max_error_9d": [
+          2.083615224801605e-08,
+          0.0013437479147338505,
+          0.0003976106340282115,
+          0.0031870524577746195,
+          3.895162627998161e-06,
+          1.1022027759932662e-07,
+          1.648109562180089e-05,
+          0.0015560748788739642,
+          0.0015558780703359767
+        ],
+        "status": "PASS"
+      },
+      {
+        "phase": "release",
+        "start_time_s": 30.00800000001369,
+        "end_time_s": 34.15000000001111,
+        "loaded_fingers": false,
+        "target_8d": [
+          -0.8156872599831811,
+          0.2810983432696505,
+          1.04222135944483,
+          1.5364080306631929,
+          -0.2177098003086819,
+          0.2340591176208889,
+          1.4607995377122671,
+          0.1
+        ],
+        "settled_max_error_9d": [
+          2.0814110657241258e-08,
+          7.288564141116893e-09,
+          5.1690346447585966e-08,
+          3.6086372556809465e-08,
+          5.668064129160655e-09,
+          7.3484579254934346e-09,
+          3.713978435904153e-08,
+          7.28583859910259e-16,
+          8.743006318923108e-16
+        ],
+        "status": "PASS"
+      }
+    ],
+    "external_force_shortcuts": false,
+    "qpos_writes_during_execution": 0,
+    "hardware_fidelity": "UNKNOWN",
+    "health_checks": {
+      "coupling": true,
+      "arm_velocity": true,
+      "finger_velocity": true,
+      "phase_tracking": true,
+      "no_error": true
+    }
+  },
+  "timing": {
+    "prefix_50_steps_byte_equal": true,
+    "all_observations_equal_new_integrated_state": true,
+    "diagnostic_threshold_only": 1e-06,
+    "differences": {
+      "requested": {
+        "maximum_per_dimension": [
+          0.005966728440174762,
+          0.007951438522203091,
+          0.009923859259542533,
+          0.009261405275529544,
+          0.0037544679118172997,
+          0.006510750404199239,
+          0.009958849876168019,
+          0.0034302894175426146
+        ],
+        "first_over_diagnostic_threshold_step": 61,
+        "first_over_diagnostic_threshold_dimension": 7
+      },
+      "command": {
+        "maximum_per_dimension": [
+          0.005966728440174762,
+          0.007951438522203091,
+          0.009923859259542533,
+          0.009261405275529544,
+          0.0037544679118172997,
+          0.006510750404199239,
+          0.009958849876168019,
+          0.0014998348081163293
+        ],
+        "first_over_diagnostic_threshold_step": 61,
+        "first_over_diagnostic_threshold_dimension": 7
+      },
+      "qpos": {
+        "maximum_per_dimension": [
+          0.003584613665784553,
+          0.006197383770085663,
+          0.007909602518155756,
+          0.007415918740200977,
+          0.0019706968301725913,
+          0.004674133993526897,
+          0.008810615710190595,
+          0.0006332976409405139,
+          0.000633297749317141,
+          0.0026601045967142856,
+          0.0006556724429037602,
+          0.03103570160662475,
+          0.00454275787668601,
+          0.005143268825287713,
+          0.08035973514098242,
+          0.0066070191989197604
+        ],
+        "first_over_diagnostic_threshold_step": 62,
+        "first_over_diagnostic_threshold_dimension": 7
+      },
+      "qvel": {
+        "maximum_per_dimension": [
+          0.04200379562421679,
+          0.03789265955510486,
+          0.07269864932041832,
+          0.043458024494360856,
+          0.0283320137689552,
+          0.045651344450331276,
+          0.07133642361091617,
+          0.031327316522147784,
+          0.03135291343809014,
+          0.24941838772057653,
+          0.018625684989741254,
+          1.2890290214247344,
+          1.5170289385580695,
+          11.22426638446199,
+          1.0557371611787216
+        ],
+        "first_over_diagnostic_threshold_step": 61,
+        "first_over_diagnostic_threshold_dimension": 5
+      }
+    },
+    "first_requested_difference_after_float32_comparison_step": 61,
+    "close_trigger_delay_s": 0.017999999997950766
+  },
+  "source_run": "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001",
+  "evaluation": "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003",
+  "integration_code_commit": "ba7d5f3f7601fff6a58332413a0120c6ccd53323",
+  "integration_functions_unchanged_by_evaluation_fix": {
+    "position_action": true,
+    "ReplayPolicy": true,
+    "dispatch": true,
+    "load_inputs": true,
+    "make_renderer": true,
+    "ActionRuntime": true,
+    "run": true
+  },
+  "new_physics_episodes": 1,
+  "evaluation_physics_steps": 0,
+  "environment": {
+    "python": "3.11.9",
+    "packages": {
+      "mujoco": "3.2.3",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "pyarrow": "20.0.0",
+      "pillow": "11.2.1",
+      "PyOpenGL": "3.1.10"
+    }
+  },
+  "artifacts": {
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/trajectory.npz": {
+      "sha256": "288f1a5958455e579dfd29f4d443630358f3a48cac08f418700852bbcd355707",
+      "bytes": 12981050
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/contacts.jsonl": {
+      "sha256": "c4f10606075900ade1f4918d6a5909eaf91e5281ad7cf7ccfa10ba9a7e7f3e82",
+      "bytes": 92677599
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/observations.npz": {
+      "sha256": "2493db6176057daede76f1d026cab43b8cbe17c04e72fd96ebe531afcf9389df",
+      "bytes": 38863
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/consumed-actions.json": {
+      "sha256": "6828735a8fb1c4a8d19678c052db935de94aedf0c3dd520fb5e85757229d36d8",
+      "bytes": 206066
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/frozen-plan.json": {
+      "sha256": "22c8098234e0efc55b6bd00549eb909e616a0508e67021b97cb0756e6dfb3e07",
+      "bytes": 115439
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/replay.mp4": {
+      "sha256": "fd934aca3be385f85ab8303d113c43050282f308e55f8b466fd7f917544393f4",
+      "bytes": 122285
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/raw-manifest.json": {
+      "sha256": "e7e6d8f2f5c8099f5dada25f382004881bd3936ce88e4b5c1ad2f86e10e5a2e9",
+      "bytes": 89295
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/run_001/executed-source/replay_mvp_actions.py": {
+      "sha256": "d8ef7cd9d8b3c6ded7fff9818d32ac8259545ea514a60f12f6c8c3725ed1f755",
+      "bytes": 20581
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/raw-manifest.json": {
+      "sha256": "81b15351e6532a7f06300c387f59f897e2a7ec38b6249c1de86829e09ea04007",
+      "bytes": 1096
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/timing-analysis.json": {
+      "sha256": "a99fe5d9e497b39b25c6d1e4a89d0eea4809726936eb3f5c4180929be3ebc9bc",
+      "bytes": 2339
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/control-health.json": {
+      "sha256": "f07f1c74d16218cbda60a7c45314edc52136d904203e79fc0788bcdef4795112",
+      "bytes": 12098
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/grasp-result.json": {
+      "sha256": "4fca3c74007f116818c1367bb367c47283a825f2962f817872c03416a10d5e83",
+      "bytes": 1222
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/runtime-result.json": {
+      "sha256": "599fe7e560374b620d283137c75d4d51cdb4f182d747546b6c80626307e6750a",
+      "bytes": 975
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/frozen-plan.sha256": {
+      "sha256": "d0475f8ddbddab8d2eee1b97b7f68969baa75a681d549b01febe5a0a62ecc16b",
+      "bytes": 65
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/frozen-plan.json": {
+      "sha256": "6fcc4dd4ea583ff44d20fb44a1ab63dc3bb1d13f207a4fd33344402121babf11",
+      "bytes": 115470
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/executed-source/test_replay_mvp_actions.py": {
+      "sha256": "585ab28977f819e425df7f0dd60aba90d648464e940333b5388ae8d6bfa504fc",
+      "bytes": 3171
+    },
+    "/data_robot/projects/.experiments/nero-mvp-action-replay-issue29/evaluation_003/executed-source/replay_mvp_actions.py": {
+      "sha256": "ce65233830bcbb313b135ce78fc6f501e40f5a48a0db6d81ca08e9c800517bdd",
+      "bytes": 27214
+    }
+  },
+  "targeted_tests": {
+    "count": 6,
+    "status": "PASS",
+    "new_physics_steps": 0
+  },
+  "review": {
+    "status": "no outstanding findings",
+    "scope": "read-only code and manifests; no physics",
+    "resolved": [
+      "close must trigger before lift and before original20s timeout",
+      "no-contact delay is null, not an exception"
+    ]
+  }
+}

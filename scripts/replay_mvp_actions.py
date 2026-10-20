@@ -80,6 +80,27 @@ def dispatch(k, prefix, actions):
     return target, k % 10 == 0
 
 
+def close_phase_check(forces, start_step, source_end_step, maximum_duration_s, threshold, *, first_lift_step=None):
+    """The expert's successful trigger time is NOT its maximum-close deadline.
+
+    Frozen execute_grasp allows maximum_close_duration_s after close starts.
+    Source phase names remain diagnostic labels when replay is resampled.
+    """
+    stop = min(len(forces), start_step + round(maximum_duration_s * 1000))
+    # Frozen expert closes before lifting. Source phase end is not a deadline,
+    # but replay cannot claim a close gate passed only after lift already began.
+    if first_lift_step is not None: stop = min(stop, first_lift_step)
+    hits = np.flatnonzero(np.all(np.asarray(forces)[start_step:stop] >= threshold, axis=1))
+    step = start_step + int(hits[0]) + 1 if len(hits) else None
+    return dict(status='PASS' if step is not None else 'FAIL',
+                new_bilateral_contact_step=step,
+                new_bilateral_contact_time_s=step*.001 if step is not None else None,
+                original_close_timeout_step=start_step + round(maximum_duration_s * 1000),
+                first_lift_step=first_lift_step,
+                source_close_end_step=source_end_step,
+                within_source_close_window=bool(step is not None and step <= source_end_step))
+
+
 def load_inputs(package, episode):
     spec = importlib.util.spec_from_file_location('portable_mvp', package / 'run.py')
     portable = importlib.util.module_from_spec(spec); spec.loader.exec_module(portable)
@@ -263,9 +284,11 @@ def phase_checks(runtime):
             ok = err[:7].max() <= a['settled_arm_error_rad'] and (p['loaded_fingers'] or err[7:].max() <= a['settled_finger_error_m'])
             p.update(target_8d=target.tolist(), settled_max_error_9d=err.tolist())
         else:
-            bilateral = np.all(forces[start:end] >= x['case']['grasp_protocol']['contact_trigger_force_N_each'], axis=1)
-            ok = bool(bilateral.any()); hits = np.flatnonzero(bilateral)
-            p['new_bilateral_contact_time_s'] = (start + int(hits[0])+1)*.001 if len(hits) else None
+            protocol = x['case']['grasp_protocol']
+            first_lift = min(round(p['start_time_s']*1000) for p in x['original_result']['phases'] if p['phase']=='lift')
+            close = close_phase_check(forces, start, end, protocol['maximum_close_duration_s'],
+                                      protocol['contact_trigger_force_N_each'], first_lift_step=first_lift)
+            p.update(close); ok = close['status'] == 'PASS'
         p['status'] = 'PASS' if ok else 'FAIL'; result.append(p)
     return result
 
@@ -332,14 +355,82 @@ def run(args):
     return 0 if result['ACTION_RUNTIME'] == 'PASS' and video.returncode == 0 else 1
 
 
+def evaluate_only(args):
+    """Correct reporting only; immutable raw Run, no new physics or state replay."""
+    def forbidden(*a, **kw): raise RuntimeError('Offline evaluation cannot integrate')
+    for name in ('mj_step', 'mj_step1', 'mj_step2'): setattr(mujoco, name, forbidden)
+    inputs = load_inputs(args.package, args.episode)
+    old_manifest = read(args.run_directory / 'raw-manifest.json')
+    for name, info in old_manifest.items(): assert sha(args.run_directory / name) == info['sha256']
+    assert inputs['files'] == read(args.run_directory / 'frozen-plan.json')['input_sha256']
+    freeze(args.output, inputs, 'evaluate-only')
+    from types import SimpleNamespace
+    rows = dict(np.load(args.run_directory / 'trajectory.npz', allow_pickle=False))
+    forces = np.zeros((len(rows['time']), 2))
+    with (args.run_directory / 'contacts.jsonl').open() as f:
+        for i, line in enumerate(f):
+            event = json.loads(line)
+            for e in event['events']:
+                if 'cube' in e['bodies']:
+                    for j in range(2):
+                        if f'gripper_link{j+1}' in e['bodies']: forces[i,j] += max(0.,e['force_contact_frame'][0])
+    old = read(args.run_directory / 'result.json')
+    phases = phase_checks(SimpleNamespace(inputs=inputs, recorder=SimpleNamespace(rows=rows),
+                                         c=inputs['control'], force=forces))
+    a = inputs['case']['config']['acceptance']
+    health_checks = dict(coupling=old['max_coupling_error_m'] <= a['maximum_coupling_error_m'],
+                        arm_velocity=old['max_arm_velocity_rad_s'] <= a['maximum_arm_velocity_rad_s'],
+                        finger_velocity=old['max_finger_velocity_m_s'] <= a['maximum_finger_velocity_m_s'],
+                        phase_tracking=all(p['status'] == 'PASS' for p in phases),
+                        no_error=old['error'] is None)
+    control = dict(old, status='PASS' if all(health_checks.values()) else 'FAIL', phases=phases,
+                   health_checks=health_checks)
+    grasp = read(args.run_directory / 'grasp-result.json')
+    grasp['control_health_status'] = control['status']
+    grasp['status'] = 'PASS' if control['status'] == 'PASS' and all(grasp['checks'].values()) else 'FAIL'
+    runtime = read(args.run_directory / 'runtime-result.json'); runtime['REPLAY_GRASP'] = grasp['status']
+    observations = dict(np.load(args.run_directory / 'observations.npz', allow_pickle=False))
+    assert np.array_equal(observations['state'], rows['qpos'][observations['physics_step']-1][:, inputs['control'].qadr])
+    timing = dict(prefix_50_steps_byte_equal=all(np.array_equal(rows[k][:50], inputs['saved'][k][:50])
+                  for k in ('qpos','qvel','command','ctrl')),
+                  all_observations_equal_new_integrated_state=True,
+                  diagnostic_threshold_only=1e-6, differences={})
+    for key in ('requested','command','qpos','qvel'):
+        difference = abs(rows[key] - inputs['saved'][key]); hits = np.argwhere(difference > 1e-6)
+        timing['differences'][key] = dict(maximum_per_dimension=difference.max(axis=0).tolist(),
+                first_over_diagnostic_threshold_step=int(hits[0,0])+1 if len(hits) else None,
+                first_over_diagnostic_threshold_dimension=int(hits[0,1]) if len(hits) else None)
+    hits = np.flatnonzero(np.any(rows['requested'].astype(np.float32) != inputs['saved']['requested'].astype(np.float32),axis=1))
+    timing['first_requested_difference_after_float32_comparison_step'] = int(hits[0])+1 if len(hits) else None
+    close_phase = next(p for p in phases if p['phase']=='close')
+    trigger_time = close_phase['new_bilateral_contact_time_s']
+    timing['close_trigger_delay_s'] = trigger_time - close_phase['end_time_s'] if trigger_time is not None else None
+    write(args.output / 'timing-analysis.json', timing)
+    write(args.output / 'control-health.json', control); write(args.output / 'grasp-result.json', grasp)
+    write(args.output / 'runtime-result.json', dict(runtime, evaluation_mode='zero-integration', actual_mj_steps_in_evaluation=0,
+          physical_source=str(args.run_directory), preserved_original_report_status=old['status'],
+          correction='Use unchanged original maximum_close_duration_s, not source successful trigger time as a deadline',
+          input_integrity_after_evaluation=intact(inputs['files'])))
+    for name, info in old_manifest.items(): assert sha(args.run_directory / name) == info['sha256']
+    write(args.output / 'raw-manifest.json', {str(p.relative_to(args.output)):dict(sha256=sha(p),bytes=p.stat().st_size)
+          for p in args.output.rglob('*') if p.is_file()})
+    print(json.dumps(dict(ACTION_RUNTIME=runtime['ACTION_RUNTIME'], REPLAY_GRASP=grasp['status'],
+                         health_checks=health_checks, actual_mj_steps_in_evaluation=0)), flush=True)
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(description=__doc__); p.add_argument('mode', choices=['check','run'])
+    p = argparse.ArgumentParser(description=__doc__); p.add_argument('mode', choices=['check','run','evaluate-only'])
     p.add_argument('--package', type=Path, default=PACKAGE); p.add_argument('--episode', type=Path, default=EPISODE)
     p.add_argument('--output', type=Path, required=True); p.add_argument('--checked', type=Path)
+    p.add_argument('--run-directory', type=Path)
     args = p.parse_args(); args.package = args.package.resolve(); args.episode = args.episode.resolve(); args.output = args.output.resolve()
     if args.output.is_relative_to(args.package) or args.output.is_relative_to(args.episode):
         p.error('Output must be outside read-only package and source Episode')
     if args.mode == 'check': check(args)
-    else:
+    elif args.mode == 'run':
         if args.checked is None: p.error('run requires --checked zero-integration result directory')
         sys.exit(run(args))
+    else:
+        if args.run_directory is None: p.error('evaluate-only requires --run-directory')
+        if args.output.is_relative_to(args.run_directory.resolve()): p.error('Do not overwrite raw Run')
+        evaluate_only(args)
