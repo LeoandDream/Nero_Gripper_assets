@@ -1,0 +1,331 @@
+{
+  "status": "V25_CROSS_ROOT_UNKNOWN",
+  "task_comment": {
+    "url": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6290781760",
+    "id": 6290781760,
+    "updated_at": "2026-10-20T12:25:09Z",
+    "body_sha256": "e5634e5f51782d733dd7494419658ca8e9b08a2950fd71aeebe6722722b4bcce"
+  },
+  "worktree": "/data_robot/projects/.worktrees/nero-gripper-runtime-partition",
+  "branch": "feature/runtime-semantic-partition",
+  "predecessor_commit": "f32cab0e229d9177385df14403e5965aa69a8f0f",
+  "preregistration_sha256": "0b449111620f0fa8a83c0ee0799d61a6502dfda4e2149ddb09c95f60291b0aa2",
+  "frozen_inputs_sha256": {
+    "nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+    "nero-gripper-entity-partition.json": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+    "nero-gripper-v23-preregistration.json": "10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0",
+    "nero-gripper-v23-split-trace.json.gz": "b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309",
+    "nero-gripper-v24-obstructions.json.gz": "9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9",
+    "nero-gripper-v24-classification.json": "a51233e0efbebe97dd69c78cc6dcbd97ff919f29f6e06d9513ac7034602413fd",
+    "nero-gripper-v21-fidelity-protocol.json": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+    "nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985",
+    "nero-gripper-v23-finite-partition.json": "00a1c4ea1ce255a170fb20a0f5bf4d0ebb7a4ab6b49dd64a28916ee0b6c6b3c6"
+  },
+  "all_frozen_inputs_identical_to_predecessor_git_blobs": true,
+  "extra_input_note": "v23 saved successor metadata is used only for assigned leaf identities and seed coordinates; never for material truth. Its bytes also match the frozen predecessor.",
+  "delivered_file_sha256": {
+    "reports/nero-gripper-v25-cross-root-preregistration.json": "0b449111620f0fa8a83c0ee0799d61a6502dfda4e2149ddb09c95f60291b0aa2",
+    "reports/nero-gripper-v25-cross-root.json.gz": "2cd837839b07be425dfe05ed4d4526a4b0d9e566c54e299d13decb417dab8b28",
+    "reports/nero-gripper-v25-cross-root.md": "d06e08a7652e42bbac32aeb16f39ca3e365c652cd164d804a4b78a901be22396",
+    "reports/nero-gripper-v25-obstruction-attempts.json.gz": "ac72b5988a48db2084d408a500340ba26c0d73a78e30ab442c1c3de8ec448491",
+    "reports/nero-gripper-v25-robust-points.json": "d31ecb40aee9242964a54750b6e93dd43656aa74e2f984aab3ec3a9c1cb6d67f",
+    "reports/nero-gripper-v25-verification.json": "5c5ce77c9daf7c6975343c1affb2fc450c3e740ca56ed2a27ae102aad8ac8c97",
+    "scripts/audit_v25_cross_root.py": "acdda1dfd8c3f7d2fdf6314cf6338ecdb5d6f1a09c1132c07d753f7663457600",
+    "scripts/audit_v25_infeasibility.py": "2137c4fd9ace10073dcc6391b721d734f4ab2449331a05d23dbbce9310fb919a",
+    "scripts/audit_v25_robust_points.py": "870bd4e64bf119122cb99ab84ee2ab51b717c09696278cd6f15da0eb7755f093",
+    "scripts/verify_v25_cross_root.py": "d4bc7204eda352aff3e1c1284da5109a4a78596151132aa7e21b99114ba54177"
+  },
+  "imported_project_and_private_vendor_module_sha256": {
+    "__main__": {
+      "path": "debug/issue25/v25-cross-root/write_provenance.py",
+      "sha256": "7f9e2e9c9bbd61dc75418852afe275d079e6bc2e12cb983abcc415f9a0c93636"
+    },
+    "runtime_contact_partition": {
+      "path": "scripts/runtime_contact_partition.py",
+      "sha256": "1cfa2cd26ea2464035e699f41af64b62efe6b79555228b94cabbda7562326cbb"
+    },
+    "runtime_backing_partition": {
+      "path": "scripts/runtime_backing_partition.py",
+      "sha256": "879ea14542013403f54f45cb465f632d649c503afa8cf4092955ee9801b1b34b"
+    },
+    "shapely.lib": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/lib.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "f9401b699f9428629f160e6abd1eb2e3359f41129bc1ccda81584b0895d6bfa5"
+    },
+    "shapely.errors": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/errors.py",
+      "sha256": "30d5a32b7dfd8dfa59e7d526559815b17dadc990b0de744265ad23ff323cce5c"
+    },
+    "shapely._geos": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_geos.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "247685d3057b141790cf838340ae58b1ad0abc0289db028255846cccf7161245"
+    },
+    "shapely._geometry_helpers": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_geometry_helpers.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "943dab0df9ca71fe624f2ed6f79d1be3f92cea4a4b377a25e3ff6af5e1b1e9e9"
+    },
+    "shapely._enum": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_enum.py",
+      "sha256": "ca39c449cce225924b68cd0fd6b6063de90dffe99677ae3eae67b93ec68a7879"
+    },
+    "shapely.decorators": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/decorators.py",
+      "sha256": "13056b4756f9e0d8cd33c2d15b4c5f6ae78bb078add4b4029c9231371927f1c9"
+    },
+    "shapely._geometry": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_geometry.py",
+      "sha256": "5d9c6f98b07f8e0d251e83221e028577f2cd4a28f89eb27f41834aa6afa16e84"
+    },
+    "shapely.coordinates": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/coordinates.py",
+      "sha256": "b6f11e24833518c9f06193442a1fb79b9d5c1e025a6d961a0124a10e113cfb13"
+    },
+    "shapely.predicates": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/predicates.py",
+      "sha256": "7214ab3ea82b6a11fcfb5c95927a28e0bfd4b1fa1858d5c8f5f74ab16f9d6688"
+    },
+    "shapely._ragged_array": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_ragged_array.py",
+      "sha256": "f9e68c01526d66fdcfd1dcc675c670c7ca8912de3d105992dfce150149530101"
+    },
+    "shapely.io": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/io.py",
+      "sha256": "01def5ceed0bc1cb720fb45ab55730645b2f390fd537e6cbca42403813abf631"
+    },
+    "shapely.creation": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/creation.py",
+      "sha256": "c2da7a51288863ac29e09a7deb1b32d9a7bb6bd2a02bd4b99c56f43db644b36d"
+    },
+    "shapely.algorithms": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/__init__.py",
+      "sha256": "647222bee439c391895c1ee1c0ba74cdc91dfdbdb6ea4ebcc230614f493d032a"
+    },
+    "shapely.affinity": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/affinity.py",
+      "sha256": "ee1593f65fcc884923f551022ae91d014cff3584a8877bc8ea1bcd57d03a3d8a"
+    },
+    "shapely.algorithms._oriented_envelope": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/_oriented_envelope.py",
+      "sha256": "697a317a01d740acc44aaa3c294d2a5f2bd82e1f002c98d6946b7418e452f2f4"
+    },
+    "shapely.algorithms.cga": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/cga.py",
+      "sha256": "28d5ef19a213e49c47da4ffac272c192735d44e4f77280f67d822ea7e60fefa2"
+    },
+    "shapely.constructive": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/constructive.py",
+      "sha256": "9c814d4fb0f6e5e3a2a9a8381a7a3ff1e97c9556995ee25c5f437913e1afd173"
+    },
+    "shapely.measurement": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/measurement.py",
+      "sha256": "289e4559bf3b0ee685f2a4d1fa327befe63c1b31f8cf84d9e162516d2747995a"
+    },
+    "shapely.set_operations": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/set_operations.py",
+      "sha256": "1d72ddf8aefbda450ddfdfb1ebf10acad3374d68659c562cf6a488cb9c7f97af"
+    },
+    "shapely.linear": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/linear.py",
+      "sha256": "afb83b3a2aebd774f1a69391b46a08ed11812a811f739a5fc08b103d810b9fb1"
+    },
+    "shapely.coords": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/coords.py",
+      "sha256": "21bba876608d89b91973cfd7a5af1eec71714f85bea02318e1fb6f253b831979"
+    },
+    "shapely.geometry.base": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/base.py",
+      "sha256": "7b0d96b827cf97e88eac9b2bdf83659ba84e99d00e971829fa71c8cc14376122"
+    },
+    "shapely.geometry.collection": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/collection.py",
+      "sha256": "c448eae40adb0397be7b7c7aa5b73a5c343b632881892fb925b9decad0c43374"
+    },
+    "shapely.geometry.point": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/point.py",
+      "sha256": "a4807c55cffa37b54d9e76e0baa8c7c0e03db92e3d05b484d94c0e302e7c5db1"
+    },
+    "shapely.geometry.linestring": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/linestring.py",
+      "sha256": "606ff10e909e1ab8b342a10e6ca8fc0f853ac95c9fbeafd86e1f2f64819f4172"
+    },
+    "shapely.geometry.multilinestring": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/multilinestring.py",
+      "sha256": "b5129ce9cacbea65adad4a743d121d29926989bc1538a905f74e362b5ae3125e"
+    },
+    "shapely.geometry.multipoint": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/multipoint.py",
+      "sha256": "746c8a1b130ebaf20cd4301bcf107d5f75d28c3bd8a5250db58914805635a7f8"
+    },
+    "shapely.geometry.polygon": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/polygon.py",
+      "sha256": "2d5347b806e9d6879079473a2390b8ef4095f4f83a3a3b37fa324920233c51c8"
+    },
+    "shapely.geometry.multipolygon": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/multipolygon.py",
+      "sha256": "05390e5692bccc4e8feb813378abf736601ccbafa897e562091d239cf8426d8e"
+    },
+    "shapely.geometry.geo": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/geo.py",
+      "sha256": "537722bc18969aba33000a63862aa95d804f8b76128f0ac026acec3050a23d37"
+    },
+    "shapely.geometry": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/__init__.py",
+      "sha256": "f98ad1c4a67e1df4f7c951b89250f9104bdd1477f058d00aea8be3bae361865a"
+    },
+    "shapely.strtree": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/strtree.py",
+      "sha256": "22a4beacf62ef1b54f579d076dfd46688b4b38f287d7bd912f765ed59f6e3d22"
+    },
+    "shapely._coverage": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_coverage.py",
+      "sha256": "ca208be59b4c28c0c7570e84947911f02fc2da7d03b51a6c82c189861bae70be"
+    },
+    "shapely._version": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_version.py",
+      "sha256": "f3cc49f6c0bfcc0439409bc86b59d5d48bea3cb72c12d82e8f3fe4a2f5e8931d"
+    },
+    "shapely": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/__init__.py",
+      "sha256": "ec46944357e1207798213bf98e715cf862906ec317082494f9823f2370fd70e3"
+    },
+    "shapely.algorithms.polylabel": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/polylabel.py",
+      "sha256": "83357995c6f3665be5ff050d0964056bbf26de13f2b990ae04c940ff81ee6964"
+    },
+    "shapely.prepared": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/prepared.py",
+      "sha256": "43deda7f1121baa5cccb1760360c73b28323a58aa23331d7c27d4717c59b9ae9"
+    },
+    "shapely.ops": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/ops.py",
+      "sha256": "3b7a787dec9b5a8b956f1c7f39f3ada6100f3faa9947ad57cd1cbe20bec8c5c4"
+    },
+    "v21_boundary_atlas": {
+      "path": "scripts/v21_boundary_atlas.py",
+      "sha256": "41b2362334dae097412e7d38a85371ee31276a0941d71fbec2db6b186c0fe37b"
+    },
+    "v22_local_repartition": {
+      "path": "scripts/v22_local_repartition.py",
+      "sha256": "f0de6ab5fb62570cc0ea0fd0452ea5301da92574cbfcbf3a7c54893b821c19b1"
+    },
+    "v23_finite_patch": {
+      "path": "scripts/v23_finite_patch.py",
+      "sha256": "abd780f715ec61d21e545bd46f4bff56b7572b533592e69e0fd1790519eedbbb"
+    },
+    "certify_v23_preservation": {
+      "path": "scripts/certify_v23_preservation.py",
+      "sha256": "f999f8ed5ba0e0932bfbd00723d7a4046c61289713c69cf23fd3c3633f94362a"
+    },
+    "analyze_v24_convex_covers": {
+      "path": "scripts/analyze_v24_convex_covers.py",
+      "sha256": "061afd44e1913580c5e132e3d068de446a3a96dc236f3dd3834ff915a217af93"
+    },
+    "audit_v25_cross_root": {
+      "path": "scripts/audit_v25_cross_root.py",
+      "sha256": "acdda1dfd8c3f7d2fdf6314cf6338ecdb5d6f1a09c1132c07d753f7663457600"
+    },
+    "audit_v25_robust_points": {
+      "path": "scripts/audit_v25_robust_points.py",
+      "sha256": "870bd4e64bf119122cb99ab84ee2ab51b717c09696278cd6f15da0eb7755f093"
+    },
+    "certify_v24_point_obstruction": {
+      "path": "scripts/certify_v24_point_obstruction.py",
+      "sha256": "7c85cb7d1b99b9da2a43e91494af79948c21947e4b0c4b9e8e0c9ad2c3fee1e2"
+    },
+    "audit_v25_infeasibility": {
+      "path": "scripts/audit_v25_infeasibility.py",
+      "sha256": "2137c4fd9ace10073dcc6391b721d734f4ab2449331a05d23dbbce9310fb919a"
+    }
+  },
+  "environment": {
+    "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+    "executable": "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "os_release": "PRETTY_NAME=\"Ubuntu 22.04 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04 (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n"
+  },
+  "successful_runs": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/audit_v25_cross_root.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v25-cross-root/full-audit.log",
+      "log_sha256": "84657458d1b1d91c29204034f268716160967d3efb3ede17f8a571adc698afbd",
+      "complete_stdout_stderr": "V20157_FP028 CROSS_ROOT_FEASIBLE N marginNUM [0.009996395419815672, 0.009996395419815672] cap marginNUM 0.010000018615754032 attempts 1 time 4.6\nV20157_FP090 CROSS_ROOT_UNKNOWN N marginNUM [61.370676405897136, 61.370676405897136] cap marginNUM 10.438420416102629 attempts 14 time 11.7\nV20157_FP001 CROSS_ROOT_UNKNOWN N marginNUM [0.010870385512585335, 0.010870385512585335] cap marginNUM 4.1798727627757284e-05 attempts 14 time 15.3\nV20157_FP002 CROSS_ROOT_UNKNOWN N marginNUM [0.01997128318865626, 0.01997128318865626] cap marginNUM 4.222487285015967e-05 attempts 14 time 19.0\nV20157_FP008 CROSS_ROOT_UNKNOWN N marginNUM [161.62645444181481, 161.62645444181481] cap marginNUM 4.015604834608491e-06 attempts 14 time 22.6\nV20157_FP009 CROSS_ROOT_UNKNOWN N marginNUM [0.0152436539870504, 0.0152436539870504] cap marginNUM 3.749266400953462e-06 attempts 14 time 26.2\nV20157_FP088 CROSS_ROOT_UNKNOWN N marginNUM [0.0033103185375506004, 0.0033103185375506004] cap marginNUM 2.39359335306023e-06 attempts 14 time 33.3\nV20157_FP097 CROSS_ROOT_UNKNOWN N marginNUM [0.002538559371171357, 0.002538559371171357] cap marginNUM 2.4988146429983207e-06 attempts 14 time 37.0\nV20157_FP099 CROSS_ROOT_UNKNOWN N marginNUM [0.005085930864574778, 0.005085930864574778] cap marginNUM 3.1721866994973803e-06 attempts 14 time 40.6\nV20157_FP101 CROSS_ROOT_UNKNOWN N marginNUM [18.62575729882479, 18.62575729882479] cap marginNUM 0.13504156549587304 attempts 14 time 44.1\nV20291_FP006 CROSS_ROOT_UNKNOWN N marginNUM [0.00010656913862650604, 0.00010656913862650604] cap marginNUM 1.6214396712668491e-06 attempts 7 time 44.8\nV20329_FP031 CROSS_ROOT_UNKNOWN N marginNUM [47.9856473627836, 47.9856473627836] cap marginNUM 0.7449649284024991 attempts 7 time 46.8\n"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/audit_v25_robust_points.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v25-cross-root/robust-point-search.log",
+      "log_sha256": "dbbac6d0c1c0635a3599604c7e51902918591ff90e837ffebcdca1aa1a543b72",
+      "complete_stdout_stderr": "V20157_FP028 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP090 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP001 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP002 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP008 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP009 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP088 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP097 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP099 ROBUST_POINT_FOUND tested 1 valid 1\nV20157_FP101 ROBUST_POINT_FOUND tested 1 valid 1\nV20291_FP006 ROBUST_POINT_FOUND tested 1 valid 1\nV20329_FP031 ROBUST_POINT_FOUND tested 1 valid 1\n"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/audit_v25_infeasibility.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v25-cross-root/infeasibility-attempts.log",
+      "log_sha256": "655a8e752bb5094412861846672e0d9088c57f5dfe028ea44aa82b06edd2b1ba",
+      "complete_stdout_stderr": "V20157_FP090 CROSS_ROOT_UNKNOWN point ORIGINAL tested caps 4\nV20157_FP001 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP002 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP008 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP009 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP088 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP097 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP099 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20157_FP101 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20291_FP006 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\nV20329_FP031 CROSS_ROOT_UNKNOWN point SAME_OBLIGATION_ROBUST_REPLACEMENT tested caps 4\n"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/verify_v25_cross_root.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v25-cross-root/verification.log",
+      "log_sha256": "5c5ce77c9daf7c6975343c1affb2fc450c3e740ca56ed2a27ae102aad8ac8c97",
+      "complete_stdout_stderr": "{\n  \"status\": \"V25_CROSS_ROOT_UNKNOWN\",\n  \"certificate_replay\": \"PASS\",\n  \"counts\": {\n    \"CROSS_ROOT_FEASIBLE\": 1,\n    \"CROSS_ROOT_INFEASIBLE\": 0,\n    \"CROSS_ROOT_UNKNOWN\": 11\n  },\n  \"targets_checked\": 12,\n  \"margin_records_replayed\": 24,\n  \"strict_feasible_covers\": 1,\n  \"exact_dual_bounds_replayed\": 133,\n  \"exact_ball_inequalities\": 22,\n  \"robust_replacement_points\": 12,\n  \"original_robust_points\": 1,\n  \"original_points_in_NUM_band\": 11,\n  \"outer_center_domain_vertex_counts\": {\n    \"V20157\": 90,\n    \"V20291\": 66,\n    \"V20329\": 66\n  },\n  \"all_original_geometry_caps_policy_and_343_UNKNOWN_unchanged\": true,\n  \"mechanical_inputs_unchanged\": 19,\n  \"protected_worktrees_unchanged\": 11,\n  \"inputs_sha256\": {\n    \"nero-gripper-v2-runtime-partition.json\": \"5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9\",\n    \"nero-gripper-entity-partition.json\": \"c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26\",\n    \"nero-gripper-v23-preregistration.json\": \"10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0\",\n    \"nero-gripper-v23-split-trace.json.gz\": \"b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309\",\n    \"nero-gripper-v24-obstructions.json.gz\": \"9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9\",\n    \"nero-gripper-v24-classification.json\": \"a51233e0efbebe97dd69c78cc6dcbd97ff919f29f6e06d9513ac7034602413fd\",\n    \"nero-gripper-v21-fidelity-protocol.json\": \"d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5\",\n    \"nero-gripper-v2-fidelity-protocol.json\": \"76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985\"\n  },\n  \"evidence_sha256\": {\n    \"nero-gripper-v25-cross-root.json.gz\": \"2cd837839b07be425dfe05ed4d4526a4b0d9e566c54e299d13decb417dab8b28\",\n    \"nero-gripper-v25-robust-points.json\": \"d31ecb40aee9242964a54750b6e93dd43656aa74e2f984aab3ec3a9c1cb6d67f\",\n    \"nero-gripper-v25-obstruction-attempts.json.gz\": \"ac72b5988a48db2084d408a500340ba26c0d73a78e30ab442c1c3de8ec448491\"\n  },\n  \"independent_verifier_sha256\": \"d4bc7204eda352aff3e1c1284da5109a4a78596151132aa7e21b99114ba54177\",\n  \"elapsed_seconds\": 5.4872963428497314\n}\n"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/verify_v25_cross_root.py --certificates-only",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v25-cross-root/portable-verification.log",
+      "log_sha256": "c4eab92e47d0dcec444d61663d824c5c4e22ed86139280bc2812d43e6dd63b9a",
+      "complete_stdout_stderr": "{\n  \"status\": \"V25_CROSS_ROOT_UNKNOWN\",\n  \"certificate_replay\": \"PASS\",\n  \"counts\": {\n    \"CROSS_ROOT_FEASIBLE\": 1,\n    \"CROSS_ROOT_INFEASIBLE\": 0,\n    \"CROSS_ROOT_UNKNOWN\": 11\n  },\n  \"targets_checked\": 12,\n  \"margin_records_replayed\": 24,\n  \"strict_feasible_covers\": 1,\n  \"exact_dual_bounds_replayed\": 133,\n  \"exact_ball_inequalities\": 22,\n  \"robust_replacement_points\": 12,\n  \"original_robust_points\": 1,\n  \"original_points_in_NUM_band\": 11,\n  \"outer_center_domain_vertex_counts\": {\n    \"V20157\": 90,\n    \"V20291\": 66,\n    \"V20329\": 66\n  },\n  \"all_original_geometry_caps_policy_and_343_UNKNOWN_unchanged\": true,\n  \"mechanical_inputs_unchanged\": 19,\n  \"protected_worktrees_unchanged\": null,\n  \"inputs_sha256\": {\n    \"nero-gripper-v2-runtime-partition.json\": \"5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9\",\n    \"nero-gripper-entity-partition.json\": \"c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26\",\n    \"nero-gripper-v23-preregistration.json\": \"10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0\",\n    \"nero-gripper-v23-split-trace.json.gz\": \"b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309\",\n    \"nero-gripper-v24-obstructions.json.gz\": \"9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9\",\n    \"nero-gripper-v24-classification.json\": \"a51233e0efbebe97dd69c78cc6dcbd97ff919f29f6e06d9513ac7034602413fd\",\n    \"nero-gripper-v21-fidelity-protocol.json\": \"d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5\",\n    \"nero-gripper-v2-fidelity-protocol.json\": \"76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985\"\n  },\n  \"evidence_sha256\": {\n    \"nero-gripper-v25-cross-root.json.gz\": \"2cd837839b07be425dfe05ed4d4526a4b0d9e566c54e299d13decb417dab8b28\",\n    \"nero-gripper-v25-robust-points.json\": \"d31ecb40aee9242964a54750b6e93dd43656aa74e2f984aab3ec3a9c1cb6d67f\",\n    \"nero-gripper-v25-obstruction-attempts.json.gz\": \"ac72b5988a48db2084d408a500340ba26c0d73a78e30ab442c1c3de8ec448491\"\n  },\n  \"independent_verifier_sha256\": \"d4bc7204eda352aff3e1c1284da5109a4a78596151132aa7e21b99114ba54177\",\n  \"elapsed_seconds\": 5.371826410293579\n}\n"
+    }
+  ],
+  "independent_verification": {
+    "status": "V25_CROSS_ROOT_UNKNOWN",
+    "certificate_replay": "PASS",
+    "counts": {
+      "CROSS_ROOT_FEASIBLE": 1,
+      "CROSS_ROOT_INFEASIBLE": 0,
+      "CROSS_ROOT_UNKNOWN": 11
+    },
+    "targets_checked": 12,
+    "margin_records_replayed": 24,
+    "strict_feasible_covers": 1,
+    "exact_dual_bounds_replayed": 133,
+    "exact_ball_inequalities": 22,
+    "robust_replacement_points": 12,
+    "original_robust_points": 1,
+    "original_points_in_NUM_band": 11,
+    "outer_center_domain_vertex_counts": {
+      "V20157": 90,
+      "V20291": 66,
+      "V20329": 66
+    },
+    "all_original_geometry_caps_policy_and_343_UNKNOWN_unchanged": true,
+    "mechanical_inputs_unchanged": 19,
+    "protected_worktrees_unchanged": 11,
+    "inputs_sha256": {
+      "nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+      "nero-gripper-entity-partition.json": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+      "nero-gripper-v23-preregistration.json": "10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0",
+      "nero-gripper-v23-split-trace.json.gz": "b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309",
+      "nero-gripper-v24-obstructions.json.gz": "9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9",
+      "nero-gripper-v24-classification.json": "a51233e0efbebe97dd69c78cc6dcbd97ff919f29f6e06d9513ac7034602413fd",
+      "nero-gripper-v21-fidelity-protocol.json": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+      "nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985"
+    },
+    "evidence_sha256": {
+      "nero-gripper-v25-cross-root.json.gz": "2cd837839b07be425dfe05ed4d4526a4b0d9e566c54e299d13decb417dab8b28",
+      "nero-gripper-v25-robust-points.json": "d31ecb40aee9242964a54750b6e93dd43656aa74e2f984aab3ec3a9c1cb6d67f",
+      "nero-gripper-v25-obstruction-attempts.json.gz": "ac72b5988a48db2084d408a500340ba26c0d73a78e30ab442c1c3de8ec448491"
+    },
+    "independent_verifier_sha256": "d4bc7204eda352aff3e1c1284da5109a4a78596151132aa7e21b99114ba54177",
+    "elapsed_seconds": 5.4872963428497314
+  },
+  "no_MuJoCo_import": true,
+  "unchanged_preexisting_tracked_files": true,
+  "scope": "Only 12 root-local targets; fixed first-order neighborhoods; all 104 original caps; no second-order expansion, cap normalization, runtime geometry, model or policy edit, new Issue, main edit, or 343-UNKNOWN analysis.",
+  "audit_source": "import sys,json,hashlib,subprocess,platform,gzip\nfrom pathlib import Path\nR=Path.cwd();sys.path.insert(0,str(R/'scripts'))\nimport audit_v25_cross_root,audit_v25_robust_points,audit_v25_infeasibility\nimport numpy,scipy\n\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef git(*args):return subprocess.check_output(['git',*args],text=True).strip()\nv=json.loads((R/'reports/nero-gripper-v25-verification.json').read_text());assert v['certificate_replay']=='PASS'and v['counts']=={'CROSS_ROOT_FEASIBLE':1,'CROSS_ROOT_INFEASIBLE':0,'CROSS_ROOT_UNKNOWN':11}\nparent=git('rev-parse','HEAD');assert parent=='f32cab0e229d9177385df14403e5965aa69a8f0f'\npr=json.loads((R/'reports/nero-gripper-v25-cross-root-preregistration.json').read_text());inputs=dict(pr['inputs_sha256']);inputs['nero-gripper-v23-finite-partition.json']=sha(R/'reports/nero-gripper-v23-finite-partition.json')\nfor name,s in inputs.items():\n assert sha(R/'reports'/name)==s\n blob=subprocess.check_output(['git','show',parent+':reports/'+name]);assert hashlib.sha256(blob).hexdigest()==s\nfiles=sorted([p for p in (R/'reports').glob('nero-gripper-v25*')if p.name!='nero-gripper-v25-provenance.json']+[p for p in (R/'scripts').glob('*v25*.py')]);modules={}\nfor name,module in list(sys.modules.items()):\n p=getattr(module,'__file__',None)\n if p and str(R)+'/'in str(p):modules[name]={'path':str(Path(p).relative_to(R)),'sha256':sha(p)}\nassert not any(n=='mujoco'or n.startswith('mujoco.')for n in sys.modules)\nruns=[]\nfor script,log in [('audit_v25_cross_root.py','full-audit.log'),('audit_v25_robust_points.py','robust-point-search.log'),('audit_v25_infeasibility.py','infeasibility-attempts.log'),('verify_v25_cross_root.py','verification.log'),('verify_v25_cross_root.py --certificates-only','portable-verification.log')]:\n p=R/'debug/issue25/v25-cross-root'/log;runs.append({'command':'OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/'+script,'exit_code':0,'log_path':str(p.relative_to(R)),'log_sha256':sha(p),'complete_stdout_stderr':p.read_text()})\ncomment=json.loads((R/'debug/issue25/v25-cross-root/task-comment.json').read_text());result={'status':v['status'],'task_comment':{'url':comment['html_url'],'id':comment['id'],'updated_at':comment['updated_at'],'body_sha256':hashlib.sha256(comment['body'].encode()).hexdigest()},'worktree':str(R),'branch':git('branch','--show-current'),'predecessor_commit':parent,'preregistration_sha256':sha(R/'reports/nero-gripper-v25-cross-root-preregistration.json'),'frozen_inputs_sha256':inputs,'all_frozen_inputs_identical_to_predecessor_git_blobs':True,'extra_input_note':'v23 saved successor metadata is used only for assigned leaf identities and seed coordinates; never for material truth. Its bytes also match the frozen predecessor.','delivered_file_sha256':{str(p.relative_to(R)):sha(p)for p in files},'imported_project_and_private_vendor_module_sha256':modules,'environment':{'python':sys.version,'executable':sys.executable,'numpy':numpy.__version__,'scipy':scipy.__version__,'platform':platform.platform(),'os_release':Path('/etc/os-release').read_text()},'successful_runs':runs,'independent_verification':v,'no_MuJoCo_import':True,'unchanged_preexisting_tracked_files':subprocess.run(['git','diff','--exit-code'],capture_output=True).returncode==0,'scope':'Only 12 root-local targets; fixed first-order neighborhoods; all 104 original caps; no second-order expansion, cap normalization, runtime geometry, model or policy edit, new Issue, main edit, or 343-UNKNOWN analysis.'};result['audit_source']=Path(__file__).read_text();(R/'reports/nero-gripper-v25-provenance.json').write_text(json.dumps(result,indent=2)+'\\n');print(json.dumps({'status':result['status'],'files':len(files),'frozen_inputs':len(inputs),'imported_project_modules':len(modules)},indent=2))\n"
+}
