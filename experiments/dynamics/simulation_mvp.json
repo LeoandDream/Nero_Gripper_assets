@@ -1,0 +1,301 @@
+{
+  "config": {
+    "baseline_commit": "8e8b805e28bd07a6799d3d838574912ab2280912",
+    "timestep_s": 0.001,
+    "command_period_s": 0.01,
+    "record_every_physics_step": true,
+    "integrator": "implicitfast",
+    "gravity_m_s2": [
+      0,
+      0,
+      -9.81
+    ],
+    "arm_kp_Nm_rad": [
+      160,
+      160,
+      160,
+      80,
+      40,
+      40,
+      30
+    ],
+    "arm_kv_Nms_rad": [
+      12,
+      12,
+      10,
+      6,
+      3,
+      3,
+      2
+    ],
+    "finger_kp_N_m": 800,
+    "finger_kv_Ns_m": 8,
+    "arm_force_limits_Nm": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "finger_force_limit_N": 10,
+    "joint2_command_envelope_rad": [
+      -0.2,
+      1.5
+    ],
+    "arm_target_slew_rad_s": 0.2,
+    "gripper_command_slew_m_s": 0.03,
+    "initial_action": [
+      0,
+      0,
+      0,
+      0.5,
+      0,
+      0,
+      0,
+      0.08
+    ],
+    "parameter_status": "explicit simulation candidate; gains are not manufacturer calibration",
+    "control_design": "9 native affine general actuators: proportional and qfrc_bias feedforward in ctrl, velocity feedback in actuator bias; total actuator force clipped; 8D user target maps to 9 physical joint targets",
+    "mechanical_and_contact_parameters": "unchanged from protected asset, including original equality numerical parameters; no explicit excludes unless separately approved",
+    "acceptance": {
+      "settled_arm_error_rad": 0.005,
+      "settled_finger_error_m": 0.0005,
+      "maximum_coupling_error_m": 0.0002,
+      "maximum_arm_velocity_rad_s": 1.0,
+      "maximum_finger_velocity_m_s": 0.1,
+      "require_no_numerical_warnings_or_time_resets": true
+    }
+  },
+  "grasp_protocol": {
+    "protocol_version": 2,
+    "cube": {
+      "center": [
+        -0.32,
+        0,
+        0.15
+      ],
+      "half_size": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "mass_kg": 0.1,
+      "friction": [
+        1,
+        0.005,
+        0.0001
+      ],
+      "table": {
+        "center": [
+          -0.32,
+          0,
+          0.065
+        ],
+        "half_size": [
+          0.12,
+          0.12,
+          0.065
+        ]
+      }
+    },
+    "initial_conditions": [
+      {
+        "id": "fixed",
+        "offset_xy_m": [
+          0,
+          0
+        ],
+        "yaw_rad": 0
+      },
+      {
+        "id": "offset_positive",
+        "offset_xy_m": [
+          0.003,
+          0.003
+        ],
+        "yaw_rad": 0.03490658503988659
+      },
+      {
+        "id": "offset_negative",
+        "offset_xy_m": [
+          -0.003,
+          -0.003
+        ],
+        "yaw_rad": -0.03490658503988659
+      }
+    ],
+    "initialization": "Legal reset at planned pregrasp pose 0.10m above cube, source width0.08m; subsequent opening, approach, closing, lift, hold and release use actual mj_step only",
+    "site_definition": "Nonphysical grasp_center=gripper_base local[0,0,0.12]m, chosen from source finger z_max0.138m and cube halfheight0.02m for nominal2mm table clearance; not calibrated hardware TCP",
+    "pregrasp_height_m": 0.1,
+    "lift_height_m": 0.1,
+    "vertical_waypoint_count": 5,
+    "open_width_m": 0.1,
+    "close_width_rate_m_s": 0.005,
+    "maximum_close_duration_s": 20,
+    "contact_trigger_force_N_each": 0.2,
+    "hold_compression_target_force_N_each": 1.5,
+    "compression_rule": "Position compression equivalent only, not calibrated force: width_target=(qfinger1-qfinger2)-2*1.5N/800NperM after bilateral contact; actual force logged",
+    "criteria": {
+      "minimum_lift_m": 0.08,
+      "hold_duration_s": 2.0,
+      "maximum_hold_drift_m": 0.01,
+      "minimum_bilateral_contact_fraction": 0.95,
+      "minimum_finger_normal_force_N": 0.05,
+      "maximum_robot_object_penetration_m": 0.001
+    },
+    "repeat_rule": "Run fixed first; only if it passes, execute both predeclared offsets. No changes to object, contact parameters or criteria after first attempt. All interrupted/failed attempts retained.",
+    "contact_parameters": "Source robot friction/solref/solimp/masks/equality unchanged; cube and table use MuJoCo default contact softness, cube friction explicitly stated; sole approved exclusion base_link/link1",
+    "expert_peak_joint_target_speed_rad_s": 0.2,
+    "expert_motion": "Synchronized cosine interpolation of7absolute joint targets at100Hz with0.05rad/s peak reference speed; existing actuator gains/limits unchanged",
+    "revision_reason": "v1 physical attempt retained as FAIL. Actual steady contact force~0.70N per finger and lateral TCP excursions~1.3mm during asymmetric target slews preceded slip. One conventional expert reference refinement; object, contact, gains, equality and acceptance thresholds unchanged. No further physics patches without confirmation."
+  },
+  "cube": {
+    "center": [
+      -0.32,
+      0.0,
+      0.15
+    ],
+    "half_size": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "mass_kg": 0.1,
+    "friction": [
+      1,
+      0.005,
+      0.0001
+    ],
+    "table": {
+      "center": [
+        -0.32,
+        0,
+        0.065
+      ],
+      "half_size": [
+        0.12,
+        0.12,
+        0.065
+      ]
+    },
+    "yaw_rad": 0
+  },
+  "joint_plan": {
+    "initial_action": [
+      -0.8156872599831811,
+      0.2810983432696505,
+      1.04222135944483,
+      1.5364080306631929,
+      -0.2177098003086819,
+      0.2340591176208889,
+      1.4607995377122671,
+      0.08
+    ],
+    "approach": [
+      [
+        -0.8555639482998662,
+        0.32166654471967576,
+        1.1085437472143176,
+        1.5983036800729706,
+        -0.24280153048873543,
+        0.27757152152754205,
+        1.3962349142556891
+      ],
+      [
+        -0.8736022592401742,
+        0.3640966731723003,
+        1.1477794303033204,
+        1.6555080989183482,
+        -0.2635372302626484,
+        0.3188130932102383,
+        1.331881242365328
+      ],
+      [
+        -0.8789365289534525,
+        0.4097175927596261,
+        1.1714364016987562,
+        1.708166263009515,
+        -0.2825934675258648,
+        0.3599041930301047,
+        1.2680584789684237
+      ],
+      [
+        -0.8749929903809195,
+        0.4577005267817519,
+        1.1824301815506282,
+        1.7563465295018719,
+        -0.2997693625610165,
+        0.39997551061702596,
+        1.2044234415002506
+      ],
+      [
+        -0.865130017291934,
+        0.5082930894206636,
+        1.1845866330796317,
+        1.8000569348924655,
+        -0.3158772851318046,
+        0.4393164851384921,
+        1.1410782874755419
+      ]
+    ],
+    "lift": [
+      [
+        -0.8749929903809195,
+        0.4577005267817519,
+        1.1824301815506282,
+        1.7563465295018719,
+        -0.2997693625610165,
+        0.39997551061702596,
+        1.2044234415002506
+      ],
+      [
+        -0.8789365289534525,
+        0.4097175927596261,
+        1.1714364016987562,
+        1.708166263009515,
+        -0.2825934675258648,
+        0.3599041930301047,
+        1.2680584789684237
+      ],
+      [
+        -0.8736022592401742,
+        0.3640966731723003,
+        1.1477794303033204,
+        1.6555080989183482,
+        -0.2635372302626484,
+        0.3188130932102383,
+        1.331881242365328
+      ],
+      [
+        -0.8555639482998662,
+        0.32166654471967576,
+        1.1085437472143176,
+        1.5983036800729706,
+        -0.24280153048873543,
+        0.27757152152754205,
+        1.3962349142556891
+      ],
+      [
+        -0.8156872599831811,
+        0.2810983432696505,
+        1.04222135944483,
+        1.5364080306631929,
+        -0.2177098003086819,
+        0.2340591176208889,
+        1.4607995377122671
+      ]
+    ],
+    "planning_method": "bounded SciPy least_squares in scratch MjData, source ranges plus conservative Joint2 envelope",
+    "nonobject_scratch_collision_count": 0
+  },
+  "source": {
+    "issue": 14,
+    "label": "R1",
+    "protocol_sha256": "a0378400aa64f06c5c043f65e2c26fa44b68d7d31b1ff69c12b5e3248a84f00e",
+    "model_sha256": "05b364b0696e0afa90bc39a07bcc46e655933ba14037fc5e1cf26108e6249492",
+    "run_directory": "/data_robot/projects/.worktrees/nero-gripper-full-grasp/experiments/dynamics/runs/issue14_full_grasp_002/R1",
+    "description": "Unchanged saved R1 config, action protocol, cube and IK plan. Collision representation only is replaced."
+  }
+}
