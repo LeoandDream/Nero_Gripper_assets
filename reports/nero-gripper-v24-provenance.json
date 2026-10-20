@@ -1,0 +1,332 @@
+{
+  "status": "V24_CONVEX_COVER_MIXED",
+  "task_comment": {
+    "url": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6284738744",
+    "id": 6284738744,
+    "updated_at": "2026-10-20T06:18:09Z",
+    "body_sha256": "00e210bfc73fbfbb7dc071539cec81e3b8abfb916f1a5e742ae42f5f1dddc01d"
+  },
+  "worktree": "/data_robot/projects/.worktrees/nero-gripper-runtime-partition",
+  "branch": "feature/runtime-semantic-partition",
+  "predecessor_commit": "87ef3b514f11e16794608de99bff48872daca9ac",
+  "base346_commit": "6eba4f34c5ff5029eb849804e3d2e9c535f58756",
+  "base_geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "v23_geometry_sha256": "4050c488325b409532360ee9d8dc3311bd3a53bc36b75949af637bfc8b59fd96",
+  "no_new_runtime_geometry": true,
+  "cap_normalization": "NONE",
+  "frozen_inputs_sha256": {
+    "nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+    "nero-gripper-v23-preregistration.json": "10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0",
+    "nero-gripper-v23-split-trace.json.gz": "b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309",
+    "nero-gripper-v23-finite-partition.json": "00a1c4ea1ce255a170fb20a0f5bf4d0ebb7a4ab6b49dd64a28916ee0b6c6b3c6",
+    "nero-gripper-v23-verification.json": "d7318a57cfb3b2ba1445ebfcbab9efd7afd6c1584e1bc083888712381ce3d942",
+    "nero-gripper-v21-fidelity-protocol.json": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+    "nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985"
+  },
+  "all_delivered_files_sha256": {
+    "reports/nero-gripper-v24-classification.json": "a51233e0efbebe97dd69c78cc6dcbd97ff919f29f6e06d9513ac7034602413fd",
+    "reports/nero-gripper-v24-convex-cover.json.gz": "2e9d16d6d0f633dea5bfdd3157db58da6244762891710c096ca4c4605bfdcb19",
+    "reports/nero-gripper-v24-convex-cover.md": "7ad1d04d9c57d4234ae9acee993176b8f19ef759830fc01134c568dfe4bc04d6",
+    "reports/nero-gripper-v24-obstructions.json.gz": "9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9",
+    "reports/nero-gripper-v24-verification.json": "1ee9f0a6ebaffbf37cd2bb7801a6eaa08a95cfc06b084144637ddab2d6d581cd",
+    "scripts/analyze_v24_convex_covers.py": "061afd44e1913580c5e132e3d068de446a3a96dc236f3dd3834ff915a217af93",
+    "scripts/certify_v24_point_obstruction.py": "7c85cb7d1b99b9da2a43e91494af79948c21947e4b0c4b9e8e0c9ad2c3fee1e2",
+    "scripts/extend_v24_obstructions.py": "f69f4f55a38fd1fd83a86961a3e64e61be73a7932f7b41419d7da966546ba3bd",
+    "scripts/verify_v24_certificates.py": "1148d98c2df8288188345584ead6fb812a0355e2be301c19a133cb9314027812"
+  },
+  "imported_project_and_private_vendor_modules_on_same_analysis_import_path": {
+    "__main__": {
+      "path": "debug/issue25/v24-cover/final_provenance.py",
+      "sha256": "09f29702996566a266882ae7ea33edde314179b57a06ff17f3d407c15f6d3a7b"
+    },
+    "runtime_contact_partition": {
+      "path": "scripts/runtime_contact_partition.py",
+      "sha256": "1cfa2cd26ea2464035e699f41af64b62efe6b79555228b94cabbda7562326cbb"
+    },
+    "runtime_backing_partition": {
+      "path": "scripts/runtime_backing_partition.py",
+      "sha256": "879ea14542013403f54f45cb465f632d649c503afa8cf4092955ee9801b1b34b"
+    },
+    "shapely.lib": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/lib.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "f9401b699f9428629f160e6abd1eb2e3359f41129bc1ccda81584b0895d6bfa5"
+    },
+    "shapely.errors": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/errors.py",
+      "sha256": "30d5a32b7dfd8dfa59e7d526559815b17dadc990b0de744265ad23ff323cce5c"
+    },
+    "shapely._geos": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_geos.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "247685d3057b141790cf838340ae58b1ad0abc0289db028255846cccf7161245"
+    },
+    "shapely._geometry_helpers": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_geometry_helpers.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "943dab0df9ca71fe624f2ed6f79d1be3f92cea4a4b377a25e3ff6af5e1b1e9e9"
+    },
+    "shapely._enum": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_enum.py",
+      "sha256": "ca39c449cce225924b68cd0fd6b6063de90dffe99677ae3eae67b93ec68a7879"
+    },
+    "shapely.decorators": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/decorators.py",
+      "sha256": "13056b4756f9e0d8cd33c2d15b4c5f6ae78bb078add4b4029c9231371927f1c9"
+    },
+    "shapely._geometry": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_geometry.py",
+      "sha256": "5d9c6f98b07f8e0d251e83221e028577f2cd4a28f89eb27f41834aa6afa16e84"
+    },
+    "shapely.coordinates": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/coordinates.py",
+      "sha256": "b6f11e24833518c9f06193442a1fb79b9d5c1e025a6d961a0124a10e113cfb13"
+    },
+    "shapely.predicates": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/predicates.py",
+      "sha256": "7214ab3ea82b6a11fcfb5c95927a28e0bfd4b1fa1858d5c8f5f74ab16f9d6688"
+    },
+    "shapely._ragged_array": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_ragged_array.py",
+      "sha256": "f9e68c01526d66fdcfd1dcc675c670c7ca8912de3d105992dfce150149530101"
+    },
+    "shapely.io": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/io.py",
+      "sha256": "01def5ceed0bc1cb720fb45ab55730645b2f390fd537e6cbca42403813abf631"
+    },
+    "shapely.creation": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/creation.py",
+      "sha256": "c2da7a51288863ac29e09a7deb1b32d9a7bb6bd2a02bd4b99c56f43db644b36d"
+    },
+    "shapely.algorithms": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/__init__.py",
+      "sha256": "647222bee439c391895c1ee1c0ba74cdc91dfdbdb6ea4ebcc230614f493d032a"
+    },
+    "shapely.affinity": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/affinity.py",
+      "sha256": "ee1593f65fcc884923f551022ae91d014cff3584a8877bc8ea1bcd57d03a3d8a"
+    },
+    "shapely.algorithms._oriented_envelope": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/_oriented_envelope.py",
+      "sha256": "697a317a01d740acc44aaa3c294d2a5f2bd82e1f002c98d6946b7418e452f2f4"
+    },
+    "shapely.algorithms.cga": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/cga.py",
+      "sha256": "28d5ef19a213e49c47da4ffac272c192735d44e4f77280f67d822ea7e60fefa2"
+    },
+    "shapely.constructive": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/constructive.py",
+      "sha256": "9c814d4fb0f6e5e3a2a9a8381a7a3ff1e97c9556995ee25c5f437913e1afd173"
+    },
+    "shapely.measurement": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/measurement.py",
+      "sha256": "289e4559bf3b0ee685f2a4d1fa327befe63c1b31f8cf84d9e162516d2747995a"
+    },
+    "shapely.set_operations": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/set_operations.py",
+      "sha256": "1d72ddf8aefbda450ddfdfb1ebf10acad3374d68659c562cf6a488cb9c7f97af"
+    },
+    "shapely.linear": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/linear.py",
+      "sha256": "afb83b3a2aebd774f1a69391b46a08ed11812a811f739a5fc08b103d810b9fb1"
+    },
+    "shapely.coords": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/coords.py",
+      "sha256": "21bba876608d89b91973cfd7a5af1eec71714f85bea02318e1fb6f253b831979"
+    },
+    "shapely.geometry.base": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/base.py",
+      "sha256": "7b0d96b827cf97e88eac9b2bdf83659ba84e99d00e971829fa71c8cc14376122"
+    },
+    "shapely.geometry.collection": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/collection.py",
+      "sha256": "c448eae40adb0397be7b7c7aa5b73a5c343b632881892fb925b9decad0c43374"
+    },
+    "shapely.geometry.point": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/point.py",
+      "sha256": "a4807c55cffa37b54d9e76e0baa8c7c0e03db92e3d05b484d94c0e302e7c5db1"
+    },
+    "shapely.geometry.linestring": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/linestring.py",
+      "sha256": "606ff10e909e1ab8b342a10e6ca8fc0f853ac95c9fbeafd86e1f2f64819f4172"
+    },
+    "shapely.geometry.multilinestring": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/multilinestring.py",
+      "sha256": "b5129ce9cacbea65adad4a743d121d29926989bc1538a905f74e362b5ae3125e"
+    },
+    "shapely.geometry.multipoint": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/multipoint.py",
+      "sha256": "746c8a1b130ebaf20cd4301bcf107d5f75d28c3bd8a5250db58914805635a7f8"
+    },
+    "shapely.geometry.polygon": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/polygon.py",
+      "sha256": "2d5347b806e9d6879079473a2390b8ef4095f4f83a3a3b37fa324920233c51c8"
+    },
+    "shapely.geometry.multipolygon": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/multipolygon.py",
+      "sha256": "05390e5692bccc4e8feb813378abf736601ccbafa897e562091d239cf8426d8e"
+    },
+    "shapely.geometry.geo": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/geo.py",
+      "sha256": "537722bc18969aba33000a63862aa95d804f8b76128f0ac026acec3050a23d37"
+    },
+    "shapely.geometry": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/geometry/__init__.py",
+      "sha256": "f98ad1c4a67e1df4f7c951b89250f9104bdd1477f058d00aea8be3bae361865a"
+    },
+    "shapely.strtree": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/strtree.py",
+      "sha256": "22a4beacf62ef1b54f579d076dfd46688b4b38f287d7bd912f765ed59f6e3d22"
+    },
+    "shapely._coverage": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_coverage.py",
+      "sha256": "ca208be59b4c28c0c7570e84947911f02fc2da7d03b51a6c82c189861bae70be"
+    },
+    "shapely._version": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/_version.py",
+      "sha256": "f3cc49f6c0bfcc0439409bc86b59d5d48bea3cb72c12d82e8f3fe4a2f5e8931d"
+    },
+    "shapely": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/__init__.py",
+      "sha256": "ec46944357e1207798213bf98e715cf862906ec317082494f9823f2370fd70e3"
+    },
+    "shapely.algorithms.polylabel": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/algorithms/polylabel.py",
+      "sha256": "83357995c6f3665be5ff050d0964056bbf26de13f2b990ae04c940ff81ee6964"
+    },
+    "shapely.prepared": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/prepared.py",
+      "sha256": "43deda7f1121baa5cccb1760360c73b28323a58aa23331d7c27d4717c59b9ae9"
+    },
+    "shapely.ops": {
+      "path": "debug/issue25/v2-runtime/vendor/shapely/ops.py",
+      "sha256": "3b7a787dec9b5a8b956f1c7f39f3ada6100f3faa9947ad57cd1cbe20bec8c5c4"
+    },
+    "v21_boundary_atlas": {
+      "path": "scripts/v21_boundary_atlas.py",
+      "sha256": "41b2362334dae097412e7d38a85371ee31276a0941d71fbec2db6b186c0fe37b"
+    },
+    "v22_local_repartition": {
+      "path": "scripts/v22_local_repartition.py",
+      "sha256": "f0de6ab5fb62570cc0ea0fd0452ea5301da92574cbfcbf3a7c54893b821c19b1"
+    },
+    "v23_finite_patch": {
+      "path": "scripts/v23_finite_patch.py",
+      "sha256": "abd780f715ec61d21e545bd46f4bff56b7572b533592e69e0fd1790519eedbbb"
+    },
+    "certify_v23_preservation": {
+      "path": "scripts/certify_v23_preservation.py",
+      "sha256": "f999f8ed5ba0e0932bfbd00723d7a4046c61289713c69cf23fd3c3633f94362a"
+    },
+    "analyze_v24_convex_covers": {
+      "path": "scripts/analyze_v24_convex_covers.py",
+      "sha256": "061afd44e1913580c5e132e3d068de446a3a96dc236f3dd3834ff915a217af93"
+    },
+    "certify_v24_point_obstruction": {
+      "path": "scripts/certify_v24_point_obstruction.py",
+      "sha256": "7c85cb7d1b99b9da2a43e91494af79948c21947e4b0c4b9e8e0c9ad2c3fee1e2"
+    },
+    "extend_v24_obstructions": {
+      "path": "scripts/extend_v24_obstructions.py",
+      "sha256": "f69f4f55a38fd1fd83a86961a3e64e61be73a7932f7b41419d7da966546ba3bd"
+    }
+  },
+  "environment": {
+    "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+    "python_executable": "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "os_release": "PRETTY_NAME=\"Ubuntu 22.04 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04 (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n"
+  },
+  "successful_commands": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/analyze_v24_convex_covers.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v24-cover/full-run.log",
+      "log_sha256": "616abc5ef73fed7567f71ca561fed186b6fdfad99e92c1b2ea80033f9bb98e53",
+      "full_stdout_stderr": "V20157 covers 19 leaves 92 / 144 class {'UNKNOWN': 43, 'REPRESENTATION_FRAGMENT': 54, 'ABSORBABLE': 13} seconds 9.1\nV20140 covers 3 leaves 19 / 21 class {} seconds 9.4\nV20143 covers 4 leaves 16 / 20 class {'REPRESENTATION_FRAGMENT': 1} seconds 9.7\nV20154 covers 10 leaves 48 / 73 class {'UNKNOWN': 21, 'REPRESENTATION_FRAGMENT': 18, 'ABSORBABLE': 2} seconds 11.8\nV20160 covers 8 leaves 35 / 47 class {'REPRESENTATION_FRAGMENT': 16, 'UNKNOWN': 7} seconds 12.8\nV20166 covers 3 leaves 8 / 11 class {'REPRESENTATION_FRAGMENT': 4, 'ABSORBABLE': 2, 'UNKNOWN': 1} seconds 13.1\nV20175 covers 2 leaves 4 / 5 class {} seconds 13.3\nV20205 covers 1 leaves 1 / 4 class {'UNKNOWN': 2} seconds 13.5\nHEkkPrimal::shiftBound LB = -2.00836e+08; random_value = 0.0686269; value = -2.00836e+08; feasibility = 1.06863e-09; infeasibility = 0.0023374; shift = 0.0023374; bound = -2.00836e+08; new_infeasibility = 0; \nHEkkPrimal::shiftBound LB = -2.00836e+08; random_value = 0.0686269; value = -2.00836e+08; feasibility = 1.06863e-09; infeasibility = 4.50611e-05; shift = 4.50622e-05; bound = -2.00836e+08; new_infeasibility = 0; \nV20207 covers 3 leaves 5 / 6 class {'ABSORBABLE': 2, 'REPRESENTATION_FRAGMENT': 1} seconds 13.9\nV20245 covers 3 leaves 5 / 5 class {'REPRESENTATION_FRAGMENT': 2, 'ABSORBABLE': 1} seconds 14.2\nV20259 covers 9 leaves 18 / 25 class {'REPRESENTATION_FRAGMENT': 9, 'UNKNOWN': 6, 'ABSORBABLE': 5} seconds 15.0\nV20263 covers 9 leaves 41 / 67 class {'UNKNOWN': 9, 'REPRESENTATION_FRAGMENT': 5} seconds 17.2\nV20267 covers 7 leaves 49 / 56 class {'REPRESENTATION_FRAGMENT': 19, 'UNKNOWN': 7, 'ABSORBABLE': 1} seconds 18.5\nHEkkPrimal::shiftBound LB = -1.45893e+10; random_value = 0.513505; value = -1.45893e+10; feasibility = 1.5135e-09; infeasibility = 0.000207901; shift = 0.000207903; bound = -1.45893e+10; new_infeasibility = 0; \nHEkkPrimal::shiftBound LB = -1.45893e+10; random_value = 0.0651358; value = -1.45893e+10; feasibility = 1.06514e-09; infeasibility = 0.0304737; shift = 0.0304737; bound = -1.45893e+10; new_infeasibility = 0; \nHEkkPrimal::shiftBound LB = -1.45893e+10; random_value = 0.0960662; value = -1.45893e+10; feasibility = 1.09607e-09; infeasibility = 0.00348282; shift = 0.00348282; bound = -1.45893e+10; new_infeasibility = 0; \nV20273 covers 15 leaves 158 / 195 class {'REPRESENTATION_FRAGMENT': 88, 'UNKNOWN': 23, 'ABSORBABLE': 2} seconds 27.6\nV20274 covers 4 leaves 17 / 19 class {'REPRESENTATION_FRAGMENT': 3} seconds 28.1\nV20280 covers 17 leaves 77 / 144 class {'UNKNOWN': 60, 'REPRESENTATION_FRAGMENT': 42, 'ABSORBABLE': 5} seconds 35.4\nV20284 covers 5 leaves 19 / 24 class {'REPRESENTATION_FRAGMENT': 7} seconds 36.1\nV20291 covers 5 leaves 12 / 32 class {'ABSORBABLE': 2, 'REPRESENTATION_FRAGMENT': 6, 'UNKNOWN': 17} seconds 37.0\nV20294 covers 1 leaves 1 / 5 class {'UNKNOWN': 4} seconds 37.4\nV20297 covers 4 leaves 16 / 55 class {'REPRESENTATION_FRAGMENT': 6, 'UNKNOWN': 33} seconds 38.5\nV20301 covers 2 leaves 3 / 4 class {'REPRESENTATION_FRAGMENT': 1, 'ABSORBABLE': 1, 'UNKNOWN': 1} seconds 38.9\nV20304 covers 2 leaves 2 / 5 class {'UNKNOWN': 3} seconds 39.3\nV20317 covers 4 leaves 6 / 6 class {'REPRESENTATION_FRAGMENT': 2, 'ABSORBABLE': 2} seconds 39.7\nV20322 covers 1 leaves 2 / 8 class {'ABSORBABLE': 1, 'REPRESENTATION_FRAGMENT': 1, 'UNKNOWN': 5} seconds 40.1\nV20324 covers 2 leaves 3 / 5 class {'UNKNOWN': 1, 'REPRESENTATION_FRAGMENT': 1, 'ABSORBABLE': 1} seconds 40.5\nV20329 covers 4 leaves 22 / 44 class {'REPRESENTATION_FRAGMENT': 14, 'UNKNOWN': 17} seconds 41.4\nV20330 covers 5 leaves 10 / 21 class {'ABSORBABLE': 3, 'UNKNOWN': 11, 'REPRESENTATION_FRAGMENT': 4} seconds 42.2\nV20333 covers 7 leaves 42 / 84 class {'REPRESENTATION_FRAGMENT': 19, 'UNKNOWN': 39, 'ABSORBABLE': 1} seconds 45.3\nV20334 covers 1 leaves 1 / 7 class {'UNKNOWN': 6} seconds 45.7\nV20337 covers 1 leaves 1 / 5 class {'UNKNOWN': 4} seconds 46.2\nV20339 covers 3 leaves 17 / 58 class {'UNKNOWN': 34, 'REPRESENTATION_FRAGMENT': 7} seconds 47.7\nV20344 covers 1 leaves 1 / 4 class {'UNKNOWN': 1} seconds 48.1\n{\n  \"status\": \"V24_CONVEX_COVER_UNKNOWN\",\n  \"counts\": {\n    \"UNKNOWN\": 355,\n    \"REPRESENTATION_FRAGMENT\": 330,\n    \"ABSORBABLE\": 44\n  },\n  \"elapsed_seconds\": 47.733702659606934\n}\n"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/extend_v24_obstructions.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v24-cover/obstructions-run.log",
+      "log_sha256": "8c5022251a795250584678d247fbe1a8e564db6565ed751a0304c7a34f52f01f",
+      "full_stdout_stderr": "V20157 {'GEOMETRICALLY_INFEASIBLE': 10, 'UNKNOWN': 33} seconds 13.9\nV20140 {} seconds 14.2\nV20143 {} seconds 14.4\nV20154 {'UNKNOWN': 21} seconds 17.8\nV20160 {'UNKNOWN': 7} seconds 19.7\nV20166 {'UNKNOWN': 1} seconds 20.2\nV20175 {} seconds 20.8\nV20205 {'UNKNOWN': 2} seconds 21.8\nV20207 {} seconds 23.1\nV20245 {} seconds 23.8\nV20259 {'UNKNOWN': 6} seconds 24.8\nV20263 {'UNKNOWN': 9} seconds 26.7\nV20267 {'UNKNOWN': 7} seconds 27.7\nV20273 {'UNKNOWN': 23} seconds 35.5\nV20274 {} seconds 36.2\nV20280 {'UNKNOWN': 60} seconds 45.8\nV20284 {} seconds 46.2\nV20291 {'UNKNOWN': 16, 'GEOMETRICALLY_INFEASIBLE': 1} seconds 49.2\nV20294 {'UNKNOWN': 4} seconds 49.7\nV20297 {'UNKNOWN': 33} seconds 54.9\nV20301 {'UNKNOWN': 1} seconds 55.2\nV20304 {'UNKNOWN': 3} seconds 55.7\nV20317 {} seconds 56.0\nV20322 {'UNKNOWN': 5} seconds 56.6\nV20324 {'UNKNOWN': 1} seconds 57.0\nV20329 {'UNKNOWN': 16, 'GEOMETRICALLY_INFEASIBLE': 1} seconds 59.2\nV20330 {'UNKNOWN': 11} seconds 60.6\nV20333 {'UNKNOWN': 39} seconds 65.0\nV20334 {'UNKNOWN': 6} seconds 65.7\nV20337 {'UNKNOWN': 4} seconds 66.3\nV20339 {'UNKNOWN': 34} seconds 69.9\nV20344 {'UNKNOWN': 1} seconds 70.3\nDONE {'GEOMETRICALLY_INFEASIBLE': 12, 'UNKNOWN': 343}\n"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/verify_v24_certificates.py",
+      "exit_code": 0,
+      "log_path": "debug/issue25/v24-cover/verification.log",
+      "log_sha256": "1ee9f0a6ebaffbf37cd2bb7801a6eaa08a95cfc06b084144637ddab2d6d581cd",
+      "full_stdout_stderr": "{\n  \"status\": \"V24_CONVEX_COVER_MIXED\",\n  \"certificate_replay\": \"PASS\",\n  \"classification_counts\": {\n    \"ABSORBABLE\": 44,\n    \"REPRESENTATION_FRAGMENT\": 330,\n    \"GEOMETRICALLY_INFEASIBLE\": 12,\n    \"UNKNOWN\": 343\n  },\n  \"classified_count\": 729,\n  \"certified_analysis_covers\": 165,\n  \"exact_ball_inequalities\": 5406,\n  \"continuous_leaf_coverage_certificates\": 751,\n  \"exact_dual_bounds_replayed\": 4563,\n  \"robust_obstruction_points\": 12,\n  \"robust_shadow_vertex_certificates\": 592,\n  \"frozen_input_sha256\": {\n    \"nero-gripper-v2-runtime-partition.json\": \"5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9\",\n    \"nero-gripper-v23-preregistration.json\": \"10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0\",\n    \"nero-gripper-v23-split-trace.json.gz\": \"b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309\",\n    \"nero-gripper-v23-finite-partition.json\": \"00a1c4ea1ce255a170fb20a0f5bf4d0ebb7a4ab6b49dd64a28916ee0b6c6b3c6\",\n    \"nero-gripper-v23-verification.json\": \"d7318a57cfb3b2ba1445ebfcbab9efd7afd6c1584e1bc083888712381ce3d942\",\n    \"nero-gripper-v21-fidelity-protocol.json\": \"d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5\",\n    \"nero-gripper-v2-fidelity-protocol.json\": \"76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985\"\n  },\n  \"mechanical_inputs_unchanged\": [\n    \"SOURCE_MANIFEST.json\",\n    \"docs/robot-contract.json\",\n    \"experiments/dynamics/config.json\",\n    \"experiments/dynamics/controller.py\",\n    \"experiments/dynamics/grasp.json\",\n    \"meshes/collision/gripper_link1_000.obj\",\n    \"meshes/collision/gripper_link1_001.obj\",\n    \"meshes/collision/gripper_link2_000.obj\",\n    \"meshes/collision/gripper_link2_001.obj\",\n    \"meshes/source/agx_gripper/meshes/dae/gripper_link1.dae\",\n    \"meshes/source/agx_gripper/meshes/dae/gripper_link2.dae\",\n    \"meshes/source/agx_gripper/meshes/gripper_link1.stl\",\n    \"meshes/source/agx_gripper/meshes/gripper_link2.stl\",\n    \"meshes/visual/gripper_link1.obj\",\n    \"meshes/visual/gripper_link2.obj\",\n    \"mjcf/nero_gripper.xml\",\n    \"urdf/nero_gripper.urdf\",\n    \"urdf/source/nero/urdf/nero_with_gripper_description.xacro\",\n    \"meshes/source/agx_gripper/meshes/gripper_base.stl\"\n  ],\n  \"protected_worktrees_unchanged\": [\n    \"/data_robot/projects/nero_gripper_assets\",\n    \"/data_robot/projects/.worktrees/nero-gripper-collision-query\",\n    \"/data_robot/projects/.worktrees/nero-gripper-contact-geometry\",\n    \"/data_robot/projects/.worktrees/nero-gripper-elliptic-ab\",\n    \"/data_robot/projects/.worktrees/nero-gripper-elliptic-readonly\",\n    \"/data_robot/projects/.worktrees/nero-gripper-fingertip-pads\",\n    \"/data_robot/projects/.worktrees/nero-gripper-full-grasp\",\n    \"/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis\",\n    \"/data_robot/projects/.worktrees/nero-gripper-impratio-ab\",\n    \"/data_robot/projects/.worktrees/nero-gripper-panda-reference\",\n    \"/data_robot/projects/nero_gripper_dynamics\"\n  ],\n  \"analysis_report_sha256\": \"2e9d16d6d0f633dea5bfdd3157db58da6244762891710c096ca4c4605bfdcb19\",\n  \"obstruction_report_sha256\": \"9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9\",\n  \"independent_verifier_sha256\": \"1148d98c2df8288188345584ead6fb812a0355e2be301c19a133cb9314027812\",\n  \"elapsed_seconds\": 10.411831617355347,\n  \"scope\": \"Analytical halfspace covers and certificates only. No runtime candidate or model change. Full A-union exterior acceptance is not claimed.\"\n}\n"
+    }
+  ],
+  "independent_verification": {
+    "status": "V24_CONVEX_COVER_MIXED",
+    "certificate_replay": "PASS",
+    "classification_counts": {
+      "ABSORBABLE": 44,
+      "REPRESENTATION_FRAGMENT": 330,
+      "GEOMETRICALLY_INFEASIBLE": 12,
+      "UNKNOWN": 343
+    },
+    "classified_count": 729,
+    "certified_analysis_covers": 165,
+    "exact_ball_inequalities": 5406,
+    "continuous_leaf_coverage_certificates": 751,
+    "exact_dual_bounds_replayed": 4563,
+    "robust_obstruction_points": 12,
+    "robust_shadow_vertex_certificates": 592,
+    "frozen_input_sha256": {
+      "nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+      "nero-gripper-v23-preregistration.json": "10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0",
+      "nero-gripper-v23-split-trace.json.gz": "b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309",
+      "nero-gripper-v23-finite-partition.json": "00a1c4ea1ce255a170fb20a0f5bf4d0ebb7a4ab6b49dd64a28916ee0b6c6b3c6",
+      "nero-gripper-v23-verification.json": "d7318a57cfb3b2ba1445ebfcbab9efd7afd6c1584e1bc083888712381ce3d942",
+      "nero-gripper-v21-fidelity-protocol.json": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+      "nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985"
+    },
+    "mechanical_inputs_unchanged": [
+      "SOURCE_MANIFEST.json",
+      "docs/robot-contract.json",
+      "experiments/dynamics/config.json",
+      "experiments/dynamics/controller.py",
+      "experiments/dynamics/grasp.json",
+      "meshes/collision/gripper_link1_000.obj",
+      "meshes/collision/gripper_link1_001.obj",
+      "meshes/collision/gripper_link2_000.obj",
+      "meshes/collision/gripper_link2_001.obj",
+      "meshes/source/agx_gripper/meshes/dae/gripper_link1.dae",
+      "meshes/source/agx_gripper/meshes/dae/gripper_link2.dae",
+      "meshes/source/agx_gripper/meshes/gripper_link1.stl",
+      "meshes/source/agx_gripper/meshes/gripper_link2.stl",
+      "meshes/visual/gripper_link1.obj",
+      "meshes/visual/gripper_link2.obj",
+      "mjcf/nero_gripper.xml",
+      "urdf/nero_gripper.urdf",
+      "urdf/source/nero/urdf/nero_with_gripper_description.xacro",
+      "meshes/source/agx_gripper/meshes/gripper_base.stl"
+    ],
+    "protected_worktrees_unchanged": [
+      "/data_robot/projects/nero_gripper_assets",
+      "/data_robot/projects/.worktrees/nero-gripper-collision-query",
+      "/data_robot/projects/.worktrees/nero-gripper-contact-geometry",
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-ab",
+      "/data_robot/projects/.worktrees/nero-gripper-elliptic-readonly",
+      "/data_robot/projects/.worktrees/nero-gripper-fingertip-pads",
+      "/data_robot/projects/.worktrees/nero-gripper-full-grasp",
+      "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis",
+      "/data_robot/projects/.worktrees/nero-gripper-impratio-ab",
+      "/data_robot/projects/.worktrees/nero-gripper-panda-reference",
+      "/data_robot/projects/nero_gripper_dynamics"
+    ],
+    "analysis_report_sha256": "2e9d16d6d0f633dea5bfdd3157db58da6244762891710c096ca4c4605bfdcb19",
+    "obstruction_report_sha256": "9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9",
+    "independent_verifier_sha256": "1148d98c2df8288188345584ead6fb812a0355e2be301c19a133cb9314027812",
+    "elapsed_seconds": 10.411831617355347,
+    "scope": "Analytical halfspace covers and certificates only. No runtime candidate or model change. Full A-union exterior acceptance is not claimed."
+  },
+  "initial_verifier_rounding_issue": "Independent replay detected objective-offset binary64 subtraction vs rational subtraction mismatch. Analysis-only certificate bookkeeping corrected to bound the actual stored offset; all final certificates regenerated/replayed. Frozen inputs unchanged.",
+  "no_MuJoCo_import": true,
+  "unchanged_preexisting_tracked_files": true,
+  "scope": "No runtime candidate, vertices/faces edit, policy edit, cap normalization, physics/query/integration, benchmark, new Issue or main edit.",
+  "audit_source": "from pathlib import Path\nimport sys,json,hashlib,platform,subprocess,gzip\nROOT=Path.cwd();sys.path.insert(0,str(ROOT/'scripts'))\nimport analyze_v24_convex_covers,certify_v24_point_obstruction,extend_v24_obstructions\nimport numpy,scipy\n\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef cmd(args):return subprocess.check_output(args,text=True,cwd=ROOT).strip()\nassert not any(n=='mujoco'or n.startswith('mujoco.')for n in sys.modules)\nv=json.loads((ROOT/'reports/nero-gripper-v24-verification.json').read_text());assert v['certificate_replay']=='PASS'\nfiles=sorted([p for p in (ROOT/'scripts').glob('*v24*.py')]+[p for p in (ROOT/'reports').glob('nero-gripper-v24*')if p.name!='nero-gripper-v24-provenance.json'])\nmodules={}\nfor name,module in list(sys.modules.items()):\n p=getattr(module,'__file__',None)\n if p and str(ROOT)+'/'in str(p):modules[name]={'path':str(Path(p).relative_to(ROOT)),'sha256':sha(p)}\ncommands=[]\nfor script,log in [('analyze_v24_convex_covers.py','full-run.log'),('extend_v24_obstructions.py','obstructions-run.log'),('verify_v24_certificates.py','verification.log')]:\n p=ROOT/'debug/issue25/v24-cover'/log\n commands.append({'command':'OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python -B scripts/'+script,'exit_code':0,'log_path':str(p.relative_to(ROOT)),'log_sha256':sha(p),'full_stdout_stderr':p.read_text()})\ncomment=json.loads((ROOT/'debug/issue25/v24-cover/task-comment.json').read_text())\nprovenance={'status':'V24_CONVEX_COVER_MIXED','task_comment':{'url':comment['html_url'],'id':comment['id'],'updated_at':comment['updated_at'],'body_sha256':hashlib.sha256(comment['body'].encode()).hexdigest()},'worktree':str(ROOT),'branch':cmd(['git','branch','--show-current']),'predecessor_commit':cmd(['git','rev-parse','HEAD']),'base346_commit':'6eba4f34c5ff5029eb849804e3d2e9c535f58756','base_geometry_sha256':'79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e','v23_geometry_sha256':'4050c488325b409532360ee9d8dc3311bd3a53bc36b75949af637bfc8b59fd96','no_new_runtime_geometry':True,'cap_normalization':'NONE','frozen_inputs_sha256':v['frozen_input_sha256'],'all_delivered_files_sha256':{str(p.relative_to(ROOT)):sha(p)for p in files},'imported_project_and_private_vendor_modules_on_same_analysis_import_path':modules,'environment':{'python':sys.version,'python_executable':sys.executable,'numpy':numpy.__version__,'scipy':scipy.__version__,'platform':platform.platform(),'os_release':Path('/etc/os-release').read_text()},'successful_commands':commands,'independent_verification':v,'initial_verifier_rounding_issue':'Independent replay detected objective-offset binary64 subtraction vs rational subtraction mismatch. Analysis-only certificate bookkeeping corrected to bound the actual stored offset; all final certificates regenerated/replayed. Frozen inputs unchanged.','no_MuJoCo_import':True,'unchanged_preexisting_tracked_files':subprocess.run(['git','diff','--exit-code'],cwd=ROOT,capture_output=True).returncode==0,'scope':'No runtime candidate, vertices/faces edit, policy edit, cap normalization, physics/query/integration, benchmark, new Issue or main edit.'}\nprovenance['audit_source']=Path(__file__).read_text()\n(ROOT/'reports/nero-gripper-v24-provenance.json').write_text(json.dumps(provenance,indent=2)+'\\n')\nprint(json.dumps({'status':provenance['status'],'delivered_files':len(files),'project_and_private_vendor_modules':len(modules),'no_MuJoCo_import':True},indent=2))\n"
+}
