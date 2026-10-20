@@ -1,0 +1,413 @@
+{
+  "status": "LEROBOT_EPISODE_READY",
+  "episodes": 1,
+  "frames": 682,
+  "fps": 20,
+  "new_mj_steps": 0,
+  "training": false,
+  "checkpoint_download": false,
+  "dataset_root": "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1",
+  "selected_samples": [
+    {
+      "frame_index": 0,
+      "source_observation_row": 49,
+      "source_action_row": 50,
+      "source_time_s": 0.05,
+      "dataset_time_s": 0.0,
+      "state": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405912518501282,
+        1.4607995748519897,
+        0.040028687566518784,
+        -0.040028687566518784
+      ],
+      "first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.0801122859120369
+      ],
+      "raw_image_shape": [
+        3,
+        256,
+        256
+      ],
+      "raw_image_dtype": "float32",
+      "raw_action_shape": [
+        10,
+        8
+      ],
+      "model_state_shape": [
+        32
+      ],
+      "model_action_shape": [
+        10,
+        32
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "valid_actions": 10,
+      "prompt": "Pick up the cube and hold it above the table.",
+      "video_decode_mean_absolute_error_255": 0.9068603515625,
+      "action_roundtrip_8d": "PASS"
+    },
+    {
+      "frame_index": 341,
+      "source_observation_row": 17099,
+      "source_action_row": 17100,
+      "source_time_s": 17.1,
+      "dataset_time_s": 17.05,
+      "state": [
+        -0.8651300072669983,
+        0.508293092250824,
+        1.1845866441726685,
+        1.8000569343566895,
+        -0.3158772885799408,
+        0.4393164813518524,
+        1.141078233718872,
+        0.028190890327095985,
+        -0.028190890327095985
+      ],
+      "first_action": [
+        -0.8651300072669983,
+        0.508293092250824,
+        1.1845866441726685,
+        1.8000569343566895,
+        -0.3158772885799408,
+        0.4393164813518524,
+        1.141078233718872,
+        0.05635000020265579
+      ],
+      "raw_image_shape": [
+        3,
+        256,
+        256
+      ],
+      "raw_image_dtype": "float32",
+      "raw_action_shape": [
+        10,
+        8
+      ],
+      "model_state_shape": [
+        32
+      ],
+      "model_action_shape": [
+        10,
+        32
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "valid_actions": 10,
+      "prompt": "Pick up the cube and hold it above the table.",
+      "video_decode_mean_absolute_error_255": 0.8843790888786316,
+      "action_roundtrip_8d": "PASS"
+    },
+    {
+      "frame_index": 672,
+      "source_observation_row": 33649,
+      "source_action_row": 33650,
+      "source_time_s": 33.65,
+      "dataset_time_s": 33.6,
+      "state": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.05000000074505806,
+        -0.05000000074505806
+      ],
+      "first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.10000000149011612
+      ],
+      "raw_image_shape": [
+        3,
+        256,
+        256
+      ],
+      "raw_image_dtype": "float32",
+      "raw_action_shape": [
+        10,
+        8
+      ],
+      "model_state_shape": [
+        32
+      ],
+      "model_action_shape": [
+        10,
+        32
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "valid_actions": 10,
+      "prompt": "Pick up the cube and hold it above the table.",
+      "video_decode_mean_absolute_error_255": 0.9152272343635559,
+      "action_roundtrip_8d": "PASS"
+    },
+    {
+      "frame_index": 673,
+      "source_observation_row": 33699,
+      "source_action_row": 33700,
+      "source_time_s": 33.7,
+      "dataset_time_s": 33.65,
+      "state": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.05000000074505806,
+        -0.05000000074505806
+      ],
+      "first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.10000000149011612
+      ],
+      "raw_image_shape": [
+        3,
+        256,
+        256
+      ],
+      "raw_image_dtype": "float32",
+      "raw_action_shape": [
+        10,
+        8
+      ],
+      "model_state_shape": [
+        32
+      ],
+      "model_action_shape": [
+        10,
+        32
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "valid_actions": 9,
+      "prompt": "Pick up the cube and hold it above the table.",
+      "video_decode_mean_absolute_error_255": 0.9152272343635559,
+      "action_roundtrip_8d": "PASS"
+    },
+    {
+      "frame_index": 681,
+      "source_observation_row": 34099,
+      "source_action_row": 34100,
+      "source_time_s": 34.1,
+      "dataset_time_s": 34.05,
+      "state": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.05000000074505806,
+        -0.05000000074505806
+      ],
+      "first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.10000000149011612
+      ],
+      "raw_image_shape": [
+        3,
+        256,
+        256
+      ],
+      "raw_image_dtype": "float32",
+      "raw_action_shape": [
+        10,
+        8
+      ],
+      "model_state_shape": [
+        32
+      ],
+      "model_action_shape": [
+        10,
+        32
+      ],
+      "actions_is_pad": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "valid_actions": 1,
+      "prompt": "Pick up the cube and hold it above the table.",
+      "video_decode_mean_absolute_error_255": 0.9152272343635559,
+      "action_roundtrip_8d": "PASS"
+    }
+  ],
+  "all_frame_state_action_alignment": "PASS",
+  "batch": {
+    "real_api": "openpi.training.data_loader.create_torch_data_loader",
+    "framework": "pytorch",
+    "state_shape": [
+      3,
+      32
+    ],
+    "action_shape": [
+      3,
+      10,
+      32
+    ],
+    "image_shape": [
+      3,
+      3,
+      224,
+      224
+    ],
+    "image_layout": "NCHW (pinned OpenPI Observation.from_dict torch branch)",
+    "image_dtype": "torch.float32",
+    "image_range": [
+      -1.0,
+      0.8666666746139526
+    ],
+    "camera_masks": {
+      "base_0_rgb": [
+        true,
+        true,
+        true
+      ],
+      "left_wrist_0_rgb": [
+        false,
+        false,
+        false
+      ],
+      "right_wrist_0_rgb": [
+        false,
+        false,
+        false
+      ]
+    },
+    "token_shape": [
+      3,
+      200
+    ]
+  },
+  "transforms": {
+    "repack": [
+      "RepackTransform"
+    ],
+    "data": [
+      "NeroInputs"
+    ],
+    "model": [
+      "InjectDefaultPrompt",
+      "ResizeImages",
+      "TokenizePrompt",
+      "PadStatesAndActions"
+    ],
+    "skip_norm_stats": true,
+    "no_delta_actions": true,
+    "tail_policy": "LeRobot clips index to final frame, exposes actions_is_pad; repeated values explicitly padding, never new actual actions. Inspect mask before batching; OpenPI Observation discards extra metadata, so future training must exclude padded starts or implement masked loss. No training here.",
+    "training_requirements": "Compute suitable NERO norm stats; exclude padded starts or implement a loss mask. Current DataLoaderImpl drops auxiliary actions_is_pad from model output; preserved and checked on raw/transformed samples."
+  },
+  "versions": {
+    "openpi": "0.1.0",
+    "lerobot": "0.1.0",
+    "torch": "2.7.1",
+    "torchvision": "0.22.1",
+    "datasets": "3.6.0",
+    "pyarrow": "20.0.0",
+    "numpy": "1.26.4",
+    "jax": "0.5.3",
+    "av": "17.0.0",
+    "torchcodec": "0.4.0"
+  },
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "lerobot_commit": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+  "tokenizer_sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+  "code_sha256": {
+    "/data_robot/projects/.worktrees/nero-gripper-lerobot-episode/experiments/dynamics/verify_mvp_openpi.py": "8ed9aabd09ed3d92925d30aedf33351cfbcd8d699e12f3526d9a256002d68dfe",
+    "/data_robot/projects/.worktrees/nero-gripper-lerobot-episode/experiments/dynamics/nero_openpi.py": "538a45ed8de1591194c9ad81defab890b218dfc1c0c99d3e0d08ebd2b603e6e2",
+    "/data_robot/projects/official_pi05_libero/upstream/src/openpi/training/data_loader.py": "4d0b055ac28527c1ab1f0ba7496057722c7c748c88564a8de2ff4fac650e97c9",
+    "/data_robot/projects/official_pi05_libero/upstream/src/openpi/transforms.py": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+    "/data_robot/projects/official_pi05_libero/server-venv/lib/python3.11/site-packages/lerobot/common/datasets/lerobot_dataset.py": "2c56f002392d15f41147f0e635d53cdc31cd04fe676bec6f329206bbea622a0d"
+  },
+  "protocol_sha256": "351806c0269eb49e29294e45ccfdf6cd4e47566a4a79d7cf7cb1a7b3a5d272b6",
+  "dataset_manifest_sha256": "d4d5f36c81cde4917f222afd9fa5ba258f5279e64aa5f0f740d3d32238b8b8f9",
+  "argv": [
+    "experiments/dynamics/verify_mvp_openpi.py",
+    "--output",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020",
+    "--report",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/loader.json"
+  ]
+}
