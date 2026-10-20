@@ -1,0 +1,78 @@
+{
+  "issue": 27,
+  "baseline_commit": "77bd26a58df4eda99f611de7be1013d714ddaa7f",
+  "source_run": "/data_robot/projects/.worktrees/nero-gripper-runtime-partition/debug/issue25/simulation-mvp/smoke_001/R1_smoke",
+  "source_manifest": "/data_robot/projects/.worktrees/nero-gripper-runtime-partition/debug/issue25/simulation-mvp/smoke_001/raw-manifest.json",
+  "source_manifest_sha256": "621f6a3d6de6597a31d6e0cc6ac5d156bc56d5f6045fa2809b16ece60e36d05e",
+  "source_trajectory_sha256": "236b259e7fe2512c89f603e4e7aa2df46bce5410349cad1e0dafcba9815c5ecb",
+  "fps": 20,
+  "source_dt_s": 0.001,
+  "first_observation_s": 0.05,
+  "observation_stride_rows": 50,
+  "observation_rows": "49 + 50*i while row+1 <34150; 682 frames, last row34099",
+  "dataset_timestamp": "i/20, physical origin0.05s; no fabricated physics t=0",
+  "action_source": "requested[observation_row+1], command used over (source_time[k],source_time[k+1]] before slew, not measured future state or force ctrl",
+  "state_names": [
+    "joint1_rad",
+    "joint2_rad",
+    "joint3_rad",
+    "joint4_rad",
+    "joint5_rad",
+    "joint6_rad",
+    "joint7_rad",
+    "gripper_joint1_m",
+    "gripper_joint2_m"
+  ],
+  "action_names": [
+    "joint1_target_rad",
+    "joint2_target_rad",
+    "joint3_target_rad",
+    "joint4_target_rad",
+    "joint5_target_rad",
+    "joint6_target_rad",
+    "joint7_target_rad",
+    "gripper_width_target_m"
+  ],
+  "diagnostics_only": [
+    "command",
+    "physical_target",
+    "ctrl_force_torque",
+    "qvel",
+    "cube_qpos",
+    "phase",
+    "success"
+  ],
+  "camera": {
+    "type": "fixed free MjvCamera",
+    "lookat": [
+      -0.3,
+      0,
+      0.2
+    ],
+    "distance": 0.75,
+    "azimuth": 135,
+    "elevation": -25,
+    "height": 256,
+    "width": 256,
+    "visual_group1": true,
+    "collision_group0": false,
+    "table_group2": true,
+    "fovy": "original model default, record actual scene frustum",
+    "wrist_camera": null
+  },
+  "task": "Pick up the cube and hold it above the table.",
+  "task_source": "post-hoc constant annotation, not controller input",
+  "repo_id": "local/nero_mvp_r1",
+  "horizon": 10,
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "lerobot_commit": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+  "lerobot_format": "v2.1",
+  "tail": "LeRobot clips index to final frame, exposes actions_is_pad; repeated values explicitly padding, never new actual actions. Inspect mask before batching; OpenPI Observation discards extra metadata, so future training must exclude padded starts or implement masked loss. No training here.",
+  "transforms": "NERO absolute targets; no DeltaActions; only external base image true, two zero-valued absent-camera slots false; pad 9D state and8D actions to32; real PI05 model transforms and tokenizer; skip_norm_stats=True for smoke only",
+  "scope": {
+    "new_physics_steps": 0,
+    "new_physics_episodes": 0,
+    "training": false,
+    "hub_upload": false
+  }
+}
