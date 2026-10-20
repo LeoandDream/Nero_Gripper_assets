@@ -11,19 +11,38 @@
 | 机械资产 | 源文件可追溯；运动学、安装关系、质量/惯性、限位及网格边界通过静态核对 |
 | 查看与加载 | 相对路径 MJCF、URDF；可视/碰撞查看与无桌面导图 |
 | 空载关节控制 | 7D 机械臂 + 1D 夹爪绝对位置目标；原生限力执行器与真实 `mj_step` 跟踪通过指定动作验收 |
-| 物理抓取 | 实验性失败候选；尚无通过抬升、保持、穿透及带载双指耦合验收的记录 |
+| 物理抓取 | Simulation MVP 在一次固定 R1 场景通过原抓取及控制健康判据；重复性、偏移任务与泛化尚未验证。旧代理模型的失败记录保留 |
 | 实机保真度 | 尚未验证；不将厂商描述一致性或空载控制结果等同于硬件级物理真实性 |
 
 ## 安装与加载
 
-以下命令对应本次交付候选 `feature/delivery-convergence`；当前 `main` 提供原有静态资产。需要能在 PATH 中调用的 Python 3.11 解释器；若安装时使用其他命令名，将 `python3.11` 替换为该解释器的命令。
+以下命令对应 Draft PR #26 的候选分支 `feature/collision-architecture-v1`；没有合并 `main`。需要能在 PATH 中调用的 Python 3.11 解释器；若安装时使用其他命令名，将 `python3.11` 替换为该解释器的命令。
 
 ```bash
-git clone --depth 1 --branch feature/delivery-convergence https://github.com/LeoandDream/Nero_Gripper_assets.git
+git clone --depth 1 --branch feature/collision-architecture-v1 https://github.com/LeoandDream/Nero_Gripper_assets.git
 cd Nero_Gripper_assets
 python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
+
+### Simulation MVP：可执行控制模型
+
+独立入口 [simulation_mvp.xml](mjcf/simulation_mvp.xml) 已包含桌面、40 mm / 100 g cube、执行器与原 R1 接触配置。它复用原 v2.1 每指346体，双指共692个碰撞 geom；原静态模型、visual、惯性及控制器保留。直接加载无需重新生成网格，也不依赖旧实验工作树。
+
+```bash
+# 加载检查
+.venv/bin/python -c "import mujoco; m=mujoco.MjModel.from_xml_path('mjcf/simulation_mvp.xml'); print(m.ngeom, m.nu)"
+# 带原控制器的交互查看：保持 R1 初始姿态；需要桌面/OpenGL
+.venv/bin/python experiments/dynamics/simulation_mvp.py view
+# 以下输出目录必须尚不存在；static/contact 不积分，smoke 真实运行一次完整 R1
+.venv/bin/python experiments/dynamics/simulation_mvp.py static --output debug/mvp_static_001
+.venv/bin/python experiments/dynamics/diagnose_simulation_mvp.py --output debug/mvp_contacts_001
+.venv/bin/python -m unittest discover -s experiments/dynamics -p test_simulation_mvp.py
+.venv/bin/python experiments/dynamics/simulation_mvp.py smoke --output debug/mvp_smoke_001
+.venv/bin/python experiments/dynamics/verify_simulation_mvp.py --run debug/mvp_smoke_001 --report debug/mvp_verify_001.json --evidence debug/mvp_verify_001.npz
+```
+
+本次工程状态 **`SIMULATION_MVP_ASSET_READY`**：一次34,150步的真实 R1 抓取/抬升/保持/释放完成，hold最低抬升96.146 mm、漂移0.574 mm、双指支持100%、机器人—cube最大穿透0.526 mm。研究级几何认证仍为 **BLOCKED**，局部侧壁法向及 certifier UNKNOWN 未被追认通过。legacy MPR 人工深接触探针的法向异常、释放落桌穿透等限制见[实际测试与证据](reports/nero-gripper-simulation-mvp.md)；不要将一次固定成功推广为成功率或复杂 manipulation 验收。
 
 从仓库根目录加载纯静态参考模型：
 

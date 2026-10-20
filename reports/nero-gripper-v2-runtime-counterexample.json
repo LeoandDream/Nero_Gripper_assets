@@ -1,0 +1,28 @@
+{
+  "point_mm": [
+    6.599999964237212,
+    -64.42487363125,
+    7.798575050000002
+  ],
+  "distance_to_emitted_union_mesh_mm": 7.6915140228709165e-25,
+  "emitted_triangle": 2940,
+  "distance_to_all_original_source_exterior_mm": 0.6199189177381939,
+  "nearest_original_source_face_id": 711,
+  "nearby_convex_halfspace_margins": [
+    {
+      "v2_id": "V20008",
+      "signed_interior_margin_mm": -9.237197673428454e-10
+    },
+    {
+      "v2_id": "V20218",
+      "signed_interior_margin_mm": -8.881784197001252e-16
+    },
+    {
+      "v2_id": "V20221",
+      "signed_interior_margin_mm": -8.881784197001252e-16
+    }
+  ],
+  "finding": "A new emitted closure boundary is >0.05mm from every original source surface, so no frozen C provenance waiver is available.",
+  "limitation": "Opposite near-coincident convex planes meet within floating arithmetic. Independent exterior certification failed: this does not prove a physical millimetre gap or material defect. Distinguishing a literal closure microcrack from a Boolean/numerical pseudo-face remains UNKNOWN.",
+  "geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e"
+}

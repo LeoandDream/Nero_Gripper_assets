@@ -1,0 +1,68 @@
+{
+  "task": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6290781760",
+  "predecessor_commit": "f32cab0e229d9177385df14403e5965aa69a8f0f",
+  "neighborhoods": {
+    "V20157": {
+      "root_ids": [
+        "V20007",
+        "V20019",
+        "V20020",
+        "V20021",
+        "V20151",
+        "V20153",
+        "V20155",
+        "V20157",
+        "V20158",
+        "V20160",
+        "V20204",
+        "V20298",
+        "V20300",
+        "V20301"
+      ],
+      "adjacency_field": "reference_adjacency_v2_ids; undirected union of outgoing/incoming frozen edges",
+      "second_order_expansion": false
+    },
+    "V20291": {
+      "root_ids": [
+        "V20006",
+        "V20146",
+        "V20152",
+        "V20287",
+        "V20288",
+        "V20291",
+        "V20292"
+      ],
+      "adjacency_field": "reference_adjacency_v2_ids; undirected union of outgoing/incoming frozen edges",
+      "second_order_expansion": false
+    },
+    "V20329": {
+      "root_ids": [
+        "V20247",
+        "V20255",
+        "V20259",
+        "V20326",
+        "V20328",
+        "V20329",
+        "V20330"
+      ],
+      "adjacency_field": "reference_adjacency_v2_ids; undirected union of outgoing/incoming frozen edges",
+      "second_order_expansion": false
+    }
+  },
+  "caps": "All 104 original v23 finite caps are included. Thus every relevant intersecting cap is included; disjoint caps have no effect. Screening LP never excludes a cap.",
+  "num_mm": 1e-07,
+  "minimum_inscribed_diameter_mm": 0.1,
+  "infeasibility_required_point_guard": "Only points with certified neighborhood-boundary distance and distance to EVERY finite cap greater than NUM may support INFEASIBLE. Otherwise seek a robust point in the same retained obligation, or UNKNOWN.",
+  "feasibility": "A bounded analytical convex cover must contain the required point and a >=0.1mm certified ball, be continuously contained in the neighborhood root union, and avoid all 104 caps. No runtime asset is emitted.",
+  "search_failure": "UNKNOWN; no inherited root-local verdict",
+  "inputs_sha256": {
+    "nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+    "nero-gripper-entity-partition.json": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+    "nero-gripper-v23-preregistration.json": "10b0423d9a6a9af001d04506facf0b60ab2906ea549f4ee1f9e57894657de0d0",
+    "nero-gripper-v23-split-trace.json.gz": "b4f67cec35343283834476b487a8a3efdb8e050d436241aafc35a5c031b6d309",
+    "nero-gripper-v24-obstructions.json.gz": "9692afbce884570c75279ab87d3d7cfc003e354e3ca4736945bc42d2be26c7d9",
+    "nero-gripper-v24-classification.json": "a51233e0efbebe97dd69c78cc6dcbd97ff919f29f6e06d9513ac7034602413fd",
+    "nero-gripper-v21-fidelity-protocol.json": "d011c13ede9e84a6a57f38747408467ec0e8bacfc244c95fb9e5ea5ed8f79aa5",
+    "nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985"
+  }
+}

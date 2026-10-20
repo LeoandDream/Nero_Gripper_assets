@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "stage": "runtime-oriented semantic partition",
+  "task_comment": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/25#issuecomment-6266903359",
+  "reference_commit": "31081f72d5f8a0b5e5755ce044c4446f607ae11f",
+  "reference_file": "reports/nero-gripper-entity-partition.json",
+  "reference_sha256": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+  "frozen_before_any_merge": true,
+  "units": "mm",
+  "budget": {
+    "maximum_outward_mm": 0.05,
+    "maximum_inward_mm": 0.05,
+    "critical_working_surface_mm": 0.01,
+    "critical_normal_deviation_deg": 0.05,
+    "critical_contour_mm": 0.01,
+    "minimum_entity_inscribed_diameter_mm": 0.1,
+    "minimum_meaningful_feature_mm": 0.1
+  },
+  "rationale": {
+    "source_numeric_scale_mm": {
+      "max_observed_format_vertex_difference": 9.7226e-05,
+      "max_float32_ulp": 7.4506e-06
+    },
+    "existing_penetration_limit_mm": 1.0,
+    "engineering_allocation": "50um is 5% of the existing 1mm penetration scale; 10um critical-face allocation is 1%; 100um minimum entity scale removes literal mesh-scale slivers and remains below millimetre mechanical features. These are geometric approximation budgets, not relaxed physical success criteria."
+  },
+  "protected_features": [
+    "complete main inward face and major root/taper notches",
+    "tip outline and front edge",
+    "ramp and both shoulder facets",
+    "large rear pocket including floor, sidewalls and root bulkhead",
+    "five backing bore passages",
+    "four mount blind recesses and mouths",
+    "central mount through-bore",
+    "mount root slot and 0.15mm side channels"
+  ],
+  "protected_void_rule": "Never merge across a protected void core: retain every named mouth/passage and its connectivity; boundary displacement limited by the geometric budget, and source clearance corridors eroded by 0.05mm must remain empty. Sub-0.1mm source tessellation/micro-warp seams without independent mechanical meaning may be absorbed, explicitly recorded; named real 0.15mm channels stay open. No whole-pocket or whole-hole hull.",
+  "generation": {
+    "method": "One deterministic source- and feature-aware agglomeration from the fixed reference convex cells, replacing accepted adjacent groups with their hull. Same semantic family/source part first; absorb same-family material intersections to avoid duplicate workface ownership. No physical feedback or parameter retries. All error comparisons remain against the frozen source/reference, not the progressively simplified result.",
+    "priority": "Sub-0.1mm cells first, then maximal deterministic geometry-preserving merges; stable semantic/spatial naming. No fixed entity count target.",
+    "conservative_membership": "Keep every reference cell inside the runtime union; no arbitrary deletion. Fully absorbed micro entities lose separate runtime identity, not their material.",
+    "error_prefilter": "Fixed source-surface signed-distance samples and fixed critical-face constraints; geometric budget is the merge criterion. Final error validation may BLOCK the single candidate; do not change budgets after observing results.",
+    "internal_faces": "List complete closed convex surfaces; artificial partition closures must be within the runtime union. Extract actual union exterior for distance checks, not all internal mesh triangles.",
+    "minimum_scale_rule": "Every output entity must have inscribed diameter >=0.1mm. Any remaining thin nonsemantic cell that cannot be absorbed within the frozen budgets causes BLOCKED."
+  },
+  "validation": {
+    "surface_metric": "Bidirectional signed exterior-surface distance to the frozen reference union; report sampled extrema and conservative triangle-covering bounds separately. Quantify critical regions separately.",
+    "covering_radius_mm": 0.005,
+    "critical_covering_radius_mm": 0.001,
+    "topology": "Independent frozen-source mouth/axis/pocket/notch clearance witnesses plus boundary error; never substitute a few cube contacts for preservation.",
+    "status_rule": "FROZEN only if all declared bounds, minimum entity scale and protected mechanical structures are verified. Otherwise BLOCKED with actual generated candidate and explicit failing evidence."
+  },
+  "prohibited": {
+    "mujoco_import": true,
+    "mujoco_collision_query": true,
+    "mj_step": true,
+    "formal_mjcf_generation": true,
+    "active_model_change": true,
+    "physics_or_control_tuning": true,
+    "grasp_or_benchmark": true,
+    "new_issue": true
+  },
+  "created_utc": "2026-10-19T12:32:21.176076+00:00"
+}

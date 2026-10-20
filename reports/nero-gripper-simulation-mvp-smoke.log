@@ -1,0 +1,18 @@
+actual_steps 2000 phase approach contacts 4 wall_s 2.7
+actual_steps 4000 phase approach contacts 4 wall_s 4.4
+actual_steps 6000 phase approach contacts 4 wall_s 6.2
+actual_steps 8000 phase approach contacts 4 wall_s 8.1
+actual_steps 10000 phase close contacts 4 wall_s 9.9
+actual_steps 12000 phase close contacts 4 wall_s 11.7
+actual_steps 14000 phase close contacts 4 wall_s 13.6
+actual_steps 16000 phase close contacts 4 wall_s 15.4
+actual_steps 18000 phase close contacts 4 wall_s 17.3
+actual_steps 20000 phase close contacts 4 wall_s 19.3
+actual_steps 22000 phase lift contacts 10 wall_s 22.1
+actual_steps 24000 phase lift contacts 8 wall_s 24.9
+actual_steps 26000 phase lift contacts 8 wall_s 27.6
+actual_steps 28000 phase lift contacts 8 wall_s 30.2
+actual_steps 30000 phase hold contacts 8 wall_s 32.7
+actual_steps 32000 phase release contacts 4 wall_s 34.6
+actual_steps 34000 phase release contacts 4 wall_s 36.4
+R1_smoke PASS steps 34150 criteria failures []

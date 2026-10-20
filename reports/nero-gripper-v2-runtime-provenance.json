@@ -1,0 +1,112 @@
+{
+  "policy_source": {
+    "commit": "8a5518b37f15678893ca6f540f5ef2edea199ab8",
+    "blob_sha256": "4ffb096f2519fed41d8d45c9c0b4ed3ec4dc781f959d4f0420905ce8b5df999b",
+    "rule_semantics_identical_to_delivery_12e0762": true
+  },
+  "candidate_geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "candidate_frozen_before_verification": {
+    "geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+    "file_sha256": "38889e7ab85d5c06c3369535887cd7e228089459970c9b1a717ca045000a4898",
+    "frozen_before_verification": true,
+    "no_geometry_revisions_authorized_after_this_point": true
+  },
+  "input_sha256": {
+    "reports/nero-gripper-runtime-partition.json": "8da6fdf623e5561cca0e99ac2ad92ac2e3053db9856c44cdca253d0ef0e43f62",
+    "reports/nero-gripper-entity-partition.json": "c8f1e0b4b534786d6ee7de047e94af3eaef55d541405f49986006762fc833b26",
+    "reports/nero-gripper-v2-fidelity-protocol.json": "76c27d01133f5e58252f65093cde921ac86abfc8cd18fa2f05660b91ef5ea985",
+    "reports/nero-gripper-runtime-evidence.json": "a1d14b2e96add3dce96797aa1d45a3a8b025ac10978ae25a08126359fe9b8b8f",
+    "reports/nero-gripper-v2-buried-classification.json": "18af3a076844e0c2d1a8ce4964602ee51674684f85c5d3c67d8c9ccec37a0027",
+    "reports/nero-gripper-collision-sources.json": "2260b862aafa9c21879870a462877b607228a662ace2c11765a7be001c488993"
+  },
+  "project_code_sha256": {
+    "scripts/build_v2_runtime_partition.py": "dd8e742d1433d884941864ad63f02d47c3e85ff5bae1562dfb84728586aba848",
+    "scripts/verify_v2_runtime_partition.py": "b919c4a8cc7c957ffb563ed0272c8ed90a65fecd914099b164e1f0f5f3826039",
+    "scripts/verify_v2_material_voids.py": "b5eabcedd78fa3bb0e2fe0169da5e538df97010f8c0e77d913d83e684ab6da72",
+    "scripts/draw_v2_runtime_partition.py": "2fb32893bb3e7b3dc4398c4661276123359c88f1e515d98f03d64faeec0aa2c9",
+    "scripts/runtime_backing_partition.py": "879ea14542013403f54f45cb465f632d649c503afa8cf4092955ee9801b1b34b",
+    "scripts/runtime_contact_partition.py": "1cfa2cd26ea2464035e699f41af64b62efe6b79555228b94cabbda7562326cbb",
+    "scripts/assemble_runtime_partition.py": "06bd031d4818c58fce81f1d60529dee59583cd6d065bd0b8e34ad2b7686beff4",
+    "scripts/analyze_runtime_partition.py": "3d49b2b59eca55df730deb70027a006111936eeb396e113772ab3217a01d21f2",
+    "scripts/classify_v2_fidelity.py": "579598a0c4efdb8af6a7509084ca95a8089502edce6f0984d4b07085ffb6db3e"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "manifold3d": "3.5.4",
+    "shapely": "2.1.2"
+  },
+  "commands": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B scripts/build_v2_runtime_partition.py",
+      "exit_code": 0,
+      "note": "Exactly one final candidate. Initial offset-oracle triangulation failed before candidate generation; error log retained."
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B scripts/verify_v2_runtime_partition.py",
+      "exit_code": 0,
+      "note": "Verification completes with BLOCKED; intermediate analysis errors/interrupts retained; code corrections never changed candidate geometry."
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B scripts/verify_v2_material_voids.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B scripts/draw_v2_runtime_partition.py",
+      "exit_code": 0
+    }
+  ],
+  "scope": {
+    "candidate_count": 1,
+    "formal_mjcf": 0,
+    "mujoco_imported": false,
+    "mj_step": 0,
+    "grasp": 0,
+    "physics_or_controller_changes": 0,
+    "fidelity_policy_changes": 0
+  },
+  "raw_evidence_directory": "debug/issue25/v2-runtime/",
+  "boolean_primary_source": "https://github.com/elalish/manifold",
+  "geometry_note": "Runtime convex geometry uses metres; Boolean/metric calculations and NPZ surfaces use millimetres. Only analysis projections use fixed precision NUM/16; no candidate vertex/face or source asset was snapped.",
+  "delivery_audit": {
+    "candidate_geometry_unchanged": true,
+    "single_candidate_count": 1,
+    "all_6_recorded_inputs_unchanged": true,
+    "all_19_mechanical_source_inputs_unchanged": true,
+    "protected_other_worktrees_unchanged": 11,
+    "runtime_entities_and_csv_rows": 346,
+    "reference_mapping_entries": 1253,
+    "v1_mapping_entries": 753,
+    "thin_mapping_entries": 129,
+    "C_identities_retired": 74,
+    "old_A_points_checked": 168,
+    "actual_boolean_exterior_triangles": 4372,
+    "minimum_scale_pass": true,
+    "independent_union_exterior_certificate": "FAIL",
+    "scientific_acceptance": "V2_RUNTIME_ENTITY_PARTITION_BLOCKED",
+    "new_scripts_parse_and_forbidden_import_call_check": "PASS",
+    "policy_rule_semantics_unchanged": true,
+    "raw_policy_blob_unchanged": true,
+    "figure_visually_inspected": true
+  },
+  "plot_versions": {
+    "python": "3.11.16",
+    "matplotlib": "3.10.3"
+  },
+  "command_interpreters": {
+    "scientific": "/data_robot/projects/.worktrees/nero-gripper-grasp-diagnosis/.venv/bin/python",
+    "plot": "/data_robot/projects/.experiments/nero-official-contact-audit-20261018/.venv/bin/python"
+  },
+  "evidence_sha256": {
+    "reports/nero-gripper-v2-runtime-comparison.png": "b124dd44ec3a0b691590066c29d1825bfa20d78678cf8b7d2afeeb9f79b35e0d",
+    "reports/nero-gripper-v2-runtime-counterexample.json": "b7a0cd6812f7244435f0d7a8aec602920cdc21be0aa6f90faedf4db761fb9b95",
+    "reports/nero-gripper-v2-runtime-mapping.json": "9a3d7b067e0f098a4be892ee1be2fce759773cd25948e4075c928d0cb8802535",
+    "reports/nero-gripper-v2-runtime-partition.csv": "03f538a0a7399d88668707145d8dd90dff3747722a5dd1aca903497070b7eed8",
+    "reports/nero-gripper-v2-runtime-partition.json": "5510992a35087361101df936ae5e59efc60170f4c5a2812473ab4f7bd8628ae9",
+    "reports/nero-gripper-v2-runtime-partition.md": "b7d4ddd67fda3d685f7f871a913c067488c7f3ab2cbe147769c6920e58ee8a52",
+    "reports/nero-gripper-v2-runtime-verification.json": "766c059f5ac176bbae4e12bad5613527f97ed0cdc744a32ed705ea51b76f6a74",
+    "reports/nero-gripper-v2-material-voids.json": "8d34038a202ea91ee1d2c92f672d64264c3c6303c4dbdc088529ab3bdae8f53e",
+    "reports/nero-gripper-v2-union-exterior.npz": "63ad6cfe15730527ba113bbfaa4be8cb2cdc9b52c9355b6721878d52206660a1"
+  }
+}
