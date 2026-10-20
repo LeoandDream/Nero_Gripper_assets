@@ -1,0 +1,22 @@
+Map:   0%|          | 0/682 [00:00<?, ? examples/s]Map:  25%|██▍       | 169/682 [00:00<00:00, 1661.55 examples/s]Map:  55%|█████▍    | 373/682 [00:00<00:00, 1879.87 examples/s]Map:  91%|█████████ | 620/682 [00:00<00:00, 2145.04 examples/s]Map: 100%|██████████| 682/682 [00:00<00:00, 1929.58 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 22.04ba/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.1.2
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-10)	 64 bit
+Svt[info]: LIB Build date: Jan 24 2026 04:08:14
+Svt[info]: -------------------------------------------
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 305
+Svt[info]: [asm level on system : up to avx512]
+Svt[info]: [asm level selected : up to avx512]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 20 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 8 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 32 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / Variance Boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 				: 0 / 0
+Svt[info]: -------------------------------------------
+LEROBOT_EXPORT_PASS /data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1 682 frames,1 episode
