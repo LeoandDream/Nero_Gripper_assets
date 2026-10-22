@@ -1,7 +1,7 @@
 {
   "issue": 37,
   "scope": "Release engineering only; no new physical integration",
-  "status": "PENDING_GITHUB_ZIP_VALIDATION",
+  "status": "RC_TECHNICAL_READY_LICENSE_PENDING",
   "release": "RELEASE_BLOCKED",
   "license_gate": "BLOCKED_LICENSE_OWNER_DECISION",
   "baselines": {
@@ -73,7 +73,8 @@
         "ngeom": 699,
         "nmesh": 353
       }
-    }
+    },
+    "worktree_with_manifest_digest_binding": "worktree_003.json"
   },
   "historical_evidence": "Original MVP and standalone reports/NPZ/JSON are unchanged; no dynamic rerun",
   "independent_source_review": {
@@ -97,5 +98,105 @@
     "Original Run verifiers require original frozen source seals; RC optional-Git adaptation is not original execution source",
     "Only locked Ubuntu Python3.11/MuJoCo3.2.3 environment checked; installation on new OS/Python not claimed"
   ],
-  "execution_note": "An initial AST check made under a different system-Python AST convention failed before engine use; fingerprints regenerated with locked Python3.11. No physical/model change."
+  "execution_note": "An initial AST check made under a different system-Python AST convention failed before engine use; fingerprints regenerated with locked Python3.11. No physical/model change.",
+  "downloaded_github_snapshot": {
+    "commit": "7ac058568c7f7bbf750b51579c53a2fbe33f9a20",
+    "tree": "98fa82e947572a74f5cdd4c4942bdbae473361e0",
+    "requested_url": "https://codeload.github.com/LeoandDream/Nero_Gripper_assets/zip/7ac058568c7f7bbf750b51579c53a2fbe33f9a20",
+    "resolved_url": "https://codeload.github.com/LeoandDream/Nero_Gripper_assets/zip/7ac058568c7f7bbf750b51579c53a2fbe33f9a20",
+    "download_started_utc": "2026-10-22T22:25:41.829698+00:00",
+    "archive": "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a.zip",
+    "archive_sha256": "6fb051820599c88faa0019a96872631d5ade3f4278786ccd9db03ea7c124a98c",
+    "archive_bytes": 33917265,
+    "extraction": "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a-extracted/Nero_Gripper_assets-7ac058568c7f7bbf750b51579c53a2fbe33f9a20",
+    "files_matching_git_blob": 530,
+    "command": [
+      "/data_robot/projects/nero_gripper_assets/.venv/bin/python",
+      "-B",
+      "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a-extracted/Nero_Gripper_assets-7ac058568c7f7bbf750b51579c53a2fbe33f9a20/scripts/rc_checks.py",
+      "--report",
+      "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a-checks.json"
+    ],
+    "cwd": "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a-extracted/Nero_Gripper_assets-7ac058568c7f7bbf750b51579c53a2fbe33f9a20",
+    "exit_code": 0,
+    "report": "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a-checks.json",
+    "log": "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023/github_snapshot_a.log",
+    "python": "Python 3.11.9",
+    "new_physical_episodes": 0,
+    "report_sha256": "29ab72e6ef61a0b3f084a4dcd76bbbcb4ac9bacd5af6892e022efa72a8a25b08",
+    "status": "RC_TECHNICAL_READY_LICENSE_PENDING",
+    "files": {
+      "selection_entries": 530,
+      "checksum_files": 529,
+      "sha256sum_exit_code": 0,
+      "missing_files": 0,
+      "source_manifest_files": 29,
+      "xml_file_references": 871,
+      "unique_xml_resources": 433,
+      "missing_xml_resources": 0,
+      "absolute_xml_paths": 0,
+      "protected_physics_files": 472,
+      "protected_control_ast": "UNCHANGED",
+      "standalone_control_config": "UNCHANGED",
+      "sha256sums_sha256": "958747ee6a411af535c3b4509a18c3d26249bd618adb7f74aa8be6c96613462b",
+      "file_selection_sha256": "d3fe1ff1e6ecd8c36f71b8af9b5885de86c9e837c95883ad63c44054165dfefa",
+      "checksum_stdout_sha256": "20d73c66a3ea2ced3b7202c0182c15ac336eb20ed2a9ecf043c577d50de1aa83"
+    },
+    "static": {
+      "models": {
+        "mjcf/nero_gripper.xml": {
+          "sha256": "e5585f29fef505f48b90bbf2c7b1b035ee7eac68147d60147399db5993263b4e",
+          "nq": 9,
+          "nv": 9,
+          "nu": 0,
+          "neq": 1,
+          "nbody": 13,
+          "ngeom": 74,
+          "nmesh": 74
+        },
+        "mjcf/simulation_mvp.xml": {
+          "sha256": "db18a44f72ac62d6cd06bc4f9d4a7ef7ea38d36c43b5813064eb51b2f3ca8408",
+          "nq": 16,
+          "nv": 15,
+          "nu": 9,
+          "neq": 1,
+          "nbody": 14,
+          "ngeom": 764,
+          "nmesh": 416
+        },
+        "assets/components/gripper/gripper.xml": {
+          "sha256": "2632f9b7c1d3867966e4bc08f2f4cd4b1146a4a2aef75ba3d01b1462479dd0a1",
+          "nq": 2,
+          "nv": 2,
+          "nu": 2,
+          "neq": 1,
+          "nbody": 5,
+          "ngeom": 699,
+          "nmesh": 353
+        }
+      },
+      "static_tests": 10,
+      "static_test_output": "test_all_internal_contact_qualifications_match_source (test_standalone_gripper.StandaloneGripper.test_all_internal_contact_qualifications_match_source) ... ok\ntest_catalog_real_entries_and_no_planned_placeholders (test_standalone_gripper.StandaloneGripper.test_catalog_real_entries_and_no_planned_placeholders) ... ok\ntest_compiled_mechanics_materials_and_options_match_source (test_standalone_gripper.StandaloneGripper.test_compiled_mechanics_materials_and_options_match_source) ... ok\ntest_installation_frame_transforms_at_three_widths (test_standalone_gripper.StandaloneGripper.test_installation_frame_transforms_at_three_widths) ... ok\ntest_one_dimensional_control_contract_without_integration (test_standalone_gripper.StandaloneGripper.test_one_dimensional_control_contract_without_integration) ... ok\ntest_standalone_structure_and_unchanged_dependencies (test_standalone_gripper.StandaloneGripper.test_standalone_structure_and_unchanged_dependencies) ... ok\ntest_mapping_and_compiled_coordinates (test_simulation_mvp.SimulationMVP.test_mapping_and_compiled_coordinates) ... ok\ntest_only_finger_collision_representation_changed (test_simulation_mvp.SimulationMVP.test_only_finger_collision_representation_changed) ... ok\ntest_missing_git_executable_is_not_a_physical_failure (test_rc_metadata.OptionalGitMetadata.test_missing_git_executable_is_not_a_physical_failure) ... ok\ntest_zip_recording_has_no_fake_git_head (test_rc_metadata.OptionalGitMetadata.test_zip_recording_has_no_fake_git_head) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 2.484s\n\nOK\n",
+      "actual_mj_step_calls": 0,
+      "forbidden_integration_attempts": 0,
+      "mujoco": "3.2.3",
+      "numpy": "1.26.4",
+      "git_directory_present": false,
+      "mvp_recording_head": null,
+      "gripper_recording_head": null,
+      "source_zip_metadata_supported": true
+    }
+  },
+  "final_receipt_policy": "Final documentation-only follow-up commit gets its own GitHub ZIP zero-step receipt in Issue37; no self-referential checksums in this report.",
+  "snapshot_followup_allowed_paths": [
+    "README.md",
+    "reports/issue37-release-candidate.md",
+    "reports/issue37-release-candidate.json",
+    "RC_FILE_SELECTION.json",
+    "SHA256SUMS"
+  ],
+  "reproduce_commands": [
+    "sha256sum -c SHA256SUMS",
+    "python3.11 -B scripts/rc_checks.py --report /tmp/nero-rc-check-new.json"
+  ]
 }

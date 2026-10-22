@@ -6,15 +6,21 @@
 
 ## 获取与安装
 
-当前审查分支（固定快照将在零积分验收后填写）：
+推荐的已验收RC运行快照：`7ac058568c7f7bbf750b51579c53a2fbe33f9a20`（下方固定SHA，非#26旧研究分支）。当前RC后续提交仅补充ZIP验收收据和获取说明，运行文件与该快照完全相同；最终文档树SHA及其下载验收见Issue #37。
 
 ```bash
-git clone --branch release-candidate/nero-gripper-assets-v1 --single-branch https://github.com/LeoandDream/Nero_Gripper_assets.git
-cd Nero_Gripper_assets
+RC_COMMIT=7ac058568c7f7bbf750b51579c53a2fbe33f9a20
+git init Nero_Gripper_assets-rc
+cd Nero_Gripper_assets-rc
+git remote add origin https://github.com/LeoandDream/Nero_Gripper_assets.git
+git fetch --depth 1 origin "$RC_COMMIT"
+git checkout --detach FETCH_HEAD
 python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 sha256sum -c SHA256SUMS
 ```
+
+无Git使用同一固定快照：[GitHub源码ZIP](https://github.com/LeoandDream/Nero_Gripper_assets/archive/7ac058568c7f7bbf750b51579c53a2fbe33f9a20.zip)。下载ZIP SHA256：`6fb051820599c88faa0019a96872631d5ade3f4278786ccd9db03ea7c124a98c`，本次下载33,917,265字节。GitHub可能改变自动压缩表示，最终文件真值以固定commit和解压后的SHA256SUMS为准。A快照中的Issue37报告标记为当时预检状态；ZIP已通过的后续收据在当前分支报告和Issue37中，不代表新增实验。
 
 main目前仍是旧静态资产主线；普通 `git clone` 后不切换到RC并不能获得本页新增入口。源码ZIP解压后也可用，不要求 `.git`、ROS、旧worktree或网络获取模型；安装Python依赖可能需要包索引。共享 `meshes/` 是运行闭包的一部分，**XML单文件不是独立分发包**。
 
