@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/agilexrobotics/agx_arm_sim",
+  "revision": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+  "files": [
+    {
+      "source_path": "mujoco/agilex_arm/agilex_nero/nero.xml",
+      "git_blob": "64f4ac48d1f250c5d0d751ca267f9b74a1c6baf9",
+      "sha256": "7d297b2e138cca902583e219806a38e6c88bf96b6d6ec1bb704ba335338a3b36",
+      "source_url": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/mujoco/agilex_arm/agilex_nero/nero.xml",
+      "historical_snapshot": "56cfb6255825cc61f0fb46d3848c46c2b1f166c2:experiments/dynamics/references/nero.xml"
+    },
+    {
+      "source_path": "mujoco/agilex_arm/agilex_nero/nero_arm.xml",
+      "git_blob": "d4d5edac41dd74b05beb5d17b8959f2f501ccf4a",
+      "sha256": "a8789b0e057d7ad4b3090a7f0fa13d3fba3ab0e3b36ba831ea574c48bd9aee97",
+      "source_url": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/mujoco/agilex_arm/agilex_nero/nero_arm.xml",
+      "historical_snapshot": "56cfb6255825cc61f0fb46d3848c46c2b1f166c2:experiments/dynamics/references/nero_arm.xml"
+    },
+    {
+      "source_path": "Moveit2/nero_gripper_moveit_config/config/nero.srdf",
+      "git_blob": "413dfdf33c16c55022338397233269103cf7e23b",
+      "sha256": "a537005588710a3b0860b29b18a11cae0fe361fb3399f8c3d2248a6d90b79b43",
+      "source_url": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/Moveit2/nero_gripper_moveit_config/config/nero.srdf",
+      "historical_snapshot": "56cfb6255825cc61f0fb46d3848c46c2b1f166c2:experiments/dynamics/references/nero.srdf"
+    }
+  ],
+  "scope": "non-runtime comparison sources; snapshots retained in development evidence and Git history",
+  "snapshots_distributed_in_current_tree": false,
+  "license_scope": "upstream README says MIT; Moveit2 package declares BSD; full notices absent; see licenses/SOURCES.md"
+}

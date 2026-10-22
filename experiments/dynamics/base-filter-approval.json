@@ -1,0 +1,13 @@
+{
+  "accepted": true,
+  "scope": [
+    "base_link",
+    "link1"
+  ],
+  "applies_to": "runtime derived control model only",
+  "source_asset_changed": false,
+  "design_basis": "docs/MODEL.md#相邻碰撞过滤",
+  "comparison_sources": "experiments/dynamics/references/manifest.json",
+  "retained_decision_record": "56cfb6255825cc61f0fb46d3848c46c2b1f166c2:experiments/dynamics/base-filter-approval.json",
+  "other_physical_changes_authorized": false
+}

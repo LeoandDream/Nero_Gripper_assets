@@ -1,0 +1,448 @@
+{
+  "status": "GRIPPER_STANDALONE_READY",
+  "task_url": "https://github.com/LeoandDream/Nero_Gripper_assets/issues/35",
+  "base_commit": "77bd26a58df4eda99f611de7be1013d714ddaa7f",
+  "execution_commit": "ae53de73553dc51919cb287e684280171022b264",
+  "acceptance": {
+    "GRIPPER_STANDALONE_LOAD": "PASS",
+    "GRIPPER_SOURCE_EQUIVALENCE": "PASS",
+    "GRIPPER_EMPTY_LOAD_CONTROL": "PASS",
+    "ASSET_CATALOG": "PASS"
+  },
+  "component_model_sha256": "2632f9b7c1d3867966e4bc08f2f4cd4b1146a4a2aef75ba3d01b1462479dd0a1",
+  "component_manifest_sha256": "ac8cee9ae79a2a7e1c423be79eaf831ea7a256ea25ebb3f945caa766949647e9",
+  "runtime_file_count": 358,
+  "source_inputs_sha256": {
+    "mjcf/simulation_mvp.xml": "db18a44f72ac62d6cd06bc4f9d4a7ef7ea38d36c43b5813064eb51b2f3ca8408",
+    "mjcf/simulation_mvp.manifest.json": "bde4af23093b5504267793ca3d30684df97ea25be221f1a960ea0953cd8cc923",
+    "experiments/dynamics/config.json": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+    "experiments/dynamics/controller.py": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182"
+  },
+  "source_geometry_sha256": "79bef01f443035c6db2213c0e73531c079cdb97762361e682d7c9d052edac84e",
+  "mechanical_and_collision_meshes_generated": 0,
+  "static": {
+    "passed": true,
+    "tests_run": 6,
+    "results": {
+      "contact_qualification": {
+        "unordered_geom_pairs": 243951,
+        "eligible_pairs": 119716,
+        "mismatches": 0,
+        "source_excludes": 1,
+        "component_excludes": 2,
+        "policy": "Preserve source parent filtering; finger-to-finger eligibility remains enabled"
+      },
+      "catalog": {
+        "actual_components": 1,
+        "actual_assembly_indexes": 1,
+        "actual_scene_indexes": 1,
+        "planned_assets_created": 0
+      },
+      "compiled_source_equivalence": {
+        "bodies": 3,
+        "joints": 2,
+        "equality": 1,
+        "actuators": 2,
+        "geoms": 699,
+        "meshes": 353,
+        "materials": 3,
+        "exact": true
+      },
+      "frame_equivalence": {
+        "widths_m": [
+          0.0,
+          0.04,
+          0.1
+        ],
+        "geoms_per_width": 699,
+        "max_position_error_m": 2.220446049250313e-16,
+        "max_rotation_matrix_error": 1.6653345369377348e-15,
+        "static_contacts": [
+          {
+            "width_m": 0.0,
+            "standalone_ncon": 2,
+            "pairs": [
+              [
+                "gripper_link1",
+                "gripper_link2"
+              ]
+            ],
+            "max_penetration_m": 1.5405372007069763e-10
+          },
+          {
+            "width_m": 0.04,
+            "standalone_ncon": 0,
+            "pairs": [],
+            "max_penetration_m": 0.0
+          },
+          {
+            "width_m": 0.1,
+            "standalone_ncon": 0,
+            "pairs": [],
+            "max_penetration_m": 0.0
+          }
+        ]
+      },
+      "control_contract": {
+        "kp_N_m": 800,
+        "native_kv_Ns_m": 8,
+        "force_limit_N": 10,
+        "slew_m_s": 0.03,
+        "command_period_s": 0.01,
+        "timestep_s": 0.001,
+        "no_integration": true
+      },
+      "load": {
+        "nq": 2,
+        "nv": 2,
+        "nu": 2,
+        "neq": 1,
+        "ngeom": 699,
+        "nmesh": 353,
+        "nbody": 5
+      }
+    }
+  },
+  "empty_load": {
+    "status": "PASS",
+    "actual_mj_steps": 9500,
+    "simulation_time_s": 9.500000000000174,
+    "wall_s": 5.778152105864137,
+    "error": null,
+    "phases": [
+      {
+        "name": "open",
+        "target_width_m": 0.1,
+        "duration_s": 1.2,
+        "settled_max_finger_error_m": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17
+        ],
+        "passed": true
+      },
+      {
+        "name": "middle",
+        "target_width_m": 0.04,
+        "duration_s": 2.5,
+        "settled_max_finger_error_m": [
+          3.469446951953614e-18,
+          3.469446951953614e-18
+        ],
+        "passed": true
+      },
+      {
+        "name": "close",
+        "target_width_m": 0.0,
+        "duration_s": 1.9,
+        "settled_max_finger_error_m": [
+          5.224377251154763e-11,
+          5.2243772336805384e-11
+        ],
+        "passed": true
+      },
+      {
+        "name": "reopen",
+        "target_width_m": 0.1,
+        "duration_s": 3.9,
+        "settled_max_finger_error_m": [
+          6.938893903907228e-18,
+          6.938893903907228e-18
+        ],
+        "passed": true
+      }
+    ],
+    "max_coupling_error_m": 2.0631562639923434e-13,
+    "max_finger_velocity_m_s": 0.016906790520638655,
+    "max_actuator_force_N": 0.09090909748053774,
+    "max_joint_limit_violation_m": 1.8064545185686454e-06,
+    "max_penetration_m": 3.412747002927362e-06,
+    "max_contacts": 5,
+    "max_solver_niter": 2,
+    "warning_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qpos_writes_during_execution": 0,
+    "external_force_shortcuts": false,
+    "verification_scope": "Standalone fixed mount, empty-load control only; no grasp/dual-arm/hardware certification"
+  },
+  "offline_reduction": {
+    "passed": true,
+    "offline_only": true,
+    "actual_new_mj_steps": 0,
+    "recorded_physics_samples": 9500,
+    "max_coupling_error_m": 2.0631562639923434e-13,
+    "max_finger_velocity_m_s": 0.016906790520638655,
+    "max_actuator_force_N": 0.09090909748053774,
+    "phases": [
+      {
+        "name": "open",
+        "settled_max_finger_error_m": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17
+        ]
+      },
+      {
+        "name": "middle",
+        "settled_max_finger_error_m": [
+          3.469446951953614e-18,
+          3.469446951953614e-18
+        ]
+      },
+      {
+        "name": "close",
+        "settled_max_finger_error_m": [
+          5.224377251154763e-11,
+          5.2243772336805384e-11
+        ]
+      },
+      {
+        "name": "reopen",
+        "settled_max_finger_error_m": [
+          6.938893903907228e-18,
+          6.938893903907228e-18
+        ]
+      }
+    ],
+    "input_manifest_verified": true,
+    "run_output_manifest_verified": true,
+    "command_rate_and_timing_verified": true,
+    "phase_boundaries_verified": true,
+    "warning_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "external_applied_forces_zero": true
+  },
+  "max_finger_error_to_slew_target_m": 0.00020841320266778984,
+  "frozen_control": {
+    "finger_kp_N_m": 800,
+    "finger_kv_Ns_m": 8,
+    "finger_force_limit_N": 10,
+    "gripper_command_slew_m_s": 0.03,
+    "command_period_s": 0.01,
+    "timestep_s": 0.001,
+    "initial_width_m": 0.08,
+    "acceptance": {
+      "settled_finger_error_m": 0.0005,
+      "maximum_coupling_error_m": 0.0002,
+      "maximum_finger_velocity_m_s": 0.1,
+      "require_no_numerical_warnings_or_time_resets": true
+    }
+  },
+  "protocol": {
+    "initial_width_m": 0.08,
+    "sequence": [
+      [
+        "open",
+        0.1,
+        1.2
+      ],
+      [
+        "middle",
+        0.04,
+        2.5
+      ],
+      [
+        "close",
+        0.0,
+        1.9
+      ],
+      [
+        "reopen",
+        0.1,
+        3.9
+      ]
+    ],
+    "control": {
+      "finger_kp_N_m": 800,
+      "finger_kv_Ns_m": 8,
+      "finger_force_limit_N": 10,
+      "gripper_command_slew_m_s": 0.03,
+      "command_period_s": 0.01,
+      "timestep_s": 0.001,
+      "initial_width_m": 0.08,
+      "acceptance": {
+        "settled_finger_error_m": 0.0005,
+        "maximum_coupling_error_m": 0.0002,
+        "maximum_finger_velocity_m_s": 0.1,
+        "require_no_numerical_warnings_or_time_resets": true
+      }
+    },
+    "settled_window_s": 0.25,
+    "maximum_physical_sequences": 1,
+    "expected_mj_steps": 9500
+  },
+  "execution": {
+    "argv": [
+      "/data_robot/projects/nero_gripper_assets/.venv/bin/python",
+      "-B",
+      "examples/gripper_control.py",
+      "--output",
+      "/data_robot/projects/.experiments/nero-gripper-standalone-issue35-20261023/empty_001"
+    ],
+    "cwd": "/data_robot/projects/.worktrees/nero-gripper-standalone",
+    "source_commit": "ae53de73553dc51919cb287e684280171022b264",
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "maximum_new_physical_sequences": 1,
+    "exit_code": 0,
+    "wall_s": 6.839977904222906
+  },
+  "environment": {
+    "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "pillow": "11.2.1"
+  },
+  "original_before_run_seal_sha256": "cce22308344d6370102eb377b0bf1cfe5974110e24e583dc2a59c75660caddf4",
+  "raw_directory": "/data_robot/projects/.experiments/nero-gripper-standalone-issue35-20261023",
+  "raw_files": {
+    "empty_001/before-run.json": {
+      "bytes": 42733,
+      "sha256": "cce22308344d6370102eb377b0bf1cfe5974110e24e583dc2a59c75660caddf4"
+    },
+    "empty_001/files.json": {
+      "bytes": 767,
+      "sha256": "54fa05f4e6dbd1c8e634d7a53c446fb54f0c31d131faef066d3b23194eeece9f"
+    },
+    "empty_001/opening.png": {
+      "bytes": 31391,
+      "sha256": "9376bcc6805264694486fd20fcc4da4ee9a2cc1b2e6cf66fe83ac3a22039b850"
+    },
+    "empty_001/protocol.json": {
+      "bytes": 774,
+      "sha256": "4453e0bb4c83ed2a35c06727e486536014076963ece1420776c116cd9a897002"
+    },
+    "empty_001/result.json": {
+      "bytes": 1609,
+      "sha256": "cc09e620293e8613f2566f080e19a31aeea8f3d4e23c0890fa9a12cca9c148e5"
+    },
+    "empty_001/script.executed.py": {
+      "bytes": 10958,
+      "sha256": "95538b1ca6964057ef8164a5a230a4472248e0800e1a846473360cf2ea1160cb"
+    },
+    "empty_001/trajectory.npz": {
+      "bytes": 220622,
+      "sha256": "6811112a0aae78796feaf8216df2d65f227e3655f4e516dade709fd0e93b6b5c"
+    },
+    "empty_001-command.json": {
+      "bytes": 466,
+      "sha256": "25394a561ff8436e18272ae75193ccf0c5ac0c87582f9c97e7b6c7cb5cf50c6e"
+    },
+    "empty_001-execution.json": {
+      "bytes": 515,
+      "sha256": "7cf8239a072effe054fd237b34b10c192e9cc81e25c58003ca37574f9119f67a"
+    },
+    "empty_001.log": {
+      "bytes": 1898,
+      "sha256": "08b9852ce41f15288872a0fee37d15d47acee04f43e66ef9b661ba855f5c2b7c"
+    },
+    "offline_001.json": {
+      "bytes": 1052,
+      "sha256": "2f90427294d526257bea8c1d1ee1d6b6196d370e492c3e939c8ad0f85ceab3f4"
+    },
+    "offline_002.json": {
+      "bytes": 1129,
+      "sha256": "590b5365d1e6850eb3ab3174ec1d15b06ecdb9a55cfd63261c99346ceded9114"
+    },
+    "static_001.json": {
+      "bytes": 2184,
+      "sha256": "ff0f949881730d3924d26d241a80ba3e1de7422b7c9213b3ae0ad284fd23337e"
+    },
+    "static_002-command.json": {
+      "bytes": 340,
+      "sha256": "f222f546caae66a0f6f0b84cbf3eac35449933e1e2d6c08d58349aa3f2e3e13d"
+    },
+    "static_002-execution.json": {
+      "bytes": 53,
+      "sha256": "a7466cd2678843a5e447e1e78e8dc862b49f2c4e5ce64f42302fc22cdfd60c64"
+    },
+    "static_002.json": {
+      "bytes": 1878,
+      "sha256": "2a36d7965b0ad1c69baa5504f10ee4c7050401c4f9c50b35b4844bbf0b540ff6"
+    },
+    "static_002.log": {
+      "bytes": 972,
+      "sha256": "04b30d3eeeed50361ccee640ca5f4ca9ef2d76c1cbf26399fc927fc19c1d585b"
+    },
+    "static_initial_fixed_root/gripper.xml": {
+      "bytes": 156309,
+      "sha256": "560d53f3ccc07db85ac51bbf282d9d1a0af4380ff5af0a29186de7c8f25d1c6e"
+    },
+    "static_initial_fixed_root/manifest.json": {
+      "bytes": 70473,
+      "sha256": "12a06248e25b70767f82d2f641b6076e2632f29d3d738c174453a564ccf6086d"
+    },
+    "static_initial_fixed_root/note.json": {
+      "bytes": 535,
+      "sha256": "b15eda8c9fbc3d9e3027d7a98b7a2c6a0534315822b5e93026ac3c38ff954330"
+    }
+  },
+  "archived_initial_static": {
+    "status": "STATIC_CONTACT_EQUIVALENCE_FAIL",
+    "physical_steps": 0,
+    "old_parameter_only_tests_passed": true,
+    "qualification_mismatch_pairs": 2768,
+    "raw_note": "static_initial_fixed_root/note.json",
+    "initial_geometry_penetration_m": 0.021663092208017976,
+    "explanation": "Fixed-world weld changed parent filter, not mesh geometry; recovered source eligibility with 2 explicit body excludes"
+  },
+  "scope": {
+    "new_physical_sequences": 1,
+    "new_mj_steps": 9500,
+    "old_r1_rerun": false,
+    "frozen_models_meshes_and_controllers_unchanged": true,
+    "portable_package_unchanged": true,
+    "training_data_or_weights_changed": false,
+    "dual_arm_implemented": false,
+    "physics_tuning": false,
+    "acceptance_thresholds_changed": false,
+    "source_exact_control_parameters": true
+  },
+  "inherited_status": {
+    "fixed_R1": "PASS - inherited, not rerun",
+    "research_geometry": "BLOCKED",
+    "long_hold": "UNKNOWN",
+    "standalone_grasp": "UNVERIFIED",
+    "dual_arm": "PLANNED",
+    "hardware_fidelity": "UNKNOWN"
+  },
+  "artifacts": {
+    "issue35-gripper-trajectory.npz": {
+      "sha256": "6811112a0aae78796feaf8216df2d65f227e3655f4e516dade709fd0e93b6b5c",
+      "bytes": 220622
+    },
+    "issue35-gripper-control.png": {
+      "sha256": "9376bcc6805264694486fd20fcc4da4ee9a2cc1b2e6cf66fe83ac3a22039b850",
+      "bytes": 31391
+    },
+    "issue35-gripper-control.log": {
+      "sha256": "08b9852ce41f15288872a0fee37d15d47acee04f43e66ef9b661ba855f5c2b7c",
+      "bytes": 1898
+    }
+  },
+  "manifest_self_sealed_separately": true,
+  "total_project_runtime_files_including_manifest": 359,
+  "final_readonly_review": {
+    "blocking_findings": 0,
+    "original_runtime_inputs_unchanged": true,
+    "stage_boundary_command_reconstruction_max_error_m": 0,
+    "no_additional_integration": true,
+    "notes": "CPU verifier extended to cover phase boundaries and sealed input hashes; verified offline only"
+  }
+}

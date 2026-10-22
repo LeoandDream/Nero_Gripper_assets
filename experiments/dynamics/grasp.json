@@ -1,0 +1,83 @@
+{
+  "protocol_version": 2,
+  "cube": {
+    "center": [
+      -0.32,
+      0,
+      0.15
+    ],
+    "half_size": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "mass_kg": 0.1,
+    "friction": [
+      1,
+      0.005,
+      0.0001
+    ],
+    "table": {
+      "center": [
+        -0.32,
+        0,
+        0.065
+      ],
+      "half_size": [
+        0.12,
+        0.12,
+        0.065
+      ]
+    }
+  },
+  "initial_conditions": [
+    {
+      "id": "fixed",
+      "offset_xy_m": [
+        0,
+        0
+      ],
+      "yaw_rad": 0
+    },
+    {
+      "id": "offset_positive",
+      "offset_xy_m": [
+        0.003,
+        0.003
+      ],
+      "yaw_rad": 0.03490658503988659
+    },
+    {
+      "id": "offset_negative",
+      "offset_xy_m": [
+        -0.003,
+        -0.003
+      ],
+      "yaw_rad": -0.03490658503988659
+    }
+  ],
+  "initialization": "Legal reset at planned pregrasp pose 0.10m above cube, source width0.08m; subsequent opening, approach, closing, lift, hold and release use actual mj_step only",
+  "site_definition": "Nonphysical grasp_center=gripper_base local[0,0,0.12]m, chosen from source finger z_max0.138m and cube halfheight0.02m for nominal2mm table clearance; not calibrated hardware TCP",
+  "pregrasp_height_m": 0.1,
+  "lift_height_m": 0.1,
+  "vertical_waypoint_count": 5,
+  "open_width_m": 0.1,
+  "close_width_rate_m_s": 0.005,
+  "maximum_close_duration_s": 20,
+  "contact_trigger_force_N_each": 0.2,
+  "hold_compression_target_force_N_each": 1.5,
+  "compression_rule": "Position compression equivalent only, not calibrated force: width_target=(qfinger1-qfinger2)-2*1.5N/800NperM after bilateral contact; actual force logged",
+  "criteria": {
+    "minimum_lift_m": 0.08,
+    "hold_duration_s": 2.0,
+    "maximum_hold_drift_m": 0.01,
+    "minimum_bilateral_contact_fraction": 0.95,
+    "minimum_finger_normal_force_N": 0.05,
+    "maximum_robot_object_penetration_m": 0.001
+  },
+  "repeat_rule": "Run fixed first; only if it passes, execute both predeclared offsets. No changes to object, contact parameters or criteria after first attempt. All interrupted/failed attempts retained.",
+  "contact_parameters": "Source robot friction/solref/solimp/masks/equality unchanged; cube and table use MuJoCo default contact softness, cube friction explicitly stated; sole approved exclusion base_link/link1",
+  "expert_peak_joint_target_speed_rad_s": 0.05,
+  "expert_motion": "Synchronized cosine interpolation of7absolute joint targets at100Hz with0.05rad/s peak reference speed; existing actuator gains/limits unchanged",
+  "revision_reason": "v1 physical attempt retained as FAIL. Actual steady contact force~0.70N per finger and lateral TCP excursions~1.3mm during asymmetric target slews preceded slip. One conventional expert reference refinement; object, contact, gains, equality and acceptance thresholds unchanged. No further physics patches without confirmation."
+}
