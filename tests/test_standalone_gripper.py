@@ -204,15 +204,83 @@ class StandaloneGripper(unittest.TestCase):
             planned_assets_created=0)
 
 
+def check_saved_run(directory):
+    """Independent NumPy reduction of the only recorded physical sequence."""
+    data = np.load(directory/'trajectory.npz')
+    protocol = json.loads((directory/'protocol.json').read_text())
+    result = json.loads((directory/'result.json').read_text())
+    seal = json.loads((directory/'before-run.json').read_text())
+    assert hashlib.sha256((directory/'script.executed.py').read_bytes()).hexdigest() == seal['script_sha256']
+    assert hashlib.sha256((COMPONENT/'manifest.json').read_bytes()).hexdigest() == seal['manifest_sha256']
+    for name,expected in seal['runtime_files_sha256'].items():
+        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==expected,name
+    for name,record in json.loads((directory/'files.json').read_text()).items():
+        content=(directory/name).read_bytes()
+        assert hashlib.sha256(content).hexdigest()==record['sha256'] and len(content)==record['bytes']
+    dt=protocol['control']['timestep_s']; limits=protocol['control']['acceptance']
+    t,q,v=data['time'],data['qpos'],data['qvel']
+    assert len(t)==result['actual_mj_steps']==protocol['expected_mj_steps']==9500
+    np.testing.assert_allclose(t,np.arange(1,len(t)+1)*dt,rtol=0,atol=1e-10)
+    assert q.shape==v.shape==(9500,2)
+    for name in data.files:
+        if data[name].dtype.kind in 'fiu':assert np.isfinite(data[name]).all(),name
+    assert not data['qfrc_applied'].any() and not data['xfrc_applied'].any()
+    assert result['qpos_writes_during_execution']==0 and not any(result['warning_counts'])
+    phases=[]; start=0; expected_commands=[]; command=protocol['initial_width_m']
+    period=round(protocol['control']['command_period_s']/dt)
+    for name,width,duration in protocol['sequence']:
+        n=round(duration/dt); stop=start+n
+        assert np.all(data['phase'][start:stop]==name)
+        np.testing.assert_array_equal(data['requested_width'][start:stop],np.full(n,width))
+        target=np.array([width/2,-width/2])
+        error=np.max(abs(q[stop-round(.25/dt):stop]-target),axis=0)
+        assert np.max(error)<=limits['settled_finger_error_m']
+        delta=np.diff(data['command_width'][start:stop])
+        changes=np.flatnonzero(abs(delta)>1e-14)+1
+        assert np.all(changes%period==0)
+        assert np.max(abs(delta))<=protocol['control']['gripper_command_slew_m_s']*period*dt+1e-14
+        for k in range(n):
+            if k%period==0:
+                step=protocol['control']['gripper_command_slew_m_s']*protocol['control']['command_period_s']
+                command+=float(np.clip(width-command,-step,step))
+            expected_commands.append(command)
+        phases.append(dict(name=name,settled_max_finger_error_m=error.tolist()))
+        start=stop
+    assert start==len(t)
+    np.testing.assert_allclose(data['command_width'],expected_commands,rtol=0,atol=1e-14)
+    assert np.all((data['command_width']>=0)&(data['command_width']<=.1))
+    coupling=float(np.max(abs(q.sum(axis=1))))
+    velocity=float(np.max(abs(v))); force=float(np.max(abs(data['actuator_force'])))
+    assert coupling<=limits['maximum_coupling_error_m']
+    assert velocity<=limits['maximum_finger_velocity_m_s']
+    assert force<=protocol['control']['finger_force_limit_N']+1e-9
+    assert result['status']=='PASS'
+    for key,value in [('max_coupling_error_m',coupling),('max_finger_velocity_m_s',velocity),('max_actuator_force_N',force)]:
+        assert result[key]==value
+    for original,reduced in zip(result['phases'],phases):
+        np.testing.assert_array_equal(original['settled_max_finger_error_m'],reduced['settled_max_finger_error_m'])
+    return dict(passed=True,offline_only=True,actual_new_mj_steps=0,recorded_physics_samples=len(t),
+        max_coupling_error_m=coupling,max_finger_velocity_m_s=velocity,max_actuator_force_N=force,
+        phases=phases,input_manifest_verified=True,run_output_manifest_verified=True,
+        command_rate_and_timing_verified=True,phase_boundaries_verified=True,
+        warning_counts=result['warning_counts'],external_applied_forces_zero=True)
+
+
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
+    parser.add_argument('--run', type=Path, help='Only reduce an existing run; no model load/integration')
     args = parser.parse_args()
-    outcome = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(StandaloneGripper))
+    if args.run:
+        payload=check_saved_run(args.run)
+    else:
+        outcome = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(StandaloneGripper))
+        payload=dict(passed=outcome.wasSuccessful(),tests_run=outcome.testsRun,results=RESULTS)
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         with args.report.open('x') as f:
-            json.dump(dict(passed=outcome.wasSuccessful(), tests_run=outcome.testsRun, results=RESULTS), f, indent=2)
+            json.dump(payload, f, indent=2)
             f.write('\n')
-    raise SystemExit(0 if outcome.wasSuccessful() else 1)
+    if args.run:print(json.dumps(payload))
+    raise SystemExit(0 if payload['passed'] else 1)

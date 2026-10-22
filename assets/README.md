@@ -4,7 +4,7 @@
 
 | 层级 | 入口 | 实际状态与依赖 |
 |---|---|---|
-| components | [独立 Gripper](components/gripper/README.md) · [gripper.xml](components/gripper/gripper.xml) | PENDING Issue35静态及一次空载控制；2 slide / 1 equality / 2原生执行器，复用692个手指geom |
+| components | [独立 Gripper](components/gripper/README.md) · [gripper.xml](components/gripper/gripper.xml) | **GRIPPER_STANDALONE_READY**，仅静态+一次空载控制；2 slide / 1 equality / 2原生执行器，复用692个手指geom；[实测报告](../reports/issue35-standalone-gripper.md) |
 | assemblies | [NERO + Gripper](assemblies/nero_gripper/README.md) | 现有整机；静态参考为原 `mjcf/nero_gripper.xml`，可执行联合入口为原 `mjcf/simulation_mvp.xml`。仅固定R1工程READY；研究几何认证BLOCKED，长保持UNKNOWN |
 | scenes | [R1 cube grasp](scenes/r1_cube_grasp/README.md) | 现有冻结桌面/cube场景；保留原固定R1 PASS及接触限制，不在本轮重跑 |
 
