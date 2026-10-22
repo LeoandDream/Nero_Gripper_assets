@@ -1,0 +1,428 @@
+{
+  "status": "NERO_TRAINING_DATA_PREP_READY",
+  "VALID_CHUNK_SAMPLING": "PASS",
+  "NERO_NORM_STATS": "PASS",
+  "NORMALIZED_OPENPI_LOADER": "PASS",
+  "original_frames": 682,
+  "valid_starts": 673,
+  "start_range": [
+    0,
+    672
+  ],
+  "horizon": 10,
+  "statistics_counts": {
+    "state": 673,
+    "actions": 6730
+  },
+  "stats_path": "/data_robot/projects/.experiments/nero-training-data-issue27-20261023/prep_001/stats/norm_stats.json",
+  "stats_sha256": "59b12d0aa10aa116018cd8d8c0d1d0615fdb85e7a45ac3bc61d647c33a31ff26",
+  "stats_dimensions": {
+    "state": 9,
+    "actions": 8
+  },
+  "use_quantile_norm": true,
+  "skip_norm_stats": false,
+  "real_apis": [
+    "create_torch_dataset",
+    "transform_dataset(skip_norm_stats=False)",
+    "TorchDataLoader",
+    "DataLoaderImpl"
+  ],
+  "reusable_training_entry": "nero_training_data.create_training_loader(stats_directory,model_config,...)",
+  "complete_batches_seen": 673,
+  "batch_size": 1,
+  "tail_padding_count": 0,
+  "selected_raw_chunks": [
+    {
+      "start": 0,
+      "action_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "start": 336,
+      "action_indices": [
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "start": 672,
+      "action_indices": [
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681
+      ],
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "selected_batches": [
+    {
+      "start": 0,
+      "action_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "state_shape": [
+        1,
+        32
+      ],
+      "action_shape": [
+        1,
+        10,
+        32
+      ],
+      "image_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "image_dtype": "torch.float32",
+      "state_dtype": "torch.float64",
+      "action_dtype": "torch.float64",
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "normalized_first_action": [
+        1.0003684469557577,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0003796987291396,
+        -1.0,
+        1.0003938220853512,
+        0.3771103342550117
+      ],
+      "restored_first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.0801122859120369
+      ],
+      "physical_first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.0801122859120369
+      ]
+    },
+    {
+      "start": 336,
+      "action_indices": [
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345
+      ],
+      "state_shape": [
+        1,
+        32
+      ],
+      "action_shape": [
+        1,
+        10,
+        32
+      ],
+      "image_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "image_dtype": "torch.float32",
+      "state_dtype": "torch.float64",
+      "action_dtype": "torch.float64",
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "normalized_first_action": [
+        -0.563344809710062,
+        1.0003912735124345,
+        1.00038602613018,
+        1.0003924911624344,
+        -1.0,
+        1.0003903323003431,
+        -1.0,
+        -0.32839914840124484
+      ],
+      "restored_first_action": [
+        -0.8651300072669983,
+        0.508293092250824,
+        1.1845866441726685,
+        1.8000569343566895,
+        -0.3158772885799408,
+        0.4393164813518524,
+        1.141078233718872,
+        0.0575999990105629
+      ],
+      "physical_first_action": [
+        -0.8651300072669983,
+        0.508293092250824,
+        1.1845866441726685,
+        1.8000569343566895,
+        -0.3158772885799408,
+        0.4393164813518524,
+        1.141078233718872,
+        0.0575999990105629
+      ]
+    },
+    {
+      "start": 672,
+      "action_indices": [
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681
+      ],
+      "state_shape": [
+        1,
+        32
+      ],
+      "action_shape": [
+        1,
+        10,
+        32
+      ],
+      "image_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "image_dtype": "torch.float32",
+      "state_dtype": "torch.float64",
+      "action_dtype": "torch.float64",
+      "actions_is_pad": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "normalized_first_action": [
+        1.0003684469557577,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0003796987291396,
+        -1.0,
+        1.0003938220853512,
+        1.0003687348836374
+      ],
+      "restored_first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.10000000149011612
+      ],
+      "physical_first_action": [
+        -0.8156872391700745,
+        0.281098335981369,
+        1.0422213077545166,
+        1.5364080667495728,
+        -0.21770979464054108,
+        0.23405911028385162,
+        1.4607995748519897,
+        0.10000000149011612
+      ]
+    }
+  ],
+  "roundtrip_max_per_dimension": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "roundtrip_tolerance_per_dimension": [
+    1e-06,
+    1e-06,
+    1e-06,
+    1e-06,
+    1e-06,
+    1e-06,
+    1e-06,
+    1e-08
+  ],
+  "normalized_action_min": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "normalized_action_max": [
+    1.0003684469557577,
+    1.0003912735124345,
+    1.00038602613018,
+    1.0003924911624344,
+    1.0003796987291396,
+    1.0003903323003431,
+    1.0003938220853512,
+    1.0003687348836374
+  ],
+  "actual_normalization_applied": true,
+  "physical_clipping": false,
+  "camera_masks": {
+    "base_0_rgb": true,
+    "left_wrist_0_rgb": false,
+    "right_wrist_0_rgb": false
+  },
+  "prompt": "Pick up the cube and hold it above the table.",
+  "input_sha256_unchanged": {
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/dataset-manifest.json": "d4d5f36c81cde4917f222afd9fa5ba258f5279e64aa5f0f740d3d32238b8b8f9",
+    "/data_robot/projects/official_pi05_libero/cache/openpi/big_vision/paligemma_tokenizer.model": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/videos/chunk-000/observation.images.base/episode_000000.mp4": "867d070fff87416619c18d589d248070cee5a1d2e2d7c3db6a0c91c5d94d2f3d",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/data/chunk-000/episode_000000.parquet": "b5878a7eb170b0774a0a10869583f498f6d661ce809849867f98a0e90827ee07",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/info.json": "8ee768ec50a1147d19b3effd68577cc01fffd2b408f19c8faf0fba1dd663435b",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/tasks.jsonl": "11187bdd71e9d471f38828e8ce7873ddf42aacb410ef581b3c14de60e484aea7",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/episodes.jsonl": "2cf7d5f8b6df31ff8d56a80b30ca0f8b54ead06c27415a5eb692f5c9322476c0",
+    "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/episodes_stats.jsonl": "408a94cde677c776ddf2fd3dec183232494c73079696bc9149e5486c7c153266",
+    "/data_robot/projects/official_pi05_libero/upstream/src/openpi/training/data_loader.py": "4d0b055ac28527c1ab1f0ba7496057722c7c748c88564a8de2ff4fac650e97c9",
+    "/data_robot/projects/official_pi05_libero/upstream/src/openpi/shared/normalize.py": "6c2cea4946fb07e51801530400d2b2fd94730e195cd290d6b6960114eca9739d",
+    "/data_robot/projects/official_pi05_libero/upstream/src/openpi/transforms.py": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+    "/data_robot/projects/official_pi05_libero/server-venv/lib/python3.11/site-packages/lerobot/common/datasets/lerobot_dataset.py": "2c56f002392d15f41147f0e635d53cdc31cd04fe676bec6f329206bbea622a0d",
+    "/data_robot/projects/official_pi05_libero/upstream/scripts/compute_norm_stats.py": "8a64773495b714d6b18eded99d7cf87eb19d1bb3dd4a9fb47172b03de5d56a38"
+  },
+  "versions": {
+    "openpi": "0.1.0",
+    "lerobot": "0.1.0",
+    "torch": "2.7.1",
+    "numpy": "1.26.4",
+    "jax": "0.5.3",
+    "pyarrow": "20.0.0",
+    "torchcodec": "0.4.0"
+  },
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "lerobot_commit": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+  "code_sha256": {
+    "/data_robot/projects/.worktrees/nero-gripper-training-data/experiments/dynamics/prepare_nero_training_data.py": "3ea67925f6cafea65e6092c51655273167dd30ad2f6d044e753e5c44180d3765",
+    "/data_robot/projects/.worktrees/nero-gripper-training-data/experiments/dynamics/nero_training_data.py": "41a7a1172c84c4b9fa911ba6ca990d3897195dbc79db049430259577570145c7",
+    "/data_robot/projects/.worktrees/nero-gripper-training-data/experiments/dynamics/nero_openpi.py": "538a45ed8de1591194c9ad81defab890b218dfc1c0c99d3e0d08ebd2b603e6e2",
+    "/data_robot/projects/.worktrees/nero-gripper-training-data/experiments/dynamics/test_nero_training_data.py": "89337d8629db8f1e4cb997617599da5edf306d05625340a32b75a88c72c0cc27"
+  },
+  "new_physics_steps": 0,
+  "training": false,
+  "weights": false
+}
