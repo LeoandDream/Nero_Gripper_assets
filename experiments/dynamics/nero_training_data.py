@@ -71,7 +71,7 @@ def load_training_config(stats_directory, model_config):
 
 
 def create_training_loader(stats_directory, model_config, *, batch_size=1, shuffle=True,
-                           num_batches=None, num_workers=0, framework='pytorch'):
+                           num_batches=None, num_workers=0, framework='pytorch', sharding=None):
     """Future training code must use this factory, not unfiltered upstream factory.
 
     Returns the original OpenPI DataLoaderImpl. The underlying dataset ALREADY
@@ -84,7 +84,8 @@ def create_training_loader(stats_directory, model_config, *, batch_size=1, shuff
     view = create_training_view(config, model_config)
     dataset = data_loader.transform_dataset(view, config, skip_norm_stats=False)
     batches = data_loader.TorchDataLoader(dataset, local_batch_size=batch_size,
-        shuffle=shuffle, num_batches=num_batches, num_workers=num_workers, framework=framework)
+        shuffle=shuffle, num_batches=num_batches, num_workers=num_workers, framework=framework,
+        sharding=sharding)
     return data_loader.DataLoaderImpl(config, batches)
 
 
