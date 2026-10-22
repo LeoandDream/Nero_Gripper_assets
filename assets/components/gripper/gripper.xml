@@ -1,0 +1,1092 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="nero_mvp_standalone_gripper">
+  <compiler angle="radian" fusestatic="false" inertiafromgeom="false" autolimits="true" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" cone="elliptic" impratio="10" />
+  <asset>
+    <mesh name="gripper_base_visual_mesh" file="../../../meshes/visual/gripper_base.obj" />
+    <texture name="gripper_base_colors" type="2d" file="../../../meshes/visual/gripper_base.png" />
+    <material name="gripper_base_visual_material" texture="gripper_base_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="gripper_base_collision_000" file="../../../meshes/collision/gripper_base_000.obj" />
+    <mesh name="gripper_base_collision_001" file="../../../meshes/collision/gripper_base_001.obj" />
+    <mesh name="gripper_base_collision_002" file="../../../meshes/collision/gripper_base_002.obj" />
+    <mesh name="gripper_base_collision_003" file="../../../meshes/collision/gripper_base_003.obj" />
+    <mesh name="gripper_link1_visual_mesh" file="../../../meshes/visual/gripper_link1.obj" />
+    <texture name="gripper_link1_colors" type="2d" file="../../../meshes/visual/gripper_link1.png" />
+    <material name="gripper_link1_visual_material" texture="gripper_link1_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="gripper_link2_visual_mesh" file="../../../meshes/visual/gripper_link2.obj" />
+    <texture name="gripper_link2_colors" type="2d" file="../../../meshes/visual/gripper_link2.png" />
+    <material name="gripper_link2_visual_material" texture="gripper_link2_colors" rgba="1 1 1 1" texuniform="false" specular="0.1" shininess="0.1" />
+    <mesh name="mvp_V20001" file="../../../meshes/collision/simulation_mvp/V20001.obj" />
+    <mesh name="mvp_V20002" file="../../../meshes/collision/simulation_mvp/V20002.obj" />
+    <mesh name="mvp_V20003" file="../../../meshes/collision/simulation_mvp/V20003.obj" />
+    <mesh name="mvp_V20004" file="../../../meshes/collision/simulation_mvp/V20004.obj" />
+    <mesh name="mvp_V20005" file="../../../meshes/collision/simulation_mvp/V20005.obj" />
+    <mesh name="mvp_V20006" file="../../../meshes/collision/simulation_mvp/V20006.obj" />
+    <mesh name="mvp_V20007" file="../../../meshes/collision/simulation_mvp/V20007.obj" />
+    <mesh name="mvp_V20008" file="../../../meshes/collision/simulation_mvp/V20008.obj" />
+    <mesh name="mvp_V20009" file="../../../meshes/collision/simulation_mvp/V20009.obj" />
+    <mesh name="mvp_V20010" file="../../../meshes/collision/simulation_mvp/V20010.obj" />
+    <mesh name="mvp_V20011" file="../../../meshes/collision/simulation_mvp/V20011.obj" />
+    <mesh name="mvp_V20012" file="../../../meshes/collision/simulation_mvp/V20012.obj" />
+    <mesh name="mvp_V20013" file="../../../meshes/collision/simulation_mvp/V20013.obj" />
+    <mesh name="mvp_V20014" file="../../../meshes/collision/simulation_mvp/V20014.obj" />
+    <mesh name="mvp_V20015" file="../../../meshes/collision/simulation_mvp/V20015.obj" />
+    <mesh name="mvp_V20016" file="../../../meshes/collision/simulation_mvp/V20016.obj" />
+    <mesh name="mvp_V20017" file="../../../meshes/collision/simulation_mvp/V20017.obj" />
+    <mesh name="mvp_V20018" file="../../../meshes/collision/simulation_mvp/V20018.obj" />
+    <mesh name="mvp_V20019" file="../../../meshes/collision/simulation_mvp/V20019.obj" />
+    <mesh name="mvp_V20020" file="../../../meshes/collision/simulation_mvp/V20020.obj" />
+    <mesh name="mvp_V20021" file="../../../meshes/collision/simulation_mvp/V20021.obj" />
+    <mesh name="mvp_V20022" file="../../../meshes/collision/simulation_mvp/V20022.obj" />
+    <mesh name="mvp_V20023" file="../../../meshes/collision/simulation_mvp/V20023.obj" />
+    <mesh name="mvp_V20024" file="../../../meshes/collision/simulation_mvp/V20024.obj" />
+    <mesh name="mvp_V20025" file="../../../meshes/collision/simulation_mvp/V20025.obj" />
+    <mesh name="mvp_V20026" file="../../../meshes/collision/simulation_mvp/V20026.obj" />
+    <mesh name="mvp_V20027" file="../../../meshes/collision/simulation_mvp/V20027.obj" />
+    <mesh name="mvp_V20028" file="../../../meshes/collision/simulation_mvp/V20028.obj" />
+    <mesh name="mvp_V20029" file="../../../meshes/collision/simulation_mvp/V20029.obj" />
+    <mesh name="mvp_V20030" file="../../../meshes/collision/simulation_mvp/V20030.obj" />
+    <mesh name="mvp_V20031" file="../../../meshes/collision/simulation_mvp/V20031.obj" />
+    <mesh name="mvp_V20032" file="../../../meshes/collision/simulation_mvp/V20032.obj" />
+    <mesh name="mvp_V20033" file="../../../meshes/collision/simulation_mvp/V20033.obj" />
+    <mesh name="mvp_V20034" file="../../../meshes/collision/simulation_mvp/V20034.obj" />
+    <mesh name="mvp_V20035" file="../../../meshes/collision/simulation_mvp/V20035.obj" />
+    <mesh name="mvp_V20036" file="../../../meshes/collision/simulation_mvp/V20036.obj" />
+    <mesh name="mvp_V20037" file="../../../meshes/collision/simulation_mvp/V20037.obj" />
+    <mesh name="mvp_V20038" file="../../../meshes/collision/simulation_mvp/V20038.obj" />
+    <mesh name="mvp_V20039" file="../../../meshes/collision/simulation_mvp/V20039.obj" />
+    <mesh name="mvp_V20040" file="../../../meshes/collision/simulation_mvp/V20040.obj" />
+    <mesh name="mvp_V20041" file="../../../meshes/collision/simulation_mvp/V20041.obj" />
+    <mesh name="mvp_V20042" file="../../../meshes/collision/simulation_mvp/V20042.obj" />
+    <mesh name="mvp_V20043" file="../../../meshes/collision/simulation_mvp/V20043.obj" />
+    <mesh name="mvp_V20044" file="../../../meshes/collision/simulation_mvp/V20044.obj" />
+    <mesh name="mvp_V20045" file="../../../meshes/collision/simulation_mvp/V20045.obj" />
+    <mesh name="mvp_V20046" file="../../../meshes/collision/simulation_mvp/V20046.obj" />
+    <mesh name="mvp_V20047" file="../../../meshes/collision/simulation_mvp/V20047.obj" />
+    <mesh name="mvp_V20048" file="../../../meshes/collision/simulation_mvp/V20048.obj" />
+    <mesh name="mvp_V20049" file="../../../meshes/collision/simulation_mvp/V20049.obj" />
+    <mesh name="mvp_V20050" file="../../../meshes/collision/simulation_mvp/V20050.obj" />
+    <mesh name="mvp_V20051" file="../../../meshes/collision/simulation_mvp/V20051.obj" />
+    <mesh name="mvp_V20052" file="../../../meshes/collision/simulation_mvp/V20052.obj" />
+    <mesh name="mvp_V20053" file="../../../meshes/collision/simulation_mvp/V20053.obj" />
+    <mesh name="mvp_V20054" file="../../../meshes/collision/simulation_mvp/V20054.obj" />
+    <mesh name="mvp_V20055" file="../../../meshes/collision/simulation_mvp/V20055.obj" />
+    <mesh name="mvp_V20056" file="../../../meshes/collision/simulation_mvp/V20056.obj" />
+    <mesh name="mvp_V20057" file="../../../meshes/collision/simulation_mvp/V20057.obj" />
+    <mesh name="mvp_V20058" file="../../../meshes/collision/simulation_mvp/V20058.obj" />
+    <mesh name="mvp_V20059" file="../../../meshes/collision/simulation_mvp/V20059.obj" />
+    <mesh name="mvp_V20060" file="../../../meshes/collision/simulation_mvp/V20060.obj" />
+    <mesh name="mvp_V20061" file="../../../meshes/collision/simulation_mvp/V20061.obj" />
+    <mesh name="mvp_V20062" file="../../../meshes/collision/simulation_mvp/V20062.obj" />
+    <mesh name="mvp_V20063" file="../../../meshes/collision/simulation_mvp/V20063.obj" />
+    <mesh name="mvp_V20064" file="../../../meshes/collision/simulation_mvp/V20064.obj" />
+    <mesh name="mvp_V20065" file="../../../meshes/collision/simulation_mvp/V20065.obj" />
+    <mesh name="mvp_V20066" file="../../../meshes/collision/simulation_mvp/V20066.obj" />
+    <mesh name="mvp_V20067" file="../../../meshes/collision/simulation_mvp/V20067.obj" />
+    <mesh name="mvp_V20068" file="../../../meshes/collision/simulation_mvp/V20068.obj" />
+    <mesh name="mvp_V20069" file="../../../meshes/collision/simulation_mvp/V20069.obj" />
+    <mesh name="mvp_V20070" file="../../../meshes/collision/simulation_mvp/V20070.obj" />
+    <mesh name="mvp_V20071" file="../../../meshes/collision/simulation_mvp/V20071.obj" />
+    <mesh name="mvp_V20072" file="../../../meshes/collision/simulation_mvp/V20072.obj" />
+    <mesh name="mvp_V20073" file="../../../meshes/collision/simulation_mvp/V20073.obj" />
+    <mesh name="mvp_V20074" file="../../../meshes/collision/simulation_mvp/V20074.obj" />
+    <mesh name="mvp_V20075" file="../../../meshes/collision/simulation_mvp/V20075.obj" />
+    <mesh name="mvp_V20076" file="../../../meshes/collision/simulation_mvp/V20076.obj" />
+    <mesh name="mvp_V20077" file="../../../meshes/collision/simulation_mvp/V20077.obj" />
+    <mesh name="mvp_V20078" file="../../../meshes/collision/simulation_mvp/V20078.obj" />
+    <mesh name="mvp_V20079" file="../../../meshes/collision/simulation_mvp/V20079.obj" />
+    <mesh name="mvp_V20080" file="../../../meshes/collision/simulation_mvp/V20080.obj" />
+    <mesh name="mvp_V20081" file="../../../meshes/collision/simulation_mvp/V20081.obj" />
+    <mesh name="mvp_V20082" file="../../../meshes/collision/simulation_mvp/V20082.obj" />
+    <mesh name="mvp_V20083" file="../../../meshes/collision/simulation_mvp/V20083.obj" />
+    <mesh name="mvp_V20084" file="../../../meshes/collision/simulation_mvp/V20084.obj" />
+    <mesh name="mvp_V20085" file="../../../meshes/collision/simulation_mvp/V20085.obj" />
+    <mesh name="mvp_V20086" file="../../../meshes/collision/simulation_mvp/V20086.obj" />
+    <mesh name="mvp_V20087" file="../../../meshes/collision/simulation_mvp/V20087.obj" />
+    <mesh name="mvp_V20088" file="../../../meshes/collision/simulation_mvp/V20088.obj" />
+    <mesh name="mvp_V20089" file="../../../meshes/collision/simulation_mvp/V20089.obj" />
+    <mesh name="mvp_V20090" file="../../../meshes/collision/simulation_mvp/V20090.obj" />
+    <mesh name="mvp_V20091" file="../../../meshes/collision/simulation_mvp/V20091.obj" />
+    <mesh name="mvp_V20092" file="../../../meshes/collision/simulation_mvp/V20092.obj" />
+    <mesh name="mvp_V20093" file="../../../meshes/collision/simulation_mvp/V20093.obj" />
+    <mesh name="mvp_V20094" file="../../../meshes/collision/simulation_mvp/V20094.obj" />
+    <mesh name="mvp_V20095" file="../../../meshes/collision/simulation_mvp/V20095.obj" />
+    <mesh name="mvp_V20096" file="../../../meshes/collision/simulation_mvp/V20096.obj" />
+    <mesh name="mvp_V20097" file="../../../meshes/collision/simulation_mvp/V20097.obj" />
+    <mesh name="mvp_V20098" file="../../../meshes/collision/simulation_mvp/V20098.obj" />
+    <mesh name="mvp_V20099" file="../../../meshes/collision/simulation_mvp/V20099.obj" />
+    <mesh name="mvp_V20100" file="../../../meshes/collision/simulation_mvp/V20100.obj" />
+    <mesh name="mvp_V20101" file="../../../meshes/collision/simulation_mvp/V20101.obj" />
+    <mesh name="mvp_V20102" file="../../../meshes/collision/simulation_mvp/V20102.obj" />
+    <mesh name="mvp_V20103" file="../../../meshes/collision/simulation_mvp/V20103.obj" />
+    <mesh name="mvp_V20104" file="../../../meshes/collision/simulation_mvp/V20104.obj" />
+    <mesh name="mvp_V20105" file="../../../meshes/collision/simulation_mvp/V20105.obj" />
+    <mesh name="mvp_V20106" file="../../../meshes/collision/simulation_mvp/V20106.obj" />
+    <mesh name="mvp_V20107" file="../../../meshes/collision/simulation_mvp/V20107.obj" />
+    <mesh name="mvp_V20108" file="../../../meshes/collision/simulation_mvp/V20108.obj" />
+    <mesh name="mvp_V20109" file="../../../meshes/collision/simulation_mvp/V20109.obj" />
+    <mesh name="mvp_V20110" file="../../../meshes/collision/simulation_mvp/V20110.obj" />
+    <mesh name="mvp_V20111" file="../../../meshes/collision/simulation_mvp/V20111.obj" />
+    <mesh name="mvp_V20112" file="../../../meshes/collision/simulation_mvp/V20112.obj" />
+    <mesh name="mvp_V20113" file="../../../meshes/collision/simulation_mvp/V20113.obj" />
+    <mesh name="mvp_V20114" file="../../../meshes/collision/simulation_mvp/V20114.obj" />
+    <mesh name="mvp_V20115" file="../../../meshes/collision/simulation_mvp/V20115.obj" />
+    <mesh name="mvp_V20116" file="../../../meshes/collision/simulation_mvp/V20116.obj" />
+    <mesh name="mvp_V20117" file="../../../meshes/collision/simulation_mvp/V20117.obj" />
+    <mesh name="mvp_V20118" file="../../../meshes/collision/simulation_mvp/V20118.obj" />
+    <mesh name="mvp_V20119" file="../../../meshes/collision/simulation_mvp/V20119.obj" />
+    <mesh name="mvp_V20120" file="../../../meshes/collision/simulation_mvp/V20120.obj" />
+    <mesh name="mvp_V20121" file="../../../meshes/collision/simulation_mvp/V20121.obj" />
+    <mesh name="mvp_V20122" file="../../../meshes/collision/simulation_mvp/V20122.obj" />
+    <mesh name="mvp_V20123" file="../../../meshes/collision/simulation_mvp/V20123.obj" />
+    <mesh name="mvp_V20124" file="../../../meshes/collision/simulation_mvp/V20124.obj" />
+    <mesh name="mvp_V20125" file="../../../meshes/collision/simulation_mvp/V20125.obj" />
+    <mesh name="mvp_V20126" file="../../../meshes/collision/simulation_mvp/V20126.obj" />
+    <mesh name="mvp_V20127" file="../../../meshes/collision/simulation_mvp/V20127.obj" />
+    <mesh name="mvp_V20128" file="../../../meshes/collision/simulation_mvp/V20128.obj" />
+    <mesh name="mvp_V20129" file="../../../meshes/collision/simulation_mvp/V20129.obj" />
+    <mesh name="mvp_V20130" file="../../../meshes/collision/simulation_mvp/V20130.obj" />
+    <mesh name="mvp_V20131" file="../../../meshes/collision/simulation_mvp/V20131.obj" />
+    <mesh name="mvp_V20132" file="../../../meshes/collision/simulation_mvp/V20132.obj" />
+    <mesh name="mvp_V20133" file="../../../meshes/collision/simulation_mvp/V20133.obj" />
+    <mesh name="mvp_V20134" file="../../../meshes/collision/simulation_mvp/V20134.obj" />
+    <mesh name="mvp_V20135" file="../../../meshes/collision/simulation_mvp/V20135.obj" />
+    <mesh name="mvp_V20136" file="../../../meshes/collision/simulation_mvp/V20136.obj" />
+    <mesh name="mvp_V20137" file="../../../meshes/collision/simulation_mvp/V20137.obj" />
+    <mesh name="mvp_V20138" file="../../../meshes/collision/simulation_mvp/V20138.obj" />
+    <mesh name="mvp_V20139" file="../../../meshes/collision/simulation_mvp/V20139.obj" />
+    <mesh name="mvp_V20140" file="../../../meshes/collision/simulation_mvp/V20140.obj" />
+    <mesh name="mvp_V20141" file="../../../meshes/collision/simulation_mvp/V20141.obj" />
+    <mesh name="mvp_V20142" file="../../../meshes/collision/simulation_mvp/V20142.obj" />
+    <mesh name="mvp_V20143" file="../../../meshes/collision/simulation_mvp/V20143.obj" />
+    <mesh name="mvp_V20144" file="../../../meshes/collision/simulation_mvp/V20144.obj" />
+    <mesh name="mvp_V20145" file="../../../meshes/collision/simulation_mvp/V20145.obj" />
+    <mesh name="mvp_V20146" file="../../../meshes/collision/simulation_mvp/V20146.obj" />
+    <mesh name="mvp_V20147" file="../../../meshes/collision/simulation_mvp/V20147.obj" />
+    <mesh name="mvp_V20148" file="../../../meshes/collision/simulation_mvp/V20148.obj" />
+    <mesh name="mvp_V20149" file="../../../meshes/collision/simulation_mvp/V20149.obj" />
+    <mesh name="mvp_V20150" file="../../../meshes/collision/simulation_mvp/V20150.obj" />
+    <mesh name="mvp_V20151" file="../../../meshes/collision/simulation_mvp/V20151.obj" />
+    <mesh name="mvp_V20152" file="../../../meshes/collision/simulation_mvp/V20152.obj" />
+    <mesh name="mvp_V20153" file="../../../meshes/collision/simulation_mvp/V20153.obj" />
+    <mesh name="mvp_V20154" file="../../../meshes/collision/simulation_mvp/V20154.obj" />
+    <mesh name="mvp_V20155" file="../../../meshes/collision/simulation_mvp/V20155.obj" />
+    <mesh name="mvp_V20156" file="../../../meshes/collision/simulation_mvp/V20156.obj" />
+    <mesh name="mvp_V20157" file="../../../meshes/collision/simulation_mvp/V20157.obj" />
+    <mesh name="mvp_V20158" file="../../../meshes/collision/simulation_mvp/V20158.obj" />
+    <mesh name="mvp_V20159" file="../../../meshes/collision/simulation_mvp/V20159.obj" />
+    <mesh name="mvp_V20160" file="../../../meshes/collision/simulation_mvp/V20160.obj" />
+    <mesh name="mvp_V20161" file="../../../meshes/collision/simulation_mvp/V20161.obj" />
+    <mesh name="mvp_V20162" file="../../../meshes/collision/simulation_mvp/V20162.obj" />
+    <mesh name="mvp_V20163" file="../../../meshes/collision/simulation_mvp/V20163.obj" />
+    <mesh name="mvp_V20164" file="../../../meshes/collision/simulation_mvp/V20164.obj" />
+    <mesh name="mvp_V20165" file="../../../meshes/collision/simulation_mvp/V20165.obj" />
+    <mesh name="mvp_V20166" file="../../../meshes/collision/simulation_mvp/V20166.obj" />
+    <mesh name="mvp_V20167" file="../../../meshes/collision/simulation_mvp/V20167.obj" />
+    <mesh name="mvp_V20168" file="../../../meshes/collision/simulation_mvp/V20168.obj" />
+    <mesh name="mvp_V20169" file="../../../meshes/collision/simulation_mvp/V20169.obj" />
+    <mesh name="mvp_V20170" file="../../../meshes/collision/simulation_mvp/V20170.obj" />
+    <mesh name="mvp_V20171" file="../../../meshes/collision/simulation_mvp/V20171.obj" />
+    <mesh name="mvp_V20172" file="../../../meshes/collision/simulation_mvp/V20172.obj" />
+    <mesh name="mvp_V20173" file="../../../meshes/collision/simulation_mvp/V20173.obj" />
+    <mesh name="mvp_V20174" file="../../../meshes/collision/simulation_mvp/V20174.obj" />
+    <mesh name="mvp_V20175" file="../../../meshes/collision/simulation_mvp/V20175.obj" />
+    <mesh name="mvp_V20176" file="../../../meshes/collision/simulation_mvp/V20176.obj" />
+    <mesh name="mvp_V20177" file="../../../meshes/collision/simulation_mvp/V20177.obj" />
+    <mesh name="mvp_V20178" file="../../../meshes/collision/simulation_mvp/V20178.obj" />
+    <mesh name="mvp_V20179" file="../../../meshes/collision/simulation_mvp/V20179.obj" />
+    <mesh name="mvp_V20180" file="../../../meshes/collision/simulation_mvp/V20180.obj" />
+    <mesh name="mvp_V20181" file="../../../meshes/collision/simulation_mvp/V20181.obj" />
+    <mesh name="mvp_V20182" file="../../../meshes/collision/simulation_mvp/V20182.obj" />
+    <mesh name="mvp_V20183" file="../../../meshes/collision/simulation_mvp/V20183.obj" />
+    <mesh name="mvp_V20184" file="../../../meshes/collision/simulation_mvp/V20184.obj" />
+    <mesh name="mvp_V20185" file="../../../meshes/collision/simulation_mvp/V20185.obj" />
+    <mesh name="mvp_V20186" file="../../../meshes/collision/simulation_mvp/V20186.obj" />
+    <mesh name="mvp_V20187" file="../../../meshes/collision/simulation_mvp/V20187.obj" />
+    <mesh name="mvp_V20188" file="../../../meshes/collision/simulation_mvp/V20188.obj" />
+    <mesh name="mvp_V20189" file="../../../meshes/collision/simulation_mvp/V20189.obj" />
+    <mesh name="mvp_V20190" file="../../../meshes/collision/simulation_mvp/V20190.obj" />
+    <mesh name="mvp_V20191" file="../../../meshes/collision/simulation_mvp/V20191.obj" />
+    <mesh name="mvp_V20192" file="../../../meshes/collision/simulation_mvp/V20192.obj" />
+    <mesh name="mvp_V20193" file="../../../meshes/collision/simulation_mvp/V20193.obj" />
+    <mesh name="mvp_V20194" file="../../../meshes/collision/simulation_mvp/V20194.obj" />
+    <mesh name="mvp_V20195" file="../../../meshes/collision/simulation_mvp/V20195.obj" />
+    <mesh name="mvp_V20196" file="../../../meshes/collision/simulation_mvp/V20196.obj" />
+    <mesh name="mvp_V20197" file="../../../meshes/collision/simulation_mvp/V20197.obj" />
+    <mesh name="mvp_V20198" file="../../../meshes/collision/simulation_mvp/V20198.obj" />
+    <mesh name="mvp_V20199" file="../../../meshes/collision/simulation_mvp/V20199.obj" />
+    <mesh name="mvp_V20200" file="../../../meshes/collision/simulation_mvp/V20200.obj" />
+    <mesh name="mvp_V20201" file="../../../meshes/collision/simulation_mvp/V20201.obj" />
+    <mesh name="mvp_V20202" file="../../../meshes/collision/simulation_mvp/V20202.obj" />
+    <mesh name="mvp_V20203" file="../../../meshes/collision/simulation_mvp/V20203.obj" />
+    <mesh name="mvp_V20204" file="../../../meshes/collision/simulation_mvp/V20204.obj" />
+    <mesh name="mvp_V20205" file="../../../meshes/collision/simulation_mvp/V20205.obj" />
+    <mesh name="mvp_V20206" file="../../../meshes/collision/simulation_mvp/V20206.obj" />
+    <mesh name="mvp_V20207" file="../../../meshes/collision/simulation_mvp/V20207.obj" />
+    <mesh name="mvp_V20208" file="../../../meshes/collision/simulation_mvp/V20208.obj" />
+    <mesh name="mvp_V20209" file="../../../meshes/collision/simulation_mvp/V20209.obj" />
+    <mesh name="mvp_V20210" file="../../../meshes/collision/simulation_mvp/V20210.obj" />
+    <mesh name="mvp_V20211" file="../../../meshes/collision/simulation_mvp/V20211.obj" />
+    <mesh name="mvp_V20212" file="../../../meshes/collision/simulation_mvp/V20212.obj" />
+    <mesh name="mvp_V20213" file="../../../meshes/collision/simulation_mvp/V20213.obj" />
+    <mesh name="mvp_V20214" file="../../../meshes/collision/simulation_mvp/V20214.obj" />
+    <mesh name="mvp_V20215" file="../../../meshes/collision/simulation_mvp/V20215.obj" />
+    <mesh name="mvp_V20216" file="../../../meshes/collision/simulation_mvp/V20216.obj" />
+    <mesh name="mvp_V20217" file="../../../meshes/collision/simulation_mvp/V20217.obj" />
+    <mesh name="mvp_V20218" file="../../../meshes/collision/simulation_mvp/V20218.obj" />
+    <mesh name="mvp_V20219" file="../../../meshes/collision/simulation_mvp/V20219.obj" />
+    <mesh name="mvp_V20220" file="../../../meshes/collision/simulation_mvp/V20220.obj" />
+    <mesh name="mvp_V20221" file="../../../meshes/collision/simulation_mvp/V20221.obj" />
+    <mesh name="mvp_V20222" file="../../../meshes/collision/simulation_mvp/V20222.obj" />
+    <mesh name="mvp_V20223" file="../../../meshes/collision/simulation_mvp/V20223.obj" />
+    <mesh name="mvp_V20224" file="../../../meshes/collision/simulation_mvp/V20224.obj" />
+    <mesh name="mvp_V20225" file="../../../meshes/collision/simulation_mvp/V20225.obj" />
+    <mesh name="mvp_V20226" file="../../../meshes/collision/simulation_mvp/V20226.obj" />
+    <mesh name="mvp_V20227" file="../../../meshes/collision/simulation_mvp/V20227.obj" />
+    <mesh name="mvp_V20228" file="../../../meshes/collision/simulation_mvp/V20228.obj" />
+    <mesh name="mvp_V20229" file="../../../meshes/collision/simulation_mvp/V20229.obj" />
+    <mesh name="mvp_V20230" file="../../../meshes/collision/simulation_mvp/V20230.obj" />
+    <mesh name="mvp_V20231" file="../../../meshes/collision/simulation_mvp/V20231.obj" />
+    <mesh name="mvp_V20232" file="../../../meshes/collision/simulation_mvp/V20232.obj" />
+    <mesh name="mvp_V20233" file="../../../meshes/collision/simulation_mvp/V20233.obj" />
+    <mesh name="mvp_V20234" file="../../../meshes/collision/simulation_mvp/V20234.obj" />
+    <mesh name="mvp_V20235" file="../../../meshes/collision/simulation_mvp/V20235.obj" />
+    <mesh name="mvp_V20236" file="../../../meshes/collision/simulation_mvp/V20236.obj" />
+    <mesh name="mvp_V20237" file="../../../meshes/collision/simulation_mvp/V20237.obj" />
+    <mesh name="mvp_V20238" file="../../../meshes/collision/simulation_mvp/V20238.obj" />
+    <mesh name="mvp_V20239" file="../../../meshes/collision/simulation_mvp/V20239.obj" />
+    <mesh name="mvp_V20240" file="../../../meshes/collision/simulation_mvp/V20240.obj" />
+    <mesh name="mvp_V20241" file="../../../meshes/collision/simulation_mvp/V20241.obj" />
+    <mesh name="mvp_V20242" file="../../../meshes/collision/simulation_mvp/V20242.obj" />
+    <mesh name="mvp_V20243" file="../../../meshes/collision/simulation_mvp/V20243.obj" />
+    <mesh name="mvp_V20244" file="../../../meshes/collision/simulation_mvp/V20244.obj" />
+    <mesh name="mvp_V20245" file="../../../meshes/collision/simulation_mvp/V20245.obj" />
+    <mesh name="mvp_V20246" file="../../../meshes/collision/simulation_mvp/V20246.obj" />
+    <mesh name="mvp_V20247" file="../../../meshes/collision/simulation_mvp/V20247.obj" />
+    <mesh name="mvp_V20248" file="../../../meshes/collision/simulation_mvp/V20248.obj" />
+    <mesh name="mvp_V20249" file="../../../meshes/collision/simulation_mvp/V20249.obj" />
+    <mesh name="mvp_V20250" file="../../../meshes/collision/simulation_mvp/V20250.obj" />
+    <mesh name="mvp_V20251" file="../../../meshes/collision/simulation_mvp/V20251.obj" />
+    <mesh name="mvp_V20252" file="../../../meshes/collision/simulation_mvp/V20252.obj" />
+    <mesh name="mvp_V20253" file="../../../meshes/collision/simulation_mvp/V20253.obj" />
+    <mesh name="mvp_V20254" file="../../../meshes/collision/simulation_mvp/V20254.obj" />
+    <mesh name="mvp_V20255" file="../../../meshes/collision/simulation_mvp/V20255.obj" />
+    <mesh name="mvp_V20256" file="../../../meshes/collision/simulation_mvp/V20256.obj" />
+    <mesh name="mvp_V20257" file="../../../meshes/collision/simulation_mvp/V20257.obj" />
+    <mesh name="mvp_V20258" file="../../../meshes/collision/simulation_mvp/V20258.obj" />
+    <mesh name="mvp_V20259" file="../../../meshes/collision/simulation_mvp/V20259.obj" />
+    <mesh name="mvp_V20260" file="../../../meshes/collision/simulation_mvp/V20260.obj" />
+    <mesh name="mvp_V20261" file="../../../meshes/collision/simulation_mvp/V20261.obj" />
+    <mesh name="mvp_V20262" file="../../../meshes/collision/simulation_mvp/V20262.obj" />
+    <mesh name="mvp_V20263" file="../../../meshes/collision/simulation_mvp/V20263.obj" />
+    <mesh name="mvp_V20264" file="../../../meshes/collision/simulation_mvp/V20264.obj" />
+    <mesh name="mvp_V20265" file="../../../meshes/collision/simulation_mvp/V20265.obj" />
+    <mesh name="mvp_V20266" file="../../../meshes/collision/simulation_mvp/V20266.obj" />
+    <mesh name="mvp_V20267" file="../../../meshes/collision/simulation_mvp/V20267.obj" />
+    <mesh name="mvp_V20268" file="../../../meshes/collision/simulation_mvp/V20268.obj" />
+    <mesh name="mvp_V20269" file="../../../meshes/collision/simulation_mvp/V20269.obj" />
+    <mesh name="mvp_V20270" file="../../../meshes/collision/simulation_mvp/V20270.obj" />
+    <mesh name="mvp_V20271" file="../../../meshes/collision/simulation_mvp/V20271.obj" />
+    <mesh name="mvp_V20272" file="../../../meshes/collision/simulation_mvp/V20272.obj" />
+    <mesh name="mvp_V20273" file="../../../meshes/collision/simulation_mvp/V20273.obj" />
+    <mesh name="mvp_V20274" file="../../../meshes/collision/simulation_mvp/V20274.obj" />
+    <mesh name="mvp_V20275" file="../../../meshes/collision/simulation_mvp/V20275.obj" />
+    <mesh name="mvp_V20276" file="../../../meshes/collision/simulation_mvp/V20276.obj" />
+    <mesh name="mvp_V20277" file="../../../meshes/collision/simulation_mvp/V20277.obj" />
+    <mesh name="mvp_V20278" file="../../../meshes/collision/simulation_mvp/V20278.obj" />
+    <mesh name="mvp_V20279" file="../../../meshes/collision/simulation_mvp/V20279.obj" />
+    <mesh name="mvp_V20280" file="../../../meshes/collision/simulation_mvp/V20280.obj" />
+    <mesh name="mvp_V20281" file="../../../meshes/collision/simulation_mvp/V20281.obj" />
+    <mesh name="mvp_V20282" file="../../../meshes/collision/simulation_mvp/V20282.obj" />
+    <mesh name="mvp_V20283" file="../../../meshes/collision/simulation_mvp/V20283.obj" />
+    <mesh name="mvp_V20284" file="../../../meshes/collision/simulation_mvp/V20284.obj" />
+    <mesh name="mvp_V20285" file="../../../meshes/collision/simulation_mvp/V20285.obj" />
+    <mesh name="mvp_V20286" file="../../../meshes/collision/simulation_mvp/V20286.obj" />
+    <mesh name="mvp_V20287" file="../../../meshes/collision/simulation_mvp/V20287.obj" />
+    <mesh name="mvp_V20288" file="../../../meshes/collision/simulation_mvp/V20288.obj" />
+    <mesh name="mvp_V20289" file="../../../meshes/collision/simulation_mvp/V20289.obj" />
+    <mesh name="mvp_V20290" file="../../../meshes/collision/simulation_mvp/V20290.obj" />
+    <mesh name="mvp_V20291" file="../../../meshes/collision/simulation_mvp/V20291.obj" />
+    <mesh name="mvp_V20292" file="../../../meshes/collision/simulation_mvp/V20292.obj" />
+    <mesh name="mvp_V20293" file="../../../meshes/collision/simulation_mvp/V20293.obj" />
+    <mesh name="mvp_V20294" file="../../../meshes/collision/simulation_mvp/V20294.obj" />
+    <mesh name="mvp_V20295" file="../../../meshes/collision/simulation_mvp/V20295.obj" />
+    <mesh name="mvp_V20296" file="../../../meshes/collision/simulation_mvp/V20296.obj" />
+    <mesh name="mvp_V20297" file="../../../meshes/collision/simulation_mvp/V20297.obj" />
+    <mesh name="mvp_V20298" file="../../../meshes/collision/simulation_mvp/V20298.obj" />
+    <mesh name="mvp_V20299" file="../../../meshes/collision/simulation_mvp/V20299.obj" />
+    <mesh name="mvp_V20300" file="../../../meshes/collision/simulation_mvp/V20300.obj" />
+    <mesh name="mvp_V20301" file="../../../meshes/collision/simulation_mvp/V20301.obj" />
+    <mesh name="mvp_V20302" file="../../../meshes/collision/simulation_mvp/V20302.obj" />
+    <mesh name="mvp_V20303" file="../../../meshes/collision/simulation_mvp/V20303.obj" />
+    <mesh name="mvp_V20304" file="../../../meshes/collision/simulation_mvp/V20304.obj" />
+    <mesh name="mvp_V20305" file="../../../meshes/collision/simulation_mvp/V20305.obj" />
+    <mesh name="mvp_V20306" file="../../../meshes/collision/simulation_mvp/V20306.obj" />
+    <mesh name="mvp_V20307" file="../../../meshes/collision/simulation_mvp/V20307.obj" />
+    <mesh name="mvp_V20308" file="../../../meshes/collision/simulation_mvp/V20308.obj" />
+    <mesh name="mvp_V20309" file="../../../meshes/collision/simulation_mvp/V20309.obj" />
+    <mesh name="mvp_V20310" file="../../../meshes/collision/simulation_mvp/V20310.obj" />
+    <mesh name="mvp_V20311" file="../../../meshes/collision/simulation_mvp/V20311.obj" />
+    <mesh name="mvp_V20312" file="../../../meshes/collision/simulation_mvp/V20312.obj" />
+    <mesh name="mvp_V20313" file="../../../meshes/collision/simulation_mvp/V20313.obj" />
+    <mesh name="mvp_V20314" file="../../../meshes/collision/simulation_mvp/V20314.obj" />
+    <mesh name="mvp_V20315" file="../../../meshes/collision/simulation_mvp/V20315.obj" />
+    <mesh name="mvp_V20316" file="../../../meshes/collision/simulation_mvp/V20316.obj" />
+    <mesh name="mvp_V20317" file="../../../meshes/collision/simulation_mvp/V20317.obj" />
+    <mesh name="mvp_V20318" file="../../../meshes/collision/simulation_mvp/V20318.obj" />
+    <mesh name="mvp_V20319" file="../../../meshes/collision/simulation_mvp/V20319.obj" />
+    <mesh name="mvp_V20320" file="../../../meshes/collision/simulation_mvp/V20320.obj" />
+    <mesh name="mvp_V20321" file="../../../meshes/collision/simulation_mvp/V20321.obj" />
+    <mesh name="mvp_V20322" file="../../../meshes/collision/simulation_mvp/V20322.obj" />
+    <mesh name="mvp_V20323" file="../../../meshes/collision/simulation_mvp/V20323.obj" />
+    <mesh name="mvp_V20324" file="../../../meshes/collision/simulation_mvp/V20324.obj" />
+    <mesh name="mvp_V20325" file="../../../meshes/collision/simulation_mvp/V20325.obj" />
+    <mesh name="mvp_V20326" file="../../../meshes/collision/simulation_mvp/V20326.obj" />
+    <mesh name="mvp_V20327" file="../../../meshes/collision/simulation_mvp/V20327.obj" />
+    <mesh name="mvp_V20328" file="../../../meshes/collision/simulation_mvp/V20328.obj" />
+    <mesh name="mvp_V20329" file="../../../meshes/collision/simulation_mvp/V20329.obj" />
+    <mesh name="mvp_V20330" file="../../../meshes/collision/simulation_mvp/V20330.obj" />
+    <mesh name="mvp_V20331" file="../../../meshes/collision/simulation_mvp/V20331.obj" />
+    <mesh name="mvp_V20332" file="../../../meshes/collision/simulation_mvp/V20332.obj" />
+    <mesh name="mvp_V20333" file="../../../meshes/collision/simulation_mvp/V20333.obj" />
+    <mesh name="mvp_V20334" file="../../../meshes/collision/simulation_mvp/V20334.obj" />
+    <mesh name="mvp_V20335" file="../../../meshes/collision/simulation_mvp/V20335.obj" />
+    <mesh name="mvp_V20336" file="../../../meshes/collision/simulation_mvp/V20336.obj" />
+    <mesh name="mvp_V20337" file="../../../meshes/collision/simulation_mvp/V20337.obj" />
+    <mesh name="mvp_V20338" file="../../../meshes/collision/simulation_mvp/V20338.obj" />
+    <mesh name="mvp_V20339" file="../../../meshes/collision/simulation_mvp/V20339.obj" />
+    <mesh name="mvp_V20340" file="../../../meshes/collision/simulation_mvp/V20340.obj" />
+    <mesh name="mvp_V20341" file="../../../meshes/collision/simulation_mvp/V20341.obj" />
+    <mesh name="mvp_V20342" file="../../../meshes/collision/simulation_mvp/V20342.obj" />
+    <mesh name="mvp_V20343" file="../../../meshes/collision/simulation_mvp/V20343.obj" />
+    <mesh name="mvp_V20344" file="../../../meshes/collision/simulation_mvp/V20344.obj" />
+    <mesh name="mvp_V20345" file="../../../meshes/collision/simulation_mvp/V20345.obj" />
+    <mesh name="mvp_V20346" file="../../../meshes/collision/simulation_mvp/V20346.obj" />
+  </asset>
+  <worldbody>
+    <body name="flange_mount" pos="0 0 0">
+      <body name="gripper_base" pos="0 0 0.0060000000000000001" quat="1 0 0 0">
+        <inertial pos="-0.00018380716223559101 8.0503315557791104e-05 0.032143668990887601" mass="0.45" diaginertia="0.000208793681739 0.000443633623295 0.00046658733644499998" quat="0.5 0.5 0.5 0.5" />
+        <geom name="gripper_base_visual" type="mesh" mesh="gripper_base_visual_mesh" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" material="gripper_base_visual_material" contype="0" conaffinity="0" group="1" />
+        <geom name="gripper_base_collision_000" type="mesh" mesh="gripper_base_collision_000" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="gripper_base_collision_001" type="mesh" mesh="gripper_base_collision_001" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="gripper_base_collision_002" type="mesh" mesh="gripper_base_collision_002" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <geom name="gripper_base_collision_003" type="mesh" mesh="gripper_base_collision_003" pos="0 0 3.0000000000000001e-06" quat="6.123233995736766e-17 0 0 1" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        <body name="gripper_link1" pos="0 0 0.13800000000000001" quat="1.8946853330305491e-08 1.8946852822626523e-08 0.70710677171312064 0.70710679065997362">
+          <inertial pos="0.00065123185041968004 -0.049192986913198899 0.0097225876918402496" mass="0.025" diaginertia="5.0797617256239397e-06 1.0850910357125149e-05 1.4522914303830911e-05" quat="0.064306243673385458 0.68316456429046502 0.72399478374448345 -0.070586388441518322" />
+          <joint name="gripper_joint1" type="slide" pos="0 0 0" axis="0 0 1" range="0 0.05" />
+          <geom name="gripper_link1_visual" type="mesh" mesh="gripper_link1_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="gripper_link1_visual_material" contype="0" conaffinity="0" group="1" />
+          <geom name="gripper_link1_mvp_V20001" type="mesh" mesh="mvp_V20001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20002" type="mesh" mesh="mvp_V20002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20003" type="mesh" mesh="mvp_V20003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20004" type="mesh" mesh="mvp_V20004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20005" type="mesh" mesh="mvp_V20005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20006" type="mesh" mesh="mvp_V20006" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20007" type="mesh" mesh="mvp_V20007" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20008" type="mesh" mesh="mvp_V20008" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20009" type="mesh" mesh="mvp_V20009" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20010" type="mesh" mesh="mvp_V20010" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20011" type="mesh" mesh="mvp_V20011" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20012" type="mesh" mesh="mvp_V20012" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20013" type="mesh" mesh="mvp_V20013" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20014" type="mesh" mesh="mvp_V20014" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20015" type="mesh" mesh="mvp_V20015" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20016" type="mesh" mesh="mvp_V20016" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20017" type="mesh" mesh="mvp_V20017" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20018" type="mesh" mesh="mvp_V20018" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20019" type="mesh" mesh="mvp_V20019" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20020" type="mesh" mesh="mvp_V20020" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20021" type="mesh" mesh="mvp_V20021" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20022" type="mesh" mesh="mvp_V20022" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20023" type="mesh" mesh="mvp_V20023" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20024" type="mesh" mesh="mvp_V20024" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20025" type="mesh" mesh="mvp_V20025" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20026" type="mesh" mesh="mvp_V20026" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20027" type="mesh" mesh="mvp_V20027" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20028" type="mesh" mesh="mvp_V20028" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20029" type="mesh" mesh="mvp_V20029" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20030" type="mesh" mesh="mvp_V20030" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20031" type="mesh" mesh="mvp_V20031" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20032" type="mesh" mesh="mvp_V20032" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20033" type="mesh" mesh="mvp_V20033" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20034" type="mesh" mesh="mvp_V20034" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20035" type="mesh" mesh="mvp_V20035" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20036" type="mesh" mesh="mvp_V20036" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20037" type="mesh" mesh="mvp_V20037" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20038" type="mesh" mesh="mvp_V20038" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20039" type="mesh" mesh="mvp_V20039" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20040" type="mesh" mesh="mvp_V20040" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20041" type="mesh" mesh="mvp_V20041" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20042" type="mesh" mesh="mvp_V20042" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20043" type="mesh" mesh="mvp_V20043" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20044" type="mesh" mesh="mvp_V20044" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20045" type="mesh" mesh="mvp_V20045" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20046" type="mesh" mesh="mvp_V20046" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20047" type="mesh" mesh="mvp_V20047" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20048" type="mesh" mesh="mvp_V20048" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20049" type="mesh" mesh="mvp_V20049" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20050" type="mesh" mesh="mvp_V20050" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20051" type="mesh" mesh="mvp_V20051" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20052" type="mesh" mesh="mvp_V20052" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20053" type="mesh" mesh="mvp_V20053" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20054" type="mesh" mesh="mvp_V20054" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20055" type="mesh" mesh="mvp_V20055" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20056" type="mesh" mesh="mvp_V20056" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20057" type="mesh" mesh="mvp_V20057" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20058" type="mesh" mesh="mvp_V20058" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20059" type="mesh" mesh="mvp_V20059" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20060" type="mesh" mesh="mvp_V20060" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20061" type="mesh" mesh="mvp_V20061" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20062" type="mesh" mesh="mvp_V20062" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20063" type="mesh" mesh="mvp_V20063" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20064" type="mesh" mesh="mvp_V20064" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20065" type="mesh" mesh="mvp_V20065" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20066" type="mesh" mesh="mvp_V20066" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20067" type="mesh" mesh="mvp_V20067" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20068" type="mesh" mesh="mvp_V20068" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20069" type="mesh" mesh="mvp_V20069" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20070" type="mesh" mesh="mvp_V20070" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20071" type="mesh" mesh="mvp_V20071" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20072" type="mesh" mesh="mvp_V20072" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20073" type="mesh" mesh="mvp_V20073" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20074" type="mesh" mesh="mvp_V20074" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20075" type="mesh" mesh="mvp_V20075" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20076" type="mesh" mesh="mvp_V20076" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20077" type="mesh" mesh="mvp_V20077" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20078" type="mesh" mesh="mvp_V20078" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20079" type="mesh" mesh="mvp_V20079" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20080" type="mesh" mesh="mvp_V20080" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20081" type="mesh" mesh="mvp_V20081" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20082" type="mesh" mesh="mvp_V20082" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20083" type="mesh" mesh="mvp_V20083" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20084" type="mesh" mesh="mvp_V20084" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20085" type="mesh" mesh="mvp_V20085" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20086" type="mesh" mesh="mvp_V20086" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20087" type="mesh" mesh="mvp_V20087" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20088" type="mesh" mesh="mvp_V20088" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20089" type="mesh" mesh="mvp_V20089" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20090" type="mesh" mesh="mvp_V20090" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20091" type="mesh" mesh="mvp_V20091" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20092" type="mesh" mesh="mvp_V20092" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20093" type="mesh" mesh="mvp_V20093" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20094" type="mesh" mesh="mvp_V20094" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20095" type="mesh" mesh="mvp_V20095" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20096" type="mesh" mesh="mvp_V20096" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20097" type="mesh" mesh="mvp_V20097" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20098" type="mesh" mesh="mvp_V20098" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20099" type="mesh" mesh="mvp_V20099" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20100" type="mesh" mesh="mvp_V20100" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20101" type="mesh" mesh="mvp_V20101" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20102" type="mesh" mesh="mvp_V20102" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20103" type="mesh" mesh="mvp_V20103" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20104" type="mesh" mesh="mvp_V20104" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20105" type="mesh" mesh="mvp_V20105" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20106" type="mesh" mesh="mvp_V20106" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20107" type="mesh" mesh="mvp_V20107" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20108" type="mesh" mesh="mvp_V20108" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20109" type="mesh" mesh="mvp_V20109" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20110" type="mesh" mesh="mvp_V20110" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20111" type="mesh" mesh="mvp_V20111" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20112" type="mesh" mesh="mvp_V20112" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20113" type="mesh" mesh="mvp_V20113" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20114" type="mesh" mesh="mvp_V20114" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20115" type="mesh" mesh="mvp_V20115" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20116" type="mesh" mesh="mvp_V20116" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20117" type="mesh" mesh="mvp_V20117" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20118" type="mesh" mesh="mvp_V20118" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20119" type="mesh" mesh="mvp_V20119" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20120" type="mesh" mesh="mvp_V20120" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20121" type="mesh" mesh="mvp_V20121" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20122" type="mesh" mesh="mvp_V20122" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20123" type="mesh" mesh="mvp_V20123" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20124" type="mesh" mesh="mvp_V20124" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20125" type="mesh" mesh="mvp_V20125" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20126" type="mesh" mesh="mvp_V20126" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20127" type="mesh" mesh="mvp_V20127" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20128" type="mesh" mesh="mvp_V20128" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20129" type="mesh" mesh="mvp_V20129" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20130" type="mesh" mesh="mvp_V20130" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20131" type="mesh" mesh="mvp_V20131" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20132" type="mesh" mesh="mvp_V20132" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20133" type="mesh" mesh="mvp_V20133" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20134" type="mesh" mesh="mvp_V20134" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20135" type="mesh" mesh="mvp_V20135" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20136" type="mesh" mesh="mvp_V20136" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20137" type="mesh" mesh="mvp_V20137" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20138" type="mesh" mesh="mvp_V20138" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20139" type="mesh" mesh="mvp_V20139" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20140" type="mesh" mesh="mvp_V20140" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20141" type="mesh" mesh="mvp_V20141" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20142" type="mesh" mesh="mvp_V20142" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20143" type="mesh" mesh="mvp_V20143" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20144" type="mesh" mesh="mvp_V20144" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20145" type="mesh" mesh="mvp_V20145" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20146" type="mesh" mesh="mvp_V20146" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20147" type="mesh" mesh="mvp_V20147" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20148" type="mesh" mesh="mvp_V20148" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20149" type="mesh" mesh="mvp_V20149" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20150" type="mesh" mesh="mvp_V20150" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20151" type="mesh" mesh="mvp_V20151" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20152" type="mesh" mesh="mvp_V20152" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20153" type="mesh" mesh="mvp_V20153" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20154" type="mesh" mesh="mvp_V20154" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20155" type="mesh" mesh="mvp_V20155" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20156" type="mesh" mesh="mvp_V20156" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20157" type="mesh" mesh="mvp_V20157" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20158" type="mesh" mesh="mvp_V20158" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20159" type="mesh" mesh="mvp_V20159" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20160" type="mesh" mesh="mvp_V20160" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20161" type="mesh" mesh="mvp_V20161" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20162" type="mesh" mesh="mvp_V20162" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20163" type="mesh" mesh="mvp_V20163" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20164" type="mesh" mesh="mvp_V20164" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20165" type="mesh" mesh="mvp_V20165" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20166" type="mesh" mesh="mvp_V20166" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20167" type="mesh" mesh="mvp_V20167" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20168" type="mesh" mesh="mvp_V20168" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20169" type="mesh" mesh="mvp_V20169" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20170" type="mesh" mesh="mvp_V20170" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20171" type="mesh" mesh="mvp_V20171" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20172" type="mesh" mesh="mvp_V20172" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20173" type="mesh" mesh="mvp_V20173" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20174" type="mesh" mesh="mvp_V20174" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20175" type="mesh" mesh="mvp_V20175" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20176" type="mesh" mesh="mvp_V20176" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20177" type="mesh" mesh="mvp_V20177" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20178" type="mesh" mesh="mvp_V20178" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20179" type="mesh" mesh="mvp_V20179" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20180" type="mesh" mesh="mvp_V20180" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20181" type="mesh" mesh="mvp_V20181" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20182" type="mesh" mesh="mvp_V20182" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20183" type="mesh" mesh="mvp_V20183" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20184" type="mesh" mesh="mvp_V20184" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20185" type="mesh" mesh="mvp_V20185" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20186" type="mesh" mesh="mvp_V20186" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20187" type="mesh" mesh="mvp_V20187" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20188" type="mesh" mesh="mvp_V20188" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20189" type="mesh" mesh="mvp_V20189" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20190" type="mesh" mesh="mvp_V20190" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20191" type="mesh" mesh="mvp_V20191" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20192" type="mesh" mesh="mvp_V20192" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20193" type="mesh" mesh="mvp_V20193" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20194" type="mesh" mesh="mvp_V20194" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20195" type="mesh" mesh="mvp_V20195" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20196" type="mesh" mesh="mvp_V20196" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20197" type="mesh" mesh="mvp_V20197" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20198" type="mesh" mesh="mvp_V20198" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20199" type="mesh" mesh="mvp_V20199" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20200" type="mesh" mesh="mvp_V20200" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20201" type="mesh" mesh="mvp_V20201" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20202" type="mesh" mesh="mvp_V20202" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20203" type="mesh" mesh="mvp_V20203" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20204" type="mesh" mesh="mvp_V20204" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20205" type="mesh" mesh="mvp_V20205" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20206" type="mesh" mesh="mvp_V20206" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20207" type="mesh" mesh="mvp_V20207" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20208" type="mesh" mesh="mvp_V20208" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20209" type="mesh" mesh="mvp_V20209" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20210" type="mesh" mesh="mvp_V20210" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20211" type="mesh" mesh="mvp_V20211" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20212" type="mesh" mesh="mvp_V20212" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20213" type="mesh" mesh="mvp_V20213" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20214" type="mesh" mesh="mvp_V20214" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20215" type="mesh" mesh="mvp_V20215" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20216" type="mesh" mesh="mvp_V20216" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20217" type="mesh" mesh="mvp_V20217" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20218" type="mesh" mesh="mvp_V20218" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20219" type="mesh" mesh="mvp_V20219" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20220" type="mesh" mesh="mvp_V20220" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20221" type="mesh" mesh="mvp_V20221" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20222" type="mesh" mesh="mvp_V20222" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20223" type="mesh" mesh="mvp_V20223" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20224" type="mesh" mesh="mvp_V20224" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20225" type="mesh" mesh="mvp_V20225" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20226" type="mesh" mesh="mvp_V20226" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20227" type="mesh" mesh="mvp_V20227" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20228" type="mesh" mesh="mvp_V20228" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20229" type="mesh" mesh="mvp_V20229" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20230" type="mesh" mesh="mvp_V20230" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20231" type="mesh" mesh="mvp_V20231" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20232" type="mesh" mesh="mvp_V20232" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20233" type="mesh" mesh="mvp_V20233" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20234" type="mesh" mesh="mvp_V20234" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20235" type="mesh" mesh="mvp_V20235" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20236" type="mesh" mesh="mvp_V20236" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20237" type="mesh" mesh="mvp_V20237" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20238" type="mesh" mesh="mvp_V20238" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20239" type="mesh" mesh="mvp_V20239" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20240" type="mesh" mesh="mvp_V20240" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20241" type="mesh" mesh="mvp_V20241" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20242" type="mesh" mesh="mvp_V20242" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20243" type="mesh" mesh="mvp_V20243" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20244" type="mesh" mesh="mvp_V20244" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20245" type="mesh" mesh="mvp_V20245" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20246" type="mesh" mesh="mvp_V20246" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20247" type="mesh" mesh="mvp_V20247" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20248" type="mesh" mesh="mvp_V20248" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20249" type="mesh" mesh="mvp_V20249" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20250" type="mesh" mesh="mvp_V20250" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20251" type="mesh" mesh="mvp_V20251" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20252" type="mesh" mesh="mvp_V20252" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20253" type="mesh" mesh="mvp_V20253" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20254" type="mesh" mesh="mvp_V20254" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20255" type="mesh" mesh="mvp_V20255" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20256" type="mesh" mesh="mvp_V20256" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20257" type="mesh" mesh="mvp_V20257" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20258" type="mesh" mesh="mvp_V20258" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20259" type="mesh" mesh="mvp_V20259" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20260" type="mesh" mesh="mvp_V20260" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20261" type="mesh" mesh="mvp_V20261" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20262" type="mesh" mesh="mvp_V20262" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20263" type="mesh" mesh="mvp_V20263" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20264" type="mesh" mesh="mvp_V20264" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20265" type="mesh" mesh="mvp_V20265" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20266" type="mesh" mesh="mvp_V20266" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20267" type="mesh" mesh="mvp_V20267" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20268" type="mesh" mesh="mvp_V20268" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20269" type="mesh" mesh="mvp_V20269" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20270" type="mesh" mesh="mvp_V20270" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20271" type="mesh" mesh="mvp_V20271" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20272" type="mesh" mesh="mvp_V20272" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20273" type="mesh" mesh="mvp_V20273" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20274" type="mesh" mesh="mvp_V20274" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20275" type="mesh" mesh="mvp_V20275" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20276" type="mesh" mesh="mvp_V20276" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20277" type="mesh" mesh="mvp_V20277" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20278" type="mesh" mesh="mvp_V20278" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20279" type="mesh" mesh="mvp_V20279" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20280" type="mesh" mesh="mvp_V20280" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20281" type="mesh" mesh="mvp_V20281" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20282" type="mesh" mesh="mvp_V20282" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20283" type="mesh" mesh="mvp_V20283" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20284" type="mesh" mesh="mvp_V20284" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20285" type="mesh" mesh="mvp_V20285" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20286" type="mesh" mesh="mvp_V20286" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20287" type="mesh" mesh="mvp_V20287" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20288" type="mesh" mesh="mvp_V20288" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20289" type="mesh" mesh="mvp_V20289" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20290" type="mesh" mesh="mvp_V20290" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20291" type="mesh" mesh="mvp_V20291" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20292" type="mesh" mesh="mvp_V20292" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20293" type="mesh" mesh="mvp_V20293" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20294" type="mesh" mesh="mvp_V20294" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20295" type="mesh" mesh="mvp_V20295" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20296" type="mesh" mesh="mvp_V20296" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20297" type="mesh" mesh="mvp_V20297" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20298" type="mesh" mesh="mvp_V20298" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20299" type="mesh" mesh="mvp_V20299" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20300" type="mesh" mesh="mvp_V20300" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20301" type="mesh" mesh="mvp_V20301" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20302" type="mesh" mesh="mvp_V20302" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20303" type="mesh" mesh="mvp_V20303" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20304" type="mesh" mesh="mvp_V20304" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20305" type="mesh" mesh="mvp_V20305" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20306" type="mesh" mesh="mvp_V20306" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20307" type="mesh" mesh="mvp_V20307" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20308" type="mesh" mesh="mvp_V20308" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20309" type="mesh" mesh="mvp_V20309" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20310" type="mesh" mesh="mvp_V20310" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20311" type="mesh" mesh="mvp_V20311" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20312" type="mesh" mesh="mvp_V20312" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20313" type="mesh" mesh="mvp_V20313" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20314" type="mesh" mesh="mvp_V20314" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20315" type="mesh" mesh="mvp_V20315" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20316" type="mesh" mesh="mvp_V20316" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20317" type="mesh" mesh="mvp_V20317" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20318" type="mesh" mesh="mvp_V20318" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20319" type="mesh" mesh="mvp_V20319" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20320" type="mesh" mesh="mvp_V20320" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20321" type="mesh" mesh="mvp_V20321" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20322" type="mesh" mesh="mvp_V20322" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20323" type="mesh" mesh="mvp_V20323" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20324" type="mesh" mesh="mvp_V20324" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20325" type="mesh" mesh="mvp_V20325" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20326" type="mesh" mesh="mvp_V20326" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20327" type="mesh" mesh="mvp_V20327" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20328" type="mesh" mesh="mvp_V20328" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20329" type="mesh" mesh="mvp_V20329" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20330" type="mesh" mesh="mvp_V20330" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20331" type="mesh" mesh="mvp_V20331" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20332" type="mesh" mesh="mvp_V20332" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20333" type="mesh" mesh="mvp_V20333" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20334" type="mesh" mesh="mvp_V20334" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20335" type="mesh" mesh="mvp_V20335" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20336" type="mesh" mesh="mvp_V20336" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20337" type="mesh" mesh="mvp_V20337" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20338" type="mesh" mesh="mvp_V20338" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20339" type="mesh" mesh="mvp_V20339" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20340" type="mesh" mesh="mvp_V20340" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20341" type="mesh" mesh="mvp_V20341" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20342" type="mesh" mesh="mvp_V20342" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20343" type="mesh" mesh="mvp_V20343" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20344" type="mesh" mesh="mvp_V20344" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20345" type="mesh" mesh="mvp_V20345" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link1_mvp_V20346" type="mesh" mesh="mvp_V20346" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        </body>
+        <body name="gripper_link2" pos="0 0 0.13800000000000001" quat="0.70710679065997406 0.70710677171312097 0 0">
+          <inertial pos="0.00065123185041968004 -0.049192986913198899 0.0097225876918402496" mass="0.025" diaginertia="5.0797617256239397e-06 1.0850910357125149e-05 1.4522914303830911e-05" quat="0.064306243673385458 0.68316456429046502 0.72399478374448345 -0.070586388441518322" />
+          <joint name="gripper_joint2" type="slide" pos="0 0 0" axis="0 0 -1" range="-0.05 0" />
+          <geom name="gripper_link2_visual" type="mesh" mesh="gripper_link2_visual_mesh" pos="0 0 0" quat="1 0 0 0" material="gripper_link2_visual_material" contype="0" conaffinity="0" group="1" />
+          <geom name="gripper_link2_mvp_V20001" type="mesh" mesh="mvp_V20001" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20002" type="mesh" mesh="mvp_V20002" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20003" type="mesh" mesh="mvp_V20003" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20004" type="mesh" mesh="mvp_V20004" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20005" type="mesh" mesh="mvp_V20005" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20006" type="mesh" mesh="mvp_V20006" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20007" type="mesh" mesh="mvp_V20007" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20008" type="mesh" mesh="mvp_V20008" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20009" type="mesh" mesh="mvp_V20009" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20010" type="mesh" mesh="mvp_V20010" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20011" type="mesh" mesh="mvp_V20011" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20012" type="mesh" mesh="mvp_V20012" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20013" type="mesh" mesh="mvp_V20013" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20014" type="mesh" mesh="mvp_V20014" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20015" type="mesh" mesh="mvp_V20015" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20016" type="mesh" mesh="mvp_V20016" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20017" type="mesh" mesh="mvp_V20017" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20018" type="mesh" mesh="mvp_V20018" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20019" type="mesh" mesh="mvp_V20019" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20020" type="mesh" mesh="mvp_V20020" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20021" type="mesh" mesh="mvp_V20021" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20022" type="mesh" mesh="mvp_V20022" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20023" type="mesh" mesh="mvp_V20023" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20024" type="mesh" mesh="mvp_V20024" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20025" type="mesh" mesh="mvp_V20025" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20026" type="mesh" mesh="mvp_V20026" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20027" type="mesh" mesh="mvp_V20027" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20028" type="mesh" mesh="mvp_V20028" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20029" type="mesh" mesh="mvp_V20029" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20030" type="mesh" mesh="mvp_V20030" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20031" type="mesh" mesh="mvp_V20031" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20032" type="mesh" mesh="mvp_V20032" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20033" type="mesh" mesh="mvp_V20033" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20034" type="mesh" mesh="mvp_V20034" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20035" type="mesh" mesh="mvp_V20035" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20036" type="mesh" mesh="mvp_V20036" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20037" type="mesh" mesh="mvp_V20037" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20038" type="mesh" mesh="mvp_V20038" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20039" type="mesh" mesh="mvp_V20039" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20040" type="mesh" mesh="mvp_V20040" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20041" type="mesh" mesh="mvp_V20041" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20042" type="mesh" mesh="mvp_V20042" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20043" type="mesh" mesh="mvp_V20043" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20044" type="mesh" mesh="mvp_V20044" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20045" type="mesh" mesh="mvp_V20045" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20046" type="mesh" mesh="mvp_V20046" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20047" type="mesh" mesh="mvp_V20047" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20048" type="mesh" mesh="mvp_V20048" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20049" type="mesh" mesh="mvp_V20049" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20050" type="mesh" mesh="mvp_V20050" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20051" type="mesh" mesh="mvp_V20051" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20052" type="mesh" mesh="mvp_V20052" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20053" type="mesh" mesh="mvp_V20053" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20054" type="mesh" mesh="mvp_V20054" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20055" type="mesh" mesh="mvp_V20055" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20056" type="mesh" mesh="mvp_V20056" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20057" type="mesh" mesh="mvp_V20057" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20058" type="mesh" mesh="mvp_V20058" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20059" type="mesh" mesh="mvp_V20059" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20060" type="mesh" mesh="mvp_V20060" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20061" type="mesh" mesh="mvp_V20061" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20062" type="mesh" mesh="mvp_V20062" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20063" type="mesh" mesh="mvp_V20063" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20064" type="mesh" mesh="mvp_V20064" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20065" type="mesh" mesh="mvp_V20065" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20066" type="mesh" mesh="mvp_V20066" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20067" type="mesh" mesh="mvp_V20067" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20068" type="mesh" mesh="mvp_V20068" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20069" type="mesh" mesh="mvp_V20069" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20070" type="mesh" mesh="mvp_V20070" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20071" type="mesh" mesh="mvp_V20071" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20072" type="mesh" mesh="mvp_V20072" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20073" type="mesh" mesh="mvp_V20073" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20074" type="mesh" mesh="mvp_V20074" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20075" type="mesh" mesh="mvp_V20075" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20076" type="mesh" mesh="mvp_V20076" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20077" type="mesh" mesh="mvp_V20077" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20078" type="mesh" mesh="mvp_V20078" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20079" type="mesh" mesh="mvp_V20079" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20080" type="mesh" mesh="mvp_V20080" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20081" type="mesh" mesh="mvp_V20081" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20082" type="mesh" mesh="mvp_V20082" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20083" type="mesh" mesh="mvp_V20083" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20084" type="mesh" mesh="mvp_V20084" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20085" type="mesh" mesh="mvp_V20085" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20086" type="mesh" mesh="mvp_V20086" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20087" type="mesh" mesh="mvp_V20087" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20088" type="mesh" mesh="mvp_V20088" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20089" type="mesh" mesh="mvp_V20089" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20090" type="mesh" mesh="mvp_V20090" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20091" type="mesh" mesh="mvp_V20091" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20092" type="mesh" mesh="mvp_V20092" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20093" type="mesh" mesh="mvp_V20093" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20094" type="mesh" mesh="mvp_V20094" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20095" type="mesh" mesh="mvp_V20095" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20096" type="mesh" mesh="mvp_V20096" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20097" type="mesh" mesh="mvp_V20097" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20098" type="mesh" mesh="mvp_V20098" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20099" type="mesh" mesh="mvp_V20099" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20100" type="mesh" mesh="mvp_V20100" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20101" type="mesh" mesh="mvp_V20101" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20102" type="mesh" mesh="mvp_V20102" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20103" type="mesh" mesh="mvp_V20103" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20104" type="mesh" mesh="mvp_V20104" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20105" type="mesh" mesh="mvp_V20105" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20106" type="mesh" mesh="mvp_V20106" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20107" type="mesh" mesh="mvp_V20107" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20108" type="mesh" mesh="mvp_V20108" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20109" type="mesh" mesh="mvp_V20109" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20110" type="mesh" mesh="mvp_V20110" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20111" type="mesh" mesh="mvp_V20111" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20112" type="mesh" mesh="mvp_V20112" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20113" type="mesh" mesh="mvp_V20113" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20114" type="mesh" mesh="mvp_V20114" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20115" type="mesh" mesh="mvp_V20115" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20116" type="mesh" mesh="mvp_V20116" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20117" type="mesh" mesh="mvp_V20117" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20118" type="mesh" mesh="mvp_V20118" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20119" type="mesh" mesh="mvp_V20119" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20120" type="mesh" mesh="mvp_V20120" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20121" type="mesh" mesh="mvp_V20121" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20122" type="mesh" mesh="mvp_V20122" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20123" type="mesh" mesh="mvp_V20123" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20124" type="mesh" mesh="mvp_V20124" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20125" type="mesh" mesh="mvp_V20125" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20126" type="mesh" mesh="mvp_V20126" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20127" type="mesh" mesh="mvp_V20127" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20128" type="mesh" mesh="mvp_V20128" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20129" type="mesh" mesh="mvp_V20129" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20130" type="mesh" mesh="mvp_V20130" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20131" type="mesh" mesh="mvp_V20131" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20132" type="mesh" mesh="mvp_V20132" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20133" type="mesh" mesh="mvp_V20133" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20134" type="mesh" mesh="mvp_V20134" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20135" type="mesh" mesh="mvp_V20135" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20136" type="mesh" mesh="mvp_V20136" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20137" type="mesh" mesh="mvp_V20137" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20138" type="mesh" mesh="mvp_V20138" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20139" type="mesh" mesh="mvp_V20139" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20140" type="mesh" mesh="mvp_V20140" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20141" type="mesh" mesh="mvp_V20141" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20142" type="mesh" mesh="mvp_V20142" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20143" type="mesh" mesh="mvp_V20143" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20144" type="mesh" mesh="mvp_V20144" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20145" type="mesh" mesh="mvp_V20145" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20146" type="mesh" mesh="mvp_V20146" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20147" type="mesh" mesh="mvp_V20147" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20148" type="mesh" mesh="mvp_V20148" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20149" type="mesh" mesh="mvp_V20149" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20150" type="mesh" mesh="mvp_V20150" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20151" type="mesh" mesh="mvp_V20151" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20152" type="mesh" mesh="mvp_V20152" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20153" type="mesh" mesh="mvp_V20153" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20154" type="mesh" mesh="mvp_V20154" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20155" type="mesh" mesh="mvp_V20155" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20156" type="mesh" mesh="mvp_V20156" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20157" type="mesh" mesh="mvp_V20157" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20158" type="mesh" mesh="mvp_V20158" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20159" type="mesh" mesh="mvp_V20159" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20160" type="mesh" mesh="mvp_V20160" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20161" type="mesh" mesh="mvp_V20161" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20162" type="mesh" mesh="mvp_V20162" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20163" type="mesh" mesh="mvp_V20163" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20164" type="mesh" mesh="mvp_V20164" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20165" type="mesh" mesh="mvp_V20165" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20166" type="mesh" mesh="mvp_V20166" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20167" type="mesh" mesh="mvp_V20167" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20168" type="mesh" mesh="mvp_V20168" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20169" type="mesh" mesh="mvp_V20169" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20170" type="mesh" mesh="mvp_V20170" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20171" type="mesh" mesh="mvp_V20171" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20172" type="mesh" mesh="mvp_V20172" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20173" type="mesh" mesh="mvp_V20173" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20174" type="mesh" mesh="mvp_V20174" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20175" type="mesh" mesh="mvp_V20175" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20176" type="mesh" mesh="mvp_V20176" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20177" type="mesh" mesh="mvp_V20177" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20178" type="mesh" mesh="mvp_V20178" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20179" type="mesh" mesh="mvp_V20179" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20180" type="mesh" mesh="mvp_V20180" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20181" type="mesh" mesh="mvp_V20181" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20182" type="mesh" mesh="mvp_V20182" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20183" type="mesh" mesh="mvp_V20183" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20184" type="mesh" mesh="mvp_V20184" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20185" type="mesh" mesh="mvp_V20185" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20186" type="mesh" mesh="mvp_V20186" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20187" type="mesh" mesh="mvp_V20187" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20188" type="mesh" mesh="mvp_V20188" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20189" type="mesh" mesh="mvp_V20189" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20190" type="mesh" mesh="mvp_V20190" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20191" type="mesh" mesh="mvp_V20191" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20192" type="mesh" mesh="mvp_V20192" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20193" type="mesh" mesh="mvp_V20193" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20194" type="mesh" mesh="mvp_V20194" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20195" type="mesh" mesh="mvp_V20195" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20196" type="mesh" mesh="mvp_V20196" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20197" type="mesh" mesh="mvp_V20197" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20198" type="mesh" mesh="mvp_V20198" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20199" type="mesh" mesh="mvp_V20199" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20200" type="mesh" mesh="mvp_V20200" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20201" type="mesh" mesh="mvp_V20201" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20202" type="mesh" mesh="mvp_V20202" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20203" type="mesh" mesh="mvp_V20203" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20204" type="mesh" mesh="mvp_V20204" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20205" type="mesh" mesh="mvp_V20205" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20206" type="mesh" mesh="mvp_V20206" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20207" type="mesh" mesh="mvp_V20207" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20208" type="mesh" mesh="mvp_V20208" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20209" type="mesh" mesh="mvp_V20209" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20210" type="mesh" mesh="mvp_V20210" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20211" type="mesh" mesh="mvp_V20211" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20212" type="mesh" mesh="mvp_V20212" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20213" type="mesh" mesh="mvp_V20213" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20214" type="mesh" mesh="mvp_V20214" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20215" type="mesh" mesh="mvp_V20215" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20216" type="mesh" mesh="mvp_V20216" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20217" type="mesh" mesh="mvp_V20217" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20218" type="mesh" mesh="mvp_V20218" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20219" type="mesh" mesh="mvp_V20219" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20220" type="mesh" mesh="mvp_V20220" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20221" type="mesh" mesh="mvp_V20221" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20222" type="mesh" mesh="mvp_V20222" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20223" type="mesh" mesh="mvp_V20223" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20224" type="mesh" mesh="mvp_V20224" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20225" type="mesh" mesh="mvp_V20225" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20226" type="mesh" mesh="mvp_V20226" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20227" type="mesh" mesh="mvp_V20227" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20228" type="mesh" mesh="mvp_V20228" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20229" type="mesh" mesh="mvp_V20229" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20230" type="mesh" mesh="mvp_V20230" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20231" type="mesh" mesh="mvp_V20231" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20232" type="mesh" mesh="mvp_V20232" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20233" type="mesh" mesh="mvp_V20233" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20234" type="mesh" mesh="mvp_V20234" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20235" type="mesh" mesh="mvp_V20235" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20236" type="mesh" mesh="mvp_V20236" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20237" type="mesh" mesh="mvp_V20237" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20238" type="mesh" mesh="mvp_V20238" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20239" type="mesh" mesh="mvp_V20239" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20240" type="mesh" mesh="mvp_V20240" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20241" type="mesh" mesh="mvp_V20241" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20242" type="mesh" mesh="mvp_V20242" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20243" type="mesh" mesh="mvp_V20243" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20244" type="mesh" mesh="mvp_V20244" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20245" type="mesh" mesh="mvp_V20245" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20246" type="mesh" mesh="mvp_V20246" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20247" type="mesh" mesh="mvp_V20247" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20248" type="mesh" mesh="mvp_V20248" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20249" type="mesh" mesh="mvp_V20249" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20250" type="mesh" mesh="mvp_V20250" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20251" type="mesh" mesh="mvp_V20251" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20252" type="mesh" mesh="mvp_V20252" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20253" type="mesh" mesh="mvp_V20253" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20254" type="mesh" mesh="mvp_V20254" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20255" type="mesh" mesh="mvp_V20255" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20256" type="mesh" mesh="mvp_V20256" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20257" type="mesh" mesh="mvp_V20257" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20258" type="mesh" mesh="mvp_V20258" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20259" type="mesh" mesh="mvp_V20259" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20260" type="mesh" mesh="mvp_V20260" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20261" type="mesh" mesh="mvp_V20261" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20262" type="mesh" mesh="mvp_V20262" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20263" type="mesh" mesh="mvp_V20263" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20264" type="mesh" mesh="mvp_V20264" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20265" type="mesh" mesh="mvp_V20265" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20266" type="mesh" mesh="mvp_V20266" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20267" type="mesh" mesh="mvp_V20267" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20268" type="mesh" mesh="mvp_V20268" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20269" type="mesh" mesh="mvp_V20269" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20270" type="mesh" mesh="mvp_V20270" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20271" type="mesh" mesh="mvp_V20271" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20272" type="mesh" mesh="mvp_V20272" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20273" type="mesh" mesh="mvp_V20273" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20274" type="mesh" mesh="mvp_V20274" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20275" type="mesh" mesh="mvp_V20275" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20276" type="mesh" mesh="mvp_V20276" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20277" type="mesh" mesh="mvp_V20277" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20278" type="mesh" mesh="mvp_V20278" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20279" type="mesh" mesh="mvp_V20279" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20280" type="mesh" mesh="mvp_V20280" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20281" type="mesh" mesh="mvp_V20281" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20282" type="mesh" mesh="mvp_V20282" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20283" type="mesh" mesh="mvp_V20283" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20284" type="mesh" mesh="mvp_V20284" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20285" type="mesh" mesh="mvp_V20285" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20286" type="mesh" mesh="mvp_V20286" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20287" type="mesh" mesh="mvp_V20287" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20288" type="mesh" mesh="mvp_V20288" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20289" type="mesh" mesh="mvp_V20289" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20290" type="mesh" mesh="mvp_V20290" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20291" type="mesh" mesh="mvp_V20291" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20292" type="mesh" mesh="mvp_V20292" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20293" type="mesh" mesh="mvp_V20293" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20294" type="mesh" mesh="mvp_V20294" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20295" type="mesh" mesh="mvp_V20295" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20296" type="mesh" mesh="mvp_V20296" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20297" type="mesh" mesh="mvp_V20297" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20298" type="mesh" mesh="mvp_V20298" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20299" type="mesh" mesh="mvp_V20299" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20300" type="mesh" mesh="mvp_V20300" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20301" type="mesh" mesh="mvp_V20301" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20302" type="mesh" mesh="mvp_V20302" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20303" type="mesh" mesh="mvp_V20303" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20304" type="mesh" mesh="mvp_V20304" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20305" type="mesh" mesh="mvp_V20305" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20306" type="mesh" mesh="mvp_V20306" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20307" type="mesh" mesh="mvp_V20307" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20308" type="mesh" mesh="mvp_V20308" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20309" type="mesh" mesh="mvp_V20309" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20310" type="mesh" mesh="mvp_V20310" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20311" type="mesh" mesh="mvp_V20311" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20312" type="mesh" mesh="mvp_V20312" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20313" type="mesh" mesh="mvp_V20313" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20314" type="mesh" mesh="mvp_V20314" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20315" type="mesh" mesh="mvp_V20315" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20316" type="mesh" mesh="mvp_V20316" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20317" type="mesh" mesh="mvp_V20317" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20318" type="mesh" mesh="mvp_V20318" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20319" type="mesh" mesh="mvp_V20319" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20320" type="mesh" mesh="mvp_V20320" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20321" type="mesh" mesh="mvp_V20321" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20322" type="mesh" mesh="mvp_V20322" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20323" type="mesh" mesh="mvp_V20323" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20324" type="mesh" mesh="mvp_V20324" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20325" type="mesh" mesh="mvp_V20325" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20326" type="mesh" mesh="mvp_V20326" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20327" type="mesh" mesh="mvp_V20327" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20328" type="mesh" mesh="mvp_V20328" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20329" type="mesh" mesh="mvp_V20329" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20330" type="mesh" mesh="mvp_V20330" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20331" type="mesh" mesh="mvp_V20331" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20332" type="mesh" mesh="mvp_V20332" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20333" type="mesh" mesh="mvp_V20333" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20334" type="mesh" mesh="mvp_V20334" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20335" type="mesh" mesh="mvp_V20335" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20336" type="mesh" mesh="mvp_V20336" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20337" type="mesh" mesh="mvp_V20337" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20338" type="mesh" mesh="mvp_V20338" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20339" type="mesh" mesh="mvp_V20339" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20340" type="mesh" mesh="mvp_V20340" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20341" type="mesh" mesh="mvp_V20341" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20342" type="mesh" mesh="mvp_V20342" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20343" type="mesh" mesh="mvp_V20343" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20344" type="mesh" mesh="mvp_V20344" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20345" type="mesh" mesh="mvp_V20345" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+          <geom name="gripper_link2_mvp_V20346" type="mesh" mesh="mvp_V20346" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="1" group="0" rgba="0.15 0.65 0.35 0.25" />
+        </body>
+        <site name="grasp_center" pos="0 0 0.12" size=".002" rgba="0 0 0 0" />
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="source_gripper_mimic" joint1="gripper_joint2" joint2="gripper_joint1" polycoef="0 -1 0 0 0" />
+  </equality>
+  <contact>
+    <exclude body1="gripper_base" body2="gripper_link1" />
+    <exclude body1="gripper_base" body2="gripper_link2" />
+  </contact>
+  <actuator>
+    <general name="servo_gripper_joint1" joint="gripper_joint1" gear="1" dyntype="none" gaintype="fixed" gainprm="1" biastype="affine" biasprm="0 0 -8" ctrllimited="true" ctrlrange="-10 10" forcelimited="true" forcerange="-10 10" />
+    <general name="servo_gripper_joint2" joint="gripper_joint2" gear="1" dyntype="none" gaintype="fixed" gainprm="1" biastype="affine" biasprm="0 0 -8" ctrllimited="true" ctrlrange="-10 10" forcelimited="true" forcerange="-10 10" />
+  </actuator>
+</mujoco>
