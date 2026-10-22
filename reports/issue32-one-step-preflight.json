@@ -1,0 +1,428 @@
+{
+  "result": {
+    "status": "TRAIN_STEP_BLOCKED",
+    "reason": "BLOCKED_GPU_MEMORY",
+    "CHECKPOINT_MODEL_COMPATIBILITY": "PASS",
+    "NERO_MODEL_BATCH_DTYPE": "PASS",
+    "REAL_PI05_FORWARD_BACKWARD": "FAIL",
+    "ONE_OPTIMIZER_STEP": "FAIL",
+    "failed_checks_execution": "NOT_RUN_RESOURCE_BLOCKED, not a numerical loss/gradient failure",
+    "checkpoint_compatibility_scope": "metadata-only, actual model restore not performed",
+    "effective_optimizer_steps": 0,
+    "real_forward_calls": 0,
+    "loss": null,
+    "grad_norm": null,
+    "param_norm": null,
+    "training_step_before": null,
+    "training_step_after": null,
+    "trainable_parameter_update": null,
+    "gpu_training_initialization": false,
+    "oom_attempts": 0,
+    "checkpoint_saved": false,
+    "wandb_started": false,
+    "abstract_state": {
+      "params": {
+        "leaves": 51,
+        "elements": 3353433872,
+        "bytes": 13413735488,
+        "dtypes": [
+          "float32"
+        ]
+      },
+      "trainable": {
+        "leaves": 51,
+        "elements": 3353433872,
+        "bytes": 13413735488,
+        "dtypes": [
+          "float32"
+        ]
+      },
+      "opt_state": {
+        "leaves": 104,
+        "elements": 6706867746,
+        "bytes": 26827470984,
+        "dtypes": [
+          "float32",
+          "int32"
+        ]
+      },
+      "ema_params": {
+        "leaves": 51,
+        "elements": 3353433872,
+        "bytes": 13413735488,
+        "dtypes": [
+          "float32"
+        ]
+      }
+    },
+    "memory_budget": {
+      "params_bytes": 13413735488,
+      "optimizer_bytes": 26827470984,
+      "ema_bytes": 13413735488,
+      "persistent_state_bytes": 53654941960,
+      "available_free_bytes": 50460622848,
+      "persistent_state_fits": false,
+      "additional_gradients_bytes": 13413735488,
+      "excluded": "activations, attention, collectives, compiler/temporary buffers, FSDP replicated small arrays"
+    },
+    "input_sha256_unchanged": true,
+    "checkpoint_manifest_sha256": "890eb06c040e8765bb530656f4425a38b9dab63db8bcac244c19e1a9af3ad7ea"
+  },
+  "gpu": {
+    "devices": [
+      {
+        "index": 0,
+        "uuid": "GPU-ec61e174-26cc-4914-d5d4-d19718c5bb84",
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_MiB": 24564,
+        "free_MiB": 2500
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-b2f70ac1-ee77-9f0f-a7e6-46565270e52d",
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_MiB": 24564,
+        "free_MiB": 2468
+      },
+      {
+        "index": 2,
+        "uuid": "GPU-78d17601-27b7-b0fd-01e0-24ec7f8e3d2e",
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_MiB": 24564,
+        "free_MiB": 24063
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-5c1ee33b-4c3a-f79a-76b9-b18ee251854c",
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_MiB": 24564,
+        "free_MiB": 24060
+      }
+    ],
+    "compute_processes_csv": "GPU-ec61e174-26cc-4914-d5d4-d19718c5bb84, 3669327, 21458\nGPU-b2f70ac1-ee77-9f0f-a7e6-46565270e52d, 987212, 21490\n"
+  },
+  "memory": {
+    "params_bytes": 13413735488,
+    "optimizer_bytes": 26827470984,
+    "ema_bytes": 13413735488,
+    "persistent_state_bytes": 53654941960,
+    "available_free_bytes": 50460622848,
+    "persistent_state_fits": false,
+    "additional_gradients_bytes": 13413735488,
+    "excluded": "activations, attention, collectives, compiler/temporary buffers, FSDP replicated small arrays",
+    "abstract_state": {
+      "params": {
+        "leaves": 51,
+        "elements": 3353433872,
+        "bytes": 13413735488,
+        "dtypes": [
+          "float32"
+        ]
+      },
+      "trainable": {
+        "leaves": 51,
+        "elements": 3353433872,
+        "bytes": 13413735488,
+        "dtypes": [
+          "float32"
+        ]
+      },
+      "opt_state": {
+        "leaves": 104,
+        "elements": 6706867746,
+        "bytes": 26827470984,
+        "dtypes": [
+          "float32",
+          "int32"
+        ]
+      },
+      "ema_params": {
+        "leaves": 51,
+        "elements": 3353433872,
+        "bytes": 13413735488,
+        "dtypes": [
+          "float32"
+        ]
+      }
+    },
+    "selected_gpus": [
+      {
+        "index": 2,
+        "uuid": "GPU-78d17601-27b7-b0fd-01e0-24ec7f8e3d2e",
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_MiB": 24564,
+        "free_MiB": 24063
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-5c1ee33b-4c3a-f79a-76b9-b18ee251854c",
+        "name": "NVIDIA GeForce RTX 4090",
+        "total_MiB": 24564,
+        "free_MiB": 24060
+      }
+    ],
+    "interpretation": "Aggregate optimistic lower bound, even before uneven FSDP replication/activations"
+  },
+  "batch": {
+    "status": "PASS",
+    "legal_starts": 673,
+    "selected_starts": [
+      0,
+      1
+    ],
+    "time_padding": false,
+    "transformed_before_dtype": {
+      "state": "float64",
+      "actions": "float64"
+    },
+    "loader_framework": "jax",
+    "layout": "NHWC; original JAX Observation branch, no PyTorch NCHW mixing",
+    "leaves": [
+      {
+        "path": "[0].images['base_0_rgb']",
+        "shape": [
+          2,
+          224,
+          224,
+          3
+        ],
+        "before_dtype": "float32",
+        "after_dtype": "float32",
+        "min": -1.0,
+        "max": 0.8509804010391235
+      },
+      {
+        "path": "[0].images['left_wrist_0_rgb']",
+        "shape": [
+          2,
+          224,
+          224,
+          3
+        ],
+        "before_dtype": "float32",
+        "after_dtype": "float32",
+        "min": -1.0,
+        "max": -1.0
+      },
+      {
+        "path": "[0].images['right_wrist_0_rgb']",
+        "shape": [
+          2,
+          224,
+          224,
+          3
+        ],
+        "before_dtype": "float32",
+        "after_dtype": "float32",
+        "min": -1.0,
+        "max": -1.0
+      },
+      {
+        "path": "[0].image_masks['base_0_rgb']",
+        "shape": [
+          2
+        ],
+        "before_dtype": "bool",
+        "after_dtype": "bool",
+        "min": 1.0,
+        "max": 1.0
+      },
+      {
+        "path": "[0].image_masks['left_wrist_0_rgb']",
+        "shape": [
+          2
+        ],
+        "before_dtype": "bool",
+        "after_dtype": "bool",
+        "min": 0.0,
+        "max": 0.0
+      },
+      {
+        "path": "[0].image_masks['right_wrist_0_rgb']",
+        "shape": [
+          2
+        ],
+        "before_dtype": "bool",
+        "after_dtype": "bool",
+        "min": 0.0,
+        "max": 0.0
+      },
+      {
+        "path": "[0].state",
+        "shape": [
+          2,
+          32
+        ],
+        "before_dtype": "float32",
+        "after_dtype": "float32",
+        "min": -1.0,
+        "max": 1.0003751516342163
+      },
+      {
+        "path": "[0].tokenized_prompt",
+        "shape": [
+          2,
+          200
+        ],
+        "before_dtype": "int32",
+        "after_dtype": "int32",
+        "min": 0.0,
+        "max": 235324.0
+      },
+      {
+        "path": "[0].tokenized_prompt_mask",
+        "shape": [
+          2,
+          200
+        ],
+        "before_dtype": "bool",
+        "after_dtype": "bool",
+        "min": 0.0,
+        "max": 1.0
+      },
+      {
+        "path": "[1]",
+        "shape": [
+          2,
+          10,
+          32
+        ],
+        "before_dtype": "float32",
+        "after_dtype": "float32",
+        "min": -1.0,
+        "max": 1.0003938674926758
+      }
+    ],
+    "action_first8": [
+      [
+        1.0003684759140015,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0003796815872192,
+        -1.0,
+        1.0003938674926758,
+        0.3771103322505951
+      ],
+      [
+        1.0003684759140015,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0003796815872192,
+        -1.0,
+        1.0003938674926758,
+        0.3875885605812073
+      ]
+    ],
+    "feature_padding_tail24_all_zero": true,
+    "state_physical_dimensions": 9,
+    "action_physical_dimensions": 8,
+    "model_dimensions": 32,
+    "model_discrete_state_input": true,
+    "stats_sha256": "59b12d0aa10aa116018cd8d8c0d1d0615fdb85e7a45ac3bc61d647c33a31ff26",
+    "skip_norm_stats": false
+  },
+  "checkpoint_compatibility": {
+    "status": "PASS",
+    "scope": "Orbax metadata keys/global shapes; not a new checkpoint restore/forward",
+    "expected_leaves": 51,
+    "checkpoint_leaves": 51,
+    "shape_mismatches": [],
+    "expected_dtypes": [
+      "float32"
+    ],
+    "checkpoint_dtypes": [
+      "float32"
+    ],
+    "actual_weight_restore": false
+  },
+  "checkpoint_path": "/data_robot/projects/official_pi05_libero/cache/openpi/openpi-assets/checkpoints/pi05_libero/params",
+  "checkpoint_files": {
+    "_METADATA": {
+      "sha256": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "bytes": 23493
+    },
+    "_sharding": {
+      "sha256": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "bytes": 17952
+    },
+    "array_metadatas/process_0": {
+      "sha256": "2b29474f08aa50922da11074deb4d7f35e30f0071a088a30f40df88edc1ebdb0",
+      "bytes": 9062
+    },
+    "d/98a77a52a8eb845ae4830eb7fe983979": {
+      "sha256": "93b39327a1552b06b1b6ce5190d58131297bcca66c3f2a099bbb2882df7759af",
+      "bytes": 42307
+    },
+    "manifest.ocdbt": {
+      "sha256": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104",
+      "bytes": 120
+    },
+    "ocdbt.process_0/d/0eaaecefaa9720d30a32cc56e65fd345": {
+      "sha256": "0d4412552d4a69fba953f824a60d005ee7559822a9c1c16684906c7f0801b848",
+      "bytes": 2449323387
+    },
+    "ocdbt.process_0/d/155391c1cbf93a1be16266de052e5b48": {
+      "sha256": "ad09cf4b2cacc0628c713afbb1ee9decfd36e295fdacae111c1e0c5eeeb6cc00",
+      "bytes": 2307885530
+    },
+    "ocdbt.process_0/d/2b6985f48e9da86f68627a7608c5bc25": {
+      "sha256": "3b81b2e8afe1456a4584d19dcf600f2bb6f27beff9f061b336f06657a11d5cb5",
+      "bytes": 1077
+    },
+    "ocdbt.process_0/d/475fab3ee8821662585a8cde3eb32e22": {
+      "sha256": "624a529b0b5f07bf535e07eba4f823e47fdde66a3d0b38295a35ac9d60cfcf0f",
+      "bytes": 2150232827
+    },
+    "ocdbt.process_0/d/6c54da5a6f62c20a09c0f3f8c3329e00": {
+      "sha256": "1a5f80ef1aeaa82e70cca883c4d95da65bd410c8da19729d4814317533ba11f5",
+      "bytes": 1608436908
+    },
+    "ocdbt.process_0/d/896bf93c5cf2e8ddd274a6ea0a2feec0": {
+      "sha256": "c92342da7593219debce6133f148f3c24ece184ff53f9f4bac800c09fcc6dc1a",
+      "bytes": 2240080987
+    },
+    "ocdbt.process_0/d/bc613ff288a162563e622d01bb60622a": {
+      "sha256": "1e99d5876e6b8db2e12c43c8079f6b98cffac2c26bbd84e59cc505e983d146d2",
+      "bytes": 217
+    },
+    "ocdbt.process_0/d/bda87d9791f23df771cd2d15293780cc": {
+      "sha256": "9c717ff13084524b74f330803421b8a261bc3009a477c933e1e1a1477a796fc3",
+      "bytes": 2926522
+    },
+    "ocdbt.process_0/d/efbb46173882cb35ed41ffe0c2db8a5e": {
+      "sha256": "6e62d35e0689dc12779d0b2e65304823d6787fdd4ccd754c9ebd059fdc4b6765",
+      "bytes": 1680102856
+    },
+    "ocdbt.process_0/manifest.ocdbt": {
+      "sha256": "3bf70fbb0fac151675595b33aeb8203139e8809de17d606574ab606a758b3591",
+      "bytes": 322
+    }
+  },
+  "evidence_directory": "/data_robot/projects/.experiments/nero-one-step-issue32-20261023/preflight_001",
+  "execution": {
+    "argv": [
+      "/data_robot/projects/official_pi05_libero/server-venv/bin/python",
+      "-B",
+      "experiments/dynamics/pi05_one_step_preflight.py",
+      "--output",
+      "/data_robot/projects/.experiments/nero-one-step-issue32-20261023/preflight_001"
+    ],
+    "cwd": "/data_robot/projects/.worktrees/nero-gripper-one-step",
+    "environment": {
+      "JAX_PLATFORMS": "cpu",
+      "CUDA_VISIBLE_DEVICES": "2,3",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "WANDB_MODE": "disabled",
+      "HF_LEROBOT_HOME": "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot",
+      "OPENPI_DATA_HOME": "/data_robot/projects/official_pi05_libero/cache/openpi",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "exit_code": 0,
+    "wall_s": 86.52669822983444
+  }
+}
