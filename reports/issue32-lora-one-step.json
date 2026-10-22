@@ -1,0 +1,2520 @@
+{
+  "status": "PI05_NERO_LORA_ONE_STEP_PASS",
+  "execution_source_commit": "3061906ce2dd04cc83e5986979fac63780aac881",
+  "branch": "feature/nero-lora-one-step",
+  "upstream_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "data_baseline": "bec08f9dbb8433dc4d34819443f98b29e9603d76",
+  "full_parameter_blocker_commit": "c24a5469546abbcd37a01372e4a310e5cc99fdfa",
+  "experiment_root": "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023",
+  "versions": {
+    "python": "3.11.9 (main, Aug 14 2024, 05:07:28) [Clang 18.1.8 ]",
+    "jax": "0.5.3",
+    "jaxlib": "0.5.3",
+    "flax": "0.10.2",
+    "optax": "0.2.4",
+    "orbax-checkpoint": "0.11.13",
+    "torch": "2.7.1",
+    "lerobot": "0.1.0",
+    "numpy": "1.26.4",
+    "jaxtyping": "0.2.36",
+    "beartype": "0.19.0"
+  },
+  "plan": {
+    "model": {
+      "action_dim": 32,
+      "action_horizon": 10,
+      "max_token_len": 200,
+      "dtype": "bfloat16",
+      "paligemma_variant": "gemma_2b_lora",
+      "action_expert_variant": "gemma_300m_lora",
+      "pi05": true,
+      "discrete_state_input": true,
+      "pytorch_compile_mode": "max-autotune"
+    },
+    "freeze_filter": "official model.get_freeze_filter()",
+    "optimizer": {
+      "b1": 0.9,
+      "b2": 0.95,
+      "eps": 1e-08,
+      "weight_decay": 1e-10,
+      "clip_gradient_norm": 1.0
+    },
+    "lr_schedule": {
+      "warmup_steps": 1000,
+      "peak_lr": 2.5e-05,
+      "decay_steps": 30000,
+      "decay_lr": 2.5e-06
+    },
+    "ema_decay": null,
+    "seed": 42,
+    "batch_size": 2,
+    "fsdp_devices": 2,
+    "checkpoint": "/data_robot/projects/official_pi05_libero/cache/openpi/openpi-assets/checkpoints/pi05_libero/params",
+    "checkpoint_manifest_sha256": "890eb06c040e8765bb530656f4425a38b9dab63db8bcac244c19e1a9af3ad7ea",
+    "input_sha256": {
+      "/data_robot/projects/.worktrees/nero-gripper-lora-step/experiments/dynamics/pi05_lora_step.py": "6a1ecb960d3fa457bda61851a7032ab1ae7827f4dc63223e3b36f0399249d0ac",
+      "/data_robot/projects/.worktrees/nero-gripper-lora-step/experiments/dynamics/nero_training_data.py": "dd14478906fa377518aa32c66660cebd09cb938f9b9848f3cf88e6b35e4ef70e",
+      "/data_robot/projects/.worktrees/nero-gripper-lora-step/experiments/dynamics/nero_openpi.py": "538a45ed8de1591194c9ad81defab890b218dfc1c0c99d3e0d08ebd2b603e6e2",
+      "/data_robot/projects/.worktrees/nero-gripper-lora-step/experiments/dynamics/pi05_one_step_preflight.py": "0f702b6c715f0e80e2dfdfbe5b3c8db0845c29c82cfd66f0583d50e788349582",
+      "/data_robot/projects/.worktrees/nero-gripper-lora-step/experiments/dynamics/nero_norm_stats/norm_stats.json": "59b12d0aa10aa116018cd8d8c0d1d0615fdb85e7a45ac3bc61d647c33a31ff26",
+      "/data_robot/projects/official_pi05_libero/upstream/scripts/train.py": "22f98a06aaa6e68e0f725d727ab95398238d1cae8a46bb94e829f330758a9baf",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/models/lora.py": "ced28716950c34d84a1a6d0b03b1d9550000732721df884818080b6e78cb3289",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/models/pi0.py": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/models/pi0_config.py": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/training/weight_loaders.py": "a54ac3222f81f8c6233241bc16b6f369c9416cdaa83f7058f96f7ddcfde1a3b4",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/training/sharding.py": "c67c4112a126ab097571c8a882fd1ee3f106b15b6e608e7205ac7f29b44ca985",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/training/optimizer.py": "cfb5d6f6aec61fbe961287b4015c652260628a0ed4682a0dbdc271b8e65431fa",
+      "/data_robot/projects/official_pi05_libero/upstream/src/openpi/training/data_loader.py": "4d0b055ac28527c1ab1f0ba7496057722c7c748c88564a8de2ff4fac650e97c9",
+      "/data_robot/projects/official_pi05_libero/cache/openpi/big_vision/paligemma_tokenizer.model": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+      "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/videos/chunk-000/observation.images.base/episode_000000.mp4": "867d070fff87416619c18d589d248070cee5a1d2e2d7c3db6a0c91c5d94d2f3d",
+      "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/data/chunk-000/episode_000000.parquet": "b5878a7eb170b0774a0a10869583f498f6d661ce809849867f98a0e90827ee07",
+      "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/info.json": "8ee768ec50a1147d19b3effd68577cc01fffd2b408f19c8faf0fba1dd663435b",
+      "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/tasks.jsonl": "11187bdd71e9d471f38828e8ce7873ddf42aacb410ef581b3c14de60e484aea7",
+      "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/episodes.jsonl": "2cf7d5f8b6df31ff8d56a80b30ca0f8b54ead06c27415a5eb692f5c9322476c0",
+      "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot/local/nero_mvp_r1/meta/episodes_stats.jsonl": "408a94cde677c776ddf2fd3dec183232494c73079696bc9149e5486c7c153266"
+    },
+    "per_gpu_reserve_bytes": 2147483648,
+    "full": {
+      "leaves": 71,
+      "elements": 3403421456,
+      "bytes": 7740757056,
+      "dtypes": [
+        "bfloat16",
+        "float32"
+      ]
+    },
+    "frozen": {
+      "leaves": 20,
+      "elements": 2936464384,
+      "bytes": 5872928768,
+      "dtypes": [
+        "bfloat16"
+      ]
+    },
+    "trainable": {
+      "leaves": 51,
+      "elements": 466957072,
+      "bytes": 1867828288,
+      "dtypes": [
+        "float32"
+      ]
+    },
+    "optimizer_state": {
+      "leaves": 104,
+      "elements": 933914146,
+      "bytes": 3735656584,
+      "dtypes": [
+        "float32",
+        "int32"
+      ]
+    },
+    "trainable_paths": {
+      "PaliGemma/img/Transformer/encoder_norm/bias": {
+        "shape": [
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 1152
+      },
+      "PaliGemma/img/Transformer/encoder_norm/scale": {
+        "shape": [
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 1152
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/scale": {
+        "shape": [
+          27,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/scale": {
+        "shape": [
+          27,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/bias": {
+        "shape": [
+          27,
+          4304
+        ],
+        "dtype": "float32",
+        "elements": 116208
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/kernel": {
+        "shape": [
+          27,
+          1152,
+          4304
+        ],
+        "dtype": "float32",
+        "elements": 133871616
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/kernel": {
+        "shape": [
+          27,
+          4304,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 133871616
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/bias": {
+        "shape": [
+          27,
+          16,
+          72
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/kernel": {
+        "shape": [
+          27,
+          1152,
+          16,
+          72
+        ],
+        "dtype": "float32",
+        "elements": 35831808
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/kernel": {
+        "shape": [
+          27,
+          16,
+          72,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 35831808
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/bias": {
+        "shape": [
+          27,
+          16,
+          72
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/kernel": {
+        "shape": [
+          27,
+          1152,
+          16,
+          72
+        ],
+        "dtype": "float32",
+        "elements": 35831808
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/bias": {
+        "shape": [
+          27,
+          16,
+          72
+        ],
+        "dtype": "float32",
+        "elements": 31104
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/kernel": {
+        "shape": [
+          27,
+          1152,
+          16,
+          72
+        ],
+        "dtype": "float32",
+        "elements": 35831808
+      },
+      "PaliGemma/img/embedding/bias": {
+        "shape": [
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 1152
+      },
+      "PaliGemma/img/embedding/kernel": {
+        "shape": [
+          14,
+          14,
+          3,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 677376
+      },
+      "PaliGemma/img/head/bias": {
+        "shape": [
+          2048
+        ],
+        "dtype": "float32",
+        "elements": 2048
+      },
+      "PaliGemma/img/head/kernel": {
+        "shape": [
+          1152,
+          2048
+        ],
+        "dtype": "float32",
+        "elements": 2359296
+      },
+      "PaliGemma/img/pos_embedding": {
+        "shape": [
+          1,
+          256,
+          1152
+        ],
+        "dtype": "float32",
+        "elements": 294912
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_a": {
+        "shape": [
+          18,
+          8,
+          256,
+          16
+        ],
+        "dtype": "float32",
+        "elements": 589824
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_b": {
+        "shape": [
+          18,
+          8,
+          16,
+          2048
+        ],
+        "dtype": "float32",
+        "elements": 4718592
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_a": {
+        "shape": [
+          18,
+          8,
+          256,
+          32
+        ],
+        "dtype": "float32",
+        "elements": 1179648
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_b": {
+        "shape": [
+          18,
+          8,
+          32,
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 4718592
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_a": {
+        "shape": [
+          18,
+          2,
+          1,
+          2048,
+          16
+        ],
+        "dtype": "float32",
+        "elements": 1179648
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_b": {
+        "shape": [
+          18,
+          2,
+          1,
+          16,
+          256
+        ],
+        "dtype": "float32",
+        "elements": 147456
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_a": {
+        "shape": [
+          18,
+          2,
+          1,
+          1024,
+          32
+        ],
+        "dtype": "float32",
+        "elements": 1179648
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_b": {
+        "shape": [
+          18,
+          2,
+          1,
+          32,
+          256
+        ],
+        "dtype": "float32",
+        "elements": 294912
+      },
+      "PaliGemma/llm/layers/attn/q_einsum/lora_a": {
+        "shape": [
+          18,
+          8,
+          2048,
+          16
+        ],
+        "dtype": "float32",
+        "elements": 4718592
+      },
+      "PaliGemma/llm/layers/attn/q_einsum/lora_b": {
+        "shape": [
+          18,
+          8,
+          16,
+          256
+        ],
+        "dtype": "float32",
+        "elements": 589824
+      },
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_a": {
+        "shape": [
+          18,
+          8,
+          1024,
+          32
+        ],
+        "dtype": "float32",
+        "elements": 4718592
+      },
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_b": {
+        "shape": [
+          18,
+          8,
+          32,
+          256
+        ],
+        "dtype": "float32",
+        "elements": 1179648
+      },
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_a": {
+        "shape": [
+          18,
+          2,
+          2048,
+          16
+        ],
+        "dtype": "float32",
+        "elements": 1179648
+      },
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_b": {
+        "shape": [
+          18,
+          2,
+          16,
+          16384
+        ],
+        "dtype": "float32",
+        "elements": 9437184
+      },
+      "PaliGemma/llm/layers/mlp/linear_lora_a": {
+        "shape": [
+          18,
+          16384,
+          16
+        ],
+        "dtype": "float32",
+        "elements": 4718592
+      },
+      "PaliGemma/llm/layers/mlp/linear_lora_b": {
+        "shape": [
+          18,
+          16,
+          2048
+        ],
+        "dtype": "float32",
+        "elements": 589824
+      },
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_a": {
+        "shape": [
+          18,
+          2,
+          1024,
+          32
+        ],
+        "dtype": "float32",
+        "elements": 1179648
+      },
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_b": {
+        "shape": [
+          18,
+          2,
+          32,
+          4096
+        ],
+        "dtype": "float32",
+        "elements": 4718592
+      },
+      "PaliGemma/llm/layers/mlp_1/linear_lora_a": {
+        "shape": [
+          18,
+          4096,
+          32
+        ],
+        "dtype": "float32",
+        "elements": 2359296
+      },
+      "PaliGemma/llm/layers/mlp_1/linear_lora_b": {
+        "shape": [
+          18,
+          32,
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 589824
+      },
+      "action_in_proj/bias": {
+        "shape": [
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 1024
+      },
+      "action_in_proj/kernel": {
+        "shape": [
+          32,
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 32768
+      },
+      "action_out_proj/bias": {
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "elements": 32
+      },
+      "action_out_proj/kernel": {
+        "shape": [
+          1024,
+          32
+        ],
+        "dtype": "float32",
+        "elements": 32768
+      },
+      "time_mlp_in/bias": {
+        "shape": [
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 1024
+      },
+      "time_mlp_in/kernel": {
+        "shape": [
+          1024,
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 1048576
+      },
+      "time_mlp_out/bias": {
+        "shape": [
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 1024
+      },
+      "time_mlp_out/kernel": {
+        "shape": [
+          1024,
+          1024
+        ],
+        "dtype": "float32",
+        "elements": 1048576
+      }
+    },
+    "loss": "Original32D flow matching; physicalNERO8D + featurepadding24D; no new mask",
+    "gpu_snapshot": {
+      "devices": [
+        {
+          "index": 0,
+          "uuid": "GPU-ec61e174-26cc-4914-d5d4-d19718c5bb84",
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_MiB": 24564,
+          "free_MiB": 1220
+        },
+        {
+          "index": 1,
+          "uuid": "GPU-b2f70ac1-ee77-9f0f-a7e6-46565270e52d",
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_MiB": 24564,
+          "free_MiB": 2436
+        },
+        {
+          "index": 2,
+          "uuid": "GPU-78d17601-27b7-b0fd-01e0-24ec7f8e3d2e",
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_MiB": 24564,
+          "free_MiB": 24063
+        },
+        {
+          "index": 3,
+          "uuid": "GPU-5c1ee33b-4c3a-f79a-76b9-b18ee251854c",
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_MiB": 24564,
+          "free_MiB": 24060
+        }
+      ],
+      "compute_processes_csv": "GPU-ec61e174-26cc-4914-d5d4-d19718c5bb84, 3669327, 22738\nGPU-b2f70ac1-ee77-9f0f-a7e6-46565270e52d, 987212, 21522\n"
+    },
+    "expected_optimizer_steps": 1,
+    "source_baseline": "c24a546 + bec08f9"
+  },
+  "plan_amendment": {
+    "parent": "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023/plan_002",
+    "parent_plan_sha256": "8210255623bd737b535ff420971d64906929220e118e23aea0e95af9daa17f6c",
+    "reason": "Official scoped typecheck bypass only for JAX ArgInfo lowering; no model/config/numerical change",
+    "old_source_sha256": "5b54b7a87c1d8863a1a034cbde1ee9b71d3b12de79cda5a833c27f9e5d9eedb6",
+    "new_source_sha256": "6a1ecb960d3fa457bda61851a7032ab1ae7827f4dc63223e3b36f0399249d0ac",
+    "unchanged_ast": [
+      "context",
+      "plan",
+      "validate_checkpoint_map",
+      "canonical_train_state"
+    ],
+    "optimizer_calls_so_far": 0
+  },
+  "checkpoint_mapping": {
+    "base_paths": [
+      "PaliGemma/img/Transformer/encoder_norm/bias",
+      "PaliGemma/img/Transformer/encoder_norm/scale",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/bias",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/scale",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/bias",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/scale",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/bias",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/kernel",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/bias",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/kernel",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/bias",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/kernel",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/bias",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/kernel",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/bias",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/kernel",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/bias",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/kernel",
+      "PaliGemma/img/embedding/bias",
+      "PaliGemma/img/embedding/kernel",
+      "PaliGemma/img/head/bias",
+      "PaliGemma/img/head/kernel",
+      "PaliGemma/img/pos_embedding",
+      "PaliGemma/llm/embedder/input_embedding",
+      "PaliGemma/llm/final_norm/scale",
+      "PaliGemma/llm/final_norm_1/Dense_0/bias",
+      "PaliGemma/llm/final_norm_1/Dense_0/kernel",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/w",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/w",
+      "PaliGemma/llm/layers/attn/kv_einsum/w",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/w",
+      "PaliGemma/llm/layers/attn/q_einsum/w",
+      "PaliGemma/llm/layers/attn/q_einsum_1/w",
+      "PaliGemma/llm/layers/mlp/gating_einsum",
+      "PaliGemma/llm/layers/mlp/linear",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum",
+      "PaliGemma/llm/layers/mlp_1/linear",
+      "PaliGemma/llm/layers/pre_attention_norm/scale",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/bias",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/kernel",
+      "PaliGemma/llm/layers/pre_ffw_norm/scale",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/bias",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/kernel",
+      "action_in_proj/bias",
+      "action_in_proj/kernel",
+      "action_out_proj/bias",
+      "action_out_proj/kernel",
+      "time_mlp_in/bias",
+      "time_mlp_in/kernel",
+      "time_mlp_out/bias",
+      "time_mlp_out/kernel"
+    ],
+    "new_lora_paths": [
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_b",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_b",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_b",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_a",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_b",
+      "PaliGemma/llm/layers/mlp/linear_lora_a",
+      "PaliGemma/llm/layers/mlp/linear_lora_b",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_a",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_b",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_a",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_b"
+    ],
+    "base_shapes_and_dtypes": {
+      "PaliGemma/img/Transformer/encoder_norm/bias": {
+        "shape": [
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoder_norm/scale": {
+        "shape": [
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/scale": {
+        "shape": [
+          27,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/scale": {
+        "shape": [
+          27,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/bias": {
+        "shape": [
+          27,
+          4304
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/kernel": {
+        "shape": [
+          27,
+          1152,
+          4304
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/kernel": {
+        "shape": [
+          27,
+          4304,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/bias": {
+        "shape": [
+          27,
+          16,
+          72
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/kernel": {
+        "shape": [
+          27,
+          1152,
+          16,
+          72
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/bias": {
+        "shape": [
+          27,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/kernel": {
+        "shape": [
+          27,
+          16,
+          72,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/bias": {
+        "shape": [
+          27,
+          16,
+          72
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/kernel": {
+        "shape": [
+          27,
+          1152,
+          16,
+          72
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/bias": {
+        "shape": [
+          27,
+          16,
+          72
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/kernel": {
+        "shape": [
+          27,
+          1152,
+          16,
+          72
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/embedding/bias": {
+        "shape": [
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/embedding/kernel": {
+        "shape": [
+          14,
+          14,
+          3,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/head/bias": {
+        "shape": [
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/head/kernel": {
+        "shape": [
+          1152,
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/img/pos_embedding": {
+        "shape": [
+          1,
+          256,
+          1152
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "PaliGemma/llm/embedder/input_embedding": {
+        "shape": [
+          257152,
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/final_norm/scale": {
+        "shape": [
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/final_norm_1/Dense_0/bias": {
+        "shape": [
+          3072
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/final_norm_1/Dense_0/kernel": {
+        "shape": [
+          1024,
+          3072
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/w": {
+        "shape": [
+          18,
+          8,
+          256,
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/w": {
+        "shape": [
+          18,
+          8,
+          256,
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum/w": {
+        "shape": [
+          18,
+          2,
+          1,
+          2048,
+          256
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum_1/w": {
+        "shape": [
+          18,
+          2,
+          1,
+          1024,
+          256
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/attn/q_einsum/w": {
+        "shape": [
+          18,
+          8,
+          2048,
+          256
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/attn/q_einsum_1/w": {
+        "shape": [
+          18,
+          8,
+          1024,
+          256
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/mlp/gating_einsum": {
+        "shape": [
+          18,
+          2,
+          2048,
+          16384
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/mlp/linear": {
+        "shape": [
+          18,
+          16384,
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/mlp_1/gating_einsum": {
+        "shape": [
+          18,
+          2,
+          1024,
+          4096
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/mlp_1/linear": {
+        "shape": [
+          18,
+          4096,
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/pre_attention_norm/scale": {
+        "shape": [
+          18,
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/bias": {
+        "shape": [
+          18,
+          3072
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/kernel": {
+        "shape": [
+          18,
+          1024,
+          3072
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/pre_ffw_norm/scale": {
+        "shape": [
+          18,
+          2048
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/bias": {
+        "shape": [
+          18,
+          3072
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/kernel": {
+        "shape": [
+          18,
+          1024,
+          3072
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "bfloat16"
+      },
+      "action_in_proj/bias": {
+        "shape": [
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "action_in_proj/kernel": {
+        "shape": [
+          32,
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "action_out_proj/bias": {
+        "shape": [
+          32
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "action_out_proj/kernel": {
+        "shape": [
+          1024,
+          32
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "time_mlp_in/bias": {
+        "shape": [
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "time_mlp_in/kernel": {
+        "shape": [
+          1024,
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "time_mlp_out/bias": {
+        "shape": [
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      },
+      "time_mlp_out/kernel": {
+        "shape": [
+          1024,
+          1024
+        ],
+        "checkpoint_dtype": "float32",
+        "target_dtype": "float32"
+      }
+    }
+  },
+  "checkpoint_files": {
+    "_METADATA": {
+      "sha256": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "bytes": 23493
+    },
+    "_sharding": {
+      "sha256": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "bytes": 17952
+    },
+    "array_metadatas/process_0": {
+      "sha256": "2b29474f08aa50922da11074deb4d7f35e30f0071a088a30f40df88edc1ebdb0",
+      "bytes": 9062
+    },
+    "d/98a77a52a8eb845ae4830eb7fe983979": {
+      "sha256": "93b39327a1552b06b1b6ce5190d58131297bcca66c3f2a099bbb2882df7759af",
+      "bytes": 42307
+    },
+    "manifest.ocdbt": {
+      "sha256": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104",
+      "bytes": 120
+    },
+    "ocdbt.process_0/d/0eaaecefaa9720d30a32cc56e65fd345": {
+      "sha256": "0d4412552d4a69fba953f824a60d005ee7559822a9c1c16684906c7f0801b848",
+      "bytes": 2449323387
+    },
+    "ocdbt.process_0/d/155391c1cbf93a1be16266de052e5b48": {
+      "sha256": "ad09cf4b2cacc0628c713afbb1ee9decfd36e295fdacae111c1e0c5eeeb6cc00",
+      "bytes": 2307885530
+    },
+    "ocdbt.process_0/d/2b6985f48e9da86f68627a7608c5bc25": {
+      "sha256": "3b81b2e8afe1456a4584d19dcf600f2bb6f27beff9f061b336f06657a11d5cb5",
+      "bytes": 1077
+    },
+    "ocdbt.process_0/d/475fab3ee8821662585a8cde3eb32e22": {
+      "sha256": "624a529b0b5f07bf535e07eba4f823e47fdde66a3d0b38295a35ac9d60cfcf0f",
+      "bytes": 2150232827
+    },
+    "ocdbt.process_0/d/6c54da5a6f62c20a09c0f3f8c3329e00": {
+      "sha256": "1a5f80ef1aeaa82e70cca883c4d95da65bd410c8da19729d4814317533ba11f5",
+      "bytes": 1608436908
+    },
+    "ocdbt.process_0/d/896bf93c5cf2e8ddd274a6ea0a2feec0": {
+      "sha256": "c92342da7593219debce6133f148f3c24ece184ff53f9f4bac800c09fcc6dc1a",
+      "bytes": 2240080987
+    },
+    "ocdbt.process_0/d/bc613ff288a162563e622d01bb60622a": {
+      "sha256": "1e99d5876e6b8db2e12c43c8079f6b98cffac2c26bbd84e59cc505e983d146d2",
+      "bytes": 217
+    },
+    "ocdbt.process_0/d/bda87d9791f23df771cd2d15293780cc": {
+      "sha256": "9c717ff13084524b74f330803421b8a261bc3009a477c933e1e1a1477a796fc3",
+      "bytes": 2926522
+    },
+    "ocdbt.process_0/d/efbb46173882cb35ed41ffe0c2db8a5e": {
+      "sha256": "6e62d35e0689dc12779d0b2e65304823d6787fdd4ccd754c9ebd059fdc4b6765",
+      "bytes": 1680102856
+    },
+    "ocdbt.process_0/manifest.ocdbt": {
+      "sha256": "3bf70fbb0fac151675595b33aeb8203139e8809de17d606574ab606a758b3591",
+      "bytes": 322
+    }
+  },
+  "result": {
+    "status": "PI05_NERO_LORA_ONE_STEP_PASS",
+    "metrics": {
+      "grad_norm": 3.3095920085906982,
+      "loss": 0.5817274451255798,
+      "param_norm": 1833.281005859375
+    },
+    "step_before": 0,
+    "step_after": 1,
+    "optimizer_calls": 1,
+    "optimizer_state_changed": true,
+    "changed_lora_paths": [
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_b",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_b",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_b",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_a",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_b",
+      "PaliGemma/llm/layers/mlp/linear_lora_a",
+      "PaliGemma/llm/layers/mlp/linear_lora_b",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_a",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_b",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_a",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_b"
+    ],
+    "trainable_elements": 466957072,
+    "frozen_elements": 2936464384,
+    "frozen_parameters_unchanged": true,
+    "all_parameters_finite": true,
+    "base_checkpoint_restore_exact": true,
+    "ema_decay": null,
+    "new_weights_saved": false,
+    "wandb_started": false,
+    "full_parameter_blocker_unchanged": true
+  },
+  "batch": {
+    "valid_starts": 673,
+    "selected_starts": [
+      0,
+      1
+    ],
+    "stats_sha256": "59b12d0aa10aa116018cd8d8c0d1d0615fdb85e7a45ac3bc61d647c33a31ff26",
+    "state_shape": [
+      2,
+      32
+    ],
+    "actions_shape": [
+      2,
+      10,
+      32
+    ],
+    "state_dtype": "float32",
+    "actions_dtype": "float32",
+    "image_shape": [
+      2,
+      224,
+      224,
+      3
+    ],
+    "masks": {
+      "base_0_rgb": [
+        true,
+        true
+      ],
+      "left_wrist_0_rgb": [
+        false,
+        false
+      ],
+      "right_wrist_0_rgb": [
+        false,
+        false
+      ]
+    },
+    "physical8_normalized_first_actions": [
+      [
+        1.0003684759140015,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0003796815872192,
+        -1.0,
+        1.0003938674926758,
+        0.3771103322505951
+      ],
+      [
+        1.0003684759140015,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0003796815872192,
+        -1.0,
+        1.0003938674926758,
+        0.3875885605812073
+      ]
+    ],
+    "feature_tail24_zero": true,
+    "time_padding": false,
+    "discrete_state_input": true
+  },
+  "budget": {
+    "devices": [
+      {
+        "device": "cuda:0",
+        "resident_state_bytes": 5763861708,
+        "free_bytes": 25231884288,
+        "remaining_after_resident_bytes": 19468022580,
+        "conservative_init_bytes": 15452152076
+      },
+      {
+        "device": "cuda:1",
+        "resident_state_bytes": 5763861708,
+        "free_bytes": 25228738560,
+        "remaining_after_resident_bytes": 19464876852,
+        "conservative_init_bytes": 15452152076
+      }
+    ],
+    "replicated_checkpoint_input_bytes": 7540806720
+  },
+  "compiled_memory": {
+    "argument_size_in_bytes": 5765670335,
+    "output_size_in_bytes": 5763863152,
+    "temp_size_in_bytes": 3609759208,
+    "alias_size_in_bytes": 5763861708,
+    "estimated_per_device_peak_bytes": 9375430987,
+    "reserve_bytes": 2147483648
+  },
+  "restore_audit": {
+    "base_hash": {
+      "PaliGemma/img/Transformer/encoder_norm/bias": "b73c1af7d75f637b9a88572b0817d7701d6cdd3ff3077a3162c1eaa3a75066b9",
+      "PaliGemma/img/Transformer/encoder_norm/scale": "4879c58b7b246adf41b0e1ffb6e87dbf522fa6fff413fdafc381dd7d95f7ef62",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/bias": "2e785f116b1cf87a75ad534434e3d3990f51d23fd55c5cd16903da145381ef45",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/scale": "25182eede0f4118f1a9ac7fc066b7a1ca1516d061247dc865902ecf51605d2c2",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/bias": "16ab95df4570f819e4eee17178d6a116c8950eafa88acbcafd4fb3ad126f159c",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/scale": "d9e96fe7f7bb4f3e8acd3690d2b5d573d3d1250599751b92e012cdfdaf260216",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/bias": "89dac8b0062809d62fc43a4407c5ce4a7b1a89a97db245a28cabdab35149b5ed",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/kernel": "c4d30a8a15a43d6bf761974bcbfedeea097788162aa905a2700833ea7a70b735",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/bias": "ce4c83a9336bd04ac24c42bdf2a136bb3e8c4bbffbcbd61ddc7588ddb8a45f96",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/kernel": "e359259dc43b8733e45c6389868d6a09aa7944920716ed31df6c565b0617f6ab",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/bias": "ddec63f4fd1b1e64b111b502fea7590793ba9845ddd367424e38c51b58a09a0a",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/kernel": "02c59d919e86f9a8da1e1d04bf8f8ee8ce76e6ad88d223c933520cb8fb5882fb",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/bias": "ecc2c0971acf579aadc5dad461b414f557cbeaff902d0bbad0202aff2cfe6fbc",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/kernel": "bb2ad28f55c814283d51555bfc02b127936cba81ce5c529e3197cf28cecea682",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/bias": "6836e2a0cd3935ebcb3d4389bfe248d45b0afa67214f48c4d0b22b91db633a6a",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/kernel": "749ffd25792478d453430af8ad6d2d06a170ffee6a195d2bb85a0ee23afe25d3",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/bias": "db03987b00ec8f525ad344780e2d747784aaafd10e95035c0827f45d61dd34e6",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/kernel": "0626d88ffe48fa59dbd7940c64af2527c528311a8d6f727a5dece1133d3fdf4f",
+      "PaliGemma/img/embedding/bias": "4b21db218c0ab692d0fdf01ff4e868290fc7cee331773f1ecd1111c624b1227b",
+      "PaliGemma/img/embedding/kernel": "3153816188f90691dea07103e16714c7307399128c995c1ab291b06012c4c6a6",
+      "PaliGemma/img/head/bias": "00b9fca3e6684c32300025aad857a0d23e40db6e7abfdd16453f3b31adb47611",
+      "PaliGemma/img/head/kernel": "c282f524308cd5c2f6a9624fae2387711e27569ab40f7d824426704d77daab7a",
+      "PaliGemma/img/pos_embedding": "0344001050863abe36033d66bca8a65331a8f737b84e6be0b697b50b7c05ead3",
+      "PaliGemma/llm/embedder/input_embedding": "b6f1e855ced070134214de85ee6b4b92c337412c403f9432d63262ca3cfa3609",
+      "PaliGemma/llm/final_norm/scale": "fd5e2da2f4b83e50a876a66bbe0df83c46491288b66d93a1eef280d71dbfb56a",
+      "PaliGemma/llm/final_norm_1/Dense_0/bias": "7e1aabd1e2ff111cc9def8fc01ca147eaf0a6c66b83e339c780d5b61241ce065",
+      "PaliGemma/llm/final_norm_1/Dense_0/kernel": "ea1b8e0ef36c25e223cf5c96a9fae0974820cf5eb96f7d244b002fc74e3e8c87",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/w": "658428b5ccbf015815f90b199a1d37e315cd37b39a106100c07b44e43124dde6",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/w": "d881e41f02c82c0c0e9cb305ed2f2058925106aa41234c4c90d3f8ab0cc47a58",
+      "PaliGemma/llm/layers/attn/kv_einsum/w": "f86d06d4b3ba0258a119c145a70ebb204aefb9c7e3e199675c8e4c153f7d7b02",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/w": "3b8c38c22a6e7049be90890a16f04e031cd1abdb2fe123b6a4001be413c3d500",
+      "PaliGemma/llm/layers/attn/q_einsum/w": "8b60fbbeede3b2290ddf0eee14cfb837237f8ec04368c65b9f5629c2a01fbb2c",
+      "PaliGemma/llm/layers/attn/q_einsum_1/w": "0e2b858c712938931442f2b0bbb4c8a4e3861181724dbf6fc3f3d2e42c27b86e",
+      "PaliGemma/llm/layers/mlp/gating_einsum": "3b71cc34f18855406fa1fa0eda4363f0aee7b70eb2ad7f92bfdd25038fd1bb5c",
+      "PaliGemma/llm/layers/mlp/linear": "56a4459bc9100045d8cf0db3fe72c442000d94b08d5eb3ddebc936ff7cf43da3",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum": "6b09b639a74e56b6dc8a17d3e60ced3f65c77d00ca6754af89eaf877ffa759bb",
+      "PaliGemma/llm/layers/mlp_1/linear": "706f1b06b82ca4baf06d0b526574e65fc3e85e9371e9b4a674914fbdad4ab744",
+      "PaliGemma/llm/layers/pre_attention_norm/scale": "4c2bede9606477b169d62a853d9132f4a6746c974526ca9ce1da65d6f190aa4d",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/bias": "528c21e9312ada056ca9fd337f4768e18a0a4750f7efa66ef97663dfc41e16f9",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/kernel": "48249769d6c4546704b6ffe86f7d1c335aee7cdb7394180d2410eff487ef4f8b",
+      "PaliGemma/llm/layers/pre_ffw_norm/scale": "5cf0aa50cb8ca591619e8a30f027ed35082fa67837dc2d395ce799f8d7c13295",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/bias": "6be56c19e28efe7c01aad7b4894c729a7ae60688616c3fbd05b8722c0325fd7a",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/kernel": "d5b0787a5e6c478da14e94d5ecc307974e344212807afc034cb486a57fdfa7b8",
+      "action_in_proj/bias": "ce1c4499aa465ccfac0a5fea5c64f424a1253b7520946e3da48f22b3a53ada9a",
+      "action_in_proj/kernel": "d0b355f427e7c88e3f57683ed328e64b4020819ce9e425053084d5bb9ea0d435",
+      "action_out_proj/bias": "3b2196ff9899f0b253484e0e4cf92421cf15632a96d8ab1e9cadfaf0f4e10667",
+      "action_out_proj/kernel": "6a2270ace6ca0fb49a24ccfdcf9aa776e012f77db4b6447cc4916ef79873b8c2",
+      "time_mlp_in/bias": "6b195e4fd1510ca9268a4325238d9a0b5d603bc3c905df23096efbec459a36d8",
+      "time_mlp_in/kernel": "9b3157813cd5cfdcdbadab0da70bd136891c01ad98c74084cca2a06c399fc014",
+      "time_mlp_out/bias": "c54f322413bf67286115d368c9532ab0be55702df8e43364a7b3f5f6a4032bd0",
+      "time_mlp_out/kernel": "793e70490c5565fa9af56268629e0e68b58e7467d6f9b723814c40ac13b1cb70"
+    },
+    "new_random_lora_only": [
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_b",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_b",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_a",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_b",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_a",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_b",
+      "PaliGemma/llm/layers/mlp/linear_lora_b",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_b",
+      "PaliGemma/llm/layers/mlp/linear_lora_a",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_a",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_a",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_a",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_b",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_b"
+    ]
+  },
+  "source_checkpoint_verification": {
+    "manifest_sha256": "890eb06c040e8765bb530656f4425a38b9dab63db8bcac244c19e1a9af3ad7ea",
+    "all_source_files_match": true
+  },
+  "before_update": {
+    "step": 0,
+    "trainable_hash": {
+      "PaliGemma/img/Transformer/encoder_norm/bias": "b73c1af7d75f637b9a88572b0817d7701d6cdd3ff3077a3162c1eaa3a75066b9",
+      "PaliGemma/img/Transformer/encoder_norm/scale": "4879c58b7b246adf41b0e1ffb6e87dbf522fa6fff413fdafc381dd7d95f7ef62",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/bias": "2e785f116b1cf87a75ad534434e3d3990f51d23fd55c5cd16903da145381ef45",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/scale": "25182eede0f4118f1a9ac7fc066b7a1ca1516d061247dc865902ecf51605d2c2",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/bias": "16ab95df4570f819e4eee17178d6a116c8950eafa88acbcafd4fb3ad126f159c",
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/scale": "d9e96fe7f7bb4f3e8acd3690d2b5d573d3d1250599751b92e012cdfdaf260216",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/bias": "89dac8b0062809d62fc43a4407c5ce4a7b1a89a97db245a28cabdab35149b5ed",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/kernel": "c4d30a8a15a43d6bf761974bcbfedeea097788162aa905a2700833ea7a70b735",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/bias": "ce4c83a9336bd04ac24c42bdf2a136bb3e8c4bbffbcbd61ddc7588ddb8a45f96",
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/kernel": "e359259dc43b8733e45c6389868d6a09aa7944920716ed31df6c565b0617f6ab",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/bias": "ddec63f4fd1b1e64b111b502fea7590793ba9845ddd367424e38c51b58a09a0a",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/kernel": "02c59d919e86f9a8da1e1d04bf8f8ee8ce76e6ad88d223c933520cb8fb5882fb",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/bias": "ecc2c0971acf579aadc5dad461b414f557cbeaff902d0bbad0202aff2cfe6fbc",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/kernel": "bb2ad28f55c814283d51555bfc02b127936cba81ce5c529e3197cf28cecea682",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/bias": "6836e2a0cd3935ebcb3d4389bfe248d45b0afa67214f48c4d0b22b91db633a6a",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/kernel": "749ffd25792478d453430af8ad6d2d06a170ffee6a195d2bb85a0ee23afe25d3",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/bias": "db03987b00ec8f525ad344780e2d747784aaafd10e95035c0827f45d61dd34e6",
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/kernel": "0626d88ffe48fa59dbd7940c64af2527c528311a8d6f727a5dece1133d3fdf4f",
+      "PaliGemma/img/embedding/bias": "4b21db218c0ab692d0fdf01ff4e868290fc7cee331773f1ecd1111c624b1227b",
+      "PaliGemma/img/embedding/kernel": "3153816188f90691dea07103e16714c7307399128c995c1ab291b06012c4c6a6",
+      "PaliGemma/img/head/bias": "00b9fca3e6684c32300025aad857a0d23e40db6e7abfdd16453f3b31adb47611",
+      "PaliGemma/img/head/kernel": "c282f524308cd5c2f6a9624fae2387711e27569ab40f7d824426704d77daab7a",
+      "PaliGemma/img/pos_embedding": "0344001050863abe36033d66bca8a65331a8f737b84e6be0b697b50b7c05ead3",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_a": "b0ab81e3e4c4ccb775679ac490131184f8d7897b0b5c69e1d9a2e45aa4f02a13",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_b": "b53555387f56e98e3367d5e5af30cd221fdaa8e6a680b112e5090734944e92f9",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_a": "f839834112df13ac9b10cb6816744187f87d9210f892beebfa7e0517616bb619",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_b": "c8237a12a471c02f22b07e16c4baf23d5018b5818b5bad0c81a28c21bd6a4619",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_a": "733861aa034d194c958c584605feea40b338320ad66f576805a7a2da43d0d4de",
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_b": "e26dc252fc877a828923777fec4ea6b3c206ec433f49579e830caf35f7aed19b",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_a": "0204c43e6b1056d09f4402f279bbeefd697ece74fc22ff7f2e46be7246930e21",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_b": "9b626b459b903f14fd09f0957163cabbb6b474031cd307a59435927733a8514b",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_a": "cf7711beedd54b46ba152467548d232bee54413393ab647e1c91bba5fee8ff47",
+      "PaliGemma/llm/layers/attn/q_einsum/lora_b": "1ef1d95ce119a392ca517a65c2651d80eb4251f701e174bf726b58e3e18df607",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_a": "5185f394db6c6a97fb2fa6b9c9d989b628614bb85c3e0a03804b5c561db532dd",
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_b": "acb09371bca42b204a3f8104a3e4fb18cb8643b8bc10fc6581b45e76a7b9054f",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_a": "a171a1bb211c85eb2fe79282dd23a176673fdf31785ac2e8bc4f040d77bff4ae",
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_b": "47cae40d3a6f430d30b41d116fa4956a0a5c09680129f95c17a9283d6db3bdad",
+      "PaliGemma/llm/layers/mlp/linear_lora_a": "336f70855ed39d9d4a0660094de1fc9ff0f0e35f5ac3b110e25b84b28f0a2f50",
+      "PaliGemma/llm/layers/mlp/linear_lora_b": "86007f27dd68eefca333e2758a4f4b51a8af9a173bb98bdd13b6913ce5c77495",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_a": "0dec15429dbfab5963c4ae07b920e35441b1407b484e121b22d85f7166cd2f88",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_b": "747d6a3fec31de9cf6249991c6a4d99644cb48eaa1feda14fe9a79b93d785054",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_a": "5dff2e827bf8858c738d721077fa0db4086a897caf026cb4b496d0bd4261f632",
+      "PaliGemma/llm/layers/mlp_1/linear_lora_b": "a9c6966a55c66d2cf6ce52ebcf20711dd7b742a2ee81aa6c9b0d3f88c1b243c2",
+      "action_in_proj/bias": "ce1c4499aa465ccfac0a5fea5c64f424a1253b7520946e3da48f22b3a53ada9a",
+      "action_in_proj/kernel": "d0b355f427e7c88e3f57683ed328e64b4020819ce9e425053084d5bb9ea0d435",
+      "action_out_proj/bias": "3b2196ff9899f0b253484e0e4cf92421cf15632a96d8ab1e9cadfaf0f4e10667",
+      "action_out_proj/kernel": "6a2270ace6ca0fb49a24ccfdcf9aa776e012f77db4b6447cc4916ef79873b8c2",
+      "time_mlp_in/bias": "6b195e4fd1510ca9268a4325238d9a0b5d603bc3c905df23096efbec459a36d8",
+      "time_mlp_in/kernel": "9b3157813cd5cfdcdbadab0da70bd136891c01ad98c74084cca2a06c399fc014",
+      "time_mlp_out/bias": "c54f322413bf67286115d368c9532ab0be55702df8e43364a7b3f5f6a4032bd0",
+      "time_mlp_out/kernel": "793e70490c5565fa9af56268629e0e68b58e7467d6f9b723814c40ac13b1cb70"
+    },
+    "frozen_hash": {
+      "PaliGemma/llm/embedder/input_embedding": "b6f1e855ced070134214de85ee6b4b92c337412c403f9432d63262ca3cfa3609",
+      "PaliGemma/llm/final_norm/scale": "fd5e2da2f4b83e50a876a66bbe0df83c46491288b66d93a1eef280d71dbfb56a",
+      "PaliGemma/llm/final_norm_1/Dense_0/bias": "7e1aabd1e2ff111cc9def8fc01ca147eaf0a6c66b83e339c780d5b61241ce065",
+      "PaliGemma/llm/final_norm_1/Dense_0/kernel": "ea1b8e0ef36c25e223cf5c96a9fae0974820cf5eb96f7d244b002fc74e3e8c87",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/w": "658428b5ccbf015815f90b199a1d37e315cd37b39a106100c07b44e43124dde6",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/w": "d881e41f02c82c0c0e9cb305ed2f2058925106aa41234c4c90d3f8ab0cc47a58",
+      "PaliGemma/llm/layers/attn/kv_einsum/w": "f86d06d4b3ba0258a119c145a70ebb204aefb9c7e3e199675c8e4c153f7d7b02",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/w": "3b8c38c22a6e7049be90890a16f04e031cd1abdb2fe123b6a4001be413c3d500",
+      "PaliGemma/llm/layers/attn/q_einsum/w": "8b60fbbeede3b2290ddf0eee14cfb837237f8ec04368c65b9f5629c2a01fbb2c",
+      "PaliGemma/llm/layers/attn/q_einsum_1/w": "0e2b858c712938931442f2b0bbb4c8a4e3861181724dbf6fc3f3d2e42c27b86e",
+      "PaliGemma/llm/layers/mlp/gating_einsum": "3b71cc34f18855406fa1fa0eda4363f0aee7b70eb2ad7f92bfdd25038fd1bb5c",
+      "PaliGemma/llm/layers/mlp/linear": "56a4459bc9100045d8cf0db3fe72c442000d94b08d5eb3ddebc936ff7cf43da3",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum": "6b09b639a74e56b6dc8a17d3e60ced3f65c77d00ca6754af89eaf877ffa759bb",
+      "PaliGemma/llm/layers/mlp_1/linear": "706f1b06b82ca4baf06d0b526574e65fc3e85e9371e9b4a674914fbdad4ab744",
+      "PaliGemma/llm/layers/pre_attention_norm/scale": "4c2bede9606477b169d62a853d9132f4a6746c974526ca9ce1da65d6f190aa4d",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/bias": "528c21e9312ada056ca9fd337f4768e18a0a4750f7efa66ef97663dfc41e16f9",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/kernel": "48249769d6c4546704b6ffe86f7d1c335aee7cdb7394180d2410eff487ef4f8b",
+      "PaliGemma/llm/layers/pre_ffw_norm/scale": "5cf0aa50cb8ca591619e8a30f027ed35082fa67837dc2d395ce799f8d7c13295",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/bias": "6be56c19e28efe7c01aad7b4894c729a7ae60688616c3fbd05b8722c0325fd7a",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/kernel": "d5b0787a5e6c478da14e94d5ecc307974e344212807afc034cb486a57fdfa7b8"
+    },
+    "optimizer_hash": [
+      "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "72f7750edf2b495ff66262c32b8fa800c9f5260a5aec53755efdd9e785007423",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "0b0b60d87a55c346762276bc5c12b8b0cdb0d50027159687f3745a0d3abc290b",
+      "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "250480ecefa3655c774b6a4e5d4eb16675ee4f181c2285c25020fac6e3aaf3b5",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "d4d77915154843d612e41c6a72645b31766b8f0d9d53c4980d8b31bacb90c8f3",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "72f7750edf2b495ff66262c32b8fa800c9f5260a5aec53755efdd9e785007423",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "0b0b60d87a55c346762276bc5c12b8b0cdb0d50027159687f3745a0d3abc290b",
+      "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "250480ecefa3655c774b6a4e5d4eb16675ee4f181c2285c25020fac6e3aaf3b5",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "d4d77915154843d612e41c6a72645b31766b8f0d9d53c4980d8b31bacb90c8f3",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    ],
+    "base_restore_byte_match": true
+  },
+  "step_attempt": {
+    "allowed_calls": 1,
+    "attempt": 1
+  },
+  "parameter_changes": {
+    "trainable": {
+      "PaliGemma/img/Transformer/encoder_norm/bias": {
+        "changed_elements": 961,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "b73c1af7d75f637b9a88572b0817d7701d6cdd3ff3077a3162c1eaa3a75066b9",
+        "after_sha256": "1a8b47b58eb2bd7ed56fae6069c3a993ba7d74faf44d0855b09c70fa1cde0632"
+      },
+      "PaliGemma/img/Transformer/encoder_norm/scale": {
+        "changed_elements": 4,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "4879c58b7b246adf41b0e1ffb6e87dbf522fa6fff413fdafc381dd7d95f7ef62",
+        "after_sha256": "1e9e9b06678b0344466aa1ea7c90184e809eac26ef443a65d5703d02589aa5ee"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/bias": {
+        "changed_elements": 29756,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "2e785f116b1cf87a75ad534434e3d3990f51d23fd55c5cd16903da145381ef45",
+        "after_sha256": "7de9944352e731f1ba300fd3ad06f3d363da49b1ef510203ef31c9232f9cee75"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_0/scale": {
+        "changed_elements": 3757,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "25182eede0f4118f1a9ac7fc066b7a1ca1516d061247dc865902ecf51605d2c2",
+        "after_sha256": "9da0628b11a1d21130f8d683c75538063f42ecf6e8e3d5ec4909cc8d894412e5"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/bias": {
+        "changed_elements": 19855,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "16ab95df4570f819e4eee17178d6a116c8950eafa88acbcafd4fb3ad126f159c",
+        "after_sha256": "e7227d8313c84349262e873283e48d1eb7e6bdf9d298e63b7dd5aa78e75a93e5"
+      },
+      "PaliGemma/img/Transformer/encoderblock/LayerNorm_1/scale": {
+        "changed_elements": 2550,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "d9e96fe7f7bb4f3e8acd3690d2b5d573d3d1250599751b92e012cdfdaf260216",
+        "after_sha256": "e3fd3e1301d61d57a21d7f598e132c2220aa359dd6416a93a85f0dfb2d4d3abf"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/bias": {
+        "changed_elements": 19193,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "89dac8b0062809d62fc43a4407c5ce4a7b1a89a97db245a28cabdab35149b5ed",
+        "after_sha256": "34c0509ac00d016be0e0c61d46e0881f0f393a6d1feb11e558f19a9055c47f6d"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_0/kernel": {
+        "changed_elements": 96691974,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "c4d30a8a15a43d6bf761974bcbfedeea097788162aa905a2700833ea7a70b735",
+        "after_sha256": "470e6c3e39de77d709ed16c11fadb04a2be7c0eefc1b5ee2c93635f0741c60ba"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/bias": {
+        "changed_elements": 26676,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "ce4c83a9336bd04ac24c42bdf2a136bb3e8c4bbffbcbd61ddc7588ddb8a45f96",
+        "after_sha256": "22acab66d230b69329da0b57879989d401e771c6cf5c15b058a2df08d1a4966e"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MlpBlock_0/Dense_1/kernel": {
+        "changed_elements": 95695322,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "e359259dc43b8733e45c6389868d6a09aa7944920716ed31df6c565b0617f6ab",
+        "after_sha256": "d89d8c599784244882ee1a3be443a5a8641ed3a680ef588203b9864e8b9aa948"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/bias": {
+        "changed_elements": 13071,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "ddec63f4fd1b1e64b111b502fea7590793ba9845ddd367424e38c51b58a09a0a",
+        "after_sha256": "2a8802c7c3ceb0b4cb4b1e0beb2da3bba5d061f33ea272854527172c3b790a36"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/key/kernel": {
+        "changed_elements": 35698074,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "02c59d919e86f9a8da1e1d04bf8f8ee8ce76e6ad88d223c933520cb8fb5882fb",
+        "after_sha256": "d6ca3cbe961f8cc4221a378df569973671200c9ec70132d089b017f65cde3cd4"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/bias": {
+        "changed_elements": 28118,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "ecc2c0971acf579aadc5dad461b414f557cbeaff902d0bbad0202aff2cfe6fbc",
+        "after_sha256": "d00ddd623d6acb2fc7a2044ff121fda55e9c641537ac0b5c921251d0d34e4d4a"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/out/kernel": {
+        "changed_elements": 35816142,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "bb2ad28f55c814283d51555bfc02b127936cba81ce5c529e3197cf28cecea682",
+        "after_sha256": "d011e38ce42cc5d76b65c8c7834c2bff87eaba38e56ba66232d0b407cef0cb03"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/bias": {
+        "changed_elements": 28356,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "6836e2a0cd3935ebcb3d4389bfe248d45b0afa67214f48c4d0b22b91db633a6a",
+        "after_sha256": "59ca3683a734d9b6f0a5fe71b8d17744dc485c9ac06697d225529a8a9bcb29cf"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/query/kernel": {
+        "changed_elements": 35735446,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "749ffd25792478d453430af8ad6d2d06a170ffee6a195d2bb85a0ee23afe25d3",
+        "after_sha256": "5789ad9ae4bf15fff86a79567fcd0ba1657a3ec8bf0a1d816cb02c2bf2079069"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/bias": {
+        "changed_elements": 30804,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "db03987b00ec8f525ad344780e2d747784aaafd10e95035c0827f45d61dd34e6",
+        "after_sha256": "c51908de127e55c2fb5c2bf5b40e949755c59fa0987217992bd1f295f10bb681"
+      },
+      "PaliGemma/img/Transformer/encoderblock/MultiHeadDotProductAttention_0/value/kernel": {
+        "changed_elements": 35812661,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "0626d88ffe48fa59dbd7940c64af2527c528311a8d6f727a5dece1133d3fdf4f",
+        "after_sha256": "43a6afeefb23cd8f1c9f9da9fe5e1b4ac1d959166ae342cce34b7d78f427eb57"
+      },
+      "PaliGemma/img/embedding/bias": {
+        "changed_elements": 1110,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "4b21db218c0ab692d0fdf01ff4e868290fc7cee331773f1ecd1111c624b1227b",
+        "after_sha256": "031955d71eda6e9626740df6c2d7b3ac2de56be76f965e2eb41aaefd34202a2d"
+      },
+      "PaliGemma/img/embedding/kernel": {
+        "changed_elements": 677371,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "3153816188f90691dea07103e16714c7307399128c995c1ab291b06012c4c6a6",
+        "after_sha256": "b75d0efae20354a4c80506cef96759f00da9fb9d49648a219aa4807b7f58635e"
+      },
+      "PaliGemma/img/head/bias": {
+        "changed_elements": 2047,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "00b9fca3e6684c32300025aad857a0d23e40db6e7abfdd16453f3b31adb47611",
+        "after_sha256": "21705f1c60c11da586421f2d58023afb1f2524fa4356e1c468e1bcbcefa8cfe6"
+      },
+      "PaliGemma/img/head/kernel": {
+        "changed_elements": 2358078,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "c282f524308cd5c2f6a9624fae2387711e27569ab40f7d824426704d77daab7a",
+        "after_sha256": "3a48c23d5d3571d3a54b1f3b588408123f01f64fd9ba119c743b76778870556f"
+      },
+      "PaliGemma/img/pos_embedding": {
+        "changed_elements": 271636,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "0344001050863abe36033d66bca8a65331a8f737b84e6be0b697b50b7c05ead3",
+        "after_sha256": "dd97e0ca7eb5f37b41869aaee5f8e46e4a59bed6f600f8c657e88678dc029a2d"
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_a": {
+        "changed_elements": 556774,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "b0ab81e3e4c4ccb775679ac490131184f8d7897b0b5c69e1d9a2e45aa4f02a13",
+        "after_sha256": "6bd58d422788a5666d0b4e77b5f3908300bdda4b1b12f8a0cd77b6fc795e520a"
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/lora_b": {
+        "changed_elements": 4453982,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "b53555387f56e98e3367d5e5af30cd221fdaa8e6a680b112e5090734944e92f9",
+        "after_sha256": "009f3901548eb44cd5e5292e01233d156b9a185175d7b14455b5f08249f1c32f"
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_a": {
+        "changed_elements": 1179195,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "f839834112df13ac9b10cb6816744187f87d9210f892beebfa7e0517616bb619",
+        "after_sha256": "660e73ce772120229bc7431d5220ce5f4a286d36b1293878dd9f16249b677631"
+      },
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/lora_b": {
+        "changed_elements": 4715997,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "c8237a12a471c02f22b07e16c4baf23d5018b5818b5bad0c81a28c21bd6a4619",
+        "after_sha256": "88a32aa00a798b4d744e0bd1ac9d8977aef4b554b79187e42e80435abaa6ed46"
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_a": {
+        "changed_elements": 1172642,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "733861aa034d194c958c584605feea40b338320ad66f576805a7a2da43d0d4de",
+        "after_sha256": "e1758eadfe07c43b3820a9acc6bbc70358a548ebfc48d39cd6714e82331ddf8c"
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum/lora_b": {
+        "changed_elements": 147386,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "e26dc252fc877a828923777fec4ea6b3c206ec433f49579e830caf35f7aed19b",
+        "after_sha256": "d0e3843c622f63516dbf7d84c10264dfdb5dac8354ec6df0e871c02077efde09"
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_a": {
+        "changed_elements": 1179060,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "0204c43e6b1056d09f4402f279bbeefd697ece74fc22ff7f2e46be7246930e21",
+        "after_sha256": "d56013728ec928f383d033704f57fe3f2402a6a2bc53fdc4c2b64a06237dddc5"
+      },
+      "PaliGemma/llm/layers/attn/kv_einsum_1/lora_b": {
+        "changed_elements": 294817,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "9b626b459b903f14fd09f0957163cabbb6b474031cd307a59435927733a8514b",
+        "after_sha256": "956bcdb73f29202e6555c9eff8ecd9852b13ef22007aebd05a46e8e24fd8fcc8"
+      },
+      "PaliGemma/llm/layers/attn/q_einsum/lora_a": {
+        "changed_elements": 4419599,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "cf7711beedd54b46ba152467548d232bee54413393ab647e1c91bba5fee8ff47",
+        "after_sha256": "1f109b578b46a5fabc8a21de96c5c3ef13178b55a9722c77673a417d0d02e26d"
+      },
+      "PaliGemma/llm/layers/attn/q_einsum/lora_b": {
+        "changed_elements": 556486,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "1ef1d95ce119a392ca517a65c2651d80eb4251f701e174bf726b58e3e18df607",
+        "after_sha256": "027535192fd52d50a1c74b3332854dea74925b6530d314dd39a2bd02f5e54402"
+      },
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_a": {
+        "changed_elements": 4709556,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "5185f394db6c6a97fb2fa6b9c9d989b628614bb85c3e0a03804b5c561db532dd",
+        "after_sha256": "c9e7647b07b99bec697605c103d912fdee091e6675b122408e03ac47aed6423d"
+      },
+      "PaliGemma/llm/layers/attn/q_einsum_1/lora_b": {
+        "changed_elements": 1178356,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "acb09371bca42b204a3f8104a3e4fb18cb8643b8bc10fc6581b45e76a7b9054f",
+        "after_sha256": "9af88e89c0bf7bc28ab457c86dae38985ceabbd815cec82cc262116e70d9a9ea"
+      },
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_a": {
+        "changed_elements": 1113044,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "a171a1bb211c85eb2fe79282dd23a176673fdf31785ac2e8bc4f040d77bff4ae",
+        "after_sha256": "c37726b5f6745db6650cdedee39a4d923bfe83dc3f86fa7667969aaf9b14f055"
+      },
+      "PaliGemma/llm/layers/mlp/gating_einsum_lora_b": {
+        "changed_elements": 8906106,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "47cae40d3a6f430d30b41d116fa4956a0a5c09680129f95c17a9283d6db3bdad",
+        "after_sha256": "b4acba11e6f4974ccc7bf3439d2783b0329fef87839e24dd13919fce7596f8e9"
+      },
+      "PaliGemma/llm/layers/mlp/linear_lora_a": {
+        "changed_elements": 4452287,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "336f70855ed39d9d4a0660094de1fc9ff0f0e35f5ac3b110e25b84b28f0a2f50",
+        "after_sha256": "fff537ff8e5ba4aca18653e78866a82e4e8755d605417cb1f175436ccfb00344"
+      },
+      "PaliGemma/llm/layers/mlp/linear_lora_b": {
+        "changed_elements": 556817,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "86007f27dd68eefca333e2758a4f4b51a8af9a173bb98bdd13b6913ce5c77495",
+        "after_sha256": "1587f82de01380d7c390379ed5b6b65628047b2f72ceca4070b69fb174691b44"
+      },
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_a": {
+        "changed_elements": 1179330,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "0dec15429dbfab5963c4ae07b920e35441b1407b484e121b22d85f7166cd2f88",
+        "after_sha256": "66e2e374dd47eb0b28e488ecb9ccbad497d1d7cdb4d02a3eccc0b9998a2a6ad1"
+      },
+      "PaliGemma/llm/layers/mlp_1/gating_einsum_lora_b": {
+        "changed_elements": 4715526,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "747d6a3fec31de9cf6249991c6a4d99644cb48eaa1feda14fe9a79b93d785054",
+        "after_sha256": "ec642e3e1ed644ae4bde6e947efb8186272dd71ed01135cab5479586ae6963c4"
+      },
+      "PaliGemma/llm/layers/mlp_1/linear_lora_a": {
+        "changed_elements": 2358158,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "5dff2e827bf8858c738d721077fa0db4086a897caf026cb4b496d0bd4261f632",
+        "after_sha256": "2e5fcf45bd3cbcdc9f0bdb191902803964b22d2d7d2dce368aed7cb6296e20d9"
+      },
+      "PaliGemma/llm/layers/mlp_1/linear_lora_b": {
+        "changed_elements": 589592,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "a9c6966a55c66d2cf6ce52ebcf20711dd7b742a2ee81aa6c9b0d3f88c1b243c2",
+        "after_sha256": "da2c571582908a4e69f9142629867ea642bbd5ded8b56712eb308f4535a1eef1"
+      },
+      "action_in_proj/bias": {
+        "changed_elements": 1024,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "ce1c4499aa465ccfac0a5fea5c64f424a1253b7520946e3da48f22b3a53ada9a",
+        "after_sha256": "fb277081e47e6a1830c51697a2e0ae8aed40c74973227e8f6dffd168b0d1c160"
+      },
+      "action_in_proj/kernel": {
+        "changed_elements": 32592,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "d0b355f427e7c88e3f57683ed328e64b4020819ce9e425053084d5bb9ea0d435",
+        "after_sha256": "f9ceabe08ea9be17ad4a1e6e644c1f818a32f00b02140cee1a901405a035c371"
+      },
+      "action_out_proj/bias": {
+        "changed_elements": 32,
+        "max_abs_change": 2.514570951461792e-08,
+        "before_sha256": "3b2196ff9899f0b253484e0e4cf92421cf15632a96d8ab1e9cadfaf0f4e10667",
+        "after_sha256": "473d1d0c470c8581961a53b7678171e0ee51e5e046e6e5486b9b32d1d92250b5"
+      },
+      "action_out_proj/kernel": {
+        "changed_elements": 32767,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "6a2270ace6ca0fb49a24ccfdcf9aa776e012f77db4b6447cc4916ef79873b8c2",
+        "after_sha256": "8160084891a8f10ff49be6107fca62a8c8cd422dce41744009bf5cc15ee2ab0a"
+      },
+      "time_mlp_in/bias": {
+        "changed_elements": 1024,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "6b195e4fd1510ca9268a4325238d9a0b5d603bc3c905df23096efbec459a36d8",
+        "after_sha256": "cdc70e30fadad4e93f6c3c1df2341afd02615cce4337e080a07b7e003dbfe3bf"
+      },
+      "time_mlp_in/kernel": {
+        "changed_elements": 1048537,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "9b3157813cd5cfdcdbadab0da70bd136891c01ad98c74084cca2a06c399fc014",
+        "after_sha256": "793c33b87019642cfc2b2887c193e38af0c3aba9cf5aae3a432c4157a1a12fb5"
+      },
+      "time_mlp_out/bias": {
+        "changed_elements": 1024,
+        "max_abs_change": 2.60770320892334e-08,
+        "before_sha256": "c54f322413bf67286115d368c9532ab0be55702df8e43364a7b3f5f6a4032bd0",
+        "after_sha256": "b4408cf189c42474bcbde858adc8834d6a13e592a264031d3d5bb4924cfc925e"
+      },
+      "time_mlp_out/kernel": {
+        "changed_elements": 1048557,
+        "max_abs_change": 2.9802322387695312e-08,
+        "before_sha256": "793e70490c5565fa9af56268629e0e68b58e7467d6f9b723814c40ac13b1cb70",
+        "after_sha256": "3c32cedf81c483cfbabac5c8e6958a55e5a0a8e022bd115c91132f7b598e91ae"
+      }
+    },
+    "frozen_hash_before": {
+      "PaliGemma/llm/embedder/input_embedding": "b6f1e855ced070134214de85ee6b4b92c337412c403f9432d63262ca3cfa3609",
+      "PaliGemma/llm/final_norm/scale": "fd5e2da2f4b83e50a876a66bbe0df83c46491288b66d93a1eef280d71dbfb56a",
+      "PaliGemma/llm/final_norm_1/Dense_0/bias": "7e1aabd1e2ff111cc9def8fc01ca147eaf0a6c66b83e339c780d5b61241ce065",
+      "PaliGemma/llm/final_norm_1/Dense_0/kernel": "ea1b8e0ef36c25e223cf5c96a9fae0974820cf5eb96f7d244b002fc74e3e8c87",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/w": "658428b5ccbf015815f90b199a1d37e315cd37b39a106100c07b44e43124dde6",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/w": "d881e41f02c82c0c0e9cb305ed2f2058925106aa41234c4c90d3f8ab0cc47a58",
+      "PaliGemma/llm/layers/attn/kv_einsum/w": "f86d06d4b3ba0258a119c145a70ebb204aefb9c7e3e199675c8e4c153f7d7b02",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/w": "3b8c38c22a6e7049be90890a16f04e031cd1abdb2fe123b6a4001be413c3d500",
+      "PaliGemma/llm/layers/attn/q_einsum/w": "8b60fbbeede3b2290ddf0eee14cfb837237f8ec04368c65b9f5629c2a01fbb2c",
+      "PaliGemma/llm/layers/attn/q_einsum_1/w": "0e2b858c712938931442f2b0bbb4c8a4e3861181724dbf6fc3f3d2e42c27b86e",
+      "PaliGemma/llm/layers/mlp/gating_einsum": "3b71cc34f18855406fa1fa0eda4363f0aee7b70eb2ad7f92bfdd25038fd1bb5c",
+      "PaliGemma/llm/layers/mlp/linear": "56a4459bc9100045d8cf0db3fe72c442000d94b08d5eb3ddebc936ff7cf43da3",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum": "6b09b639a74e56b6dc8a17d3e60ced3f65c77d00ca6754af89eaf877ffa759bb",
+      "PaliGemma/llm/layers/mlp_1/linear": "706f1b06b82ca4baf06d0b526574e65fc3e85e9371e9b4a674914fbdad4ab744",
+      "PaliGemma/llm/layers/pre_attention_norm/scale": "4c2bede9606477b169d62a853d9132f4a6746c974526ca9ce1da65d6f190aa4d",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/bias": "528c21e9312ada056ca9fd337f4768e18a0a4750f7efa66ef97663dfc41e16f9",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/kernel": "48249769d6c4546704b6ffe86f7d1c335aee7cdb7394180d2410eff487ef4f8b",
+      "PaliGemma/llm/layers/pre_ffw_norm/scale": "5cf0aa50cb8ca591619e8a30f027ed35082fa67837dc2d395ce799f8d7c13295",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/bias": "6be56c19e28efe7c01aad7b4894c729a7ae60688616c3fbd05b8722c0325fd7a",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/kernel": "d5b0787a5e6c478da14e94d5ecc307974e344212807afc034cb486a57fdfa7b8"
+    },
+    "frozen_hash_after": {
+      "PaliGemma/llm/embedder/input_embedding": "b6f1e855ced070134214de85ee6b4b92c337412c403f9432d63262ca3cfa3609",
+      "PaliGemma/llm/final_norm/scale": "fd5e2da2f4b83e50a876a66bbe0df83c46491288b66d93a1eef280d71dbfb56a",
+      "PaliGemma/llm/final_norm_1/Dense_0/bias": "7e1aabd1e2ff111cc9def8fc01ca147eaf0a6c66b83e339c780d5b61241ce065",
+      "PaliGemma/llm/final_norm_1/Dense_0/kernel": "ea1b8e0ef36c25e223cf5c96a9fae0974820cf5eb96f7d244b002fc74e3e8c87",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum/w": "658428b5ccbf015815f90b199a1d37e315cd37b39a106100c07b44e43124dde6",
+      "PaliGemma/llm/layers/attn/attn_vec_einsum_1/w": "d881e41f02c82c0c0e9cb305ed2f2058925106aa41234c4c90d3f8ab0cc47a58",
+      "PaliGemma/llm/layers/attn/kv_einsum/w": "f86d06d4b3ba0258a119c145a70ebb204aefb9c7e3e199675c8e4c153f7d7b02",
+      "PaliGemma/llm/layers/attn/kv_einsum_1/w": "3b8c38c22a6e7049be90890a16f04e031cd1abdb2fe123b6a4001be413c3d500",
+      "PaliGemma/llm/layers/attn/q_einsum/w": "8b60fbbeede3b2290ddf0eee14cfb837237f8ec04368c65b9f5629c2a01fbb2c",
+      "PaliGemma/llm/layers/attn/q_einsum_1/w": "0e2b858c712938931442f2b0bbb4c8a4e3861181724dbf6fc3f3d2e42c27b86e",
+      "PaliGemma/llm/layers/mlp/gating_einsum": "3b71cc34f18855406fa1fa0eda4363f0aee7b70eb2ad7f92bfdd25038fd1bb5c",
+      "PaliGemma/llm/layers/mlp/linear": "56a4459bc9100045d8cf0db3fe72c442000d94b08d5eb3ddebc936ff7cf43da3",
+      "PaliGemma/llm/layers/mlp_1/gating_einsum": "6b09b639a74e56b6dc8a17d3e60ced3f65c77d00ca6754af89eaf877ffa759bb",
+      "PaliGemma/llm/layers/mlp_1/linear": "706f1b06b82ca4baf06d0b526574e65fc3e85e9371e9b4a674914fbdad4ab744",
+      "PaliGemma/llm/layers/pre_attention_norm/scale": "4c2bede9606477b169d62a853d9132f4a6746c974526ca9ce1da65d6f190aa4d",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/bias": "528c21e9312ada056ca9fd337f4768e18a0a4750f7efa66ef97663dfc41e16f9",
+      "PaliGemma/llm/layers/pre_attention_norm_1/Dense_0/kernel": "48249769d6c4546704b6ffe86f7d1c335aee7cdb7394180d2410eff487ef4f8b",
+      "PaliGemma/llm/layers/pre_ffw_norm/scale": "5cf0aa50cb8ca591619e8a30f027ed35082fa67837dc2d395ce799f8d7c13295",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/bias": "6be56c19e28efe7c01aad7b4894c729a7ae60688616c3fbd05b8722c0325fd7a",
+      "PaliGemma/llm/layers/pre_ffw_norm_1/Dense_0/kernel": "d5b0787a5e6c478da14e94d5ecc307974e344212807afc034cb486a57fdfa7b8"
+    },
+    "optimizer_hash_before": [
+      "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "72f7750edf2b495ff66262c32b8fa800c9f5260a5aec53755efdd9e785007423",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "0b0b60d87a55c346762276bc5c12b8b0cdb0d50027159687f3745a0d3abc290b",
+      "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "250480ecefa3655c774b6a4e5d4eb16675ee4f181c2285c25020fac6e3aaf3b5",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "d4d77915154843d612e41c6a72645b31766b8f0d9d53c4980d8b31bacb90c8f3",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "72f7750edf2b495ff66262c32b8fa800c9f5260a5aec53755efdd9e785007423",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "5068ff73529858ee4ffd1b8a3bd74351be4f0e68e7ec3923b96c0d2f177fdf6b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "f86265fabe1716d2b1c158e806e28f101a9abe81d4650b05678cfc03e2c150b2",
+      "3462eee435c0b279304de00db4021ddf4f1f3d38a502781f488c6f9a380a348b",
+      "606f558e014930f9c1669f03c71c28945c4631568e39cd308c6c7f4077c7bfb9",
+      "0b0b60d87a55c346762276bc5c12b8b0cdb0d50027159687f3745a0d3abc290b",
+      "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "250480ecefa3655c774b6a4e5d4eb16675ee4f181c2285c25020fac6e3aaf3b5",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "a76c77fe203db862b48214c88fbdc1d5560655ccba2f7a2c7166baf6f846e856",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "d4d77915154843d612e41c6a72645b31766b8f0d9d53c4980d8b31bacb90c8f3",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "0f6412c73e8eb08468224093bb7c01793f5ce5b8011be10f62a534d7b2fb1aa7",
+      "d2ee4703cd9698945ca7b9fe1689ea3095597eac1a0afd8dba00cac7894fdc43",
+      "96a12deebdc8a3421e923d2fc00a649326f0b5167b48ffd231941a415777308c",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+      "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8",
+      "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    ],
+    "optimizer_hash_after": [
+      "67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450",
+      "127c3eac4b769b3e914a63e4c0add7b78e4430f88c585a9caddb7c3b6d3acf11",
+      "4c5976248ae01e1fc5494bb9d061fc227fda112b25f9518d398c54fc3fec154c",
+      "6bd7f698682f5a8c4e308b8babf839742b40bbc3412345ef18576f3bf4238188",
+      "59a6bc29f92bd40c86891c88b755a41fc6d8870f3b60e150cb756079b2e5340c",
+      "56a9f11cd8ff3c6cd2f92c9b14e6470f3fb2b46bbcc3255566062f00cfd34534",
+      "63b3bb7d501e1bb2bd9693e1a8b57ff091d7cba5e7b7832e26eef5b73a732ee9",
+      "ccb336cfb0e0fdc3df3b4d53e5860b28ee0599090d2fd4d6f8ac8f3f8825baaf",
+      "ace813b6bb8814acee513b99a068b059700eb2438d1c86d53eab89d69c423c4c",
+      "f2c17b81ca0506ba3414d76790cd7d8c00c4c57a502cb3b4d5bcdf5c97f6fb44",
+      "007fb7ae47daae8ee9562781eab938e8ae5d97f4e08bc3095832f2d308e371f3",
+      "9663eab3cf03a6837ef3b1c5cbcf8f1e9a65bd07f1c37c4d62dba413a8c6dcff",
+      "402a2303c49be9f0e75c94f1b9d6e70d9b03ed7b2cdb4a6f86290437ee6f977d",
+      "8bc8ab437af17c16da6b34112a4a0e8563302e38355553458cf9ce90a173844e",
+      "98c2742f923f22a9be53f29fe2c600ad1bec56f2f6c91378073d3207b87c3a60",
+      "bb07d8946f9fb301e249ac7d4fc522c077db9946eabc97f5c59beaaf58a28194",
+      "50e8a693d6ab194527525379cf533795a4f6901160c33a117d3d389c98b36259",
+      "f5e8eeaa258b70c6c735054e1cfa16021a00c74bd85297213e6e87f50fcd4b3f",
+      "6f1aa76d2513053a59b90d8018cc2e3cd867031f461cb09922e9fc249213423b",
+      "f77732a280caf816f49119c6a09e83033e8c2626c0643ec3b05ba50d0ccc5427",
+      "987bac1b0c1f82d515b79dff5f347eed8e8824d2232822cbfe7a4dc03067475a",
+      "3157cb7e741d5ec54e88b8604775bf5df9ee6e281d6eeda9034f75955e03793d",
+      "bfabfa42fa586fe7a72a40babc56a264ef8885d4f2da90b9b1568d0932d38ff8",
+      "6b83630ac0ee6faca28cd05ba35e51bf4ad280cde823951c6a556a125603ece1",
+      "3cdba9ecc9fc602fcc7bc0114ce227677abdbef6fe9271545321ee8d7efe2d0d",
+      "3b721967abecdfd07975163119d7ea0d968c715b63737ac9a0cfb686cee9cba4",
+      "877f92df7422d23834c17882f2f19a6d50a6500fe5d367ec127f708155671b7c",
+      "0f6c0603492e840e6557e5e3f3671ffb384a4e22f842528f59a76e9bef553ece",
+      "41e67c8c5f05f2da68466f37516951172997554ca9973cbf397c0e15a755827c",
+      "f83af2049215530ced894140a872201c5ef2c1ad1b069802c02fae46aaca10c0",
+      "0798e2c29dedc2cafdc05313a5103c390e082db3b21f35563a40533529eaa71d",
+      "6062ff5776ce0a98d553700a6ed97abf138da9c9ebf96dcf1d3528691855b4be",
+      "9f4af77e7cbded35648bc6db68591ca400d75fed472dc89b598594f75dd08e73",
+      "158617797a8fd2f0fea1bb9273e3ebe9be984e3bd7cf3f4e49dd792e2924c644",
+      "c16c5a89e547679ab1a95c733e784e25adc3aa6b5ed36ecaeac86683be2278a9",
+      "3163841c8c403765f60ecf6a7b3c4943895b516dea2aa89443ae107dbc4d6071",
+      "a62c08bc994d747616646e07805811ca2d38c6d6349f8a540051c7cc5604a100",
+      "4710d3305beeeb3e6fc0fa17f7044663e8a2dc963d35c374a6ddf3fbefe671ac",
+      "dcf73abdae0ed799e62e6c158fc3497a51396369d560ea0b9463939e298d27cc",
+      "f9dfeb46a8e8753a011f98b1ed70973f138a4298cd67d6cfc9cbcae9f0957888",
+      "800723cd9dcf57af4b31f584e878b49bc5f0a3f7dc791e2ac3daeb3ae9ec20df",
+      "177063daa4bd307ca28437f6730c6146a410fa129a6b7c33b2e1feb2cba912d7",
+      "744a6f9f2b97bf477200e986a5f493658534105c8fec0dd1864c0c0bf8ba91b0",
+      "fa63b241fb9ee35012bb27f58a08d34279c44accd51809b06b70d09a60481741",
+      "78f657611e2237657b791f2b93e57822b8667e61ad4e318f4d65bd01355be6e9",
+      "fabc340c9b4dab50135936dacb42bec2d8079350342443e2ae7528619e33a4f2",
+      "02315674f4507069799aedc2fd0923d5d060620e2e718d3d762c6d942cc9aec2",
+      "9a7edacb673a815359df679b7e114387209b9e076c619491911e2f5a46598aca",
+      "d58bf86a18f48a9141bd22d757ab8e32ebe71b5a94bcc88af49efd2713675dd6",
+      "ad67be18548d97df1769a93240abac1d1808bf7a05308a71fa798d5e2abc6346",
+      "de62c4c6b88f587eca7fcbff12965da4aadad86da0c76a6500c5e10a55740bc8",
+      "8b2ff54c893067ed53c02d714c9131f042d17abbb8ab10d9e352b5163eb7ffb6",
+      "fcf59b15eb7d583403475c32090c440226406a0c9accfcea243411f58aa995ef",
+      "47a4bd613afee28d20e00967ede1c9183fcaee09e8afa32265007a11a8f8e289",
+      "0c1c7e829c1de8e6296920792b48989dc686761ad78ee2fb247b5039d5c3a928",
+      "dd318b911c2917c9280f042365cd85050e990e0acbc2d8f240a7a00badfb8144",
+      "e2a3036413a786ac70f2aa89d763d8cb0f9fffb9aea490c4e99632efc9bde2ce",
+      "2fad127c13eae21ddc828c098b21ec248a3c412e19ee4df835d5f1d25d61e656",
+      "c45d9d4da57b3af45c56fbbbd4dec5ad9c0ef520b4c2405fb49886b42d420a07",
+      "789eef04ecb303fd3081361d76e4de313e15eb79b0089509c2c67937e5620bc6",
+      "5e4d96fefbf58038f2be7f9fe01df4c911966e9cd1d8c4233b70495567e49e97",
+      "d6594dde9fd252e17d71033c7cb71eee9cbf4763bc3e265fb006251cb67ca46c",
+      "175b438a5b03f0f18a4add95ab15ddbe81e02999d2a4e1048878f59dce8db61d",
+      "4963fbab55d957860dd2aff9b5699edc4a6e5bd88a77e0cc97be018813a630cd",
+      "d729d398d084895e665799c205779f7040b1c5f6477bde93bf61dfac2dfee2ce",
+      "bf22b19b13b0180c377f007886d9e62c89f5103f60292762445aa4c4e1ff7eb0",
+      "51199d4d3677ca63027e726c700991316f120a997c690f012615e8c5fbef329a",
+      "40d2e157343823b25256723a7085d831dc3cfeb9a77e8d0e7b08ee479542ada0",
+      "746e86e42bf8e61d38460f444feb03bdd07042b79bfa6328eb76870d8bd6eafe",
+      "594d2eddadf766b433beaec0d289de62fe70feb7a1bf8fd91e916f8ac2b45b0f",
+      "d2e664042170557346780392f36015e6559fe286fe2f88a2d80aff1060665697",
+      "22ec1ac11c8e4c3434fba304a95c566a611ce0a5255cd68c41e2ef540b15b2ba",
+      "ac3f5f998096c786179e167c95953c6bd0da25c1ba5d02ac26b76a4963163784",
+      "9c5824c97d09572596843362475ad8b6b953103984fda2d5d62ab07e15b27be8",
+      "3800e8dda8d3992a649d41c1ea516846749f0862d3e9eb21228d618354a6cb0c",
+      "d6f103c08e3b0446fb63cbc570dd0ce1429fa0239054b7279962b253fff22eba",
+      "9420e03fc95c7ce48846a166843edd122ec635f243c08cd9f17b07eff02911fd",
+      "cfba64b3d77241fee2c1ea3f2663551dbfa3409f329568143a02461d82c356cd",
+      "000134adc5264366818c673a5f88e2f866763902c92e57aee73e2b72b0a20081",
+      "51c5a7c05e9a6d77ad2a846f86025a6176f1ecf06b2e129d30791c567ee69896",
+      "caeb6f306d8625f7736bdc1cfbf628ca00ee49a9af166b505157c68da058d872",
+      "acc77652a337625a65e8291c2e92722a2bc47c1b1304bdd88308532b2ff884bc",
+      "2d7db5822e65a89280be0419b6e33607c3e6530fdf8a34b0952ee1b3913fbbf5",
+      "8be33391c06bb1bbd85a25d3f4823ec3b0bf9eaa0d687b0ff5c55e7b133ea1e0",
+      "805e73287b781f24fd881689bf49de5cf17fa514109752eb17f19bcf97bdbf53",
+      "378b3e2d486be0117900e7c718fee90fe6c2905fb27dcdc2e9b1053f7853712c",
+      "b7f8ac9f09c487ecf74deac58ac2412e5e5b73b61bf56a2c8f437adf9e046f65",
+      "d1127fa076c8875bd7ada65342e62955bff302a29a569a3649a4e5143f97ea8e",
+      "e576ea5d460d2863ffb88e311cbf7401458fd346526cc3393354e3bb34630733",
+      "bd9fd6b145f5816ce7ee8d082d168b86dce03f4eb0758f25c44fb89740f76143",
+      "9a1ada908d065af726348eadd93b99e2e291933a9f3b46d51dc31e139b8c84a1",
+      "7441e5800f900fe01d445e3893541fe39b833a35eec8c044ccde15d84a01eb15",
+      "53d7e2cfe78cad442225527f76c55c98bedfbad9857ba42fa7154df6605b749c",
+      "f02398d1e0c99667d2d1fde80eea7e6a5c7a441b9119969c4970fe9b1bd4e354",
+      "0ab4c39482efb169b46fe6d344943effa37df498f2a84d3c3b42284f2d4f2a65",
+      "e566d68a6b52a281332cbe15b7f4f86680f04f74391de82241cff36fb4b95855",
+      "af7e5bd4e42720f88e787a6d7bf9d5d9c9816ac1bc8e79236f96883074960e8c",
+      "b19824744983470b0f70c5f51c0b3ba09c04e9a6de91476c163bbd2103d31938",
+      "bc7dace339e413df80cd49389c5d6ffc4e038a97e63a0fb4014462fd879f2cf5",
+      "f437b7d60537101fa107f303790a91385736ec52e9dee7d2cad01490c47effad",
+      "46e87236b9c9646f84388874d8644e43e73d50b7d66b9cfd2daa06a8363e0c23",
+      "2780ccfad6f874ef61467a0e0c5251454d8a3f78421bcc64c6bba3d10cac79e4",
+      "b49860edc0387d3b14f8f2f733bd9bb64e953f4e2b3fb8c697f2218a75c84429",
+      "67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450"
+    ]
+  },
+  "update_summary": {
+    "all": {
+      "paths": 51,
+      "changed_paths": 51,
+      "changed_elements": 389563229,
+      "max_abs_change": 2.9802322387695312e-08
+    },
+    "lora": {
+      "paths": 20,
+      "changed_paths": 20,
+      "changed_elements": 48434710,
+      "max_abs_change": 2.60770320892334e-08
+    },
+    "vision_auxiliary": {
+      "paths": 31,
+      "changed_paths": 31,
+      "changed_elements": 341128519,
+      "max_abs_change": 2.9802322387695312e-08
+    }
+  },
+  "jax_memory_stats": {
+    "cuda:0": {
+      "num_allocs": 10837,
+      "bytes_in_use": 5913595136,
+      "peak_bytes_in_use": 13425080832,
+      "largest_alloc_size": 3609759232,
+      "bytes_limit": 18937970688,
+      "bytes_reserved": 0,
+      "peak_bytes_reserved": 0,
+      "largest_free_block_bytes": 0,
+      "pool_bytes": 17454596096,
+      "peak_pool_bytes": 17454596096
+    },
+    "cuda:1": {
+      "num_allocs": 237,
+      "bytes_in_use": 5792242688,
+      "peak_bytes_in_use": 13312358912,
+      "largest_alloc_size": 3609759232,
+      "bytes_limit": 18937970688,
+      "bytes_reserved": 0,
+      "peak_bytes_reserved": 0,
+      "largest_free_block_bytes": 0,
+      "pool_bytes": 17186160640,
+      "peak_pool_bytes": 17186160640
+    }
+  },
+  "sampled_gpu_peaks": {
+    "2": {
+      "used_MiB": 17331,
+      "free_MiB": 6751,
+      "phase": "one_update",
+      "monotonic_s": 2269370.422106802
+    },
+    "3": {
+      "used_MiB": 17076,
+      "free_MiB": 7006,
+      "phase": "one_update",
+      "monotonic_s": 2269370.422106802
+    }
+  },
+  "sample_count": 1975,
+  "requested_sample_interval_s": 0.25,
+  "actual_sample_span_s": 733.2411920810118,
+  "memory_note": "nvidia-smi sampled whole-device use; JAX active/pool allocator peaks are separate; compiler estimate does not include initialization and all allocator/runtime overhead",
+  "execution": {
+    "argv": [
+      "/data_robot/projects/official_pi05_libero/server-venv/bin/python",
+      "-B",
+      "experiments/dynamics/pi05_lora_step.py",
+      "run",
+      "--plan",
+      "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023/plan_003",
+      "--output",
+      "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023/run_002"
+    ],
+    "cwd": "/data_robot/projects/.worktrees/nero-gripper-lora-step",
+    "environment": {
+      "JAX_PLATFORMS": "cuda",
+      "CUDA_VISIBLE_DEVICES": "2,3",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "WANDB_MODE": "disabled",
+      "HF_LEROBOT_HOME": "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot",
+      "OPENPI_DATA_HOME": "/data_robot/projects/official_pi05_libero/cache/openpi",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+      "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+    },
+    "source_commit": "3061906ce2dd04cc83e5986979fac63780aac881",
+    "exit_code": 0,
+    "wall_s": 758.4133392930962
+  },
+  "earlier_attempts": [
+    {
+      "name": "plan_001",
+      "stage": "CPU abstract plan",
+      "optimizer_calls": 0,
+      "error": "Installed Flax flat_state returns dict; fixed iteration API",
+      "execution": {
+        "argv": [
+          "/data_robot/projects/official_pi05_libero/server-venv/bin/python",
+          "-B",
+          "experiments/dynamics/pi05_lora_step.py",
+          "plan",
+          "--output",
+          "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023/plan_001"
+        ],
+        "cwd": "/data_robot/projects/.worktrees/nero-gripper-lora-step",
+        "environment": {
+          "JAX_PLATFORMS": "cpu",
+          "CUDA_VISIBLE_DEVICES": "",
+          "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1",
+          "WANDB_MODE": "disabled",
+          "HF_LEROBOT_HOME": "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot",
+          "OPENPI_DATA_HOME": "/data_robot/projects/official_pi05_libero/cache/openpi",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONDONTWRITEBYTECODE": "1"
+        },
+        "exit_code": 1,
+        "wall_s": 54.54327464802191
+      }
+    },
+    {
+      "name": "run_001",
+      "stage": "JAX typed ArgInfo lowering",
+      "optimizer_calls": 0,
+      "error": "TypeCheckError before real restore or optimizer step; fixed official compile-scoped typechecking adapter only",
+      "execution": {
+        "argv": [
+          "/data_robot/projects/official_pi05_libero/server-venv/bin/python",
+          "-B",
+          "experiments/dynamics/pi05_lora_step.py",
+          "run",
+          "--plan",
+          "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023/plan_002",
+          "--output",
+          "/data_robot/projects/.experiments/nero-lora-step-issue32-20261023/run_001"
+        ],
+        "cwd": "/data_robot/projects/.worktrees/nero-gripper-lora-step",
+        "environment": {
+          "JAX_PLATFORMS": "cuda",
+          "CUDA_VISIBLE_DEVICES": "2,3",
+          "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1",
+          "WANDB_MODE": "disabled",
+          "HF_LEROBOT_HOME": "/data_robot/projects/.experiments/nero-mvp-lerobot-issue27-20261020/lerobot",
+          "OPENPI_DATA_HOME": "/data_robot/projects/official_pi05_libero/cache/openpi",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+          "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+        },
+        "source_commit": "1d96078b127e486dac1b46445a5c37dcb335b41b",
+        "exit_code": 0,
+        "wall_s": 26.403847668785602
+      }
+    }
+  ],
+  "artifact_manifest": {
+    "plan_001-command.json": {
+      "bytes": 796,
+      "sha256": "6a463c3408d957ad02530760713c10c4ea8851440aafde873eac0fbd00d3ee69"
+    },
+    "plan_001-execution.json": {
+      "bytes": 845,
+      "sha256": "294321760d193b5c02063c9bede02401f5da3aa3da1b0c88bdd118e086c7233d"
+    },
+    "plan_001.log": {
+      "bytes": 881,
+      "sha256": "3e32d16d5c9fd508bf73c75832addbbbb641b96f305d1046bc31cdf459b0a2d0"
+    },
+    "plan_002/checkpoint-map.json": {
+      "bytes": 13501,
+      "sha256": "b8e40bba058fc3b67d54c7be889660a1ccd80048c060ffdecbe31b968410aacc"
+    },
+    "plan_002/manifest.json": {
+      "bytes": 397,
+      "sha256": "60dc2cbbb874f523018c8507cf59cf3ba87f9f844c1622d268dd2b42602ee477"
+    },
+    "plan_002/plan.json": {
+      "bytes": 15143,
+      "sha256": "8210255623bd737b535ff420971d64906929220e118e23aea0e95af9daa17f6c"
+    },
+    "plan_002/source/pi05_lora_step.py": {
+      "bytes": 17868,
+      "sha256": "5b54b7a87c1d8863a1a034cbde1ee9b71d3b12de79cda5a833c27f9e5d9eedb6"
+    },
+    "plan_002-command.json": {
+      "bytes": 796,
+      "sha256": "5c40a0de131d579a77d94fc97afd61d2a749d174de83133fd1504993fe4d40b4"
+    },
+    "plan_002-execution.json": {
+      "bytes": 846,
+      "sha256": "3f3434e96031494c2fd7b2939eb4cb823b0eb915df9dbfa6ebbecbbc6419e3bb"
+    },
+    "plan_002.log": {
+      "bytes": 408,
+      "sha256": "cb57ff1519b2a8769ccfc1b364ee4ed59c35d36720445199e1588a759be0817c"
+    },
+    "plan_003/checkpoint-map.json": {
+      "bytes": 13501,
+      "sha256": "b8e40bba058fc3b67d54c7be889660a1ccd80048c060ffdecbe31b968410aacc"
+    },
+    "plan_003/manifest.json": {
+      "bytes": 528,
+      "sha256": "64480f7b340ec1e2a2821854a1e9b421c1a3fc0d15aabfe0ecb136745df57f82"
+    },
+    "plan_003/plan-amendment.json": {
+      "bytes": 622,
+      "sha256": "8e355eec32f2aa3dc5ec8e4ae63aaf7985b81ac7cf7d0610de2973a731fa5ef4"
+    },
+    "plan_003/plan.json": {
+      "bytes": 15143,
+      "sha256": "e51088a37b33712a4917f74cae97b7654f8c9e452190a14bdea4cb1e20511265"
+    },
+    "plan_003/source/pi05_lora_step.py": {
+      "bytes": 18206,
+      "sha256": "6a1ecb960d3fa457bda61851a7032ab1ae7827f4dc63223e3b36f0399249d0ac"
+    },
+    "run_001/batch.json": {
+      "bytes": 998,
+      "sha256": "1906a102b0e1252e4f536877e3718405765ff67c28b8e50919732fd646d249ca"
+    },
+    "run_001/device-budget.json": {
+      "bytes": 497,
+      "sha256": "c7f7ceb89c19edc94fb503cbf043a59e93e8a1ebd82da9000d32fd2e20050e78"
+    },
+    "run_001/gpu-before.json": {
+      "bytes": 886,
+      "sha256": "f3873ddd13e39fa8998e30aa550b5cc2780ca1a181fe3b7820ad257a0e201568"
+    },
+    "run_001/gpu-samples.json": {
+      "bytes": 1151,
+      "sha256": "52766b0981db0ab18a0dd05d76684bd84d3ad796d811221e141bf40c74522ac5"
+    },
+    "run_001/jax-memory-stats.json": {
+      "bytes": 641,
+      "sha256": "09f355c2eb359831ea0ff82c45d79101bbdced31f0dd94a67c2c8a3850d76d0e"
+    },
+    "run_001/manifest.json": {
+      "bytes": 770,
+      "sha256": "50e4c1280c98583d49607746e5ecb3bc4b7b3e7ac1d2a7c480f73536546c1220"
+    },
+    "run_001/result.json": {
+      "bytes": 112319,
+      "sha256": "e5672a8e86b9bca5147318ddad662ca520b8b63bbc31026bce8e36f209a73cce"
+    },
+    "run_001-command.json": {
+      "bytes": 1037,
+      "sha256": "36f0c1394f02e104d7b54d298e5806f648a160e2920550feeec435e07cba3a3b"
+    },
+    "run_001-execution.json": {
+      "bytes": 1087,
+      "sha256": "4b5229016818368bfebb9b0c63b3d2d9e752d5bf7838957c057cf7ad004e7fc6"
+    },
+    "run_001.log": {
+      "bytes": 112328,
+      "sha256": "e9584262fb93db036661e021bee443ddb6bbf82b3f178d8bb8872bd18e109da6"
+    },
+    "run_002/batch.json": {
+      "bytes": 998,
+      "sha256": "1906a102b0e1252e4f536877e3718405765ff67c28b8e50919732fd646d249ca"
+    },
+    "run_002/before-update.json": {
+      "bytes": 16192,
+      "sha256": "76918a9b4cfb2a0a20ddad17c259773e2fa12f170ddcd3160638f8abe7ec4724"
+    },
+    "run_002/checkpoint-source-verified.json": {
+      "bytes": 126,
+      "sha256": "d7e3ab1d1f94f449c47741f4964bea6df64992fb729e0ec9c197dd5b870d4d5c"
+    },
+    "run_002/compiled-memory.json": {
+      "bytes": 234,
+      "sha256": "90cb2032abee3058f14c31767dd8b55a4efaaf0112a4b842dfd22ce4f63752c1"
+    },
+    "run_002/device-budget.json": {
+      "bytes": 497,
+      "sha256": "c7f7ceb89c19edc94fb503cbf043a59e93e8a1ebd82da9000d32fd2e20050e78"
+    },
+    "run_002/gpu-before.json": {
+      "bytes": 886,
+      "sha256": "f0551634a6c03c7e3f544775a9ed1ea403176ae1056a09b6635a92c69efd186e"
+    },
+    "run_002/gpu-samples.json": {
+      "bytes": 240736,
+      "sha256": "8d756c6ca1303142cce65c6d6160fda4a30139b6ab3e8771acdff6824c3bec16"
+    },
+    "run_002/jax-memory-stats.json": {
+      "bytes": 681,
+      "sha256": "27a0f5786d74c751c9940941e677e8fc33634ca0356c610dc8639fb7324b3183"
+    },
+    "run_002/manifest.json": {
+      "bytes": 1582,
+      "sha256": "5cf214c445fffa3fdc2b3ef265e776d675d14e2c71a8f969e017f8b9aa9147d5"
+    },
+    "run_002/optimizer-step-attempt.json": {
+      "bytes": 41,
+      "sha256": "1cab3201b534c33d61f5f408e90f8560169631d28837b65dfa7422174fea4e40"
+    },
+    "run_002/parameter-changes.json": {
+      "bytes": 36343,
+      "sha256": "a47ddb163bd5969443720946a9130290a08fe9e97e107eb8c1ed3b6d9b22ec56"
+    },
+    "run_002/restore-audit.json": {
+      "bytes": 7274,
+      "sha256": "4dc4cf5a6d8674f384722eaee70fa6636633d562b7917a014dc121a9858e5555"
+    },
+    "run_002/result.json": {
+      "bytes": 1638,
+      "sha256": "1903e4020bd96484d7b85143c32c4878b6239ca670d03011a3f4d815d0e4f2db"
+    },
+    "run_002-command.json": {
+      "bytes": 1037,
+      "sha256": "139c728613c146120e2b27911e1c224f438148e19bcbf5234a7e006cd226d0c2"
+    },
+    "run_002-execution.json": {
+      "bytes": 1086,
+      "sha256": "4d1543538409377acfda69a87ae6272e9a731cbb8e808abd92e3e56a9fef723a"
+    },
+    "run_002.log": {
+      "bytes": 2900,
+      "sha256": "0296125352485700464b00ff57fa5026e4181bec093820b39a7ed2e42b795b10"
+    },
+    "post-exit-gpu.json": {
+      "sha256": "a76d4c87a21c53d1e18d54934f36839617a04592c1b2ca2e651c10e8f2942469",
+      "bytes": 629
+    }
+  },
+  "checks": {
+    "artifact_manifests_verified": true,
+    "input_sha_unchanged": true,
+    "cpu_tests_passed": 5,
+    "no_new_optimizer_calls_during_evidence_collection": true,
+    "weights_not_saved": true,
+    "gpu_0_1_untouched": true,
+    "old_reports_unchanged": true
+  },
+  "post_exit_gpu_snapshot": {
+    "utc": "2026-10-22T19:55:43.293544+00:00",
+    "devices_csv": "0, GPU-ec61e174-26cc-4914-d5d4-d19718c5bb84, 22886, 1196\n1, GPU-b2f70ac1-ee77-9f0f-a7e6-46565270e52d, 22909, 1172\n2, GPU-78d17601-27b7-b0fd-01e0-24ec7f8e3d2e, 19, 24063\n3, GPU-5c1ee33b-4c3a-f79a-76b9-b18ee251854c, 22, 24060\n",
+    "compute_processes_csv": "GPU-ec61e174-26cc-4914-d5d4-d19718c5bb84, 3669327, 22762\nGPU-b2f70ac1-ee77-9f0f-a7e6-46565270e52d, 987212, 22786\n",
+    "method": "Post-exit read-only nvidia-smi query; no JAX/model/device computation",
+    "initial_gpu01_processes_still_present": true,
+    "gpu23_used_MiB": {
+      "2": 19,
+      "3": 22
+    }
+  }
+}
