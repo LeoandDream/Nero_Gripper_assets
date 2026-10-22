@@ -1,0 +1,159 @@
+{
+  "checked_at": "2026-10-14T16:44:39+08:00",
+  "scope": "static mechanical assets and specified empty-load control; grasp experimental",
+  "environment": {
+    "python": "3.11.9",
+    "mujoco": "3.2.3",
+    "dependencies": "requirements.txt installed into a fresh venv",
+    "render_backend": "EGL"
+  },
+  "implementation_sha256": {
+    "experiments/dynamics/run.py": "503098029aa320384d2536d25c47b547e7e33136fc924af3f26f04a01254063d",
+    "experiments/dynamics/controller.py": "35fb9e3ea0e4c0cbea2e368372b8a53c482adfe5f036bf3e948b031563f92182",
+    "experiments/dynamics/config.json": "7dd691da88f0881013d8fa3131d7f82436406891f187faf0bf65cf8aa4e6575c",
+    "experiments/dynamics/grasp.json": "56b1fa61e335aa8ea693171b06614a914cd014dbdc75b8127243bad5b1ed511e",
+    "scripts/build.py": "6761e7c3736acff2da81d95b412a8771ee205dcf33931fb3328f62ca62b91fd2",
+    "scripts/validate.py": "1e4143520feacf51e1c1cf27c90552bf35e0128ed018482789c9eb4c3f5588f0",
+    "scripts/test.py": "deeeb1cf729a7ee6105c449efcb0f77c5931316048b8e1316514545a1bf3ce2f"
+  },
+  "verification": {
+    "install": {
+      "command": ".venv/bin/python -m pip install -r requirements.txt",
+      "exit_code": 0
+    },
+    "load": {
+      "model": "mjcf/nero_gripper.xml",
+      "nq": 9,
+      "nv": 9,
+      "nu": 0,
+      "neq": 1,
+      "status": "PASS"
+    },
+    "static_images": {
+      "modes": [
+        "visual open",
+        "visual closed",
+        "collision overlay"
+      ],
+      "status": "PASS"
+    },
+    "static_equivalence": {
+      "command": ".venv/bin/python scripts/validate.py --output debug/static-validation.json",
+      "status": "PASS_STATIC_EQUIVALENCE",
+      "poses": 11,
+      "max_errors": {
+        "body_position_m": 5.551115123125783e-16,
+        "body_rotation_matrix": 1.2212453270876722e-15,
+        "mass_kg": 0.0,
+        "inertia_kg_m2": 1.734723475976807e-18,
+        "inertial_position_m": 0.0,
+        "joint_axis": 0.0,
+        "joint_range": 0.0,
+        "geometry_bounds_m": 9.265381378797954e-09,
+        "mimic_m": 0.0
+      }
+    },
+    "regression": {
+      "command": ".venv/bin/python scripts/test.py --control --run-id my_acceptance",
+      "exit_code": 0,
+      "static_passed": 9,
+      "dynamic_passed": 12,
+      "original_static_tests_unchanged": 8,
+      "fresh_checkout_without_git_or_historical_runs": true
+    },
+    "control": {
+      "status": "PASS",
+      "actual_mj_steps": 37000,
+      "phases": 21,
+      "maximum_settled_arm_error_rad": 0.00021609372808047202,
+      "maximum_coupling_error_m": 8.235288382630462e-05,
+      "maximum_arm_velocity_rad_s": 0.21781005728185776,
+      "maximum_finger_velocity_m_s": 0.01690684631167811,
+      "base_pair_normal_force_N": 0.0,
+      "external_force_shortcuts": false,
+      "qpos_writes_during_execution": 0
+    },
+    "grasp": {
+      "command": ".venv/bin/python experiments/dynamics/run.py --stage grasp --filtered --run-id my_grasp",
+      "exit_code": 1,
+      "status": "FAIL",
+      "actual_mj_steps": 49387,
+      "successful_conditions": 0,
+      "executed_conditions": 1,
+      "not_physically_executed": [
+        "offset_positive",
+        "offset_negative"
+      ],
+      "maximum_lift_m": 0.00013836132552294544,
+      "maximum_robot_object_penetration_m": 0.001818073334529626,
+      "maximum_coupling_error_m": 0.00021269976591398176,
+      "control_health_status": "FAIL",
+      "failed_criteria": [
+        "lift_height",
+        "bilateral_finger_support",
+        "no_nonfinger_support_during_hold",
+        "robot_object_penetration"
+      ],
+      "bilateral_contact_fraction_during_hold": 0.0,
+      "nonfinger_support_samples_during_hold": 2000,
+      "external_force_shortcuts": false,
+      "qpos_writes_during_execution": 0
+    },
+    "replay": {
+      "command": "MUJOCO_GL=egl .venv/bin/python experiments/dynamics/run.py --stage replay --run-id my_grasp --episode fixed",
+      "exit_code": 0,
+      "status": "PASS_OFFLINE_REPLAY",
+      "actual_mj_steps_in_replay": 0,
+      "frames": 988,
+      "fps": 20,
+      "recorded_source_hashes_verified": true
+    },
+    "delivery_integrity": {
+      "protected_files_unchanged": 123,
+      "build_conversion_ast_unchanged": true,
+      "metadata_generator_matches_contract": true,
+      "relative_document_links": "PASS",
+      "checksum_manifest": "SHA256SUMS"
+    },
+    "appearance": {
+      "checked_at": "2026-10-14T20:05:54+08:00",
+      "source_commit": "6bc1590e3ab2c06a1a177bbe03937282e230433b",
+      "status": "PASS_ORIGINAL_SOURCE_DIFFUSE_COLORS_RESTORED",
+      "palette_png_files": 12,
+      "palette_total_bytes": 1213,
+      "visual_triangle_positions_and_indices": "unchanged; original UV assets restored",
+      "physics_arrays_unchanged": 27,
+      "protected_source_control_test_files_unchanged": 110,
+      "static_regression_passed": 9,
+      "derived_mechanical_field_test_passed": 1,
+      "new_control_or_grasp_experiment": false,
+      "note": "Prior numeric control/grasp records retained; this change only restores visual materials and UV serialization."
+    }
+  },
+  "limits": {
+    "hardware_fidelity": "UNVERIFIED",
+    "contact_failure_cause": "UNVERIFIED",
+    "full_workspace_control": "UNVERIFIED",
+    "mujoco_2_3_7": "historical compile and static forward only"
+  },
+  "evidence": {
+    "current_local_runs": "debug/delivery-convergence/checkout/experiments/dynamics/runs/",
+    "history_index": "debug/delivery-convergence/history-index.json",
+    "preserved_history_commit": "56cfb6255825cc61f0fb46d3848c46c2b1f166c2",
+    "historical_archive_path": "reports/dynamics-evidence.tar.xz",
+    "historical_archive_sha256": "fd12ba7206e79f1b0faaaa01391f86f0995d3fd66f32574249547b1cebab7d56",
+    "historic_complete_grasp_attempts": {
+      "success": 0,
+      "attempts": 2
+    },
+    "raw_runs_in_current_source_tree": false,
+    "full_git_history_retained": true
+  },
+  "release_scope": {
+    "main_merge_candidate": "static assets and tested empty-load control, subject to user review",
+    "grasp": "experimental and failing",
+    "main_merged": false,
+    "release_created": false,
+    "engineering_code_license": "not independently declared; maintainer confirmation required for Release"
+  }
+}

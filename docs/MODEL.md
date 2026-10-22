@@ -1,3 +1,5 @@
+> RC说明：本文件描述原静态参考模型的机械来源；MVP的692个手指碰撞geom及独立组件见RC_RELEASE.md，分模型验收状态见VALIDATION.md。原静态nu=0不与受控入口相否定。
+
 # 模型依据与边界
 
 机械字段来自锁定提交的 `nero_description.urdf`、`nero_with_flange_description.xacro` 和 `nero_with_gripper_description.xacro`。官方法兰安装变换、夹爪安装变换、质量和惯性均采用该版本，未套用旧DH116资产的安装假设或惯性。实际部件的原完整惯性张量以NumPy特征分解转换为主惯量与主轴，MuJoCo编译后再独立重建张量核对；没有改变张量以满足验证。

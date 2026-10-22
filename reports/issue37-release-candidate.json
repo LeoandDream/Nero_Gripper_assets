@@ -1,0 +1,101 @@
+{
+  "issue": 37,
+  "scope": "Release engineering only; no new physical integration",
+  "status": "PENDING_GITHUB_ZIP_VALIDATION",
+  "release": "RELEASE_BLOCKED",
+  "license_gate": "BLOCKED_LICENSE_OWNER_DECISION",
+  "baselines": {
+    "main": "7f01deedc434d1d09cf98a043fcd2c53894e835e",
+    "mvp": "77bd26a58df4eda99f611de7be1013d714ddaa7f",
+    "standalone": "0d944a2e384c838ea1d72c8655d5efb15e5897d0"
+  },
+  "branch": "release-candidate/nero-gripper-assets-v1",
+  "base": "main",
+  "selection": {
+    "files": 530,
+    "source_counts": {
+      "7f01deedc434d1d09cf98a043fcd2c53894e835e": 139,
+      "new_release_engineering": 9,
+      "0d944a2e384c838ea1d72c8655d5efb15e5897d0": 14,
+      "77bd26a58df4eda99f611de7be1013d714ddaa7f": 368
+    },
+    "main_paths_retained": 140,
+    "immutable_physics_files": 472,
+    "matrix": "RC_FILE_SELECTION.json",
+    "checksum_entries": 529
+  },
+  "adaptations": [
+    "README/validation/release/license notices and whole-tree integrity inventory",
+    "simulation_mvp.checkout_head and gripper_control.checkout_head: optional actual Git HEAD or null; explicit frozen provenance",
+    "Only before-run metadata calls adapted; remaining complete control/module AST matches frozen sources",
+    "Standalone manifest: only adapted control script digest changed; all other fields exactly match source"
+  ],
+  "preflight": {
+    "worktree": "worktree_002.json",
+    "clean_no_git_copy": "clean_copy_001.json",
+    "location": "/data_robot/projects/.experiments/nero-gripper-rc-issue37-20261023",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "static_tests_per_run": 10,
+    "xml_file_references": 871,
+    "unique_xml_resources": 433,
+    "missing_resources": 0,
+    "model_results": {
+      "mjcf/nero_gripper.xml": {
+        "sha256": "e5585f29fef505f48b90bbf2c7b1b035ee7eac68147d60147399db5993263b4e",
+        "nq": 9,
+        "nv": 9,
+        "nu": 0,
+        "neq": 1,
+        "nbody": 13,
+        "ngeom": 74,
+        "nmesh": 74
+      },
+      "mjcf/simulation_mvp.xml": {
+        "sha256": "db18a44f72ac62d6cd06bc4f9d4a7ef7ea38d36c43b5813064eb51b2f3ca8408",
+        "nq": 16,
+        "nv": 15,
+        "nu": 9,
+        "neq": 1,
+        "nbody": 14,
+        "ngeom": 764,
+        "nmesh": 416
+      },
+      "assets/components/gripper/gripper.xml": {
+        "sha256": "2632f9b7c1d3867966e4bc08f2f4cd4b1146a4a2aef75ba3d01b1462479dd0a1",
+        "nq": 2,
+        "nv": 2,
+        "nu": 2,
+        "neq": 1,
+        "nbody": 5,
+        "ngeom": 699,
+        "nmesh": 353
+      }
+    }
+  },
+  "historical_evidence": "Original MVP and standalone reports/NPZ/JSON are unchanged; no dynamic rerun",
+  "independent_source_review": {
+    "source_and_target_hashes": "PASS",
+    "control_ast": "UNCHANGED",
+    "reviewer_ran_engine": false,
+    "corrections": "External receipts now bind selection/SHA256SUMS digests; old Run source seals documented"
+  },
+  "new_physical_episodes": 0,
+  "actual_mj_step_calls": 0,
+  "forbidden_integration_attempts": 0,
+  "not_performed": [
+    "R1 or standalone dynamic tests",
+    "training/inference",
+    "new geometry certification",
+    "merge/tag/release/license selection"
+  ],
+  "limitations": [
+    "Strict research geometry remains BLOCKED; long hold and hardware remain UNKNOWN",
+    "Full original R1 raw run (~102MB) remains internal; public compact evidence does not support full independent replay verification",
+    "Original Run verifiers require original frozen source seals; RC optional-Git adaptation is not original execution source",
+    "Only locked Ubuntu Python3.11/MuJoCo3.2.3 environment checked; installation on new OS/Python not claimed"
+  ],
+  "execution_note": "An initial AST check made under a different system-Python AST convention failed before engine use; fingerprints regenerated with locked Python3.11. No physical/model change."
+}

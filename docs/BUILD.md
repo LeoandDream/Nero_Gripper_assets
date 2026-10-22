@@ -1,3 +1,5 @@
+> RC说明：本文件为原静态资产构建记录，不是RC获取入口。预建RC无需重新生成代理或执行build；获取/零积分检查见RC_RELEASE.md及顶层README。
+
 # NERO + 官方夹爪资产构建与验收
 
 目标：按已有DH116资产的源字段核对方法，交付独立、可迁移的官方NERO与两指夹爪模型。来源锁定 `agilexrobotics/agx_arm_urdf@a68b8e876a2c6fcb0ecee7a7943129e4d48dd864`，采用该版本安装链；旧资产、训练和LIBERO评测保持独立。
