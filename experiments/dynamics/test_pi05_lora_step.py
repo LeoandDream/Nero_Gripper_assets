@@ -38,5 +38,19 @@ class LoraPlan(unittest.TestCase):
         np.testing.assert_array_equal(state_host(state)['a'],np.zeros(3,np.float32))
         self.assertEqual(len(state_hash(state)['a']),64)
 
+    def test_typed_state_lowering_uses_official_tracing_scope(self):
+        import jax
+        from flax import struct
+        from openpi.shared import array_typing as at
+        @at.typecheck
+        @struct.dataclass
+        class State:
+            step:at.Int[at.ArrayLike,'']
+        state=State(np.array(0,np.int32))
+        with at.disable_typechecking():
+            fn=jax.jit(lambda x:x).lower(state).compile()
+        self.assertFalse(at.config.jaxtyping_disable)
+        self.assertEqual(int(fn(State(np.array(0,np.int32))).step),0)
+
 
 if __name__=='__main__':unittest.main()

@@ -200,10 +200,15 @@ def run(plan_directory,output):
     attempts=0;result=None
     try:
         print('COMPILE_TRAIN_STEP',flush=True)
+        from openpi.shared import array_typing
         with sharding.set_mesh(mesh):
             jitted=jax.jit(functools.partial(official.train_step,cfg),in_shardings=(replicated,ss,ds),
                 out_shardings=(ss,replicated),donate_argnums=(1,))
-            executable=jitted.lower(train_rng,shape,batch).compile()
+            # JAX .lower reconstructs typed dataclasses with internal ArgInfo
+            # placeholders. Use the official scope for that tracing operation
+            # only; real-array validation is restored before init/execution.
+            with array_typing.disable_typechecking():
+                executable=jitted.lower(train_rng,shape,batch).compile()
         ma=executable.memory_analysis()
         info={k:int(getattr(ma,k)) for k in ['argument_size_in_bytes','output_size_in_bytes','temp_size_in_bytes','alias_size_in_bytes']}
         peak=compiled_peak(info);write(output/'compiled-memory.json',dict(info,estimated_per_device_peak_bytes=peak,reserve_bytes=RESERVE))
